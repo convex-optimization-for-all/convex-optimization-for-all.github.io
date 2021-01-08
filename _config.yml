@@ -1,9 +1,9 @@
 # Setup
-title:               컨벡스 최적화의 모든 것
+title:               "컨벡스 최적화의 모든 것"
 tagline:             
 description:         ''
 url:                 'http://convex-optimization-for-all.github.io'
-baseurl:             ''
+baseurl:             'http://convex-optimization-for-all.github.io'
 paginate:            5
 permalink:           pretty
 
