@@ -3,7 +3,7 @@ title:               "컨벡스 최적화의 모든 것"
 tagline:             
 description:         ''
 url:                 'http://convex-optimization-for-all.github.io'
-baseurl:             'http://convex-optimization-for-all.github.io'
+baseurl:
 paginate:            5
 permalink:           pretty
 
