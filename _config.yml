@@ -6,12 +6,11 @@ url:                 'http://convex-optimization-for-all.github.io'
 baseurl:
 paginate:            5
 permalink:           pretty
-
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Kyeongmin Woo
+  url:               
+  email:             wgm0601@gmail.com
 
 # Gems
 plugins:
