@@ -76,21 +76,16 @@
 - [루비 설치하기](<https://jekyllrb-ko.github.io/docs/installation/>): Jekyll은 루비로 제작되어있습니다. 따라서 Jekyll을 사용하기 위해서는 루비를 설치해야 합니다.
 - [Jekyll 설치하기](<https://jekyllrb-ko.github.io/docs/>): 루비를 설치했다면 클론한 Repository에 들어가 Jekyll을 설치합니다.
 - [Bundle Gem 설치하기](<https://jekyllrb-ko.github.io/docs/>): 호스팅에 필요한 루비 패키지들을 추가적으로 설치해야 해주어야 합니다. Repository의 프로젝트 디렉토리에서 다음 명령어를 실행합니다.
-
-`$ bundle install`
+- `$ bundle install`
 
 #### 로컬 호스팅
 
 - 컨텐츠를 수정했다면 Push하기 전 로컬에서 수정 내용이 잘 반영되었는지 먼저 확인해야 합니다. Jekyll에서 요구하는 규약을 지키지 않은 경우 Blog가 정상적으로 동작하지 않을 수 있고, 이러한 내용을 Push한다면 실제 웹에서 호스팅되는 Blog가 동작하지 않을 수 있습니다.
-- 설치가 완료되었다면 Repository의 프로젝트 디렉토리에서 다음 명령어를 실행하여 Local Server에 띄울 수 있다.
-
-`$ jekyll serve`
-
-- 호스팅이 되지 않는다면 다음 명령어로도 시도해본다.
-
-`$ bundle exec jekyll serve`
-
-- 두 명령어 모두 되지 않는다면 설치가 완료되지 못한 것이다.
+- 설치가 완료되었다면 프로젝트 디렉토리에서 다음 명령어를 실행하여 Local Server에 띄울 수 있습니다.
+- `$ jekyll serve`
+- 호스팅이 되지 않는다면 다음 명령어로도 시도해 볼 수 있습니다.
+- `$ bundle exec jekyll serve`
+- 두 명령어 모두 되지 않는다면 Jekyll 환경이 제대로 설치되지 않은 것입니다.
 
 #### Directory Convention
 
