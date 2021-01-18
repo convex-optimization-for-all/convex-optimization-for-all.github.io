@@ -1,15 +1,13 @@
 # Setup
 title:               "모두를 위한 컨벡스 최적화"
-tagline:             
-description:         ''
+description:         '모두를 위한 컨벡스 최적화'
 url:                 'http://convex-optimization-for-all.github.io'
-baseurl:
+baseurl:             ''
 paginate:            5
 permalink:           pretty
 # About/contact
 author:
   name:              Kyeongmin Woo
-  url:               
   email:             wgm0601@gmail.com
 
 # Gems
@@ -18,4 +16,3 @@ plugins:
 
 # Custom vars
 version:             1.1.0
-google_analytics_id: #UA-XXXX-Y
