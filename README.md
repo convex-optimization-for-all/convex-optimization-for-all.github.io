@@ -64,7 +64,20 @@ Convex Optimization은 머신러닝과 직접적으로 연관이 많을 뿐더�
 - 정태수 (tcheong@korea.ac.kr)
 - [리뷰어 소개](<https://wikidocs.net/17197>)
 
-## 작성하기 전 읽어보면 좋은 글
+## 작성하기 전 읽으면 좋은 글
+
+### 컨텐츠를 직접 수정하는 방법
+
+1. 처음이라면 Repository를 Clone하고, 아래 `시작하기`에 따라 로컬 호스팅 환경을 구축한다.
+2. 새로운 브랜치를 생성한다. 브랜치 명은 `chapter01/[수정하는_이유]`로 한다.
+3. 직접 수정한다. 생성 및 수정하고자 하는 컨텐츠에 대한 사항은 아래 `Directory Convention`와 `Posting Convention`을 한다.
+4. Push한다.
+5. Pull Request를 생성한다.
+
+### 컨텐츠 수정을 요청하는 방법
+
+- Github Repository에 Issue를 생성한다.
+- Blog에 댓글을 남긴다.
 
 ### Jekyll
 
