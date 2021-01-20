@@ -84,9 +84,17 @@ Convex Optimization은 머신러닝과 직접적으로 연관이 많을 뿐더�
 
 - 컨텐츠를 수정했다면 Push하기 전 로컬에서 수정 내용이 잘 반영되었는지 먼저 확인해야 합니다. Jekyll에서 요구하는 규약을 지키지 않은 경우 Blog가 정상적으로 동작하지 않을 수 있고, 이러한 내용을 Push한다면 실제 웹에서 호스팅되는 Blog가 동작하지 않을 수 있습니다.
 - 설치가 완료되었다면 프로젝트 디렉토리에서 다음 명령어를 실행하여 Local Server에 띄울 수 있습니다.
-  - `$ jekyll serve`
+
+```
+$ jekyll serve
+```
+
 - 호스팅이 되지 않는다면 다음 명령어로도 시도해 볼 수 있습니다.
-  - `$ bundle exec jekyll serve`
+
+```
+$ bundle exec jekyll serve
+```
+
 - 두 명령어 모두 되지 않는다면 Jekyll 환경이 제대로 설치되지 않은 것입니다.
 
 #### Directory Convention
