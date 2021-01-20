@@ -1,0 +1,14 @@
+---
+layout: post
+title: contents
+order: 2
+---
+
+<h2>목차</h2>
+
+{% assign page_list = site.pages | sort: "chapter"%}
+{% for page in page_list %}
+  {% if page.chapter %}
+    <p><a href="{{ page.url }}"> {{page.chapter}}. {{ page.title }}</a></p>
+  {% endif %}
+{% endfor %}
