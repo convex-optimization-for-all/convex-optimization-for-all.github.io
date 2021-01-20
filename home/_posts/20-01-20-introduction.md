@@ -1,7 +1,7 @@
 ---
 layout: post
 title: introduction
-order: 1
+order: 2
 ---
 
 ## 시작하는 글
