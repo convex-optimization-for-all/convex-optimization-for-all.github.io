@@ -1,7 +1,8 @@
-# 모두를 위한 컨벡스 최적화
-
-- [블로그](<https://convex-optimization-for-all.github.io/>)
-- [모두를 위한 컨벡스 최적화](<https://wikidocs.net/book/1896>)
+---
+layout: post
+title: introduction
+order: 1
+---
 
 ## 저자 서문
 
@@ -20,63 +21,3 @@ Convex Optimization은 머신러닝과 직접적으로 연관이 많을 뿐더�
 본 Blog의 주요 컨텐츠는 [모두를 위한 컨벡스 최적화](<https://wikidocs.net/book/1896>)의 저자 분들의 동의를 구해 Migration한 내용들입니다. 원 컨텐츠는 Convex Optimization에 관한 한국어 컨텐츠 중 가장 잘 알려져 있으면서 내용적으로도 부족함이 없습니다. 본 Blog에서는 기존 WikiDocs 컨텐츠를 이어 받아 Open Source로 만들어 보고자 합니다. 따라서 누구나 컨텐츠에 이슈를 제기하고 직접 Pull Request를 생성하여 기여할 수 있습니다. 이를 통해 [모두를 위한 컨벡스 최적화](<https://wikidocs.net/book/1896>) 저자분들의 뜻이기도 한 '전국민의 지적 성장과 컨벡스 최적화의 국내 대중화'에 작은 보탬이 될 수 있기를 바랍니다.
 
 wgm0601@gmail.com / 우경민 (마키나락스)
-
-## 다루는 내용들
-
-1. Introduction
-2. Convex Sets
-3. Convex Functions
-4. Convex Optimization Basis
-5. Canonical Problems
-6. Gradient Descent
-7. Subgradient
-8. Subgradient Method
-9. Proximal Gradient Descent and Acceleration
-10. Duality in Linear Programs
-11. Duality in General Programs
-12. KKT Conditions
-13. Duality uses and correspondences
-14. Newton's Method
-15. Barrier Method
-16. Duality Revisited
-17. Primal-Dual Interior-Point Methods
-18. Quasi-Newton Methods
-19. Proximal Netwon Method
-20. Dual Methods
-21. Alternating Direction Method of Mulipliers
-22. Conditional Gradient Method
-23. Coordinate Descent
-24. Mixed Integer Programming 1
-25. Mixed Integer Programming 2
-
-## 만든 사람들
-
-### 모두를 위한 컨벡스 최적화 저자
-
-- 김기범(astroblasterr@gmail.com)
-- 김정훈(placidus36@gmail.com)
-- 노원종(wnoh27@naver.com)
-- 박진우(www.jwpark.co.kr@gmail.com)
-- 윤성진(sjyoon@gmail.com)
-- 이규복(gyubokl@gmail.com)
-- 한영일(thinkingtoyihan@gmail.com)
-- 황혜진(brillianthhj@gmail.com)
-- [저자 소개](<https://wikidocs.net/17197>)
-
-### 모두를 위한 컨벡스 최적화 리뷰어
-
-- 이주희 (juhee1108@gmail.com)
-- 장승환 (schang.math@gmail.com)
-- 정태수 (tcheong@korea.ac.kr)
-- [리뷰어 소개](<https://wikidocs.net/17197>)
-
-### 옮긴이
-
-- 우경민(wgm0601@gmail.com)
-
-## 참고한 자료들
-
-- [Convex Optimization - Boyd and Vandenberghe](<https://web.stanford.edu/~boyd/cvxbook/>)
-- [Stanford Convex Optimization Lecture 2014](<https://www.youtube.com/playlist?list=PL3940DD956CDF0622>)
-- [CMU Convex Optimization Lecture 2016](<http://www.stat.cmu.edu/~ryantibs/convexopt-F16/>)
-- [CMU Convex Optimization Lecture 2019](<http://www.stat.cmu.edu/~ryantibs/convexopt/>)
