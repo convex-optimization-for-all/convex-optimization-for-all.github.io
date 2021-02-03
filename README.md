@@ -104,7 +104,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/enfow/"><img src="{{site.url}}/img/profile/kyeongmin-woo.png" width="100px;" alt=""/><br /><sub><b>Kyeongmin Woo</b></sub></a><br /><a href="https://github.com/enfow/" title="Code">💻</a> <a href="https://github.com/enfow/" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/enfow/"><img src="{{site.imgurl}}/profile/kyeongmin-woo.png" width="100px;" alt=""/><br /><sub><b>Kyeongmin Woo</b></sub></a><br /><a href="https://github.com/enfow/" title="Code">💻</a> <a href="https://github.com/enfow/" title="Documentation">📖</a></td>
   </tr>
 </table>
 
