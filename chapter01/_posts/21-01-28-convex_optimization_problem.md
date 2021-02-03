@@ -52,7 +52,7 @@ convex function과 convex set 사이에는 다음과 같은 밀접한 관계가 
 
 >epigraph of f: $$R^n \rightarrow R:$$
 >
->epi f = {$$(x, t) \in R^{n+1}$$ | $$x \in$$ dom f, f($$x$$) $$\le t$$}
+>epi f = {$$(x, t) \in R^{n+1}$$ \| $$x \in$$ dom f, f($$x$$) $$\le t$$}
 
 ![](https://wikidocs.net/images/page/17206/epigraph.png)
 
@@ -71,7 +71,7 @@ Convex 함수의 local minimum은 항상 global minimum이다. convex optimizati
 >Convex function f에 대해 $$x$$가 locally optimal point일때, 어딘가에 $$f(y) < f(x)$$를 만족하는 feasible $$y$$가 있다고 가정하자. (이 가정이 참임이 증명된다면 'locally optimal point = global optimal point'가 성립하지 않을 것이다.)
 >
 >$$x$$가 locally optimal point라는 것은 다음을 만족하는 양수 $$R$$이 존재한다는 것과 같다: 
->$$z$$ feasible, $$\| z - x \|_2 \le R \Rightarrow f(z) \ge f(x)$$
+>$$z$$ feasible, $$\vert z - x \vert_2 \le R \Rightarrow f(z) \ge f(x)$$
 >
 >이때 $$z = \theta y + (1 - \theta) x$$라고 하면 ($$0 < \theta < 1$$),
 >
