@@ -4,8 +4,7 @@ title: contents
 order: 2
 ---
 
-{% for page in site.posts %}
-  {% if page.title == "How to contribute Open Source Project" %}
-    <p><a href="{{ page.url }}"> {{ page.title }}</a></p>
-  {% endif %}
+{% assign posts = site.categories.contribution | sort: "order" %}
+{% for post in posts %}
+  <p><a href="{{ post.url }}"> {{ post.title }}</a></p>
 {% endfor %}
