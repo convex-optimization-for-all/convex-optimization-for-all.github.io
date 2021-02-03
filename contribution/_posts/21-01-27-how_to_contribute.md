@@ -3,6 +3,7 @@ layout: post
 title: "How to Contribute"
 chapter: home
 order: 1
+owner: kyeongminwoo
 ---
 
 ## 컨텐츠를 직접 수정하는 방법

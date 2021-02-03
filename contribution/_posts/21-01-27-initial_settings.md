@@ -3,6 +3,7 @@ layout: post
 title: "Initial Settings"
 chapter: home
 order: 3
+owner: kyeongminwoo
 ---
 
 본 Repository의 컨텐츠들은 Jekyll을 사용하여 [Github Blog](<https://convex-optimization-for-all.github.io/>)로 호스팅됩니다. 따라서 기존 내용을 편집하거나 새로운 내용을 작성하기 위해서는 Jekyll의 디렉토리 구조 및 컨텐츠 작성 규약을 준수하여 작성해야 합니다. 또한 local 환경에서 변경 사항이 반영되었는지 확인하는 과정이 필요합니다. 

@@ -3,6 +3,7 @@ layout: post
 title: "Conventions"
 chapter: home
 order: 2
+owner: kyeongminwoo
 ---
 
 ## 1. Directory Convention

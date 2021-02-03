@@ -2,6 +2,7 @@
 layout: post
 title: introduction
 order: 1
+owner: kyeongminwoo
 ---
 
 ## 저자 서문
