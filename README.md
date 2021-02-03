@@ -96,3 +96,18 @@ wgm0601@gmail.com / 우경민 (마키나락스)
 - [Stanford Convex Optimization Lecture 2014](<https://www.youtube.com/playlist?list=PL3940DD956CDF0622>)
 - [CMU Convex Optimization Lecture 2016](<http://www.stat.cmu.edu/~ryantibs/convexopt-F16/>)
 - [CMU Convex Optimization Lecture 2019](<http://www.stat.cmu.edu/~ryantibs/convexopt/>)
+
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/enfow/"><img src="{{site.imgurl}}/profile/kyeongmin-woo.png" width="100px;" alt=""/><br /><sub><b>Kyeongmin Woo</b></sub></a><br /><a href="https://github.com/enfow/" title="Code">💻</a> <a href="https://github.com/enfow/" title="Documentation">📖</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
