@@ -23,7 +23,7 @@ Clone이 완료되면 local 환경에서 Blog의 변경 사항을 확인할 수 
 
 ## Install Jekyll
 
-- [루비 설치하기](<https://jekyllrb-ko.github.io/docs/installation/>): Jekyll은 루비로 이루어져 있습니다.. 따라서 Jekyll을 사용하기 위해서는 루비를 설치해야 합니다.
+- [루비 설치하기](<https://jekyllrb-ko.github.io/docs/installation/>): Jekyll은 루비로 이루어져 있습니다. 따라서 Jekyll을 사용하기 위해서는 루비를 설치해야 합니다.
 - [Jekyll 설치하기](<https://jekyllrb-ko.github.io/docs/>): 루비를 설치했다면 클론한 Repository에 들어가 Jekyll을 설치합니다.
 - [Bundle Gem 설치하기](<https://jekyllrb-ko.github.io/docs/>): 호스팅에 필요한 루비 패키지들을 추가적으로 설치해야 해주어야 합니다. Repository의 프로젝트 디렉토리에서 다음 명령어를 실행합니다.
 
