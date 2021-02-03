@@ -5,11 +5,8 @@ layout: default
 <h1>{{page.title}}</h1>
 
 {% assign full_name = page.chapter | prepend: "chapter" %}
-{% assign post_list = site.categories[full_name] %}
+{% assign post_list = site.categories[full_name] | sort_natural %}
 {% for post in post_list %}
-    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    <p class="author">
-      <span class="date">{{ post.date }}</span>
-    </p>
-    {{post.content}}
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  {{post.content}}
 {% endfor %}
