@@ -43,7 +43,7 @@ owner: "Kyeongmin Woo"
 - **title**은 내용에 맞게 임의의 String으로 설정할 수 있습니다.
 - **chapter**는 상위 카테고리의 마지막 두 숫자를 String으로 표기합니다. 다만 한 자리수인 경우 "01"과 같이 0을 붙여줘야 합니다.
 - **order**는 해당 chapter 내에서의 정렬 순서를 의미합니다.
-- **onwer**는 해당 post의 관리자를 의미합니다.
+- **owner**는 해당 post의 관리자를 의미합니다.
 
 ### 2.2. Latex
 
