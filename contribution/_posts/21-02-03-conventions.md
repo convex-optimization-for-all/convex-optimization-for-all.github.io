@@ -40,6 +40,22 @@ chapter: "18"
 - chapter는 상위 카테고리의 마지막 두 숫자를 String으로 표기합니다. 다만 한 자리수인 경우 "01"과 같이 0을 붙여줘야 합니다.
 - 이외의 내용들은 모두 Markdown 작성 방법에 맞춰 작성해주시면 됩니다.
 
+### Image Convention
+
+- Posting 파일에서 이미지를 삽일할 때 아래의 Convention을 따라야합니다.
+
+```
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="{image_path}" alt="{description of image}" width="{scale_ratio}%">
+  <figcaption style="text-align: center;">{figcaption}</figcaption>
+</p>
+</figure>
+```
+
+- figure class는 `image`여야합니다.
+- {}에 들어갈 내용을 적절히 넣어야합니다.
+
 ### GitHub Convnention
 
 작성 내용에 질문이 있거나 수정 사항을 발견하신 경우 다음 두 방법 중 하나로 남겨주시면 됩니다.
