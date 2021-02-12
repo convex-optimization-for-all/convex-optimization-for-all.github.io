@@ -9,6 +9,7 @@ owner: "Wontak Ryu"
 이 절에서는 convex set의 대표적인 특성을 나타내는 두 theorem인 **separating hyperplane theorem**과 **supporting hyperplane theorem**을 살펴볼 것이다.
 
 ## Separating hyperplane theorem
+
 서로 교집합을 갖지 않는 disjoint convex set이 여러 개가 있다고 해보자. 이들을 분리하려면 어떻게 하면 좋을까? 가장 간단한 방법은 convex set 사이에 직선을 그어보는 것이다. 실제 이 방법은 classification에서 가장 많이 그리고 기본적으로 사용하는 방법이다. 그리고, 이 방법을 지지하는 이론이 바로 **separating hyperplane theorem**이다. 
 
 만일, 두 개의 disjoint convex set $$C$$와 $$D$$가 있다고 해보자. 그러면, $$x \in C$$일 때  $$a^T x \le b$$이고 $$x \in D$$일 때  $$a^T x \ge b$$인 $$a \ne 0$$와 $$b$$가 존재하게 된다. 다시 말하면, affine function $$a^T x -  b$$는 $$C$$에서는 nonpositive이고 $$D$$에서는 nonnegative이다. 이때, hyperplane $$ \{ x \mid a^T x =  b\}$$를 $$C$$와 $$D$$에 대한 **separating hyperplane**이라고 한다.
@@ -28,6 +29,7 @@ Separating hyperplane theorems의 역은 성립하지 않는다. 즉, separating
 
 
 ## Supporting hyperplanes theorem
+
 **Supporting hyperplane theorem**은 임의의 nonempty convex set $$C$$와 $$x_0 \in$$ **bd** $$C$$가 있을 때, 점 $$x_0$$에서 $$C$$의 **supporting hyperplane**이 존재하는 것을 말한다. 
 
 그렇다면 supporting hyperplane이란 무엇인가? 먼저 점 $$x_0$$가 boundary **bd** $$C$$의 점이라고 하자. 집합 내의 모든 점 $$x \in C$$에 대해  $$a^T x \le a^T x_0$$ ($$a \ne 0$$)을 만족하면, hyperplane $$\{x \mid a^T x = a^T x_0 \}$$은 점 $$x_0$$에서 집합 $$C$$의 **supporting hyperplane**이라고 한다. 

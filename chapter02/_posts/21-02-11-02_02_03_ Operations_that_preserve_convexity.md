@@ -16,6 +16,7 @@ Convexity를 유지하는 연산에는 다음과 같은 것들이 있다.
 * Linear-fractional functions
 
 ## Intersection
+
 Convex set의 교집합은 convex이다. 즉, $$S_1$$과 $$S_2$$이 convex라면 $$S_1 \cap S_2$$은
 convex이다. 집합이 무한히 존재할 때에도 이와 같은 성질은 유지된다. (참고로 subspaces, affine sets, convex cones도 교집합 연산에 닫혀있다.)
 
@@ -40,6 +41,7 @@ Linear matrix inequality의 해집합 $$\{x \mid x_1 A_1 + \cdots + x_m A_m \pre
 Hyperbolic cone $$\{x \mid x^T P x \lt (c^T x)^2, c^T x \gt 0\}$$ (with $$P \subseteq S^n_+$$, $$c \in R^n$$)도 convex이다. 
 
 ## Perspective function
+
 **Perspective function**은 카메라에 상이 맺히는 것과 같이 멀리 있는 물체는 작게 가까이 있는 물체는 크게 원근에 따라 상을 만드는 함수이다. 따라서, 피사체는 $$R^{n+1}$$차원의 공간에 있고 상은 $$R^n$$ 차원의 평면에 맺히게 된다.
 
 Perspective function을 수식으로 정의하면 $$P : R^{n+1} \rightarrow R^{n}$$로서 **dom** $$P = R^{n} \times R_{++}$$이고 $$P(z,t) = z/t$$와 같다. (여기서 $$R_{++} = \{x \in R \mid x \gt 0\}$$이다.) 함수를 해석해 보면 벡터의 마지막 요소가 1이 되도록 정규화를 하며, 마지막 요소를 제거해서 차원을 $$R^{n+1}$$에서 $$R^n$$로 줄인다. Perspective function은 $$C \subseteq$$ **dom** $$P$$가 convex라면 image $$P(C) = \{P(x) \mid x \in C\}$$도 convex가 만든다.
@@ -56,7 +58,9 @@ Perspective function은 pin-hole 카메라가 작동하는 원리와 같다. 멀
 ![](https://wikidocs.net/images/page/17372/02.03_04_pine_hole_camera_model.png)
 
 **[Fig 2] pin-hole 카메라의 perspective function [1]**
+
 ## Linear-fractional functions
+
 Linear-fractional function은 perspective function과 affine function으로 구성된다. 
 
 > $$f(x) = (A x + b)/(c^T x + d), \mathbb{dom} f(x) = \{x \mid c^T x + d \gt 0 \} (A \in R^{m \times n}, b \in R^m, c \in  R^n, d \in R)$$

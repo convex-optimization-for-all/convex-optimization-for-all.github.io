@@ -9,6 +9,7 @@ owner: "Wontak Ryu"
 다음은 convex cone의 예로는 norm cone, normal cone, positive semidefinite cone 등이 있다.
 
 ## Norm cone
+
 **Norm cone**은 반경 $$t$$ 이내인 점들로 이뤄진 cone으로 $$(x,t)$$로 정의되는 $$R^{n+1}$$차원의 convex cone이다. 이때, 반경은  임의의 norm으로 정의된다.
 
 >$$C = \{(x, t) : \left \Vert x \right \| \le t\} \subseteq R^{n+1}$$, for a norm $$\left \Vert  · \right \|$$ 
@@ -20,6 +21,7 @@ owner: "Wontak Ryu"
 **[Fig1] Norm Cone [1]**
 
 ## Normal Cone
+
 집합 $$C$$에 대해서 $$x \in C$$일 때, 다음 식을 만족하면 **normal cone**이라고 한다.
 Normal cone은 $$C$$에 상관 없이 항상 convex cone이다.
 
@@ -39,6 +41,7 @@ Normal cone은 집합 $$C$$에 속하는 임의의 점 $$x$$와 집합 $$C$$의 
 **[Fig2] Normal Cone [3]**
 
 ## Positive semidefinite cone
+
 **Positive semidefinite** $$\mathbb{S}^n_+$$의 정의는 다음과 같다. 이때 $$\mathbb{S}^n$$는  $$n × n$$ symmetric matrix이다.
 >$$\mathbb{S}^n_+ =$$ { $$ X \in \mathbb{S}^n : X \succeq 0 $$} 
 

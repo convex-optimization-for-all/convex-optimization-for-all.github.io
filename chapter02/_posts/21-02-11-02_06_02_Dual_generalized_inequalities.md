@@ -11,6 +11,7 @@ Proper cone으로 generalized inequality를 정의할 수 있다면, dual cone�
 이 절에서는 proper dual cone을 이용해서 dual generalized inequality를 정의해보고 minimum과 minimal도 재정의 해보도록 하겠다.
 
 ## Dual generalized inequalities
+
 Proper dual cone으로 generalized inequality를 정의해보면 다음과 같다. 어떤 점 $$y$$가 있을 때  $$K$$의 모든 점 $$x$$와 내적을 해서 0보다 크다면, $$y$$는 dual cone $$K^*$$에서 0보다 크다.
 
 이때, $$\succeq_{K^*}$$를  $$\succeq_K$$의 **dual**이라고 한다. 즉, **dual generalized inequality**이다.
@@ -30,9 +31,11 @@ dual generalized inequality는 $$\preceq_K$$이기 때문에, generalized inequa
 
 
 ## Minimum and minimal elements via dual inequalities
+
 Proper cone $$K$$로 유도된 generalized inequality에 대해, dual generalized inequalities를 이용하여 (possibly nonconvex) 집합 $$S \subseteq R^m$$의 minimum, minimal element에 대한 특성을 표현할 수 있다.
 
 #### Minimum element
+
 모든 $$ \lambda \succ_K^* 0$$와   $$z \in S$$에 대해
 
 $$x$$가 $$\lambda^T z$$의 unique minimizer라면, 
@@ -45,6 +48,7 @@ generalized inequality $$ \succ_K^* $$에 대해 $$x$$는 $$S$$의 minimum이다
 **[Fig1] Minimum element [1]**
 
 #### Minimal element
+
 Minimal의 경우 필요 조건과 충분 조건 사이에 약간의 차이가 있다. 
 
 $$\lambda \succ_K^* 0$$와 $$z \in S$$에 대해 $$x$$가 $$\lambda^T z$$의 minimizer라면 $$x \in S$$는 $$S$$의 minimal이다. 즉, $$x$$가 minimal의 경우 $$\lambda^T z$$의 unique minimizer가 아니다. 따라서, 동일한  $$\lambda$$에 대해서 여러 minimal이 존재할 수도 있고 여러 $$\lambda$$에서 여러 minimal이 존재할 수도 있다.

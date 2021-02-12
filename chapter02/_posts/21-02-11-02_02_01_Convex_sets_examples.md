@@ -21,6 +21,7 @@ Hyperplane은 $$n$$차원의 공간을 반으로 가르는 $$n-1$$차원의 subs
 **[Fig1] Hyperplane [1]**
 
 ## Halfspaces
+
 Halfspace는 hyperplane을 포함한 나머지 한쪽 space를 말한다. 따라서, 하나의 hyperplane $$a^T x = b$$은 두 개의 halfspace를 정의한다. Halfspace는 convex set이지만 affine set은 아니다.
 
 >{$$x : a^T x \le b$$} or {$$x : a^T x \ge b$$}  with $$ a \in R^n, a \ne 0, b \in R$$
@@ -34,6 +35,7 @@ Hyperplane $$a^T x = b$$일 때 halfspace $$a^T x \ge b$$는 normal vector a의 
 참고로, {$$x : a^T x \le b$$}의 interior인  {$$x : a^T x \lt b$$}를 open halfspace라고 한다.
 
 ## Euclidean balls
+
 Euclidean ball은 또다른 convex set으로 다음과 같이 정의된다. ($$\left \Vert . \right \|_2$$은 euclidean norm으로 $$\left \Vert u \right \|_2 = (u^T u)^\frac{1}{2}$$이다.) $$x_c$$는 중심이고 $$r$$은 반지름이다. 따라서, $$B(x_c, r)$$은 중심 $$x_c$$에서 반경 $$r$$ 이내의 모든 점들을 포함한다.
 
 >$$B(x_c, r) = \{ x \phantom{1} \mid \phantom{1} \|x - x_c \|_2 \le r \} = \{ x \phantom{1} \mid \phantom{1} (x - x_c)^T (x - x_c) \le r^2 \} \text{ with } \ r \ge 0$$
@@ -65,6 +67,7 @@ Ellipsoid 식을 다음과 같이  $$x_c$$를 중심으로 $$Au$$ 벡터를 더�
 여기서 $$A$$는 정방 행렬이고 nonsingular이다. 만일 $$A = P^\frac{1}{2}$$라고 하면 위의 식과 동일해져서 symmetric이고 positive definite라고 할 수 있다. 이때, $$A$$가 symmetric positive semidefinite이면  degenerate ellipsoid라고 하며 affine dimension은 $$A$$의 rank와 같다. Degenerate ellipsoid도 역시 convex이다.
 
 ## Norm balls
+
 Norm ball이란 $$x_c$$를 중심으로 반경 $$r$$ 이내인 점들의 집합을 말한다. 단, euclidean ball은 euclidean norm으로 정의되는 반면 norm ball은 임의의 norm으로 반경이 정의된다.
 $$\left \Vert . \right \|$$을 $$R^n$$의 임의의 norm이라고 할때 norm ball은 다음과 같이 정의된다.
 
@@ -85,6 +88,7 @@ P-norm이 다음과 같이 정의될 때 norm ball의 모양은 다음과 같다
 **[Fig4] Norm ball**
 
 ## Polyhedra
+
 Polyhedron은 선형 부등식과 등식의 교집합으로 정의된다. Affine sets (즉, subspaces, hyperplanes, lines), rays, line segments, halfspaces는 모두 polyhedron이다. Polyhedra는 convex set이며 bounded polyhedron를 polytope이라고 부르기도 한다. 
 
 >$$\mathcal{P} = \{ x \mid a^T_i x \le b_i, i = 1, ..., m, c_j^Tx  = d_j, j = 1, ..., p\}$$ 
@@ -119,6 +123,7 @@ c^T_p
 $$
 
 #### Simplexes
+
 Simplex는 $$n$$차원 공간에서 만들 수 있는 가장 간단한 다각형으로 $$n+1$$개의 점으로 만들어진다.
 
 만일 $$k + 1$$개의 점 $$v_0, ... , v_k \in R^n$$가 있고 이들이 affinely independent하다면 simplex는 이 $$k+1$$개 점들의 convex hull로 정의된다. 참고로, affinely independent는 $$v_1 − v_0, . . . , v_k − v_0$$가 linearly independent하다는 의미이다.

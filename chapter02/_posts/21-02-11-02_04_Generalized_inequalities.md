@@ -24,6 +24,7 @@ Interior의 정의는 *[Wikipedia 정의](https://en.wikipedia.org/wiki/Interior
 
 
 ## Generalized inequality
+
 Proper cone을 이용하면$$R^n$$의 partial ordering인 **generalized inequality**를 다음과 같이 정의할 수 있다.  Generalized inequality는 $$R$$의 standard ordering과 비슷한 속성을 갖는다.
 
 >$$x \preceq_{K} y \iff y − x \in K$$
@@ -35,6 +36,7 @@ Proper cone을 이용하면$$R^n$$의 partial ordering인 **generalized inequali
 만일 $$K = R_{+}$$이라면 $$\preceq_{K}$$는 $$R$$에서의 일반적인 $$\le$$과 같다.
 
 #### Properties of generalized inequalities
+
 Generalized inequality $$\preceq_{K}$$는 다음과 같은 속성을 만족한다.
 
 
@@ -52,11 +54,13 @@ Strict generalized inequality 위의 속성에 대응하는 속성을 갖는다.
 $$R$$의 ordering과 $$R^n$$의 generalized ordering의 가장 큰 차이는 **linear ordering**이다. $$R$$에서는  $$x \lt y$$ 또는 $$x \gt y$$와 같이 두 점을 비교할 수 있지만  generalized inequality는 그렇지 못하다. 따라서, generalized inequality 문맥으로 maximum과 minimum 개념을 정의하는 것이 훨씬 더 복잡할 것으로 예상해 볼 수 있다.
 
 #### Minimum elements
+
 $$x \in S$$이 모든 $$y \in S$$에 대해 $$x \preceq_{K} y$$이면 $$x$$는 집합 $$S$$의 **minimum** element이다. 비슷한 방식으로  **maximum**도 정의할 수 있다. 어떤 집합에서 minimum이 존재한다면 unique하다. 즉, minimum은 오직 하나만 존재한다. 
 
 어떤 점 $$x \in S$$가 $$S$$의 minimum이라면 $$S \subseteq x + K$$이다. 여기서 $$x + K$$의 의미는 ($$\preceq_{K}$$에 따라) 모든 점들은 $$x$$와 비교할 수 있으며 $$x$$와 같거나 크다는 의미이다.
 
 #### Minimal elements
+
 비슷한 개념으로 **minimal**이 있다. $$x \in S$$이 모든 $$y \in S$$에 대해 $$y \preceq_{K} x$$인 경우는 $$y=x$$인 경우뿐이라면 $$x$$는 집합 $$S$$의 **minimal** element이다. 비슷한 방식으로  **maximal**도 정의할 수 있다. 집합은 여러 개의 minimal element를 가질 수 있다.
 
 어떤 점 $$x \in S$$가 $$S$$의 minimal이라면 $$(x - K) \cap S = $$ {$$x$$}이다. 여기서 $$x - K$$의 의미는 ($$\preceq_{K}$$에 따라) 모든 점들은 $$x$$와 비교할 수 있으며 $$x$$와 작거나 같다는 의미이다.
