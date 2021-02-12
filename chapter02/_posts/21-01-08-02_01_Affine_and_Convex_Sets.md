@@ -2,6 +2,8 @@
 layout: post
 title: 02-01 Affine and Convex Sets
 chapter: "02"
+order: 1
+owner: "Wontak Ryu"
 ---
 
 이 절에서는 convex set을 중심으로 하는 개념과 정의를 살펴볼 것이다. 이 절에서는 세 가지 종류의 set을 소개하고 있는데, 이 중 가장 일반적인 set이 affine set이며 affine set에서 범위를 제약해서 정의한 set이 convex set과 cone이다.

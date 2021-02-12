@@ -2,6 +2,8 @@
 layout: post
 title: 02-01-01 Line, line segment, ray
 chapter: "02"
+order: 2
+owner: "Wontak Ryu"
 ---
 
 Affine set, convex set, cone을 정의하기 위해 먼저 직선(line), 선분(line segment), 반직선(ray)을 먼저 살펴보자.

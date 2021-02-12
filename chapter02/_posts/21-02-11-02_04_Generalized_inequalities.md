@@ -2,6 +2,8 @@
 layout: post
 title: 02-04 Generalized inequalities
 chapter: "02"
+order: 10
+owner: "Wontak Ryu"
 ---
 
 1차원 실수 공간 $$R$$에서는 두 개의 숫자 1과 2가 있을 때 1보다 2가 크다고 말할 수 있다. 그러면, n차원 실수 공간 $$R^n$$에서 두 점 $$x_1$$과 $$x_2$$가 있을 때 두 점 중 어떤 점이 더 크다고 말할 수 있을까? 그렇다고 말하기는 어렵다. 

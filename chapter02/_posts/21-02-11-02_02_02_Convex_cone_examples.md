@@ -2,6 +2,8 @@
 layout: post
 title: 02-02-02 Convex Cone examples
 chapter: "02"
+order: 7
+owner: "Wontak Ryu"
 ---
 
 다음은 convex cone의 예로는 norm cone, normal cone, positive semidefinite cone 등이 있다.

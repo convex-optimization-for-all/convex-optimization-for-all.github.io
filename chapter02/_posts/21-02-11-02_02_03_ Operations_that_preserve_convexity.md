@@ -2,6 +2,8 @@
 layout: post
 title: 02-03 Operations that preserve convexity
 chapter: "02"
+order: 8
+owner: "Wontak Ryu"
 ---
 
 이 절에서는 convex set의 convexity를 유지하는 연산에 대해 살펴본다. 집합의 convexity를 판별하거나 hyperplanes, halfspaces, norm balls과 같은 간단한 convex set으로 원하는 convex set을 만들 때 이런 연산들이 유용하다.

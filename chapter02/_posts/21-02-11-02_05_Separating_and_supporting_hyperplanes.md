@@ -2,6 +2,8 @@
 layout: post
 title: 02-05 Separating and supporting hyperplanes
 chapter: "02"
+order: 11
+owner: "Wontak Ryu"
 ---
 
 이 절에서는 convex set의 대표적인 특성을 나타내는 두 theorem인 **separating hyperplane theorem**과 **supporting hyperplane theorem**을 살펴볼 것이다.

@@ -2,6 +2,8 @@
 layout: post
 title: 02-02-01 Convex set examples
 chapter: "02"
+order: 6
+owner: "Wontak Ryu"
 ---
 
 Convex set에는 point, line과 같이 trivial한 것부터 hyperplane, halfspace, ball, ellipsoid, polyhedra, cone 형태의 다양한 set들이 있다.

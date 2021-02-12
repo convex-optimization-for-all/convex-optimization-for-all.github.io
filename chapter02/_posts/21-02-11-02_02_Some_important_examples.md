@@ -2,6 +2,8 @@
 layout: post
 title: 02-02 Some important examples
 chapter: "02"
+order: 9
+owner: "Wontak Ryu"
 ---
 
 이 절에서는 convex set의 주요 예제들을 살펴본다. 

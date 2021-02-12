@@ -2,6 +2,8 @@
 layout: post
 title: 02-06-02 Dual generalized inequalities
 chapter: "02"
+order: 14
+owner: "Wontak Ryu"
 ---
 
 Proper cone으로 generalized inequality를 정의할 수 있다면, dual cone으로도 dual generalized inequality를 정의할 수 있지 않을까? Dual cone이 proper하다면 그럴 수 있다.
