@@ -67,9 +67,25 @@ $$\theta x_1 + (1-\theta)x_2 \in C$$
 
 새로운 내용을 추가하거나 직접 편집하시고 싶으신 경우에는 새로운 Branch를 생성하여 먼저 수정하신 후 `Pull Request`를 생성해주시면 됩니다. 신규 작성 및 기존 내용 수정은 누구나 가능합니다.
 
-### 3.1 Branch Naming Convention
+### 3.1. Repository Policy
 
-브랜치 이름은 다음 컨벤션에 맞춰 작성해주시면 됩니다.
+`main` 브랜치로 Merge 되기 위해서는 2명 이상의 Reviewer가 Approve 해야 합니다. Reviewer 목록은 아래와 같습니다.
 
-- `feature/chapter01/[내용]` : Posting 관련 수정 사항
-- `feature/setting/[내용]` : Blog 설정 관련 수정 사항
+- Curt-Park(박진우)
+- enfow(우경민)
+- RRoundTable(류원탁)
+- hunhoon21(신훈철)
+- LEEMINJOO(이민주)
+
+### 3.2. Branch Naming Convention
+
+브랜치 이름은 다음 컨벤션에 맞춰 생성해주시면 됩니다.
+
+```
+[feature/bugfix/hotfix]/[chapter, settings]-<변경_사항>
+```
+
+예시는 아래와 같습니다.
+
+- `feature/chapter01-fix_latex` : chapter01에서 latex 수정
+- `feature/setting-update_branch_convention` : Branch Convention 수정
