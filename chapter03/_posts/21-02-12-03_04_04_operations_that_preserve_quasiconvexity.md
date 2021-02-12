@@ -14,10 +14,10 @@ $$f$$가 quasiconvex function일 때, nonnegative weighted maximum $$f$$는 quas
 
 
 이 개념은 다음과 같이 확장될 수 있다.
->$$f(x) = sup_{y \in C}(w(y)g(x,y))$$ with  $$w(y) \geq 0$$, 
->where $$g(x,y)$$ is quasiconvex in $$x$$ for each $$y$$.</br>
+>$$f(x) = sup_{y \in C}(w(y)g(x,y))$$ with $$w(y) \geq 0$$, 
+>where $$g(x,y)$$ is quasiconvex in $$x$$ for each $$y$$.<br>
 
-</br>
+<br>
 
 ## Composition
 
@@ -27,14 +27,14 @@ $$f$$가 quasiconvex function일 때, nonnegative weighted maximum $$f$$는 quas
 Quasiconvex function과 affine 또는 linear-fractional 변환을 합성하면 quasiconvex function이 된다.
 만약 $$f$$가 quasiconvex라면, $$g(x) = f(Ax + b)$$ 역시 quasiconvex가 되고, $$\tilde{g}(x) = f((Ax + b)/(c^Tx + d))$$도 set {$$x \mid c^Tx + d > 0, (Ax + b)/(c^Tx + d) \in dom$$ $$f$$}에서 quasiconvex가 된다.
 
-</br>
+<br>
 
 ## Minimization
 
 만약 $$f(x, y)$$가 quasiconvex를 만족하고, $$C$$가 convex set일 때, 다음 조건이 성립한다.
 > $$g(x) = inf_{y \in C} f(x,y)$$ is quasiconvex if f is quasiconvex in x, y, and C is convex set.
 
-</br>
+<br>
 
 ## Representation via family of convex functions
 

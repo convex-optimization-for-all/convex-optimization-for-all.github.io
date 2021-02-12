@@ -18,28 +18,28 @@ owner: "Minjoo Lee"
 * max function 
 
 ## Univariate function
-*  Exponential function: 
-임의의 실수 $$a$$에 대해서, $$e^{ax}$$ 는 convex 이다.</br>
-> $$e^{ax}$$  is convex for any $$a \in \mathbb{R}$$
+* Exponential function: 
+임의의 실수 $$a$$에 대해서, $$e^{ax}$$ 는 convex 이다.<br>
+> $$e^{ax}$$ is convex for any $$a \in \mathbb{R}$$
 
 * Power function: 
-음수가 아닌 실수 $$x, a \in \mathbb{R}\_{+}$$ 에 대해서,  $$a$$가 속한 구간에 따라  $$x^a$$는 convex  혹은 concave이다. </br>
-> $$x^{a}$$  is convex on $$\mathbb{R}\_{+}$$ for any $$a \geq 1$$  or  $$a \leq 0$$  </br>
-> $$x^{a}$$  is concave on $$\mathbb{R}\_{+}$$f for any $$0 \leq a \leq 1$$  </br>
+음수가 아닌 실수 $$x, a \in \mathbb{R}_{+}$$ 에 대해서, $$a$$가 속한 구간에 따라 $$x^a$$는 convex 혹은 concave이다. <br>
+> $$x^{a}$$ is convex on $$\mathbb{R}_{+}$$ for any $$a \geq 1$$ or $$a \leq 0$$
+> $$x^{a}$$ is concave on $$\mathbb{R}_{+}$$f for any $$0 \leq a \leq 1$$
 
 
 ## Aﬃne function
-[03-01-01](https://wikidocs.net/17495) 절에서 언급한 바와 같이 모든 affine function은 convex이면서 동시에 concave 이다.
+[03-01-01]({% post_url chapter03/21-02-12-03_01_01_convex_functions_definition %}) 절에서 언급한 바와 같이 모든 affine function은 convex이면서 동시에 concave 이다.
 
-* on $$\mathbb{R}$$ and $$\mathbb{R}^ n$$  </br> 
-> $$a^Tx + b$$  is convex and concave
+* on $$\mathbb{R}$$ and $$\mathbb{R}^n$$ <br> 
+> $$a^Tx + b$$ is convex and concave
 
-* on $$\mathbb{R}^ {m \times n}$$  </br>
-> $$\text{tr}(A^TX) + b = \sum_{i=1}^m\sum_{j=1}^n A_{ij}X_{ij} + b$$  is convex and concave
+* on $$\mathbb{R}^{m \times n}$$ <br>
+> $$\text{tr}(A^TX) + b = \sum_{i=1}^m\sum_{j=1}^n A_{ij}X_{ij} + b$$ is convex and concave
 
 
 ## Quadratic function
-이차 함수 $$f(x)={1\over 2}x^TPx+q^Tx+r$$를 살펴보면, $$∇f(x)= Px+q$$ 이고 $$∇^2f(x) = P$$ 이다.  만일 $$P$$가 positive semideﬁnite이면 $$f(x)$$는 convex이다.
+이차 함수 $$f(x)={1\over 2}x^TPx+q^Tx+r$$를 살펴보면, $$∇f(x)= Px+q$$ 이고 $$∇^2f(x) = P$$ 이다. 만일 $$P$$가 positive semideﬁnite이면 $$f(x)$$는 convex이다.
 주어진 $$P \succeq 0$$ 에 대해
 >$$f(x)={1\over 2}x^TPx+q^Tx+r$$ is convex with $$P \in \mathbb{S}^n, q \in \mathbb{R}^n, r \in \mathbb{R}$$
 
@@ -57,8 +57,8 @@ Hessian matrix는 함수의 곡률(curvature)을 결정하며 positive semidefin
 모든 $$\mathbb{R}^n$$ 상의 Norm은 Convex 이다. 
 $$f:\mathbb{R}^n -> \mathbb{R}$$를 norm이라 하고 정의에 의해
 
->$$f(θx+(1−θ)y)≤θf(x)+(1−θ)f(y)$$, with  $$0≤θ≤1$$, for all  $$x,y∈dom f$$        
->$$\rVert x \rVert_{p} = (\sum_{i=1}^{n} x_i^p)^{1/p}$$ for $$p  ≥ 1, \rVert x \rVert = max_{i=1,.., n} |x_i|$$
+>$$f(θx+(1−θ)y)≤θf(x)+(1−θ)f(y)$$, with $$0≤θ≤1$$, for all $$x,y∈dom f$$  
+>$$\rVert x \rVert_{p} = (\sum_{i=1}^{n} x_i^p)^{1/p}$$ for $$p ≥ 1, \rVert x \rVert = max_{i=1,.., n} |x_i|$$
 
 
 ## Indicator function
@@ -66,22 +66,22 @@ $$f:\mathbb{R}^n -> \mathbb{R}$$를 norm이라 하고 정의에 의해
 
 즉. 정의 되지 않는 부분을 정의된 부분보다 항상 크게하여 convex의 성질을 가지게 한다.
 
->$$$$
->I_{C} (x) =
->\begin{cases}
->0, & \text{x ∈ C} \\\
->∞, & \text{x ∉ C}\\\
->\end{cases}
->$$$$
+>$$
+I_{C} (x) =
+\begin{cases}
+0, & \text{x ∈ C}\\
+∞, & \text{x ∉ C}\\
+\end{cases}
+>$$
 
 
 ## Support function
 임의의 집합 $$C$$가 있다고 가정하자. 집합 $$C$$가 Convex 이건 아니건 상관 없이 $$C$$의 support 함수는 convex 이다
-> $$I_{C}^{\*} (x)$$ = $$\max_{y∈C} x^Ty$$  is convex
+> $$I_{C}^{*} (x)$$ = $$\max_{y∈C} x^Ty$$ is convex
 
 Support function의 정의는 [Wikipedia 정의](https://en.wikipedia.org/wiki/Support_function)를 참고하라.
 
 ## Max function
 연속된 Convex 함수들의 Max 함수는 Convex 이다.
-즉, 연속된 Convex 함수들의 최댓값들을 이은 외각은  Convex가 된다.
-> $$f(x) = \max \\{x_1,..., x_n\\}$$  is convex,
+즉, 연속된 Convex 함수들의 최댓값들을 이은 외각은 Convex가 된다.
+> $$f(x) = \max \{x_1,..., x_n\}$$ is convex
