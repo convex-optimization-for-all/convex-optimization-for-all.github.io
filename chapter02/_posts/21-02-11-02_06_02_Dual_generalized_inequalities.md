@@ -43,9 +43,13 @@ generalized inequality $$ \succ_K^* $$에 대해 $$x$$는 $$S$$의 minimum이다
 
 기하학적으로 이 의미는 어떤 $$ \lambda \succ_K^* 0 $$이 있을 때 hyperplane $$\{ z \mid  \lambda^T (z-x) = 0 \}$$은 $$x$$에서 $$S$$의 strict supporting hyperplane이라는 것을 말한다. (Strict supporting hyperplane이란 점 $$x$$에서만 hyperplane이 교차한다는 것을 말한다.) 이때, 집합 $$S$$가 convex일 필요는 없다. 다음 그림에는 minimum $$x$$와 strict supporting hyperplane이 그려져 있다.
 
-![](https://wikidocs.net/images/page/17375/02.06_02_Minimum_element.PNG)
 
-**[Fig1] Minimum element [1]**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17375/02.06_02_Minimum_element.PNG" alt="[Fig1] Minimum element [1]" width="70%">
+  <figcaption style="text-align: center;">[Fig1] Minimum element [1]</figcaption>
+</p>
+</figure>
 
 #### Minimal element
 
@@ -56,22 +60,30 @@ $$\lambda \succ_K^* 0$$와 $$z \in S$$에 대해 $$x$$가 $$\lambda^T z$$의 min
 다음 그림을 보면 여러 개의 minimal이 존재하는 것을 확인할 수 있다. 왼쪽 아래에 검정색 굵은 선으로 된 부분이 minimal이 존재하는 영역이다. 
 여기서 $$\lambda^T_1 z$$의 minimizer는 $$x_1$$이며 $$\lambda_1 \succ_K^* 0$$ 이므로 minimal이다. 또다른 minimizer로 $$x_2$$가 존재한다. 
 
-
-![](https://wikidocs.net/images/page/17375/02.06_05_Minimal_element.PNG)
-
-**[Fig2] Minimal element [1]**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17375/02.06_05_Minimal_element.PNG" alt="[Fig2] Minimal element [1]" width="70%">
+  <figcaption style="text-align: center;">[Fig2] Minimal element [1]</figcaption>
+</p>
+</figure>
 
 하지만 반대는 성립하지 않는다. 점 $$x$$가 집합 $$S$$에 minimal이더라도 어떤 $$\lambda$$와 $$z \in S$$에 대해 $$x$$는 $$\lambda^T z$$의 minimizer는 아니다. 다음 그림을 보면 minimizer가 아닌 minimal을 확인할 수 있다. 또한, 여기서 convexity가 역을 성립시키는데 중요한 조건임을 알 수 있다.
 
-![](https://wikidocs.net/images/page/17423/02.06_06_Minimal_element2.PNG)
-
-**[Fig3] Minimal이지만 minimizer가 아닌 예 [1]**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17423/02.06_06_Minimal_element2.PNG" alt="[Fig3] Minimal이지만 minimizer가 아닌 예 [1]" width="70%">
+  <figcaption style="text-align: center;">[Fig3] Minimal이지만 minimizer가 아닌 예 [1]</figcaption>
+</p>
+</figure>
 
 이 converse theorem은 $$\lambda_1 \succ_K^* 0$$으로 강화되지는 않는다. 아래 왼쪽 그림을 보면 $$x_1 \in S_1$$이 minimal이지만 $$\lambda_1^T x_1$$의 minimizer는 아님을 알 수 있다. 오른쪽 그림은 $$x_2 \in S_2$$이 minimal은 아니지만  $$\lambda_2^T x_2$$의 minimizer라는 것을 알 수 있다.
 
-![](https://wikidocs.net/images/page/17423/02.06_07_Minimal_element3.PNG)
-
-**[Fig4] $$\lambda_1 \succ_K^* 0$$으로 강화되지 않는 Minimal 예  [1]**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17423/02.06_07_Minimal_element3.PNG" alt="[Fig4] $$\lambda_1 \succ_K^* 0$$으로 강화되지 않는 Minimal 예  [1]" width="70%">
+  <figcaption style="text-align: center;">[Fig4] $$\lambda_1 \succ_K^* 0$$으로 강화되지 않는 Minimal 예  [1]</figcaption>
+</p>
+</figure>
 
 #### Optimal production frontier
 $$n$$가지 자원 (노동, 전기, 천연가스, 물 등)을 이용해서 생산해야 하는 제품이 있다고 해보자. 
@@ -90,6 +102,10 @@ Pareto optimality에 대해서 간단히 살펴보자.
 
 다음 그림은 이런 상황을 잘 보여주고 있다. 그림에서 $$x_1, x_2, x_3$$는  Pareto optimal인데  $$x_4, x_5$$는 아니다.
 
-![](https://wikidocs.net/images/page/17423/02.06_08_Pareto_optimal.PNG)
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17423/02.06_08_Pareto_optimal.PNG" alt="[Fig5] Optimal production frontier [1]" width="70%">
+  <figcaption style="text-align: center;">[Fig5] Optimal production frontier [1]</figcaption>
+</p>
+</figure>
 
-**[Fig5] Optimal production frontier [1]**

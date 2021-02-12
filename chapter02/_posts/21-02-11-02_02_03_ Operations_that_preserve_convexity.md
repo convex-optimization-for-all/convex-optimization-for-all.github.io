@@ -48,16 +48,22 @@ Perspective function을 수식으로 정의하면 $$P : R^{n+1} \rightarrow R^{n
 
 Perspective function은 pin-hole 카메라가 작동하는 원리와 같다. 멀리 있는 피사체가 pin-hole을 통과하게 되면 pine-hole과 피사체와의 거리에 비례해서 크기가 축소되기 때문이다. 다음 그림에 이런 원리가 그려져 있는데 직관적으로 동일한 captured ray 안에 피사체가 존재하면 상도 동일하게 맺힐 것이라는 것을 알 수 있다.
 
-![](https://wikidocs.net/images/page/17372/02.03_03_pine_hole.png)
-
-**[Fig 1] pin-hole 카메라 작동 원리**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17372/02.03_03_pine_hole.png" alt="[Fig 1] pin-hole 카메라 작동 원리" width="70%">
+  <figcaption style="text-align: center;">[Fig 1] pin-hole 카메라 작동 원리</figcaption>
+</p>
+</figure>
 
 
 아래 그림에서 피사체의 한 점이 좌표 $$(x_1, x_2, x_3)$$로 표현된다고 하면, 검정색 가로선은 $$x_3 = 0 \in R^3$$이고 원점을 포함한다. 이때 원점이 pine-hole이 되며 Image plane인 $$x_3 = −1$$에 피사체가 맺힌다. 피사체의 점은 perspective function에 의해 맵핑되어 Image plane에 점 $$-(x_1 / x_3, x_2 / x_3)$$으로 맺히게 된다.
 
-![](https://wikidocs.net/images/page/17372/02.03_04_pine_hole_camera_model.png)
-
-**[Fig 2] pin-hole 카메라의 perspective function [1]**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17372/02.03_04_pine_hole_camera_model.png" alt="[Fig 2] pin-hole 카메라의 perspective function [1]" width="70%">
+  <figcaption style="text-align: center;">[Fig 2] pin-hole 카메라의 perspective function [1]</figcaption>
+</p>
+</figure>
 
 ## Linear-fractional functions
 
@@ -71,7 +77,9 @@ Linear-fractional function에서 $$c = 0$$이고 $$d \gt 0$$이면 affine functi
 
 다음 그림은 linear fractional function $$f(x) = \frac{1}{(x_1 + x_2 + 1)} x$$, **dom** $$f(x) = $$ {$$(x_1, x_2) $$ | $$x_1 + x_2 + 1 \gt 0$$}의 domain과 image를 보여주고 있다. $$C \subseteq R^2$$일 때 왼쪽 그림은 domain이며, 점선은 domain $$f$$의 boundary이다. 오른쪽 그림은 $$f$$의 image이며 점선은  domain $$f^{-1}$$의  boundary이다.
 
-
-![](https://wikidocs.net/images/page/17372/02.03_05_linear_fractional_function.PNG)
-
-**[Fig 3] Linear-fractional functions [1]**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17372/02.03_05_linear_fractional_function.PNG" alt="[Fig 3] Linear-fractional functions [1]" width="70%">
+  <figcaption style="text-align: center;">[Fig 3] Linear-fractional functions [1]</figcaption>
+</p>
+</figure>

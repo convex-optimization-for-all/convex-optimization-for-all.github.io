@@ -16,9 +16,12 @@ Hyperplane은 $$n$$차원의 공간을 반으로 가르는 $$n-1$$차원의 subs
 
 다음 그림에 hyperplane이 있다. 이 hyperplane에 속하는 임의의 x에 대해서 $$(x - x_0)$$와 $$a$$는 직교(orthogonal)한다. 따라서, $$a^T (x - x_0) = 0$$이므로  $$a^T x =  b$$라면 $$b$$는 $$a^Tx_0$$이다.
 
-![](https://wikidocs.net/images/page/17371/02.05_Hyperplane.PNG)
-
-**[Fig1] Hyperplane [1]**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17371/02.05_Hyperplane.PNG" alt="[Fig1] Hyperplane [1]" width="70%">
+  <figcaption style="text-align: center;">[Fig1] Hyperplane [1]</figcaption>
+</p>
+</figure>
 
 ## Halfspaces
 
@@ -28,9 +31,12 @@ Halfspace는 hyperplane을 포함한 나머지 한쪽 space를 말한다. 따라
 
 Hyperplane $$a^T x = b$$일 때 halfspace $$a^T x \ge b$$는 normal vector a의 방향이 되며, halfspace $$a^T x \le b$$는 -a의 방향이 된다.
 
-![](https://wikidocs.net/images/page/17371/02.06_Halfspace.PNG)
-
-**[Fig2] Halfspace [1]**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17371/02.06_Halfspace.PNG" alt="[Fig2] Halfspace [1]" width="70%">
+  <figcaption style="text-align: center;">[Fig2] Halfspace [1]</figcaption>
+</p>
+</figure>
 
 참고로, {$$x : a^T x \le b$$}의 interior인  {$$x : a^T x \lt b$$}를 open halfspace라고 한다.
 
@@ -56,9 +62,12 @@ Euclidean ball과 관련된 convex set으로 ellipsoid가 있으며 다음과 �
 
 다음 그림은 ellipsoid를 보여주고 있다. 중심 $$x_c$$는 점으로 장축과 단축은 line segment로 그려져 있다.
 
-![](https://wikidocs.net/images/page/17371/02.07_Ellipsoid.PNG)
-
-**[Fig3] Ellipsoid [1]**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17371/02.07_Ellipsoid.PNG" alt="[Fig3] Ellipsoid [1]" width="70%">
+  <figcaption style="text-align: center;">[Fig3] Ellipsoid [1]</figcaption>
+</p>
+</figure>
 
 Ellipsoid 식을 다음과 같이  $$x_c$$를 중심으로 $$Au$$ 벡터를 더하는 형태로 표현할 수도 있다.
 
@@ -79,13 +88,22 @@ P-norm이 다음과 같이 정의될 때 norm ball의 모양은 다음과 같다
 
 이 그림은 3D로 $$p$$값에 따라 norm ball의 모양을 보여준다. $$p$$가 1이상이어야 norm ball이 convex set임을 알 수 있다.
 
-![](https://wikidocs.net/images/page/17371/02.07_2_norm_ball.png)
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17371/02.07_2_norm_ball.png" alt="[Fig4] Norm ball [1]" width="70%">
+  <figcaption style="text-align: center;">[Fig4] Norm ball [1]</figcaption>
+</p>
+</figure>
 
 이 그림은 2D로 p값에 따라 norm ball의 모양을 보여준다.
 
-![](https://wikidocs.net/images/page/17371/02.07_3_norm_ball2.PNG)
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17371/02.07_3_norm_ball2.PNG" alt="[Fig4] Norm ball [2]" width="70%">
+  <figcaption style="text-align: center;">[Fig4] Norm ball [2]</figcaption>
+</p>
+</figure>
 
-**[Fig4] Norm ball**
 
 ## Polyhedra
 
@@ -97,9 +115,12 @@ Polyhedron은 선형 부등식과 등식의 교집합으로 정의된다. Affine
 
 다음 그림은 다섯 개 halfspace의 교집합으로 만들어진 오각형 polyhedron이다. 이  polyhedron은 outward normal vectors $$a1, . . . ., a5$$를 갖는다.
 
-![](https://wikidocs.net/images/page/17371/02.09_Polyhedra.PNG)
-
-**[Fig5] Polyhedra [1]**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17371/02.09_Polyhedra.PNG" alt="[Fig5] Polyhedra [1]" width="70%">
+  <figcaption style="text-align: center;">[Fig5] Polyhedra [1]</figcaption>
+</p>
+</figure>
 
 행렬 표현으로 간단히 다음과 같이 정의하기도 한다.
 
@@ -132,9 +153,12 @@ Simplex는 $$n$$차원 공간에서 만들 수 있는 가장 간단한 다각형
 
 다음 그림은 0차원에서 3차원까지의 simplex를 보여주고 있다. 0차원에서는 점, 1차원에서는 선분, 2차원에서는 삼각형, 3차원에서는 사면체가 해당 차원의 simplex이다.
 
-![](https://wikidocs.net/images/page/17371/02.02_10_Simplex.PNG)
-
-**[Fig2] Simplex [source - wikipedia]** 
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17371/02.02_10_Simplex.PNG" alt="[Fig6] Simplex [source - wikipedia]" width="70%">
+  <figcaption style="text-align: center;">[Fig6] Simplex [source - wikipedia]</figcaption>
+</p>
+</figure>
 
 대표적인 simplex의 종류에는 probability simplex가 있다.
 

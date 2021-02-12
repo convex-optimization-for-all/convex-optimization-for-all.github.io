@@ -16,8 +16,12 @@ owner: "Wontak Ryu"
 
 다음 그림은 disjoint convex set인 $$C$$와 $$D$$를 나누는 separating hyperplane을 보여주고 있다.
 
-
-![](https://wikidocs.net/images/page/17374/02.05_01_Seperating_hyperplan_theorem.PNG)
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17374/02.05_01_Seperating_hyperplan_theorem.PNG" alt="[Fig1] Separating hyperplane theorem [1]" width="70%">
+  <figcaption style="text-align: center;">[Fig1] Separating hyperplane theorem [1]</figcaption>
+</p>
+</figure>
 
 **[Fig 1] Separating hyperplane [1]**
 
@@ -38,9 +42,11 @@ Separating hyperplane theorems의 역은 성립하지 않는다. 즉, separating
 
 기하학적으로 supporting hyperplane $$\{x \mid a^T x = a^T x_0\}$$은 점 $$x_0$$에서 접선으로 공간에서 집합 $$C$$를 분리하며, halfspace $$a^T x \le a^T x_0$$는 집합 $$C$$를 포함한다.
 
-![](https://wikidocs.net/images/page/17374/02.05_02_Supporting_hyperplane_theorem.PNG)
-
-**[Fig 2] Supporting hyperplane [1]**
-
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17374/02.05_02_Supporting_hyperplane_theorem.PNG" alt="[Fig 2] Supporting hyperplane [1]" width="70%">
+  <figcaption style="text-align: center;">[Fig 2] Supporting hyperplane [1]</figcaption>
+</p>
+</figure>
 
 

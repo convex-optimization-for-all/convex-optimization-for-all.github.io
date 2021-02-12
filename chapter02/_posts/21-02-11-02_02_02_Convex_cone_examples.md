@@ -16,9 +16,12 @@ owner: "Wontak Ryu"
 
 아래 그림에는 $$l_2$$ norm $$\left \Vert  · \right \|_2$$에 대한 norm cone이 그려져 있다. 이를 second-order cone 또는 ice cream cone이라고도 부른다.
 
-![](https://wikidocs.net/images/page/17371/02.08_Norm_Cone.PNG)
-
-**[Fig1] Norm Cone [1]**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17371/02.08_Norm_Cone.PNG" alt="[Fig1] Norm Cone [1]" width="70%">
+  <figcaption style="text-align: center;">[Fig1] Norm Cone [1]</figcaption>
+</p>
+</figure>
 
 ## Normal Cone
 
@@ -36,9 +39,13 @@ Normal cone은 집합 $$C$$에 속하는 임의의 점 $$x$$와 집합 $$C$$의 
 
 다음 그림에 normal vector이 그려져 있다.
 
-![](https://wikidocs.net/images/page/17371/02.04_2_Normal_Cone.PNG)
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17371/02.04_2_Normal_Cone.PNG" alt="[Fig2] Normal Cone [3]" width="70%">
+  <figcaption style="text-align: center;">[Fig2] Normal Cone [3]</figcaption>
+</p>
+</figure>
 
-**[Fig2] Normal Cone [3]**
 
 ## Positive semidefinite cone
 
@@ -57,9 +64,11 @@ y, z
 \end{bmatrix}
 \in \mathbb{S}^2_+ \iff x \ge 0, z \ge 0, xz \ge y^2$$
 
-![](https://wikidocs.net/images/page/17371/02.10_Positive_Semidefinite_Cone.PNG)
-
-**[Fig3] Positive semidefinite cone [1]**
-
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17371/02.10_Positive_Semidefinite_Cone.PNG" alt="[Fig3] Positive semidefinite cone [1]" width="70%">
+  <figcaption style="text-align: center;">[Fig3] Positive semidefinite cone [1]</figcaption>
+</p>
+</figure>
 
 

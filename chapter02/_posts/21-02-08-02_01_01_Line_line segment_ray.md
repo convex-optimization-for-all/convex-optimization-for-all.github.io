@@ -10,7 +10,13 @@ Affine set, convex set, cone을 정의하기 위해 먼저 직선(line), 선분(
 
 Line은 두 점을 지나면서 양쪽 방향으로 무한히 커지는 선을 말한다. 반면, line segment는 두 점 사이에서만 정의되는 선을 말하며, ray는 한 점에서 시작해서 다른 점을 지나면서 무한히 커지는 선을 말한다. 다음 그림에서는 line과 line segmemt를 보여주고 있다. 파라미터 $$\theta$$의 범위에 따라 line, line segment, ray가 어떻게 정의될 지 상상해보라.
 
-![](https://wikidocs.net/images/page/17382/02.01_Line_Segment.PNG)
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17382/02.01_Line_Segment.PNG" alt="Line Segment" width="70%">
+  <figcaption style="text-align: center;">Line Segment</figcaption>
+</p>
+</figure>
+
 
 **[Fig1] $$x_1$$과 $$x_2$$을 지나는 Line과 Line Segment [1]** 
 

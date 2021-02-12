@@ -73,8 +73,11 @@ $$R^2_{+}$$ cone $$K$$를 고려해 보자. Inequality $$x \preceq_{K} y$$는 y�
 
 아래 그림에서 $$S_1$$은 minimum $$x_1$$을 갖는다. 집합 $$x + K$$은 옅은 회색으로 표시되어 있으며 집합 $$S_1$$은 $$S_1 \subseteq x + K$$이기 때문에 $$x_1$$은  minimum이다. $$S_2$$은 minimal $$x_2$$을 갖는다. 집합 $$x - K$$은 옅은 회색으로 표시되어 있으며 집합 $$S_2$$은 $$(x - K) \cap S = $$ {$$x$$}이기 때문에  $$x_2$$는 minimal이다.
 
-![](https://wikidocs.net/images/page/17373/02.06_01_Minimum_and_minimal.PNG)
-
-**[Fig1] Minimum and minimal elements [1]**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/17373/02.06_01_Minimum_and_minimal.PNG" alt="[Fig1] Minimum and minimal elements [1]" width="70%">
+  <figcaption style="text-align: center;">[Fig1] Minimum and minimal elements [1]</figcaption>
+</p>
+</figure>
 
 
