@@ -47,7 +47,7 @@ chapter: "18"
 ```
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{image_path}" alt="{description of image}" width="{scale_ratio}%">
+  <img src="{image_path}" alt="{description of image}" width="{scale_ratio}%" height="{scale_ratio}%">
   <figcaption style="text-align: center;">{figcaption}</figcaption>
 </p>
 </figure>
