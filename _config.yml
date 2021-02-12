@@ -19,5 +19,9 @@ plugins:
 version:             1.1.0
 markdown: kramdown
 
-# Google Analytics
-g-analytics: G-EZFDSGJ1L5
+# Analytics
+analytics:
+  provider               : "google-gtag" # false (default), only possible "google-gtag"
+  google:
+    tracking_id          : "G-EZFDSGJ1L5"
+    anonymize_ip         : # true, false (default)
