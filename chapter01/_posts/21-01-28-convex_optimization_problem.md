@@ -51,9 +51,13 @@ convex function과 convex set 사이에는 다음과 같은 밀접한 관계가 
 
 여기서 epigraph는 무엇을 의미하는 것일까? Epigraph에서 'Epi'는 'above'를 뜻하며, 곧 epigraph는 'above the graph'를 의미한다. 즉, epi f란 f의 그래프의 위쪽 영역에 해당하는 집합이다. 함수 epigraph는 다음과 같이 정의한다.
 
->epigraph of f: $$R^n \rightarrow R:$$
->
->epi f = {$$(x, t) \in R^{n+1}$$ \| $$x \in$$ dom f, f($$x$$) $$\le t$$}
+>$$
+\eqalign{
+& \text{epigraph of } f: R^n \rightarrow R\\
+& \text{epi } f = \{(x, t) \in R^{n+1} \mid x \in \text{ dom } f, f(x) \le t\}
+}
+$$
+
 
 ![](https://wikidocs.net/images/page/17206/epigraph.png)
 
