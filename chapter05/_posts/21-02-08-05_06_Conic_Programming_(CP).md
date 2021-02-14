@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 05 Canonical Problems
+title: 05-06 Conic Programming (CP)
 chapter: "05"
-order: 1
+order: 7
 ---
 
 # Canonical Problems

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 05 Canonical Problems
+title: 05-05 Semidefinite Programming (SDP)
 chapter: "05"
-order: 1
+order: 6
 ---
 
 # Canonical Problems
