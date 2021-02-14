@@ -58,6 +58,22 @@ $$\theta x_1 + (1-\theta)x_2 \in C$$
 
 $$\theta x_1 + (1-\theta)x_2 \in C$$
 
+### 2.3. Image Convention
+
+- Posting 파일에서 이미지를 삽일할 때 아래의 Convention을 따라야합니다.
+
+```
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="{image_path}" alt="{description of image}" width="{scale_ratio}%" height="{scale_ratio}%">
+  <figcaption style="text-align: center;">{figcaption}</figcaption>
+</p>
+</figure>
+```
+
+- figure class는 `image`여야합니다.
+- {}에 들어갈 내용을 적절히 넣어야합니다.
+
 ## 3. GitHub Convnention
 
 작성 내용에 질문이 있거나 수정 사항을 발견하신 경우 다음 두 방법 중 하나로 남겨주시면 됩니다.
@@ -88,4 +104,4 @@ $$\theta x_1 + (1-\theta)x_2 \in C$$
 예시는 아래와 같습니다.
 
 - `feature/chapter01-fix_latex` : chapter01에서 latex 수정
-- `feature/setting-update_branch_convention` : Branch Convention 수정
+- `feature/settings-update_branch_convention` : Branch Convention 수정
