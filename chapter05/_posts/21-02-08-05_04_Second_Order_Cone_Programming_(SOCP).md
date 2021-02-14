@@ -1,8 +1,7 @@
 ---
 layout: post
-title: 05-05 Second-Order Cone Programming (SOCP)
+title: 05-04 Second-Order Cone Programming (SOCP)
 chapter: "05"
-order: 6
+order: 5
 ---
 
-# Canonical Problems

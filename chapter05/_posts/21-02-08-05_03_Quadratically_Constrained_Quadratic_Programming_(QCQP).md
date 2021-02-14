@@ -5,4 +5,3 @@ chapter: "05"
 order: 4
 ---
 
-# Canonical Problems

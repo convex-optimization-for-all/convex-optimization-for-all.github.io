@@ -1,8 +1,6 @@
 ---
 layout: post
-title: 05-03 Quadratic Programming (QP)
+title: 05-02 Quadratic Programming (QP)
 chapter: "05"
-order: 4
+order: 3
 ---
-
-# Canonical Problems
