@@ -3,6 +3,7 @@ layout: post
 title: 05-01 Linear Programming (LP)
 chapter: "05"
 order: 2
+owner: "Hooncheol Shin"
 ---
 
 목적함수(objective function)와 제약함수(constraint function)가 모두 affine이면 그 최적화 문제는 *linear program* (LP)이라고 불린다. General linear program은 다음과 같은 형태를 띈다.

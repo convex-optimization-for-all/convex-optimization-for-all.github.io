@@ -3,6 +3,7 @@ layout: post
 title: 05 Canonical Problems
 chapter: "05"
 order: 1
+owner: "Hooncheol Shin"
 ---
 
 # Canonical Problems
