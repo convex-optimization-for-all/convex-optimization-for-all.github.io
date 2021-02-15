@@ -75,7 +75,7 @@ Linear-fractional function에서 $$c = 0$$이고 $$d \gt 0$$이면 affine functi
 
 기하학적으로 이 함수는 affine function $$A x + b$$를 적용하고  projection function을 다시 적용한 것으로 볼 수 있다. 단, vector의 마지막 항목이 $$c^T x + d$$인 경우이다.
 
-다음 그림은 linear fractional function $$f(x) = \frac{1}{(x_1 + x_2 + 1)} x$$, **dom** $$f(x) = $$ {$$(x_1, x_2) $$ | $$x_1 + x_2 + 1 \gt 0$$}의 domain과 image를 보여주고 있다. $$C \subseteq R^2$$일 때 왼쪽 그림은 domain이며, 점선은 domain $$f$$의 boundary이다. 오른쪽 그림은 $$f$$의 image이며 점선은  domain $$f^{-1}$$의  boundary이다.
+다음 그림은 linear fractional function $$f(x) = \frac{1}{(x_1 + x_2 + 1)} x$$, **dom** $$f(x) = $$ {$$(x_1, x_2) $$ \mid $$x_1 + x_2 + 1 \gt 0$$}의 domain과 image를 보여주고 있다. $$C \subseteq R^2$$일 때 왼쪽 그림은 domain이며, 점선은 domain $$f$$의 boundary이다. 오른쪽 그림은 $$f$$의 image이며 점선은  domain $$f^{-1}$$의  boundary이다.
 
 <figure class="image" style="align: center;">
 <p align="center">
