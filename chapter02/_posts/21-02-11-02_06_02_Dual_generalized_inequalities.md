@@ -81,7 +81,7 @@ $$\lambda \succ_K^* 0$$와 $$z \in S$$에 대해 $$x$$가 $$\lambda^T z$$의 min
 <figure class="image" style="align: center;">
 <p align="center">
   <img src="https://wikidocs.net/images/page/17423/02.06_07_Minimal_element3.PNG" alt="[Fig4] $$\lambda_1 \succ_K^* 0$$으로 강화되지 않는 Minimal 예  [1]" width="70%">
-  <figcaption style="text-align: center;">[Fig4] $$\lambda_1 \succ_K^* 0$$으로 강화되지 않는 Minimal 예  [1]</figcaption>
+  <figcaption style="text-align: center;">$$\text{[Fig4] } \lambda_1 \succ_K^* 0 \text{ 으로 강화되지 않는 Minimal 예  [1]}$$</figcaption>
 </p>
 </figure>
 
