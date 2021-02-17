@@ -13,12 +13,10 @@ Line은 두 점을 지나면서 양쪽 방향으로 무한히 커지는 선을 �
 <figure class="image" style="align: center;">
 <p align="center">
   <img src="https://wikidocs.net/images/page/17382/02.01_Line_Segment.PNG" alt="Line Segment" width="70%">
-  <figcaption style="text-align: center;">Line Segment</figcaption>
+  <figcaption style="text-align: center;">$$\text{[Fig1] } x_1\text{과 } x_2 \text{ 을 지나는 Line과 Line Segment [1]}$$</figcaption>
 </p>
 </figure>
 
-
-**[Fig1] $$x_1$$과 $$x_2$$을 지나는 Line과 Line Segment [1]** 
 
 [참고] Set에 포함된 임의의 두 점을 이용해서 line 또는 line segment, ray를 만들었을 때, 이들이 set에 포함되는지 여부로 set을 정의하게 된다. (이때 set을 여러 점으로도 정의할 수 있는데, set에 포함된 여러 점들을 이용해서 affine combination, convex combination, conic combination 했을 때 그 결과가 set에 포함되는지 여부로 정의하게 된다. 자세한 내용은  뒷 절에서 설명할 것이다.)
 
