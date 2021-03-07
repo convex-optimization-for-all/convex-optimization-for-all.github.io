@@ -1,0 +1,9 @@
+# Reference: https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners#codeowners-syntax
+
+*           @enfow @Curt-Park
+
+/chapter01/ @enfow
+/chapter02/ @RRoundTable
+/chapter03/ @LEEMINJOO
+
+/chapter05/ @hunhoon21
