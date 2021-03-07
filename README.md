@@ -124,6 +124,10 @@ Contributions of any kind are welcome!
 
 ## 다루는 내용들
 
+| idx | Title | CO for all | Lecture | Slide |
+|---|---|---|---|---|
+| 1 | Introduction | [Introduction](<https://wikidocs.net/17202>)  | [Lecture](<https://www.youtube.com/watch?v=XFKBNJ14UmY&ab_channel=RyanT>)  | [Note](<http://www.stat.cmu.edu/~ryantibs/convexopt-F16/lectures/intro.pdf>)  |
+
 1. Introduction
 2. Convex Sets
 3. Convex Functions
