@@ -60,7 +60,7 @@ wgm0601@gmail.com / 우경민 (마키나락스)
 - [CMU Convex Optimization Lecture 2016](<http://www.stat.cmu.edu/~ryantibs/convexopt-F16/>)
 - [CMU Convex Optimization Lecture 2019](<http://www.stat.cmu.edu/~ryantibs/convexopt/>)
 
-## 원저자 및 리뷰어
+## 원저자 및 리뷰어 (가나다 순)
 
 ### 원저자
 
