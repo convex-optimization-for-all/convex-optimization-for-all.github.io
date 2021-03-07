@@ -1,4 +1,7 @@
 # 모두를 위한 컨벡스 최적화
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 - [블로그](<https://convex-optimization-for-all.github.io/>)
 - [모두를 위한 컨벡스 최적화](<https://wikidocs.net/book/1896>)
@@ -20,46 +23,6 @@ Convex Optimization은 머신러닝과 직접적으로 연관이 많을 뿐더�
 본 Blog의 주요 컨텐츠는 [모두를 위한 컨벡스 최적화](<https://wikidocs.net/book/1896>)의 저자 분들의 동의를 구해 Migration한 내용들입니다. 원 컨텐츠는 Convex Optimization에 관한 한국어 컨텐츠 중 가장 잘 알려져 있으면서 내용적으로도 부족함이 없습니다. 본 Blog에서는 기존 WikiDocs 컨텐츠를 이어 받아 Open Source로 만들어 보고자 합니다. 따라서 누구나 컨텐츠에 이슈를 제기하고 직접 Pull Request를 생성하여 기여할 수 있습니다. 이를 통해 [모두를 위한 컨벡스 최적화](<https://wikidocs.net/book/1896>) 저자분들의 뜻이기도 한 '전국민의 지적 성장과 컨벡스 최적화의 국내 대중화'에 작은 보탬이 될 수 있기를 바랍니다.
 
 wgm0601@gmail.com / 우경민 (마키나락스)
-
-## 만든 사람들
-
-### 모두를 위한 컨벡스 최적화 저자
-
-- 김기범(astroblasterr@gmail.com)
-- 김정훈(placidus36@gmail.com)
-- 노원종(wnoh27@naver.com)
-- 박진우(www.jwpark.co.kr@gmail.com)
-- 윤성진(sjyoon@gmail.com)
-- 이규복(gyubokl@gmail.com)
-- 한영일(thinkingtoyihan@gmail.com)
-- 황혜진(brillianthhj@gmail.com)
-- [저자 소개](<https://wikidocs.net/17197>)
-
-### 모두를 위한 컨벡스 최적화 리뷰어
-
-- 이주희 (juhee1108@gmail.com)
-- 장승환 (schang.math@gmail.com)
-- 정태수 (tcheong@korea.ac.kr)
-- [리뷰어 소개](<https://wikidocs.net/17197>)
-
-### Open Source Migrator
-
-- 우경민(wgm0601@gmail.com)
-- 류원탁
-- 이민주
-- 정영재
-- 신훈철
-
-### Open Source Contributor
-
-- 박진우(www.jwpark.co.kr@gmail.com)
-- 우경민(wgm0601@gmail.com)
-- 류원탁
-- 신훈철
-- 정영재
-- 이민주
-- 김준우
-- 김민섭
 
 
 ## 다루는 내용들
@@ -97,17 +60,42 @@ wgm0601@gmail.com / 우경민 (마키나락스)
 - [CMU Convex Optimization Lecture 2016](<http://www.stat.cmu.edu/~ryantibs/convexopt-F16/>)
 - [CMU Convex Optimization Lecture 2019](<http://www.stat.cmu.edu/~ryantibs/convexopt/>)
 
+## 원저자 및 리뷰어
+
+### 원저자 (사전순)
+
+- 김기범(astroblasterr@gmail.com)
+- 김정훈(placidus36@gmail.com)
+- 노원종(wnoh27@naver.com)
+- 박진우(www.jwpark.co.kr@gmail.com)
+- 윤성진(sjyoon@gmail.com)
+- 이규복(gyubokl@gmail.com)
+- 한영일(thinkingtoyihan@gmail.com)
+- 황혜진(brillianthhj@gmail.com)
+
+### 리뷰어 (사전순)
+
+- 이주희 (juhee1108@gmail.com)
+- 장승환 (schang.math@gmail.com)
+- 정태수 (tcheong@korea.ac.kr)
+
+[원저자 및 리뷰어 상세소개](<https://wikidocs.net/17197>)
+
+## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/enfow/"><img src="{{site.imgurl}}/profile/kyeongmin-woo.png" width="100px;" alt=""/><br /><sub><b>Kyeongmin Woo</b></sub></a><br /><a href="https://github.com/enfow/" title="Code">💻</a> <a href="https://github.com/enfow/" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://www.linkedin.com/in/enfow"><img src="https://avatars.githubusercontent.com/u/31348169?v=4?s=100" width="100px;" alt=""/><br /><sub><b>KyeongMin WOO</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=enfow" title="Code">💻</a></td>
   </tr>
 </table>
 
-<!-- markdownlint-enable -->
+<!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
