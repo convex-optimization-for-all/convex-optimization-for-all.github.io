@@ -106,7 +106,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center">
       <a href="https://github.com/enfow/">
-        <img src="{{site.url}}/img/profile/kyeongmin-woo.png" width="100px;" alt=""/>
+        <img src="./img/profile/kyeongmin-woo.png" width="100px;" alt=""/>
         <br />
         <sub><b>Kyeongmin Woo</b></sub></a>
         <br />
