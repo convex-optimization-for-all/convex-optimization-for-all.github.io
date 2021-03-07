@@ -45,25 +45,6 @@ wgm0601@gmail.com / 우경민 (마키나락스)
 - 정태수 (tcheong@korea.ac.kr)
 - [리뷰어 소개](<https://wikidocs.net/17197>)
 
-### Open Source Migrator
-
-- 우경민(wgm0601@gmail.com)
-- 류원탁
-- 이민주
-- 정영재
-- 신훈철
-
-### Open Source Contributor
-
-- 박진우(www.jwpark.co.kr@gmail.com)
-- 우경민(wgm0601@gmail.com)
-- 류원탁
-- 신훈철
-- 정영재
-- 이민주
-- 김준우
-- 김민섭
-
 
 ## 다루는 내용들
 
@@ -101,7 +82,10 @@ wgm0601@gmail.com / 우경민 (마키나락스)
 - [CMU Convex Optimization Lecture 2019](<http://www.stat.cmu.edu/~ryantibs/convexopt/>)
 
 
+## Contributors ✨
+
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -111,17 +95,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
 </table>
 
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
