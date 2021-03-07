@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "enfow",
+      "name": "KyeongMin WOO",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31348169?v=4",
+      "profile": "http://www.linkedin.com/in/enfow",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "convex-optimization-for-all.github.io",
+  "projectOwner": "convex-optimization-for-all",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
