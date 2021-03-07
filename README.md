@@ -24,27 +24,6 @@ Convex Optimization은 머신러닝과 직접적으로 연관이 많을 뿐더�
 
 wgm0601@gmail.com / 우경민 (마키나락스)
 
-## 만든 사람들
-
-### 모두를 위한 컨벡스 최적화 저자
-
-- 김기범(astroblasterr@gmail.com)
-- 김정훈(placidus36@gmail.com)
-- 노원종(wnoh27@naver.com)
-- 박진우(www.jwpark.co.kr@gmail.com)
-- 윤성진(sjyoon@gmail.com)
-- 이규복(gyubokl@gmail.com)
-- 한영일(thinkingtoyihan@gmail.com)
-- 황혜진(brillianthhj@gmail.com)
-- [저자 소개](<https://wikidocs.net/17197>)
-
-### 모두를 위한 컨벡스 최적화 리뷰어
-
-- 이주희 (juhee1108@gmail.com)
-- 장승환 (schang.math@gmail.com)
-- 정태수 (tcheong@korea.ac.kr)
-- [리뷰어 소개](<https://wikidocs.net/17197>)
-
 
 ## 다루는 내용들
 
@@ -81,6 +60,26 @@ wgm0601@gmail.com / 우경민 (마키나락스)
 - [CMU Convex Optimization Lecture 2016](<http://www.stat.cmu.edu/~ryantibs/convexopt-F16/>)
 - [CMU Convex Optimization Lecture 2019](<http://www.stat.cmu.edu/~ryantibs/convexopt/>)
 
+## 만든 사람들
+
+### 모두를 위한 컨벡스 최적화 저자
+
+- 김기범(astroblasterr@gmail.com)
+- 김정훈(placidus36@gmail.com)
+- 노원종(wnoh27@naver.com)
+- 박진우(www.jwpark.co.kr@gmail.com)
+- 윤성진(sjyoon@gmail.com)
+- 이규복(gyubokl@gmail.com)
+- 한영일(thinkingtoyihan@gmail.com)
+- 황혜진(brillianthhj@gmail.com)
+- [저자 소개](<https://wikidocs.net/17197>)
+
+### 모두를 위한 컨벡스 최적화 리뷰어
+
+- 이주희 (juhee1108@gmail.com)
+- 장승환 (schang.math@gmail.com)
+- 정태수 (tcheong@korea.ac.kr)
+- [리뷰어 소개](<https://wikidocs.net/17197>)
 
 ## Contributors ✨
 
