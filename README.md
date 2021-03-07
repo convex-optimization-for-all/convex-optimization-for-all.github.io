@@ -119,23 +119,8 @@ wgm0601@gmail.com / 우경민 (마키나락스)
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-- 우경민(wgm0601@gmail.com)
-- 류원탁
-- 이민주
-- 정영재
-- 신훈철
-
-### Open Source Contributor
-
-- 박진우(www.jwpark.co.kr@gmail.com)
-- 우경민(wgm0601@gmail.com)
-- 류원탁
-- 신훈철
-- 정영재
-- 이민주
-- 김준우
-- 김민섭
-
+This project follows the [all-contributors](https://allcontributors.org) specification.
+Contributions of any kind are welcome!
 
 ## 다루는 내용들
 
