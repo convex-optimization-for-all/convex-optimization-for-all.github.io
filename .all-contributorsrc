@@ -15,10 +15,28 @@
       ]
     },
     {
+      "login": "RRoundTable",
+      "name": "Wontak Ryu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27891090?v=4",
+      "profile": "https://github.com/RRoundTable",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "LEEMINJOO",
+      "name": "LEEMINJOO",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42792260?v=4",
+      "profile": "https://github.com/LEEMINJOO",
+      "contributions": [
+        "code"
+      ]
+     },
+     {
       "login": "Curt-Park",
       "name": "Jinwoo Park (Curt)",
       "avatar_url": "https://avatars.githubusercontent.com/u/14961526?v=4",
-      "profile": "https://www.linkedin.com/in/curt-park/",
+      "profile": "https://github.com/curt-park/",
       "contributions": [
         "code"
       ]
