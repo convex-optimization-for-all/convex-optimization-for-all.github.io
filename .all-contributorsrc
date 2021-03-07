@@ -22,7 +22,16 @@
       "contributions": [
         "code"
       ]
-    }
+    },
+    {
+      "login": "LEEMINJOO",
+      "name": "LEEMINJOO",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42792260?v=4",
+      "profile": "https://github.com/LEEMINJOO",
+      "contributions": [
+        "code"
+      ]
+     },
   ],
   "contributorsPerLine": 7,
   "projectName": "convex-optimization-for-all.github.io",
