@@ -42,7 +42,82 @@ wgm0601@gmail.com / 우경민 (마키나락스)
 - 정태수 (tcheong@korea.ac.kr)
 - [리뷰어 소개](<https://wikidocs.net/17197>)
 
-### Open Source Migrator
+### Open Source Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center">
+      <a href="">
+        <img src="" width="100px;" alt=""/>
+        <br />
+        <sub><b>박진우</b></sub></a>
+        <br />
+        <a href="" title="Code">💻</a> 
+        <a href="" title="Documentation">📖</a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/enfow/">
+        <img src="./img/profile/kyeongmin-woo.png" width="100px;" alt=""/>
+        <br />
+        <sub><b>우경민</b></sub></a>
+        <br />
+        <a href="https://github.com/enfow/" title="Code">💻</a> 
+        <a href="https://www.linkedin.com/in/enfow/" title="Documentation">📖</a>
+    </td>
+    <td align="center">
+      <a href="">
+        <img src="" width="100px;" alt=""/>
+        <br />
+        <sub><b>류원탁</b></sub></a>
+        <br />
+        <a href="" title="Code">💻</a> 
+        <a href="" title="Documentation">📖</a>
+    </td>
+    <td align="center">
+      <a href="">
+        <img src="" width="100px;" alt=""/>
+        <br />
+        <sub><b>이민주</b></sub></a>
+        <br />
+        <a href="" title="Code">💻</a> 
+        <a href="" title="Documentation">📖</a>
+    </td>
+    <td align="center">
+      <a href="">
+        <img src="" width="100px;" alt=""/>
+        <br />
+        <sub><b>정영재</b></sub></a>
+        <br />
+        <a href="" title="Code">💻</a> 
+        <a href="" title="Documentation">📖</a>
+    </td>
+    <td align="center">
+      <a href="">
+        <img src="" width="100px;" alt=""/>
+        <br />
+        <sub><b>신훈철</b></sub></a>
+        <br />
+        <a href="" title="Code">💻</a> 
+        <a href="" title="Documentation">📖</a>
+    </td>
+    <td align="center">
+      <a href="">
+        <img src="" width="100px;" alt=""/>
+        <br />
+        <sub><b>김민섭</b></sub></a>
+        <br />
+        <a href="" title="Code">💻</a> 
+        <a href="" title="Documentation">📖</a>
+    </td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 - 우경민(wgm0601@gmail.com)
 - 류원탁
@@ -99,23 +174,3 @@ wgm0601@gmail.com / 우경민 (마키나락스)
 
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/enfow/">
-        <img src="./img/profile/kyeongmin-woo.png" width="100px;" alt=""/>
-        <br />
-        <sub><b>Kyeongmin Woo</b></sub></a>
-        <br />
-        <a href="https://github.com/enfow/" title="Code">💻</a> 
-        <a href="https://github.com/enfow/" title="Documentation">📖</a>
-    </td>
-  </tr>
-</table>
-
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
