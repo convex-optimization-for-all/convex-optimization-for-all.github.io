@@ -1,8 +1,9 @@
 # Setup
 title:               "모두를 위한 컨벡스 최적화"
 description:         '모두를 위한 컨벡스 최적화'
-url:                 'http://convex-optimization-for-all.github.io'
+url:                 https://convex-optimization-for-all.github.io
 baseurl:             ''
+imgurl:              https://convex-optimization-for-all.github.io/img
 paginate:            5
 permalink:           pretty
 # About/contact
@@ -17,3 +18,6 @@ plugins:
 # Custom vars
 version:             1.1.0
 markdown: kramdown
+
+# Analytics
+google_analytics_id: "UA-189737072-1"
