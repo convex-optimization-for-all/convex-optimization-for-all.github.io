@@ -3,6 +3,7 @@ layout: post
 title: 01-01 Optimization problems?
 chapter: "01"
 order: 1
+owner: "Kyeongmin Woo"
 ---
 
 최적화 문제(Optimization problems)란 여러개의 선택가능한 후보 중에서 최적의 해(Optimal value) 또는 최적의 해에 근접한 값을 찾는 문제를 일컫는다. 일반적으로 기계학습 분야에서는 비용함수(Cost function)를 최소화 또는 최대화 시키는 모델의 파라미터(parameter)를 구하게 되는데, 이것은 최적화 문제로 정의될 수 있다.

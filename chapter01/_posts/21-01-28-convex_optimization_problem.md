@@ -3,6 +3,7 @@ layout: post
 title: 01-02 Convex optimization problem
 chapter: "01"
 order: 2
+owner: "Kyeongmin Woo"
 ---
 
 Convex optimization problem은 optimization problem의 한 종류이다.
