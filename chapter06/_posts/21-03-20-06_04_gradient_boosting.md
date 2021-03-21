@@ -6,7 +6,7 @@ order: 13
 owner: "Kyeongmin Woo"
 ---
 
-# 06-04 Gradient boosting
+# Gradient boosting
 
 **Gradient boosting**은 여러 트리로 구성된 앙상블 모델로 결과를 예측하려고 할 때,  gradient descent를 이용해서 순차적으로 트리를 만들어가며 이전 트리의 오차를 보완하는 방식으로 boosting을 하는 방법이다. **Gradient Boosting**은 회귀와 분류에 모두 사용할 수 있다. 
 
