@@ -3,7 +3,7 @@ layout: post
 title: "Conventions"
 chapter: home
 order: 2
-owner: kyeongminwoo
+owner: "Kyeongmin Woo"
 ---
 
 ## 1. Directory Convention
@@ -85,23 +85,29 @@ $$\theta x_1 + (1-\theta)x_2 \in C$$
 
 ### 3.1. Repository Policy
 
-`main` 브랜치로 Merge 되기 위해서는 2명 이상의 Reviewer가 Approve 해야 합니다. Reviewer 목록은 아래와 같습니다.
-
-- Curt-Park(박진우)
-- enfow(우경민)
-- RRoundTable(류원탁)
-- hunhoon21(신훈철)
-- LEEMINJOO(이민주)
+`main` 브랜치로 Merge 되기 위해서는 1명 이상의 Reviewer가 Approve 해야 합니다. CODEOWNERS 시스템이 도입되어 있어 각 Chapter 별 Reviewer가 자동으로 할당됩니다.
 
 ### 3.2. Branch Naming Convention
 
 브랜치 이름은 다음 컨벤션에 맞춰 생성해주시면 됩니다.
 
 ```
-[feature/bugfix/hotfix]/[chapter, settings]-<변경_사항>
+[feature/bugfix]/[chapter**, settings]-<변경-사항>
 ```
 
-예시는 아래와 같습니다.
+Prefix는 feature와 bugfix 두 가지를 사용합니다. 각각의 사용 예시는 다음과 같습니다.
 
-- `feature/chapter01-fix_latex` : chapter01에서 latex 수정
-- `feature/settings-update_branch_convention` : Branch Convention 수정
+- feature
+  - Migration 작업
+  - 문장/수식/이미지 등이 달라지는 경우
+  - 새로운 내용이 추가되는 경우
+- bugfix
+  - 오타를 수정하는 경우
+  - latex view가 깨져 수정하는 경우 
+
+구체적인 예시는 아래와 같습니다.
+
+- `feature/chapter01-migration`: chapter01 Migration
+- `feature/chapter01-fix-formula`: chapter01에서 수식 업데이트 
+- `feature/settings-update-branch-convention`: Convention 업데이트
+- `bugfix/chapter01-fix-type`: chapter01에서 오타 수정
