@@ -1,0 +1,60 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "enfow",
+      "name": "KyeongMin WOO",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31348169?v=4",
+      "profile": "http://www.linkedin.com/in/enfow",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "RRoundTable",
+      "name": "Wontak Ryu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27891090?v=4",
+      "profile": "https://github.com/RRoundTable",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "LEEMINJOO",
+      "name": "LEEMINJOO",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42792260?v=4",
+      "profile": "https://github.com/LEEMINJOO",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "hunhoon21",
+      "name": "HoonCheol Shin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36983960?v=4",
+      "profile": "https://github.com/hunhoon21",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Curt-Park",
+      "name": "Jinwoo Park (Curt)",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14961526?v=4",
+      "profile": "https://github.com/curt-park/",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "convex-optimization-for-all.github.io",
+  "projectOwner": "convex-optimization-for-all",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
