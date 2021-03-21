@@ -33,11 +33,11 @@ owner: "Kyeongmin Woo"
 
 노이즈가 잔뜩 낀 이미지 Data(중간)를 받았을 때, 그 이미지에서 노이즈를 제거하고 True Image(좌측)에 가까운 Solution(우측)을 얻고 싶은 상황이라고 가정하자. 각 pixel값을 $$y_i, i = 1, ..., n$$라고 한다면 이 문제는 다음과 같은 최적화 문제로 정의될 수 있으며, 이는 보통 2d fused lasso 또는 2d total variation denoising problem으로 불린다.
 
->$$min_{\theta}$$ $$\frac{1}{2} \Sigma_{i=1}^n (y_i - \theta_{i})^2 + \lambda \Sigma_{(i,j) \in E} | \theta_i - \theta_j |$$
+>$$\min_{\theta} \frac{1}{2} \Sigma_{i=1}^n (y_i - \theta_{i})^2 + \lambda \Sigma_{(i,j) \in E} \vert \theta_i - \theta_j \vert$$
 
 * E: 인접한 모든 $$\theta$$ 사이의 Edge들을 모아둔 집합
 * $$\frac{1}{2} \Sigma_{i=1}^n (y_i - \theta_{i})^2$$: Least squares loss. $$\theta$$가 $$y$$에 가까워지게 한다.
-* $$\Sigma_{(i,j) \in E} | \theta_i - \theta_j |$$: Total variation smoothing. 인접한 pixel 간 값의 변화가 이미지 전반에 거쳐 그리 많지 않을때 (piecewise constant) 이용할 수 있는 방법이다. 이와 같이 올바른 smoothing 기법의 선택을 위해서는 대상의 특성이 충분히 고려되어야 한다. (Total variation smoothing에 대한 더 자세한 설명은 참고문헌 1의 챕터 6.1.2와 6.3에서 볼 수 있다.)
+* $$\Sigma_{(i,j) \in E} \vert \theta_i - \theta_j \vert$$: Total variation smoothing. 인접한 pixel 간 값의 변화가 이미지 전반에 거쳐 그리 많지 않을때 (piecewise constant) 이용할 수 있는 방법이다. 이와 같이 올바른 smoothing 기법의 선택을 위해서는 대상의 특성이 충분히 고려되어야 한다. (Total variation smoothing에 대한 더 자세한 설명은 참고문헌 1의 챕터 6.1.2와 6.3에서 볼 수 있다.)
 
 앞서 정의된 convex optimization problem은 [Specialized ADMM](http://stanford.edu/~boyd/admm.html) 알고리즘을 이용하면 20번의 iteration으로 우측과 같은 solution을 얻을 수 있다.
 
