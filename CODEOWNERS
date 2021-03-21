@@ -2,8 +2,10 @@
 # - GitHub Docs: https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners#codeowners-syntax
 # - GitHub Blog: https://github.blog/2017-07-06-introducing-code-owners/
 
+# Global Owner
 * @enfow
 
+# Chapter-Wise Owner
 chapter01/ @enfow
 chapter02/ @RRoundTable
 chapter03/ @LEEMINJOO
