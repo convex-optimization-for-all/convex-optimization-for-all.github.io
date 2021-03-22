@@ -139,7 +139,7 @@ $$ x = x^{+}  - x^{-} $$ 이고, $$ x^{+} \text{, } x^{-} \succeq 0. $$
 >     & &&{X\beta = y}
 > \end{align} $$
 
-* $$ \beta $$의 각 component의 절댓값보다 $z$의 각 component가 크거나 같아야한다.
+* $$ \beta $$의 각 component의 절댓값보다 $$z$$의 각 component가 크거나 같아야한다.
 * 최적화를 통해 $$ z $$의 sparsity를 높여가며, $$ \beta $$의 sparsity 또한 높아지도록 한다.
 
 #### Dantzig selector
