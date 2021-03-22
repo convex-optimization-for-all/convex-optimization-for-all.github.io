@@ -6,12 +6,6 @@ order: 3
 owner: "Hooncheol Shin"
 ---
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    displayAlign: "center"
-});
-</script>
-
 *Quadratic Program*(QP)는 목적함수(objective function)가 이차식(convex quadratic)이고, 제약함수(constraint functions)가 모두 affine인 convex optimization problem이다. General quadratic program은 다음과 같은 형태로 표현될 수 있다.
 
 #### Quadratic Program
