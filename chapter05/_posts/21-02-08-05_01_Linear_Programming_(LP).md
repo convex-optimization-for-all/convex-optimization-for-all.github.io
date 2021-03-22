@@ -10,14 +10,14 @@ owner: "Hooncheol Shin"
 
 #### General LP
 >$$ \begin{align}
->    &\text{minimize}\_{x} &{c^T x + d} \\\\
+>    &\text{minimize}_{x} &{c^T x + d} \\\\
 >    &\text{subject to } &{Gx \preceq h} \\\\
 >    & &{Ax = b},\\\\
 >&\text{where } G \in \mathbb{R}^{\text{m x n}} \text{ and } A \in \mathbb{R}^{\text{p x n}}.
 >\end{align} $$
 
 * 위 목적함수의 $$ +d $$는 최적화의 과정 및 결과에 영향을 주지 않으므로 생략되어도 무방하다.
-* 만약 동일한 형태의 제약 아래 $c^T x + d$를 최대화하는 문제가 주어졌을 경우, 이를 $$ -c^T x - d $$를 최소화하는 문제로 바꾸어 풀 수 있다.
+* 만약 동일한 형태의 제약 아래 $$c^T x + d$$를 최대화하는 문제가 주어졌을 경우, 이를 $$ -c^T x - d $$를 최소화하는 문제로 바꾸어 풀 수 있다.
 * 위 문제는 기하학적으로 polyhedron 형태의 feasible set에 대해 affine function $$ c^T x + d $$를 최소화시키는 $$ x^{*} $$를 찾는 것으로 해석된다.
 
 <figure class="image" style="align: center;">
@@ -122,7 +122,7 @@ $$ x = x^{+}  - x^{-} $$ 이고, $$ x^{+} \text{, } x^{-} \succeq 0. $$
 
 * $$ {\| \beta \|_0} = \sum_{j=1}^p 1, \left\{ \beta_j \neq 0 \right\} $$
 
-위의 문제가 non-convex가 되는 이유는 바로 목적함수로 사용되는 $$ L\_0 $$ norm 때문이다. $$ L\_1 $$ norm이 [sparsity를 높이는 성질에 착안](https://www.analyticsvidhya.com/blog/2016/01/complete-tutorial-ridge-lasso-regression-python/#four)하여 이를 $$ L\_0 $$ norm 대신 목적함수로 사용하면 문제를 convex로 만들어 솔루션을 근사할 수 있다. 우리는 이러한 방식을 *basis pursuit*라고 부른다.
+위의 문제가 non-convex가 되는 이유는 바로 목적함수로 사용되는 $$ L_0 $$ norm 때문이다. $$ L_1 $$ norm이 [sparsity를 높이는 성질에 착안](https://www.analyticsvidhya.com/blog/2016/01/complete-tutorial-ridge-lasso-regression-python/#four)하여 이를 $$ L_0 $$ norm 대신 목적함수로 사용하면 문제를 convex로 만들어 솔루션을 근사할 수 있다. 우리는 이러한 방식을 *basis pursuit*라고 부른다.
 
 > $$ \begin{align}
 >     &\text{minimize}_{\beta} &&{\|\beta\|_1} \\\\
@@ -147,16 +147,16 @@ Basis pursuit에서 다룬 문제와 목적이 동일하지만, y에 noise가 �
 
 > $$ \begin{align}
 >     &\text{minimize}_{\beta} &&{\|\beta\|_1} \\\\
->     &\text{subject to } &&{\| X^T (y - X \beta) \|\_{\infty} \leq \lambda},\\\\
+>     &\text{subject to } &&{\| X^T (y - X \beta) \|_{\infty} \leq \lambda},\\\\
 >     &\text{given } y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n.\\\\
 >     &\text{Here } \lambda \geq 0 \text{ is a hyper-parameter. }\\\\
 > \end{align} $$
 
 * $$ y - X \beta \in \mathbb{R}^n $$은 residual이다.
-* $$ \|y - X \beta\|\_{\infty} \leq \lambda $$ 는 왜 inequality constraint로 사용되지 않을까? 
+* $$ \|y - X \beta\|_{\infty} \leq \lambda $$ 는 왜 inequality constraint로 사용되지 않을까? 
   * Residual을 최소의 값으로 만들어주고 싶다고 하자.
-  * 이는 min $$ \| y - X\beta\|\_2^2 $$과 같이 표현될 수 있으며, 이 목적함수의 미분값이 0이 되는 지점을 찾는 것과 같다.
-  * 즉, $$ \frac{d(\| y - X\beta\|\_2^2)}{d\beta} = -\frac{1}{2}X^T(y - X \beta) = 0 $$이다.
+  * 이는 min $$ \| y - X\beta\|_2^2 $$과 같이 표현될 수 있으며, 이 목적함수의 미분값이 0이 되는 지점을 찾는 것과 같다.
+  * 즉, $$ \frac{d(\| y - X\beta\|_2^2)}{d\beta} = -\frac{1}{2}X^T(y - X \beta) = 0 $$이다.
   * 문제에 정의된 제약함수 $$ X^T(y - X \beta) $$는 이러한 아이디어에서 도출된다.
   * 다르게 말하면 이는 residual이 variable X와 상관관계(correlation)가 없길 바라는 것과 같다. ($$ X^T(y - X \beta) = 0 $$는 residual vector와 X의 column space가 orthogonal함을 의미한다.)
 
@@ -165,8 +165,8 @@ Dantzig selector는 마찬가지로 다음과 같이 linear program으로 변형
 > $$
 > \begin{align}
 >     &\text{minimize}_{\beta, z} &&{\|\beta\|_1} \\\\
->     &\text{subject to } &&{x\_j^T (y - X \beta) \preceq \lambda}, \text{for all } j = 1 \dotsc p\\\\
->     & &&{-x\_j^T (y - X \beta) \preceq \lambda}, \text{for all } j = 1 \dotsc p\\\\
+>     &\text{subject to } &&{x_j^T (y - X \beta) \preceq \lambda}, \text{for all } j = 1 \dotsc p\\\\
+>     & &&{-x_j^T (y - X \beta) \preceq \lambda}, \text{for all } j = 1 \dotsc p\\\\
 >     & && z \succeq -\beta\\\\
 >     & && z \succeq \beta,\\\\
 >     &\text{given } y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n. \\\\
