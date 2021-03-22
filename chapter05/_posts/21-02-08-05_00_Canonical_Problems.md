@@ -35,7 +35,7 @@ owner: "Hooncheol Shin"
 $$ LP \subseteq QP \subseteq QCQP \subseteq SOCP \subseteq SDP \subseteq CP $$
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17851/canonical_problems.jpg" alt="[Fig] Canonical Problems" width="90%">
-  <figcaption style="text-align: center;">[Fig] Canonical Problems</figcaption>
+  <img src="https://wikidocs.net/images/page/17851/canonical_problems.jpg" alt="[Fig2] Canonical Problems" width="90%">
+  <figcaption style="text-align: center;">[Fig2] Canonical Problems</figcaption>
 </p>
 </figure>
