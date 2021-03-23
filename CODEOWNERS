@@ -1,0 +1,33 @@
+# Reference
+# - GitHub Docs: https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners#codeowners-syntax
+# - GitHub Blog: https://github.blog/2017-07-06-introducing-code-owners/
+
+# Global Owner
+* @enfow
+
+# Chapter-Wise Owner
+chapter01/ @enfow
+chapter02/ @RRoundTable
+chapter03/ @LEEMINJOO
+chapter04/ @YoungJaeChoung
+chapter05/ @hunhoon21
+chapter06/ @enfow
+chapter07/ @enfow
+chapter08/ @enfow
+chapter09/ @enfow
+chapter10/ @RRoundTable
+chapter11/ @RRoundTable
+chapter12/ @RRoundTable
+chapter13/ @RRoundTable
+chapter14/ @LEEMINJOO
+chapter15/ @LEEMINJOO
+chapter16/ @LEEMINJOO
+chapter17/ @LEEMINJOO
+chapter18/ @hunhoon21
+chapter19/ @hunhoon21
+chapter20/ @hunhoon21
+chapter21/ @hunhoon21
+chapter22/ @YoungJaeChoung
+chapter23/ @YoungJaeChoung
+chapter24/ @YoungJaeChoung
+chapter25/ @YoungJaeChoung
