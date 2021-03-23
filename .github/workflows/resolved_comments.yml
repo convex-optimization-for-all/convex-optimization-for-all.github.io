@@ -1,0 +1,42 @@
+name: resolved_comments
+
+on:
+  issue_comment: 
+    types: [created]
+
+jobs:
+  changeIssueTitle:
+    if: contains(github.event.comment.body, '/resolved')
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f src/requirements.txt ]; then pip install -r src/requirements.txt; fi
+
+    - name: Change issue title
+      run: |
+        python src/change_issue_title.py
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        ISSUE_NUMBER: ${{ github.event.issue.number }}
+
+  closeIssue:
+    if: contains(github.event.comment.body, '/resolved')
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Close Issue
+      uses: peter-evans/close-issue@v1
+      with:
+        comment: |
+          All the comments are resolved.
+          Auto-closing this issue.
