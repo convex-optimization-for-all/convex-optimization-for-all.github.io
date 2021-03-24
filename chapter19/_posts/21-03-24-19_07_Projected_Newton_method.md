@@ -15,10 +15,12 @@ $$h$$가 convex set $$C$$의 indicator function $$h = I_c(x)$$일 때 문제는 
 
 $$h(x) = I_c(x)$$일 때 proximal Newton의 경우엔 어떠한가? 이 경우 update 식은 다음과 같이 정의된다.
 
+> $$
 > \begin{align}
-z^{+} & =\underset{z \in C}{\text{argmin}} \ \frac{1}{2} \parallel x - H^{-1} \nabla g(x) - z \parallel_H^2  \\\\
- & = \underset{z \in C}{\text{argmin}} \ \nabla g(x)^T (z - x) + \frac{1}{2} (z - x)^T H (z - x)  \\\\
-\end{align}
+> z^{+} & =\underset{z \in C}{\text{argmin}} \ \frac{1}{2} \parallel x - H^{-1} \nabla g(x) - z \parallel_H^2  \\\\
+> &= \underset{z \in C}{\text{argmin}} \ \nabla g(x)^T (z - x) + \frac{1}{2} (z - x)^T H (z - x)  \\\\
+> \end{align}
+> $$
 
 $$H = I$$이면 $$x - \nabla g(x)$$를 set $$C$$에 projection한 결과가 되지만, 일반적인 $$H \neq I$$에 대해서는 projection이 아니다. ($$H = I$$이면 $$l_2$$-norm이 되기 때문에 H-norm이 아닌 $$l_2$$-norm 이었다면 projection이 되었을 것이다.) 
 따라서, projected Newton method는 proximal Newton method의 special case가 아니다.
