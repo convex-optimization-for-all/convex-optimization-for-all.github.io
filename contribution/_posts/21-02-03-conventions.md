@@ -3,7 +3,7 @@ layout: post
 title: "Conventions"
 chapter: home
 order: 2
-owner: kyeongminwoo
+owner: "Kyeongmin Woo"
 ---
 
 ## 1. Directory Convention
@@ -83,9 +83,31 @@ $$\theta x_1 + (1-\theta)x_2 \in C$$
 
 새로운 내용을 추가하거나 직접 편집하시고 싶으신 경우에는 새로운 Branch를 생성하여 먼저 수정하신 후 `Pull Request`를 생성해주시면 됩니다. 신규 작성 및 기존 내용 수정은 누구나 가능합니다.
 
-### 3.1 Branch Naming Convention
+### 3.1. Repository Policy
 
-브랜치 이름은 다음 컨벤션에 맞춰 작성해주시면 됩니다.
+`main` 브랜치로 Merge 되기 위해서는 1명 이상의 Reviewer가 Approve 해야 합니다. CODEOWNERS 시스템이 도입되어 있어 각 Chapter 별 Reviewer가 자동으로 할당됩니다.
 
-- `feature/chapter01/[내용]` : Posting 관련 수정 사항
-- `feature/setting/[내용]` : Blog 설정 관련 수정 사항
+### 3.2. Branch Naming Convention
+
+브랜치 이름은 다음 컨벤션에 맞춰 생성해주시면 됩니다.
+
+```
+[feature/bugfix]/[chapter**, settings]-<변경-사항>
+```
+
+Prefix는 feature와 bugfix 두 가지를 사용합니다. 각각의 사용 예시는 다음과 같습니다.
+
+- feature
+  - Migration 작업
+  - 문장/수식/이미지 등이 달라지는 경우
+  - 새로운 내용이 추가되는 경우
+- bugfix
+  - 오타를 수정하는 경우
+  - latex view가 깨져 수정하는 경우 
+
+구체적인 예시는 아래와 같습니다.
+
+- `feature/chapter01-migration`: chapter01 Migration
+- `feature/chapter01-fix-formula`: chapter01에서 수식 업데이트 
+- `feature/settings-update-branch-convention`: Convention 업데이트
+- `bugfix/chapter01-fix-type`: chapter01에서 오타 수정
