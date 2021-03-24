@@ -1,12 +1,11 @@
-name: resolved_comments
+name: closed_issue
 
 on:
-  issue_comment: 
-    types: [created]
+  issues: 
+    types: [closed]
 
 jobs:
   changeIssueTitle:
-    if: contains(github.event.comment.body, '/resolved')
     runs-on: ubuntu-latest
 
     steps:
@@ -28,15 +27,3 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         ISSUE_NUMBER: ${{ github.event.issue.number }}
-
-  closeIssue:
-    if: contains(github.event.comment.body, '/resolved')
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Close Issue
-      uses: peter-evans/close-issue@v1
-      with:
-        comment: |
-          All the comments are resolved.
-          Auto-closing this issue.
