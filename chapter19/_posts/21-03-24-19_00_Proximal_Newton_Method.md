@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 19 Proximal_Newton_Method
+title: 19 Proximal Newton Method
 chapter: "19"
 order: 1
 owner: "Hooncheol Shin"
