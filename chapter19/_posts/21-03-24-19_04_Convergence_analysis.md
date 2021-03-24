@@ -13,7 +13,7 @@ Proximal newton method의 수렴을 분석하기 위해 Lee (2014) [1] 논문의
 수렴을 증명하기 위해 다음과 같이 가정한다.
 
 * $$f = g + h$$, $$g$$와 $$h$$는 convex이고 $$g$$는 2차 differentiable (smooth)
-* $$mI \preceq \nabla^2 g(x) \preceq LI$$
+* $$mI \preceq \nabla^2 g(x) \preceq LI$$.
 * $$\nabla^2 g(x)$$ Lipshitz with constant $$M$$
 * $$\text{prox}_H(\cdot)$$는 정확히 계산 가능
 
@@ -39,12 +39,13 @@ t \le \min \left\\{ 1, \frac{2m}{L} (1-\alpha) \right\\} \\\\
 
 **Local quadratic convergence**를 보이기 위해 충분히 여러번 반복하게 되면 pure newton step $$t=1$$은 backtracking exit conditions을 만족하여 다음 식이 성립된다.
 
-
+> $$
 > \begin{align}
-\parallel x^{+} - x^{\star} \parallel_2 & \le \frac{1}{\sqrt(m)} \parallel x^{+} - x^{\star} \parallel_H \\\\
-& =  \frac{1}{\sqrt(m)} \parallel \text{prox}_H(x - H^{-1} \nabla g(x) )  - \text{prox}_H(x^{\star} - H^{-1} \nabla g(x^{\star}) )  \parallel_H \\\\
-& \le \frac{M}{2m} \parallel x - x^{\star} \parallel_2^2 \\\\
-\end{align}
+> \parallel x^{+} - x^{\star} \parallel_2 & \le \frac{1}{\sqrt(m)} \parallel x^{+} - x^{\star} \parallel_H \\\\
+> & =  \frac{1}{\sqrt(m)} \parallel \text{prox}_H(x - H^{-1} \nabla g(x) )  - \text{prox}_H(x^{\star} - H^{-1} \nabla g(x^{\star}) )  \parallel_H \\\\
+> & \le \frac{M}{2m} \parallel x - x^{\star} \parallel_2^2 \\\\
+> \end{align}
+> $$
 
 이를 정리해 보면 다음과 같다.
 

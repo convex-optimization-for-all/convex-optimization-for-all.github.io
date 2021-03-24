@@ -79,13 +79,18 @@ Proximal newton method가 quadratic convergence를 만족하므로 exact는  qua
 #### Stopping rule of proximal gradient method
 Lee et al. (2012)에서는 proximal gradient에서는 gradient 대신에 generalized gradient를 사용하는 방식을 제안하였다.
 
+> $$
 > \begin{align}
-\parallel G_{\tilde{f}_{k-1}/M}(x^{(k)}) \parallel_2 & \le \eta_k \parallel  G_{f/M}(x^{(k-1)})  \parallel_2 \\\\
+\parallel G_{\tilde{f}_{k-1}/M}(x^{(k)}) \parallel_2 & \le \eta_k \parallel  G_{f/M}(x^{(k-1)})  \parallel_2
 \end{align}
+> $$
 
 여기서 $$\tilde{f}_{k-1} = \tilde{g}_{k-1} + h$$이고 $$mI \preceq \nabla^2 g \preceq MI$$이다.
 
 그리고, 다음과 같이 $$\eta_k$$를 설정하여 inexact proximal newton이 local superlinear rate를 갖는다는 것을 증명하였다.
 
-> \begin{align} \eta_k \le \min \left\\{ \frac{m}{2},  \frac{\parallel  G_{\tilde{f}_{k-2}/M}(x^{(k-1)}) - G_{f/M}(x^{(k-1)})  \parallel_2}{\parallel  G_{f/M}(x^{(k-2)})  \parallel_2} \right\\} \\\\
-\end{align}
+> $$
+> \begin{align} 
+> \eta_k \le \min \left\{ \frac{m}{2},  \frac{\parallel  G_{\tilde{f}_{k-2}/M}(x^{(k-1)}) - G_{f/M}(x^{(k-1)})  \parallel_2}{\parallel  G_{f/M}(x^{(k-2)})  \parallel_2} \right\}
+> \end{align}
+> $$

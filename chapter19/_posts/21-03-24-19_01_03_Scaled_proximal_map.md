@@ -35,17 +35,21 @@ owner: "Hooncheol Shin"
 ## Proximal newton update
 **Scaled proximal map**을 이용해서 Proximal newton update를 다시 표현해보면 다음과 같다.
 
+> $$
 > \begin{align}
-z^{+} & = \underset{z}{\text{argmin}} \nabla g(x)^T (z - x)^T v + \frac{1}{2} (z - x)^T H (z - x) + h(z) \\\\
-& =\underset{z}{\text{argmin}} \ \frac{1}{2} \parallel x - H^{-1} \nabla g(x) - z \parallel_H^2 + h(z)
-\end{align}
+> z^{+} & = \underset{z}{\text{argmin}} \nabla g(x)^T (z - x)^T v + \frac{1}{2} (z - x)^T H (z - x) + h(z) \\\\
+> & =\underset{z}{\text{argmin}} \ \frac{1}{2} \parallel x - H^{-1} \nabla g(x) - z \parallel_H^2 + h(z)
+> \end{align}
+> $$
 
 다르게 표현하면 다음과 같다.
 
+> $$
 > \begin{align}
-z^{(k)} & = \text{prox}_{H^{(k-1)}} ( x^{(k-1)} - (H^{(k-1)})^{-1} \nabla g (x^{(k-1)}) ) \\\\
-x^{(k)} & =x^{(k-1)} + t_k (z^{(k)} - x^{(k-1)} )
-\end{align}
+> z^{(k)} & = \text{prox}_{H^{(k-1)}} ( x^{(k-1)} - (H^{(k-1)})^{-1} \nabla g (x^{(k-1)}) ) \\\\
+> x^{(k)} & =x^{(k-1)} + t_k (z^{(k)} - x^{(k-1)} )
+> \end{align}
+> $$
 
 직관적으로 $$g$$에 대해서 newton step을 수행하고, $$H^{(k-1)}$$에 대해 scaled prox operator를 적용해서 그 방향으로 이동한다는 것을 의미한다.
 

@@ -43,25 +43,21 @@ B_{k-1} & = \\{ i : x_i^{(k-1)} \le l_i + \epsilon \quad \text{and} \quad  \nabl
 
 최적화 step에서 이 변수들을 box constraint의 경계로 밀어낸다. 이들을 점점 더 많이 밀어낼수록 목적 함수는 줄어든다.
 
-* 단계2: Free set $$F_{k-1} = \\{1,....,n \\} \backslash B_{k-1}$$을 정의한다.
+* 단계2: Free set $$F_{k-1} = \left\{1,....,n \right\} \backslash B_{k-1}$$을 정의한다.
 * 단계3: Free variable을 따라서 Hessian의 주요 submatrix의 inverse를 정의한다.
 
->$$ S^{(k-1)} = [(\nabla^2 g(x^{(k-1)}))\_{F_{k-1}}]^{-1}$$
+>$$ S^{(k-1)} = [(\nabla^2 g(x^{(k-1)}))_{F_{k-1}}]^{-1}$$
 
 * 단계4: Fee variable을 따라 Newton step을 실행하고 projection을 한다.
 
+> $$
 > \begin{align}
-x_{(k)} & = P_{[l,u]} \left\( x^{(k-1)} - t_k  
-\begin{bmatrix}
-S^{(k-1)} & 0 \\\\
-0 & I \\\\
-\end{bmatrix}
-\begin{bmatrix}
-\nabla F_{k-1} g(x^{(k-1)}) \\\\
-\nabla B_{k-1} g(x^{(k-1)}) \\\\
-\end{bmatrix}
-\right\)
-\end{align}
+> x_{(k)} = P_{[l, u]} \left( x^{(k-1)} - t_k \begin{bmatrix} S^{(k-1)} & 0 \\
+> 0 & I \end{bmatrix} 
+> \begin{bmatrix} \nabla F_{k-1} g(x^{(k-1)}) \\ \nabla B_{k-1} g(x^{(k-1)}) \end{bmatrix}
+> \right)
+> \end{align}
+> $$
 
 여기서 $$P_{[l,u]}$$는 $$[l, u] = [l_1, u_1] \times \cdots [l_n, u_n]$$로의 projection이다.
 

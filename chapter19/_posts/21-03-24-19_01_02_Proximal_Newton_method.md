@@ -35,9 +35,11 @@ Backtracking line search를 통해 step size를 optimization하는 과정이 있
 #### Next position view
 위의 식을 direction $$v$$이 아닌 다음 위치인 $$z$$의 관점에서 표현하면 다음과 같다.
 
+> $$
 > \begin{align}
-z^{(k)} & = \underset{z}{\text{argmin}} \ \nabla g(x^{(k-1)})^T (z - x^{(k-1)})^T + \frac{1}{2} (z - x^{(k-1)})^T H^{(k-1)} (z - x^{(k-1)}) + h(z) \\\\
-x^{(k)} & =x^{(k-1)} + t_k (z^{(k)} - x^{(k-1)} )
-\end{align}
+> z^{(k)} & = \underset{z}{\text{argmin}} \ \nabla g(x^{(k-1)})^T (z - x^{(k-1)})^T + \frac{1}{2} (z - x^{(k-1)})^T H^{(k-1)} (z - x^{(k-1)}) + h(z) \\\\
+> x^{(k)} & =x^{(k-1)} + t_k (z^{(k)} - x^{(k-1)} )
+> \end{align}
+> $$
 
 직관적으로 첫번째 단계에서 목적 함수를 최소화 하는 surrogate point인 $$z$$를 구한다. 그런 다음, $$x^{(k-1)}$$에서 $$z$$의 방향으로 이동하지만 항상 $$z$$로 이동하게 되는 것은 아니다.
