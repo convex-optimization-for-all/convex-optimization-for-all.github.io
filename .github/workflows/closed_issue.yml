@@ -25,5 +25,5 @@ jobs:
       run: |
         python src/change_issue_title.py
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.CONVEX_ADMIN_TOKEN }}
         ISSUE_NUMBER: ${{ github.event.issue.number }}
