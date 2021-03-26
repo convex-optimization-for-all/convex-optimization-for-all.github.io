@@ -14,4 +14,4 @@ if __name__ == "__main__":
     payload = {
         "title": "[Closed] " + original_title.split("|", maxsplit=1)[0]
     }
-    _ = requests.patch(url, auth=("username", token), json=payload)
+    requests.patch(url, auth=("username", token), json=payload)
