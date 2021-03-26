@@ -8,19 +8,36 @@ layout: default
   {{ content }}
 </div>
 
-{% if site.related_posts.size >= 1 %}
+{% assign full_name = page.chapter | prepend: "chapter" %}
+{% assign post_list = site.categories[full_name] | sort_natural: "order" %}
+
+{% assign post_order = page.order%}
+
+{% assign post_before_before = page.order | minus: 2 %}
+{% assign post_before = page.order | minus: 1 %}
+{% assign post_after = page.order | plus: 1 %}
+{% assign post_after_after = page.order | plus: 2 %}
+
+{% if post_list.size >= 2 %}
 <div class="related">
   <h2>Related posts</h2>
   <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
+    {% for post in post_list%}
+      {% if 
+        post.order == post_before_before or 
+        post.order == post_before or 
+        post.order == post_after or
+        post.order == post_after_after 
+      %}
+        <li>
+          <h3>
+            <a href="{{ site.baseurl }}{{ post.url }}">
+              {{ post.title }}
+              <small> {{ post.date | date_to_string }}</small>
+            </a>
+          </h3>
+        </li>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>
