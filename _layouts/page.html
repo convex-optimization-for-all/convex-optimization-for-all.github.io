@@ -15,11 +15,16 @@ layout: default
 {% assign post_list = post_list | shift %}  
 
 <!-- List up the posts in the chapter -->
+<table>
 {% for post in post_list %}
   {% assign title_parts = post.title | split: " " %}
   {% assign subchapter = title_parts | first %}
   {% assign title = post.title | remove: subchapter %}
-  <h2><a href="{{ post.url }}">
-    <p> {{subchapter}} {{ title }} </p>
-  </a></h2>
+  <tr>
+    <th style="text-align:left; vertical-align: middle;" >{{subchapter}}</th>
+    <th style="text-align:left; vertical-align: middle;" >
+      <a href="{{ post.url }}">{{ title }}</a>
+    </th>
+  </tr>
 {% endfor %}
+</table>
