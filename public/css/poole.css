@@ -67,7 +67,8 @@ body {
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #268bd2;
+  color: #515151;
+  font-style: oblique;
   text-decoration: none;
 }
 a strong {
@@ -76,6 +77,7 @@ a strong {
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
+  color: #268bd2;
   text-decoration: underline;
 }
 
