@@ -70,7 +70,7 @@ R이 위처럼 최적으로 행동할 것을 알고 있을 때, J의 최적의 s
 >\end{align}
 >$$
 
-Convex function의 maximization 또한 convex function이 된다.  이를 첫 번째 관점의 문제 정의라고 칭할 것이다. 또한 이 최적화 문제의 해를 optimal expected payout $$f^{*}\_{1}$$이라고 정하자. 또 하나 유념할 점은 게임참가자, 즉 player들이 모두 최적으로 행동한다는 가정이 기본적인 형태의 게임이론 formulation에서 가정이 된다.
+Convex function의 maximization 또한 convex function이 된다.  이를 첫 번째 관점의 문제 정의라고 칭할 것이다. 또한 이 최적화 문제의 해를 optimal expected payout $$f^{*}_{1}$$이라고 정하자. 또 하나 유념할 점은 게임참가자, 즉 player들이 모두 최적으로 행동한다는 가정이 기본적인 형태의 게임이론 formulation에서 가정이 된다.
 
 ## Maximizing Expected Payout : R's Perspective
 두 번째 관점으로 J가 R의 strategy $$y$$를 알고 있다고 가정하자. J는 expected payout을 minimize하고자 할 것이다.
