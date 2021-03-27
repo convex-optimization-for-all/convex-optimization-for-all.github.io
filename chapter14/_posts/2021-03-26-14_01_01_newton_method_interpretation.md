@@ -11,7 +11,7 @@ MathJax.Hub.Config({
 });
 </script>
 
-이 페이지에서는 앞서 다루었던 update step이 원 함수 $$f$$의 quadratic approximation으로부터 어떻게 유도되는지 살펴본다. 또한 [6장](https://wikidocs.net/edit/page/18083)에서 다룬 gradient descent의 update step와 비교해본다.
+이 페이지에서는 앞서 다루었던 update step이 원 함수 $$f$$의 quadratic approximation으로부터 어떻게 유도되는지 살펴본다. 또한 [6장](https://wikidocs.net/18083)에서 다룬 gradient descent의 update step와 비교해본다.
 
 ## Newton's method update step
 함수 $$f$$의 2차 테일러 근사(quadratic approximation)은 다음과 같다.
