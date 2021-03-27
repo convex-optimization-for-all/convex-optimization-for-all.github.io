@@ -42,14 +42,18 @@ Mahalanobis distance가 어떤 point와, 분포의 평균과의 거리를 해당
 P-quadratic norm([1]의 A1.3)의 형태를 가지는 이 식을 정리하면 다음과 같다.
 
 >\begin{align}
->\lambda(x) = (v^{T}\nabla^{2} f(x)v)^{1/2} = \|v\|_{\nabla^{2}f(x)}
+>\lambda(x) = (v^{T}\nabla^{2} f(x)v)^{1/2} = \|\|v\|\|_{\nabla^{2}f(x)}
 >\end{align}
 
 세번째로 Newton's method의 step update의 크기 $$\Delta x_{nt}$$로 Newtond decrement를 나타낼 수 있다.
 >\begin{align}
->x^{+} = x-\big(\nabla^{2} f(x) \big)^{-1} \nabla f(x)\\\\
->\Delta x_{nt} = -\big(\nabla^{2} f(x) \big)^{-1} \nabla f(x)\\\\
->\nabla f(x)^{T} \Delta x_{nt} = -\lambda (x)^{2}
+>x^{+} &= x-\big(\nabla^{2} f(x) \big)^{-1} \nabla f(x) &\\ 
+>\end{align}
+>\begin{align}
+>\Delta x_{nt} &= -\big(\nabla^{2} f(x) \big)^{-1} \nabla f(x) &\\
+>\end{align}
+>\begin{align}
+>\nabla f(x)^{T} \Delta x_{nt} &= -\lambda (x)^{2}
 >\end{align}
 
 이 식의 중간과정을 활용하면 Newton decrement를 증분과 Hessian에 관한 식으로도 표현할 수 있다.

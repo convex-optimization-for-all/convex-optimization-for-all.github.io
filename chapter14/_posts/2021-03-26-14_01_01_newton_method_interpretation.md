@@ -62,10 +62,11 @@ gradient descent의 자세한 내용은 [gradient descent 장](https://wikidocs.
 ## Example
 예시로써, 함수 $$f = (10x_{1}^{2}+x_{2}^{2})/2+5log(1+e^{-x_{1}-x_{2}})$$에 대하여 거의 동등한 길이의 step을 진행한다고 가정하고, 즉 newton's method의 업데이트 크기만큼 매번 gradient descent에서의 step size를 정하고, gradient descent(검정)와 Newton's method(파랑)의 step에 따른 수렴 방향을 비교해본다.
 
-<center>
-![](https://wikidocs.net/images/page/21331/gd.JPG)
-
-**[Fig 1] Comparison between gradient descent(black) and Newton's method(blue)[3]**</br>
-</center>
+<figure class="image" style="align: center;">
+<p align="center">
+ <img src="https://wikidocs.net/images/page/21331/gd.JPG" alt="" width="70%" height="70%">
+ <figcaption style="text-align: center;">[Fig 1] Comparison between gradient descent(black) and Newton's method(blue)[3]</figcaption>
+</p>
+</figure>
 
 Fig 1에서도 알 수 있다시피, gradient descent는 2차 미분 항을 정방행렬에 상수가 곱해진 값으로 가정하고 gradient를 계산하기 때문에, 등고선(contour)의 접선 방향에 수직하게(perpendicular) 수렴함을 확인할 수 있고, Newton's method에 비해 느린 수렴 속도를 보인다. 이 후의 나머지 장에서는 Newton's method의 성질과 특징, 수렴성, 예시 등을 다룬다.

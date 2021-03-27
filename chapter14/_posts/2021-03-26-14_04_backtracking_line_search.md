@@ -25,7 +25,11 @@ Damped Newton's method는 이전의 backtracking line search와 동일하게, up
 따라서 다음과 같은 과정을 추가하여 $$t$$의 update 여부를 결정한다.
 >\begin{align}
 >&\text{with parameters }0<\alpha \leq \frac{1}{2}, 0<\beta<1, \\\
+>\end{align}
+>\begin{align}
 >&\text{while } f(x+tv)>f(x)+\alpha t \nabla f(x)^{T}v\\\\
+>\end{align}
+>\begin{align}
 >&\text{shrink }t=\beta t
 >\end{align}
 
@@ -34,10 +38,12 @@ Damped Newton's method는 이전의 backtracking line search와 동일하게, up
 ## Example : logistic regression
 예제로, n = 500, p = 100인 logistic regression에 대해 각각 backtracking을 적용한 gradient descent와 newton's method의 iteration에 따른 수렴속도를 비교해본다.
 
-<center>
-![](https://wikidocs.net/images/page/21334/2.jpg)
+<figure class="image" style="align: center;">
+<p align="center">
+ <img src="https://wikidocs.net/images/page/21334/2.jpg" alt="" width="70%" height="70%">
+ <figcaption style="text-align: center;">[Fig 1] Logistic regression [3]</figcaption>
+</p>
+</figure>
 
-**[Fig 1] Logistic regression [3]**</br>
-</center>
 
 Newton's method는 gradient descent보다 훨씬 더 빠른 수렴속도를 보인다. 다음 장에서 부터는 이 수렴속도에 대하여 살펴본다.

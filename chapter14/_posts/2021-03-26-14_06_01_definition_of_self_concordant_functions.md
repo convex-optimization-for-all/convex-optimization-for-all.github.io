@@ -12,9 +12,9 @@ MathJax.Hub.Config({
 </script>
 ## Self-concordant on $$R$$
 Convex 함수 $$f : R \rightarrow R$$ 은 아래의 식을 만족할때 self-concordant 하다고 정의한다.
->\begin{align}
+>$$\begin{align}
 >\|f^{'''}(x)\| \leq 2f^{''}(x)^{3/2} \qquad \text{for all }x\in \text{dom }f.
->\end{align}
+>\end{align}$$
 
 쉬운 예시로, 선형 함수($$ax+b$$), (convex한) 2차 함수는 3계도함수(3차 미분) 값이 0이므로, self-concordant하다.
 
@@ -26,14 +26,14 @@ $$f : R^{n}\rightarrow R$$은 정의역 안에서 임의의 방향의 선분 영
 1) $$f : \mathbb{R}^{n}_{++}\rightarrow \mathbb{R}$$, $$f(x) = -\sum^{n}_{i=1}log(x_{i})$$.
 
 $$f(t) = -\log{t}$$ 임은 쉽게 확인할 수 있다. 더불어 self-concordant 함수의 합 또한 self-concordant 함을 이용한다. Self-concordant한 함수 $$f_{1}, f_{2} : R\rightarrow R$$이 있다고 할 때, self-concordant 함수의 합 또한 self-concordant 함은 다음과 같이 보인다.[3]
->\begin{align}
+>$$\begin{align}
 >|f_{1}^{'''}(x)+f_{2}^{'''}(x)|  \leq & |f^{'''}_{1}(x)|+|f^{'''}_{2}(x)|\\\\
 > \leq &2\big( f^{''}_{1}(x)^{3/2}+f^{''}_{2}(x)^{3/2}\big)\\\\
 >\leq &2\big( f^{''}_{1}(x)+f^{''}_{2}(x) \big)^{3/2}.
->\end{align}
+>\end{align}$$
 
 맨 마지막 단계의 경우 아래의 성질을 이용한다.
->\begin{align}
+>$$\begin{align}
 >(u^{3/2}+v^{3/2})^{2/3} \leq u+v, \qquad u, v \geq 0.
->\end{align}
+>\end{align}$$
 

@@ -23,10 +23,12 @@ MathJax.Hub.Config({
 
 ## Example
 
-<center>
-![](https://wikidocs.net/images/page/21755/gd.JPG)
+<figure class="image" style="align: center;">
+<p align="center">
+ <img src="https://wikidocs.net/images/page/21755/gd.JPG" alt="" width="70%" height="70%">
+ <figcaption style="text-align: center;">[Fig 1] Logistic regression [3]</figcaption>
+</p>
+</figure>
 
-**[Fig 1] Logistic regression [3]**</br>
-</center>
-위의 figure 1은 앞서 [14-04](https://wikidocs.net/edit/page/21334)에서 다룬 logistic regression 예시이다. x축을 실제로 연산에 걸린 시간으로 바꿔서 보면 다음과 같다. 
+위의 figure 1은 앞서 [14-04]({% post_url chapter14/2021-03-26-14_04_backtracking_line_search %})에서 다룬 logistic regression 예시이다. x축을 실제로 연산에 걸린 시간으로 바꿔서 보면 다음과 같다. 
 Convergence analysis에서 다룬 바와 같이 Newton's method는 두가지 phase를 가진다. 그래프에서도 일정 시간 후, 빠른 수렴(quadratic convergence)을 보이는 것을 확인할 수 있다. iteration 초반부인 Newton's method의 damped phase에서는 gradient descent와 동일한 scale의 수렴속도를 보인다. 하지만, $$O(n^{3})$$의 연산을 수행해야하기 떄문에 실제 연산시간 상에선 더 느린 수렴을 보인다. 이 후 backtracking line search가 더 이상 필요하지 않은 iteration에 도달하면, quadratic convergence의 속도를 보이며 매우 빠르게 수렴함을 확인할 수 있다.
