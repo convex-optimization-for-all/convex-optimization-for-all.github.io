@@ -42,7 +42,7 @@ Mahalanobis distance가 어떤 point와, 분포의 평균과의 거리를 해당
 P-quadratic norm([1]의 A1.3)의 형태를 가지는 이 식을 정리하면 다음과 같다.
 
 >\begin{align}
->\lambda(x) = (v^{T}\nabla^{2} f(x)v)^{1/2} = \|v\|\_{\nabla^{2}f(x)}
+>\lambda(x) = (v^{T}\nabla^{2} f(x)v)^{1/2} = \|v\|_{\nabla^{2}f(x)}
 >\end{align}
 
 세번째로 Newton's method의 step update의 크기 $$\Delta x_{nt}$$로 Newtond decrement를 나타낼 수 있다.

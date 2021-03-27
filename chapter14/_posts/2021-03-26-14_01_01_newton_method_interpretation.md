@@ -41,8 +41,8 @@ gradient desent에서는 함수 $$f$$의 2차 테일러 근사 항을 사용하�
 
 >$$
 >\begin{align}
->f(y)	\approx f(x) + \nabla f(x)^{T}(y-x) +\frac{1}{2t}\|{y-x}\|\_{2}^{2},\\\\
->f_{approx}(y)	= f(x) + \nabla f(x)^{T}(y-x) +\frac{1}{2t}\|{y-x}\|\_{2}^{2}.\\\\
+>f(y)	\approx f(x) + \nabla f(x)^{T}(y-x) +\frac{1}{2t}\|{y-x}\|_{2}^{2},\\\\
+>f_{approx}(y)	= f(x) + \nabla f(x)^{T}(y-x) +\frac{1}{2t}\|{y-x}\|_{2}^{2}.\\\\
 >\end{align}
 >$$
 

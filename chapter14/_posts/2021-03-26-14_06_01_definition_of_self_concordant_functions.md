@@ -23,13 +23,13 @@ $$f : R^{n}\rightarrow R$$은 정의역 안에서 임의의 방향의 선분 영
 
 ## Example of self-concordance function
 
-1) $$f : \mathbb{R}^{n}\_{++}\rightarrow \mathbb{R}$$, $$f(x) = -\sum^{n}\_{i=1}log(x_{i})$$.
+1) $$f : \mathbb{R}^{n}_{++}\rightarrow \mathbb{R}$$, $$f(x) = -\sum^{n}_{i=1}log(x_{i})$$.
 
 $$f(t) = -\log{t}$$ 임은 쉽게 확인할 수 있다. 더불어 self-concordant 함수의 합 또한 self-concordant 함을 이용한다. Self-concordant한 함수 $$f_{1}, f_{2} : R\rightarrow R$$이 있다고 할 때, self-concordant 함수의 합 또한 self-concordant 함은 다음과 같이 보인다.[3]
 >\begin{align}
->|f_{1}^{'''}(x)+f_{2}^{'''}(x)|  \leq & |f^{'''}\_{1}(x)|+|f^{'''}\_{2}(x)|\\\\
-> \leq &2\big( f^{''}\_{1}(x)^{3/2}+f^{''}\_{2}(x)^{3/2}\big)\\\\
->\leq &2\big( f^{''}\_{1}(x)+f^{''}\_{2}(x) \big)^{3/2}.
+>|f_{1}^{'''}(x)+f_{2}^{'''}(x)|  \leq & |f^{'''}_{1}(x)|+|f^{'''}_{2}(x)|\\\\
+> \leq &2\big( f^{''}_{1}(x)^{3/2}+f^{''}_{2}(x)^{3/2}\big)\\\\
+>\leq &2\big( f^{''}_{1}(x)+f^{''}_{2}(x) \big)^{3/2}.
 >\end{align}
 
 맨 마지막 단계의 경우 아래의 성질을 이용한다.
