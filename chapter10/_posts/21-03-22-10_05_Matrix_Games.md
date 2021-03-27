@@ -92,7 +92,7 @@ Convex function의 maximization 또한 convex function이 된다.  이를 첫 �
 >\end{align}
 >$$
 
-위와 마찬가지로 이를 두 번째 관점의 문제 정의라고 칭하고, 이 최적화 문제의 해를 $$f^{*}\_{2}$$ 라고 하자. player R이 이 expected payout을 maximize하고자 하기 때문에, 첫 번째, 즉, R이 J의 strategy를 미리 알고 있다는 가정 하에 결정되는 expected payout $$f^{*}_{1} $$이 두 번째 가정보다 더 크거나 같은 값을 가질 것이라 쉽게 예상할 수 있다. ($$f^{*}\_{1}\geq f^{*}\_{2}$$)
+위와 마찬가지로 이를 두 번째 관점의 문제 정의라고 칭하고, 이 최적화 문제의 해를 $$f^{*}_{2}$$ 라고 하자. player R이 이 expected payout을 maximize하고자 하기 때문에, 첫 번째, 즉, R이 J의 strategy를 미리 알고 있다는 가정 하에 결정되는 expected payout $$f^{*}_{1} $$이 두 번째 가정보다 더 크거나 같은 값을 가질 것이라 쉽게 예상할 수 있다. ($$f^{*}_{1}\geq f^{*}_{2}$$)
   
 ## Von Neumann's minimax theorem
   하지만,  Von Neumann's minimax theorem에 따르면 $$f^{*}_{1} = f^{*}_{2}$$가 된다. 실제 minimax theorem은 다음과 같다. 

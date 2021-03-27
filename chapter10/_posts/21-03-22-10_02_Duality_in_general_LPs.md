@@ -12,7 +12,7 @@ MathJax.Hub.Config({
 });
 </script>
 
-[10-01](https://wikidocs.net/19931)에서 단일 차원의 변수의 LP 문제에 대한 primal, dual을 살펴보았다. 10-02에서는 general form(일반형)을 가지는 LP에 대한 dual을 살펴보고자 한다.
+[10-01]()에서 단일 차원의 변수의 LP 문제에 대한 primal, dual을 살펴보았다. 10-02에서는 general form(일반형)을 가지는 LP에 대한 dual을 살펴보고자 한다.
 
 LP의 general form은 다음과 같다.
 
