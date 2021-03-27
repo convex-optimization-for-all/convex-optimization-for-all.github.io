@@ -33,7 +33,7 @@ f(x^{(k)}) − f^{\star} ≤ c^k \frac{L}{2} \lVert x^{(0)} −x^{\star} \rVert_
 $$\nabla f$$는 Lipschitz continuous하며 $$f$$는 Lipschitz constant $$L$$을 계수로 하는 2차 항으로 된 quadratic upper bound를 갖는다. (Upper bound의 증명은 [06-03-02](https://wikidocs.net/18454) 절을 참조)
 
 > $$ \begin{align}
-f(y) \le f(x) + \nabla f(x)^T (y-x) + \frac{L}{2} \lVert y - x \rVert^2\_2  \space \space \forall x, y
+f(y) \le f(x) + \nabla f(x)^T (y-x) + \frac{L}{2} \lVert y - x \rVert^2_2  \space \space \forall x, y
 \end{align} $$
 
 Gradient descent를 현재 위치 $$x$$에서 다음 위치 $$x^+ = x - t \nabla f(x)$$로 진행한다고 해보자. 위의 식에서 $$y = x^+$$라고 하고 전개해보자.
@@ -41,30 +41,30 @@ Gradient descent를 현재 위치 $$x$$에서 다음 위치 $$x^+ = x - t \nabla
 
 > $$
 \begin{align}
-f(x^+) & \le f(x) +  \nabla f(x)^T (x^+ - x) + \frac{L}{2} \lVert x^+ - x \rVert^2\_2 \\\
-& = (x) +  \nabla f(x)^T (x - t \nabla f(x) - x) + \frac{L}{2} \lVert x - t \nabla f(x) - x \rVert^2\_2 \\\
-& = f(x) - t \nabla f(x)^T (\nabla f(x)) + \frac{L}{2} \lVert t \nabla f(x) \rVert^2\_2 \\\
-& =  f(x) - t \lVert \nabla f(x)) \rVert^2\_2 + \frac{Lt^2}{2} \lVert \nabla f(x) \rVert^2\_2 \\\
+f(x^+) & \le f(x) +  \nabla f(x)^T (x^+ - x) + \frac{L}{2} \lVert x^+ - x \rVert^2_2 \\\
+& = (x) +  \nabla f(x)^T (x - t \nabla f(x) - x) + \frac{L}{2} \lVert x - t \nabla f(x) - x \rVert^2_2 \\\
+& = f(x) - t \nabla f(x)^T (\nabla f(x)) + \frac{L}{2} \lVert t \nabla f(x) \rVert^2_2 \\\
+& =  f(x) - t \lVert \nabla f(x)) \rVert^2_2 + \frac{Lt^2}{2} \lVert \nabla f(x) \rVert^2_2 \\\
 \end{align} $$
 
 이 식을 $$t$$에 대해 미분을 해보면 $$t = 1/L$$일때 최소가 된다. 따라서, 이 식에 $$t = 1/L$$을 대입하면 다음 식을 얻게 된다.
 
 > $$
 \begin{align}
-f(x^+) & \le f(x) -  \frac{1}{2L} \lVert \nabla f(x) \rVert^2\_2 \\\
+f(x^+) & \le f(x) -  \frac{1}{2L} \lVert \nabla f(x) \rVert^2_2 \\\
 \end{align} $$
 
 양변에서 $$f(x^{*})$$을 빼보자.
 
 > $$
 \begin{align}
-f(x^+) - f(x^{*}) & \le f(x) - f(x^{*}) -  \frac{1}{2L} \lVert \nabla f(x) \rVert^2\_2 \\\
+f(x^+) - f(x^{*}) & \le f(x) - f(x^{*}) -  \frac{1}{2L} \lVert \nabla f(x) \rVert^2_2 \\\
 \end{align} $$
 
-Gradient Descent는 아래 조건을 만족하므로 이 조건을 $$2m(f(x) - f(x^{*})) \le \lVert \nabla f(x) \rVert^2\_2 $$와 같이 정리해서 위의 식에 대입한다. 
+Gradient Descent는 아래 조건을 만족하므로 이 조건을 $$2m(f(x) - f(x^{*})) \le \lVert \nabla f(x) \rVert^2_2 $$와 같이 정리해서 위의 식에 대입한다. 
 > $$
 \begin{align}
-f(x) - f(x^{*}) \le \frac{1}{2m} \lVert \nabla f(x) \rVert^2\_2 \\\
+f(x) - f(x^{*}) \le \frac{1}{2m} \lVert \nabla f(x) \rVert^2_2 \\\
 \end{align} $$
 
 그러면 다음 식과 같이 정리가 되며 이때 $$c = (1 - \frac{m}{L})$$라고 하자.
@@ -85,27 +85,27 @@ f(x^{(k)}) - f(x^{*}) & \le c^k ( f(x^{(0)}) - f(x^{*}) ) \\\
 다음 함수의 Taylor 식에 $$y = x^{(0)}$$을 $$x = x^{*}$$을 대입해 보자.
 
 > $$ \begin{align}
-f(y) \le f(x) + \nabla f(x)^T (y-x) + \frac{L}{2} \lVert y - x \rVert^2\_2  \space \space \forall x, y
+f(y) \le f(x) + \nabla f(x)^T (y-x) + \frac{L}{2} \lVert y - x \rVert^2_2  \space \space \forall x, y
 \end{align} $$
 
 함수가 Convex이므로 $$\nabla f(x^{*})$$는 0이 되며 식은 다음과 같이 정리된다.
 
 > $$ \begin{align}
-f(x^{(0)}) & \le f(x^{*}) + \nabla f(x^{*})^T (x^{(0)}- x^{*} ) + \frac{L}{2} \lVert x^{(0)} - x^{*} \rVert^2\_2 \\\\
-& =  f(x^{*}) + \frac{L}{2} \lVert x^{(0)} - x^{*} \rVert^2\_2 \\\\
+f(x^{(0)}) & \le f(x^{*}) + \nabla f(x^{*})^T (x^{(0)}- x^{*} ) + \frac{L}{2} \lVert x^{(0)} - x^{*} \rVert^2_2 \\\\
+& =  f(x^{*}) + \frac{L}{2} \lVert x^{(0)} - x^{*} \rVert^2_2 \\\\
 \end{align} $$
 
 $$f(x^{*})$$를 좌변으로 넘기면 다음과 같이 정리된다.
 
 > $$ \begin{align}
-f(x^{(0)}) - f(x^{*}) & \le \frac{L}{2} \lVert x^{(0)} - x^{*} \rVert^2\_2 \\\\
+f(x^{(0)}) - f(x^{*}) & \le \frac{L}{2} \lVert x^{(0)} - x^{*} \rVert^2_2 \\\\
 \end{align} $$
 
 이 식를 위의 식에 대입해 보자. 
 
 > $$
 \begin{align}
-f(x^{(k)}) - f(x^{*}) & \le c^k \frac{L}{2} \lVert x^{(0)} - x^{*} \rVert^2\_2  \\\
+f(x^{(k)}) - f(x^{*}) & \le c^k \frac{L}{2} \lVert x^{(0)} - x^{*} \rVert^2_2  \\\
 \end{align} $$
 
 이로써 Strong Convexity를 만족할 때 Gradient descent의 Convergence Theorm이 증명되었다.

@@ -34,7 +34,7 @@ owner: "Kyeongmin Woo"
 <figure class="image" style="align: center;">
 <p align="center">
   <img src="https://wikidocs.net/images/page/19037/tree_O9zyAlk.png" alt="tree_O9zyAlk" width="80%" height="80%">
-  <figcaption style="text-align: center;">[Fig 1] Example of Tree $$T_j$$ [3]</figcaption>
+  <figcaption style="text-align: center;">$$\text{[Fig 1] Example of Tree }T_j\text{ [3]}$$</figcaption>
 </p>
 </figure>
 

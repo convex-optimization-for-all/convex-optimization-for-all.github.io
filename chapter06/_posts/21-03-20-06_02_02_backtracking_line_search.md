@@ -53,21 +53,21 @@ Backtracking 방식으로 adaptive하게 step size를 선정하게 되면 fixed 
 #### The intuition of Backtracking line search
 
 > 함수 $$f$$에 대한 quadratic approximatior는 다음과 같이 정의된다.
-> $$f(y) \approx f(x) + \nabla f(x)^T(y-x) + \frac{1}{2t} \| y - x \|\_{2}^{2}$$
+> $$f(y) \approx f(x) + \nabla f(x)^T(y-x) + \frac{1}{2t} \vert \vert  y - x \vert \vert_2^2$$
 > 이때, $$y = x - t \nabla f(x)$$라 하면,
 > $$
 > \begin{align}
-> f(x - t \nabla f(x)) &\approx f(x) + \nabla f(x)^T (x - t \nabla f(x) - x) + \frac{1}{2t} \| x - t \nabla f(x) - x \|\_{2}^2 \\
-> &= f(x) - t \| \nabla f(x) \|\_{2}^2 + \frac{1}{2t} \| -t \nabla f(x) \|\_{2}^2 \\
-> &= f(x) - t \| \nabla f(x) \|\_{2}^2 + \frac{1}{2}t \| \nabla f(x) \|\_{2}^2 \\
-> &= f(x) - \frac{1}{2}t \| \nabla f(x) \|\_{2}^2
+> f(x - t \nabla f(x)) &\approx f(x) + \nabla f(x)^T (x - t \nabla f(x) - x) + \frac{1}{2t} \vert \vert  x - t \nabla f(x) - x \vert \vert_2^2 \\
+> &= f(x) - t \vert \vert  \nabla f(x) \vert \vert_2^2 + \frac{1}{2t} \vert \vert  -t \nabla f(x) \vert \vert_2^2 \\
+> &= f(x) - t \vert \vert  \nabla f(x) \vert \vert_2^2 + \frac{1}{2}t \vert \vert  \nabla f(x) \vert \vert_2^2 \\
+> &= f(x) - \frac{1}{2}t \vert \vert  \nabla f(x) \vert \vert_2^2
 > \end{align}
 > $$
 
-즉, $$f(x) - \frac{1}{2}t \| \nabla f(x) \|\_{2}^2$$는 $$f(x - t \nabla f(x))$$의 quadratic approximator이다. 이 두 함수 사이의 부등호 방향에 따른 기하학적인 의미를 살펴보자.
-(빨간선: $$f(x - t \nabla f(x))$$, 파란선: $$f(x) - \frac{1}{2}t \| \nabla f(x) \|\_{2}^2$$)
+즉, $$f(x) - \frac{1}{2}t \vert \vert  \nabla f(x) \vert \vert_2^2$$는 $$f(x - t \nabla f(x))$$의 quadratic approximator이다. 이 두 함수 사이의 부등호 방향에 따른 기하학적인 의미를 살펴보자.
+(빨간선: $$f(x - t \nabla f(x))$$, 파란선: $$f(x) - \frac{1}{2}t \vert \vert  \nabla f(x) \vert \vert_2^2$$)
 
-**(1) $$f(x - t \nabla f(x)) < f(x) - \frac{1}{2}t \| \nabla f(x) \|\_{2}^2$$**
+**(1) $$f(x - t \nabla f(x)) < f(x) - \frac{1}{2}t \vert \vert  \nabla f(x) \vert \vert_2^2$$**
 
 <figure class="image" style="align: center;">
 <p align="center">
@@ -78,7 +78,7 @@ Backtracking 방식으로 adaptive하게 step size를 선정하게 되면 fixed 
 
 Quadratic approximator가 $$x - t \nabla f(x)$$에서 더 위에 위치하는 형태이다. Quadratic approximatior의 solution에 접근하면 $$f(x)$$의 solution에 더 가까이 접근할 수 있음이 보장된다.
 
-**(2) $$f(x - t \nabla f(x)) > f(x) - \frac{1}{2}t \| \nabla f(x) \|\_{2}^2$$**
+**(2) $$f(x - t \nabla f(x)) > f(x) - \frac{1}{2}t \vert \vert  \nabla f(x) \vert \vert_2^2$$**
 
 <figure class="image" style="align: center;">
 <p align="center">
@@ -89,4 +89,4 @@ Quadratic approximator가 $$x - t \nabla f(x)$$에서 더 위에 위치하는 �
 
 (1)의 경우와는 반대되는 양상을 보인다. Quadratic approximatior의 solution을 통해 $$f(x)$$의 solution에 더욱 접근할 수 있음이 보장되지 않는다.
 
-**결론:** 매 스텝에서 t 값을 잘 조정하여 항상 $$f(x - t \nabla f(x)) \leq f(x) - \frac{1}{2}t \| \nabla f(x) \|\_{2}^2$$를 만족하도록 하면 훨씬 효과적으로 $$f(x)$$의 solution에 접근할 수 있다.
+**결론:** 매 스텝에서 t 값을 잘 조정하여 항상 $$f(x - t \nabla f(x)) \leq f(x) - \frac{1}{2}t \vert \vert  \nabla f(x) \vert \vert_2^2$$를 만족하도록 하면 훨씬 효과적으로 $$f(x)$$의 solution에 접근할 수 있다.

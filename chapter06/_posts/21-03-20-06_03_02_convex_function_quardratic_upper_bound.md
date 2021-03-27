@@ -9,16 +9,16 @@ owner: "Kyeongmin Woo"
 # Convex function quardratic upper bound
 
 ## Quardratic upper bound
-함수 $$f$$가 convex이고 $$\nabla f$$는 Lipschitz continuous하면 다음과 같은 quadractic upper bound를 갖는다. (단, $$L$$은 Lipschitz constant이다.)
+함수 $$f$$가 convex이고 $$\nabla f$$는 Lipschitz continuous하면 다음과 같은 \quadratic upper bound를 갖는다. (단, $$L$$은 Lipschitz constant이다.)
 
 > $$ \begin{align}
-f(y) & \le f(x) + \nabla f(x)^T (y-x) + \frac{L}{2} \lVert y - x \rVert^2\_2  \space \space \forall x, y
+f(y) & \le f(x) + \nabla f(x)^T (y-x) + \frac{L}{2} \lVert y - x \rVert^2_2  \space \space \forall x, y
 \end{align} $$
 
-또한, 다음 함수 $$g$$가 convex이면 함수 $$f$$는 quadractic upper bound를 갖는다.
+또한, 다음 함수 $$g$$가 convex이면 함수 $$f$$는 \quadratic upper bound를 갖는다.
 
 > $$ \begin{align}
-g(x) & = \frac{L}{2} \lVert x \rVert^2\_2 - f(x) \space \text{is convex, } \space \forall x \space \space \text{with dom g = dom f }\\\
+g(x) & = \frac{L}{2} \lVert x \rVert^2_2 - f(x) \space \text{is convex, } \space \forall x \space \space \text{with dom g = dom f }\\\
 \end{align} $$
 
 ## Proof
@@ -35,10 +35,10 @@ g(x) & = \frac{L}{2} \lVert x \rVert^2\_2 - f(x) \space \text{is convex, } \spac
 #### Lipschitz continuous
 $$\nabla f$$는 다음과 같이 Lipschitz constant $$L$$에 대해  Lipschitz continuous하다.
 
->$$ \lVert \nabla f(x) - \nabla f(y) \rVert\_2 \le L \lVert x - y \rVert\_2$$  for any $$x, y$$ and $$L \gt 0$$
+>$$ \lVert \nabla f(x) - \nabla f(y) \rVert_2 \le L \lVert x - y \rVert_2$$  for any $$x, y$$ and $$L \gt 0$$
 
 #### $$g$$가 convex임을 증명
-이제 $$g(x) = \frac{L}{2} \lVert x \rVert^2\_2 - f(x)$$가 convex임을 보이도록 하자.
+이제 $$g(x) = \frac{L}{2} \lVert x \rVert^2_2 - f(x)$$가 convex임을 보이도록 하자.
 
 함수 $$f$$가 convex이고 $$\nabla f$$는 Lipschitz continuous이므로 Cauchy-Schwarz inequality를 적용해서 다음과 같이 식을 전개해 볼 수 있다.
 
@@ -82,7 +82,7 @@ g(y) \gt g(x) + \nabla g(x)^T (y - x)
 \end{align} $$
 
 
-$$g(x)$$를 좌변으로 넘기고 $$g(x) = \frac{L}{2} \lVert x \rVert^2\_2 - f(x)$$와 $$\nabla g(x) = Lx - \nabla f(x)$$를 대입해보자.
+$$g(x)$$를 좌변으로 넘기고 $$g(x) = \frac{L}{2} \lVert x \rVert^2_2 - f(x)$$와 $$\nabla g(x) = Lx - \nabla f(x)$$를 대입해보자.
 >
 $$ \begin{align}
 \frac{L}{2} y^Ty - \frac{L}{2} x^Tx + f(x) - f(y) & \ge (Lx - \nabla f(x))^T (y - x) \\
@@ -100,7 +100,7 @@ $$ \begin{align}
 이 식을 정리해 보면 다음과 같이 된다.
 
 > $$ \begin{align}
-f(y) & \le f(x) + \nabla f(x)^T (y-x) + \frac{L}{2} \lVert y - x \rVert^2\_2  \space \space \forall x, y
+f(y) & \le f(x) + \nabla f(x)^T (y-x) + \frac{L}{2} \lVert y - x \rVert^2_2  \space \space \forall x, y
 \end{align} $$
 
-이로써 함수 $$f$$가 convex이고 $$\nabla f$$는 Lipschitz continuous하면 quadractic upper bound를 갖는다는 것이 증명되었다.
+이로써 함수 $$f$$가 convex이고 $$\nabla f$$는 Lipschitz continuous하면 \quadratic upper bound를 갖는다는 것이 증명되었다.

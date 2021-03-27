@@ -13,8 +13,7 @@ Gradient descent는 Lipschitz gradients를 가지며 convex이고 differentiable
 #### First-order method
 First-order method는 $$x^{(k)}$$번째 반복에서 다음과 같이 변경을 표현할 수 있다. 따라서, $$x^{(k)}$$번째 반복에서의 변경은 초기 위치 $$x^{(0)}$$와 $$x^{(0)}$$에서 $$ x^{(k−1)}$$까지의 gradient span으로 표현된다.
 
-> $$x^{(0)} + $$ **span**$$\\{∇f(x^{(0)}),∇f(x^{(1)}),...,∇f(x^{(k−1)})\\}$$
-
+> $$x^{(0)} + $$ **span**$$\{∇f(x^{(0)}),∇f(x^{(1)}),...,∇f(x^{(k−1)})\}$$
 
 ####  Theorem (Nesterov)
 Nesterov theorem은 first-order method의 수렴에 대한 lower bound를 제시한다.

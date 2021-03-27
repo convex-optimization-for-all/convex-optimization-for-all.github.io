@@ -10,7 +10,7 @@ owner: "Kyeongmin Woo"
 
 $$f$$는 convex이고 differentiable하며 **dom** $$f = R^n$$일 때 다음 식을 만족한다고 하자.
 
->$$ \lVert \nabla f(x) - \nabla f(y) \rVert\_2 \le L \lVert x - y \rVert\_2$$  for any $$x, y$$ and $$L \gt 0$$ <br>
+>$$ \lVert \nabla f(x) - \nabla f(y) \rVert_2 \le L \lVert x - y \rVert_2$$  for any $$x, y$$ and $$L \gt 0$$ <br>
 
 $$\nabla f$$는 Lipschitz constant $$L$$에 대해  Lipschitz continuous하다고 말할 수 있다.
 
@@ -20,7 +20,7 @@ $$\nabla f$$는 Lipschitz constant $$L$$에 대해  Lipschitz continuous하다�
 > **Gradient descent**는 fixed step size $$t \le 1/L$$에 대해 다음 식을 만족한다. 
 >$$
 \begin{align}
-f(x^{(k)}) - f^{*} \le  \frac{ \lVert x^{(0)} - x^{*} \rVert^2\_2 }{2tk}
+f(x^{(k)}) - f^{*} \le  \frac{ \lVert x^{(0)} - x^{*} \rVert^2_2 }{2tk}
 \end{align}
 $$
 
@@ -32,7 +32,7 @@ $$\nabla f$$는 Lipschitz continuous하며 $$f$$는 Lipschitz constant $$L$$을 
 
 > $$
 \begin{align}
-f(y) \le f(x) + \nabla f(x)^T (y-x) + \frac{L}{2} \lVert y - x \rVert^2\_2  \space \space \forall x, y
+f(y) \le f(x) + \nabla f(x)^T (y-x) + \frac{L}{2} \lVert y - x \rVert^2_2  \space \space \forall x, y
 \end{align}
 $$
 
@@ -41,12 +41,12 @@ Gradient descent를 현재 위치 $$x$$에서 다음 위치 $$x^+ = x - t \nabla
 
 >$$
 \begin{align}
-f(x^+) & \le f(x) +  \nabla f(x)^T (x^+ - x) + \frac{L}{2} \lVert x^+ - x \rVert^2\_2 \\\
-& = f(x) +  \nabla f(x)^T (x - t \nabla f(x) - x) + \frac{L}{2} \lVert x - t \nabla f(x) - x \rVert^2\_2 \\\
-& = f(x) - t \nabla f(x)^T (\nabla f(x)) + \frac{L}{2} \lVert t \nabla f(x) \rVert^2\_2 \\\
-& =  f(x) - t \lVert \nabla f(x)) \rVert^2\_2 + \frac{Lt^2}{2} \lVert \nabla f(x) \rVert^2\_2 \\\
-& =  f(x) - t ( 1 - \frac{Lt}{2} )\lVert \nabla f(x) \rVert^2\_2 \\\
-& \le f(x) -  \frac{t}{2} \lVert \nabla f(x) \rVert^2\_2 \\\
+f(x^+) & \le f(x) +  \nabla f(x)^T (x^+ - x) + \frac{L}{2} \lVert x^+ - x \rVert^2_2 \\\
+& = f(x) +  \nabla f(x)^T (x - t \nabla f(x) - x) + \frac{L}{2} \lVert x - t \nabla f(x) - x \rVert^2_2 \\\
+& = f(x) - t \nabla f(x)^T (\nabla f(x)) + \frac{L}{2} \lVert t \nabla f(x) \rVert^2_2 \\\
+& =  f(x) - t \lVert \nabla f(x)) \rVert^2_2 + \frac{Lt^2}{2} \lVert \nabla f(x) \rVert^2_2 \\\
+& =  f(x) - t ( 1 - \frac{Lt}{2} )\lVert \nabla f(x) \rVert^2_2 \\\
+& \le f(x) -  \frac{t}{2} \lVert \nabla f(x) \rVert^2_2 \\\
 \end{align}
 $$
 
@@ -54,7 +54,7 @@ $$
 
 >$$
 \begin{align}
-f(x^+) & \le f(x) -  \frac{t}{2} \lVert \nabla f(x) \rVert^2\_2 \\\
+f(x^+) & \le f(x) -  \frac{t}{2} \lVert \nabla f(x) \rVert^2_2 \\\
 \end{align}
 $$
 
@@ -79,21 +79,21 @@ $$
 
 >$$
 \begin{align}
-f(x^+) & \le f(x) -  \frac{t}{2} \lVert \nabla f(x) \rVert^2\_2 \\\
-& \le f(x^{*}) + \nabla f(x)^T (x-x^{*}) - \frac{t}{2} \lVert \nabla f(x) \rVert^2\_2 \\\
-& = f(x^{*}) + \frac{1}{2t} ( \lVert x - x^{*} \rVert^2\_2 -  \lVert x - x^{*} \rVert^2\_2 - t^2 \lVert \nabla f(x) \rVert^2\_2 + 2t \nabla f(x)^T (x - x^{*}) )  \\\
-& = f(x^{*}) + \frac{1}{2t} ( \lVert x - x^{*} \rVert^2\_2 -  (x - x^{*})^T (x - x^{*}) - t^2 \nabla f(x)^T  \nabla f(x) + 2t \nabla f(x)^T (x - x^{*}) )  \\\
-& = f(x^{*}) + \frac{1}{2t} ( \lVert x - x^{*} \rVert^2\_2 -  [(x - x^{*})^T (x - x^{*}) + t^2 \nabla f(x)^T  \nabla f(x) - 2t \nabla f(x)^T (x - x^{*})] )  \\\
-&= f(x^{*}) + \frac{1}{2t} ( \lVert x - x^{*} \rVert^2\_2 -  [(x - t \nabla f(x)^T - x^{*})^T (x - t \nabla f(x)^T - x^{*})] )  \\\
-& = f(x^{*}) + \frac{1}{2t} ( \lVert x - x^{*} \rVert^2\_2 -  \lVert  x - t \nabla f(x)^T - x^{*} \rVert^2\_2 )  \\\
-& = f(x^{*}) + \frac{1}{2t} ( \lVert x - x^{*} \rVert^2\_2 -  \lVert  x^+ - x^{*} \rVert^2\_2 )  \\\
+f(x^+) & \le f(x) -  \frac{t}{2} \lVert \nabla f(x) \rVert^2_2 \\\
+& \le f(x^{*}) + \nabla f(x)^T (x-x^{*}) - \frac{t}{2} \lVert \nabla f(x) \rVert^2_2 \\\
+& = f(x^{*}) + \frac{1}{2t} ( \lVert x - x^{*} \rVert^2_2 -  \lVert x - x^{*} \rVert^2_2 - t^2 \lVert \nabla f(x) \rVert^2_2 + 2t \nabla f(x)^T (x - x^{*}) )  \\\
+& = f(x^{*}) + \frac{1}{2t} ( \lVert x - x^{*} \rVert^2_2 -  (x - x^{*})^T (x - x^{*}) - t^2 \nabla f(x)^T  \nabla f(x) + 2t \nabla f(x)^T (x - x^{*}) )  \\\
+& = f(x^{*}) + \frac{1}{2t} ( \lVert x - x^{*} \rVert^2_2 -  [(x - x^{*})^T (x - x^{*}) + t^2 \nabla f(x)^T  \nabla f(x) - 2t \nabla f(x)^T (x - x^{*})] )  \\\
+&= f(x^{*}) + \frac{1}{2t} ( \lVert x - x^{*} \rVert^2_2 -  [(x - t \nabla f(x)^T - x^{*})^T (x - t \nabla f(x)^T - x^{*})] )  \\\
+& = f(x^{*}) + \frac{1}{2t} ( \lVert x - x^{*} \rVert^2_2 -  \lVert  x - t \nabla f(x)^T - x^{*} \rVert^2_2 )  \\\
+& = f(x^{*}) + \frac{1}{2t} ( \lVert x - x^{*} \rVert^2_2 -  \lVert  x^+ - x^{*} \rVert^2_2 )  \\\
 \end{align}
 $$
 
 마지막 단계는 $$x^+ = x - t \nabla f(x)$$이기 때문이다. 단계 $$i$$에 이 결과를 적용해 보면 다음과 같아진다.
 >$$
 \begin{align}
-f(x^{(i)}) - f(x^{*}) & \le \frac{1}{2t} ( \lVert x^{(i-1)}  - x^{*} \rVert^2\_2 -  \lVert  x^{(i)} - x^{*} \rVert^2\_2 )  \\\
+f(x^{(i)}) - f(x^{*}) & \le \frac{1}{2t} ( \lVert x^{(i-1)}  - x^{*} \rVert^2_2 -  \lVert  x^{(i)} - x^{*} \rVert^2_2 )  \\\
 \end{align}
 $$
 
@@ -101,9 +101,9 @@ $$
 
 >$$
 \begin{align}
-\sum_{i=1}^k f(x^{(i)}) - f(x^{*}) & \le \sum_{i=1}^k \frac{1}{2t} ( \lVert x^{(i-1)}  - x^{*} \rVert^2\_2 -  \lVert  x^{(i)} - x^{*} \rVert^2\_2 )  \\\
-& = \frac{1}{2t} ( \lVert x^{(0)}  - x^{*} \rVert^2\_2 -  \lVert  x^{(k)} - x^{*} \rVert^2\_2 )  \\\
-& \le \frac{1}{2t} ( \lVert x^{(0)}  - x^{*} \rVert^2\_2 )  \\\
+\sum_{i=1}^k f(x^{(i)}) - f(x^{*}) & \le \sum_{i=1}^k \frac{1}{2t} ( \lVert x^{(i-1)}  - x^{*} \rVert^2_2 -  \lVert  x^{(i)} - x^{*} \rVert^2_2 )  \\\
+& = \frac{1}{2t} ( \lVert x^{(0)}  - x^{*} \rVert^2_2 -  \lVert  x^{(k)} - x^{*} \rVert^2_2 )  \\\
+& \le \frac{1}{2t} ( \lVert x^{(0)}  - x^{*} \rVert^2_2 )  \\\
 \end{align}
 $$
 
@@ -119,7 +119,7 @@ $$
 
 >$$
 \begin{align}
-f(x^{(k)}) - f(x^{*}) \le \frac{1}{2tk} ( \lVert x^{(0)}  - x^{*} \rVert^2\_2 )  \\\
+f(x^{(k)}) - f(x^{*}) \le \frac{1}{2tk} ( \lVert x^{(0)}  - x^{*} \rVert^2_2 )  \\\
 \end{align}
 $$
 

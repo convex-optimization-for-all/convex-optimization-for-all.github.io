@@ -41,7 +41,7 @@ $$x^{\star}$$가 해라면 $$\nabla f(x^{\star}) = 0$$이다. 만약  $$f$$가 s
 위의 식이 도출되는 과정은 다음과 같다.
 $$f$$가 Strong Convexity를 만족하므로 다음과 같은 상수 $$m \ge 0$$이 존재한다.
 > $$ \begin{align}
-\nabla^2 f(x) \succeq mI \\\\
+\nabla^2 f(x) \succeq mI \\
 \end{align} $$
 
 함수 $$f$$를 2차 Talyor 식으로 전개해보자.
@@ -57,7 +57,7 @@ f(y) &  \ge f(x) + \nabla f(x)^T(y−x) + \frac{m}{2} \lVert y−x \rVert_2^2, \
 $$f(y)$$를 $$y$$에 대해서 미분을 하면 $$\tilde{y} = x - (1/m) \nabla f(x)$$가 된다. $$\tilde{y}$$를 Tayor 전개에 대입해 보면 다음과 같다.
 
 > $$ \begin{align}
-f(y) &  \ge f(x) + \nabla f(x)^T(\tilde{y}−x) + \frac{m}{2} \lVert \tilde{y}−x \rVert_2^2 \\\\
+f(y) &  \ge f(x) + \nabla f(x)^T(\tilde{y}−x) + \frac{m}{2} \lVert \tilde{y}−x \rVert_2^2 \\
 &  = f(x) - \frac{1}{2m} \lVert \nabla f(x) \rVert_2^2
 \end{align} $$
 
@@ -69,9 +69,9 @@ f(y) &  \ge f(x) + \nabla f(x)^T(\tilde{y}−x) + \frac{m}{2} \lVert \tilde{y}�
 위의 Stopping rule이 다음과 같이 도출되었다.
 
 > $$ \begin{align}
-f(x) - f^{*} \le \frac{1}{2m} \lVert \nabla f(x) \rVert^2\_2 & \le \epsilon \\\\
-\lVert \nabla f(x) \rVert^2\_2 & \le 2m\epsilon \\\\
-\lVert \nabla f(x) \rVert\_2 & \le \sqrt{2m\epsilon} \\\\
+f(x) - f^{*} \le \frac{1}{2m} \lVert \nabla f(x) \rVert^2_2 & \le \epsilon \\
+\lVert \nabla f(x) \rVert^2_2 & \le 2m\epsilon \\
+\lVert \nabla f(x) \rVert_2 & \le \sqrt{2m\epsilon} \\
 \end{align} $$
 
 
