@@ -51,7 +51,7 @@ MathJax.Hub.Config({
 >\end{align}
 >$$
 
-$$x,\, y$$가 feasible하다면, 세 constraint에 scalar 값을 곱해 더하거나 빼더라도 세 constraint를 그대로 만족한다. 따라서, 위와 같은 LP 문제가 있다면, constraint에 scalar 값을 곱해 더하거나 빼는 과정, 즉 constraint들의 선형 결합(linear combination)으로 objective function에 대한 표현이 가능하고, 그 결과로 $B$를 알 수 있다. 
+$$x,\, y$$가 feasible하다면, 세 constraint에 scalar 값을 곱해 더하거나 빼더라도 세 constraint를 그대로 만족한다. 따라서, 위와 같은 LP 문제가 있다면, constraint에 scalar 값을 곱해 더하거나 빼는 과정, 즉 constraint들의 선형 결합(linear combination)으로 objective function에 대한 표현이 가능하고, 그 결과로 $$B$$를 알 수 있다. 
 
 >$$
 >\begin{align}
