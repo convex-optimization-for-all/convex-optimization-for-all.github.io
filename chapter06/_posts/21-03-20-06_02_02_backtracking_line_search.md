@@ -13,8 +13,12 @@ Gradient descent에서 고정 step size를 사용하게 되면 진행 속도가 
 #### Backtracking line search 방법이란?
 이 방법은 다음 위치를 결정할 때 현재 위치에서 한 step을 가보고 너무 많이 갔다고 판단하면 다시 되돌아 오는 방법이다. 다음 그림은 **backtracking line search**로 다음 step을 결정하는 방식을 보여준다. 
 
-![](https://wikidocs.net/images/page/18184/06.02_02_01_Backtracking_Line_Search.PNG)
-**[Fig1] Backtracking Line Search [3]**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/18184/06.02_02_01_Backtracking_Line_Search.PNG" alt="backtrackinglinesearch1" width="100%" height="100%">
+  <figcaption style="text-align: center;">[Fig1] Backtracking Line Search [3]</figcaption>
+</p>
+</figure>
 
 곡면 $$f$$에서 탐색 범위는 직선으로 제한된다. 아래쪽 점선은 현재 위치 $$x$$에서 접선 방향으로 한 step 간 경우이다. 이 경우  $$f$$가 항상 직선보다 위쪽에 있으므로 많이 간 것인지  적당히 간 것인지 자세히 판단하기가 어렵다. 
 
@@ -39,10 +43,12 @@ Gradient descent에서 고정 step size를 사용하게 되면 진행 속도가 
 #### Backtracking line search 수렴 예시
 Backtracking 방식으로 adaptive하게 step size를 선정하게 되면 fixed step size로 100 step만에 수렴했던 예제가 12 step만에 수렴한다 ($$\alpha = \beta = 1/2$$). 내부 backtracking step까지 포함해도 총 40 step만에 수렴한다.
 
-![](https://wikidocs.net/images/page/18184/06.02_02_02_Convergence.PNG)
-**[Fig2] Convergence [3]**
-
-
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/18184/06.02_02_02_Convergence.PNG" alt="backtrackinglinesearch1" width="70%" height="70%">
+  <figcaption style="text-align: center;">[Fig2] Convergence [3]</figcaption>
+</p>
+</figure>
 
 #### The intuition of Backtracking line search
 
@@ -63,15 +69,23 @@ Backtracking 방식으로 adaptive하게 step size를 선정하게 되면 fixed 
 
 **(1) $$f(x - t \nabla f(x)) < f(x) - \frac{1}{2}t \| \nabla f(x) \|\_{2}^2$$**
 
-![](https://wikidocs.net/images/page/18184/f_leq_app.png)
-**[Fig 3] f is less than the approximation of the next step**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/18184/f_leq_app.png" alt="f_leq_app" width="60%" height="60%">
+  <figcaption style="text-align: center;">[Fig 3] f is less than the approximation of the next step</figcaption>
+</p>
+</figure>
 
 Quadratic approximator가 $$x - t \nabla f(x)$$에서 더 위에 위치하는 형태이다. Quadratic approximatior의 solution에 접근하면 $$f(x)$$의 solution에 더 가까이 접근할 수 있음이 보장된다.
 
 **(2) $$f(x - t \nabla f(x)) > f(x) - \frac{1}{2}t \| \nabla f(x) \|\_{2}^2$$**
 
-![](https://wikidocs.net/images/page/18184/f_geq_app.png)
-**[Fig 4] f is greater than the approximation of the next step**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/18184/f_geq_app.png" alt="f_geq_app" width="60%" height="60%">
+  <figcaption style="text-align: center;">[Fig 4] f is greater than the approximation of the next step</figcaption>
+</p>
+</figure>
 
 (1)의 경우와는 반대되는 양상을 보인다. Quadratic approximatior의 solution을 통해 $$f(x)$$의 solution에 더욱 접근할 수 있음이 보장되지 않는다.
 

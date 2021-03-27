@@ -117,8 +117,12 @@ $$f$$가 strongly convex일 경우 convergence rate는 ($$O(c^k)$$)가 되어 �
 
 수렴 속도 $$O(c^k)$$는 아래 그림과 같이 semi-log plot에서 선형처럼 보이므로 선형적 수렴(linear convergence)이라고도 부른다.
 
-![](https://wikidocs.net/images/page/18092/06.03_01_01_Line_Convergence.PNG)<br>
-**[Fig 1] Linear convergence [1]**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/18092/06.03_01_01_Line_Convergence.PNG" alt="Line_Convergence" width="60%" height="60%">
+  <figcaption style="text-align: center;">[Fig 1] Linear convergence [1]</figcaption>
+</p>
+</figure>
 
 $$O(c^k)$$에서 상수 c는 $$1 - \frac{m}{L}$$로 condition number $$L/m$$에 따라 달라진다. Condition number가 커질수록 속도가 느려진다. (Condition number = largest engenvalue / smallest engenvalue이다.)
 

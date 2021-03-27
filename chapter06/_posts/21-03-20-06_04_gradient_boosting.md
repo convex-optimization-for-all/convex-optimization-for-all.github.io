@@ -31,8 +31,12 @@ owner: "Kyeongmin Woo"
 
 아래 그림과 같이 앙상블에 소속된 각 트리는 $$x_i \in R^p$$를 입력으로 받아 트리의 노드에 있는 분기 조건에 따라 결과를 출력하게 된다.
 
-![](https://wikidocs.net/images/page/19037/tree_O9zyAlk.png)
-**[Fig 1] Example of Tree $$T_j$$ [3]**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/19037/tree_O9zyAlk.png" alt="tree_O9zyAlk" width="80%" height="80%">
+  <figcaption style="text-align: center;">[Fig 1] Example of Tree $$T_j$$ [3]</figcaption>
+</p>
+</figure>
 
 앙상블 모델의 예측값 $$u_i$$는 각 트리의 결과를 가중 합산해서 계산할 수 있다. (여기서 $$T_j(x_i)$$는 트리 $$j$$가 $$x_i$$를 입력으로 받아 출력한 결과이다.)
 

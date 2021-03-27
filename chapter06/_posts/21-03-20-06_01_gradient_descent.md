@@ -31,13 +31,22 @@ Gradient descent는 초기 점 $$x^{(0)} \in R^n$$을 선택하고 다음 식을
 #### Examples
 
 다음 그림에는 함수 $$f$$가 convex function일 때 gradient descent를 수행을 보여주고 있다. 이 경우, local minimum = global minimum에 도달할 수 있게 된다.
-![](https://wikidocs.net/images/page/18084/gradientdescent1.PNG)
-**[Fig 1] Gradient descent in convex functions[3]**
+
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/18084/gradientdescent1.PNG" alt="gradientdescent1" width="80%" height="80%">
+  <figcaption style="text-align: center;">[Fig 1] Gradient descent in convex functions[3]</figcaption>
+</p>
+</figure>
 
 반면 다음 그림에는 함수 $$f$$가 non-convex function일 때 gradient descent를 수행을 보여주고 있다. 이 경우 초기점이 어느 곳에 위치하느냐에 따라서 각각 다른 곳에 존재하는 local minimum으로 수렴한다. 
-![](https://wikidocs.net/images/page/18084/gradientdescent2.PNG)
-**[Fig 2] Gradient descent in non-convex functions[3]**
 
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/18084/gradientdescent2.PNG" alt="gradientdescent2" width="80%" height="80%">
+  <figcaption style="text-align: center;">[Fig 2] Gradient descent in non-convex functions[3]</figcaption>
+</p>
+</figure>
 
 ## Gradient decent interpretation
 Gradient descent는 함수를 2차 식으로 근사한 후 함수의 최소 위치를 다음 위치로 선택하는 방법이다.
@@ -60,8 +69,12 @@ f(y) \approx f(x) + \nabla f(x)^T (y - x) +  \frac{1}{2t}  \parallel y - x  \par
 
 아래 그림에서 파란색 점은 현재 위치 $$x$$를 나타내며 빨간색 점은 다음 위치 $$y$$를 나타낸다. 아래쪽에 있는 곡선은 실제 함수 $$f$$의 곡선이며 윗쪽에 있는 곡선은 함수 $$f$$의 2차 근사 곡선이라고 볼 수 있다. 따라서, 빨간색 점은 2차 근사식에 대한 최소 지점을 나타낸다.
 
-![](https://wikidocs.net/images/page/18084/gradientdescent3.PNG)
-**[Fig 3] Gradient descent algorithm : red dot is $$x^+$$ and blue dot $$x$$ [3]**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/18084/gradientdescent3.PNG" alt="gradientdescent3" width="80%" height="80%">
+  <figcaption style="text-align: center;">$$ \text{[Fig 3] Gradient descent algorithm : red dot is } x^+ \text{ and blue dot } x \text{ [3]} $$</figcaption>
+</p>
+</figure>
 
 현재 위치 $$x$$에서 다음 위치 $$y$$가 얼마나 가까운지는 proximity term의 weight $$\frac{1}{2t}$$에 따라 달라진다. 만약 $$t$$ 값이 작다면, proximity term의 weight는 커지게 되고 스텝은 작아지게 될 것이다. 이러한 과정은 다음 수식으로 표현된다.
 
