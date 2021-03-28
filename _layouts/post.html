@@ -13,10 +13,8 @@ layout: default
 
 {% assign post_order = page.order%}
 
-{% assign post_before_before = page.order | minus: 2 %}
 {% assign post_before = page.order | minus: 1 %}
 {% assign post_after = page.order | plus: 1 %}
-{% assign post_after_after = page.order | plus: 2 %}
 
 {% if post_list.size >= 2 %}
 <div class="related">
@@ -24,10 +22,8 @@ layout: default
   <ul class="related-posts">
     {% for post in post_list%}
       {% if 
-        post.order == post_before_before or 
         post.order == post_before or 
-        post.order == post_after or
-        post.order == post_after_after 
+        post.order == post_after
       %}
         <li>
           <h3>
