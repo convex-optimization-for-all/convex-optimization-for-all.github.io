@@ -33,7 +33,7 @@ dist(x,C) & = \min_{y \in C} \vert \vert y-x \vert \vert _2 \\
 여기서, 
 >
 \begin{equation}
-C \subseteq H = \\{y:(x-u)^T(y-u) \leq 0 \\}
+C \subseteq H = \{y:(x-u)^T(y-u) \leq 0 \}
 \end{equation}
 
 (i) $$y \in H $$에 대해, 

@@ -7,11 +7,10 @@ owner: "Minjoo Lee"
 ---
 ## Barrier method v.0
 **Barrier method v.0**은 $$\epsilon \gt 0$$일 때 $$t = m/\epsilon$$로 선택해서 다음 barrier problem을 풀어서 $$f(x^*(t)) - f(x^*) \le \epsilon $$를 구한다. 
->
-\begin{align}
+>$$\begin{align}
  \min_{x} & \quad tf(x) + \phi(x) \\\
  \text{subject to } & \quad Ax = b \\\
-\end{align}
+\end{align}$$
 
 이때, $$m$$은 constraint개수이고 $$t$$는 $$1/\epsilon$$의 배수이기 때문에 $$\epsilon$$이 작을 수록 $$t$$가 매우 커지게 되며 결국 central path의 끝부분이 되므로 문제는 original problem과 같아진다. 따라서, 매우 느리고 구하기 힘든 문제가 될 수 있다.
 
@@ -19,11 +18,10 @@ owner: "Minjoo Lee"
 
 ## Barrier method v.1
 **Barrier method v.1**은 $$t$$ 값을 증가시키면서 다음의 barrier problem을 점진적으로 여러번 푸는 방법이다.
->
-\begin{align}
+>$$\begin{align}
  \min_{x} & \quad tf(x) + \phi(x) \\\
  \text{subject to } & \quad Ax = b \\\
-\end{align}
+\end{align}$$
 
 #### Algorithm
 알고리즘을 설명하면 다음과 같다.
@@ -56,5 +54,9 @@ $$\mu$$와 $$t^{(0)}$$의 선택에 있어서, 다음의 trade off를 고려해�
 ## Example of small LP
 다음 그릠에는 n=50 dimensions, m=100 inequality constraints 조건의 LP 문제를 barrier method로 실행했을 때 성능을 보여주고 있다. $$\mu = 2$$인 경우 outer iteration이 커지고 $$\mu=150$$인 경우에 centering step이 $$\mu=50$$일 때보다 상대적으로 증가했음을 확인할 수 있다.
 
-![](https://wikidocs.net/images/page/21300/15_barrier_method_03.PNG) <br>
-**[Fig 1] Example of small LP [3]**
+<figure class="image" style="align: center;">
+<p align="center">
+ <img src="https://wikidocs.net/images/page/21300/15_barrier_method_03.PNG" alt="" width="70%" height="70%">
+ <figcaption style="text-align: center;">[Fig 1] Example of small LP [3]</figcaption>
+</p>
+</figure>

@@ -33,10 +33,19 @@ Barrier method v.2에서는 다음 두 가지 사항이 매우 중요하다.<br>
 ## Example of LP
 다음 그림을 보면 $$m$$개 constraint를 갖는 문제에 대해 barrier method를 실행해 보면 $$m$$의 크기가 커지더라도 linear convergence를 한다는 것을 볼 수 있다. 즉, $$m$$에 대해 log scale을 갖는다.
 
-![](https://wikidocs.net/images/page/21320/15_barrier_methodv2_04.PNG) <br>
-**[Fig 1] $$m$$에 대해 newton iteration과 suboptimality gap 분석 [1]**
+<figure class="image" style="align: center;">
+<p align="center">
+ <img src="https://wikidocs.net/images/page/21320/15_barrier_methodv2_04.PNG" alt="" width="70%" height="70%">
+ <figcaption style="text-align: center;">[Fig 1] m에 대해 newton iteration과 suboptimality gap 분석 [1]</figcaption>
+</p>
+</figure>
+
 
 다르게 보면 ($$10^4$$인 초기 suboptimal gap (duality gap)을 줄이기 위해 필요한) newton step은 $$m$$에 대해 천천히 증가한다. 아래 그림을 보면 $$m$$이 크게 증하하더라도 각 centering step 별로 20~30 newton step 정도만 필요하다. 단, 한 newton step은 문제의 크기에 따라 크게 달라진다.
 
-![](https://wikidocs.net/images/page/21320/15_barrier_methodv2_05.PNG)  <br>
-**[Fig 2] $$m$$의 증가와 newton iteration 수 분석 [1]**
+<figure class="image" style="align: center;">
+<p align="center">
+ <img src="https://wikidocs.net/images/page/21320/15_barrier_methodv2_05.PNG" alt="" width="70%" height="70%">
+ <figcaption style="text-align: center;">[Fig 2] m의 증가와 newton iteration 수 분석 [1]</figcaption>
+</p>
+</figure>

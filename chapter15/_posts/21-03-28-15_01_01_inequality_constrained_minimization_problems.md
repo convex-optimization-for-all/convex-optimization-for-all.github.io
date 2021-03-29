@@ -12,11 +12,13 @@ MathJax.Hub.Config({
 </script>
 다음과 같은 convex optimization 문제를 고려해보자.
 >
-\begin{align}
-\min_{x} & \quad f(x) \\\
+$$\begin{align}
+\min_{x} & \quad f(x)
+\end{align}$$
+$$\begin{align}
 \text{subject to } & \quad Ax = b \\\
                         & \quad h_{i}(x) \leq 0, i = 1, \dotsc, m
-\end{align}
+\end{align}$$
 
 이와 같이 inquality가 포함된 문제에서는 binding contraints와 non-binding contraints를 파악하기 어려우며, 특히 feasible region의 boundary에서 이러한 어려움이 발생한다. 참고로, Binding constraints란 solution을 찾을 때 영향을 주는 제약조건을 의미한다.
 
@@ -33,11 +35,13 @@ Active set method의 경우 최적화 결과에 영향을 주는 constraints가 
 * 참고 : [Active set method](https://en.wikipedia.org/wiki/Active_set_method)
 
 ## Reducing equality constrained minimization problem
-위의 문제는 $$C := \\{x : h_i(x) \le 0, i = 1, \cdots , m \\}$$라고 하면 다음과 같이 다시 작성해 볼 수 있다. Inequality constraints는 Indicator function 형태로 objective function에 포함시킬 수 있다.
+위의 문제는 $$C := \{x : h_i(x) \le 0, i = 1, \cdots , m \}$$라고 하면 다음과 같이 다시 작성해 볼 수 있다. Inequality constraints는 Indicator function 형태로 objective function에 포함시킬 수 있다.
 
 >
 \begin{align}
 \min_{x} & \quad f(x) + I_C(x) \\\
+\end{align}
+\begin{align}
 \text{subject to } & \quad Ax = b \\\
 \end{align}
 
