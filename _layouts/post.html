@@ -22,7 +22,7 @@ layout: default
     {% for post in post_list%}
       {% if post.order == post_before %}
         <li>
-          <h2>Post Before</h2>
+          <h2>Previous Post</h2>
           <h3>
             <a href="{{ site.baseurl }}{{ post.url }}">
               {{ post.title }}
@@ -32,7 +32,7 @@ layout: default
       {% endif %}
       {% if post.order == post_after %}
         <li>
-          <h2>Post After</h2>
+          <h2>Next Post</h2>
           <h3>
             <a href="{{ site.baseurl }}{{ post.url }}">
               {{ post.title }}
