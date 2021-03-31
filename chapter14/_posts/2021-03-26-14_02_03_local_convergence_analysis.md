@@ -15,13 +15,11 @@ Newton's method의 두 번째 중요한 성질로는 특정 조건들을 만족�
 
 
 >정리 : $$F : \mathbb{R}^{n}\, \rightarrow  \, \mathbb{R}^{n}$$ 가 연속으로 미분가능(continuosly differentiable)하고,  $$x^{\star} \in \mathbb{R}^{n}$$ 가 함수 $$F$$의 근이라고 하자, 즉, $$F(x^{\star})=0$$이다.
->이때  $$F^{'}(x^{\star}) $$이 non-singular 하다면 아래의 (a), (b)를 만족한다.
-
+>이때  $$F^{'}(x^{\star}) $$이 non-singular 하다면 아래의 (a), (b)를 만족한다. \\\\
 >(a) 만약 $$\|\| x^{(0)}-x^{\star} \|\|<\delta$$를 만족하는 양수의 $$\delta$$\(>0)가 존재하고, Newton's method가 정의되어 있으면 밑의 식(converges superlinearly)을 만족한다.  
 >\begin{align} 
 >\lim_{ k \rightarrow \infty } \frac{ \|\| x^{ (k+1) }-x^{ \star } \|\| } { \|\| x^{ (k) }-x^{ \star } \|\| } =0.
->\end{align}
-
+>\end{align} \\
 >(b) 만약 $$F^{'}$$가 $$x^{\star}$$의 근처에서 Lipshitz continuous하면, 밑의 식(quadratic convergence)을 만족하는 양수 K(>0)가 존재한다.
 >\begin{align}
 >\|\|x^{ (k+1) } - x^{ \star }\|\| \leq K \|\| x^{ (k) }-x^{ \star }\|\|^{2}.

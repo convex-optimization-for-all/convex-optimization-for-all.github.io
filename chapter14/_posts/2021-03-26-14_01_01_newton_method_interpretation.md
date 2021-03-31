@@ -37,7 +37,7 @@ MathJax.Hub.Config({
 >$$
 
 ## Gradient descent update step
-gradient desent에서는 함수 $$f$$의 2차 테일러 근사 항을 사용하고, 2차 항의 경우 실제 2차 미분 결과가 아닌, 정방행렬(identity matrix)과 이를 $$t$$로 나눈 값으로 가정한다.
+gradient descent에서는 함수 $$f$$의 2차 테일러 근사 항을 사용하고, 2차 항의 경우 실제 2차 미분 결과가 아닌, 정방행렬(identity matrix)과 이를 $$t$$로 나눈 값으로 가정한다.
 
 >$$
 >\begin{align}

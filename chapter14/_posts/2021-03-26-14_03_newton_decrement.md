@@ -25,11 +25,11 @@ MathJax.Hub.Config({
 ## Characteristics of Newton decrement
 첫번째로, Newton decrement는 함수 $$f(x)$$와 이 함수의 이차 근사(quadratic approximation)의 최소값의 차이와 관계가 있다.
 이 차이를 구해보면 다음과 같다.
->\begin{align}
+>$$\begin{align}
 >f(x)-&\min_{y} \big( f(x)+\nabla f(x)^{T}(y-x)+\frac{1}{2}(y-x)^{T}\nabla^{2}f(x)(y-x)\big),\\\\
 >f(x)-&\bigg( f(x) + \nabla^{T}f(x)\big( -(\nabla^{2} f(x) )^{-1} \nabla f(x)\big) + \frac{1}{2}\big( -(\nabla^{2}f(x))^{-1} \nabla f(x) \big)^{T} \nabla ^{2}f(x) \big( -(\nabla^{2}f(x))^{-1}\nabla f(x) \big) \bigg) \\\\ 
 >&= \frac{1}{2}\nabla f(x)^{T}(\nabla^{2} f(x) )^{-1}\nabla f(x) = \frac{1}{2}\lambda(x)^{2}.
->\end{align}
+>\end{align}$$
 
 즉, 우리는 $$\frac{1}{2}\lambda^{2}(x)$$를 suboptimality gap인 $$f(x)-f^{\star}$$의 approximate bound로 생각할 수 있다.
 

@@ -21,7 +21,7 @@ $$f$$는 convex이고, 두 번 미분 가능하며, $$dom(f)=\mathbb{R}^{n}$$을
 1. $$\nabla f $$는 parameter L에 대하여 Lipschitz continuous이다.
 >$$\begin{align}
 >\|\nabla f(x) - \nabla f(y)\|_{2} \leq L\|x-y\|_{2} \quad \forall x,y.
->\end{align}$$$$
+>\end{align}$$
 
 2. $$f$$는 parameter m에 대하여 strongly convex하다. (upper bound $$L$$과 Lipschitz continuous의 관계 : [출처](https://xingyuzhou.org/blog/notes/strong-convexity), [본서 : 06-03-05](https://wikidocs.net/18093))
 >$$\begin{align}
@@ -30,7 +30,7 @@ $$f$$는 convex이고, 두 번 미분 가능하며, $$dom(f)=\mathbb{R}^{n}$$을
 3. $$\nabla^{2} f $$는 parameter M에 대하여 Lipschitz continuous하다.
 >$$\begin{align}
 >\|\nabla^{2}f(x)-\nabla^{2}f(y)\|_{2} \leq M\|x-y\|_{2} \quad \forall x,y.
->\end{align}$$$$
+>\end{align}$$
 
 ## Convergence analysis
 위 세가지 조건을 만족하면, $$0<\eta \leq m^{2}/M$$와 $$\gamma>0$$을 만족하는 $$\eta, \gamma$$에 대하여 각각의 phase에 대한 convergence를 아래와 같이 구할 수 있다.
@@ -38,11 +38,11 @@ $$f$$는 convex이고, 두 번 미분 가능하며, $$dom(f)=\mathbb{R}^{n}$$을
 >Phase I : "Damped" phase, $$\|\nabla f(x)^{(k)}\|_{2} \geq \eta$$,
 >$$\begin{align}
 >f(x^{(k+1)})-f(x^{(k)}) \leq -\gamma
->\end{align}$$
+>\end{align}$$ \\
 >Phase 2 : "Pure" phase, $$\|\nabla f(x^{(k)}\|_{2}<\eta$$, bactracking selects $$t = 1$$ \\
 >$$\begin{align}
 >\frac{M}{2m^{2}}\|\nabla f(x^{(k+1)})\|_{2} \leq \bigg( \frac{M}{2m^{2}}\|\nabla f(x^{(k)})\|_{2} \bigg)^{2}.
->\end{align}$$$$
+>\end{align}$$
 
 처음의 $$k$$번째 iteration에서 $$\|\nabla f(x^{(k)}\|_{2}<\eta$$를 만족하여 Pure phase에 도달하게 되면, 이 후의 iteration에 대해서는 항상 이 조건을 만족함을 유념하자. 
 
@@ -54,17 +54,9 @@ Phase1에서의 경우, $$x^{(0)}$$에서부터 k번의 iteration을 진행했�
 >$$\begin{align}
 >\require{cancel}
 >& &\cancel{f(x^{(1)})}-f(x^{(0)}) \leq -\gamma \\\\
->\end{align}$$
->$$\begin{align}
 >& &\cancel{f(x^{(2)})}-\cancel{f(x^{(1)})} \leq -\gamma \\\\
->\end{align}$$
->$$\begin{align}
 >& &\vdots \\\\
->\end{align}$$
->$$\begin{align}
 >&+ &f(x^{(k)})-\cancel{f(x^{(k-1)})} \leq -\gamma \\\\
->\end{align}$$
->$$\begin{align}
 >&= &f(x^{(k)})-f(x^{(0)})\leq -k\gamma.
 >\end{align}$$
 
@@ -79,7 +71,7 @@ Phase 2에서는 $$k_{0}$$에서 iteration을 시작하여, step을 $$k-k_{0}$$�
 >&\Leftrightarrow &\frac{M}{2m^{2}}\|\nabla f^{(k_{0}+(k-k_{0}))}\|_{2} \leq \bigg( \big( \frac{M}{2m^{2}}\|\nabla f^{(k_{0}+1)}\|_{2} \big) ^{2} \bigg)^{k-k_{0}} \leq (\frac{1}{2})^{2^{(k-k_{0})}}.\\\\
 >&\Leftrightarrow &f(y)\geq f(x)+\nabla f(x)^{T}(y-x)+\frac{m}{2}\|y-x\|^{2}_{2}\geq f(x)-\frac{1}{2m}\|\nabla f(x)\|^{2}_{2}, \text{ for all }y,\\\\
 >&\Leftrightarrow &f(x^{(k)})-f^{\star} \leq \frac{1}{2m}\|\nabla f(x^{k})\|_{2}^{2}\leq \frac{2m^{3}}{M^{2}}(\frac{1}{2})^{2^{k-k_{0}+1}}.
->\end{align}$$$$
+>\end{align}$$
 
 따라서 $$k_{0}$$번째를 분기로 step에 따른 convergence를 아래와 같이 정리할 수 있다.
 
@@ -88,7 +80,7 @@ Phase 2에서는 $$k_{0}$$에서 iteration을 시작하여, step을 $$k-k_{0}$$�
 >&f(x^{(k)})-f^{\star} \leq \begin{cases} (f(x^{(0)})-f^{\star})-\gamma k \qquad &\text{if }k\leq k_{0}\\
 \frac{2m^{3}}{M^{2}}(\frac{1}{2})^{2^{k-k_{0}+1}} \qquad &\text{if }k>k_{0}.
 \end{cases}
->\end{align}$$$$
+>\end{align}$$
 
 >여기서 $$\gamma = \frac{\alpha \beta^{2}\eta^{2}m}{L^{2}}$$, $$\eta = \min\{1, 3(1-2\alpha)\}\frac{m^{2}}{M}$$, $$k_{0}$$는 $$\|\nabla f(x^{k_0+1}))\|_{2}<\eta$$를 만족하기 시작하는 step이다.
 
@@ -98,52 +90,53 @@ Phase 2에서는 $$k_{0}$$에서 iteration을 시작하여, step을 $$k-k_{0}$$�
 >$$f$$의 taylor approximation에서 $$y=x+t\Delta x_{nt}$$로 두고, Lipschitz condition의 upper bound로 적용한 아래 식에서부터 시작한다.
 >$$\begin{align}
 >f(x+t\Delta x_{nt}) \leq f(x)+t\nabla f(x)^{T}\Delta x_{nt} + \frac{L \|\Delta x_{nt} \|^{2}_{2} }{2}t^{2},
->\end{align}$$$$
+>\end{align}$$
 Newton decrement, 증분과 hessian matrix와의 관계와 Strong convexity의 관계를 이용하여 다음과 같이 전개할 수 있다.
 >$$\begin{align}
 >&\text{ Since, }\lambda(x)^{2}=\Delta x_{nt}^{T} \nabla^{2} f(x) \geq m\|\Delta x_{nt}\|^{2}_{2},\\\\
 >&f(x)+t\nabla f(x)^{T}\Delta x_{nt} + \frac{L \|\Delta x_{nt} \|^{2}_{2} }{2}t^{2} \leq f(x)-t\lambda(x)^{2} + \frac{L}{2m}t^{2}\lambda(x)^{2},
->\end{align}$$$$
+>\end{align}$$
 >이 때, backtracking line search의 조건을 만족하기 위해서는 아래를 만족해야 한다.
 >$$\begin{align}
 >f(x+t\Delta x_{nt}) \leq f(x)-(1-\frac{L}{2m}t)t \lambda(x)^{2}, \qquad \text{ where, }0<1-\frac{L}{2m}t \leq \frac{1}{2}
->\end{align}$$$$
+>\end{align}$$
 >위를 만족하는 t의 최소값을 $$\hat{t}$$라 할 때, $$\hat{t} = \frac{m}{L}$$이 되고, 이를 원 식에 대입하면 다음과 같다.
 >$$\begin{align}
 >f(x+\hat{t}\Delta x_{nt})\leq f(x)-\frac{m}{2L}\lambda(x)^{2} \leq f(x) -\alpha \hat{t} \lambda(x)^{2},
->\end{align}$$$$
+>\end{align}$$
 >backtracking line search에서 $$0<\beta\leq 1$$이므로, $$t\geq \beta \frac{m}{L}$$를 만족하고, 이를 정리하여 최종 결과를 유도할 수 있다.
 >$$\begin{align}
->f(x^{+})-f(x) &\leq -\alpha t \lambda(x)^{2}\\\\
-> &\leq -\alpha\beta \frac{m}{L}\lambda(x)^{2}\\\\
-> &\leq -\alpha\beta \frac{m}{L^{2}}\|\nabla f(x)\|^{2}_{2}\\\\
-> &\leq -\alpha\beta \eta^{2}\frac{m}{L^{2}},\\\\
+>f(x^{+})-f(x) &\leq -\alpha t \lambda(x)^{2}\\
+> &\leq -\alpha\beta \frac{m}{L}\lambda(x)^{2}\\
+> &\leq -\alpha\beta \frac{m}{L^{2}}\|\nabla f(x)\|^{2}_{2}\\
+> &\leq -\alpha\beta \eta^{2}\frac{m}{L^{2}},\\
 > &\gamma = \alpha\beta \eta^{2}\frac{m}{L^{2}}.
->\end{align}$$$$
+>\end{align}$$
 
 
 
 ## Proof 2. Pure phase
 이제 $$\|\nabla f(x)\|_{2} < \eta$$일 때를 가정하고, Damped phase(quadratically convergent phase)를 살펴본다. 증명은 두가지 과정으로 나뉜다. backtracking line search의 t 업데이트가 필요하지 않음을 보이고, 수렴속도가 quadratic함을 보이게 된다.
 
->Backtracking line seach로 부터 다음과 같은 식이 유도된다.
+>Backtracking line seach로 부터 다음과 같은 식이 유도된다.\\
 >$$\begin{align}
 >\eta \leq 3(1-2\alpha)\frac{m^{2}}{M}.
->\end{align}$$
->또한, Lipschitz conditon에 따라 $$t \geq 0$$에 대하여, 다음 조건을 만족한다.
+>\end{align}$$ 
+
+>또한, Lipschitz conditon에 따라 $$t \geq 0$$에 대하여, 다음 조건을 만족한다. \\
 >$$\begin{align}
 >\|\nabla^{2}f(x+t\Delta x_{nt})-\nabla^{2}f(x)\|_{2} \leq tM \|\Delta x_{nt} \|_{2},\\\\
 >| \Delta x_{nt}^{T} \big( \nabla^{2}f(x+t\Delta x_{nt})-\nabla^{2}f(x) \big) \Delta x_{nt}| \leq tM \|\Delta x_{nt} \|_{2}^{3}.
 >\end{align}$$
->$$\tilde{f} = f(x+t\Delta x_{nt}$$)라 두면, $$\tilde{f}''(t) = \Delta x_{nt}^{T} \nabla^{2}f(x+t\Delta x_{nt})\Delta x_{nt}$$이고, 이를 대입한다.
+
+>$$\tilde{f} = f(x+t\Delta x_{nt}$$)라 두면, $$\tilde{f}''(t) = \Delta x_{nt}^{T} \nabla^{2}f(x+t\Delta x_{nt})\Delta x_{nt}$$이고, 이를 대입한다. \\
 >$$\begin{align}
 >\tilde{f}''(t) \leq \tilde{f}''(0)+tM\|\Delta x_{nt}\|^{3}_{2} \leq tM\|\Delta x_{nt} \|^{3}_{2}
 >\end{align}$$
->$$\tilde{f}''(0) = \lambda(x)^{2}$$이고, $$\lambda(x)^{2} \geq m\|\nabla x_{nt}\|_{2}^{2}$$ 임을 이용하고, 부등식을 합친다. $$\tilde{f}'(0) = -\lambda(x)^{2}$$이므로 다음과 같이 정리할 수 있다.
+
+>$$\tilde{f}''(0) = \lambda(x)^{2}$$이고, $$\lambda(x)^{2} \geq m\|\nabla x_{nt}\|_{2}^{2}$$ 임을 이용하고, 부등식을 합친다. $$\tilde{f}'(0) = -\lambda(x)^{2}$$이므로 다음과 같이 정리할 수 있다. \\
 >$$\begin{align}
 >\tilde{f}''(t) \leq \tilde{f}''(0) + tM \| \Delta x_{nt} \| ^{3}_{2} \leq \lambda(x)^{2} + t\frac{M}{m^{3/2}}\lambda(x)^{3},
->\end{align}$$
->$$\begin{align}
 >\tilde{f}'(t) &\leq \tilde{f}'(0)+t\lambda(x)^{2} +t^{2}\frac{M}{2m^{3/2}}\lambda(x)^{3},\\\\
 >&= -\lambda(x)^{2}+t\lambda(x)^{2} + t^{2}\frac{L}{2m^{3/2}}\lambda(x)^{3}.
 >\end{align}$$
@@ -152,15 +145,16 @@ Newton decrement, 증분과 hessian matrix와의 관계와 Strong convexity의 �
 >$$\begin{align}
 >\tilde{f}(t) \leq \tilde{f}(0) - t\lambda(x)^{2} + t^{2} \frac{1}{2}\lambda(x)^{2} + t^{3}\frac{M}{6m^{3/2}}\lambda(x)^{3}.
 >\end{align}$$
->t = 1로 두면, 아래와 같은 결과를 얻을 수 있다. 
+
+>t = 1로 두면, 아래와 같은 결과를 얻을 수 있다. \\
 >$$\begin{align}
 >f(x+\Delta x_{nt}) \leq f(x) -\frac{1}{2}\lambda(x)^{2} + \frac{M}{6m^{3/2}}\lambda(x)^{3}.
 >\end{align}$$
 
->이제 $$\|\nabla f(x)\|_{2}\leq \eta \leq 3(1-2\alpha)\frac{m^{2}}{M}$$이라 가정하면, strong convexity 조건에 의해 $$\lambda(x) \leq 3(1-2\alpha)m^{3/2}/L$$이다. 이를 위에 부등식에 대입하면 아래와 같은 결과를 유도할 수 있다.
+>이제 $$\|\nabla f(x)\|_{2}\leq \eta \leq 3(1-2\alpha)\frac{m^{2}}{M}$$이라 가정하면, strong convexity 조건에 의해 $$\lambda(x) \leq 3(1-2\alpha)m^{3/2}/L$$이다. 이를 위에 부등식에 대입하면 아래와 같은 결과를 유도할 수 있다. \\
 >$$\begin{align}
->f(x+\Delta x_{nt}) &\leq f(x) - \lambda(x)^{2}( \frac{1}{2}- \frac{M\lambda(x)}{6m^{3/2}} )\\\\
-> &\leq f(x) -\alpha \lambda(x)^{2}\\\\
+>f(x+\Delta x_{nt}) &\leq f(x) - \lambda(x)^{2}( \frac{1}{2}- \frac{M\lambda(x)}{6m^{3/2}} ) \\
+> &\leq f(x) -\alpha \lambda(x)^{2} \\
 > &= f(x) + \alpha \nabla f(x)^{T} \Delta x_{nt},
 >\end{align}$$
 
