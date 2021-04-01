@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 11-1 Duality in General Programs
+title: 11 Duality in General Programs
 chapter: "11"
 order: 1
 owner: "Wontak Ryu"
