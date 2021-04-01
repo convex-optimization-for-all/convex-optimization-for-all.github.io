@@ -86,7 +86,7 @@ Convex function의 maximization 또한 convex function이 된다.  이를 첫 �
 >$$
 >\begin{align}
 >& \max_{y}  
->& & \min_{j=1,...m} (Py)\_{j}\\\\
+>& & \min_{j=1,...m} (Py)_{j}\\\\
 >&\text{subject to}
 >& &y\geq 0, 1^{T}y =1.\\\\
 >\end{align}
