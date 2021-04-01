@@ -18,10 +18,12 @@ $$
 
 Dual function $$g(u,v)$$는 모든 $$u\geq 0$$와 $$v$$에 대해 $$f^* \geq g(u,v)$$를 만족한다. 따라서, 모든 feasible한 $$u$$, $$v$$에 대해서 $$g(u,v)$$를 최대화함으로써 가장 좋은 lower bound를 구할 수 있다. 이를 Lagrange dual problem 이라 한다. 
 >
+$$
 \begin{alignat}{1}
 \max_{u,v} & \quad g(u,v)   \\\\
            s.t. & \quad u \geq 0
 \end{alignat}
+$$
 
 여기서, dual 최적값을 $$g^*$$라고 하면 $$f^* \geq g^*$$이다. 이를 weak duality라 한다. 이 성질은 primal 문제가 convex가 아니어도 항상 성립한다. 또한, dual problem은 primal problem이 convex가 아니더라도 항상 convex optimizaton problem이 된다.
 
