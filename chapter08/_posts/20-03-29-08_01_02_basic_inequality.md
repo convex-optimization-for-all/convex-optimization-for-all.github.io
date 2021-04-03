@@ -61,11 +61,11 @@ $$k=1,2,3...,n$$일때, 위 부등식에 의해 다음과 같은 관계가 성�
 
 >$$
 \begin{alignat}{1}
- \vert x^{(2)}-x^* \vert_2^{2} & \quad \le \quad  \vert x^{(1)}-x^* \vert_2^{2}-2\alpha\_1(f^{(1)}-f^*)+\alpha_1^{2} \vert g^{(1)} \vert_2^{2} \\
- \vert x^{(3)}-x^* \vert_2^{2} & \quad \le \quad  \vert x^{(2)}-x^* \vert_2^{2}-2\alpha\_2(f^{(2)}-f^*)+\alpha_2^{2} \vert g^{(2)} \vert_2^{2} \\
-& \quad \le \quad ( \vert x^{(1)}-x^* \vert_2^{2}-2\alpha\_1(f^{(1)}-f^*)+\alpha_1^{2} \vert g^{(1)} \vert_2^{2})-2\alpha\_2(f^{(2)}-f^*)+\alpha_2^{2} \vert g^{(2)} \vert_2^{2} \\
-& \quad = \quad  \vert x^{(1)}-x^* \vert_2^{2}-2\alpha\_1(f^{(1)}-f^*)-2\alpha\_2(f^{(2)}-f^*)+\alpha_1^{2} \vert g^{(1)} \vert_2^{2}+\alpha_2^{2} \vert g^{(2)} \vert_2^{2} \\
-& \quad = \quad  \vert x^{(1)}-x^* \vert_2^{2} -2\sum\_{i=1}^{2}\alpha_i(f(x^{(i)})-f^*) + \sum\_{i=1}^{2}\alpha_i^{2} \vert g^{(i)} \vert_2^{2} \\
+ \vert x^{(2)}-x^* \vert_2^{2} & \quad \le \quad  \vert x^{(1)}-x^* \vert_2^{2}-2\alpha_1(f^{(1)}-f^*)+\alpha_1^{2} \vert g^{(1)} \vert_2^{2} \\
+ \vert x^{(3)}-x^* \vert_2^{2} & \quad \le \quad  \vert x^{(2)}-x^* \vert_2^{2}-2\alpha_2(f^{(2)}-f^*)+\alpha_2^{2} \vert g^{(2)} \vert_2^{2} \\
+& \quad \le \quad ( \vert x^{(1)}-x^* \vert_2^{2}-2\alpha_1(f^{(1)}-f^*)+\alpha_1^{2} \vert g^{(1)} \vert_2^{2})-2\alpha_2(f^{(2)}-f^*)+\alpha_2^{2} \vert g^{(2)} \vert_2^{2} \\
+& \quad = \quad  \vert x^{(1)}-x^* \vert_2^{2}-2\alpha_1(f^{(1)}-f^*)-2\alpha_2(f^{(2)}-f^*)+\alpha_1^{2} \vert g^{(1)} \vert_2^{2}+\alpha_2^{2} \vert g^{(2)} \vert_2^{2} \\
+& \quad = \quad  \vert x^{(1)}-x^* \vert_2^{2} -2\sum_{i=1}^{2}\alpha_i(f(x^{(i)})-f^*) + \sum_{i=1}^{2}\alpha_i^{2} \vert g^{(i)} \vert_2^{2} \\
 & \quad ... \quad & \\
  \vert x^{(k)}-x^* \vert_2^{2}, & \quad k=4,...,n+1 \text{도 위와 같이 전개된다.}
 \end{alignat} 
@@ -75,17 +75,17 @@ $$
 
 >$$
 \begin{alignat}{1}
- \vert x^{(k+1)}-x^* \vert_2^{2} \quad = \quad  \vert x^{(1)}-x^* \vert_2^{2} -2\sum\_{i=1}^{k}\alpha\_{i}(f(x^{(i)})-f^*)+\sum\_{i=1}^{k}\alpha\_{i}^{2} \vert g^{(i)} \vert_2^{2}
+ \vert x^{(k+1)}-x^* \vert_2^{2} \quad = \quad  \vert x^{(1)}-x^* \vert_2^{2} -2\sum_{i=1}^{k}\alpha_{i}(f(x^{(i)})-f^*)+\sum_{i=1}^{k}\alpha_{i}^{2} \vert g^{(i)} \vert_2^{2}
 \end{alignat} $$
 
 $$ \Vert x^{(k+1)}-x^* \Vert _2^{2} \ge 0$$과 $$R \ge  \Vert x^{(1)}-x^* \Vert _2$$라 하면, 다음과 같이 부등식이 정리된다. 
 
 >$$
 \begin{alignat}{2}
-&  \vert x^{(k+1)}-x^* \vert_2^{2} \quad \le \quad R^{2}-2\sum\_{i=1}^{k}\alpha\_i(f(x^{(i)})- f^{*})+\sum\_{i=1}^{k}\alpha\_i^{2} \vert g^{(i)} \vert_2^{2}\\
-\Longleftrightarrow & \quad 0 \quad \le \quad  \vert x^{(k+1)}-x^* \vert_2^{2} \quad \le \quad  R^{2}-2\sum\_{i=1}^{k}\alpha_i(f(x^{(i)})-f^*)+\sum\_{i=1}^{k}\alpha_i^{2} \vert g^{(i)} \vert_2^{2} \\
-\Longleftrightarrow & \quad 0 \quad \le \quad R^{2}-2\sum\_{i=1}^{k}\alpha_i(f(x^{(i)})-f^*)+\sum\_{i=1}^{k}\alpha_i^{2} \vert g^{(i)} \vert_2^{2} \\
- \Longleftrightarrow & 2\sum\_{i=1}^{k}\alpha_i(f(x^{(i)})-f^*) \quad \le \quad R^{2}+\sum\_{i=1}^{k}\alpha_i^{2} \vert g^{(i)} \vert_2^{2}
+&  \vert x^{(k+1)}-x^* \vert_2^{2} \quad \le \quad R^{2}-2\sum_{i=1}^{k}\alpha_i(f(x^{(i)})- f^{*})+\sum_{i=1}^{k}\alpha_i^{2} \vert g^{(i)} \vert_2^{2}\\
+\Longleftrightarrow & \quad 0 \quad \le \quad  \vert x^{(k+1)}-x^* \vert_2^{2} \quad \le \quad  R^{2}-2\sum_{i=1}^{k}\alpha_i(f(x^{(i)})-f^*)+\sum_{i=1}^{k}\alpha_i^{2} \vert g^{(i)} \vert_2^{2} \\
+\Longleftrightarrow & \quad 0 \quad \le \quad R^{2}-2\sum_{i=1}^{k}\alpha_i(f(x^{(i)})-f^*)+\sum_{i=1}^{k}\alpha_i^{2} \vert g^{(i)} \vert_2^{2} \\
+ \Longleftrightarrow & 2\sum_{i=1}^{k}\alpha_i(f(x^{(i)})-f^*) \quad \le \quad R^{2}+\sum_{i=1}^{k}\alpha_i^{2} \vert g^{(i)} \vert_2^{2}
 \end{alignat} $$
 
 이때 아래의 관계를 이용하여 부등식을 다시 한번 정리한다. 
@@ -100,7 +100,7 @@ $$
 
 >$$
 \begin{align}
-\min_{i=1,..,k} f(x^{(i)})-f^* \quad = \quad f_{best}^{(k)} - f^* \le \frac{R^{2}+\sum_{i=1}^{(k)}\alpha_i^{2} \Vert g^{(i)} \Vert _2^2}{2\sum\_{i=1}^{k}\alpha_i} 
+\min_{i=1,..,k} f(x^{(i)})-f^* \quad = \quad f_{best}^{(k)} - f^* \le \frac{R^{2}+\sum_{i=1}^{(k)}\alpha_i^{2} \Vert g^{(i)} \Vert _2^2}{2\sum_{i=1}^{k}\alpha_i} 
 \end{align}
 $$
 
