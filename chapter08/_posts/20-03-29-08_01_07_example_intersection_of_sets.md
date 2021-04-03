@@ -29,11 +29,11 @@ min_{x}\text{ }f(x)
 
 ## Gradient of distance function
 
-[이전 장](https://wikidocs.net/18720)에서 컨벡스 집합과의 거리를 $$dist(x, C_i) = \min_{y \in C} \lVert y-x \lVert _2$$로 정의했고 이 함수의 gradient는 다음과 같음을 보였다. 
+[이전 장]({%post_url chapter07/21-03-25-07_03_05_example_distance_to_convex_set %})에서 컨벡스 집합과의 거리를 $$dist(x, C_i) = \min_{y \in C} \lVert y-x \lVert _2$$로 정의했고 이 함수의 gradient는 다음과 같음을 보였다. 
 
 >
 $$ \begin{align}
-\partial dist(x,C) = \{\frac{x-P_C(x)}{ \Vert x-P_C(x) \Vert_2}\}
+\partial dist(x,C) = \frac{x-P_C(x)}{ \Vert x-P_C(x) \Vert_2}
 \end{align} $$
 
 여기서 $$P_C(x)$$는 점 $$x$$에서 집합 $$C$$으로의 projection이다. 
@@ -53,11 +53,11 @@ $$ \begin{align}
 
 ## Deriving subgradient updating steps
 
-[이전 장](https://wikidocs.net/18720)에서 보았던 $$dist(x, C_i)$$는 다음과 같은 subgradient를 가진다.
+[이전 장]({%post_url chapter07/21-03-25-07_03_05_example_distance_to_convex_set %})에서 보았던 $$dist(x, C_i)$$는 다음과 같은 subgradient를 가진다.
 
 >$$Recall:$$
 $$ \begin{align}
-g_i = \nabla f_i(x) = \{\frac{x-P_{C_i}(x)}{ \Vert x-P_{C_i}(x) \Vert_2}\}
+g_i = \nabla f_i(x) = \frac{x-P_{C_i}(x)}{ \Vert x-P_{C_i}(x) \Vert_2}
 \end{align} $$
 
 만약 컨벡스 집합의 교차점이 있다면 우리는 $$f^*=0$$임을 바로 알 수 있기에 Polyak step sizes를 사용할 수 있다. 위 subgradient 수식을 보면 $$x-P_{c_i}(x)$$가 정규화된 형태이므로 $$ \Vert g \Vert_2^{2}=1$$이다. 결국 Polyak step size $$t_k = \{\frac{f^{(k-1)}-f^*}{ \Vert g^{(k-1)} \Vert_2^{2}}\}$$에 우리가 알고 있는 값을 대입하면 다음과 같은 subgradient method 공식을 도출할 수 있다.
@@ -65,8 +65,8 @@ g_i = \nabla f_i(x) = \{\frac{x-P_{C_i}(x)}{ \Vert x-P_{C_i}(x) \Vert_2}\}
 >
 $$ \begin{align}
 x^{(k)} & = x^{(k-1)} - t_{k}⋅g_{k-1} \\
-& = x^{(k-1)} - \{\frac{f^{(k-1)}-f^*}{ \Vert g^{(k-1)} \Vert_2^{2}}\} \{\frac{x^{(k-1)}-P_{C_i}(x)}{ \Vert x^{(k-1)}-P_{C_i}(x) \Vert_2}\}  \\
-& = x^{(k-1)} - f(x^{k-1}) \{\frac{x^{(k-1)}-P_{C_i}(x)}{ \Vert x^{(k-1)}-P_{C_i}(x) \Vert_2}\}  
+& = x^{(k-1)} - \frac{f^{(k-1)}-f^*}{ \Vert g^{(k-1)} \Vert_2^{2}} \frac{x^{(k-1)}-P_{C_i}(x)}{ \Vert x^{(k-1)}-P_{C_i}(x) \Vert_2}  \\
+& = x^{(k-1)} - f(x^{k-1}) \frac{x^{(k-1)}-P_{C_i}(x)}{ \Vert x^{(k-1)}-P_{C_i}(x) \Vert_2}
 \end{align} $$
 
 

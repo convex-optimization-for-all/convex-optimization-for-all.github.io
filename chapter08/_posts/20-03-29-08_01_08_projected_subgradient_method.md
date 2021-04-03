@@ -8,7 +8,7 @@ owner: "Kyeongmin Woo"
 
 # Projected Subgradient Method
 
-[앞서 본 예제](https://wikidocs.net/edit/page/18975)의 방법을 projected subgradient method라고 한다. 이 알고리즘은 제약조건이 있는 convex problem에서 이용할 수 있다.  
+[앞서 본 예제]({%post_url chapter08/20-03-29-08_01_07_example_intersection_of_sets %})의 방법을 projected subgradient method라고 한다. 이 알고리즘은 제약조건이 있는 convex problem에서 이용할 수 있다.  
 
 제약 조건을 만족하는 domain을 집합 $$C$$라고 할 때, 제약조건이 있는 컨벡스 문제는 다음과 같이 정의된다.
 

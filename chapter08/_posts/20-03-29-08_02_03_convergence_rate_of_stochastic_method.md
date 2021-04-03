@@ -10,7 +10,7 @@ owner: "Kyeongmin Woo"
 
 Cyclic 방법과 randomized 방법은 convergence rate의 차이를 보인다.
 
-[Batch subgradient method](https://wikidocs.net/18974)의 convergence rate는 $$O(G_{batch}^{2}/\epsilon^{2})$$이다. ($$G_{batch}$$는 $$\sum\text{ }f_i$$에 대한 Lipschitz constant)
+Batch subgradient method의 [convergence rate]({% post_url chapter08/20-03-29-08_01_04_convergence_rate %})는 $$O(G_{batch}^{2}/\epsilon^{2})$$이다. ($$G_{batch}$$는 $$\sum\text{ }f_i$$에 대한 Lipschitz constant)
 
 - **Cyclic method**: Cyclic method의 iteration complexity는 $$O(m^{3}G^{2}/\epsilon^{2})$$이다. 만약 $$m$$번의 cyclic stochastic subgradient method를 한 번의 batch subgradient method로 가정한다면 각 cycle에서 $$O(m^{2}G^{2}/\epsilon^{2})$$ 만큼의 시행이 필요하다. ($$G$$는 하나의 함수 $$f_i$$의 Lipschitz constant)
 
