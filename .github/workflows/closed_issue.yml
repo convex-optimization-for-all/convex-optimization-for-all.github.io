@@ -1,0 +1,29 @@
+name: closed_issue
+
+on:
+  issues: 
+    types: [closed]
+
+jobs:
+  changeIssueTitle:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f src/requirements.txt ]; then pip install -r src/requirements.txt; fi
+
+    - name: Change issue title
+      run: |
+        python src/change_issue_title.py
+      env:
+        GITHUB_TOKEN: ${{ secrets.CONVEX_ADMIN_TOKEN }}
+        ISSUE_NUMBER: ${{ github.event.issue.number }}
