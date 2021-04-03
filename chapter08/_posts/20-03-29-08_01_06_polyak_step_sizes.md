@@ -18,7 +18,7 @@ t_k = \{\frac{f^{(k-1)}-f^*}{ \Vert g^{(k-1)} \Vert_2^{2}}\}, \quad k = 1,2,3...
 
 
 ## Proof of convergence theorem for Polyak step-sizes
-증명은 [basic inequality](https://wikidocs.net/19343)의 유도과정에 이용된 부등식으로부터 증명할 수 있다. 
+증명은 [basic inequality]({%post_url chapter08/20-03-29-08_01_02_basic_inequality %})의 유도과정에 이용된 부등식으로부터 증명할 수 있다. 
 
 >
 $$ \begin{align}
@@ -28,26 +28,26 @@ $$ \begin{align}
 위 부등식의 오른쪽 항을 $$t_k$$에 대해서 미분하여 0과 같게 하면 오른쪽 항을 최소화시키는 Polyak step size를 도출할 수 있다. 
 >
 $$ \begin{align}
-& \frac{\partial}{\partial t_k}  \vert x^{(k-1)}-x^* \vert_2^{2}-2t_k (f(x^{(k-1)})-f^*)+t_k^{2} \vert g^{(k-1)} \vert_2^{2} \quad = \quad 0 \\\
- \Longleftrightarrow \quad & -2(f(x^{(k-1)})-f^*)+2t_k \vert g^{(k-1)} \vert_2^{2}  \quad = \quad 0 \\
- \Longleftrightarrow \quad & 2(f(x^{(k-1)})-f^*)  \quad = \quad 2t_k \vert g^{(k-1)} \vert_2^{2} \\
- \Longleftrightarrow \quad & f(x^{(k-1)})-f^* \quad = \quad t_k \vert g^{(k-1)} \vert_2^{2} \\
- \Longleftrightarrow \quad & t_k = \frac{f(x^{(k-1)})-f^*}{ \vert g^{(k-1)} \vert_2^{2}} \quad \text{(Polyak step size at k)}
+& \frac{\partial}{\partial t_k}  \Vert x^{(k-1)}-x^* \Vert_2^{2}-2t_k (f(x^{(k-1)})-f^*)+t_k^{2} \Vert g^{(k-1)} \Vert_2^{2} \quad = \quad 0 \\
+ \Longleftrightarrow \quad & -2(f(x^{(k-1)})-f^*)+2t_k \Vert g^{(k-1)} \Vert_2^{2}  \quad = \quad 0 \\
+ \Longleftrightarrow \quad & 2(f(x^{(k-1)})-f^*)  \quad = \quad 2t_k \Vert g^{(k-1)} \Vert_2^{2} \\
+ \Longleftrightarrow \quad & f(x^{(k-1)})-f^* \quad = \quad t_k \Vert g^{(k-1)} \Vert_2^{2} \\
+ \Longleftrightarrow \quad & t_k = \frac{f(x^{(k-1)})-f^*}{ \Vert g^{(k-1)} \Vert_2^{2}} \quad \text{(Polyak step size at k)}
 \end{align} $$
 
-Polyak step size의 convergence rate도 [basic inequality](https://wikidocs.net/19343)에서 유도된 부등식으로부터 유도할 수 있다. 
+Polyak step size의 convergence rate도 [basic inequality]({%post_url chapter08/20-03-29-08_01_02_basic_inequality %})에서 유도된 부등식으로부터 유도할 수 있다. 
 
 ## Congervence rate for Polyak step-sizes 
 
-[Basic inequality](https://wikidocs.net/19343)에서 유도된 부등식에 Polyak step size $$t_i$$를 대입해보자. 
+[basic inequality]({%post_url chapter08/20-03-29-08_01_02_basic_inequality %})에서 유도된 부등식에 Polyak step size $$t_i$$를 대입해보자. 
 >
 $$ \begin{align}
-& 2\sum_{i=1}^{k}t_i(f(x^{(i)})-f^*) \le R^2 + \sum_{i=1}^kt_i^2 \vert g^{(i)} \vert_2^2 \\
- \Longleftrightarrow \quad & 2\sum_{i=1}^{k}\frac{(f(x^{(i)})-f^*)^2}{ \vert g^{(i)} \vert_2^2} \le R^2 + \sum_{i=1}^k\frac{(f(x^{(i)})-f^*)^2}{ \vert g^{(i)} \vert_2^2} \\
- \Longleftrightarrow \quad & \sum_{i=1}^{k}\frac{(f(x^{(i)})-f^*)^2}{ \vert g^{(i)} \vert_2^2} \le R^2 \\
+& 2\sum_{i=1}^{k}t_i(f(x^{(i)})-f^*) \le R^2 + \sum_{i=1}^kt_i^2 \Vert g^{(i)} \Vert_2^2 \\
+ \Longleftrightarrow \quad & 2\sum_{i=1}^{k}\frac{(f(x^{(i)})-f^*)^2}{ \Vert g^{(i)} \Vert_2^2} \le R^2 + \sum_{i=1}^k\frac{(f(x^{(i)})-f^*)^2}{ \Vert g^{(i)} \Vert_2^2} \\
+ \Longleftrightarrow \quad & \sum_{i=1}^{k}\frac{(f(x^{(i)})-f^*)^2}{ \Vert g^{(i)} \Vert_2^2} \le R^2 \\
 \end{align} $$
 
-Lipschitz condition $$ \vert g^{(i)} \vert_2 \le G$$를 항상 만족한다고 가정하면, 위의 부등식은 아래와 같이 정리된다.
+Lipschitz condition $$ \Vert g^{(i)} \Vert_2 \le G$$를 항상 만족한다고 가정하면, 위의 부등식은 아래와 같이 정리된다.
 >
 $$ \begin{align}
 & \sum_{i=1}^{k}(f(x^{(i)})-f^*)^2 \le R^2G^2 \\
