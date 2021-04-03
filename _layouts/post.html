@@ -30,17 +30,19 @@ layout: default
           </h3>
         </li>
       {% endif %}
-      {% if post.order == post_after %}
-        <li>
-          <h2>Next Post</h2>
-          <h3>
-            <a href="{{ site.baseurl }}{{ post.url }}">
-              {{ post.title }}
-            </a>
-          </h3>
-        </li>
-      {% endif %}
     {% endfor %}
+    {% for post in post_list%}
+    {% if post.order == post_after %}
+      <li>
+        <h2>Next Post</h2>
+        <h3>
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h3>
+      </li>
+    {% endif %}
+  {% endfor %}
   </ul>
 </div>
 {% endif %}
