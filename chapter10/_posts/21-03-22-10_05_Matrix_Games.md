@@ -115,19 +115,24 @@ Convex function의 maximization 또한 convex function이 된다.  이를 첫 �
   
 먼저 첫 번째 관점의 문제를 다음과 같이 reformulate 할 수 있다.
 
+>$$
 >\begin{align}
 >& \min_{x} \max_{i=1,...m} 
 >& &(P^{T}x)_{i}\\\\
 >&\text{subject to } 
 >& &x\geq 0, 1^{T}x = 1\\\\
 >\end{align}
+>$$
+>
+>$$
 >\begin{align}
 >\Leftrightarrow{} \\\\
->& \min\_{x,t}
+>& \min_{x,t}
 >& & t \\\\
 >&\text{subject to } 
 >& &x\geq0, 1^{T}x = 1, P^{T}x \preceq t. \\\\
 >\end{align}
+>$$
 
 $$t$$를 $$P^{T}x$$의 항들 중 가장 큰 값과 같게 만들어주는 문제로 refomulate 하였다.
 

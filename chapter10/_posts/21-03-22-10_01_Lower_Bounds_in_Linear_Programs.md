@@ -59,8 +59,8 @@ $$x,\, y$$가 feasible하다면, 세 constraint에 scalar 값을 곱해 더하�
 >&{+} &{0x \geq 0}\\\\
 >&{+} &{2y \geq 0}\\\\
 >&{=} &{x + 3y \geq 2}\\\\
->\\\\
->& &{\text{Lower bound}\\ B = 2.}
+>
+>& &{\text{Lower bound}\ B = 2.}
 >\end{align}
 >$$
 
@@ -85,7 +85,7 @@ $$x,\, y$$가 feasible하다면, 세 constraint에 scalar 값을 곱해 더하�
 >&{+} &{cy \geq 0} \\\\
 >&{=} &{(a+b)x+(a+c)y \geq 2a} \\\\
 >\\\\
->& &{\text{Lower bound} \\ B=2a, \\\\
+>& &{\text{Lower bound} \  B=2a, \\\\
 >\text{for any satisfying a,b,c below}}\\\\
 >& &{a + b = p}\\\\
 >& &{a + c = q}\\\\
@@ -143,7 +143,7 @@ lower bound가 위에서처럼 2a임을 만족하기 위해서는, scalar 값을
 >&{=} &{(a+3c)x+(-b+c)y \geq 2c-b}
 >\\\\
 >\\\\
->& &{\text{Lower bound} \\ B=2c-b, \\\\
+>& &{\text{Lower bound}  B=2c-b, \\\\
 >\text{for any satisfying a,b,c below}}\\\\
 >& &{a + 3c = p}\\\\
 >& &{-b + c = q}\\\\

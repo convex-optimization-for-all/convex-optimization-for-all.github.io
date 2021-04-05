@@ -14,11 +14,13 @@ MathJax.Hub.Config({
 앞에서 다룬 duality의 경우, LP에 대하여, primal 문제의 constraint에 dual variable을 곱하고, 이들의 선형 결합(linear combination)을 구한 뒤, 정리하여 primal의 objective function을 분리해내어 bound를 구하는 형태였다. 분리된 나머지 항(아래 수식의 something)이 primal 문제의 bound 역할을 하였다. 즉, dual 문제의 objective function이 되고, 수식 전개 과정에서 만들어진 조건들이 dual 문제의 constraint가 되었다.
 이 일부 과정(위의 내용 중 primal objective function을 분리해 내어 bound를 구하는 부분)을 수식으로 적어보면 다음과 같다.
 
+>$$
 >\begin{align}
 >&\min_{x} &f(x)\\\\
 >&\text{subject to} &Ax = b\\\\
 >& &Gx \leq h\\\\
 >\end{align}
+>$$
 
 >$$
 >\begin{align}
