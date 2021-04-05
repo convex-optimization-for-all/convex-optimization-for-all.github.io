@@ -43,12 +43,12 @@ KKT conditions를 통해 얻은 수식들을 이용하면 $$x^\star, \lambda^\st
 > 1 / \nu^\star - \alpha_i &\nu^\star < 1/\alpha_i \ \\\\
 > 0 &\nu^\star \ge 1/\alpha_i\\\\
 > \end{cases}
-> = max\{0, 1/\nu^\star - \alpha_i \}, \quad i = 1, \dots, n.
+> = \max\{0, 1/\nu^\star - \alpha_i \}, \quad i = 1, \dots, n.
 > $$
 
 또한 조건 $$1^T x^\star = 1$$에 의해 $$x_i^\star, i = 1, \dots, n$$은 합산하여 1이 된다.
 > $$
-> \sum_{i=1}^n max\{0, 1/\nu^\star - \alpha_i \} = 1.
+> \sum_{i=1}^n \max\{0, 1/\nu^\star - \alpha_i \} = 1.
 > $$
 
 위 등식의 좌항은 $$1/\nu^\star$$에 대한 piecewise-linear increasing function이므로 이 등식은 고정된 $$\alpha_i$$에 대해 unique solution을 갖는다.
