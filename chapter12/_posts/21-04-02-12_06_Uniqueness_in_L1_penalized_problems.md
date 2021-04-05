@@ -67,7 +67,7 @@ $$
 s = sign(X^T_\mathcal{E} (y -X\hat{\beta}). \qquad \text{ --- (5)}
 $$
 
-여기서 $$\mathcal{E}, s$$는 $$\gamma$$에 대해 다음과 같이 표현할 수 있다: $$\mathcal{E} = \{i \in \{1, \dots, p \} : rVert \gamma_i rVert = 1 \}$$ and $$s = \gamma_\{\mathcal{E}}$$. 또한 Lemma1-2에 의해 $$X\hat{\beta}$$는 유일한 값을 가지므로 이는 $$\mathcal{E}$$, $$s$$이 유일함을 암시한다.
+여기서 $$\mathcal{E}, s$$는 $$\gamma$$에 대해 다음과 같이 표현할 수 있다: $$\mathcal{E} = \{i \in \{1, \dots, p \} : \rVert \gamma_i \rVert = 1 \}$$ and $$s = \gamma_{\mathcal{E}}$$. 또한 Lemma1-2에 의해 $$X\hat{\beta}$$는 유일한 값을 가지므로 이는 $$\mathcal{E}$$, $$s$$이 유일함을 암시한다.
 
 (3)의 subgradient $$\gamma$$에 대한 정의에 의해 모든 lasso solution $$\hat{\beta}$$에 대해 $$\hat{\beta}_{-\mathcal{E}} = 0$$임을 알 수 있다. 그러므로 (2)를 $$\mathcal{E}$$ 블록에 대해 표현하면 다음과 같다.
 
