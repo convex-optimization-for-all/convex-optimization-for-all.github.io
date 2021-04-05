@@ -24,6 +24,7 @@ $$
 L(x,u,v) = f(x) + \sum_{i=1}^m u_i h_i(x) + \sum_{j=1}^r v_j l_j(x) 
 \end{equation}
 $$
+
 여기서, $$u \in \mathbb{R}^m$$, $$v \in \mathbb{R}^r$$, $$u \geq 0$$ (implicitly, $$L(x,u,v) = - \infty$$ for $$u <0$$). 
 
 위 Lagrangian에서, $$h_i(x) \leq 0$$, $$l_j(x)=0$$ 이므로, 
@@ -31,7 +32,7 @@ $$
 >
 $$
 \begin{equation}
-L(x,u,v) =  f(x) + \sum_{i=1}^{m} u_i \underbrace{h_i(x)}\_{\leq 0} + \sum_{j=1}^r v_j \underbrace{l_j(x)}\_{=0} \leq f(x)
+L(x,u,v) =  f(x) + \sum_{i=1}^{m} u_i \underbrace{h_i(x)}_{\leq 0} + \sum_{j=1}^r v_j \underbrace{l_j(x)}_{=0} \leq f(x)
 \end{equation}
 $$
 
