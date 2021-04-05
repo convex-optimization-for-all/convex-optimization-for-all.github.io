@@ -27,7 +27,7 @@ Strong duality의 조건하에서 Dual solution $$u^{\star}, v^{\star}$$가 주�
 > g(v) &= \min_x \sum_{i=1}^n f_i(x_i) + v(b−a^Tx) \\\
 > &= bv + \min_x \sum_{i=1}^n f_i(x_i) −va^Tx \\\
 > &= bv + \min_x \sum_{i=1}^n f_i(x_i) −v \sum_{i=1}^n a_ix_i \\\
-> &= bv + \sum_{i=1}^n (\underbrace{\min_{x_i} \\{ f_i(x_i) − a_ivx_i \\}}_{-f^{*}_i(a_iv)}) \\\
+> &= bv + \sum_{i=1}^n (\underbrace{\min_{x_i} \{ f_i(x_i) − a_ivx_i \}}_{-f^{*}_i(a_iv)}) \\\
 > &= bv − \sum_{i=1}^n f^{*}_i (a_iv)
 > \end{align}$$
  
