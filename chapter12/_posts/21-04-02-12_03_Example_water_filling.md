@@ -16,13 +16,13 @@ MathJax.Hub.Config({
 
 >$$
 >\begin{align}
->    &\min_{x} &&{- \sum_{i=1}^n log(\alpha_i + x_i)} \\\\
+>    &\min_{x} &&{- \sum_{i=1}^n \log(\alpha_i + x_i)} \\\\
 >    &\text{subject to} &&{x \succeq 0, 1^Tx = 1},\\\\
 >&\text{where } \alpha_i > 0.
 >\end{align}
 >$$
 
-이 문제는 n개의 communication channels에 전력을 할당하는 문제이며, 정보이론(information theory)에서 대두되었다. 변수 $$x_i$$는 i번째 채널에 할당되는 송신기의 출력을 나타내며, $$log(\alpha_i + x_i)$$는 해당 채널의 capacity 또는 communication rate를 나타낸다. 즉, 이 문제는 communication rate의 총합을 최대화하기 위해 각 채널에 얼마만큼의 전력을 할당해야 하는지 결정하기 위한 문제이다 [1].
+이 문제는 n개의 communication channels에 전력을 할당하는 문제이며, 정보이론(information theory)에서 대두되었다. 변수 $$x_i$$는 i번째 채널에 할당되는 송신기의 출력을 나타내며, $$\log(\alpha_i + x_i)$$는 해당 채널의 capacity 또는 communication rate를 나타낸다. 즉, 이 문제는 communication rate의 총합을 최대화하기 위해 각 채널에 얼마만큼의 전력을 할당해야 하는지 결정하기 위한 문제이다 [1].
 
 Inequality constraint $$x^\star \succeq 0$$와 equality constraint $$1^Tx^\star = 1$$에 대한 Lagrange multipliers를 각각 $$\lambda^\star \in \mathbb{R}^n$$, $$\nu^\star \in \mathbb{R}$$라고 하자. 이때 주어진 문제에 대한 KKT conditions는 다음과 같다.
 >$$
