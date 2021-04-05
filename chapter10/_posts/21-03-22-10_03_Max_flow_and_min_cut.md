@@ -140,14 +140,14 @@ primal LP의 목적함수와 관계된 $$f$$항을 좌항으로, 그 나머지�
 >&\text{Case 2. } i \neq s, j = t.&\\\\ 
 >&\text{$x_{k}$에 곱해진 항에 대해서 $k=i$인 경우를 제외하고는, flow의 세 번째 조건에 의해 소거된다.}\\\\ 
 >&\text{따라서, 두 번째 항의 $x$항에 대한 시그마를 다음과 같이 정리할 수 있다.}  \\\\
->&=\sum_{(i,t)\in E}{\Big((b_{it}-a_{it})f_{it}\Big)}-x_{i}\sum_{(i,t)\in E}{f_{it}}+\sum_{k\in V\backslash \\{s,t,i\\}}{x_{k}\Big(\underbrace{\sum_{(i,k)\in E}{f_{ik}}-\sum_{(k,t)\in E}{f_{kt}}}\_{=0}\Big)} \\\\
+>&=\sum_{(i,t)\in E}{\Big((b_{it}-a_{it})f_{it}\Big)}-x_{i}\sum_{(i,t)\in E}{f_{it}}+\sum_{k\in V\backslash \{s,t,i\}}{x_{k}\Big(\underbrace{\sum_{(i,k)\in E}{f_{ik}}-\sum_{(k,t)\in E}{f_{kt}}}\_{=0}\Big)} \\\\
 >&=\sum_{(i,t)\in E}{\Big(b_{it}-a_{it}-x_{i}\Big)f_{it}}, \ i \in V\backslash \{s,t\},\\\\
 >\, \\\\
 >\, \\\\
 >&\text{Case 3. } i \neq s, j \neq t.&\\\\ 
 >&\text{$x_{k}$에 곱해진 항에 대해서 $k=i, k=j$인 경우를 제외하고는, flow의 세 번째 조건에 의해 소거된다.}\\\\ 
 >&\text{따라서, 두 번째 항의 $x$항에 대한 시그마를 다음과 같이 정리할 수 있다.}  \\\\
->&=\sum_{(i,j)\in E}{\Big((b_{ij}-a_{ij})f_{ij}\Big)}+x_{j}\sum_{(i,j)\in E}{f_{ij}}-x_{i}\sum_{(i,j)\in E}{f_{ij}}+\sum_{k\in V\backslash \\{s,t,i,j\\}}{x_{k}\Big(\underbrace{\sum_{(i,k)\in E}{f_{ik}}-\sum_{(k,j)\in E}{f_{kj}}}_{=0}\Big)} \\\\
+>&=\sum_{(i,j)\in E}{\Big((b_{ij}-a_{ij})f_{ij}\Big)}+x_{j}\sum_{(i,j)\in E}{f_{ij}}-x_{i}\sum_{(i,j)\in E}{f_{ij}}+\sum_{k\in V\backslash \{s,t,i,j\}}{x_{k}\Big(\underbrace{\sum_{(i,k)\in E}{f_{ik}}-\sum_{(k,j)\in E}{f_{kj}}}_{=0}\Big)} \\\\
 >&=\sum_{(i,j)\in E}{\Big(b_{ij}-a_{ij}+x_{j}-x_{i}\Big)f_{ij}}, \ i, j \in V \backslash \{s,t\}. \\\\
 >\end{align}
 >$$
