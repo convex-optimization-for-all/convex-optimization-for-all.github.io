@@ -24,7 +24,7 @@ $$y \in \{-1,1\}^n$$, $$X \in \mathbb{R}^{n \times p}$$ ($$X$$의 열은 $$x_1, 
 >
 $$
 \begin{alignat}{1}
-\min_{\beta, \beta_0, \xi} & \quad \frac{1}{2}\parallel\beta\parallel\_2^2 + C \sum_{i=1}^n \xi_i   \\\\
+\min_{\beta, \beta_0, \xi} & \quad \frac{1}{2}\parallel\beta\parallel_2^2 + C \sum_{i=1}^n \xi_i   \\\\
                                   s.t. & \quad \xi_i \geq 0, i=1,\dots,n   \\\\
                                        & \quad y_i(x_i^T \beta + \beta_o) \geq 1 - \xi_i, i=1,\dots,n
 \end{alignat}
