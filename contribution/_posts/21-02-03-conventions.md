@@ -74,6 +74,20 @@ $$\theta x_1 + (1-\theta)x_2 \in C$$
 - figure class는 `image`여야합니다.
 - {}에 들어갈 내용을 적절히 넣어야합니다.
 
+### 2.4 Hyperlink Convention
+
+- Blog 내의 Post에 대한 hyperlink는 jekyll post_url을 사용합니다. 첫 번째 Post인 [Optimization problems?](/chapter01/2021/01/07/optimization_problems/)의 hyperlink는 아래와 같이 작성합니다.
+
+```
+[Optimization problems?](/chapter01/2021/01/07/optimization_problems/)
+```
+
+- 기타 외부 Url로의 hyperlink는 다음과 같이 작성할 수 있습니다.
+
+```
+[Convex Optimization 위키](<https://bit.ly/2PXv736>)
+```
+
 ## 3. GitHub Convnention
 
 작성 내용에 질문이 있거나 수정 사항을 발견하신 경우 다음 두 방법 중 하나로 남겨주시면 됩니다.
