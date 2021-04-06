@@ -20,7 +20,7 @@ Dual formulation은 목적 함수의 일부와 또 다른 영역 사이의 선�
 > $$\qquad = -\ f^{∗} (A^T u) - g^{∗} (-u) $$
 
 그리고 dual은 다음과 같다.
-> $$max_u −f^{∗}(A^Tu) − g^{∗}(−u)$$
+> $$\max_u −f^{∗}(A^Tu) − g^{∗}(−u)$$
 
 ##### [Example]
 norm과 그 norm의 dual norm은 다음의 관계에 있다. $$\rVert · \rVert, \rVert · \rVert_{∗}$$, the problems 
