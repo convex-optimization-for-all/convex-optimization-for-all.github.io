@@ -16,7 +16,7 @@ Dual formulation은 목적 함수의 일부와 또 다른 영역 사이의 선�
 
 이는 다음의 유도 과정을 거친다.
 > $$\text {g(u)} = \min_{x,z} f(x) + g(z) + u^T(z - Ax)$$
-> $$\qquad  = -\max_{x} (A^T u)^T x - f(x) - max_{z} (-u)^T z - g(z)  $$
+> $$\qquad  = -\max_{x} (A^T u)^T x - f(x) - \max_{z} (-u)^T z - g(z)  $$
 > $$\qquad = -\ f^{∗} (A^T u) - g^{∗} (-u) $$
 
 그리고 dual은 다음과 같다.
