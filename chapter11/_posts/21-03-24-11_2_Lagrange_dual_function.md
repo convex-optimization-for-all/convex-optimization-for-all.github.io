@@ -37,7 +37,7 @@ $$
 ####  1) Positive Definite ($$Q \succ 0$$)
 
 다음 quadratic 문제를 가정하자.  (여기서 $$Q \succ 0$$)
-
+>
 $$
 \begin{alignat}{1}
 \min_x  & \quad \frac{1}{2}x^T Q x + c^T x \\\\
