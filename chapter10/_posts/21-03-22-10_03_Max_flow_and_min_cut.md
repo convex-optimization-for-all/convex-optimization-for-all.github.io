@@ -88,8 +88,8 @@ Max flow problem이란 위 조건을 만족하는 그래프에 대해서 s에서
 >\text{Min cut problem}\qquad
 >&\qquad \min_{b\in {\mathbb{R}^{|E|}},\, x \in {\mathbb{R}^{|V|}} } &{\sum_{(i,j)\in E} b_{ij}c_{ij}}\\\\
 >&\qquad \text{subject to} &{b_{ij} \geq x_{i}-x_{j}} \\\\
->&\qquad  &{b_{ij},\,x_{i},\,x_{j}\,\in \{ 0,1 \} }\
->& \text{for all }i, j.\\\\
+>&\qquad  &{b_{ij},\,x_{i},\,x_{j}\,\in \{ 0,1 \} }\\
+>&\qquad &\text{for all }i, j.\\\\
 >\end{align}
 >$$
 
