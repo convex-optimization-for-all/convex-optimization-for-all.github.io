@@ -120,14 +120,13 @@ Newton decrement, 증분과 hessian matrix와의 관계와 Strong convexity의 �
 
 >Backtracking line seach로 부터 다음과 같은 식이 유도된다.\\
 >$$\begin{align}
->\eta \leq 3(1-2\alpha)\frac{m^{2}}{M}.
->\end{align}$$ 
-
+>\eta \leq 3(1-2\alpha)\frac{m^{2}}{M}. 
+>\end{align}$$ \\
 >또한, Lipschitz conditon에 따라 $$t \geq 0$$에 대하여, 다음 조건을 만족한다. \\
 >$$\begin{align}
->\|\nabla^{2}f(x+t\Delta x_{nt})-\nabla^{2}f(x)\|_{2} \leq tM \|\Delta x_{nt} \|_{2},\\\\
+>\|\nabla^{2}f(x+t\Delta x_{nt})-\nabla^{2}f(x)\|_{2} \leq tM \|\Delta x_{nt} \|_{2},\\
 >| \Delta x_{nt}^{T} \big( \nabla^{2}f(x+t\Delta x_{nt})-\nabla^{2}f(x) \big) \Delta x_{nt}| \leq tM \|\Delta x_{nt} \|_{2}^{3}.
->\end{align}$$
+>\end{align}$$ 
 
 >$$\tilde{f} = f(x+t\Delta x_{nt}$$)라 두면, $$\tilde{f}''(t) = \Delta x_{nt}^{T} \nabla^{2}f(x+t\Delta x_{nt})\Delta x_{nt}$$이고, 이를 대입한다. \\
 >$$\begin{align}
@@ -136,8 +135,8 @@ Newton decrement, 증분과 hessian matrix와의 관계와 Strong convexity의 �
 
 >$$\tilde{f}''(0) = \lambda(x)^{2}$$이고, $$\lambda(x)^{2} \geq m\|\nabla x_{nt}\|_{2}^{2}$$ 임을 이용하고, 부등식을 합친다. $$\tilde{f}'(0) = -\lambda(x)^{2}$$이므로 다음과 같이 정리할 수 있다. \\
 >$$\begin{align}
->\tilde{f}''(t) \leq \tilde{f}''(0) + tM \| \Delta x_{nt} \| ^{3}_{2} \leq \lambda(x)^{2} + t\frac{M}{m^{3/2}}\lambda(x)^{3},
->\tilde{f}'(t) &\leq \tilde{f}'(0)+t\lambda(x)^{2} +t^{2}\frac{M}{2m^{3/2}}\lambda(x)^{3},\\\\
+>\tilde{f}''(t) &\leq \tilde{f}''(0) + tM \| \Delta x_{nt} \| ^{3}_{2} \leq \lambda(x)^{2} + t\frac{M}{m^{3/2}}\lambda(x)^{3}, \\
+>\tilde{f}'(t) &\leq \tilde{f}'(0)+t\lambda(x)^{2} +t^{2}\frac{M}{2m^{3/2}}\lambda(x)^{3},\\
 >&= -\lambda(x)^{2}+t\lambda(x)^{2} + t^{2}\frac{L}{2m^{3/2}}\lambda(x)^{3}.
 >\end{align}$$
 
