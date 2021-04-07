@@ -64,7 +64,7 @@ Max flow problem이란 위 조건을 만족하는 그래프에 대해서 s에서
 >$$
 >\begin{align}
 >&\text{Max flow problem}\qquad
->& &\max\_{f\in {\mathbb{R}^{|E|}}}  &{\sum_{(s,j)\in E} f_{sj}}    \\\\
+>& &\max_{f\in {\mathbb{R}^{|E|}}}  &{\sum_{(s,j)\in E} f_{sj}}    \\\\
 >& & &\text{subject to} &{f_{ij}\geq 0,\,f_{ij}\leq c_{i,j}\,\, \text{for all }(i, j)\in E}\\\\
 >& & & &{\sum_{(i, k)\in E}f_{ik}=\sum_{(k,j)\in E}f_{kj}}\,\, \text{for all }k\in V \backslash \{s,t\}.\\\\
 >\end{align}
