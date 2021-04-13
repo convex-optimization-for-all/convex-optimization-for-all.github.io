@@ -79,5 +79,9 @@ f(y) \approx f(x) + \nabla f(x)^T (y - x) +  \frac{1}{2t}  \parallel y - x  \par
 현재 위치 $$x$$에서 다음 위치 $$y$$가 얼마나 가까운지는 proximity term의 weight $$\frac{1}{2t}$$에 따라 달라진다. 만약 $$t$$ 값이 작다면, proximity term의 weight는 커지게 되고 스텝은 작아지게 될 것이다. 이러한 과정은 다음 수식으로 표현된다.
 
 > \begin{align}
+<<<<<<< HEAD
 x^+ = \underset{y}{\text{argmin}} \ f(x) + \nabla f(x)^T (y - x) + \frac{1}{2t} \parallel y - x \parallel_2^2
+=======
+x^+ = \underset{y}{\arg \min} \ f(x) + \nabla f(x)^T (y - x) + \frac{1}{2t} \parallel y - x \parallel_2^2
+>>>>>>> b0fe253565aad2be881e565fc5f449e9b88a56d4
 \end{align}
