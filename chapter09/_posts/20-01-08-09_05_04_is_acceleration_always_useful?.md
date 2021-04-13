@@ -28,7 +28,7 @@ $$\lambda$$값이 충분히 튜닝된 경우 proximal gradient descent는 가속
 
 여기서 $$S_\lambda$$는 matrix soft-thresholding operator로 SVD를 실행한다.
 
-* $$t$$를 감소시키면서 backtracking을 할 때마다 generalized gradient $$G_t (x)$$를 계산해야 하는데 이는 내부적으로 행렬 SVD 계산을 포함하는 $$\text{prox}\_t (x)$$의 계산을 의미한다. 이는 성능을 약화시키는 원인이 된다.
+* $$t$$를 감소시키면서 backtracking을 할 때마다 generalized gradient $$G_t (x)$$를 계산해야 하는데 이는 내부적으로 행렬 SVD 계산을 포함하는 $$\text{prox}_t (x)$$의 계산을 의미한다. 이는 성능을 약화시키는 원인이 된다.
 
 * 또한, acceleration은 prox로 전달하는 argument를 변경한다. Matrix completion을 위해 $$x-t \nabla g (x)$$ 대신 $$ v-t \nabla g (v)$$를 사용하게 되는데, $$v$$를 계산하면서 행렬이 더 이상 low rank가 아니게 바뀔 수 있어서 SVD 연산이 더 느려질 수 있다.
 

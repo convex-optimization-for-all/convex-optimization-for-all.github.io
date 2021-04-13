@@ -51,7 +51,8 @@ Proximal gradient descent에서 backtracking을 할 때 $$G_t(x)$$이 반복적�
 #### Convergence Theorem
 앞의 가정과 동일한 가정 하에 backtracking line search 방식도 같은 성능을 구할 수 있다.
 
->**Proximal gradient descent**는 backtracking line search에 대해 다음 식을 만족한다. Step size는 $$t_{\text{min}} = \text{min}\\{1,β/L\\}$$이다.
-> \begin{align}
-f(x^{(k)})−f^{\star} ≤ \frac{\lVert x^{(0)} − x^{\star} \rVert_{2}^{2}}{2 t_{min}k}, \space t_{\text{min}} = \text{min}\\{1,β/L\\} \\\
-\end{align}
+>**Proximal gradient descent**는 backtracking line search에 대해 다음 식을 만족한다. Step size는 $$t_{\text{min}} = \text{min} \{1,\beta /L \}$$이다.
+
+> $$
+f(x^{(k)})−f^{\star} ≤ \frac{\lVert x^{(0)} − x^{\star} \rVert_{2}^{2}}{2 t_{min}k}, \space t_{\text{min}} = \text{min} \{ 1, \beta / L \} \\
+$$

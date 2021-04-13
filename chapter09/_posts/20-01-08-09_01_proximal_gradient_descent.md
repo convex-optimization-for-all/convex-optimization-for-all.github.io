@@ -27,7 +27,7 @@ Objective 함수 $$f$$를 두 개의 함수 $$g$$와 $$h$$로 분리할 수 있�
 **[참고]** Gradient descent에서는 함수 $$f$$를 $$x$$ 근처에서 Tayler 2차식으로 근사하고 2차 항의 hessian $$\nabla^2 f(x)$$를 $$\frac{1}{2t} I$$로 대체해서 정의한다. 그리고, 이 근사식의 최소 위치를 다음 위치로 선정한다. (자세한 내용은 6장 Gradient descent 참조)
 
 > \begin{align}
-x^+ = \underset{z}{\text{argmin}}  \underbrace{ f(x) + \nabla f(x)^T (z - x) + \frac{1}{2t} \parallel z - x \parallel_2 ^2}\_{\tilde{f}_t(z)}
+x^+ = \underset{z}{\text{argmin}}  \underbrace{ f(x) + \nabla f(x)^T (z - x) + \frac{1}{2t} \parallel z - x \parallel_2 ^2}_{\tilde{f}_t(z)}
 \end{align}
 
 하지만, 함수 $$f$$가 differentiable하지 않다면 gradient descent를 사용할 수 없다. 그런데, 함수 $$f$$가 $$f = g + h$$로 구성된다면 differentiable한 함수 $$g$$는 이차식으로 근사할 수 있지 않을까? 
@@ -51,10 +51,10 @@ Proximal gradient descent는 시작점 $$x^{(0)}$$에서 시작해서 다음 과
 
 >$$x^{(k)} = \text{prox}_{t_k}(x^{(k-1)} - t_k \nabla g(x^{(k-1)}) )$$, $$k=1,2,3,...$$
 
-여기서 $$\text{prox}\_{t}$$는 proximal mapping으로 다음과 같이 정의된다.
+여기서 $$\text{prox}_{t}$$는 proximal mapping으로 다음과 같이 정의된다.
 
 > \begin{align}
-\text{prox}\_{t}(x) = \underset{z}{\text{argmin}}  \frac{1}{2t} \parallel x - z \parallel_2^2 + h(z)
+\text{prox}_{t}(x) = \underset{z}{\arg \min}  \frac{1}{2t} \parallel x - z \parallel_2^2 + h(z)
 \end{align}
 
 이 식을 그동안 봐왔던  update 형태로 변경해 보면 다음과 같다. 여기서 $$G_{t}$$는 $$f$$의 generalized gradient이다.
@@ -66,12 +66,12 @@ x^{(k)} = x^{(k-1)} - t_k \cdot G_{t_k}(x^{(k-1)}), \space \space \text{where} \
 ##  What good did this do?
 이렇게 하면 무엇이 좋아지는가? 단지 문제를 다른 형태의 minimization 문제로 바꾼 것이 불과하지 않은가?라고 의문을 가질 수 있다.
 
-핵심 포인트는 대부분의 주요 $$h$$ 함수에 대해 $$\text{prox}\_{t}(\cdot)$$가 분석적으로 계산될 수 있다는 것이다. 즉, 다음과 같이 계산된다.
+핵심 포인트는 대부분의 주요 $$h$$ 함수에 대해 $$\text{prox}_{t}(\cdot)$$가 분석적으로 계산될 수 있다는 것이다. 즉, 다음과 같이 계산된다.
 
-* 맵핑 함수 $$\text{prox}\_{t}(\cdot)$$는 $$g$$가 아닌 $$h$$에만 의존한다.
+* 맵핑 함수 $$\text{prox}_{t}(\cdot)$$는 $$g$$가 아닌 $$h$$에만 의존한다.
 * 함수 $$g$$는 매우 복잡한 함수일 수 있는데 여기서는 gradient $$\nabla g$$만 계산하면 된다.
 
-수렴 분석은 알고리즘의 반복 횟수에 대해 이뤄지게 될 것이다. 각 반복에서 $$\text{prox}\_{t}(\cdot)$$를 계산하며 $$h$$에 따라 계산 비용이 작거나 커질 수 있다는 점을 유의해야 한다.
+수렴 분석은 알고리즘의 반복 횟수에 대해 이뤄지게 될 것이다. 각 반복에서 $$\text{prox}_{t}(\cdot)$$를 계산하며 $$h$$에 따라 계산 비용이 작거나 커질 수 있다는 점을 유의해야 한다.
 
 ##  Example: ISTA
 Proximal gradient descent의 예제를 살펴보자. 이전 장에서 $$y \in \mathbb{R}^n$$, $$X \in \mathbb{R}^{n \times p}$$일 때, lasso criterion은 다음과 같이 정의되었다.
@@ -84,7 +84,7 @@ f(\beta) = \frac{1}{2} \parallel y - X\beta \parallel_2^2 + \lambda \parallel \b
 
 > 
 $$ \begin{align}
-\text{prox}\_{t}(\beta) & = \underset{z}{\text{argmin}}  \frac{1}{2t} \parallel \beta - z \parallel_2^2 + \lambda \parallel z \parallel_1 \\
+\text{prox}_{t}(\beta) & = \underset{z}{\text{argmin}}  \frac{1}{2t} \parallel \beta - z \parallel_2^2 + \lambda \parallel z \parallel_1 \\
 & = S_{\lambda t}(\beta) \\
 \end{align} $$
 
