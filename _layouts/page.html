@@ -20,7 +20,6 @@ layout: default
   {% assign title_parts = post.title | split: " " %}
   {% assign subchapter = title_parts | first %}
   {% assign subchapter_level = subchapter | split: "-" %}
-  {% assign title = post.title | remove: subchapter %}
   {% if subchapter_level.size < 3 %}
     <li style="text-align:left; vertical-align: middle; margin-left: -2em; margin-top: 5px;" >
       <a href="{{ post.url }}">{{post.title}}</a>
