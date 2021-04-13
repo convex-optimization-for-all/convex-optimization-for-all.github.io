@@ -16,7 +16,7 @@ Stochastic subgradient method에서 fixed step sizes와 diminishing step sizes�
 
 >$$\text{Cyclic과 randomized method는 fixed step sizes일 경우 아래를 만족한다:} \\
 \begin{align}
-lim_{k→\infty} f(x_{best}^{(k)}) \le f^{*} + 5m^{2}G^{2}t/2
+\lim_{k→\infty} f(x_{best}^{(k)}) \le f^{*} + 5m^{2}G^{2}t/2
 \end{align}
 $$
 

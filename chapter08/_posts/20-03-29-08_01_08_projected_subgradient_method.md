@@ -14,7 +14,7 @@ owner: "Kyeongmin Woo"
 
 >
 $$ \begin{align}
-min_x \text{ }f(x) \quad \text{subject to } x \in C
+\min_x \text{ }f(x) \quad \text{subject to } x \in C
 \end{align} $$
 
 Projected subgradient method를 사용하면 위와 같은 문제를 비교적 쉽게 풀 수 있다. Projected subgradient method는 일반적인 subgradient method과 동일하지만 각 시행 마다 집합 $$C$$로 결과 값을 projection 해주는 형태이다. 
