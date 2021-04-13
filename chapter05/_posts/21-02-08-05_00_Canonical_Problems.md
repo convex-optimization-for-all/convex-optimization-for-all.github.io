@@ -8,7 +8,7 @@ owner: "Hooncheol Shin"
 
 # Canonical Problems
 
-[첫 번째 장](https://convex-optimization-for-all.github.io/chapter01/2021/01/07/optimization_problems/)에서 convex optimization problem이 다음과 같이 정의됨을 알아보았다.
+[첫 번째 장](/chapter01/2021/01/07/optimization_problems/)에서 convex optimization problem이 다음과 같이 정의됨을 알아보았다.
 
 <figure class="image" style="align: center;">
 <p align="center">

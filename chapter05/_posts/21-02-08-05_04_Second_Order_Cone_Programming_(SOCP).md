@@ -8,17 +8,18 @@ owner: "Hooncheol Shin"
 
 General LP에서 inequality constraint가 우항이 affine function인 second-order cone costraint로 교체되면, 이는 *Second-Order Cone Program*(SOCP)이다.
 
-#### Second-Order Cone Program
+### Second-Order Cone Program
+
 >$$
 >\begin{align}
 >    &\text{minimize}_{x} &&{f^T x} \\\\
 >    &\text{subject to } &&{\| A_i x + b_i \|_2 \leq c_i^T x + d_i, i = 1, \dotsc, m}\\\\
 >    & &&{Fx = g},\\\\
->&\text{where } x \in \mathbb{R}^n \text{ is the optimization variable, } A_i  \in \mathbb{R}^{n_i \text{ x n}}, \text{ and } F \in \mathbb{R}^{\text{p x n}}.
->\end{align}
+>\end{align}\\
+>\text{where } x \in \mathbb{R}^n \text{ is the optimization variable, } A_i  \in \mathbb{R}^{n_i \text{ x n}}, \text{ and } F \in \mathbb{R}^{\text{p x n}}.
 >$$
 
-#### Recall: Norm cone
+### Recall: Norm cone
 *Norm cone*은 반경 $$t$$ 이내인 점들로 이뤄진 cone으로 $$(x,t)$$로 정의되는 $$R^{n+1}$$차원의 convex cone이다. 이때, 반경은  임의의 norm으로 정의된다.
 
 >$$\left\{(x, t) : \left \Vert x \right \| \le t \right\} \text{, for a norm } \left \Vert  · \right \|$$
@@ -36,14 +37,14 @@ General LP에서 inequality constraint가 우항이 affine function인 second-or
 ## QCQP and equivalent SOCP
 QCQP는 다음의 유도과정을 거쳐 SOCP의 한가지 특수한 경우로 변형된다. (즉, QCQP $$\subseteq$$ SOCP)
 
-#### Recall: Quadratically Constrained Quadratic Program
+### Recall: Quadratically Constrained Quadratic Program
 >$$
 >\begin{align}
 >    &\text{minimize}_{x} &&{(1/2)x^T P_0 x + q_0^T x + r_0} \\\\
 >    &\text{subject to } &&{(1/2)x^T P_i x + q_i^T x + r_i \leq 0}, i = 1, \dotsc, m\\\\
 >    & &&{Ax = b},\\\\
->&\text{where } P_i \in \mathbb{S}_{+}^n \text{ for } i = 0, \dotsc, m \text{, and } A \in \mathbb{R}^{\text{p x n}}.
->\end{align}
+>\end{align}\\
+>\text{where } P_i \in \mathbb{S}_{+}^n \text{ for } i = 0, \dotsc, m \text{, and } A \in \mathbb{R}^{\text{p x n}}
 >$$
 >
 
@@ -53,8 +54,8 @@ QCQP는 다음의 유도과정을 거쳐 SOCP의 한가지 특수한 경우로 �
 >    &\text{minimize}_{x} &&{x^T P_0 x + 2q_0^T x + r_0} \\\\
 >    &\text{subject to } &&{x^T P_i x + 2q_i^T x + r_i \leq 0}, i = 1, \dotsc, m\\\\
 >    & &&{Ax = b},\\\\
->&\text{where } P_i \in \mathbb{S}_{+}^n \text{ for } i = 0, \dotsc, m \text{, and } A \in \mathbb{R}^{\text{p x n}}.
->\end{align}
+>\end{align}\\
+>\text{where } P_i \in \mathbb{S}_{+}^n \text{ for } i = 0, \dotsc, m \text{, and } A \in \mathbb{R}^{\text{p x n}}.
 >$$
 >
 

@@ -14,8 +14,8 @@ General LP에서 inequality constraint가 generalized inequality constraint로 �
 >    &\text{minimize}_{x} &&{c^T x + d} \\\\
 >    &\text{subject to } &&{Fx + g \preceq_{K} 0} \\\\
 >    & &&{Ax = b},\\\\
->&\text{where } c, x \in \mathbb{R}^{n}, A \in \mathbb{R}^{p \text{ x } n}, \text{and } b \in \mathbb{R}^{p}.
->\end{align}
+>\end{align}\\
+>\text{where } c, x \in \mathbb{R}^{n}, A \in \mathbb{R}^{p \text{ x } n}, \text{and } b \in \mathbb{R}^{p}.
 >$$
 
 * $$F: \mathbb{R}^n \rightarrow Y$$ is a linear map, $$g \in Y$$, for Eucliean space Y.

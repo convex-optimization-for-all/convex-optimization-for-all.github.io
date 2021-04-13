@@ -8,14 +8,14 @@ owner: "Hooncheol Shin"
 
 General LP에서 inequality constraint가 linear matrix inequality(LMI)로 교체되면, 이는 *Semidefnite Program*(SDP)이다.
 
-#### Semidefinite Program
+### Semidefinite Program
 >$$
 >\begin{align}
 >    &\text{minimize}_{x} &&{c^T x + d} \\\\
 >    &\text{subject to } &&{xF_1 + \dotsb + x_nF_n + G \preceq 0} \\\\
 >    & &&{Ax = b},\\\\
->&\text{where } G, F_1, \dotsb, F_n \in \mathbb{S}^{k} \text{ and } A \in \mathbb{R}^{\text{p x n}}.
->\end{align}
+>\end{align}\\
+>\text{where } G, F_1, \dotsb, F_n \in \mathbb{S}^{k} \text{ and } A \in \mathbb{R}^{\text{p x n}}.
 >$$
 
 * $$G, F_1, \dotsb, F_n$$가 모두 diagonal matrices면, 위의 inequality constraint는 n개의 linear inequalities와 동일해진다. 이 경우 SDP는 LP와 같다.
@@ -54,7 +54,7 @@ General LP에서 inequality constraint가 linear matrix inequality(LMI)로 교�
 ## SDP in Standard form
 다음과 같이 표현될 때, semidefinite program의 standard form이라고 한다.
 
-#### Standard form SDP
+### Standard form SDP
 >$$
 >\begin{align}
 >    &\text{minimize}_{X} &&{tr(CX)} \\\\
@@ -68,7 +68,7 @@ General LP에서 inequality constraint가 linear matrix inequality(LMI)로 교�
 
 모든 SDP는 아래의 과정에 의해 standard form SDP로 변형될 수 있다.
 
-#### Converting SDPs to standard form
+### Converting SDPs to standard form
 **Step1.**  Slack variable S를 이용하여 inequality constraint를 equality constraint로 바꿔준다.
 >$$
 >\begin{align}
@@ -196,7 +196,7 @@ $$x = x^{+}  - x^{-}$$이고, $$x^{+} \text{, } x^{-} \succeq 0.$$
 ## SOCP and equivalent SDP
 Schur complement[[8](https://en.wikipedia.org/wiki/Schur_complement)]를 이용하여 SOCP의 inequality constraint를 표현하면 SOCP는 SDP의 어떤 특수한 경우로 변형된다. 즉, SOCP $$\subseteq$$ SDP의 관계가 성립한다.
 
-#### Recall: Second-Order Cone Program
+### Recall: Second-Order Cone Program
 >$$
 >\begin{align}
 >    &\text{minimize}_{x} &&{f^T x} \\\\
@@ -205,7 +205,7 @@ Schur complement[[8](https://en.wikipedia.org/wiki/Schur_complement)]를 이용�
 >\end{align}
 >$$
 
-#### SOCP to SDP by Schur complement
+### SOCP to SDP by Schur complement
 >$$
 >\begin{align}
 >    &\text{minimize}_{x} &&{f^T x} \\\\
