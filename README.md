@@ -92,7 +92,7 @@ wgm0601@gmail.com / 우경민 (마키나락스)
 - 우경민(wgm0601@gmail.com)
 - 류원탁(ryu071511@gmail.com)
 - 이민주(minjoolee218@gmail.com)
-- 정영재
+- 정영재(youngjae8734@gmail.com)
 - 신훈철(hunhoon21@gmail.com)
 
 ## Contributors ✨
