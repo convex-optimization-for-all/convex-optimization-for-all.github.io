@@ -31,7 +31,7 @@ wgm0601@gmail.com / 우경민 (마키나락스)
 
 ## 다루는 내용들
 
-| idx | Title | 모두를 위한 컨벡스 최적화 | Lecture | Slide | Code Owner | 
+| idx | Title | Book | Lecture | Slide | Code Owner | 
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | 1 | Introduction | [Page](<https://wikidocs.net/17202>)  | [CMU Lecture](<https://www.youtube.com/watch?v=XFKBNJ14UmY&ab_channel=RyanT>)  | [CMU Note](<http://www.stat.cmu.edu/~ryantibs/convexopt-F16/lectures/intro.pdf>)  | 우경민 |
 | 2 | Convex Sets | [Page](<https://wikidocs.net/17370>)  | [Stanford Lecture](<https://www.youtube.com/watch?v=P3W_wFZ2kUo&list=PL3940DD956CDF0622&index=3&ab_channel=Stanford>)  | [Stanford Note](<https://web.stanford.edu/class/ee364a/lectures/sets.pdf>)  | 류원탁 |
@@ -86,6 +86,14 @@ wgm0601@gmail.com / 우경민 (마키나락스)
 - 정태수 (tcheong@korea.ac.kr)
 
 [원저자 및 리뷰어 상세소개](<https://wikidocs.net/17197>)
+
+### 오픈소스 관리자
+
+- 우경민(wgm0601@gmail.com)
+- 류원탁(ryu071511@gmail.com)
+- 이민주(minjoolee218@gmail.com)
+- 정영재
+- 신훈철(hunhoon21@gmail.com)
 
 ## Contributors ✨
 
