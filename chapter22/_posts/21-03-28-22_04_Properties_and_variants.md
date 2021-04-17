@@ -30,21 +30,22 @@ owner: "YoungJae Choung"
 ## Another variant: away steps
 좀 더 빠른 이해를 위해,  [Fig 3]의 최소화 문제를 살펴 보자. 여기서 최적 해는 (0,0)이다. 그리고 conditional descent 방법은 초기 점 (0,1) 때문에 움직이기 어렵게 된다. 그러나 away step 이동으로 인해 Conditional gradient descent는 가능성 있는 지점으로 이동 할 뿐만 아니라 가능성이 없는 지점에서 벗어나게 된다.
 
-
-
 atoms $$A$$ 집합에 대한 Convex hull $$C = conv(A)$$를 가정해 보자
 
 $$A$$에 속한 element의 convex combination으로 $$x∈C$$를 명시적으로 나타낼 수 있다.
 > $$x = \sum_{a∈A} λ_a(x)a$$
 
-Away steps에서의 Conditional gradient: \\
-$$\text{1. choose } x^{(0)} = a^{(0)} ∈ A$$ \\
-$$\text{2. for } k = 1, 2, 3, . . .$$ \\
-$$\qquad s^{(k−1)} ∈ \arg\min_{a∈A} ∇f(x^{(k−1)})^Ta,$$
-$$\qquad a^{(k−1)} ∈ \arg\max_{a∈A, λa(x(k−1))>0} ∇f(x^{(k−1)})^Ta$$
-$$\qquad \text{choose } v = s^{(k−1)} − x^{(k−1)} or \quad v = x^{(k−1)} − a^{(k−1)}$$
-$$\qquad x^{(k)} = x^{(k−1)} + γ_kv$$ \\
-$$\text{3. end for}$$
+Away steps에서의 Conditional gradient:
+
+> $$ \eqalign{
+> &\text{1. choose } x^{(0)} = a^{(0)} ∈ A \\
+> &\text{2. for } k = 1, 2, 3, . . . \\
+> &\qquad s^{(k−1)} ∈ \arg\min_{a∈A} ∇f(x^{(k−1)})^Ta, \\
+> &\qquad a^{(k−1)} ∈ \arg\max_{a∈A, λa(x(k−1))>0} ∇f(x^{(k−1)})^Ta \\
+> &\qquad \text{choose } v = s^{(k−1)} − x^{(k−1)} or \quad v = x^{(k−1)} − a^{(k−1)} \\
+> &\qquad x^{(k)} = x^{(k−1)} + γ_kv \\
+> &\text{3. end for}
+> }$$
 
 
 ## Linear convergence

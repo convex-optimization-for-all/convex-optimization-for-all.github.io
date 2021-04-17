@@ -20,7 +20,7 @@ Projected Gradient Descent는 본질적으로 local quadratic expansion(2nd Tayl
 
 > $$x^{(k)} = P_{C} \Bigl( \arg\min_{y} ∇f(x^{(k−1)})^T(y − x^{(k−1)}) + \frac{1}{2t} \| y − x^{(k−1)} \|^2_ 2 \Bigr) $$
 
-Projected Gradient Descent에 대한 좀 더 자세한 내용은 [9-4](https://wikidocs.net/20230)를  참고 하기 바란다.
+Projected Gradient Descent에 대한 좀 더 자세한 내용은 [9-4](https://wikidocs.net/20230)를 참고 하기 바란다.
 
 
 
@@ -35,14 +35,16 @@ Projected Gradient Descent에 대한 좀 더 자세한 내용은 [9-4](https://w
 초깃값 $$x^{(0)} ∈ C$$를 선택한다. $$k = 1, 2, 3, . . . $$
 
 > $$\begin{array}{rcl}
-> s^{(k−1)} & ∈ & \arg\min_{s ∈ C} ∇f(x^{(k−1)})^Ts \\\
+> s^{(k−1)} & ∈ & \arg\min_{s ∈ C} ∇f(x^{(k−1)})^Ts \\
 > x^{(k)} & = & (1 − γ_k)x^{(k−1)} + γ_ks^{(k−1)}
 > \end{array}$$
 
 #### [참고]
-> $$f(y) \approx f(x) + \nabla f(x)(y-x)$$
-> $$\arg\min_y = f(x) + \nabla f(x)(y-x)$$
-> $$\equiv \arg\min_y f(x)y$$
+> $$ \eqalign{
+> &f(y) \approx f(x) + \nabla f(x)(y-x) \\
+> &\arg\min_y = f(x) + \nabla f(x)(y-x) \\
+> &\equiv \arg\min_y f(x)y
+> }$$
 
 여기서, 이전과 다르게 Projection 과정을 거치지 않고 업데이트를 할 떄, 제약 조건 집합 $$C$$에 있는 점을 사용하여 문제를 풀어나간다.
 
