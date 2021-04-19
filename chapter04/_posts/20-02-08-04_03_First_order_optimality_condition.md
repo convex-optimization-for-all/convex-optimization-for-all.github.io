@@ -23,10 +23,13 @@ $$- \nabla f(x)$$는 $$x$$에서 optimal point로 이동하는 방향이다. <br
 set $$C$$가 $$- \nabla f(x)$$의 반대방향인 half-space에 포함된다는 것이므로 <br>
 $$x$$는 optimal point가 된다.<br>
 
-<center>
-![](https://wikidocs.net/images/page/18337/first-order-condition.png)</br>
-**[Fig1] geometric interpretation of first-order condition for optimality [3]**
-</center>
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/18337/first-order-condition.png" alt="[Fig1] geometric interpretation of first-order condition for optimality [3]">
+  <figcaption style="text-align: center;">[Fig1] geometric interpretation of first-order condition for optimality [3]</figcaption>
+</p>
+</figure>
+<br>
 
 #### Important special case
 $$C = R^n$$일때 (unconstrained optimization일때), <br>

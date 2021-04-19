@@ -43,10 +43,13 @@ $$X\_{opt}$$를 다음과 같이 어떤 convex problem에 대한 solution의 집
 Convex function에서의 local optimum은 곧 global optimum이기 때문에 <br>
 복수의 element를 가진 solution set이 있다면 이는 아래와 같은 모양일 수 밖에 없다.<br>
 
-<center>
-![](https://wikidocs.net/images/page/18263/multiple-optima.png)</br>
-**[Fig1] geometric interpretation of convexity of the solution set**
-</center>
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/18263/multiple-optima.png" alt="[Fig1] geometric interpretation of convexity of the solution set">
+  <figcaption style="text-align: center;">[Fig1] geometric interpretation of convexity of the solution set</figcaption>
+</p>
+</figure>
+<br>
 
 ## Key property2
 >$$f$$가 strictly convex이라면 solution은 unique하다. 즉, $$X_{opt}$$는 하나의 element만을 갖는다.

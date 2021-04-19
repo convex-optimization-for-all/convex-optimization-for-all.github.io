@@ -9,11 +9,14 @@ owner: "YoungJae Choung"
 $$C$$가 convex set이고 $$f$$가 $$(x,y)$$에 대해 convex일때, $$g(x) = min\_{y \in C} f(x, y)$$는 x에 대해 convex이다.
 
 즉, 위의 성질에 의해 다변수 함수로 구성된 convex problem에서의 partial optimization이 가능하며 이 과정에서 convexity가 유지된다.
-<center>
->![](https://wikidocs.net/images/page/18367/partial-optimization.png)</br>
 
-**[Fig1] partial optimization of a convex problem [3]**
-</center>
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="https://wikidocs.net/images/page/18367/partial-optimization.png" alt="[Fig1] partial optimization of a convex problem [3]">
+  <figcaption style="text-align: center;">[Fig1] partial optimization of a convex problem [3]</figcaption>
+</p>
+</figure>
+<br>
 
 #### Example: hinge form of SVMs
 Non-separable set에 대한 SVM 문제는 다음과 같이 정의된다. 
