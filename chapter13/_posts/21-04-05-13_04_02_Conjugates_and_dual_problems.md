@@ -31,5 +31,7 @@ owner: "Wontak Ryu"
 > 
 > where $$I^{∗}_C$$ is the support function of $$C$$
 
-• Norms: $$ \min_x f(x) + \rVert x \rVert \text{의 dual은 다음과 같다.}$$
+• Norms: 
+
+$$ \min_x f(x) + \rVert x \rVert \text{의 dual은 다음과 같다.}$$
 $$ \max_u −f^{∗}(u) \text{ subject to } \rVert u \rVert^{∗} ≤ 1 \text{ where } \rVert · \rVert_{∗} \text{ is the dual norm of } \rVert · \rVert$$

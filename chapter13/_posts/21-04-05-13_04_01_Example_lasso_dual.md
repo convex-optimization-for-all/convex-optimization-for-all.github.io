@@ -8,11 +8,10 @@ owner: "Wontak Ryu"
 
 $$y ∈ \mathbb{R}^n, X ∈ \mathbb{R}^{n×p}$$인 lasso 문제를 다시 살펴보자
 
-> $$ \min_β \frac{1}{2} \rVert y−Xβ \rVert^2_2 + λ\rVert β \rVert_1$$
-
-> $$f(β) = \frac{1}{2} \rVert y - Xβ \rVert^2_2 +  λ\rVert β \rVert_1$$
-> $$L(β) = f(β)$$
->  $$ \min_β L(β) = f^{\star}$$
+> $$ \min_β \frac{1}{2} \rVert y−Xβ \rVert^2_2 + λ\rVert β \rVert_1 \\ $$
+> $$f(β) = \frac{1}{2} \rVert y - Xβ \rVert^2_2 +  λ\rVert β \rVert_1 \\ $$
+> $$L(β) = f(β)\\$$
+>  $$ \min_β L(β) = f^{\star}\\$$
 
 위 수식의 dual 함수는 constant 이다. (= $$f^{*}$$). 
 그러므로 primal 문제를 다음과 같이 변형할 수 있다.

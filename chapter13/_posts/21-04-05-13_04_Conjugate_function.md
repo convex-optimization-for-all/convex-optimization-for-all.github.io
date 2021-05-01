@@ -33,9 +33,9 @@ $$f^{∗}(y)$$는 선형 함수 $$y^Tx$$와 $$f(x)$$ 간의 maximum gap이다.
 > $$f(x) + f^{∗}(y) ≥ x^Ty \iff f^{*}(y) \ge x^Ty - f(x)$$
 > $$ f^{*}(y) = \max_z z^Ty - f(x)$$
 
-• conjugate의 conjugate은 $$f^{∗∗}$$이므로 $$f^{∗∗} ≤ f$$ 가 성립한다.
-• 여기서 만약$$f$$가 closed이고 convex 이면, $$f^{∗∗} = f$$과 같다. 
-•$$f$$가 closed이고 convex 이면, 모든 $$x,y$$에 대해 다음이 성립한다.
+• conjugate의 conjugate은 $$f^{∗∗}$$이므로 $$f^{∗∗} ≤ f$$ 가 성립한다.<br>
+• 여기서 만약$$f$$가 closed이고 convex 이면, $$f^{∗∗} = f$$과 같다. <br>
+•$$f$$가 closed이고 convex 이면, 모든 $$x,y$$에 대해 다음이 성립한다.<br>
 > $$\begin{align}
 > x ∈ ∂f^{∗}(y) &\iff y ∈ ∂f(x) \\\
 > &\iff f(x) + f^{∗}(y) = x^Ty \\\

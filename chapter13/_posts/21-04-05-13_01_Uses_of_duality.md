@@ -17,11 +17,11 @@ duality gap이 0일 때 이를 zero duality gap이라 하며 이는 dual 문제�
 따라서 아래와 같이 유도가 가능하다.
 
 ##### [Proof]
-> $$f^{\star} \ge g(u, v)$$
-> $$-f^{\star} \le -g(u, v)$$
-> $$f(x)-f^{\star} \le \underbrace{f(x)-g(u, v)}_{\text{dualityh gap}}$$
-> also,
-> $$g^{\star}-g(x) \le \underbrace{f(x)-g(u, v)}_{\text{dualityh gap}}$$
+> $$f^{\star} \ge g(u, v) \\$$
+> $$-f^{\star} \le -g(u, v) \\$$
+> $$f(x)-f^{\star} \le \underbrace{f(x)-g(u, v)}_{\text{dualityh gap}}\\$$
+> also, \\
+> $$g^{\star}-g(x) \le \underbrace{f(x)-g(u, v)}_{\text{dualityh gap}}\\$$
 
 
 그리고, duality gap은 알고리즘의 중지 기준(stopping criterion)으로 사용될 수도 있다. 
