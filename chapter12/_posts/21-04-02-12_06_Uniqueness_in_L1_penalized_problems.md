@@ -14,7 +14,7 @@ MathJax.Hub.Config({
 
 다음의 $$L1$$ penalized linear regression 문제는 lasso problem이란 이름으로도 잘 알려져 있다.
 >$$
->\hat{\beta} \in \text{argmin}_{\beta \in \mathbb{R}^p} \frac{1}{2} \rVert y - X\beta \rVert^2_2 + \lambda \rVert\beta\rVert_1, \qquad \text{ --- (1) }\\\\
+>\hat{\beta} \in \text{argmin}_{\beta \in \mathbb{R}^p} \frac{1}{2} \| y - X\beta \|^2_2 + \lambda \|\beta\|_1, \qquad \text{ --- (1) }\\\\
 >\text{given } y \in \mathbb{R}^n, \text{ a matrix } X \in \mathbb{R}^{n \text{ x } p} \text{ of predictor variables, and a tuning parameter } \lambda \ge 0.
 >$$
 
@@ -30,15 +30,15 @@ Underdetermined system](https://en.wikipedia.org/wiki/Underdetermined_system)). 
 > 
 > 1. 유일한 solution을 갖거나 혹은 무한히 많은 수의 solution을 갖는다.
 > 2. 모든 lasso solution $$\hat{\beta}$$는 같은 $$X\hat{\beta}$$값을 갖는다.
->3. $$\lambda > 0$$일때, 모든 lasso solution $$\hat{\beta}$$는 같은 $$l_1$$ norm을 갖는다 ($$\rVert\hat{\beta}\rVert_1$$).
+>3. $$\lambda > 0$$일때, 모든 lasso solution $$\hat{\beta}$$는 같은 $$l_1$$ norm을 갖는다 ($$\|\hat{\beta}\|_1$$).
 
 $$\text{ }$$
 
 > **Proof.**<br/>
 > 1. 만약 (1)이 두 개의 solution $$\hat{\beta}^{(1)}$$, $$\hat{\beta}^{(2)}$$를 가질때, 임의의 $$0 < \alpha < 1$$에 대해 $$\alpha \hat{\beta}^{(1)} + (1 - \alpha) \hat{\beta}^{(2)}$$ 또한 solution이 되므로 무수히 많은 solution이 존재하게 된다.<br/>
 > 2. & 3. 두 개의 solution $$\hat{\beta}^{(1)}$$, $$\hat{\beta}^{(2)}$$가 있다고 가정해보자. 이때 optimal value를 $$c^\star$$라고 하면, 어떤 임의의 solution인 $$\alpha \hat{\beta}^{(1)} + (1 - \alpha) \hat{\beta}^{(2)}$$ ($$0 < \alpha < 1$$)에 대해 아래의 등식을 항상 만족해야만 한다.
->  $$\frac{1}{2} \rVert y - X(\alpha \hat{\beta}^{(1)} + (1 - \alpha) \hat{\beta}^{(2)}) \rVert_2^2 + \lambda \rVert \alpha \hat{\beta}^{(1)} + (1 - \alpha) \hat{\beta}^{(2)} \rVert_1 = \alpha c^\star + (1-\alpha) c^\star = c^\star$$
-> 위 등식을 만족하기 위해서는 임의의 solution $$\hat{\beta}$$에 대해 $$X\hat{\beta}$$은 항상 같은 값을 가져야 하고, $$\lambda > 0$$일때 $$\rVert \hat{\beta} \rVert_1$$ 값 또한 항상 같아야 한다.
+>  $$\frac{1}{2} \| y - X(\alpha \hat{\beta}^{(1)} + (1 - \alpha) \hat{\beta}^{(2)}) \|_2^2 + \lambda \| \alpha \hat{\beta}^{(1)} + (1 - \alpha) \hat{\beta}^{(2)} \|_1 = \alpha c^\star + (1-\alpha) c^\star = c^\star$$
+> 위 등식을 만족하기 위해서는 임의의 solution $$\hat{\beta}$$에 대해 $$X\hat{\beta}$$은 항상 같은 값을 가져야 하고, $$\lambda > 0$$일때 $$\| \hat{\beta} \|_1$$ 값 또한 항상 같아야 한다.
 
 
 다시 처음으로 돌아가, lasso problem (1)에 대한 KKT conditions는 아래와 같다.
@@ -50,15 +50,15 @@ $$\text{ }$$
 > [-1, 1] & if \hat{\beta_i} = 0,
 > \end{cases}
 > \text{for } i = 1, \dots, p. \text{ --- (3)} \\\\
-> \text{Here } \gamma \in \mathbb{R}^p \text{ is called a subgradient of the function } f(x) = \rVert x \rVert_1 \text{ evaluated at } x = \hat{\beta}.
+> \text{Here } \gamma \in \mathbb{R}^p \text{ is called a subgradient of the function } f(x) = \| x \|_1 \text{ evaluated at } x = \hat{\beta}.
 >$$
 
 즉, (1)의 solution인 $$\hat{\beta}$$는 어떤 $$\gamma$$에 대해 (2) 와 (3)을 만족한다. 
 
-위에서 얻은 KKT conditions를 이용하여 lasso solution에 대한 조건을 좀 더 명시적인 형태로 변환해보도록 하자. 이후의 진행에서는 유도의 간결함을 위해 $$\lambda > 0$$를 가정하도록 한다. 우선 equicorrelation set $$\mathcal{E}$$을 다음과 같이 정의한다. $$\mathcal{E}$$는 $$\hat{\beta}_i \neq 0$$인 모든 인덱스 $$i$$와 $$\hat{\beta}_j = 0$$이면서 $$rVert\gamma_jrVert = 1$$인 모든 인덱스 $$j$$를 원소로 가진 집합이다.
+위에서 얻은 KKT conditions를 이용하여 lasso solution에 대한 조건을 좀 더 명시적인 형태로 변환해보도록 하자. 이후의 진행에서는 유도의 간결함을 위해 $$\lambda > 0$$를 가정하도록 한다. 우선 equicorrelation set $$\mathcal{E}$$을 다음과 같이 정의한다. $$\mathcal{E}$$는 $$\hat{\beta}_i \neq 0$$인 모든 인덱스 $$i$$와 $$\hat{\beta}_j = 0$$이면서 $$\vert\gamma_j\vert = 1$$인 모든 인덱스 $$j$$를 원소로 가진 집합이다.
 
 $$
-\mathcal{E} = \{ i \in \{1, \dots, p \}  : rVertX_i^T (y - X\hat{\beta}) rVert = \lambda \}. \qquad \text{ --- (4)}
+\mathcal{E} = \{ i \in \{1, \dots, p \}  : \vert X_i^T (y - X\hat{\beta}) \vert = \lambda \}. \qquad \text{ --- (4)}
 $$
 
 또한 equicorrelation sign $$s$$를 다음과 같이 정의한다. 여기서 $$X_\mathcal{E}$$는 행렬 X에서 $$i \in \mathcal{E}$$인 column $$i$$ 외의 모든 column을 0 벡터로 교체한 행렬을 의미한다.
@@ -67,7 +67,7 @@ $$
 s = sign(X^T_\mathcal{E} (y -X\hat{\beta}). \qquad \text{ --- (5)}
 $$
 
-여기서 $$\mathcal{E}, s$$는 $$\gamma$$에 대해 다음과 같이 표현할 수 있다: $$\mathcal{E} = \{i \in \{1, \dots, p \} : \rVert \gamma_i \rVert = 1 \}$$ and $$s = \gamma_{\mathcal{E}}$$. 또한 Lemma1-2에 의해 $$X\hat{\beta}$$는 유일한 값을 가지므로 이는 $$\mathcal{E}$$, $$s$$이 유일함을 암시한다.
+여기서 $$\mathcal{E}, s$$는 $$\gamma$$에 대해 다음과 같이 표현할 수 있다: $$\mathcal{E} = \{i \in \{1, \dots, p \} : \vert \gamma_i \vert = 1 \}$$ and $$s = \gamma_{\mathcal{E}}$$. 또한 Lemma1-2에 의해 $$X\hat{\beta}$$는 유일한 값을 가지므로 이는 $$\mathcal{E}$$, $$s$$이 유일함을 암시한다.
 
 (3)의 subgradient $$\gamma$$에 대한 정의에 의해 모든 lasso solution $$\hat{\beta}$$에 대해 $$\hat{\beta}_{-\mathcal{E}} = 0$$임을 알 수 있다. 그러므로 (2)를 $$\mathcal{E}$$ 블록에 대해 표현하면 다음과 같다.
 
@@ -102,7 +102,7 @@ $$
 
 (8)의 $$\hat{\beta_{\mathcal{E}}}$$의 유일함이 보장되기 위해서는 $$b=0$$이 되어야 한다 ( $$(X^T_\mathcal{E})^+ ( y - (X^T_\mathcal{E})$$은 유일하기 때문에). $$b=0$$이어야 함을 주지하고 (8)의 등식을 변형하면 다음의 결론을 얻게 된다.
 
->**Lemma 2.** 임의의 $$y, X, \lambda > 0$$에 대해, 만약 $$null(X_\mathcal{E}) = {0}$$, 또는 $$rank(X_\mathcal{E}) = rVert\mathcal{E}rVert$$ ([참고](https://www.quora.com/When-the-null-space-of-a-matrix-is-the-zero-vector-the-matrix-is-invertible-Why/answer/Alexander-Farrugia)),이면 lasso solution은 유일(unique)해지며, 이는 곧 다음과도 같다.
+>**Lemma 2.** 임의의 $$y, X, \lambda > 0$$에 대해, 만약 $$null(X_\mathcal{E}) = {0}$$, 또는 $$rank(X_\mathcal{E}) = \vert\mathcal{E}\vert$$ ([참고](https://www.quora.com/When-the-null-space-of-a-matrix-is-the-zero-vector-the-matrix-is-in\vertible-Why/answer/Alexander-Farrugia)),이면 lasso solution은 유일(unique)해지며, 이는 곧 다음과도 같다.
 
 >$$
 >\hat{\beta_{-\mathcal{E}}} = 0 \text{ and } \hat{\beta_{\mathcal{E}}} = (X^T_\mathcal{E}X^T_\mathcal{E})^{-1} ( X^T_\mathcal{E} y - \lambda s), \qquad \text{ --- (9)}\\\\
@@ -160,7 +160,7 @@ $$
 좀 더 일반적인 lasso problem에 대해서도 같은 내용을 적용할 수 있다 [13].
 
 $$
-\hat{\beta} \in \text{argmin}_{\beta \in \mathbb{R}^p} f(X\beta) + \lambda \rVert\beta\rVert_1, \qquad \text{ --- (11) }
+\hat{\beta} \in \text{argmin}_{\beta \in \mathbb{R}^p} f(X\beta) + \lambda \|\beta\|_1, \qquad \text{ --- (11) }
 $$
 
 >**Lemma 5.** 만약 행렬 $$X \in \mathbb{R}^{n \text{ x } p}$$의 모든 원소가 $$\mathbb{R}^{np}$$ 상의 continuous probability distribution을 따를때, 미분 가능하고 strictly convex인 임의의 함수 $$f$$는 임의의 $$\lambda > 0$$에 대해 (11)의 문제에서 항상 유일(unique)한 solution을 보장한다. 이 solution은 많아봐야 $$min\{n,p\}$$개의 nonzero components로 구성된다.
