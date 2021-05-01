@@ -87,14 +87,6 @@ wgm0601@gmail.com / 우경민 (마키나락스)
 
 [원저자 및 리뷰어 상세소개](<https://wikidocs.net/17197>)
 
-### 오픈소스 관리자
-
-- 우경민(wgm0601@gmail.com)
-- 류원탁(ryu071511@gmail.com)
-- 이민주(minjoolee218@gmail.com)
-- 정영재(youngjae8734@gmail.com)
-- 신훈철(hunhoon21@gmail.com)
-
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
