@@ -18,7 +18,7 @@ Barrier method를 소개하기 전에 먼저 indicator function을 barrier funct
 <figure class="image" style="align: center;">
 <p align="center">
  <img src="https://wikidocs.net/images/page/21305/15_barrier_function_01.PNG" alt="" width="70%" height="70%">
- <figcaption style="text-align: center;">[Fig 1] barrier function $$\phi(x) = -1/t\log(-x)$$ [1]</figcaption>
+ <figcaption style="text-align: center;">$$\text{[Fig 1] barrier function }\phi(x) = -1/t\log(-x) [1]$$</figcaption>
 </p>
 </figure>
 

@@ -13,9 +13,7 @@ MathJax.Hub.Config({
 다음과 같은 convex optimization 문제를 고려해보자.
 >
 $$\begin{align}
-\min_{x} & \quad f(x)
-\end{align}$$
-$$\begin{align}
+\min_{x} & \quad f(x) \\ 
 \text{subject to } & \quad Ax = b \\\
                         & \quad h_{i}(x) \leq 0, i = 1, \dotsc, m
 \end{align}$$
