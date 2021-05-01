@@ -12,7 +12,7 @@ owner: "Minjoo Lee"
 
 
 ## Barrier method
-아래와  같은 primal 문제가 convex이고 $f, h_i , i = 1, . . . m$가 미분가능 할 때,   
+아래와  같은 primal 문제가 convex이고 $$f, h_i , i = 1, . . . m$$가 미분가능 할 때,   
 > $$\begin{align}
 \min_{x} & \quad f(x) \\\
 \text{subject to } & \quad h_{i}(x) \leq 0, i = 1, \dotsc, m \\\
@@ -25,21 +25,20 @@ Log barrier function을 사용하여 다음과 같이 primal 문제를 barrier �
 \min_{x} & \quad f(x) + \frac{1}{t} \phi(x) & & \min_{x} & \quad tf(x) + \phi(x) \\\
 \text{subject to } & \quad Ax = b & \iff \qquad & \text{subject to } & \quad Ax = b \\\
 \end{align}$$
-
-> where $\begin{align}
+> where $$\begin{align}
 \phi(x) = - \sum_{i=1}^{m} \log(-h_i(x))
-\end{align}$
+\end{align}$$
 
-알고리즘은 $t > 0$를 만족하는 $t = t^{(0)}$에서 시작해서 $\frac{m}{t}$가 $\epsilon$보다 작거나 같아질 때까지 증가시킨다. 이때, Newton's method를 이용해 초기값 $x^{(0)}$에 대한 $x^{\star}(t)$를 구하고 $k = 1, 2, 3, . . .$에 대해 각 단계에서  $x^{(k+1)} = x^{\star}(t)$를 구하는 과정을 반복 한다.
+알고리즘은 $$t > 0$$를 만족하는 $$t = t^{(0)}$$에서 시작해서 $$\frac{m}{t}$$가 $$\epsilon$$보다 작거나 같아질 때까지 증가시킨다. 이때, Newton's method를 이용해 초기값 $$x^{(0)}$$에 대한 $$x^{\star}(t)$$를 구하고 $$k = 1, 2, 3, . . .$$에 대해 각 단계에서  $$x^{(k+1)} = x^{\star}(t)$$를 구하는 과정을 반복 한다.
 
 알고리즘을 간략히 정리하면 다음과 같다.
 
-1. $t^{(0)} \gt 0$이고 $k := 0$을 선택한다.
-2. $t = t^{(0)}$에서 barrier problem을 풀어서 $x^{(0)} = x^{\star}(t)$을 구한다.
-3. While $m/t \gt \epsilon$ <br>
-  3-1. $t^{(k+1)} = µt$로 업데이트 한다. $(µ > 1)$ <br>
-  3-2. Newton's method를 $x^{(k)}$로 초기화한다. (warm start)<br>
-        $t = t^{(k+1)}$에서 barrier problem을 풀어서 $x^{(k+1)} = x^{\star}(t)$을 구한다.<br>
+1. $$t^{(0)} \gt 0$$이고 $$k := 0$$을 선택한다.
+2. $$t = t^{(0)}$$에서 barrier problem을 풀어서 $$x^{(0)} = x^{\star}(t)$$을 구한다.
+3. While $$m/t \gt \epsilon$$ <br>
+  3-1. $$t^{(k+1)} = µt$$로 업데이트 한다. $$(µ > 1)$$ <br>
+  3-2. Newton's method를 $$x^{(k)}$$로 초기화한다. (warm start)<br>
+        $$t = t^{(k+1)}$$에서 barrier problem을 풀어서 $$x^{(k+1)} = x^{\star}(t)$$을 구한다.<br>
   end while<br>
 
 * 자세한 내용은  [15-01-02 Log barrier function & barrier method](https://wikidocs.net/21305) 참조
@@ -47,7 +46,7 @@ Log barrier function을 사용하여 다음과 같이 primal 문제를 barrier �
 다음과 같은 primal 문제가 주어졌을 때, 
 >$$
 >\begin{align}
->    \mathop{\text{minimize}}\_x &\quad f(x) \\\\
+>    \mathop{\text{minimize}}_x &\quad f(x) \\\\
 >    \text{subject to} &\quad f Ax = b \\\\
 >    &\quad h(x) \le 0
 >\end{align}
@@ -58,20 +57,20 @@ Log barrier function을 사용하여 다음과 같이 primal 문제를 barrier �
 >L(x,u,v) = f(x) + u^Th(x) + v^T(Ax - b)
 >$$
 
-이와 같이 정의된 Lagrangian을 이용해서 primal과 dual problem을 다음과 같은 형태로 다시 정의할 수 있다. 자세한 내용은 16장을 다시 살펴보기 바란다.</br>
+이와 같이 정의된 Lagrangian을 이용해서 primal과 dual problem을 다음과 같은 형태로 다시 정의할 수 있다. 자세한 내용은 16장을 다시 살펴보기 바란다.<br>
 #### Primal Problem
 >$$
->\min_x \mathop{\max_{u,v}}\_{u \geq 0} L(x,u,v)
+>\min_x \mathop{\max_{u,v}}_{u \geq 0} L(x,u,v)
 >$$
 
 #### Dual problem
 >$$
->\mathop{\max_{u,v}}\_{u \geq 0} \min_x L(x,u,v)
+>\mathop{\max_{u,v}}_{u \geq 0} \min_x L(x,u,v)
 >$$
 
 ## Optimality conditions
 
-$f,h_1,...h_m$은 convex 이고 미분 가능하고, 또한 주어진 문제가 strong duality를 만족한다고 가정할 때, 이 문제에 대한 KKT 최적 조건(optimality condition)은 아래와 같다.
+$$f,h_1,...h_m$$은 convex 이고 미분 가능하고, 또한 주어진 문제가 strong duality를 만족한다고 가정할 때, 이 문제에 대한 KKT 최적 조건(optimality condition)은 아래와 같다.
 
 > $$
 > \begin{array}{rcl}
@@ -82,13 +81,13 @@ $f,h_1,...h_m$은 convex 이고 미분 가능하고, 또한 주어진 문제가 
 > \end{array}
 > $$
 
-여기서 $U$는 $\text{diag}(u)$를 뜻하며, $∇h(x)$는 $ \[ ∇h_1(x) ··· ∇h_m(x) \]$를 의미한다.
+여기서 $$U$$는 $$\text{diag}(u)$$를 뜻하며, $$∇h(x)$$는 $$ [ ∇h_1(x) ··· ∇h_m(x) ]$$를 의미한다.
 
-* 자세한 내용은 [12장 KKT conditions](https://wikidocs.net/20959) 참조
+* 자세한 내용은 [12장 KKT conditions]({% post_url chapter12/21-04-02-12_KKT_conditions %}) 참조
 
 ## Central path equations
-함수 $f(x)$를 barrier 문제로 아래와 같이 재정의 할 수 있다.</br>
-아래 수식에서 $τ$는 $\frac{1}{t}$이며 $\tau$를 점점 0에 가깝게 해서 반복적으로 해를 구함으로써 최종적으로 원래 문제의 해를 구하게 된다.
+함수 $$f(x)$$를 barrier 문제로 아래와 같이 재정의 할 수 있다.<br>
+아래 수식에서 $$τ$$는 $$\frac{1}{t}$$이며 $$\tau$$를 점점 0에 가깝게 해서 반복적으로 해를 구함으로써 최종적으로 원래 문제의 해를 구하게 된다.
 
 >$$
 >\begin{align}
@@ -98,7 +97,7 @@ $f,h_1,...h_m$은 convex 이고 미분 가능하고, 또한 주어진 문제가 
 >$$
 > $$\text{where } \phi(x) = −\sum_{i=1}^m \log(−h_i(x)).$$
 
-즉, 위 식에서 $τ$에 따라 primal 문제와의 차이가 발생하며, $τ$에 따라 생기는 궤적 즉, barrier 문제에 대한 해의 집합을 central path라고 한다.
+즉, 위 식에서 $$τ$$에 따라 primal 문제와의 차이가 발생하며, $$τ$$에 따라 생기는 궤적 즉, barrier 문제에 대한 해의 집합을 central path라고 한다.
 
 그리고 이 barrier 문제에 대한 optimality conditions은 다음과 같다.
 > $$
@@ -112,9 +111,9 @@ $f,h_1,...h_m$은 convex 이고 미분 가능하고, 또한 주어진 문제가 
  
 * 자세한 내용은 [16-02 Optimality conditions](https://wikidocs.net/22012) 참조
 
-이번 장에서 소개할 **Primal-Dual interior point method**는 위의 처음 세 가지 식을 residual로 정의하고 이를 $0$으로 줄이면서 해를 구하는 방식이다.
+이번 장에서 소개할 **Primal-Dual interior point method**는 위의 처음 세 가지 식을 residual로 정의하고 이를 $$0$$으로 줄이면서 해를 구하는 방식이다.
 
 ##### Useful fact
-솔루션 $(x(τ),u(τ),v(τ))$는 다음의 $mτ$ 즉 $\frac{m}{t}$ 크기 만큼의 duality gap을 갖는다.
-> $f(x(τ))−\min_x L(x,u(τ),v(τ)) = mτ= \frac{m}{t}$
+솔루션 $$(x(τ),u(τ),v(τ))$$는 다음의 $$mτ$$ 즉 $$\frac{m}{t}$$ 크기 만큼의 duality gap을 갖는다.
+> $$f(x(τ))−\min_x L(x,u(τ),v(τ)) = mτ= \frac{m}{t}$$
 

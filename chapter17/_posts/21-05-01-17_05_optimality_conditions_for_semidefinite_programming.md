@@ -27,7 +27,7 @@ SDP의 dual 문제는 다음과 같이 정의한다.
 >\end{align}
 >$$
 
-참고로 $\mathbb{S}^n$의 trace inner product는 다음과 같이 표기한다.
+참고로 $$\mathbb{S}^n$$의 trace inner product는 다음과 같이 표기한다.
 > $$X \cdot S = \text{trace}(XS)$$
 
 ## Optimality conditions for SDP
@@ -42,9 +42,9 @@ SDP의 primal과 dual 문제는 다음과 같이 linear map을 이용해서 정�
 >$$
 
 
-여기서 $\mathcal{A}: \mathbb{S}^n → \mathbb{R}^m$ 는 linear map을 의미한다.
+여기서 $$\mathcal{A}: \mathbb{S}^n → \mathbb{R}^m$$ 는 linear map을 의미한다.
 
-Strong duality를 만족한다고 가정했을 때,  $X^{\star}$ 와 $(y^{\star}, S^{\star})$는 $(X^{\star}, y^{\star}, S^{\star})$의 솔루션은 primal과 dual의 최적 솔루션이며 그역도 성립한다.
+Strong duality를 만족한다고 가정했을 때,  $$X^{\star}$$ 와 $$(y^{\star}, S^{\star})$$는 $$(X^{\star}, y^{\star}, S^{\star})$$의 솔루션은 primal과 dual의 최적 솔루션이며 그역도 성립한다.
 
 > $$
 > \begin{array}{rcl}
@@ -101,7 +101,7 @@ Newton equations
 > $$τX^{−1}\Delta XX^{−1} +\mathcal{A}^∗(\Delta y) = −(\mathcal{A}^∗(y) + \tau X^{−1} −C)$$
 > $$\mathcal{A}(\Delta X) = −(\mathcal{A}(X)−b)$$
 
-Dual에 대한 central path equation과 Newton equation도 $(y,S)$를 포함해서 이와 유사하게 정의된다.
+Dual에 대한 central path equation과 Newton equation도 $$(y,S)$$를 포함해서 이와 유사하게 정의된다.
 
 ## Primal-dual Newton step 
 Primal central path equations 
