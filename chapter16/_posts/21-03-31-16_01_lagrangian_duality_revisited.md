@@ -55,6 +55,8 @@ Weak duality와 strong duality에 대해 다시 살펴보도록 한다.
 
 #### Theorem: weak duality
 $$p$$와 $$d$$가 primal problem과 dual problem에 대한 각각의 optimal value라고 할때, 항상 다음을 만족한다.
+
+
 $$
 p \ge d
 $$

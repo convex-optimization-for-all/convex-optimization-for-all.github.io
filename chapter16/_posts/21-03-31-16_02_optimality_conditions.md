@@ -29,7 +29,7 @@ MathJax.Hub.Config({
 
 주어진 primal problem이 convex일때, KKT conditions는 primal & dual optimal에 대한 충분조건이 된다. 즉, $$f, h_1, \dots, h_m$$가 convex이고 $$l_1, \dots, l_r$$가 affine일때, $$x^\star, u^\star, v^\star$$가 다음의 KKT conditions를 만족한다면 $$x^\star$$와 $$(u^\star, v^\star)$$는 zero duality gap인 primal & dual optimal이다. ($$f, h_1, \dots, h_m, l_1, \dots, l_r$$는 미분 가능하다고 가정한다.) <br>
 
-* 참고: [12-01 KKT conditions](https://wikidocs.net/20959)
+* 참고: [12-01 KKT conditions]({% post_url chapter12/21-04-02-12_KKT_conditions %})
 
 #### KKT conditions for the given primal problem
 >$$
@@ -98,9 +98,8 @@ Linear programming은 inequality constraint가 affine이므로 refined Slater's 
 >Ax^\star &= b\\\\
 >X S \mathbb{1} &= 0\\\\
 >x^\star, s^\star &\ge 0,\\\\
->\end{align}
->$$
->where $$X = Diag(x^\star), S = Diag(s^\star)$$.
+>\end{align} \\
+>\text{where }X = Diag(x^\star), S = Diag(s^\star)$$.
 
 참고로 $$X S \mathbb{1} = 0$$는 $$Xs^\star=(x_1^\star s_1^\star, \dots, x_n^\star s_n^\star)=0$$와 같다. 차후 소개될 알고리즘에서의 편의성을 위해 $$X, S$$를 사용하여 표현하였다.
 

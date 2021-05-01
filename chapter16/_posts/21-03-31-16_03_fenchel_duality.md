@@ -11,7 +11,7 @@ MathJax.Hub.Config({
 });
 </script>
 
-[13-04 Conjugate function](https://wikidocs.net/21001)에서 conjugate function을 이용해 dual problem를 유도하는 방법에 대해 알아보았다. Fenchel duality는 conjugate function으로 유도되는 dual problem 중에서도 아래의 형태를 한 것을 지칭한다.
+[13-04 Conjugate function]({% post_url chapter13/21-04-05-13_04_Conjugate_function %})에서 conjugate function을 이용해 dual problem를 유도하는 방법에 대해 알아보았다. Fenchel duality는 conjugate function으로 유도되는 dual problem 중에서도 아래의 형태를 한 것을 지칭한다.
 
 $$
 \max_{v} -f^*(A^Tv) - g^*(-v)
@@ -67,7 +67,7 @@ $$
 \end{align}
 $$
 
-위 문제는 두 함수 $$f(x) = c^Tx + I_K(x)$$와 $$g(z) = I_{\\{b\\}}(z)$$를 이용하여 재정의할 수 있다.<br/>
+위 문제는 두 함수 $$f(x) = c^Tx + I_K(x)$$와 $$g(z) = I_{\{b\}}(z)$$를 이용하여 재정의할 수 있다.<br/>
 
 * **Note:** $$\begin{equation}
     f(x) + g(Ax) = 
@@ -84,13 +84,14 @@ $$
 > \text{subject to} &\quad z  =Ax \\\
 > \end{align}
 > $$
+
 #### Deriving dual problem of CP
 
 재정의된 CP의 primal problem으로부터 dual problem을 유도해보자. 우선 함수 $$f$$와 $$g$$를 전개하면 아래와 같다.
 > $$
 > \begin{align}
-> \min_{x, z} & \; c^Tx + I_K(x) + I_{\\{b\\}}(z)  \\\
-> \text{subject to} & \;  z   =Ax \\\
+> \min_{x, z} & \; c^Tx + I_K(x) + I_{\{b\}}(z)  \\\
+> \text{subject to} & \;  z   =Ax \\
 > \end{align}
 > $$
 
@@ -99,11 +100,11 @@ Dual problem의 정의로부터 conjugate function을 이용하여 문제를 전
 > $$
 > \begin{align}
 > & \max_{y} \; \min_{x, z} \;  L(x, z, y) \\\
-> = \; & \max_{y} \; \min_{x, z} \;  c^Tx + I_K(x) + I_{\\{b\\}}(z) + y^T(z-Ax) \\\
-> = \; & \max_{y}  \;\min_{x, z} \; (c - A^Ty)^Tx  + I_K(x) \;+ \;  y^Tz + I_{\\{b\\}}(z) \\\
-> = \; & \max_{y} \;  \min_{x, z} \; -( (A^Ty - c)^Tx  - I_K(x)) \;  - \; ( - y^Tz - I_{\\{b\\}}(z) ) \\\
-> = \; & \max_{y} \; - I_K^*(A^Ty - c)  -  I_{\\{b\\}}^*(-y)  \\\
-> = \; & \max_{y} \; - I_{-K^*}(A^Ty - c)  - I_{\\{b\\}}^*(-y)  \\\
+> = \; & \max_{y} \; \min_{x, z} \;  c^Tx + I_K(x) + I_{\{b\}}(z) + y^T(z-Ax) \\\
+> = \; & \max_{y}  \;\min_{x, z} \; (c - A^Ty)^Tx  + I_K(x) \;+ \;  y^Tz + I_{\{b\}}(z) \\\
+> = \; & \max_{y} \;  \min_{x, z} \; -( (A^Ty - c)^Tx  - I_K(x)) \;  - \; ( - y^Tz - I_{\{b\}}(z) ) \\\
+> = \; & \max_{y} \; - I_K^*(A^Ty - c)  -  I_{\{b\}}^*(-y)  \\\
+> = \; & \max_{y} \; - I_{-K^*}(A^Ty - c)  - I_{\{b\}}^*(-y)  \\
 > \end{align}
 > $$
 
@@ -116,16 +117,16 @@ $$I_{-K^*}(A^Ty - c)$$는 constraint로 표현될 수 있다.
 > \end{align}
 > $$
 
-$$I_{\\{b\\}}^*(-y) = \max_{b} -b^Ty - I_{\\{b\\}}(b)$$이므로 문제는 다음과 같이 정리된다.
+$$I_{\{b\}}^*(-y) = \max_{b} -b^Ty - I_{\{b\}}(b)$$이므로 문제는 다음과 같이 정리된다.
 > $$
 > \begin{align}
-> \max_{y, s} \;  & -(-b^Ty - I_{\\{b\\}}(b)) \\\
+> \max_{y, s} \;  & -(-b^Ty - I_{\{b\}}(b)) \\\
 > \text{subject to} & \; y^TA + s = c \\\
-> &  \; s \in K^* \\\
+> &  \; s \in K^* \\
 > \end{align}
 > $$
 
-$$I_{\\{b\\}}(b) = 0$$이므로 문제에서 제거할 수 있다.
+$$I_{\{b\}}(b) = 0$$이므로 문제에서 제거할 수 있다.
 
 #### Dual problem of CP
 
@@ -133,7 +134,7 @@ $$I_{\\{b\\}}(b) = 0$$이므로 문제에서 제거할 수 있다.
 > \begin{align}
 > \max_{y, s} &  \;  b^Ty  \\\
 > \text{subject to} & \; y^TA + s = c \\\
-> &  \; s \in K^* \\\
+> &  \; s \in K^* \\
 > \end{align}
 > $$ 
 
