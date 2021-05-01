@@ -19,8 +19,8 @@ MathJax.Hub.Config({
 #### Primal problem
 >$$
 >\begin{align}
->    \mathop{\text{minimize}}\_x &\quad f(x) \\\\
->    \text{subject to} &\quad h\_i(x) \leq 0, i = 1, \ldots, m \\\\
+>    \mathop{\text{minimize}}_x &\quad f(x) \\\\
+>    \text{subject to} &\quad h_i(x) \leq 0, i = 1, \ldots, m \\\\
 >    &\quad l_j(x) = 0, j = 1, \ldots, r
 >\end{align}
 >$$
@@ -35,7 +35,7 @@ MathJax.Hub.Config({
 
 #### Rewrited primal problem
 >$$
->\min_x \mathop{\max_{u,v}}\_{u \geq 0} L(x,u,v)
+>\min_x \mathop{\max_{u,v}}_{u \geq 0} L(x,u,v)
 >$$
 
 재정의된 primal problem은 제약조건을 명시하고 있지 않지만, 제약조건을 위반하는 임의의 infeasible $$x$$에 대해 indicator function처럼 동작하는 효과가 있다.
@@ -45,10 +45,10 @@ MathJax.Hub.Config({
 
 #### Rewrited dual problem
 >$$
->\mathop{\max_{u,v}}\_{u \geq 0} \min_x L(x,u,v)
+>\mathop{\max_{u,v}}_{u \geq 0} \min_x L(x,u,v)
 >$$
 
-Dual problem에서는 정의역에 대한 relaxation이 필요하므로 primal problem의 제약조건에 대해 indicator function으로 동작해서는 안된다. 고정된 $$u, v$$에 대해 $$\min_x$$를 하는 것으로는 primal problem의 제약조건을 강제할 수 없기 때문에 재정의된 dual problem에서 또한 정의역을 relaxation하는 효과가 있다. (참고: [11-02 Lagrange dual function](https://wikidocs.net/20583))
+Dual problem에서는 정의역에 대한 relaxation이 필요하므로 primal problem의 제약조건에 대해 indicator function으로 동작해서는 안된다. 고정된 $$u, v$$에 대해 $$\min_x$$를 하는 것으로는 primal problem의 제약조건을 강제할 수 없기 때문에 재정의된 dual problem에서 또한 정의역을 relaxation하는 효과가 있다. (참고: [11-02 Lagrange dual function]({% post_url chapter11/21-03-24-11_2_Lagrange_dual_function %}))
 
 ## Weak and strong duality
 Weak duality와 strong duality에 대해 다시 살펴보도록 한다.
@@ -77,25 +77,25 @@ primal problem과 dual problem의 optimal value $$p, d$$에 대해 $$p = d$$가 
 #### Primal problem of LP in standard form
 >$$
 >\begin{align}
->    \mathop{\text{minimize}}\_x &\quad c^Tx \\\\
+>    \mathop{\text{minimize}}_x &\quad c^Tx \\\\
 >    \text{subject to} &\quad Ax = b \\\\
 >    &\quad x \ge 0
 >\end{align}
 >$$
 
 앞선 정의에 따라 위 문제의 dual problem은 다음과 같다.
-$$\mathop{\max_{s,y}}\_{s\ge0} \min_{x} \: L(x,s,y) = \mathop{\max_{s,y}}\_{s\ge0} \min_{x} \: c^Tx - s^Tx + (b-Ax)^T y$$
+$$\mathop{\max_{s,y}}_{s\ge0} \min_{x} \: L(x,s,y) = \mathop{\max_{s,y}}_{s\ge0} \min_{x} \: c^Tx - s^Tx + (b-Ax)^T y$$
 
 $$\nabla_x L = 0$$을 정리하여 얻은 관계식 $$c=A^Ty +s$$를 dual problem에 대입한다.
 
-$$\mathop{\max_{s,y}}\_{s\ge0} \: (A^Ty + s)^Tx - s^Tx + (b-Ax)^Ty \quad \text{ s.t. } c=A^Ty +s$$
+$$\mathop{\max_{s,y}}_{s\ge0} \: (A^Ty + s)^Tx - s^Tx + (b-Ax)^Ty \quad \text{ s.t. } c=A^Ty +s$$
 
 이는 아래와 같이 정리된다.
 
 #### Dual problem of LP
 >$$
 >\begin{align}
->    \mathop{\text{maximize}}\_{s,y} &\quad b^Ty \\\\
+>    \mathop{\text{maximize}}_{s,y} &\quad b^Ty \\\\
 >    \text{subject to} &\quad A^Ty +  s = 0 \\\\
 >    &\quad s \ge 0
 >\end{align}
@@ -108,25 +108,24 @@ $$\mathop{\max_{s,y}}\_{s\ge0} \: (A^Ty + s)^Tx - s^Tx + (b-Ax)^Ty \quad \text{ 
 #### Primal problem of QP in standard form
 >$$
 >\begin{align}
->    \mathop{\text{minimize}}\_x &\quad \frac{1}{2} x^T Q x + c^Tx \\\\
+>    \mathop{\text{minimize}}_x &\quad \frac{1}{2} x^T Q x + c^Tx \\\\
 >    \text{subject to} &\quad Ax = b \\\\
 >    &\quad x \ge 0,
->\end{align}
->$$
->where $$Q$$ is symmetric and positive semidefinite.
+>\end{align} \\
+>\text{where } Q \text{is symmetric and positive semidefinite.}$$
 
 
 앞선 정의에 따라 위 문제의 dual problem은 다음과 같다.
-$$\mathop{\max_{s,y}}\_{s\ge0} \min_{x} \: L(x,s,y) = \mathop{\max_{s,y}}\_{s\ge0} \min_{x} \:  \frac{1}{2} x^T Q x + c^Tx - s^Tx + (b-Ax)^T y$$
+$$\mathop{\max_{s,y}}_{s\ge0} \min_{x} \: L(x,s,y) = \mathop{\max_{s,y}}_{s\ge0} \min_{x} \:  \frac{1}{2} x^T Q x + c^Tx - s^Tx + (b-Ax)^T y$$
 
 $$\nabla_x L = 0$$을 정리하여 얻은 관계식 $$Qx = A^Ty +s - c$$를 dual problem에 대입한다.
 
 $$
 \begin{align}
-&\mathop{\max_{s,y,x}}\_{s\ge0} \: \frac{1}{2} x^T (A^Ty +s - c) + c^Tx - s^Tx + (b-Ax)^T y \quad \text{ s.t. } Qx = A^Ty +s - c\\\\
-&= \mathop{\max_{s,y,x}}\_{s\ge0} \: x^T (A^Ty +s - c) + c^Tx - s^Tx + (b-Ax)^T y -  \frac{1}{2} x^T (A^Ty +s - c) \quad \text{ s.t. } Qx = A^Ty +s - c\\\\
-&= \mathop{\max_{s,y,x}}\_{s\ge0}  \: b^Ty - \frac{1}{2} x^T (A^Ty +s - c) \quad  \text{ s.t. } Qx = A^Ty +s - c\\\\
-&= \mathop{\max_{s,y,x}}\_{s\ge0}  \: b^Ty - \frac{1}{2} x^T Q x \quad \text{ s.t. } Qx = A^Ty +s - c
+&\mathop{\max_{s,y,x}}_{s\ge0} \: \frac{1}{2} x^T (A^Ty +s - c) + c^Tx - s^Tx + (b-Ax)^T y \quad \text{ s.t. } Qx = A^Ty +s - c\\\\
+&= \mathop{\max_{s,y,x}}_{s\ge0} \: x^T (A^Ty +s - c) + c^Tx - s^Tx + (b-Ax)^T y -  \frac{1}{2} x^T (A^Ty +s - c) \quad \text{ s.t. } Qx = A^Ty +s - c\\\\
+&= \mathop{\max_{s,y,x}}_{s\ge0}  \: b^Ty - \frac{1}{2} x^T (A^Ty +s - c) \quad  \text{ s.t. } Qx = A^Ty +s - c\\\\
+&= \mathop{\max_{s,y,x}}_{s\ge0}  \: b^Ty - \frac{1}{2} x^T Q x \quad \text{ s.t. } Qx = A^Ty +s - c
 \end{align}
 $$
 
@@ -135,7 +134,7 @@ $$
 #### Dual problem of QP
 >$$
 >\begin{align}
->    \mathop{\text{maximize}}\_{s,y,x} &\quad b^Ty - \frac{1}{2} x^T Q x\\\\
+>    \mathop{\text{maximize}}_{s,y,x} &\quad b^Ty - \frac{1}{2} x^T Q x\\\\
 >    \text{subject to} &\quad A^Ty +  s - c = Qx \\\\
 >    &\quad s \ge 0
 >\end{align}
@@ -149,27 +148,26 @@ Linear programming에 대한 barrier problem은 다음과 같이 정의한다.
 #### Barrier problem for LP
 >$$
 >\begin{align}
->    \mathop{\text{minimize}}\_x &\quad c^Tx - \tau \sum\_{i=1}^n \log(x_i)\\\\
+>    \mathop{\text{minimize}}_x &\quad c^Tx - \tau \sum_{i=1}^n \log(x_i)\\\\
 >    \text{subject to} &\quad Ax = b, \\\\
 >\end{align}
->$$
->where $$\tau > 0$$.
+>\text{where }\tau > 0$$.
 
 앞선 정의에 따라 위 문제의 dual problem은 다음과 같다.
 $$
 \begin{align}
-\max_{y} \min_{x} \: L(x,y) &= \max_{y} \min_{x} \:  c^Tx - \tau \sum\_{i=1}^n \log(x_i) + (b-Ax)^T y\\\\
-&=  \max_{y} \min_{x} \:  \underbrace{(c-A^Ty)}\_{s \doteq c-A^Ty}x - \tau \sum\_{i=1}^n \log(x_i) + b^Ty\\\\
-&= \max_{y} \min_{x} \: \sum\_{i=1}^n \big( s\_i^Tx\_i - \tau  \log(x_i) \big) + b^Ty  \quad \text{ s.t. } A^Ty +s = c
+\max_{y} \min_{x} \: L(x,y) &= \max_{y} \min_{x} \:  c^Tx - \tau \sum_{i=1}^n \log(x_i) + (b-Ax)^T y\\\\
+&=  \max_{y} \min_{x} \:  \underbrace{(c-A^Ty)}_{s \doteq c-A^Ty}x - \tau \sum_{i=1}^n \log(x_i) + b^Ty\\\\
+&= \max_{y} \min_{x} \: \sum_{i=1}^n \big( s_i^Tx_i - \tau  \log(x_i) \big) + b^Ty  \quad \text{ s.t. } A^Ty +s = c
 \end{align}
 $$
 
-여기서 $$\sum\_{i=1}^n \big( s\_i^Tx\_i - \tau  \log(x_i) \big) + b^Ty$$는 $$x_i = \frac{\tau}{s\_i}$$일때 최소화될 것이다. 그러므로 $$\frac{\tau}{s\_i}$$를 dual problem의 $$x\_i$$에 대입해보자.
+여기서 $$\sum_{i=1}^n \big( s_i^Tx_i - \tau  \log(x_i) \big) + b^Ty$$는 $$x_i = \frac{\tau}{s_i}$$일때 최소화될 것이다. 그러므로 $$\frac{\tau}{s_i}$$를 dual problem의 $$x_i$$에 대입해보자.
 
 $$
 \begin{align}
-&\max_{s,y} \: b^Ty + n\tau - \tau \sum\_{i=1}^n log(\frac{\tau}{s\_i}) \quad \text{ s.t. } A^Ty +s = c\\\\
-&= \max_{s,y} \: b^Ty + \tau \sum\_{i=1}^n log(s\_i) + n\tau - n\tau\log(\tau) \quad \text{ s.t. } A^Ty +s = c\\\\
+&\max_{s,y} \: b^Ty + n\tau - \tau \sum_{i=1}^n log(\frac{\tau}{s_i}) \quad \text{ s.t. } A^Ty +s = c\\\\
+&= \max_{s,y} \: b^Ty + \tau \sum_{i=1}^n log(s_i) + n\tau - n\tau\log(\tau) \quad \text{ s.t. } A^Ty +s = c\\\\
 \end{align}
 $$
 
@@ -178,7 +176,7 @@ $$n\tau - n\tau\log(\tau)$$는 문제에서 생략되어도 무방하므로, dua
 #### Dual problem of Barrier problem for LP
 >$$
 >\begin{align}
->    \mathop{\text{maximize}}\_{s,y} &\quad b^Ty + \tau \sum\_{i=1}^n log(s\_i)\\\\
+>    \mathop{\text{maximize}}_{s,y} &\quad b^Ty + \tau \sum_{i=1}^n log(s_i)\\\\
 >    \text{subject to} &\quad A^Ty +  s = c \\\\
 >\end{align}
 >$$
