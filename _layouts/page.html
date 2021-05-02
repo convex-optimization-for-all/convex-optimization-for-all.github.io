@@ -7,13 +7,6 @@ layout: default
 {% assign full_name = page.chapter | prepend: "chapter" %}
 {% assign post_list = site.categories[full_name] | sort_natural %}
 
-<!-- Get first post and show it -->
-{% assign first_post = post_list | first %}
-{{first_post.content}}
-
-<!-- Remove first element from post_list which is already shown above. -->
-{% assign post_list = post_list | shift %}  
-
 <!-- List up the posts in the chapter -->
 <ul style="list-style: none;">
 {% for post in post_list %}
