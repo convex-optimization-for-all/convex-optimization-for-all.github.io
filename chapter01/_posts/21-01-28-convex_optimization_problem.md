@@ -8,12 +8,16 @@ owner: "Kyeongmin Woo"
 
 Convex optimization problem은 optimization problem의 한 종류이다.
 
->![](https://wikidocs.net/images/page/17206/Optimization_problem.png)
+>$$\begin{align*} 
+>\min_{x\in D}\ && f(x) \\
+>\text{subject to} & & g_i(x) \le 0,\ i = 1, ...m \\
+>&& h_j(x) = 0,\ j = 1,\ ...r 
+>\end{align*}$$
 
-**[Fig1] Convex Optimization Problem in standard form [3]**
+**Convex Optimization Problem in standard form [3]**
 
 여기서 objective function $$f$$와 inequality constraint function $$g_i$$가 convex이고, equality constraint function $$h_j$$가 affine이라는 조건이 추가된다. 이때 affine function이란 다음과 같이 linear function에 상수합이 붙은 형태의 함수를 의미한다.
->$$h_j$$, $$j = 1, ..., r$$ are affine: $$h_j(x) = a_{j}^T x + b_{j},$$ $$j=1, ..., r$$
+>$$h_j,\ j = 1, ..., r$$ are affine: $$h_j(x) = a_{j}^T x + b_{j},\ j=1, ..., r$$
 
 그렇다면 convex function은 어떤 함수를 의미하는 것일까? 이를 이해하기 위해서 convex set을 이해할 필요가 있다.
 
@@ -28,28 +32,28 @@ Convex optimization problem은 optimization problem의 한 종류이다.
 
 예를 들어, 다음 세 가지 그림 중 가장 좌측의 그림만이 convex set에 해당한다.
 
-![](https://wikidocs.net/images/page/17206/Convex_set.png)
+![Convex_set]({{ site.baseurl }}/img/chapter_img/chapter01/Convex_set.pdf)
 
-**[Fig2] left: a convex set, mid & right: non-convex sets [2]**
+**[Fig1] left: a convex set, mid & right: non-convex sets [2]**
 
 ## Convex functions
 Convex function은 다음과 같이 정의된다.
 
->$$f: R^n \rightarrow R$$ is convex if dom f is a convex set and
+>$$f: R^n \rightarrow R $$ is convex if $$ dom(f) $$ is a convex set and,
 >
->$$f(\theta x + (1 - \theta)y) \le \theta f(x) + (1-\theta)f(y)$$ for all $$x, y \in$$ dom f, $$0 \le \theta \le 1$$
+>$$f(\theta x + (1 - \theta)y) \le \theta f(x) + (1-\theta)f(y) $$ for all $$ x, y \in dom(f),\ 0 \le \theta \le 1$$
 
-정의에서 부등식으로 표현된 조건은 다음과 같은 기하학적 의미를 가진다. f의 그래프 상의 임의의 두 점 (x, f(x)), (y, f(y))을 생각해보자. 이 두 점을 잇는 선분은 구간 [x, y]에서 그래프보다 크거나 같게 위치한다.
+정의에서 부등식으로 표현된 조건은 다음과 같은 기하학적 의미를 가진다. $$f$$의 그래프 상의 임의의 두 점 $$(x,\ f(x))$$, $$(y,\ f(y))$$을 생각해보자. 이 두 점을 잇는 선분은 구간 $$[x, y]$$에서 그래프보다 크거나 같게 위치한다.
 
-![](https://wikidocs.net/images/page/17206/Convex_function.png)
+![Convex_function]({{ site.baseurl }}/img/chapter_img/chapter01/Convex_function.pdf)
 
-**[Fig3] convex function [2]**
+**[Fig2] convex function [2]**
 
-## Relation between a convex set and a convex function*
+## Relation between a convex set and a convex function
 convex function과 convex set 사이에는 다음과 같은 밀접한 관계가 있다.
-> 함수 f의 epigraph가 convex set일때, 함수 f는 convex function이다.
+> 함수 $$f$$의 epigraph가 convex set일때, 함수 $$f$$는 convex function이다.
 
-여기서 epigraph는 무엇을 의미하는 것일까? Epigraph에서 'Epi'는 'above'를 뜻하며, 곧 epigraph는 'above the graph'를 의미한다. 즉, epi f란 f의 그래프의 위쪽 영역에 해당하는 집합이다. 함수 epigraph는 다음과 같이 정의한다.
+여기서 epigraph는 무엇을 의미하는 것일까? Epigraph에서 'Epi'는 'above'를 뜻하며, 곧 epigraph는 'above the graph'를 의미한다. 즉, epi $$f$$란 $$f$$의 그래프의 위쪽 영역에 해당하는 집합이다. 함수 epigraph는 다음과 같이 정의한다.
 
 >$$
 \eqalign{
@@ -61,7 +65,7 @@ $$
 
 ![](https://wikidocs.net/images/page/17206/epigraph.png)
 
-**[Fig4] epigraph [2]**
+**[Fig3] epigraph [2]**
 
 함수 f가 convex function일때 epi f는 항상 convex set이고 이의 역도 성립한다. 이를 주지하고 위의 convex function과 convex set의 정의를 다시 한번 살펴보도록 하자.
 
@@ -87,8 +91,8 @@ Convex 함수의 local minimum은 항상 global minimum이다. convex optimizati
 >2는 x가 locally optimal point이기 위한 전제조건 $$f(z) \ge f(x)$$에 대한 모순이므로 $$f(y)<f(x)$$를 만족하는 feasible y는 존재하지 않는다. 즉, locally optimal point x가 곧 globally optimal point임을 의미한다.
 
 
-*
-**convex combination**
+## convex combination
+
 >$$x_1, ..., x_k$$에 대한 convex combination x는 다음과 같이 정의된다.
 >
 >$$x = \theta_1 x_1 + \theta_2 x_2 + ... + \theta_k x_k$$ with $$\theta_1 + ... + \theta_k = 1, \theta_i \ge 0$$
