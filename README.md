@@ -32,7 +32,7 @@ wgm0601@gmail.com / 우경민 (마키나락스)
 ## 다루는 내용들
 
 | idx | Title | Book | Lecture | Slide |
-|:---:|:---:|:---:|:---:|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|
 | 1 | Introduction | [Page](<https://wikidocs.net/17202>)  | [CMU Lecture](<https://www.youtube.com/watch?v=XFKBNJ14UmY&ab_channel=RyanT>)  | [CMU Note](<http://www.stat.cmu.edu/~ryantibs/convexopt-F16/lectures/intro.pdf>)  |
 | 2 | Convex Sets | [Page](<https://wikidocs.net/17370>)  | [Stanford Lecture](<https://www.youtube.com/watch?v=P3W_wFZ2kUo&list=PL3940DD956CDF0622&index=3&ab_channel=Stanford>)  | [Stanford Note](<https://web.stanford.edu/class/ee364a/lectures/sets.pdf>)  |
 | 3 | Convex Functions | [Page](<https://wikidocs.net/17267>)  | [Stanford Lecture](<https://www.youtube.com/watch?v=kcOodzDGV4c&list=PL3940DD956CDF0622&index=4&ab_channel=Stanford>)  | [Stanford Note](<https://see.stanford.edu/materials/lsocoee364a/03ConvexFunctions.pdf>)  |
