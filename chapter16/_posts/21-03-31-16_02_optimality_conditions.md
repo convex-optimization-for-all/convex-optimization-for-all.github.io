@@ -56,7 +56,7 @@ $$
 >where $$\phi(x) = - \sum_{i=1}^m \log \big( -h_i(x) \big).$$
 
 
-Barrier problem에 대한 KKT conditions를 정리하면 아래와 같은 optimality conditions를 유도할 수 있다. 앞서 살펴본 primal problem에 대한 KKT optimality conditions의 inequality constraint, complementary slackness 조건에 대해 차이가 있는 것을 주목하자. (참고: [15-03-01 Perturbed KKT conditions](https://wikidocs.net/21311))
+Barrier problem에 대한 KKT conditions를 정리하면 아래와 같은 optimality conditions를 유도할 수 있다. 앞서 살펴본 primal problem에 대한 KKT optimality conditions의 inequality constraint, complementary slackness 조건에 대해 차이가 있는 것을 주목하자. (참고: [15-03-01 Perturbed KKT conditions]({% post_url chapter15/21-03-28-15_03_01_perturbed_kkt_conditions %}))
 
 #### Optimality conditions for barrier problem (and its dual)
 
