@@ -41,7 +41,7 @@ $$D = dom(f) \cap \bigcap_{i=1}^m {\rm dom}(g_i) \cap \bigcap_{j=1}^r dom(h_j)$$
 >
 >$$\begin{align*} \text{minimize } & & log(x) \end{align*}$$
 >
->여기서 objective function인 log함수의 정의역이 $x > 0$이므로 $x > 0$이 이 문제에서의 implicit constraint가 된다. 이 문제를 explicit constraint가 포함된 형태의 최적화문제로 표현하면 다음과 같다.
+>여기서 objective function인 log함수의 정의역이 $$x > 0$$이므로 $$x > 0$$이 이 문제에서의 implicit constraint가 된다. 이 문제를 explicit constraint가 포함된 형태의 최적화문제로 표현하면 다음과 같다.
 >
 >$$\begin{align*} \text{minimize } & & log(x) \\ \text{subject to } & & x > 0 \end{align*}$$
 
