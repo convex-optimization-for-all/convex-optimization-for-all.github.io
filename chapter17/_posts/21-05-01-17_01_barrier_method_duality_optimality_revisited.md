@@ -42,6 +42,8 @@ Log barrier function을 사용하여 다음과 같이 primal 문제를 barrier �
   end while<br>
 
 * 자세한 내용은  [15-01-02 Log barrier function & barrier method](https://wikidocs.net/21305) 참조
+
+
 ## Duality
 다음과 같은 primal 문제가 주어졌을 때, 
 >$$
@@ -93,9 +95,9 @@ $$f,h_1,...h_m$$은 convex 이고 미분 가능하고, 또한 주어진 문제�
 >\begin{align}
 >    &\min_{x} && {f(x) + τ\phi(x)} \\\\
 >    & &&{Ax = b} \\\
->\end{align}
+>\end{align} \\
+>\text{where } \phi(x) = −\sum_{i=1}^m \log(−h_i(x)).
 >$$
-> $$\text{where } \phi(x) = −\sum_{i=1}^m \log(−h_i(x)).$$
 
 즉, 위 식에서 $$τ$$에 따라 primal 문제와의 차이가 발생하며, $$τ$$에 따라 생기는 궤적 즉, barrier 문제에 대한 해의 집합을 central path라고 한다.
 
