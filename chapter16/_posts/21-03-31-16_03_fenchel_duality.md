@@ -120,8 +120,8 @@ $$I_{-K^*}(A^Ty - c)$$는 constraint로 표현될 수 있다.
 $$I_{\{b\}}^*(-y) = \max_{b} -b^Ty - I_{\{b\}}(b)$$이므로 문제는 다음과 같이 정리된다.
 > $$
 > \begin{align}
-> \max_{y, s} \;  & -(-b^Ty - I_{\{b\}}(b)) \\\
-> \text{subject to} & \; y^TA + s = c \\\
+> \max_{y, s} &\quad -(-b^Ty - I_{\{b\}}(b)) \\\
+> \text{subject to} &\quad y^TA + s = c \\\
 > &  \; s \in K^* \\
 > \end{align}
 > $$
@@ -132,8 +132,8 @@ $$I_{\{b\}}(b) = 0$$이므로 문제에서 제거할 수 있다.
 
 > $$
 > \begin{align}
-> \max_{y, s} &  \;  b^Ty  \\\
-> \text{subject to} & \; y^TA + s = c \\\
+> \max_{y, s} &\quad  \;  b^Ty  \\\
+> \text{subject to} &\quad y^TA + s = c \\\
 > &  \; s \in K^* \\
 > \end{align}
 > $$ 

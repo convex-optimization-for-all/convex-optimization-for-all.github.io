@@ -99,7 +99,7 @@ Linear programming은 inequality constraint가 affine이므로 refined Slater's 
 >X S \mathbb{1} &= 0\\\\
 >x^\star, s^\star &\ge 0,\\\\
 >\end{align} \\
->\text{where }X = Diag(x^\star), S = Diag(s^\star)$$.
+>\text{where }X = Diag(x^\star), S = Diag(s^\star)$$
 
 참고로 $$X S \mathbb{1} = 0$$는 $$Xs^\star=(x_1^\star s_1^\star, \dots, x_n^\star s_n^\star)=0$$와 같다. 차후 소개될 알고리즘에서의 편의성을 위해 $$X, S$$를 사용하여 표현하였다.
 
@@ -116,9 +116,9 @@ Optimality conditions를 이용하여 LP를 푸는 대표적인 두 가지 방�
 >$$\begin{align}
     \mathop{\text{minimize}}_x &\quad c^Tx - \tau \sum_{i=1}^n \log(x_i)\\\\
     \text{subject to} &\quad Ax = b, \\\\
-\end{align} \\\\
-$$
-where $$\tau > 0$$.
+    \text{where}  &\quad \tau > 0
+\end{align}$$
+
 
 #### Recall: Dual problem of Barrier problem for LP
 >$$
@@ -136,8 +136,7 @@ A^T y^\star + s^\star &= c\\\\
 Ax^\star &= b\\\\
 X S \mathbb{1} &= \tau \mathbb{1}\\\\
 x^\star, s^\star &\gt 0,\\\\
-\end{align} \\\\
-$$
-where $$X = Diag(x^\star), S = Diag(s^\star)$$.
+\text{where} &\quad X = Diag(x^\star), S = Diag(s^\star)
+\end{align}$$
 
 3, 4번째 조건에서 primal LP의 KKT conditions와 차이를 보인다.

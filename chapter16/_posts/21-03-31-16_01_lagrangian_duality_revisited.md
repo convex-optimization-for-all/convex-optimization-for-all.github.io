@@ -86,6 +86,7 @@ primal problem과 dual problem의 optimal value $$p, d$$에 대해 $$p = d$$가 
 >$$
 
 앞선 정의에 따라 위 문제의 dual problem은 다음과 같다.
+
 $$\mathop{\max_{s,y}}_{s\ge0} \min_{x} \: L(x,s,y) = \mathop{\max_{s,y}}_{s\ge0} \min_{x} \: c^Tx - s^Tx + (b-Ax)^T y$$
 
 $$\nabla_x L = 0$$을 정리하여 얻은 관계식 $$c=A^Ty +s$$를 dual problem에 대입한다.
@@ -114,11 +115,13 @@ $$\mathop{\max_{s,y}}_{s\ge0} \: (A^Ty + s)^Tx - s^Tx + (b-Ax)^Ty \quad \text{ s
 >    \text{subject to} &\quad Ax = b \\\\
 >    &\quad x \ge 0,
 >\end{align} \\
->\text{where } Q \text{is symmetric and positive semidefinite.}$$
+>\text{where } Q \text{ is symmetric and positive semidefinite.}$$
 
 
 앞선 정의에 따라 위 문제의 dual problem은 다음과 같다.
+
 $$\mathop{\max_{s,y}}_{s\ge0} \min_{x} \: L(x,s,y) = \mathop{\max_{s,y}}_{s\ge0} \min_{x} \:  \frac{1}{2} x^T Q x + c^Tx - s^Tx + (b-Ax)^T y$$
+
 
 $$\nabla_x L = 0$$을 정리하여 얻은 관계식 $$Qx = A^Ty +s - c$$를 dual problem에 대입한다.
 
