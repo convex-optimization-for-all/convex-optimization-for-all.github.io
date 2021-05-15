@@ -32,7 +32,7 @@ Convex optimization problem은 optimization problem의 한 종류이다.
 
 예를 들어, 다음 세 가지 그림 중 가장 좌측의 그림만이 convex set에 해당한다.
 
-![Convex_set]({{ site.baseurl }}/img/chapter_img/chapter01/Convex_set.pdf)
+![Convex_set]({{ site.baseurl }}/img/chapter_img/chapter01/Convex_set.png)
 
 **[Fig1] left: a convex set, mid & right: non-convex sets [2]**
 
@@ -45,7 +45,7 @@ Convex function은 다음과 같이 정의된다.
 
 정의에서 부등식으로 표현된 조건은 다음과 같은 기하학적 의미를 가진다. $$f$$의 그래프 상의 임의의 두 점 $$(x,\ f(x))$$, $$(y,\ f(y))$$을 생각해보자. 이 두 점을 잇는 선분은 구간 $$[x, y]$$에서 그래프보다 크거나 같게 위치한다.
 
-![Convex_function]({{ site.baseurl }}/img/chapter_img/chapter01/Convex_function.pdf)
+![Convex_function]({{ site.baseurl }}/img/chapter_img/chapter01/Convex_function.png)
 
 **[Fig2] convex function [2]**
 
