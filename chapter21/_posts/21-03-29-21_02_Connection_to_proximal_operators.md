@@ -31,7 +31,7 @@ owner: "Hooncheol Shin"
 
 $${\operatorname{prox}}_{f,\frac{1}{\rho}}, {\operatorname{prox}}_{g,\frac{1}{\rho}}$$는 각각 파라미터가 $$\frac{1}{\rho}$$일때 f와 g의 proximal operator이다.
 
-참고로 convex 함수 $$f$$에 대한 [proximal operator의 정의](https://wikidocs.net/22431)는 다음과 같다.
+참고로 convex 함수 $$f$$에 대한 [proximal operator의 정의]({% post_url chapter19/21-03-24-19_01_01_Reminder:_proximal_gradient_descent %})는 다음과 같다.
 >$$
 >\begin{align}
 >{\operatorname{prox}}_{f, \lambda}(v) = \underset{x}{\operatorname{argmin}}(f(x)+\frac{1}{2\lambda}||x-v||_{2}^{2}). 

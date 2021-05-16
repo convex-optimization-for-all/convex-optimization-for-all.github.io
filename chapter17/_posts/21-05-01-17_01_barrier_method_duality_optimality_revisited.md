@@ -41,7 +41,7 @@ Log barrier function을 사용하여 다음과 같이 primal 문제를 barrier �
         $$t = t^{(k+1)}$$에서 barrier problem을 풀어서 $$x^{(k+1)} = x^{\star}(t)$$을 구한다.<br>
   end while<br>
 
-* 자세한 내용은  [15-01-02 Log barrier function & barrier method](https://wikidocs.net/21305) 참조
+* 자세한 내용은  [15-01-02 Log barrier function & barrier method]({% post_url chapter15/21-03-28-15_01_02_log_barrier_function_and_barrier_method %}) 참조
 
 
 ## Duality
@@ -111,7 +111,7 @@ $$f,h_1,...h_m$$은 convex 이고 미분 가능하고, 또한 주어진 문제�
 > \end{array}
 > $$
  
-* 자세한 내용은 [16-02 Optimality conditions](https://wikidocs.net/22012) 참조
+* 자세한 내용은 [16-02 Optimality conditions]({% post_url chapter16/21-03-31-16_02_optimality_conditions %}) 참조
 
 이번 장에서 소개할 **Primal-Dual interior point method**는 위의 처음 세 가지 식을 residual로 정의하고 이를 $$0$$으로 줄이면서 해를 구하는 방식이다.
 

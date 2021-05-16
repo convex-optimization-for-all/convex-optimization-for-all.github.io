@@ -28,7 +28,7 @@ Gradient decent가 fixed step size일때 convergence rate $$O(1/k)$$가 된다. 
 
 ## Proof
 
-$$\nabla f$$는 Lipschitz continuous하며 $$f$$는 Lipschitz constant $$L$$을 계수로 하는 2차 항으로 된 quadratic upper bound를 갖는다. (Upper bound의 증명은  [06-03-02](https://wikidocs.net/18454) 절을 참조)
+$$\nabla f$$는 Lipschitz continuous하며 $$f$$는 Lipschitz constant $$L$$을 계수로 하는 2차 항으로 된 quadratic upper bound를 갖는다. (Upper bound의 증명은  [06-03-02]({% post_url chapter06/21-03-20-06_03_02_convex_function_quardratic_upper_bound %}) 절을 참조)
 
 > $$
 \begin{align}

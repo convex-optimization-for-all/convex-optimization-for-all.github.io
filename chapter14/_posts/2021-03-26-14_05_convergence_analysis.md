@@ -23,7 +23,7 @@ $$f$$는 convex이고, 두 번 미분 가능하며, $$dom(f)=\mathbb{R}^{n}$$을
 >\|\nabla f(x) - \nabla f(y)\|_{2} \leq L\|x-y\|_{2} \quad \forall x,y.
 >\end{align}$$
 
-2. $$f$$는 parameter m에 대하여 strongly convex하다. (upper bound $$L$$과 Lipschitz continuous의 관계 : [출처](https://xingyuzhou.org/blog/notes/strong-convexity), [본서 : 06-03-05](https://wikidocs.net/18093))
+1. $$f$$는 parameter m에 대하여 strongly convex하다. (upper bound $$L$$과 Lipschitz continuous의 관계 : [출처](https://xingyuzhou.org/blog/notes/strong-convexity), [본서 : 06-03-05]({% post_url chapter06/21-03-20-06_03_05_look_at_the_conditions_and_practicalities %}))
 >$$\begin{align}
 >mI\preceq\nabla^{2}f(x)\preceq LI.
 >\end{align}$$

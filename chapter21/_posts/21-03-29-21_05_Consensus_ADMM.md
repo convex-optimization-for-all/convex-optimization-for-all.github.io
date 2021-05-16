@@ -76,4 +76,4 @@ Generalized consensus ADMM과 위에서 유도했던 consensus ADMM과의 차이
 *  $$x$$ 업데이트는 임의의 함수 $$g$$(일반적으로 regularizer)에 대한 proximal operation이다.
 *  reparmeterization을 어떻게 하는가에 따라 ADMM 알고리즘이 다르게 도출된다. 
 
-더 자세한 내용은 [참고문헌](https://wikidocs.net/22687)을 참조한다.
+더 자세한 내용은 [참고문헌]({% post_url chapter21/21-03-29-21_00_Alternating_Direction_Method_of_Multipliers %})을 참조한다.

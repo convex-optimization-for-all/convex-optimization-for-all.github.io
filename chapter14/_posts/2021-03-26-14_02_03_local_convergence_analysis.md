@@ -11,7 +11,7 @@ MathJax.Hub.Config({
 });
 </script>
 
-Newton's method의 두 번째 중요한 성질로는 특정 조건들을 만족하면, 해의 근처에서 수렴성이 보장된다는 것이다. 이를 local convergence라고 명명한다.  [14-01]({% post_url chapter14/2021-03-26-14_01_newton_method %})에서부터 우리가 논해온 pure Newton's method의 경우 수렴성이 보장되지 않기 때문에, 후에 이전에 [6장](https://wikidocs.net/18184)에서 다루었던 backtracking line search를 동일하게 적용하여 step size를 조절하여 수렴성을 보장하는 damped Newton's method를 고안하고, 이에 대한 수렴성을 분석한다.
+Newton's method의 두 번째 중요한 성질로는 특정 조건들을 만족하면, 해의 근처에서 수렴성이 보장된다는 것이다. 이를 local convergence라고 명명한다.  [14-01]({% post_url chapter14/2021-03-26-14_01_newton_method %})에서부터 우리가 논해온 pure Newton's method의 경우 수렴성이 보장되지 않기 때문에, 후에 이전에 [6장]({% post_url chapter06/21-03-20-06_00_gradient_descent %})에서 다루었던 backtracking line search를 동일하게 적용하여 step size를 조절하여 수렴성을 보장하는 damped Newton's method를 고안하고, 이에 대한 수렴성을 분석한다.
 
 
 >정리 : $$F : \mathbb{R}^{n}\, \rightarrow  \, \mathbb{R}^{n}$$ 가 연속으로 미분가능(continuosly differentiable)하고,  $$x^{\star} \in \mathbb{R}^{n}$$ 가 함수 $$F$$의 근이라고 하자, 즉, $$F(x^{\star})=0$$이다.

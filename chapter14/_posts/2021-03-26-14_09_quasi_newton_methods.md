@@ -17,7 +17,7 @@ MathJax.Hub.Config({
 >x^{+} = x - tH^{-1}\nabla f(x)
 >\end{align}
 
-아래는 Quasi-Newton method의 특징이다. 조금 더 자세한 내용은 [18장](https://wikidocs.net/edit/page/21979)에서 다룬다.
+아래는 Quasi-Newton method의 특징이다. 조금 더 자세한 내용은 [18장]({% post_url chapter18/21-03-23-18_00_Quasi_Newton_methods %})에서 다룬다.
 
 * Hessian을 approximate하는 $$H$$는 매 스텝마다 갱신하여 계산된다. 목표는 $$H^{-1}$$을 비교적 적은 연산으로 구하여 적용하는 것이다.
 * 수렴속도가 superlinear로 빠르다. 하지만 Newton과 같은 수렴속도를 갖지는 않는다. 일반적으로 $$n$$ steps의 quasi-Newton은 1 step의 Newton과 동일한 수렴의 크기를 보인다. 

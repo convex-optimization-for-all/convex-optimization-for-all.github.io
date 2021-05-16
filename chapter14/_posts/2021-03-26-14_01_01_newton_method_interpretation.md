@@ -11,7 +11,7 @@ MathJax.Hub.Config({
 });
 </script>
 
-이 페이지에서는 앞서 다루었던 update step이 원 함수 $$f$$의 quadratic approximation으로부터 어떻게 유도되는지 살펴본다. 또한 [6장](https://wikidocs.net/18083)에서 다룬 gradient descent의 update step와 비교해본다.
+이 페이지에서는 앞서 다루었던 update step이 원 함수 $$f$$의 quadratic approximation으로부터 어떻게 유도되는지 살펴본다. 또한 [6장]({% post_url chapter06/21-03-20-06_00_gradient_descent %})에서 다룬 gradient descent의 update step와 비교해본다.
 
 ## Newton's method update step
 함수 $$f$$의 2차 테일러 근사(quadratic approximation)은 다음과 같다.
@@ -57,7 +57,7 @@ Newton's method와 동일하게 위 근사식의 gradient가 0인 $$y$$값, 즉 
 
 이 결과는 gradient descent의 step update와 동일하다.
 
-gradient descent의 자세한 내용은 [gradient descent 장](https://wikidocs.net/18084)에서 참고할 수 있다.
+gradient descent의 자세한 내용은 [gradient descent 장]({% post_url chapter06/21-03-20-06_00_gradient_descent %})에서 참고할 수 있다.
 
 ## Example
 예시로써, 함수 $$f = (10x_{1}^{2}+x_{2}^{2})/2+5log(1+e^{-x_{1}-x_{2}})$$에 대하여 거의 동등한 길이의 step을 진행한다고 가정하고, 즉 newton's method의 업데이트 크기만큼 매번 gradient descent에서의 step size를 정하고, gradient descent(검정)와 Newton's method(파랑)의 step에 따른 수렴 방향을 비교해본다.

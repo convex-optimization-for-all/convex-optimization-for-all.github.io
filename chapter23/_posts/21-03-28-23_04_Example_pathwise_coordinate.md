@@ -13,7 +13,7 @@ owner: "YoungJae Choung"
 > \min_{\beta} \frac{1}{2} \| y - X\beta \|_2^2 + \lambda \|\beta\|_1
 > $$
 
-[07-03-03 Example: Lasso Optimality Condition](https://wikidocs.net/18718)에서 lasso regression 문제에 대한 optimality condition을 유도해 보았다. 위 문제에 대한 최적해는 다음의 조건을 만족한다.
+[07-03-03 Example: Lasso Optimality Condition]({% post_url chapter07/21-03-25-07_03_03_example_lasso_optimality_condition %})에서 lasso regression 문제에 대한 optimality condition을 유도해 보았다. 위 문제에 대한 최적해는 다음의 조건을 만족한다.
 
 >
 > $$
