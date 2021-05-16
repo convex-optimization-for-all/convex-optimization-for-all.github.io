@@ -11,9 +11,13 @@ owner: "Kyeongmin Woo"
 ## Mathematical optimization problems
 Mathematical optimization problem은 다음과 같은 형태로 표현될 수 있다.
 
->![](https://wikidocs.net/images/page/17203/Optimization_problem.png)
+>$$\begin{align*} 
+>\min_{x\in D}\ && f(x) \\
+>\text{subject to} & & g_i(x) \le 0,\ i = 1, ...m \\
+>&& h_j(x) = 0,\ j = 1,\ ...r 
+>\end{align*}$$
 
-**[Fig1] Mathematical Optimization Problem in standard form [3]**
+**Mathematical Optimization Problem in standard form [3]**
 
 * $$x \in R^n$$ is the optimization variable
 * $$f: R^n \rightarrow R$$ is the objective or cost function
@@ -24,22 +28,25 @@ Mathematical optimization problem은 다음과 같은 형태로 표현될 수 �
 
 제약조건의 경우 다음과 같이 두 가지로 구분될 수 있다. [2]
 
-1. Explicit constraints: 말 그대로 optimization problem에 직접적으로 명시된 제약조건을 뜻한다. 위 [Fig1]에서 함수 $$g_i$$와 $$h_i$$로 표현된 제약조건이 이에 해당한다. 참고로 explicit constraint가 없는 문제를 unconstrained problem이라고 부른다.
-2. Implicit constraints: Optimization problem에 직접적으로 명시되지 않는 제약조건을 말한다. 이는 Objective function과 모든 constraint function들의 정의역에 대한 교집합이다. $$D = dom(f) \cap \bigcap_{i=1}^m {\rm dom}(g_i) \cap \bigcap_{j=1}^r dom(h_j)$$
-<br/>
+1. Explicit constraints: 말 그대로 optimization problem에 직접적으로 명시된 제약조건을 뜻한다. 위에서 서술한 optimization problem의 standard form에서 함수 $$g_i$$와 $$h_i$$로 표현된 제약조건이 이에 해당한다. 참고로 explicit constraint가 없는 문제를 unconstrained problem이라고 부른다.
+2. Implicit constraints: Optimization problem에 직접적으로 명시되지 않는 제약조건을 말한다. 이는 Objective function과 모든 constraint function들의 정의역에 대한 교집합이다.
+
+$$D = dom(f) \cap \bigcap_{i=1}^m {\rm dom}(g_i) \cap \bigcap_{j=1}^r dom(h_j)$$<br/>
+
 **Note:** $$dom(f)$$는 함수 $$f$$의 정의역을 의미한다.
 
->**Example: implicit constraint <-> explicit constraint**
+>**Example: implicit constraint ↔ explicit constraint**
 >
 >최적화 문제가 다음과 같이 주어졌다고 하자.
 >
->$$\text{minimize } log(x)$$
+>$$\begin{align*} \text{minimize } & & log(x) \end{align*}$$
 >
 >여기서 objective function인 log함수의 정의역이 $$x > 0$$이므로 $$x > 0$$이 이 문제에서의 implicit constraint가 된다. 이 문제를 explicit constraint가 포함된 형태의 최적화문제로 표현하면 다음과 같다.
 >
->$$\text{minimize } log(x) \\\ \text{subject to } x > 0$$
+>$$\begin{align*} \text{minimize } & & log(x) \\ \text{subject to } & & x > 0 \end{align*}$$
 
 ## Applications
+
 최적화 문제는 다양한 영역에 걸쳐 적용될 수 있다. [2]
 
 #### Portfolio optimization
