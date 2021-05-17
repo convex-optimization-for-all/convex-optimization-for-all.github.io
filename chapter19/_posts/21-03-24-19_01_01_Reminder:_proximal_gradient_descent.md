@@ -8,7 +8,7 @@ owner: "Hooncheol Shin"
 
 이번 장에서 배울 **Proximal newton method**의 살펴보기 전에 먼저 **Proximal gradient descent**를 복습해 보자.
 
-자세한 내용은 [09 Proximal Gradient Descent and Acceleration](https://wikidocs.net/19031) 참조.
+자세한 내용은 [09 Proximal Gradient Descent and Acceleration]({% post_url chapter09/20-01-08-09_proximal_gradient_descent_and_acceleration %}) 참조.
 
 ## Proximal gradient descent
 **Proximal gradient descent** 다음의 문제에 대해 작동한다. 
@@ -44,7 +44,7 @@ Update 식은 generalized gradient $$G_{t}$$를 사용해서 표준화된 형태
 ## Motivation
 **Proximal gradient descent**에서는 미분 가능한 함수 $$g$$를 Tayor 2차식으로 근사하고 여기에 미분이 되지 않는 함수인 $$h$$를 더하여 목적 함수로 정의한 후 이를 반복적으로 최소화한다. 따라서, 다음과 같이 2차 식으로 정리해 볼 수 있다. 
 
-식에 전개되는 자세한 과정은 [09-01 Proximal gradient descent](https://wikidocs.net/19032) 참고.
+식에 전개되는 자세한 과정은 [09-01 Proximal gradient descent]({% post_url chapter09/20-01-08-09_01_proximal_gradient_descent %}) 참고.
 
 > $$
 > \begin{align}

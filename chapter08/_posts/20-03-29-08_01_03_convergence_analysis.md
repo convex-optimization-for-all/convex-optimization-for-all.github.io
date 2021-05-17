@@ -8,7 +8,7 @@ owner: "Kyeongmin Woo"
 
 # Convergence analysis
 
-Gradient descent에서는 $$\nabla f$$가 Lipschitz continous하다고 가정하였지만 subgradient method에서는 $$f$$가 Lipschitz continous하다고 가정한다. (Gradient descent의 convergence theorem [06-03-01](https://wikidocs.net/18090) 절을 참조)
+Gradient descent에서는 $$\nabla f$$가 Lipschitz continous하다고 가정하였지만 subgradient method에서는 $$f$$가 Lipschitz continous하다고 가정한다. (Gradient descent의 convergence theorem [06-03-01]({% post_url chapter06/21-03-20-06_03_01_convergence_analysis_and_proof %}) 절을 참조)
 
 $$f$$는 convex이고 dom $$f = R^n$$이며 $$f$$가 Lipschitz condition을 만족한다고 하자.
 

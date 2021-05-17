@@ -5,7 +5,7 @@ chapter: "04"
 order: 4
 owner: "YoungJae Choung"
 ---
-[Reminder: ](https://wikidocs.net/17268#minimization)
+[Reminder: ]({% post_url chapter03/21-02-12-03_02_operations_that_preserve_convexity %})
 $$C$$가 convex set이고 $$f$$가 $$(x,y)$$에 대해 convex일때, $$g(x) = min\_{y \in C} f(x, y)$$는 x에 대해 convex이다.
 
 즉, 위의 성질에 의해 다변수 함수로 구성된 convex problem에서의 partial optimization이 가능하며 이 과정에서 convexity가 유지된다.

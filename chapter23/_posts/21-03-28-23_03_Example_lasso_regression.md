@@ -37,6 +37,6 @@ Solution은 thresholding level이 $$\lambda / \|X_i\|_2^2$$인 soft-thresholding
 </figure>
 <br><br>
 
-[Linear regression의 예시](https://wikidocs.net/23402)에서와 마찬가지로 lasso regression 문제에서도 coordinate descent는 월등한 수렴속도를 보인다. (First-order method보다 더 많은 정보를 활용한다.)
+[Linear regression의 예시]({% post_url chapter23/21-03-28-23_02_Example_linear_regression %})에서와 마찬가지로 lasso regression 문제에서도 coordinate descent는 월등한 수렴속도를 보인다. (First-order method보다 더 많은 정보를 활용한다.)
 
 * **Note:** 위 실험에서의 모든 methods는 각 iteration당 $$O(np)$$ flops의 시간복잡도를 보인다.

@@ -25,6 +25,6 @@ Backtracking line search를 수행하기 위한 방법들이 많이 있으며 �
 이 방법의 경우 $$v$$를 계산할 때 prox operator를 한번만 계산한다. Proximal gradient descent의 경우 inner loop에서 prox operator의 계산을 반복해야 했는데 이 점과 확연히 구분되는 특징이다. 따라서, 이 방법은 prox operator의 계산이 복잡할 경우 매우 효율적으로 backtracking line search를 할 수 있다.
 
 #### [참고] Method 별  backtracking line search
-* Gradient descent [06-02-02 Backtracking line search](https://wikidocs.net/18184)
-* Proximal gradient descent [09-02 Convergence analysis](https://wikidocs.net/19033)
-* Newton's method [14-04 Backtracking line search](https://wikidocs.net/21334)
+* Gradient descent [06-02-02 Backtracking line search]({% post_url chapter06/21-03-20-06_02_02_backtracking_line_search %})
+* Proximal gradient descent [09-02 Convergence analysis]({% post_url chapter09/20-01-08-09_02_convergence_analysis %})
+* Newton's method [14-04 Backtracking line search]({% post_url chapter14/2021-03-26-14_04_backtracking_line_search %})

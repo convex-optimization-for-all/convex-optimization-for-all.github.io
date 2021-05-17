@@ -61,7 +61,7 @@ f(y) - f(x) &\ge \nabla g(x)^T (y-x) + \sum_{i=1}^{n} \big[ h_i(y_i) - h_i(x_i) 
 > \Leftrightarrow & \: - \nabla_i g(x) \in \partial h_i(x\_i)\\
 > \end{align}
 > $$
-> [Subgradient의 정의](https://wikidocs.net/18963)에 의해,
+> [Subgradient의 정의]({% post_url chapter07/21-03-25-07_01_subgradient %})에 의해,
 > $$
 > \begin{align}
 > & h_i(y_i) \ge h_i(x_i) - \nabla_i g(x) (y_i - x_i)\\

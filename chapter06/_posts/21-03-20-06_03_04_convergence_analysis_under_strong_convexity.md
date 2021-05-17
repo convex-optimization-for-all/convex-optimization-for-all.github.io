@@ -30,7 +30,7 @@ Lipschitz continuous와 strong convexity 가정에 의하여 다음의 theorem�
 f(x^{(k)}) − f^{\star} ≤ c^k \frac{L}{2} \lVert x^{(0)} −x^{\star} \rVert_2^2, \text{where} \space  c = (1 - \frac{m}{L}), \space 0 \lt c \lt 1
 \end{align} $$
 ## Proof
-$$\nabla f$$는 Lipschitz continuous하며 $$f$$는 Lipschitz constant $$L$$을 계수로 하는 2차 항으로 된 quadratic upper bound를 갖는다. (Upper bound의 증명은 [06-03-02](https://wikidocs.net/18454) 절을 참조)
+$$\nabla f$$는 Lipschitz continuous하며 $$f$$는 Lipschitz constant $$L$$을 계수로 하는 2차 항으로 된 quadratic upper bound를 갖는다. (Upper bound의 증명은 [06-03-02]({% post_url chapter06/21-03-20-06_03_02_convex_function_quardratic_upper_bound %}) 절을 참조)
 
 > $$ \begin{align}
 f(y) \le f(x) + \nabla f(x)^T (y-x) + \frac{L}{2} \lVert y - x \rVert^2_2  \space \space \forall x, y

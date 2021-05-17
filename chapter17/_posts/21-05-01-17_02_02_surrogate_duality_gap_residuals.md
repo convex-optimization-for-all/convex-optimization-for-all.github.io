@@ -35,7 +35,7 @@ Barrier method는 feasible하기 때문에 duality gap이 존재하지만, prima
 **[참고] Perturbed KKT 조건과 파라미터 t** <br>
 
 * Perturbed KKT 조건에서 파라미터 t는 $$t = −\frac{m}{h(x)^Tu}$$이다. 
-* 자세한 내용은 [15-03-01 Perturbed KKT conditions](https://wikidocs.net/21311)와 [15-03-02 Suboptimality gap](https://wikidocs.net/21312)을 참조
+* 자세한 내용은 [15-03-01 Perturbed KKT conditions]({% post_url chapter15/21-03-28-15_03_01_perturbed_kkt_conditions %})와 [15-03-02 Suboptimality gap]({% post_url chapter15/21-03-28-15_03_02_suboptimality_gap %})을 참조
 
 그리고, $$u > 0,h(x) < 0$$이고 아래의 조건을 만족하면 $$(x,u,v)$$는 central path 상에 존재하게 된다.
 

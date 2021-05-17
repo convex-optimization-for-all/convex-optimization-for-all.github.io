@@ -20,7 +20,7 @@ Projected Gradient Descent는 본질적으로 local quadratic expansion(2nd Tayl
 
 > $$x^{(k)} = P_{C} \Bigl( \arg\min_{y} ∇f(x^{(k−1)})^T(y − x^{(k−1)}) + \frac{1}{2t} \| y − x^{(k−1)} \|^2_ 2 \Bigr) $$
 
-Projected Gradient Descent에 대한 좀 더 자세한 내용은 [9-4](https://wikidocs.net/20230)를  참고 하기 바란다.
+Projected Gradient Descent에 대한 좀 더 자세한 내용은 [9-4]({% post_url chapter09/20-01-08-09_04_special_cases %})를  참고 하기 바란다.
 
 
 
@@ -219,5 +219,5 @@ $$I_C^{*}$$가 $$C$$의 support function을 의미한다. Indicator function의 
 > \end{align}
 > $$
 
-$$ x = x ^ {(k-1)}, u = ∇f (x ^ {(k-1)}) $$ 일 때, $$x, u$$에서 발생하는 duality gap은 다음과 같다. (13-04 [Fenchel's inequality](https://wikidocs.net/21001) 로부터 유도되기도 한다.)
+$$ x = x ^ {(k-1)}, u = ∇f (x ^ {(k-1)}) $$ 일 때, $$x, u$$에서 발생하는 duality gap은 다음과 같다. (13-04 [Fenchel's inequality]({% post_url chapter13/21-04-05-13_04_Conjugate_function %}) 로부터 유도되기도 한다.)
 > $$f(x) + f^{*}(u) + I^{*}_C(−u) ≥ x^Tu + I^{*}_C(−u)$$
