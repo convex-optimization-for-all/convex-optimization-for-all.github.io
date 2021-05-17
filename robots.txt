@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://convex-optimization-for-all.github.io/sitemap.xml
