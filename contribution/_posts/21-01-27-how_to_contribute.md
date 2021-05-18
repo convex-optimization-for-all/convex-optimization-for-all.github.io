@@ -24,7 +24,7 @@ $ git pull origin main
 $ git checkout -b feature/chapter01/fix_bug
 ```
 
-#### (4) 파일을 편집합니다. 생성 또는 수정하고자 하는 컨텐츠는 Convention을 지켜 작성해야 합니다.
+#### (4) 파일을 편집합니다. 생성 또는 수정하고자 하는 컨텐츠는 [Convention](<https://convex-optimization-for-all.github.io/contribution/2021/02/03/conventions/>)을 지켜 작성해야 합니다.
 
 #### (5) Remote로 Push합니다.
 
