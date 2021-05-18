@@ -22,7 +22,7 @@ $ git pull --all
 #### (3) 수정 내용을 담는 새로운 브랜치를 생성합니다. 브랜치 명은 `[Prefix]/[챕터명]/[수정하는_이유]`로 하시면 됩니다([Branch Naming Convetion](<https://convex-optimization-for-all.github.io/contribution/2021/02/03/conventions/>)). 예시는 아래와 같습니다.
 
 ```bash
-$ git checkout -b bugfix/chapter01/fix_type
+$ git checkout -b bugfix/chapter01/fix_typo
 ```
 
 #### (4) 파일을 편집합니다. 생성 또는 수정하고자 하는 컨텐츠는 [Convention](<https://convex-optimization-for-all.github.io/contribution/2021/02/03/conventions/>)을 지켜 작성해야 합니다.
@@ -30,7 +30,7 @@ $ git checkout -b bugfix/chapter01/fix_type
 #### (5) Remote로 Push합니다. 예시는 아래와 같습니다.
 
 ```
-$ git push origin bugfix/chapter01/fix_type
+$ git push origin bugfix/chapter01/fix_typo
 ```
 
 #### (6) [Github](<https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/pulls>)에서 main branch로의 Pull Request를 생성합니다. Pull Request 생성 방법은 아래 GitHub Docs를 참고하시기 바랍니다.
