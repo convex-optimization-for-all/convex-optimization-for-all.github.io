@@ -33,7 +33,7 @@ $ git checkout -b bugfix/chapter01/fix_type
 $ git push origin bugfix/chapter01/fix_type
 ```
 
-#### (6) [Github](<https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/pulls>)에서 main branch로의 Pull Request를 생성합니다. Pull Request 생성 방법은 아래 GitHub Dosc를 참고하시기 바랍니다.
+#### (6) [Github](<https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/pulls>)에서 main branch로의 Pull Request를 생성합니다. Pull Request 생성 방법은 아래 GitHub Docs를 참고하시기 바랍니다.
 
 - [Creating a pull request](<https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request>)
 
