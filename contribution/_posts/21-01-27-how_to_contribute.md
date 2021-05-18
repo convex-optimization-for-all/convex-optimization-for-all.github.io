@@ -10,20 +10,12 @@ owner: kyeongminwoo
 
 ## 1. 컨텐츠를 직접 수정하는 방법
 
-#### (1) 우선 Local의 Repository Directory로 들어갑니다. Local Repository가 없다면 Initial Settings를 참고하시기 바랍니다.
+#### (1) 우선 Local의 Repository Directory로 들어갑니다. Local Repository가 없다면 [Initial Settings](<https://convex-optimization-for-all.github.io/contribution/2021/01/27/initial_settings/>)를 참고하시기 바랍니다.
 
-#### (2) 수정하고자 하는 chapter의 branch로 이동합니다.
+#### (2) Remote와 동기화하기 위해 main branch를 pull 합니다.
 
-```bash
-$ git checkout [branch_name]
-$ git pull origin [branch_name]
 ```
-
-#### (2-1) 만약 Loacl에 수정하고자 하는 branch가 없다면 다음 예시와 같이 새로운 branch를 생성하고 Remote로 부터 Pull 합니다.
-
-```bash
-$ git checkout -b [new_branch_name]
-$ git pull origin [new_branch_name]
+$ git pull origin main
 ```
 
 #### (3) 수정 내용을 담는 새로운 브랜치를 생성합니다. 브랜치 명은 `feature/[챕터명]/[수정하는_이유]`로 하시면 됩니다.
@@ -40,7 +32,7 @@ $ git checkout -b feature/chapter01/fix_bug
 $ git push origin feature/chapter01/fix_bug
 ```
 
-#### (6) [Github](<https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/pulls>)에서 Pull Request를 생성한다.
+#### (6) [Github](<https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/pulls>)에서 main branch로의 Pull Request를 생성합니다.
 
 ---
 
