@@ -106,7 +106,7 @@ $$\theta x_1 + (1-\theta)x_2 \in C$$
 브랜치 이름은 다음 컨벤션에 맞춰 생성해주시면 됩니다.
 
 ```
-[feature/bugfix]/[chapter**, settings]-<변경-사항>
+[feature|bugfix]/[chapter**|settings]-변경-사항
 ```
 
 Prefix는 feature와 bugfix 두 가지를 사용합니다. 각각의 사용 예시는 다음과 같습니다.
@@ -124,4 +124,4 @@ Prefix는 feature와 bugfix 두 가지를 사용합니다. 각각의 사용 예�
 - `feature/chapter01-migration`: chapter01 Migration
 - `feature/chapter01-fix-formula`: chapter01에서 수식 업데이트 
 - `feature/settings-update-branch-convention`: Convention 업데이트
-- `bugfix/chapter01-fix-type`: chapter01에서 오타 수정
+- `bugfix/chapter01-fix-typo`: chapter01에서 오타 수정
