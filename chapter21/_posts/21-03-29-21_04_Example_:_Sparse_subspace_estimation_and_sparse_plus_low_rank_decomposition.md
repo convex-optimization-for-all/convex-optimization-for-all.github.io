@@ -15,7 +15,7 @@ $$S=X^{T}X, X\in \mathbb{R}^{n\times p}$$일때, 원래의 X와 projection된 X�
 >\end{align}
 >$$
 
-이 문제는 projection 행렬의 set이 convex set이 아니기 때문에 non-convex 문제이다. 하지만, 아래의 convex 문제와 동일함이 알려져 있다.[[VCLR13](https://wikidocs.net/22687)] 이는 subspace estimation problem이라고도 불린다.
+이 문제는 projection 행렬의 set이 convex set이 아니기 때문에 non-convex 문제이다. 하지만, 아래의 convex 문제와 동일함이 알려져 있다.[[VCLR13]({% post_url chapter21/21-03-29-21_00_Alternating_Direction_Method_of_Multipliers %})] 이는 subspace estimation problem이라고도 불린다.
 
 >$$
 >\begin{align}
@@ -56,7 +56,7 @@ $$S=X^{T}X, X\in \mathbb{R}^{n\times p}$$일때, 원래의 X와 projection된 X�
  >\end{align}
  >$$
  
-여기서 $$P_{F_{k}}$$는 fantope projection operator이다. 이는 eigendecomposition $$A= U\sum U^{T}, \sum = diag(\sigma_{1},...\sigma_{p})$$의  clipping으로 정의된다.[[VCLR13](https://wikidocs.net/22687)]:
+여기서 $$P_{F_{k}}$$는 fantope projection operator이다. 이는 eigendecomposition $$A= U\sum U^{T}, \sum = diag(\sigma_{1},...\sigma_{p})$$의  clipping으로 정의된다.[[VCLR13]({% post_url chapter21/21-03-29-21_00_Alternating_Direction_Method_of_Multipliers %})]:
 >$$
 >\begin{align}
 >P_{F_{k}}(A) = U\Sigma_{\theta}U^{T}, \Sigma_{\theta} = diag(\sigma_{1}(\theta),...\sigma_{p}(\theta))
@@ -66,7 +66,7 @@ $$S=X^{T}X, X\in \mathbb{R}^{n\times p}$$일때, 원래의 X와 projection된 X�
 각각 $$\sigma_{i}(\theta) = \min\left\{\max\left\{\sigma_{i}-\theta,0\right\},1\right\}$$이고, $$\sum^{p}_{i=1}\sigma_{i}(\theta)=k$$ 이다.
 
 ## Sparse plus low rank decomposition
-$$M\in \mathbb{R}^{n\times m}$$일때, sparse plue low rank decomposition problem은 다음과 같다.[[CLMW09](https://wikidocs.net/edit/page/22687)]
+$$M\in \mathbb{R}^{n\times m}$$일때, sparse plue low rank decomposition problem은 다음과 같다.[[CLMW09]({% post_url chapter21/21-03-29-21_00_Alternating_Direction_Method_of_Multipliers %})]
 >$$
 >\begin{align}
 >\min_{L,S}||L||_{tr}+\lambda||S||_{1} \qquad \text{subject to }L+S=M
