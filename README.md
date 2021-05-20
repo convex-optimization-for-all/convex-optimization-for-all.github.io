@@ -84,7 +84,7 @@ wgm0601@gmail.com / 우경민 (마키나락스)
 - 장승환 (schang.math@gmail.com)
 - 정태수 (tcheong@korea.ac.kr)
 
-[원저자 및 리뷰어 상세소개](<https://wikidocs.net/17197>)
+[원저자 및 리뷰어 상세소개](./AUTHORS.md)
 
 ## Contributors ✨
 
