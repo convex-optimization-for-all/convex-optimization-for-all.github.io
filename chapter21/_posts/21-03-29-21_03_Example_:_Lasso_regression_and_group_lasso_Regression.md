@@ -16,7 +16,7 @@ $$y\in \mathbb{R}^{n}, X\in \mathbb{R}^{n\times p}$$ 일때 lasso 문제는 아�
 >\end{align}
 >$$
 
-이전의 여러 장에서, 우리는 lasso 문제를 여러가지 방법으로 해결해보았다. 대표적으로는 [proximal gradient descent(ISTA)](https://wikidocs.net/19032), [accelerated proximal gradient descent(FISTA)](https://wikidocs.net/20247), [barrier method](https://wikidocs.net/21297), [primal-dual interior-point method](https://wikidocs.net/21616) 등이 있다. 
+이전의 여러 장에서, 우리는 lasso 문제를 여러가지 방법으로 해결해보았다. 대표적으로는 [proximal gradient descent(ISTA)]({% post_url chapter09/20-01-08-09_01_proximal_gradient_descent %}), [accelerated proximal gradient descent(FISTA)]({% post_url chapter09/20-01-08-09_05_03_example_FISTA %}), [barrier method]({% post_url chapter15/21-03-28-15_barrier_method %}), [primal-dual interior-point method]({% post_url chapter17/21-05-01-17_primal_dual_interior_point_method %}) 등이 있다. 
 
 ADMM에서는 dual 식을 유도하는 것과 동일하게, 어떤 식으로 보조 변수(auxiliary variable)을 설정하는가에 따라 알고리즘의 성능이 달라진다. 많은 auxiliary variable의 설정 방법 중 아래의 형태가 가장 효과적인 형태 중 하나로 알려져 있다.
 >$$

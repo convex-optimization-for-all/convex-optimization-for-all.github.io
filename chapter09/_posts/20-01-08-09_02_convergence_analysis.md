@@ -35,7 +35,7 @@ g(x - tG_t(x)) \gt g(x) - t \nabla g(x)^T G_t(x) + \frac{t}{2} \parallel G_t(x) 
 
 이 식에서 $$G_t(x) = \nabla g(x)$$이라면 $$g(x - t \nabla g(x)) \gt g(x) - \alpha t \lVert \nabla g(x) \rVert_2^2 $$가 되므로 gradient descent의 backtracking 조건과 동일해진다는 것을 알 수 있다. 
 
-**참고 :** Gradient descent의 backtracking에 대한 자세한 내용은 [06-02-02 backtracking line search](chapter06/21/03/20/06_02_02_backtracking_line_search) 참조
+**참고 :** Gradient descent의 backtracking에 대한 자세한 내용은 [06-02-02 backtracking line search]({% post_url chapter06/21-03-20-06_02_02_backtracking_line_search %}) 참조
 
 #### Backtracking line search 알고리즘
 이 내용을 알고리즘으로 정리하면 다음과 같다. (단, $$\nabla x = - t G_t(x)$$)

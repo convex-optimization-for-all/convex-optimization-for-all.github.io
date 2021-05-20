@@ -67,6 +67,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "cneyang",
+      "name": "Eugene Yang",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50402681?v=4",
+      "profile": "https://github.com/cneyang",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,

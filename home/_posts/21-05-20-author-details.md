@@ -1,3 +1,13 @@
+---
+layout: post
+title: author details
+order: 5
+chapter: home
+owner: jinwoopark
+---
+
+--------------------
+
 ## Author
 **김기범** (astroblasterr@gmail.com)<br>
 
