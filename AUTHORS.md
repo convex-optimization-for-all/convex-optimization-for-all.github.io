@@ -33,4 +33,4 @@ Computer Science와 무선통신을 공부하였으며 인지과학, 진화 심�
 
 **정태수** (tcheong@korea.ac.kr) <br>
 **現 고려대학교 산업경영공학부 부교수, 공과대학 연구부학장**<br>
-고려대학교 산업경영공학부 부교수로 재직 중이며, 최적화 기법을 활용한 다양한 연구를 수행하였으며 최근들어서는 머신러닝과 관련된 산학 프로젝트도 진행 중에 있습니다. 본 전공은 마르코브 의사결정 프로세스 (Markov decision process)를 활용한 물류 및 SCM 최적화이며 박사과정 중에서 Optimization 트랙으로 박사자격시험을 준비하면서 다양한 최적화 이론을 공부하였습니다. 머신러닝 관련해서는 K-MOOC (http://www.kmooc.kr/)의 "Mathematical Fundamentals for Data Science"와 "Machine Learning for Data Science" 강좌 개발 및 촬영에 참여하였습니다. 최적화와 관련하여 부족하지만 조금이나마 기여를 하고자 이렇게 참여하게 되었습니다.
+고려대학교 산업경영공학부 부교수로 재직 중이며, 최적화 기법을 활용한 다양한 연구를 수행하였으며 최근들어서는 머신러닝과 관련된 산학 프로젝트도 진행 중에 있습니다. 본 전공은 마르코브 의사결정 프로세스 (Markov decision process)를 활용한 물류 및 SCM 최적화이며 박사과정 중에서 Optimization 트랙으로 박사자격시험을 준비하면서 다양한 최적화 이론을 공부하였습니다. 머신러닝 관련해서는 [K-MOOC](http://www.kmooc.kr/)의 "Mathematical Fundamentals for Data Science"와 "Machine Learning for Data Science" 강좌 개발 및 촬영에 참여하였습니다. 최적화와 관련하여 부족하지만 조금이나마 기여를 하고자 이렇게 참여하게 되었습니다.
