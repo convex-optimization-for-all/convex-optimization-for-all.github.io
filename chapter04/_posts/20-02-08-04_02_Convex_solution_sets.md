@@ -6,7 +6,7 @@ order: 2
 owner: "YoungJae Choung"
 ---
 Convex solution set의 성질에 대해 알아보자. <br>
-$$X\_{opt}$$를 다음과 같이 어떤 convex problem에 대한 solution의 집합이라고 하겠다.
+$$X_{opt}$$를 다음과 같이 어떤 convex problem에 대한 solution의 집합이라고 하겠다.
 
 >$$
 >\begin{aligned}
