@@ -3,6 +3,9 @@
   var sidebar = document.querySelector('#sidebar');
   var checkbox = document.querySelector('#sidebar-checkbox');
 
+  if(window.innerWidth > 1480)
+    checkbox.checked = true;
+
   document.addEventListener('click', function(e) {
     var target = e.target;
 
