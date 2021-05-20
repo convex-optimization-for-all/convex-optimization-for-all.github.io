@@ -1,6 +1,6 @@
 # 모두를 위한 컨벡스 최적화
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 - [Book](<https://convex-optimization-for-all.github.io/>)
@@ -102,6 +102,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/curt-park/"><img src="https://avatars.githubusercontent.com/u/14961526?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jinwoo Park (Curt)</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=Curt-Park" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/YoungJaeChoung"><img src="https://avatars.githubusercontent.com/u/29696891?v=4?s=100" width="100px;" alt=""/><br /><sub><b>YoungJaeChoung</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=YoungJaeChoung" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/isingmodel"><img src="https://avatars.githubusercontent.com/u/31462012?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kibum Fred Kim</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=isingmodel" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/cneyang"><img src="https://avatars.githubusercontent.com/u/50402681?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Eugene Yang</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/issues?q=author%3Acneyang" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
