@@ -149,7 +149,7 @@ $$
 
 ### Example 3)  Dantzig selector
 
-Basis pursuit에서 다룬 문제와 목적이 동일하지만, y에 noise가 있는 경우를 전제해보자 ( $$ X\beta \approx y $$). 이러한 문제를 [Dantzig selector](https://statweb.stanford.edu/~candes/papers/DantzigSelector.pdf)라고 한다.
+Basis pursuit에서 다룬 문제와 목적이 동일하지만, y에 noise가 있는 경우를 전제해보자 ( $$ X\beta \approx y $$). 이러한 문제를 [Dantzig selector](https://statweb.stanford.edu/~candes/software/l1magic/downloads/papers/DantzigSelector.pdf)라고 한다.
 
 > $$ \begin{align}
 >     &\text{minimize}_{\beta} &&{\|\beta\|_1} \\\\
