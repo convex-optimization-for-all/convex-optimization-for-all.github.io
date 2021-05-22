@@ -2,7 +2,7 @@
 layout: post
 title: 04-04 Partial optimization
 chapter: "04"
-order: 4
+order: 5
 owner: "YoungJae Choung"
 ---
 [Reminder: ]({% post_url chapter03/21-02-12-03_02_operations_that_preserve_convexity %})

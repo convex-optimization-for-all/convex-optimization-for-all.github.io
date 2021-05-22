@@ -2,7 +2,7 @@
 layout: post
 title: 04-02 Convex solution sets
 chapter: "04"
-order: 2
+order: 3
 owner: "YoungJae Choung"
 ---
 Convex solution set의 성질에 대해 알아보자. <br>

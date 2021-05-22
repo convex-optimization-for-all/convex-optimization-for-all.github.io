@@ -2,7 +2,7 @@
 layout: post
 title: 04-03 First order optimality condition
 chapter: "04"
-order: 3
+order: 4
 owner: "YoungJae Choung"
 ---
 > $$
