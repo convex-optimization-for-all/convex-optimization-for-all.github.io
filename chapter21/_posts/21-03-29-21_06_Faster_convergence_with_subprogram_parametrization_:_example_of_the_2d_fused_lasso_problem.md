@@ -12,7 +12,7 @@ ADMM의 성질 중 무척 흥미로운 점은 문제 해결에 있어서 작은 
 
 자세한 내용은 [RT16], [WSK14], [BS14]를 참고한다.
 
-[1장]({% post_url chapter01/21-01-07-optimization_problems %})에서 살펴보았던 예시중 하나인 2d fussed lasso 또는 2d total variation denoising 문제를 살펴본다. 이미지 $$Y\in \mathbb{R}^{d\times d}$$가 주어졌을때, 문제는 아래와 같이 정의된다.
+[1장]({% post_url chapter01/21-01-07-01_01_optimization_problems %})에서 살펴보았던 예시중 하나인 2d fussed lasso 또는 2d total variation denoising 문제를 살펴본다. 이미지 $$Y\in \mathbb{R}^{d\times d}$$가 주어졌을때, 문제는 아래와 같이 정의된다.
 
 >$$
 >\begin{align}
