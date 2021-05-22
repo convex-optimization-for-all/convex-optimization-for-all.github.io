@@ -29,7 +29,7 @@ MathJax.Hub.Config({
 
 주어진 primal problem이 convex일때, KKT conditions는 primal & dual optimal에 대한 충분조건이 된다. 즉, $$f, h_1, \dots, h_m$$가 convex이고 $$l_1, \dots, l_r$$가 affine일때, $$x^\star, u^\star, v^\star$$가 다음의 KKT conditions를 만족한다면 $$x^\star$$와 $$(u^\star, v^\star)$$는 zero duality gap인 primal & dual optimal이다. ($$f, h_1, \dots, h_m, l_1, \dots, l_r$$는 미분 가능하다고 가정한다.) <br>
 
-* 참고: [12-01 KKT conditions]({% post_url chapter12/21-04-02-12_KKT_conditions %})
+* 참고: [12-01 KKT conditions]({% post_url chapter12/21-04-02-12_00_KKT_conditions %})
 
 #### KKT conditions for the given primal problem
 >$$
