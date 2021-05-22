@@ -1,7 +1,7 @@
 ---
 layout: post
 title: introduction
-order: 1
+order: 3
 chapter: home
 owner: kyeongminwoo
 ---

@@ -1,12 +1,12 @@
 ---
 layout: post
 title: contents
-order: 3
 chapter: home
+order: 2
 owner: kyeongminwoo
 ---
 
-<h2>Open Source에 기여하기 전 확인하면 좋은 글</h2>
+## Open Source 참여 가이드
 
 {% assign posts = site.categories.contribution | sort: "order" %}
 {% for post in posts %}
