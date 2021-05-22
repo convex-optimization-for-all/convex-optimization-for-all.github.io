@@ -2,7 +2,7 @@
 layout: post
 title: 03-04-04 Operations that preserve quasiconvexity
 chapter: "03"
-order: 9
+order: 12
 owner: "Minjoo Lee"
 ---
 이 절에서는 quasiconvexity를 유지하는 연산에 대해 살펴본다.

@@ -2,7 +2,7 @@
 layout: post
 title: 03-02 Operations that preserve convexity
 chapter: "03"
-order: 4
+order: 6
 owner: "Minjoo Lee"
 ---
 이 절에서는 convex function 의 convexity를 유지하는 연산에 대해 살펴본다. 
