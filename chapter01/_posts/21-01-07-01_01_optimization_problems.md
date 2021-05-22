@@ -2,7 +2,7 @@
 layout: post
 title: 01-01 Optimization problems?
 chapter: "01"
-order: 1
+order: 2
 owner: "Kyeongmin Woo"
 ---
 
