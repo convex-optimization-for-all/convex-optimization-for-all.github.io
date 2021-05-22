@@ -6,4 +6,4 @@ order: 1
 owner: "Kyeongmin Woo"
 ---
 
-Mathematical Optimization-특히 Convex Optimization-에 대한 전반적인 소개.
+Mathematical Optimization Problem -특히 Convex Optimization Problem-에 대한 소개.
