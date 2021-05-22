@@ -2,7 +2,7 @@
 layout: post
 title: 01-03 Goals and Topics
 chapter: "01"
-order: 3
+order: 4
 owner: "Kyeongmin Woo"
 ---
 

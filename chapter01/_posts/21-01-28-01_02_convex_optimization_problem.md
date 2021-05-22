@@ -2,7 +2,7 @@
 layout: post
 title: 01-02 Convex optimization problem
 chapter: "01"
-order: 2
+order: 3
 owner: "Kyeongmin Woo"
 ---
 
