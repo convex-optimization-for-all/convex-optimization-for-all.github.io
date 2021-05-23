@@ -2,7 +2,7 @@
 layout: post
 title: 03-01-02 Examples of convex functions
 chapter: "03"
-order: 2
+order: 4
 owner: "Minjoo Lee"
 ---
 이 절에서는 대표적인 convex function에 대해 살펴본다. Convex fnuction에는 다음과 같은 것들이 있다.

@@ -2,7 +2,7 @@
 layout: post
 title: 03-03 The conjugate function
 chapter: "03"
-order: 5
+order: 7
 owner: "Minjoo Lee"
 ---
 Conjugate 함수에 대해 알아보자

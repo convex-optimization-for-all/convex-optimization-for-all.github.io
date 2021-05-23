@@ -2,7 +2,7 @@
 layout: post
 title: 03-01-03 Key properties of convex functions
 chapter: "03"
-order: 3
+order: 5
 owner: "Minjoo Lee"
 ---
 ## Epigraph characterization
