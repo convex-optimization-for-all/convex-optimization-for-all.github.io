@@ -8,43 +8,38 @@ layout: default
 </div>
 
 {% assign full_name = page.chapter | prepend: "chapter" %}
-{% assign post_list = site.categories[full_name] | sort_natural: "order" %}
+{% assign post_list = site.categories[full_name] | sort_natural %}
 
-{% assign post_order = page.order%}
+<ul style="list-style: none;">
+  <li style="text-align:left; vertical-align: middle; margin-left: -2em; margin-top: 5px;" >
+    <h3>Previous Posts</h3>
+  </li>
+  {% for post in post_list %}
 
-{% assign post_before = page.order | minus: 1 %}
-{% assign post_after = page.order | plus: 1 %}
-
-{% if post_list.size >= 2 %}
-<div class="related">
-  <ul class="related-posts">
-    {% for post in post_list%}
-      {% if post.order == post_before %}
-        <li>
-          <h2>Previous Post</h2>
-          <h3>
-            <a href="{{ site.baseurl }}{{ post.url }}">
-              {{ post.title }}
-            </a>
-          </h3>
+    {% if post.title != page.title%}
+      {% assign title_parts = post.title | split: " " %}
+      {% assign subchapter = title_parts | first %}
+      {% assign subchapter_level = subchapter | split: "-" %}
+      {% if subchapter_level.size < 3 %}
+        <li style="text-align:left; vertical-align: middle; margin-left: -2em; margin-top: 5px;" >
+            <a href="{{ post.url }}">{{post.title}}</a>
         </li>
       {% endif %}
-    {% endfor %}
-    {% for post in post_list%}
-    {% if post.order == post_after %}
-      <li>
-        <h2>Next Post</h2>
-        <h3>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-          </a>
-        </h3>
+      {% if subchapter_level.size >= 3 %}
+        <li style="text-align:left; vertical-align: middle;  margin-left: 0em;" >
+          <a href="{{ post.url }}"> {{ post.title }}</a>
+        </li>
+      {% endif %}
+    {% endif %}
+
+    {% if post.title == page.title%}
+      <li style="text-align:left; vertical-align: middle; margin-left: -2em; margin-top: 5px;" >
+        <h3>Next Posts</h3>
       </li>
     {% endif %}
+
   {% endfor %}
-  </ul>
-</div>
-{% endif %}
+</ul>
 
 <script src="https://utteranc.es/client.js"
         repo="convex-optimization-for-all/convex-optimization-for-all.github.io"
