@@ -6,16 +6,16 @@ order: 1
 owner: kyeongminwoo
 ---
 
-1. [다루는 내용들]({% link index.html %}#다루는-내용들)
-2. [Open Source 참여 가이드]({% link index.html %}#open-source-참여-가이드)
-3. [저자 서문]({% link index.html %}#저자-서문)
-4. [옮긴이 서문]({% link index.html %}#옮긴이-서문)
-5. [만든 사람들]({% link index.html %}#만든-사람들)
-6. [저자 소개]({% link index.html %}#저자-소개)
+- [목차]({% link index.html %}#목차)
+- [오픈소스 참여가이드]({% link index.html %}#오픈소스-참여가이드)
+- [저자 서문]({% link index.html %}#저자-서문)
+- [옮긴이 서문]({% link index.html %}#옮긴이-서문)
+- [만든 사람들]({% link index.html %}#만든-사람들)
+- [저자 소개]({% link index.html %}#저자-소개)
 
 -----------------------
 
-## 다루는 내용들
+## 목차 
 
 
 | idx | Title | Book | Lecture | Slide |

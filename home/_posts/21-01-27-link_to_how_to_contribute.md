@@ -6,7 +6,7 @@ order: 2
 owner: kyeongminwoo
 ---
 
-## Open Source 참여 가이드
+## 오픈소스 참여가이드
 
 {% assign posts = site.categories.contribution | sort: "order" %}
 {% for post in posts %}
