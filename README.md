@@ -86,6 +86,10 @@ wgm0601@gmail.com / 우경민 (마키나락스)
 
 [원저자 및 리뷰어 상세소개](./AUTHORS.md)
 
+## 테마
+
+- [Lanyon](https://github.com/poole/lanyon) by [Mark Otto](https://github.com/mdo)
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
