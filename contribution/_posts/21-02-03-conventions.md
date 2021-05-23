@@ -13,11 +13,15 @@ owner: "Kyeongmin Woo"
 
 ```
 contents
-|
-chapter01
-  | - _posts
-    | - 20-01-08-text.md
-  | - index.html
+├── chapter01
+│   ├── _posts
+│   │   ├── 21-01-07-01_00_Introduction.md
+│   │   ├── 21-01-07-01_01_optimization_problems.md
+│   │   ├── 21-01-28-01_02_convex_optimization_problem.md
+│   │   ├── 21-01-28-01_03_goals_and_topics.md
+│   │   └── 21-01-28-01_04_brief_history_of_convex_optimization.md
+│   ├── index.html
+...
 ```
 
 - Jekyll에서는 `_posts` 디렉토리 내에 있는 Markdown 또는 html 파일을 블로그의 Posting으로 인식합니다. 따라서 새로운 포스팅을 작성하고자 한다면 각 디렉토리의 `_posts`에 새로 파일을 추가하시면 됩니다.
