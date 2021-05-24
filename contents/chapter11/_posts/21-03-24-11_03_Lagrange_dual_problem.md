@@ -2,11 +2,11 @@
 layout: post
 title: 11-3 Lagrange dual problem
 chapter: "11"
-order: 3
+order: 4
 owner: "Wontak Ryu"
 ---
 
-다음과 같이 문제가 주어졌다고 하자.  
+다음과 같이 문제가 주어졌다고 하자.
 >
 $$
 \begin{alignat}{1}
@@ -39,7 +39,7 @@ g(u,v) & = \min_x \\{ f(x) + \sum_{i=1}^m u_i h_i(x) + \sum_{j=1}^r v_j l_j(x) \
 
 
 ## Example: nonconvex quartic minimization
-다음 함수 $$f(x)=x^4 - 50 x^2 + 100 x$$를 $$x \geq -4.5$$에 대해 최소화 해 보자.  
+다음 함수 $$f(x)=x^4 - 50 x^2 + 100 x$$를 $$x \geq -4.5$$에 대해 최소화 해 보자.
 
 
 <figure class="image" style="align: center;">
