@@ -43,7 +43,9 @@ Linear program의 duality에 대한 예시로 max flow min cut 문제에 대해 
 
 >$$
 >\begin{align}
->\text{Value of max flow} \leq \text{dual LP of max flow = Optimal value for LP relaxed min cut}\leq \text{Capacity of min cut}\\\\
+>\text{Value of max flow} &\leq \text{dual LP of max flow}\\\\
+>&= \text{Optimal value for LP relaxed min cut}\\\\
+>&\leq \text{Capacity of min cut}\\\\
 >\end{align}
 >$$
 
@@ -63,10 +65,9 @@ Max flow problem이란 위 조건을 만족하는 그래프에 대해서 s에서
 
 >$$
 >\begin{align}
->&\text{Max flow problem}\qquad
->& &\max_{f\in {\mathbb{R}^{|E|}}}  &{\sum_{(s,j)\in E} f_{sj}}    \\\\
->& & &\text{subject to} &{f_{ij}\geq 0,\,f_{ij}\leq c_{i,j}\,\, \text{for all }(i, j)\in E}\\\\
->& & & &{\sum_{(i, k)\in E}f_{ik}=\sum_{(k,j)\in E}f_{kj}}\,\, \text{for all }k\in V \backslash \{s,t\}.\\\\
+>&\max_{f\in {\mathbb{R}^{|E|}}} &&{\sum_{(s,j)\in E} f_{sj}}\\\\
+>&\text{subject to} &&{f_{ij}\geq 0,\,f_{ij}\leq c_{i,j}\,\, \text{for all }(i, j)\in E}\\\\
+>&&&{\sum_{(i, k)\in E}f_{ik}=\sum_{(k,j)\in E}f_{kj}}\,\, \text{for all }k\in V \backslash \{s,t\}.\\\\
 >\end{align}
 >$$
 
@@ -80,16 +81,15 @@ Max flow problem이란 위 조건을 만족하는 그래프에 대해서 s에서
 </figure>
 
   Min cut 문제는 graph의 전체 vertex를 그림에서처럼 색칠된 영역, 색칠되지 않은 영역 두 집합에 나눠서 속하게 하는데, 한 집합에는 source를 포함하고, 나머지 집합에는 sink를 포함하되, 나머지 vertex는 임의로 두 집합 중 하나에 속하게 나눈다(여기서는 source를 포함하는 집합을 A, sink를 포함하는 집합을 B라고 할 것이다),이때 집합 A에서 B로 진행하는 방향의 edge들의 capacity 총합을 cut이라고 정의한다. 
-  
+
   다시 말해, cut은 source와 sink를 각각 다른 partition에 존재하게 구분하는 graph의 vertex partition이다. min cut은 graph가 주어졌을 때 이 cut의 최솟값을 찾는 문제이다. 일반적으로 정의되는 min cut 문제의 경우 directed graph 상에서 정의되기 때문에, 항상 source $$x_{s}=1$$, sink $$x_{t}=0$$을 만족한다. 아래의 문제 정의에는 이 부분이 생략되어 있다.
 
 >$$
 >\begin{align}
->\text{Min cut problem}\qquad
->&\qquad \min_{b\in {\mathbb{R}^{|E|}},\, x \in {\mathbb{R}^{|V|}} } &{\sum_{(i,j)\in E} b_{ij}c_{ij}}\\\\
->&\qquad \text{subject to} &{b_{ij} \geq x_{i}-x_{j}} \\\\
->&\qquad  &{b_{ij},\,x_{i},\,x_{j}\,\in \{ 0,1 \} }\\
->&\qquad &\text{for all }i, j.\\\\
+>&\min_{b\in {\mathbb{R}^{|E|}},\, x \in {\mathbb{R}^{|V|}} } &&{\sum_{(i,j)\in E} b_{ij}c_{ij}}\\\\
+>&\text{subject to} &&{b_{ij} \geq x_{i}-x_{j}}\\\\
+>&&&{b_{ij},\,x_{i},\,x_{j}\,\in \{ 0,1 \} }\\\\
+>&&&\text{for all }i, j.\\\\
 >\end{align}
 >$$
 
@@ -110,7 +110,7 @@ Max flow의 최적화 문제에 대하여 dual을 구해보자.
 
 primal LP의 목적함수와 관계된 $$f$$항을 좌항으로, 그 나머지는 우항으로 정리한다. 
 
-그 다음, 이 과정에서 우리가 원하는 것은 primal LP의  상한(upper bound)이므로, 좌항의 $f$앞에 곱해져 있는 항들의 결과가 primal LP의 목적함수와 일치하도록 만드는 식을 찾는다. 
+그 다음, 이 과정에서 우리가 원하는 것은 primal LP의  상한(upper bound)이므로, 좌항의 $$f$$ 앞에 곱해져 있는 항들의 결과가 primal LP의 목적함수와 일치하도록 만드는 식을 찾는다. 
 
 이 식을 만족하도록 하는 조건이 dual LP에서의 constraint가 된다. 
 
@@ -128,25 +128,35 @@ primal LP의 목적함수와 관계된 $$f$$항을 좌항으로, 그 나머지�
 
 두 번째 시그마의 x항의 k는 source와 sink에 대해서는 포함되지 않음을 유의하면서, $$i=s, j\neq t$$인 경우, $$i\neq s, j=t$$인 경우, $$i\neq s,j\neq t$$가 아닌 경우로 나누어 좌항을 정리할 수 있다.
 
+### Case 1. $$i = s, j \neq t.$$
+
+$$x_{k}$$에 곱해진 항에 대해서 $$k=j$$인 경우를 제외하고는, flow의 세번째 조건에 의해 소거된다.
+따라서, 두 번째 항의 $$x$$항에 대한 시그마를 다음과 같이 정리할 수 있다.
+
 >$$
 >\begin{align}
->&\text{Case 1. } i = s, j \neq t.&\\\\ 
->&\text{$x_{k}$에 곱해진 항에 대해서 $k=j$인 경우를 제외하고는, flow의 세번째 조건에 의해 소거된다.}\\\\ 
->&\text{따라서, 두 번째 항의 $x$항에 대한 시그마를 다음과 같이 정리할 수 있다.}  \\\\
 >&=\sum_{(s,j)\in E}{\Big((b_{sj}-a_{sj})f_{sj}\Big)}+x_{j}\sum_{(s,j)\in E}{f_{sj}}+\sum_{k\in V\backslash \\{s,t,j\\}}{x_{k}\Big(\underbrace{\sum_{(s,k)\in E}{f_{sk}}-\sum_{(k,j)\in E}{f_{kj}}}_{=0}\Big)} \\\\
 >&=\sum_{(s,j)\in E}{\Big(b_{sj}-a_{sj}+x_{j}\Big)f_{sj}}, \ j \in V \backslash \{s,t\},\\\\
->\, \\\\
->\, \\\\
->&\text{Case 2. } i \neq s, j = t.&\\\\ 
->&\text{$x_{k}$에 곱해진 항에 대해서 $k=i$인 경우를 제외하고는, flow의 세 번째 조건에 의해 소거된다.}\\\\ 
->&\text{따라서, 두 번째 항의 $x$항에 대한 시그마를 다음과 같이 정리할 수 있다.}  \\\\
+>\end{align}
+>$$
+
+### Case 2. $$i \neq s, j = t.$$
+$$x_{k}$$에 곱해진 항에 대해서 $$k=i$$인 경우를 제외하고는, flow의 세 번째 조건에 의해 소거된다.
+따라서, 두 번째 항의 $$x$$항에 대한 시그마를 다음과 같이 정리할 수 있다.
+
+>$$
+>\begin{align}
 >&=\sum_{(i,t)\in E}{\Big((b_{it}-a_{it})f_{it}\Big)}-x_{i}\sum_{(i,t)\in E}{f_{it}}+\sum_{k\in V\backslash \{s,t,i\}}{x_{k}\Big(\underbrace{\sum_{(i,k)\in E}{f_{ik}}-\sum_{(k,t)\in E}{f_{kt}}}_{=0}\Big)} \\\\
 >&=\sum_{(i,t)\in E}{\Big(b_{it}-a_{it}-x_{i}\Big)f_{it}}, \ i \in V\backslash \{s,t\},\\\\
->\, \\\\
->\, \\\\
->&\text{Case 3. } i \neq s, j \neq t.&\\\\ 
->&\text{$x_{k}$에 곱해진 항에 대해서 $k=i, k=j$인 경우를 제외하고는, flow의 세 번째 조건에 의해 소거된다.}\\\\ 
->&\text{따라서, 두 번째 항의 $x$항에 대한 시그마를 다음과 같이 정리할 수 있다.}  \\\\
+>\end{align}
+>$$
+
+### Case 3. $$i \neq s, j \neq t.$$
+$$x_{k}$$에 곱해진 항에 대해서 $$k=i, k=j$$인 경우를 제외하고는, flow의 세 번째 조건에 의해 소거된다.
+따라서, 두 번째 항의 $$x$$항에 대한 시그마를 다음과 같이 정리할 수 있다.
+
+>$$
+>\begin{align}
 >&=\sum_{(i,j)\in E}{\Big((b_{ij}-a_{ij})f_{ij}\Big)}+x_{j}\sum_{(i,j)\in E}{f_{ij}}-x_{i}\sum_{(i,j)\in E}{f_{ij}}+\sum_{k\in V\backslash \{s,t,i,j\}}{x_{k}\Big(\underbrace{\sum_{(i,k)\in E}{f_{ik}}-\sum_{(k,j)\in E}{f_{kj}}}_{=0}\Big)} \\\\
 >&=\sum_{(i,j)\in E}{\Big(b_{ij}-a_{ij}+x_{j}-x_{i}\Big)f_{ij}}, \ i, j \in V \backslash \{s,t\}. \\\\
 >\end{align}
@@ -168,9 +178,9 @@ primal LP의 목적함수는 이 세 가지 케이스 중 첫 번째 케이스�
 
 >$$
 >\begin{align}
->&\min_{b\in {\mathbb{R}^{|E|}},\, x\in{\mathbb{R}^{|V|}}}  &{\sum_{(i,j)\in E} b_{ij}c_{ij}} \\\\
->&\text{subject to} &{b_{ij}+x_{j}-x_{i}\geq 0 \,\, \text{for all } (i,j)\in E}\\\\
->& &{b\geq 0, x_{s}=1,x_{t}=0}.\\\\
+>&\min_{b\in {\mathbb{R}^{|E|}},\, x\in{\mathbb{R}^{|V|}}}  &&{\sum_{(i,j)\in E} b_{ij}c_{ij}} \\\\
+>&\text{subject to} &&{b_{ij}+x_{j}-x_{i}\geq 0 \,\, \text{for all } (i,j)\in E}\\\\
+>&&&{b\geq 0, x_{s}=1,x_{t}=0}.\\\\
 >\end{align}
 >$$
 
@@ -183,7 +193,7 @@ primal LP의 목적함수는 이 세 가지 케이스 중 첫 번째 케이스�
 
 >$$
 >\begin{align}
->x_{i} \in \{0,1 \} \ \ \text{ for all }i\in V.    
+>x_{i} \in \{0,1 \} \ \ \text{ for all }i\in V.
 >\end{align}
 >$$
 
@@ -195,8 +205,8 @@ primal LP의 목적함수는 이 세 가지 케이스 중 첫 번째 케이스�
 
 >$$
 >\begin{align}
->\text{Let } A= \{ i:x_{i}=1 \} ,\, B= \{ i:x_{i}=0 \} \\\\
-\text{note that  } s \in A, \,t \in B, \text{ and  }b_{ij}\geq x_{i}-x_{j} \,\,\,\, \text{for }\,(i,j) \in E, \,\, b\geq 0,\\\\
+>&\text{Let } A= \{ i:x_{i}=1 \} ,\, B= \{ i:x_{i}=0 \} \\\\
+>&\text{note that  } s \in A, \,t \in B, \text{ and  }b_{ij}\geq x_{i}-x_{j} \,\,\,\, \text{for }\,(i,j) \in E, \,\, b\geq 0,\\\\
 >\end{align}
 >$$
 >$$
@@ -213,7 +223,9 @@ primal LP의 목적함수는 이 세 가지 케이스 중 첫 번째 케이스�
 
 >$$
 >\begin{align}
->\text{Value of max flow} \leq \text{Dual LP of max flow = Optimal value for LP relaxed min cut}\leq \text{Capacity of min cut}\\\\
+>\text{Value of max flow} &\leq \text{Dual LP of max flow}\\\\
+>&= \text{Optimal value for LP relaxed min cut}\\\\
+>&\leq \text{Capacity of min cut}\\\\
 >\end{align}
 >$$
 
