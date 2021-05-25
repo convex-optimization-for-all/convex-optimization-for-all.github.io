@@ -48,7 +48,7 @@ MathJax.Hub.Config({
 >\mathop{\max_{u,v}}_{u \geq 0} \min_x L(x,u,v)
 >$$
 
-Dual problem에서는 정의역에 대한 relaxation이 필요하므로 primal problem의 제약조건에 대해 indicator function으로 동작해서는 안된다. 고정된 $$u, v$$에 대해 $$\min_x$$를 하는 것으로는 primal problem의 제약조건을 강제할 수 없기 때문에 재정의된 dual problem에서 또한 정의역을 relaxation하는 효과가 있다. (참고: [11-02 Lagrange dual function]({% post_url contents/chapter11/21-03-24-11_2_Lagrange_dual_function %}))
+Dual problem에서는 정의역에 대한 relaxation이 필요하므로 primal problem의 제약조건에 대해 indicator function으로 동작해서는 안된다. 고정된 $$u, v$$에 대해 $$\min_x$$를 하는 것으로는 primal problem의 제약조건을 강제할 수 없기 때문에 재정의된 dual problem에서 또한 정의역을 relaxation하는 효과가 있다. (참고: [11-02 Lagrange dual function]({% post_url contents/chapter11/21-03-24-11_02_Lagrange_dual_function %}))
 
 ## Weak and strong duality
 Weak duality와 strong duality에 대해 다시 살펴보도록 한다.

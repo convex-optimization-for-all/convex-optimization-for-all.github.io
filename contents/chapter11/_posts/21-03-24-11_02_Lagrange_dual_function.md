@@ -2,7 +2,7 @@
 layout: post
 title: 11-2 Lagrange dual function
 chapter: "11"
-order: 2
+order: 3
 owner: "Wontak Ryu"
 ---
 
@@ -58,7 +58,7 @@ $$
 
 ##### Lagrangian dual function: 
 
-위 식에서, Lagrangian 함수를 최소화하기 위해, $$x$$에 대해서 미분을 해서 미분값이 $$0$$이 되는 $$x^*$$를 찾는다.  
+위 식에서, Lagrangian 함수를 최소화하기 위해, $$x$$에 대해서 미분을 해서 미분값이 $$0$$이 되는 $$x^*$$를 찾는다.
 \begin{equation}
 Qx - (c-u+A^T v) = 0, 
 \end{equation}
@@ -87,7 +87,7 @@ $$
 모든 $$u \geq 0$$과 $$v$$에 대해, 이것은 primal 최적값 $$f^*$$에 대한 lower bound에 해당된다. 
 
 #### 2) Positive Semidefinite ($$Q \succeq 0$$)
-위와 같은문제이나, 이번에는 $$Q \succeq 0$$ 이면,  
+위와 같은문제이나, 이번에는 $$Q \succeq 0$$ 이면,
 
 ##### Lagrangian: 
 >
@@ -105,11 +105,11 @@ $$
 Qx = (c-u+A^T v) 
 \end{equation}
 $$
-이 때, $$Q$$는 positive semi-definite이므로 역행렬이 존재하지 않을 수 있다. 따라서, 다음의 두가지 경우를 고려해야 한다.  
+이 때, $$Q$$는 positive semi-definite이므로 역행렬이 존재하지 않을 수 있다. 따라서, 다음의 두가지 경우를 고려해야 한다.
 
 (1) $$c-u+A^T v \in col(Q)$$. 이 경우는 위 $$Qx = (c-u+A^T v)$$를 만족시키는 $$x^*$$가 존재하는 것을 의미하며, 이는 generalized inverse $$Q^+$$를 이용하여 찾을 수 있다. (참고로, generalized inverse는 Moore-Penrose Pseudo Inverse로 $$Q^+ = (Q^TQ)^{-1}Q^T)$$이다.)
 
-(2) $$c-u+A^T v \notin col(Q)$$. 이 경우는 위 $$Qx = (c-u+A^T v)$$를 만족시키는 $$x^*$$가 존재하지 않는 것을 의미하며, 즉 $$L(x,u,v)$$가 최소값을 갖도록 하는 $$x^*$$를 갖지 않는 다는 것은 $$L(x,u,v)$$의 최소값이 $$-\infty$$임을 의미함.  
+(2) $$c-u+A^T v \notin col(Q)$$. 이 경우는 위 $$Qx = (c-u+A^T v)$$를 만족시키는 $$x^*$$가 존재하지 않는 것을 의미하며, 즉 $$L(x,u,v)$$가 최소값을 갖도록 하는 $$x^*$$를 갖지 않는 다는 것은 $$L(x,u,v)$$의 최소값이 $$-\infty$$임을 의미함.
 
 위 두 경우로부터, Lagrangian dual function을 아래와 같이 정리할 수 있다. 
 >
@@ -118,7 +118,7 @@ g(u,v) =
 \begin{cases}
 -\frac{1}{2} (c-u+A^T v)^T Q^{+} (c - u + A^T v) - b^T v  & \text{if $c-u+A^T v \perp \text{null}(Q)$} \\\\
 -\infty  & \text{otherwise}
-\end{cases}       
+\end{cases}
 $$
 
 모든 $$u\geq 0$$, $$v$$, $$c-u+A^Tv \perp \text{null}(Q)$$에 대해서, $$g(u,v)$$는 $$f^*$$에 대한 nontrivial lower bound 이다. 
@@ -136,4 +136,4 @@ $$
 
 * 파란점은 최적 dual value 이고, 빨간점은 최적 primal value 이다. 
 * Dual 함수 $$g(u)$$는 0보다 큰 모든 $$u$$에 대해서, $$f^*$$에 대한 lower bound를 제공한다. 
-* Dual 함수 $$g(u)$$의 가장 큰 값이 정확히 $$f^*$$값과 일치함을 보인다. 
+* Dual 함수 $$g(u)$$의 가장 큰 값이 정확히 $$f^*$$값과 일치함을 보인다.
