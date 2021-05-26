@@ -66,7 +66,7 @@ Qx - (c-u+A^T v) = 0,
 \begin{equation}
 Qx = (c-u+A^T v) 
 \end{equation}
-이 때, $$Q$$는 positive definite하므로 역행렬이 존재하므로, $$x^*$$를 찾으면, $$x^* = Q^{-1}(c + u + A^Tv)$$ 임을 알 수 있다. 따라서, $$x^*$$를 Lagrangian 함수에 대입을 하면, 아래를 얻을 수 있다. 
+이 때, $$Q$$는 positive definite하므로 역행렬이 존재하므로, $$x^*$$를 찾으면, $$x^* = Q^{-1}(c - u + A^Tv)$$ 임을 알 수 있다. 따라서, $$x^*$$를 Lagrangian 함수에 대입을 하면, 아래를 얻을 수 있다. 
 
 $$
 \begin{alignat}{1}
