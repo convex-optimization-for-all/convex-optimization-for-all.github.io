@@ -18,7 +18,7 @@ MathJax.Hub.Config({
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/19936/matrix_game.png" alt="Line Segment" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter10/matrix_game.png" alt="Line Segment" width="70%">
   <figcaption style="text-align: center;">[Fig 1] Game Setup[3]</figcaption>
 </p>
 </figure>
