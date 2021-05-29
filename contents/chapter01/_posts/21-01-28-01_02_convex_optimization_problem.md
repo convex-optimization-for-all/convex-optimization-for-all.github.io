@@ -9,9 +9,9 @@ owner: "Kyeongmin Woo"
 Convex optimization problem은 optimization problem의 한 종류이다.
 
 >$$\begin{align*} 
->\min_{x\in D}\ && f(x) \\
->\text{subject to} & & g_i(x) \le 0,\ i = 1, ...m \\
->&& h_j(x) = 0,\ j = 1,\ ...r 
+>&\min_{x\in D}\ &&f(x) \\
+>&\text{subject to} && g_i(x) \le 0,\ i = 1, ...m \\
+>&&& h_j(x) = 0,\ j = 1,\ ...r 
 >\end{align*}$$
 
 **Convex Optimization Problem in standard form [3]**
