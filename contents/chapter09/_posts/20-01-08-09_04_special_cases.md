@@ -47,7 +47,7 @@ Proximal gradient 업데이트 단계는: $$x^+ = P_C (x−t \nabla g(x) )$$와 
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/20230/projected_gradient_descent.png" width="80%" height="80%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter09/projected_gradient_descent.png" width="80%" height="80%">
   <figcaption style="text-align: center;">[Fig1] Projected Gradient Descent [3]]</figcaption>
 </p>
 </figure>
