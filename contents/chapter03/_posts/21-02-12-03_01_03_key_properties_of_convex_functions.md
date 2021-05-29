@@ -56,10 +56,10 @@ $$\sum_{i=1}^{n} w_i f(x_i) ≥ f \left ( \sum_{i=1}^{n} w_i x_i \right )$$<br><
 
 
 함수 $$f$$가 convex 이면 다음 부등식을 만족한다.
->$$$$f(tx_1 + (1 − t)x_2) ≤ tf(x_1) + (1 − t)f(x_2) \text{, for } 0 ≤ t ≤ 1 $$$$
+>$$f(tx_1 + (1 − t)x_2) \le tf(x_1) + (1 − t)f(x_2) \text{ for } 0 \le t \le 1 $$
 
 >*Extension*:<br>
->$$X$$ is a random variable supported on $$dom f$$, then $$f(E[X]) ≤E[f(X)]$$
+>$$X$$ is a random variable supported on $$\text{dom } f$$, then $$f(E[X]) \le E[f(X)]$$
 
 <figure class="image" style="align: center;">
 <p align="center">

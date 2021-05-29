@@ -5,10 +5,12 @@ chapter: "04"
 order: 4
 owner: "YoungJae Choung"
 ---
-> $$
-> \text{min}_{x} \ f(x) \\
-> \text{subject to} x \in C
-> $$
+>$$
+\begin{aligned}
+&\min_x &&f(x) \\
+&\text{subject to} &&x \in C
+\end{aligned}
+$$
 
 위 convex problem에서 objective function $$f$$가 미분 가능할 때, <br>
 아래의 부등식은 optimal point $$x$$에 대한 필요충분 조건이 된다.

@@ -9,12 +9,13 @@ Convex solution set의 성질에 대해 알아보자. <br>
 $$X_{opt}$$를 다음과 같이 어떤 convex problem에 대한 solution의 집합이라고 하겠다.
 
 >$$
->\begin{aligned}
->    X_{opt} = \ &\text{argmin}_x \ f(x) \\
->    \text{subject to} \ g_{i}(x) &\leq 0, i = 1, .., m \\
->    h_{j}(x) &= 0, i = 1, .., r  \\
->\end{aligned}
->$$
+\begin{aligned}
+X_{opt} = 
+&\text{arg}\min_x &&f(x) \\
+&\text{subject to} &&g_{i}(x) \leq 0, i = 1, .., m \\
+&&&h_{j}(x) = 0, i = 1, .., r  \\\\
+\end{aligned}
+$$
 
 ## Key property1
 >$$X_{opt}$$는 convex set이다. 
@@ -38,7 +39,7 @@ $$X_{opt}$$를 다음과 같이 어떤 convex problem에 대한 solution의 집�
     \end{aligned}
     $$ <br>
     즉, $$tx + (1-t)y$$ 또한 solution이다.
-    
+
 #### Geometric interpretation
 Convex function에서의 local optimum은 곧 global optimum이기 때문에 <br>
 복수의 element를 가진 solution set이 있다면 이는 아래와 같은 모양일 수 밖에 없다.<br>
@@ -55,6 +56,8 @@ Convex function에서의 local optimum은 곧 global optimum이기 때문에 <br
 >$$f$$가 strictly convex이라면 solution은 unique하다. 즉, $$X_{opt}$$는 하나의 element만을 갖는다.
 
 $$f$$가 strictly convex라는 것은 $$f$$가 다음과 같은 성질을 항상 만족한다는 것과 같다.<br>
->$$f(tx + (1-t)y) < tf(x) + (1-t)f(y) \text{ where } 0 < t < 1, x \neq y, \text{ and } x, y \in \text{dom } f.$$
+>$$f(tx + (1-t)y) < tf(x) + (1-t)f(y), $$
+>
+>$$\text{where } 0 < t < 1, x \neq y, \text{ and } x, y \in \text{dom } f.$$
 
 즉, $$f$$는 평평한 구간이 없는 아래로 볼록한 형태이며 $$f$$의 solution은 오직 하나이다.

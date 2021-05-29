@@ -57,8 +57,16 @@ Hessian matrix는 함수의 곡률(curvature)을 결정하며 positive semidefin
 모든 $$\mathbb{R}^n$$ 상의 Norm은 Convex 이다. 
 $$f:\mathbb{R}^n -> \mathbb{R}$$를 norm이라 하고 정의에 의해
 
->$$f(θx+(1−θ)y)≤θf(x)+(1−θ)f(y)$$, with $$0≤θ≤1$$, for all $$x,y∈dom f$$  
->$$\rVert x \rVert_{p} = (\sum_{i=1}^{n} x_i^p)^{1/p}$$ for $$p ≥ 1, \rVert x \rVert = max_{i=1,.., n} |x_i|$$
+>$$
+\begin{aligned}
+f(\theta x+(1−\theta)y) \le \theta f(x)+(1−\theta)f(y), \text{  with } \theta \le \theta \le 1, \text{ for all } x,y \in dom f,\\
+\end{aligned} 
+$$
+>$$
+\begin{aligned}
+\|x\|_{p} = (\sum_{i=1}^{n} x_i^p)^{1/p} \text{ for } p ≥ 1, \|x\| = max_{i=1,.., n} |x_i|\\
+\end{aligned} 
+$$
 
 
 ## Indicator function
