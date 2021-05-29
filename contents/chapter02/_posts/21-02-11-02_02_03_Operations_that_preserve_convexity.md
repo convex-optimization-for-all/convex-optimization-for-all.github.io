@@ -50,7 +50,7 @@ Perspective function은 pin-hole 카메라가 작동하는 원리와 같다. 멀
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17372/02.03_03_pine_hole.png" alt="[Fig 1] pin-hole 카메라 작동 원리" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter02/02.03_03_pine_hole.png" alt="[Fig 1] pin-hole 카메라 작동 원리" width="70%">
   <figcaption style="text-align: center;">[Fig 1] pin-hole 카메라 작동 원리</figcaption>
 </p>
 </figure>
@@ -60,7 +60,7 @@ Perspective function은 pin-hole 카메라가 작동하는 원리와 같다. 멀
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17372/02.03_04_pine_hole_camera_model.png" alt="[Fig 2] pin-hole 카메라의 perspective function [1]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter02/02.03_04_pine_hole_camera_model.png" alt="[Fig 2] pin-hole 카메라의 perspective function [1]" width="70%">
   <figcaption style="text-align: center;">[Fig 2] pin-hole 카메라의 perspective function [1]</figcaption>
 </p>
 </figure>
@@ -79,7 +79,7 @@ Linear-fractional function에서 $$c = 0$$이고 $$d \gt 0$$이면 affine functi
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17372/02.03_05_linear_fractional_function.PNG" alt="[Fig 3] Linear-fractional functions [1]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter02/02.03_05_linear_fractional_function.PNG" alt="[Fig 3] Linear-fractional functions [1]" width="70%">
   <figcaption style="text-align: center;">[Fig 3] Linear-fractional functions [1]</figcaption>
 </p>
 </figure>

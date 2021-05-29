@@ -13,7 +13,7 @@ Conjugate function은 뒷장에서 다룰 Lagrange Dual에서 최적화 문제�
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/17428/conjugate_function.png" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter03/conjugate_function.png" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig1] Conjugate function [2]</figcaption>
 </p>
 </figure>

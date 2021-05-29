@@ -46,7 +46,7 @@ Convex function에서의 local optimum은 곧 global optimum이기 때문에 <br
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/18263/multiple-optima.png" alt="[Fig1] geometric interpretation of convexity of the solution set">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter04/multiple-optima.png" alt="[Fig1] geometric interpretation of convexity of the solution set">
   <figcaption style="text-align: center;">[Fig1] geometric interpretation of convexity of the solution set</figcaption>
 </p>
 </figure>

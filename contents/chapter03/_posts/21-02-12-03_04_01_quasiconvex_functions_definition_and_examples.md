@@ -21,7 +21,7 @@ $$f$$가 quasiconvex이고 qausiconcave일 때, 이를 **quasilinear**라고 하
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/17416/Fig3.9_quasiconvex_ftn_cAsoUpr.PNG" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter03/Fig3.9_quasiconvex_ftn_cAsoUpr.PNG" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig1] quasiconvex function on R [1]</figcaption>
 </p>
 </figure>

@@ -27,7 +27,7 @@ $$x$$는 optimal point가 된다.<br>
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/18337/first-order-condition.png" alt="[Fig1] geometric interpretation of first-order condition for optimality [3]">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter04/first-order-condition.png" alt="[Fig1] geometric interpretation of first-order condition for optimality [3]">
   <figcaption style="text-align: center;">[Fig1] geometric interpretation of first-order condition for optimality [3]</figcaption>
 </p>
 </figure>

@@ -17,7 +17,7 @@ owner: "Minjoo Lee"
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/17495/convex_function01.png" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter03/convex_function01.png" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig1] Convex Function [2]</figcaption>
 </p>
 </figure>

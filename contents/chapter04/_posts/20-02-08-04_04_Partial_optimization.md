@@ -12,7 +12,7 @@ $$C$$가 convex set이고 $$f$$가 $$(x,y)$$에 대해 convex일때, $$g(x) = \m
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/18367/partial-optimization.png" alt="[Fig1] partial optimization of a convex problem [3]">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter04/partial-optimization.png" alt="[Fig1] partial optimization of a convex problem [3]">
   <figcaption style="text-align: center;">[Fig1] partial optimization of a convex problem [3]</figcaption>
 </p>
 </figure>

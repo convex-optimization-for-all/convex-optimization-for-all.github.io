@@ -18,7 +18,7 @@ owner: "Wontak Ryu"
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17371/02.08_Norm_Cone.PNG" alt="[Fig1] Norm Cone [1]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter02/02.08_Norm_Cone.PNG" alt="[Fig1] Norm Cone [1]" width="70%">
   <figcaption style="text-align: center;">[Fig1] Norm Cone [1]</figcaption>
 </p>
 </figure>
@@ -41,7 +41,7 @@ Normal cone은 집합 $$C$$에 속하는 임의의 점 $$x$$와 집합 $$C$$의 
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17371/02.04_2_Normal_Cone.PNG" alt="[Fig2] Normal Cone [3]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter02/02.04_2_Normal_Cone.PNG" alt="[Fig2] Normal Cone [3]" width="70%">
   <figcaption style="text-align: center;">[Fig2] Normal Cone [3]</figcaption>
 </p>
 </figure>
@@ -66,7 +66,7 @@ y, z
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17371/02.10_Positive_Semidefinite_Cone.PNG" alt="[Fig3] Positive semidefinite cone [1]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter02/02.10_Positive_Semidefinite_Cone.PNG" alt="[Fig3] Positive semidefinite cone [1]" width="70%">
   <figcaption style="text-align: center;">[Fig3] Positive semidefinite cone [1]</figcaption>
 </p>
 </figure>
