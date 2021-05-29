@@ -57,7 +57,7 @@ KKT conditions를 통해 얻은 수식들을 이용하면 $$x^\star, \lambda^\st
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/20961/water-fill.png" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl}}/img/chapter_img/chapter12/water-fill.png" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig1] Illustration of water-filling algorithm [1]</figcaption>
 </p>
 </figure>

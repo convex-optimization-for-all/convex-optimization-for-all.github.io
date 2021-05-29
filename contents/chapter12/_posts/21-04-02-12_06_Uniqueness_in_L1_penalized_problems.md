@@ -140,7 +140,7 @@ $$
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/20964/l1_uniqueness.png" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter12/l1_uniqueness.png" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig 1] 4 elements on 2-dimensional affine space [3]</figcaption>
 </p>
 </figure>

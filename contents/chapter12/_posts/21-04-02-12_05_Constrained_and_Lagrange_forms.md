@@ -61,7 +61,7 @@ $$f(x) + \lambda \cdot (h(x) - t)$$
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/20963/conclusion.png" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter12/conclusion.png" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig1] Conclusion [3]</figcaption>
 </p>
 </figure>
