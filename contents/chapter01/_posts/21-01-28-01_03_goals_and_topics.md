@@ -27,7 +27,7 @@ owner: "Kyeongmin Woo"
 
 #### Example: Total variation denoising
 
-![](https://wikidocs.net/images/page/17206/2d_fused_lasso.png)
+![]({{ site.baseurl  }}/img/chapter_img/chapter01/2d_fused_lasso.png)
 
 **[Fig1] total variation denoising [3]**
 
@@ -42,13 +42,13 @@ owner: "Kyeongmin Woo"
 앞서 정의된 convex optimization problem은 [Specialized ADMM](http://stanford.edu/~boyd/admm.html) 알고리즘을 이용하면 20번의 iteration으로 우측과 같은 solution을 얻을 수 있다.
 
 #### Specialized ADMM, 20 iterations
-![](https://wikidocs.net/images/page/17208/result1.png)
+![]({{ site.baseurl  }}/img/chapter_img/chapter01/result1.png)
 
 #### Proximal gradient descent, 1000 iterations
-![](https://wikidocs.net/images/page/17208/result2.png)
+![]({{ site.baseurl  }}/img/chapter_img/chapter01/result2.png)
 
 #### Coordinate descent, 10K cycles
-![](https://wikidocs.net/images/page/17208/result3.png)
+![]({{ site.baseurl  }}/img/chapter_img/chapter01/result3.png)
 
 **[Fig2] total variation denoising [3]**
 

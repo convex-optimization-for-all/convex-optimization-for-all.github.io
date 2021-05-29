@@ -63,7 +63,7 @@ convex function과 convex set 사이에는 다음과 같은 밀접한 관계가 
 $$
 
 
-![](https://wikidocs.net/images/page/17206/epigraph.png)
+![]({{ site.baseurl  }}/img/chapter_img/chapter01/epigraph.png)
 
 **[Fig3] epigraph [2]**
 
