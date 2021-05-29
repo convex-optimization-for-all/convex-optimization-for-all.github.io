@@ -16,9 +16,9 @@ MathJax.Hub.Config({
 
 >$$
 >\begin{align}
->&\min_{x} &f(x)\\\\
->&\text{subject to} &Ax = b\\\\
->& &Gx \leq h\\\\
+>&\min_{x} &&f(x)\\\\
+>&\text{subject to} &&Ax = b\\\\
+>& &&Gx \leq h\\\\
 >\end{align}
 >$$
 

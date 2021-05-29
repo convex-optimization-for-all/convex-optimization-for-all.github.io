@@ -21,8 +21,8 @@ $$c\in\mathbb{R}^{n},\, A\in\mathbb{R}^{m\times n},\, b\in\mathbb{R}^{m},\, G\in
 >$$
 >\begin{align}
 >&\min_{x} &c^{T}x\\\\
->&\text{subject to} &Ax = b\\\\
->& &Gx \leq h.\\\\
+>&\text{subject to} &&Ax = b\\\\
+>& &&Gx \leq h.\\\\
 >\end{align}
 >$$
 
@@ -57,9 +57,9 @@ constraint와 각 dual variable의 곱의 합으로 dual 문제의 objective fun
 
 >$$
 >\begin{align}
->&\max_{u,v} &-b^{T}u-h^{T}v \\\\
->&\text{subject to} &c = -A^{T}u-G^{T}v \\\\
->& &v\geq 0.
+>&\max_{u,v} &&-b^{T}u-h^{T}v \\\\
+>&\text{subject to} &&c = -A^{T}u-G^{T}v \\\\
+>& &&v\geq 0.
 >\end{align}
 >$$
 
