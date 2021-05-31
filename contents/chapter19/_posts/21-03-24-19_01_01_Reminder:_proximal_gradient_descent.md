@@ -59,7 +59,7 @@ x^+ & = \underset{z}{\text{argmin}}  \, \frac{1}{2t} \parallel x - t \nabla g(x)
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/22431/09.01_01_proximal_gradient_descent.PNG" alt="[Fig 1] Proximal gradient descent updates [3]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter19/09.01_01_proximal_gradient_descent.PNG" alt="[Fig 1] Proximal gradient descent updates [3]" width="70%">
   <figcaption style="text-align: center;">[Fig 1] Proximal gradient descent updates [3]</figcaption>
 </p>
 </figure>

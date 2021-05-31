@@ -27,7 +27,7 @@ owner: "Hooncheol Shin"
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/22434/09.01_03_projection_operator.PNG" alt="[Fig 1] Projection onto a convex set C [3]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter19/09.01_03_projection_operator.PNG" alt="[Fig 1] Projection onto a convex set C [3]" width="70%">
   <figcaption style="text-align: center;">[Fig 1] Projection onto a convex set C [3]</figcaption>
 </p>
 </figure>
