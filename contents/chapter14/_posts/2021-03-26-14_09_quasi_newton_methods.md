@@ -2,7 +2,7 @@
 layout: post
 title: 14-09 Quasi-Newton methods
 chapter: "14"
-order: "01"5
+order: "15"
 owner: "Minjoo Lee"
 ---
 <script type="text/x-mathjax-config">

@@ -2,7 +2,7 @@
 layout: post
 title: 06-05 Stochastic gradient descent
 chapter: "06"
-order: "01"4
+order: "14"
 owner: "Kyeongmin Woo"
 ---
 

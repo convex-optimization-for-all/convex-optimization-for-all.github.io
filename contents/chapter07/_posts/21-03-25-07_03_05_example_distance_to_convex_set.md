@@ -2,7 +2,7 @@
 layout: post
 title: "07-03-05 Example: Distance to a Convex Set"
 chapter: "07"
-order: "01"1
+order: "11"
 owner: "Kyeongmin Woo"
 ---
 

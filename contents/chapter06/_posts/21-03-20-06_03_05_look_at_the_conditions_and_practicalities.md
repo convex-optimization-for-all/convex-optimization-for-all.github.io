@@ -2,7 +2,7 @@
 layout: post
 title: 06-03-05 A look at the conditions & Practicalities
 chapter: "06"
-order: "01"1
+order: "11"
 owner: "Kyeongmin Woo"
 ---
 

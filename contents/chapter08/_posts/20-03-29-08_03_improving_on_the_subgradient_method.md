@@ -2,7 +2,7 @@
 layout: post
 title: 08-03 Improving on the Subgradient Method
 chapter: "08"
-order: "01"7
+order: "17"
 owner: "Kyeongmin Woo"
 ---
 

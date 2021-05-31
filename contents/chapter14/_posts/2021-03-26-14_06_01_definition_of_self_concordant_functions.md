@@ -2,7 +2,7 @@
 layout: post
 title: 14-06-01 Definition of self-concordant functions
 chapter: "14"
-order: "01"1
+order: "11"
 owner: "Minjoo Lee"
 ---
 <script type="text/x-mathjax-config">

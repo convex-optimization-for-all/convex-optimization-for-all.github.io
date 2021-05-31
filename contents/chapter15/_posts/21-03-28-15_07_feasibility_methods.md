@@ -2,7 +2,7 @@
 layout: post
 title: 15-07 Feasibility methods
 chapter: "15"
-order: "01"3
+order: "13"
 owner: "Minjoo Lee"
 ---
 지금까지 첫번째 centering step($$t = t^{(0)}$$)에서 $$x^{(0)} = x^*$$를 계산하기 위해 strictly feasible point에서 시작한다고 암묵적으로 가정을 했다. 

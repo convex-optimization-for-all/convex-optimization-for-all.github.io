@@ -2,7 +2,7 @@
 layout: post
 title: 15-08 Formal barrier method
 chapter: "15"
-order: "01"4
+order: "14"
 owner: "Minjoo Lee"
 ---
 Open convex set $$D \subset \mathbb{R}^n$$로 정의되는 convex function $$\phi : D \to \mathbb{R}$$가 다음의 조건을 만족시키면, 그 function은 파라미터 $$\nu$$를 갖는 **self-concordant barrier**이다.

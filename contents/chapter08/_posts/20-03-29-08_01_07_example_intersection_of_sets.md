@@ -2,7 +2,7 @@
 layout: post
 title: "08-01-07 Example: Intersection of sets"
 chapter: "08"
-order: "01"0
+order: "10"
 owner: "Kyeongmin Woo"
 ---
 

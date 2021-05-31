@@ -2,7 +2,7 @@
 layout: post
 title: 09-05-04 Is acceleration always useful?
 chapter: "09"
-order: "01"0
+order: "10"
 owner: "Kyeongmin Woo"
 ---
 

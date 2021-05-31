@@ -2,7 +2,7 @@
 layout: post
 title: 02-06 Dual cones and generalized inequalities
 chapter: "02"
-order: "01"2
+order: "12"
 owner: "Wontak Ryu"
 ---
 

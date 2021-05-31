@@ -2,7 +2,7 @@
 layout: post
 title: 14-07 Comparison to first-order method
 chapter: "14"
-order: "01"3
+order: "13"
 owner: "Minjoo Lee"
 ---
 <script type="text/x-mathjax-config">

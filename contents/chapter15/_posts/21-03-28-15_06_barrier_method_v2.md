@@ -2,7 +2,7 @@
 layout: post
 title: 15-06 Barrier method v.2
 chapter: "15"
-order: "01"2
+order: "12"
 owner: "Minjoo Lee"
 ---
 이전 알고리즘에서는 central path에 있는 solution을 생성했는데, 실제 centeral path는 optimal로 가는 과정("means to an end")일 뿐이다. 따라서, 문제를 정확히 풀 필요는 없다.

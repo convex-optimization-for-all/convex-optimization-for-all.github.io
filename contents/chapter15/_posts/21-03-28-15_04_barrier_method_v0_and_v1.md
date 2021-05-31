@@ -2,7 +2,7 @@
 layout: post
 title: 15-04 Barrier method v.0 and v.1
 chapter: "15"
-order: "01"0
+order: "10"
 owner: "Minjoo Lee"
 ---
 ## Barrier method v.0
