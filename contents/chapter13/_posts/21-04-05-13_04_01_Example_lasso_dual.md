@@ -71,7 +71,7 @@ $$z (즉, z−y + β = 0)$$.
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/21003/Conjugate_LassoDual_Example.png" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter13/Conjugate_LassoDual_Example.png" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig2] Lasso Dual [1]</figcaption>
 </p>
 </figure>

@@ -40,7 +40,7 @@ Damped Newton's method는 이전의 backtracking line search와 동일하게, up
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/21334/2.jpg" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter14/2.jpeg" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig 1] Logistic regression [3]</figcaption>
 </p>
 </figure>

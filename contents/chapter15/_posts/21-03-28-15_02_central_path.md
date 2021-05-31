@@ -34,7 +34,7 @@ owner: "Minjoo Lee"
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/21298/15_central_path_02.PNG" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter15/15_central_path_02.png" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig 1] Central path [1]</figcaption>
 </p>
 </figure>

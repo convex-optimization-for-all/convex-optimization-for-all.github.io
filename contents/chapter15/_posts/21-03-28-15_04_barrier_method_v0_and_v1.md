@@ -56,7 +56,7 @@ $$\mu$$와 $$t^{(0)}$$의 선택에 있어서, 다음의 trade off를 고려해�
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/21300/15_barrier_method_03.PNG" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter15/15_barrier_method_03.png" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig 1] Example of small LP [3]</figcaption>
 </p>
 </figure>

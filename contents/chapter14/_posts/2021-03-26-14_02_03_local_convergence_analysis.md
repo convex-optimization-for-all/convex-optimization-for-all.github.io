@@ -52,7 +52,7 @@ pure Netwon's method로 수렴이 보장되지 않는 예시를 간략하게 살
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/21708/1_.png" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter14/1_.png" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig 1] pure Newton's method applied on root finding : divergence case </figcaption>
 </p>
 </figure>
