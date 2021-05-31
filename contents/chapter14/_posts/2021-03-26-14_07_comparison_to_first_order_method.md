@@ -25,7 +25,7 @@ MathJax.Hub.Config({
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="{{ site.baseurl }}/img/chapter_img/chapter14/gd.jpeg" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter14/gd(1).jpeg" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig 1] Logistic regression [3]</figcaption>
 </p>
 </figure>

@@ -8,9 +8,12 @@ owner: "Wontak Ryu"
 
 $$y ∈ \mathbb{R}^n, X ∈ \mathbb{R}^{n×p}$$인 lasso 문제를 다시 살펴보자
 
-> $$ \min_β \frac{1}{2} \rVert y−Xβ \rVert^2_2 + λ\rVert β \rVert_1 \\ $$
-> $$f(β) = \frac{1}{2} \rVert y - Xβ \rVert^2_2 +  λ\rVert β \rVert_1 \\ $$
+> $$ \min_β \frac{1}{2} \rVert y−Xβ \rVert^2_2 + λ\rVert β \rVert_1$$
+> 
+> $$f(β) = \frac{1}{2} \rVert y - Xβ \rVert^2_2 +  λ\rVert β \rVert_1$$
+> 
 > $$L(β) = f(β)\\$$
+> 
 >  $$ \min_β L(β) = f^{\star}\\$$
 
 위 수식의 dual 함수는 constant 이다. (= $$f^{*}$$). 
@@ -30,7 +33,9 @@ $$y ∈ \mathbb{R}^n, X ∈ \mathbb{R}^{n×p}$$인 lasso 문제를 다시 살펴
 > g(u) &= \min_{β,z} \frac{1}{2} \rVert y−z \rVert^2_2 + λ \rVert β \rVert_1 + u^T(z−Xβ) \\\
 > &= \underbrace{ \left( \min_z \frac{1}{2} \rVert y - z \rVert^2_2 + u^Tz \right)}_{①} + \underbrace{\left( \min_β  λ \rVert β \rVert_1 + u^TXβ \right)}_{②} \\\
 > \end{align}$$
+> 
 > $$ z^{\star} = y - u$$
+> 
 > $$\begin{align}
 > \text{①} \cdots \left( \min_z \frac{1}{2} \rVert y - z \rVert^2_2 + u^Tz \right)
 > &= \frac{1}{2} \rVert u \rVert^2_2 + u^T(y - u) \\\
@@ -58,6 +63,7 @@ $$y ∈ \mathbb{R}^n, X ∈ \mathbb{R}^{n×p}$$인 lasso 문제를 다시 살펴
 #### [Check]
 Slater’s condition을 을 충족하여 strong duality를 만족한다. 
 > $$ \text{strong duality } \implies (β^{\star}, z^{\star})$$
+> 
 > $$ \text{ must minimize  } L( β, z, u^{\star} ) \text{ over } -u, β, z$$
 
 #### [note]

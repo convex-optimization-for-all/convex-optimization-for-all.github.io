@@ -15,7 +15,7 @@ Newton's method의 두 번째 중요한 성질로는 특정 조건들을 만족�
 
 
 >정리 : $$F : \mathbb{R}^{n}\, \rightarrow  \, \mathbb{R}^{n}$$ 가 연속으로 미분가능(continuosly differentiable)하고,  $$x^{\star} \in \mathbb{R}^{n}$$ 가 함수 $$F$$의 근이라고 하자, 즉, $$F(x^{\star})=0$$이다.
->이때  $$F^{'}(x^{\star}) $$이 non-singular 하다면 아래의 (a), (b)를 만족한다. \\\\
+>이때  $$F^{'}(x^{\star}) $$이 non-singular 하다면 아래의 (a), (b)를 만족한다. \\
 >(a) 만약 $$\|\| x^{(0)}-x^{\star} \|\|<\delta$$를 만족하는 양수의 $$\delta$$\(>0)가 존재하고, Newton's method가 정의되어 있으면 밑의 식(converges superlinearly)을 만족한다.  
 >\begin{align} 
 >\lim_{ k \rightarrow \infty } \frac{ \|\| x^{ (k+1) }-x^{ \star } \|\| } { \|\| x^{ (k) }-x^{ \star } \|\| } =0.
@@ -28,7 +28,7 @@ Newton's method의 두 번째 중요한 성질로는 특정 조건들을 만족�
 ## Proof of (a)
 >Taylor expansion으로 $$F(x^{\star})$$를 1st order까지 정리한다. 2nd order 이상의 항은 1st order의 norm의 상수배에 bound 되므로, little-o notation을 사용하여 다음과 같이 나타낼 수 있다.  
 >\begin{align}
->0=F(x^{\star}) = F(x^{k}) +\nabla F(x^{k})(x^{\star}-x^{k})+o(\|\|x^{k}-x^{\star}\|\|).\\\\
+>0=F(x^{\star}) = F(x^{k}) +\nabla F(x^{k})(x^{\star}-x^{k})+o(\|\|x^{k}-x^{\star}\|\|).\\
 >\end{align}
 >양변에 $$\nabla F(x^{k})^{-1}$$를 곱하고 정리한다. little-o의 경우 상수항 취급되므로 이를 무시할 수 있다.
 >\begin{align}
