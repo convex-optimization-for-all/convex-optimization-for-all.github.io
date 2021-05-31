@@ -14,10 +14,10 @@ owner: "Minjoo Lee"
 ## Barrier method
 아래와  같은 primal 문제가 convex이고 $$f, h_i , i = 1, . . . m$$가 미분가능 할 때,   
 > $$\begin{align}
-\min_{x} & \quad f(x) \\\
-\text{subject to } & \quad h_{i}(x) \leq 0, i = 1, \dotsc, m \\\
-& \quad Ax = b \\\
-\end{align}$$
+> &\min_{x} && f(x) \\
+> &\text{subject to } &&h_{i}(x) \leq 0, i = 1, \dotsc, m \\
+> &&& Ax = b \\
+> \end{align}$$
 
 Log barrier function을 사용하여 다음과 같이 primal 문제를 barrier 문제로 바꿀 수 있다.
 
