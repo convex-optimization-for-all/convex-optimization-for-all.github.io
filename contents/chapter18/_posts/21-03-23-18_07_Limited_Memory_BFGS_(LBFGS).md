@@ -42,7 +42,7 @@ $$H$$가 k번의 BFGS update를 통해 얻이진다고 할때, $$Hq= -H\nabla f(
 ## Algorithm
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/22155/algorithm_quasi-newton.png" alt="[Fig1] The algorithm of LBFGS [3]" width="90%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter18/algorithm_quasi-newton.png" alt="[Fig1] The algorithm of LBFGS [3]" width="90%">
   <figcaption style="text-align: center;">[Fig1] The algorithm of LBFGS [3]</figcaption>
 </p>
 </figure>
