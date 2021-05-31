@@ -2,7 +2,7 @@
 layout: post
 title: 19-06 Proximal quasi-Newton methods
 chapter: "19"
-order: 10
+order: "01"0
 owner: "Hooncheol Shin"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: 17 Primal-Dual Interior-Point Methods
 chapter: "17"
-order: 1
+order: "01"
 owner: "Minjoo Lee"
 ---
 

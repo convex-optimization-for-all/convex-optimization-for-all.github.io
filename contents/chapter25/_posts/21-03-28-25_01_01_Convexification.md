@@ -2,7 +2,7 @@
 layout: post
 title: "25-01-01 Convexification"
 chapter: "25"
-order: 3
+order: "03"
 owner: "YoungJae Choung"
 ---
 

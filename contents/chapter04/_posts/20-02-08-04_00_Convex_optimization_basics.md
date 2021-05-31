@@ -2,7 +2,7 @@
 layout: post
 title: 04 Convex optimization basics
 chapter: "04"
-order: 1
+order: "01"
 owner: "YoungJae Choung"
 ---
 ## Convex Optimization Basic

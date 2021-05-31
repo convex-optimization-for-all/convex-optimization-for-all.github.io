@@ -2,7 +2,7 @@
 layout: post
 title: 08-02-04 Batch vs Stochastic Methods
 chapter: "08"
-order: 16
+order: "01"6
 owner: "Kyeongmin Woo"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: 04-07 Slack variables
 chapter: "04"
-order: 8
+order: "08"
 owner: "YoungJae Choung"
 ---
 Slack variable $$s$$를 사용하여 inequality constraint를 equality constraint로 변환하는 방법에 대해 알아보자.

@@ -2,7 +2,7 @@
 layout: post
 title: 07-03-01 Subgradient Optimality Condition
 chapter: "07"
-order: 7
+order: "07"
 owner: "Kyeongmin Woo"
 ---
 

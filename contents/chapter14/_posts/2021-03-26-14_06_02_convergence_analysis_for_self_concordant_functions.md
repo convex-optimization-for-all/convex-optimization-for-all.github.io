@@ -2,7 +2,7 @@
 layout: post
 title: 14-06-02 Convergence analysis for self-concordant functions
 chapter: "14"
-order: 12
+order: "01"2
 owner: "Minjoo Lee"
 ---
 Self-concordant function들에 대하여, Convergence analysis의 결과는 다음과 같다.

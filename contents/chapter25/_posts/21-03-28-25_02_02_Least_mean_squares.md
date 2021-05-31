@@ -2,7 +2,7 @@
 layout: post
 title: "25-02-02 Least mean squares"
 chapter: "25"
-order: 9
+order: "09"
 owner: "YoungJae Choung"
 ---
 

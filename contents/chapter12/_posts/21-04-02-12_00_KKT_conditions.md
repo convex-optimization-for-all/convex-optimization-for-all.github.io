@@ -2,7 +2,7 @@
 layout: post
 title: 12 KKT Conditions
 chapter: "12"
-order: 1
+order: "01"
 owner: "Wontak Ryu"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: 19-03 When would we use proximal Newton?
 chapter: "19"
-order: 7
+order: "07"
 owner: "Hooncheol Shin"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: 14-04 Backtracking line search
 chapter: "14"
-order: 8
+order: "08"
 owner: "Minjoo Lee"
 ---
 <script type="text/x-mathjax-config">

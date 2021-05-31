@@ -2,7 +2,7 @@
 layout: post
 title: 06-01 Gradient Descent
 chapter: "06"
-order: 2
+order: "02"
 owner: "Kyeongmin Woo"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: 11-2 Lagrange dual function
 chapter: "11"
-order: 3
+order: "03"
 owner: "Wontak Ryu"
 ---
 

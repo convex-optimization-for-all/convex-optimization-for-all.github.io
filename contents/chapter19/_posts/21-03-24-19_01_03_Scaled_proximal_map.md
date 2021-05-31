@@ -2,7 +2,7 @@
 layout: post
 title: 19-01-03 Scaled proximal map
 chapter: "19"
-order: 5
+order: "05"
 owner: "Hooncheol Shin"
 ---
 

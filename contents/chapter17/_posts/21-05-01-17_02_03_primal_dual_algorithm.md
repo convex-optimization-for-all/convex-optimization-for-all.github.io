@@ -2,7 +2,7 @@
 layout: post
 title: 17-02-03 Primal-Dual Algorithm 
 chapter: "17"
-order: 6
+order: "06"
 owner: "Minjoo Lee"
 ---
 Primal-Dual 알고리즘을 정의하기 위해 먼저 $$\tau(x,u)$$를 다음과 같이 정의하자

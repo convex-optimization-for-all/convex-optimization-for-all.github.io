@@ -2,7 +2,7 @@
 layout: post
 title: 08-01-04 Convergence rate
 chapter: "08"
-order: 6
+order: "06"
 owner: "Kyeongmin Woo"
 ---
 

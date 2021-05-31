@@ -2,7 +2,7 @@
 layout: post
 title: 15-02 Central path
 chapter: "15"
-order: 6
+order: "06"
 owner: "Minjoo Lee"
 ---
 

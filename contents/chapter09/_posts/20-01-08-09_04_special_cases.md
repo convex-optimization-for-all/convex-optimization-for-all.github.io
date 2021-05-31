@@ -2,7 +2,7 @@
 layout: post
 title: 09-04 Special cases
 chapter: "09"
-order: 5
+order: "05"
 owner: "Kyeongmin Woo"
 ---
 

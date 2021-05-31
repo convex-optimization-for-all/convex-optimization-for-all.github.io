@@ -2,7 +2,7 @@
 layout: post
 title: 13-04 Conjugate function 
 chapter: "13"
-order: 5
+order: "05"
 owner: "Wontak Ryu"
 ---
 

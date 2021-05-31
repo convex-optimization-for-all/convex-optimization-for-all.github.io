@@ -2,7 +2,7 @@
 layout: post
 title: 08-01-02 Basic Inequality
 chapter: "08"
-order: 4
+order: "04"
 owner: "Kyeongmin Woo"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: 03-04-02 Basic properties
 chapter: "03"
-order: 10
+order: "01"0
 owner: "Minjoo Lee"
 ---
 Quasiconvex는 convex function의 일반화라는 것을 앞 절의 예에서 살펴보았다. 이런 관점에서, 이 절에서는 convex function에서의 성질이 quasiconvex function에서도 유지되는지에 관하여 살펴본다.

@@ -2,7 +2,7 @@
 layout: post
 title: 21-01 Last time - Dual method, Augmented Lagrangian method, ADMM, ADMM in scaled form
 chapter: "21"
-order: 2
+order: "02"
 owner: "Hooncheol Shin"
 ---
 

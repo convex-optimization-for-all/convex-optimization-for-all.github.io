@@ -2,7 +2,7 @@
 layout: post
 title: 10-01 Lower Bounds in Linear Programs
 chapter: "10"
-order: 2
+order: "02"
 owner: "Wontak Ryu"
 ---
 

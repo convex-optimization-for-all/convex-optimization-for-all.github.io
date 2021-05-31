@@ -2,7 +2,7 @@
 layout: post
 title: 17-02 Primal-dual interior-point method
 chapter: "17"
-order: 3
+order: "03"
 owner: "Minjoo Lee"
 ---
 Barrier method와 같이 **primal-dual interior-point method**도 central path 위의 점을 (근사적으로) 계산하는 것을 목표로 한다. 그러나 두 가지 방법은 여러 차이점이 있다.

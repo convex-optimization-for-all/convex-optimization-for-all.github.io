@@ -2,7 +2,7 @@
 layout: post
 title: "09-03 Example: matrix completion"
 chapter: "09"
-order: 4
+order: "04"
 owner: "Kyeongmin Woo"
 ---
 

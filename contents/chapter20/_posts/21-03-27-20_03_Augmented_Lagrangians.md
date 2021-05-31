@@ -2,7 +2,7 @@
 layout: post
 title: 20-03 Augmented Lagrangians
 chapter: "20"
-order: 7
+order: "07"
 owner: "Hooncheol Shin"
 ---
 

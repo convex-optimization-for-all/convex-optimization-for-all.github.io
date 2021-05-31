@@ -2,7 +2,7 @@
 layout: post
 title: 17-03 Some history
 chapter: "17"
-order: 7
+order: "07"
 owner: "Minjoo Lee"
 ---
 일반적으로 현대의 state-of-art LP Solver들은  Simplex method와 interior-point method를 모두 사용하고 있다.

@@ -2,7 +2,7 @@
 layout: post
 title: "22 Conditional Gradient (Frank-Wolfe) Method"
 chapter: "22"
-order: 1
+order: "01"
 owner: "YoungJae Choung"
 ---
 

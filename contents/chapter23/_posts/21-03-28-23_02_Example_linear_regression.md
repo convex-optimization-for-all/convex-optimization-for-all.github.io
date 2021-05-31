@@ -2,7 +2,7 @@
 layout: post
 title: "23-02 Example: linear regression"
 chapter: "23"
-order: 3
+order: "03"
 owner: "YoungJae Choung"
 ---
 

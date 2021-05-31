@@ -2,7 +2,7 @@
 layout: post
 title: 06-04 Gradient boosting
 chapter: "06"
-order: 13
+order: "01"3
 owner: "Kyeongmin Woo"
 ---
 

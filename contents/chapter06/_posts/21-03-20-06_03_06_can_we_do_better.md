@@ -2,7 +2,7 @@
 layout: post
 title: 06-03-06 Can we do better?
 chapter: "06"
-order: 12
+order: "01"2
 owner: "Kyeongmin Woo"
 ---
 

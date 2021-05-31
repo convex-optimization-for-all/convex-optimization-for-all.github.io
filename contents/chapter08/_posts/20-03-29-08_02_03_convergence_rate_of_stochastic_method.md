@@ -2,7 +2,7 @@
 layout: post
 title: 08-02-03 Convergence Rate of Stochastic Method
 chapter: "08"
-order: 15
+order: "01"5
 owner: "Kyeongmin Woo"
 ---
 

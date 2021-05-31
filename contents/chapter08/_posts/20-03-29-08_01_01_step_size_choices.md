@@ -2,7 +2,7 @@
 layout: post
 title: 08-01-01 Step size choices
 chapter: "08"
-order: 3
+order: "03"
 owner: "Kyeongmin Woo"
 ---
 

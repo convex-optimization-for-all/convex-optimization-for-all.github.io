@@ -2,7 +2,7 @@
 layout: post
 title: 13-02 Solving the primal via the dual
 chapter: "13"
-order: 3
+order: "03"
 owner: "Wontak Ryu"
 ---
 

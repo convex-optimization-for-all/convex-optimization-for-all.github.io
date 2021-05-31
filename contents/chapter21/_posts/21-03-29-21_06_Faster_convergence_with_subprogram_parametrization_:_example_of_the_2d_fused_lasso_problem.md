@@ -2,7 +2,7 @@
 layout: post
 title: 21-06 Faster convergence with subprogram parametrization - example of the 2d fused lasso problem
 chapter: "21"
-order: 7
+order: "07"
 owner: "Hooncheol Shin"
 ---
 

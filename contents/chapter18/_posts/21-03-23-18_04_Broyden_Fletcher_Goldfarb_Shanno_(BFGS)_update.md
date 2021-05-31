@@ -2,7 +2,7 @@
 layout: post
 title: 18-04 Broyden-Fletcher-Goldfarb-Shanno (BFGS) update
 chapter: "18"
-order: 5
+order: "05"
 owner: "Hooncheol Shin"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: 18-05 The Broyden Class
 chapter: "18"
-order: 6
+order: "06"
 owner: "Hooncheol Shin"
 ---
 

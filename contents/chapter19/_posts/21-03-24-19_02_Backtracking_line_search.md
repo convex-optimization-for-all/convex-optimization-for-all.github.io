@@ -2,7 +2,7 @@
 layout: post
 title: 19-02 Backtracking line search
 chapter: "19"
-order: 6
+order: "06"
 owner: "Hooncheol Shin"
 ---
 

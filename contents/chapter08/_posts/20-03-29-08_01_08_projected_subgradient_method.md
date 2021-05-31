@@ -2,7 +2,7 @@
 layout: post
 title: 08-01-08 Projected Subgradient Method
 chapter: "08"
-order: 11
+order: "01"1
 owner: "Kyeongmin Woo"
 ---
 

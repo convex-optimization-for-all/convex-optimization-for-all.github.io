@@ -2,7 +2,7 @@
 layout: post
 title: 14-02-02 Affine invariance of Newton's method
 chapter: "14"
-order: 6
+order: "06"
 owner: "Minjoo Lee"
 ---
 <script type="text/x-mathjax-config">

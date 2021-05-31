@@ -2,7 +2,7 @@
 layout: post
 title: 03-01-01 Definition
 chapter: "03"
-order: 3
+order: "03"
 owner: "Minjoo Lee"
 ---
 ## Convex function

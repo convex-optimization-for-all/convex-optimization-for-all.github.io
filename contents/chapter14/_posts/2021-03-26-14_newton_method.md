@@ -2,7 +2,7 @@
 layout: post
 title: 14 Newton's Method
 chapter: "14"
-order: 1
+order: "01"
 owner: "Minjoo Lee"
 ---
 이 장에서는 Newton's Method에 대해 살펴본다.

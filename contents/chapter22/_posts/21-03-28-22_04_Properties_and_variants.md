@@ -2,7 +2,7 @@
 layout: post
 title: "22-04 Properties and variants"
 chapter: "22"
-order: 5
+order: "05"
 owner: "YoungJae Choung"
 ---
 

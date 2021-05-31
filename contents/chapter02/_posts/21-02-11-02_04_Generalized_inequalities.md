@@ -2,7 +2,7 @@
 layout: post
 title: 02-04 Generalized inequalities
 chapter: "02"
-order: 10
+order: "01"0
 owner: "Wontak Ryu"
 ---
 

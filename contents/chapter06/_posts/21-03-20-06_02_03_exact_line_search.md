@@ -2,7 +2,7 @@
 layout: post
 title: 06-02-03 Exact line search
 chapter: "06"
-order: 6
+order: "06"
 owner: "Kyeongmin Woo"
 ---
 

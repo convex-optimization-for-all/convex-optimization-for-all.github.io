@@ -2,7 +2,7 @@
 layout: post
 title: 02-05 Separating and supporting hyperplanes
 chapter: "02"
-order: 11
+order: "01"1
 owner: "Wontak Ryu"
 ---
 

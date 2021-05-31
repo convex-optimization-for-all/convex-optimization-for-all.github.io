@@ -2,7 +2,7 @@
 layout: post
 title: 07-02-02 Subgradient Calculus
 chapter: "07"
-order: 5
+order: "05"
 owner: "Kyeongmin Woo"
 ---
 

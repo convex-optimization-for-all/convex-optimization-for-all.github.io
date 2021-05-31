@@ -2,7 +2,7 @@
 layout: post
 title: 12-01 Karush-Kuhn-Tucker conditions
 chapter: "12"
-order: 2
+order: "02"
 owner: "Wontak Ryu"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: 20-02-02 Dual Decomposition with Inequality Constraint
 chapter: "20"
-order: 6
+order: "06"
 owner: "Hooncheol Shin"
 ---
 

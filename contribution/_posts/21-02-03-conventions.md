@@ -2,7 +2,7 @@
 layout: post
 title: "Conventions"
 chapter: home
-order: 2
+order: "02"
 owner: "Kyeongmin Woo"
 ---
 
@@ -40,7 +40,7 @@ contents
 layout: post
 title: Quasi-Newton Methods
 chapter: "18"
-order: 1
+order: "01"
 owner: "Kyeongmin Woo"
 ---
 ```

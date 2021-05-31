@@ -2,7 +2,7 @@
 layout: post
 title: 13-04-03 Shifting linear transformations
 chapter: "13"
-order: 8
+order: "08"
 owner: "Wontak Ryu"
 ---
 

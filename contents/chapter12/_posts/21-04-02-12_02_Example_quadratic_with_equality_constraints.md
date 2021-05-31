@@ -2,7 +2,7 @@
 layout: post
 title: 12-02 Example quadratic with equality constraints
 chapter: "12"
-order: 3
+order: "03"
 owner: "Wontak Ryu"
 ---
 

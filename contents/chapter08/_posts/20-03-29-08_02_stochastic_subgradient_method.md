@@ -2,7 +2,7 @@
 layout: post
 title: 08-02 Stochastic Subgradient Method
 chapter: "08"
-order: 12
+order: "01"2
 owner: "Kyeongmin Woo"
 ---
 

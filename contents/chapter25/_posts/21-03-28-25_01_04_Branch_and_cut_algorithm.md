@@ -2,7 +2,7 @@
 layout: post
 title: "25-01-04 Branch and cut algorithm"
 chapter: "25"
-order: 6
+order: "06"
 owner: "YoungJae Choung"
 ---
 

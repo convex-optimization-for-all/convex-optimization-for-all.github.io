@@ -2,7 +2,7 @@
 layout: post
 title: 03-05 Log-concave and log-convex functions
 chapter: "03"
-order: 13
+order: "01"3
 owner: "Minjoo Lee"
 ---
 Log-concave & log-convex function에 대해 알아보자.

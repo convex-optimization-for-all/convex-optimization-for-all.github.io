@@ -2,7 +2,7 @@
 layout: post
 title: 13-04-02 Conjugates and dual problems
 chapter: "13"
-order: 7
+order: "07"
 owner: "Wontak Ryu"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: 18-00 Quasi-Newton methods
 chapter: "18"
-order: 1
+order: "01"
 owner: "Hooncheol Shin"
 ---
 

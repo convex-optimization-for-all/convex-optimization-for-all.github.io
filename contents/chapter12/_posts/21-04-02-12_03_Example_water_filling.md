@@ -2,7 +2,7 @@
 layout: post
 title: 12-03 Example water-filling
 chapter: "12"
-order: 4
+order: "04"
 owner: "Wontak Ryu"
 ---
 

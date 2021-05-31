@@ -2,7 +2,7 @@
 layout: post
 title: 21-05 Consensus ADMM
 chapter: "21"
-order: 6
+order: "06"
 owner: "Hooncheol Shin"
 ---
 

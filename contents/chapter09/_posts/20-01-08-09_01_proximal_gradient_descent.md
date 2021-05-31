@@ -2,7 +2,7 @@
 layout: post
 title: 09-01 Proximal gradient descent
 chapter: "09"
-order: 2
+order: "02"
 owner: "Kyeongmin Woo"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: 21 Alternating Direction Method of Multipliers
 chapter: "21"
-order: 1
+order: "01"
 owner: "Hooncheol Shin"
 ---
 

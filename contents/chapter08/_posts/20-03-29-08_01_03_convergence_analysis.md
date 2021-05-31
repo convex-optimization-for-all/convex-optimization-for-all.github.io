@@ -2,7 +2,7 @@
 layout: post
 title: 08-01-03 Convergence analysis
 chapter: "08"
-order: 5
+order: "05"
 owner: "Kyeongmin Woo"
 ---
 

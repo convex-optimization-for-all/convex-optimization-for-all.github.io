@@ -2,7 +2,7 @@
 layout: post
 title: 20-02 Dual Decomposition
 chapter: "20"
-order: 4
+order: "04"
 owner: "Hooncheol Shin"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "22-03 Convergence analysis"
 chapter: "22"
-order: 4
+order: "04"
 owner: "YoungJae Choung"
 ---
 

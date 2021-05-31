@@ -2,7 +2,7 @@
 layout: post
 title: 19-01 Proximal Newton method
 chapter: "19"
-order: 2
+order: "02"
 owner: "Hooncheol Shin"
 ---
 
