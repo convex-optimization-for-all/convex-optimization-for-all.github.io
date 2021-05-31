@@ -11,7 +11,7 @@ owner: kyeongminwoo
 또한 로컬 환경(현재 사용 중인 컴퓨터)에서 변경 사항이 반영되었는지 웹브라우저를 통해 확인하는 과정이 필요합니다. 
 
 GitHub 또는 Jekyll에 익숙하지 않은 분들을 위해 환경 설정 방법을 정리해두었습니다.
-가이드를 따라가는 것에 어려움이 있는 분들께서는 아래 메일로 문의주시면 도와드리겠습니다.
+가이드를 따라가는 것에 어려움이 있는 분들께서는 저장소에 [이슈](https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/issues)를 남겨주시거나 아래 메일로 문의주시면 도와드리겠습니다.
 
 (우경민, wgm0601@gmail.com)
 
@@ -48,7 +48,7 @@ Docker를 이용하여 로컬에 직접적인 환경설치 없이도 로컬 호�
 
 #### B. 로컬 호스팅
 
-터미널에서 저장소의 최상단(`docker-compose.yml`파일이 있는 위치)으로 이동한 뒤 다음 명령어를 입력합니다.
+터미널에서 다음 명령어를 입력합니다.
 
 ```bash
 $ docker-compose up

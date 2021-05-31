@@ -6,9 +6,7 @@ chapter: home
 owner: jinwoopark
 ---
 
---------------------
-
-## Author
+## 저자 소개
 **김기범** (astroblasterr@gmail.com)<br>
 
 **김정훈** (placidus36@gmail.com)<br>
