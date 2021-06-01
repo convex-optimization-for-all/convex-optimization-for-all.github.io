@@ -32,7 +32,7 @@ $$f:\mathbb{R} \to \mathbb{R}, f(x) =  \vert x \vert $$
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/18963/subgrad-1.png" alt="Subgradient1" width="80%" height="80%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter07/07_01_subgrad-1.png" alt="Subgradient1" width="80%" height="80%">
 </p>
   <figcaption style="text-align: center;">$$\text{[Fig 1] Subgradient of } f(x)= \vert x \vert \text{ [3]}$$</figcaption>
 </figure>
@@ -52,7 +52,7 @@ $$f:\mathbb{R}^n \to \mathbb{R}, f(x) =  \vert  \vert x \vert  \vert _1$$
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/18963/subgrad-3.png" alt="Subgradient2" width="80%" height="80%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter07/07_01_subgrad-3.png" alt="Subgradient2" width="80%" height="80%">
 </p>
   <figcaption style="text-align: center;">$$\text{[Fig 2] Subgradient of }f(x)= \vert x \vert _1\text{ [3]}$$</figcaption>
 </figure>
@@ -72,7 +72,7 @@ $$f:\mathbb{R}^n \to \mathbb{R}, f(x) =  \vert  \vert x \vert  \vert _2$$
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/18963/subgrad-2.png" alt="Subgradient3" width="80%" height="80%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter07/07_01_subgrad-2.png" alt="Subgradient3" width="80%" height="80%">
 </p>
   <figcaption style="text-align: center;">$$\text{[Fig 3] Subgradient of }f(x)= \vert x \vert _2\text{ [3]}$$</figcaption>
 </figure>
@@ -88,7 +88,7 @@ $$f(x) = \max f_1(x),f_2(x) $$, 이때, $$f_1,f_2:\mathbb{R}^n \to \mathbb{R}$$�
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/18963/subgrad-4.png" alt="Subgradient4" width="80%" height="80%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter07/07_01_subgrad-4.png" alt="Subgradient4" width="80%" height="80%">
 </p>
   <figcaption style="text-align: center;">$$\text{[Fig 4] Subgradient of }f(x)=\max f_1(x),f_2(x) \text{ [3]}$$</figcaption>
 </figure>

@@ -6,8 +6,6 @@ order: 9
 owner: "Kyeongmin Woo"
 ---
 
-# Example: Lasso Optimality Condition
-
 아래와 같이 주어진 lasso 문제에 대해,
 >
 \begin{equation}

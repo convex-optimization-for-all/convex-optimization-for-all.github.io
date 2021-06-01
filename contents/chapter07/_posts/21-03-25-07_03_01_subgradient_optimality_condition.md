@@ -6,8 +6,6 @@ order: 7
 owner: "Kyeongmin Woo"
 ---
 
-# Subgradient Optimality Condition
-
 ### Lemma 
 
 모든 함수 $$f$$에 대해서, 어떤 $$x^*$$에서 함수의 최소값을 갖는 것과 $$x^*$$에서 subgradient가 $$0$$인 것은 서로 필요충분조건이다.   

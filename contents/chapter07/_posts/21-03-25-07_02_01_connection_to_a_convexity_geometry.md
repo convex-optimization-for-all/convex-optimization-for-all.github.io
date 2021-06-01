@@ -6,8 +6,6 @@ order: 4
 owner: "Kyeongmin Woo"
 ---
 
-# Connection to a Convexity Geometry
-
 
 한 볼록집합 (convex set) $$C \subseteq \mathbb{R}^n$$에 대해서, 아래와 같은 indicator 함수 $$I_C: \mathbb{R}^n \to \mathbb{R}$$를 정의했을 때,   
 
@@ -68,7 +66,7 @@ $$\{g \in \mathbb{R}^n | g^Tx \geq g^Ty\}$$
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/18963/subgrad-5.png" alt="connection_to_convexity_geometry" width="80%" height="80%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter07/07_02_subgrad-5.png" alt="connection_to_convexity_geometry" width="80%" height="80%">
 </p>
   <figcaption style="text-align: center;">[Fig 1] Normal cone [1]</figcaption>
 </figure>
