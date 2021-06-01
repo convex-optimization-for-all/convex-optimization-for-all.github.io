@@ -2,11 +2,9 @@
 layout: post
 title: 08-02-01 Stochastic Subgradient Method
 chapter: "08"
-order: 13
+order: 12
 owner: "Kyeongmin Woo"
 ---
-
-# Stochastic Subgradient Method
 
 다음과 같이 함수의 합을 최소화하는 문제를 고려해보자.
 

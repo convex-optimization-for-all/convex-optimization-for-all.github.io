@@ -2,11 +2,9 @@
 layout: post
 title: "08-01-07 Example: Intersection of sets"
 chapter: "08"
-order: 10
+order: 9
 owner: "Kyeongmin Woo"
 ---
-
-# Example: Intersection of sets
 
 
 닫힌 컨벡스 집합(closed convex set)들의 교차점을 찾고 싶다고 하자. 
@@ -81,7 +79,7 @@ x^{(k)} = P_{C_i}(x^{(k-1)})
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/18975/projection.PNG" alt="projection" width="60%" height="60%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter08/08_01_projection.PNG" alt="projection" width="60%" height="60%">
 </p>
   <figcaption style="text-align: center;">[Fig 2] Alternating Projection Algorithm [10]</figcaption>
 </figure>

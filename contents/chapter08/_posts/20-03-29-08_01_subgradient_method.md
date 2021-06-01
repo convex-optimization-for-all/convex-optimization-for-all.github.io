@@ -6,8 +6,6 @@ order: 2
 owner: "Kyeongmin Woo"
 ---
 
-# Subgradient Method
-
 함수의 정의역은 $${R}^n$$이며 모든 구간에서 미분 가능하지 않은 컨벡스 함수 $$f$$가 있다고 가정하자.
 
 Subgradient method는 gradient descent에서 gradient를 subgradient로 바꾼 형태로 정의된다. ( $$\nabla f(x^{(k-1)}) → g(x^{(k-1)})$$)
