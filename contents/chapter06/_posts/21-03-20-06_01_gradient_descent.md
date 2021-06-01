@@ -6,11 +6,10 @@ order: 2
 owner: "Kyeongmin Woo"
 ---
 
-# Gradient Descent
-
 Gradient descent는 제약조건이 없는 convex이고 differentiable한 function의 최적화 문제를 풀기위한 가장 단순한 알고리즘이다.
 
-> $$min_x f(x)$$, $$f$$ : differentiable with $$dom(f) = R^n$$.
+> $$\min_x f(x),$$
+> $$f$$ : differentiable with $$dom(f) = R^n$$.
 
 참고로, optimal value는 $$f^{*} = min_x f(x)$$로 optimal은 $$x^{*}$$로 표기한다.
 
@@ -34,7 +33,7 @@ Gradient descent는 초기 점 $$x^{(0)} \in R^n$$을 선택하고 다음 식을
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/18084/gradientdescent1.PNG" alt="gradientdescent1" width="80%" height="80%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter06/06_01_gradientdescent1.PNG" alt="gradientdescent1" width="80%" height="80%">
   <figcaption style="text-align: center;">[Fig 1] Gradient descent in convex functions[3]</figcaption>
 </p>
 </figure>
@@ -43,7 +42,7 @@ Gradient descent는 초기 점 $$x^{(0)} \in R^n$$을 선택하고 다음 식을
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/18084/gradientdescent2.PNG" alt="gradientdescent2" width="80%" height="80%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter06/06_01_gradientdescent2.PNG" alt="gradientdescent2" width="80%" height="80%">
   <figcaption style="text-align: center;">[Fig 2] Gradient descent in non-convex functions[3]</figcaption>
 </p>
 </figure>
@@ -67,11 +66,11 @@ f(y) \approx f(x) + \nabla f(x)^T (y - x) +  \frac{1}{2t}  \parallel y - x  \par
 
 > $$x^+ = x - t \nabla f(x)$$
 
-아래 그림에서 파란색 점은 현재 위치 $$x$$를 나타내며 빨간색 점은 다음 위치 $$y$$를 나타낸다. 아래쪽에 있는 곡선은 실제 함수 $$f$$의 곡선이며 윗쪽에 있는 곡선은 함수 $$f$$의 2차 근사 곡선이라고 볼 수 있다. 따라서, 빨간색 점은 2차 근사식에 대한 최소 지점을 나타낸다.
+아래 그림에서 파란색 점은 현재 위치 $$x$$를 나타내며 빨간색 점은s 다음 위치 $$y$$를 나타낸다. 아래쪽에 있는 곡선은 실제 함수 $$f$$의 곡선이며 윗쪽에 있는 곡선은 함수 $$f$$의 2차 근사 곡선이라고 볼 수 있다. 따라서, 빨간색 점은 2차 근사식에 대한 최소 지점을 나타낸다.
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/18084/gradientdescent3.PNG" alt="gradientdescent3" width="80%" height="80%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter06/06_01_gradientdescent3.PNG" alt="gradientdescent3" width="80%" height="80%">
   <figcaption style="text-align: center;">$$ \text{[Fig 3] Gradient descent algorithm : red dot is } x^+ \text{ and blue dot } x \text{ [3]} $$</figcaption>
 </p>
 </figure>
