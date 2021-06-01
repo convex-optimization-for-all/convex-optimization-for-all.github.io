@@ -24,7 +24,7 @@ $$
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17850/geometric_interpretation_of_LP.png" alt="[Fig1] Geometric interpretation of LP [1]" width="70%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter05/05_01_geometric_interpretation_of_LP.png" alt="[Fig1] Geometric interpretation of LP [1]" width="70%">
   <figcaption style="text-align: center;">[Fig1] Geometric interpretation of LP [1]</figcaption>
 </p>
 </figure>

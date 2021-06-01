@@ -12,7 +12,7 @@ owner: "Hooncheol Shin"
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17203/Optimization_problem.png" alt="[Fig1] Convex Optimization Problem in standard form [3]" width="70%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter05/05_00_optimization_problem.png" alt="[Fig1] Convex Optimization Problem in standard form [3]" width="70%">
   <figcaption style="text-align: center;">[Fig1] Convex Optimization Problem in standard form [3]</figcaption>
 </p>
 </figure>
@@ -35,7 +35,7 @@ owner: "Hooncheol Shin"
 $$ LP \subseteq QP \subseteq QCQP \subseteq SOCP \subseteq SDP \subseteq CP $$
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17851/canonical_problems.jpg" alt="[Fig2] Canonical Problems" width="90%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter05/05_00_canonical_problems.jpeg" alt="[Fig2] Canonical Problems" width="90%">
   <figcaption style="text-align: center;">[Fig2] Canonical Problems</figcaption>
 </p>
 </figure>

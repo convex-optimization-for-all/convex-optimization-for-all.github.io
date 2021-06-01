@@ -28,11 +28,10 @@ General LP에서 inequality constraint가 우항이 affine function인 second-or
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17371/02.08_Norm_Cone.PNG" alt="[Fig1] Norm Cone [1]" width="70%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter05/05_04_Norm_Cone.PNG" alt="[Fig1] Norm Cone [1]" width="70%">
   <figcaption style="text-align: center;">[Fig1] Norm Cone [1]</figcaption>
 </p>
 </figure>
-
 
 ## QCQP and equivalent SOCP
 QCQP는 다음의 유도과정을 거쳐 SOCP의 한가지 특수한 경우로 변형된다. (즉, QCQP $$\subseteq$$ SOCP)
