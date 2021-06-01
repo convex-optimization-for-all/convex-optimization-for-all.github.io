@@ -63,13 +63,11 @@ $$
 
 #### Theorem: strong duality (refined Slater's condition)
 정의역 집합 $$D$$에 대해, $$f, h_1, \dots, h_p$$가 convex이고 $$h_{p+1}, \dots, h_m, l_1, \dots, l_r$$이 affine이라고 가정해보자. 만약 다음을 만족하는 $$\hat{x} \in \text{relint}(D)$$가 존재하면,
-> $$
-\begin{align}
-h_i(\hat{x}) \lt 0, i=1, \dots, p \\
-h_i(\hat{x}) \le 0, i=p+1, \dots, m \\
-l_j(\hat{x}) = 0, j = 1, \dots, r
-\end{align}
-$$
+> $$\begin{align}
+>h_i(\hat{x}) \ & \lt 0, \ && i=1, \dots, p \\
+>h_i(\hat{x}) \ & \le 0, \ && i=p+1, \dots, m \\
+>l_j(\hat{x}) \ & = 0, \ && j = 1, \dots, r
+\end{align}$$
 
 primal problem과 dual problem의 optimal value $$p, d$$에 대해 $$p = d$$가 보장된다.
 
@@ -111,11 +109,13 @@ $$\mathop{\max_{s,y}}_{s\ge0} \: (A^Ty + s)^Tx - s^Tx + (b-Ax)^Ty \quad \text{ s
 #### Primal problem of QP in standard form
 >$$
 >\begin{align}
->    \mathop{\text{minimize}}_x &\quad \frac{1}{2} x^T Q x + c^Tx \\\\
->    \text{subject to} &\quad Ax = b \\\\
->    &\quad x \ge 0,
->\end{align} \\
->\text{where } Q \text{ is symmetric and positive semidefinite.}$$
+>    \mathop{\text{minimize}}_x &\quad \frac{1}{2} x^T Q x + c^Tx \\
+>    \text{subject to} &\quad Ax = b \\
+>    &\quad x \ge 0, \\
+>
+>\end{align}$$
+>
+>$$\text{where } Q \text{ is symmetric and positive semidefinite.}$$
 
 
 앞선 정의에 따라 위 문제의 dual problem은 다음과 같다.
