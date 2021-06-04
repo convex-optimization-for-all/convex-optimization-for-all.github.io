@@ -12,9 +12,9 @@ owner: "Kyeongmin Woo"
 Mathematical optimization problem은 다음과 같은 형태로 표현될 수 있다.
 
 >$$\begin{align*} 
->\min_{x\in D}\ && f(x) \\
->\text{subject to} & & g_i(x) \le 0,\ i = 1, ...m \\
->&& h_j(x) = 0,\ j = 1,\ ...r 
+>&\min_{x\in D}\ && f(x) \\
+>&\text{subject to} && g_i(x) \le 0,\ i = 1, ...m \\
+>&&& h_j(x) = 0,\ j = 1,\ ...r 
 >\end{align*}$$
 
 **Mathematical Optimization Problem in standard form [3]**
@@ -43,7 +43,7 @@ $$D = dom(f) \cap \bigcap_{i=1}^m {\rm dom}(g_i) \cap \bigcap_{j=1}^r dom(h_j)$$
 >
 >여기서 objective function인 log함수의 정의역이 $$x > 0$$이므로 $$x > 0$$이 이 문제에서의 implicit constraint가 된다. 이 문제를 explicit constraint가 포함된 형태의 최적화문제로 표현하면 다음과 같다.
 >
->$$\begin{align*} \text{minimize } & & log(x) \\ \text{subject to } & & x > 0 \end{align*}$$
+>$$\begin{align*} &\text{minimize } &&log(x) \\ &\text{subject to } &&x > 0 \end{align*}$$
 
 ## Applications
 

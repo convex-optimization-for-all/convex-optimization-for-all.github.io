@@ -31,7 +31,7 @@ owner: "Minjoo Lee"
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/17269/1st_order_condition.png" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter03/1st_order_condition.png" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig1] Convex Function [1]</figcaption>
 </p>
 </figure>
@@ -56,14 +56,14 @@ $$\sum_{i=1}^{n} w_i f(x_i) ≥ f \left ( \sum_{i=1}^{n} w_i x_i \right )$$<br><
 
 
 함수 $$f$$가 convex 이면 다음 부등식을 만족한다.
->$$$$f(tx_1 + (1 − t)x_2) ≤ tf(x_1) + (1 − t)f(x_2) \text{, for } 0 ≤ t ≤ 1 $$$$
+>$$f(tx_1 + (1 − t)x_2) \le tf(x_1) + (1 − t)f(x_2) \text{ for } 0 \le t \le 1 $$
 
 >*Extension*:<br>
->$$X$$ is a random variable supported on $$dom f$$, then $$f(E[X]) ≤E[f(X)]$$
+>$$X$$ is a random variable supported on $$\text{dom } f$$, then $$f(E[X]) \le E[f(X)]$$
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/17497/jensen_inequality.png" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter03/jensen_inequality.png" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig2] Jensen's Inequality [2]</figcaption>
 </p>
 </figure>

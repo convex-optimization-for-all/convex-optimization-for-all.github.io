@@ -9,9 +9,9 @@ owner: "Kyeongmin Woo"
 Convex optimization problem은 optimization problem의 한 종류이다.
 
 >$$\begin{align*} 
->\min_{x\in D}\ && f(x) \\
->\text{subject to} & & g_i(x) \le 0,\ i = 1, ...m \\
->&& h_j(x) = 0,\ j = 1,\ ...r 
+>&\min_{x\in D}\ &&f(x) \\
+>&\text{subject to} && g_i(x) \le 0,\ i = 1, ...m \\
+>&&& h_j(x) = 0,\ j = 1,\ ...r 
 >\end{align*}$$
 
 **Convex Optimization Problem in standard form [3]**
@@ -32,9 +32,12 @@ Convex optimization problem은 optimization problem의 한 종류이다.
 
 예를 들어, 다음 세 가지 그림 중 가장 좌측의 그림만이 convex set에 해당한다.
 
-![Convex_set]({{ site.baseurl }}/img/chapter_img/chapter01/Convex_set.png)
-
-**[Fig1] left: a convex set, mid & right: non-convex sets [2]**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter01/Convex_set.png" alt="Convex Set" width="70%">
+  <figcaption style="text-align: center;">[Fig1] left: a convex set, mid & right: non-convex sets [2]</figcaption>
+</p>
+</figure>
 
 ## Convex functions
 Convex function은 다음과 같이 정의된다.
@@ -45,9 +48,12 @@ Convex function은 다음과 같이 정의된다.
 
 정의에서 부등식으로 표현된 조건은 다음과 같은 기하학적 의미를 가진다. $$f$$의 그래프 상의 임의의 두 점 $$(x,\ f(x))$$, $$(y,\ f(y))$$을 생각해보자. 이 두 점을 잇는 선분은 구간 $$[x, y]$$에서 그래프보다 크거나 같게 위치한다.
 
-![Convex_function]({{ site.baseurl }}/img/chapter_img/chapter01/Convex_function.png)
-
-**[Fig2] convex function [2]**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter01/Convex_function.png" alt="Convex Function" width="70%">
+  <figcaption style="text-align: center;">[Fig2] Convex Function [2]</figcaption>
+</p>
+</figure>
 
 ## Relation between a convex set and a convex function
 convex function과 convex set 사이에는 다음과 같은 밀접한 관계가 있다.
@@ -62,10 +68,12 @@ convex function과 convex set 사이에는 다음과 같은 밀접한 관계가 
 }
 $$
 
-
-![](https://wikidocs.net/images/page/17206/epigraph.png)
-
-**[Fig3] epigraph [2]**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter01/epigraph.png" alt="Epigraph" width="70%">
+  <figcaption style="text-align: center;">[Fig3] Epigraph [2]</figcaption>
+</p>
+</figure>
 
 함수 f가 convex function일때 epi f는 항상 convex set이고 이의 역도 성립한다. 이를 주지하고 위의 convex function과 convex set의 정의를 다시 한번 살펴보도록 하자.
 

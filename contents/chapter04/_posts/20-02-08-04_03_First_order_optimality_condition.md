@@ -5,10 +5,12 @@ chapter: "04"
 order: 4
 owner: "YoungJae Choung"
 ---
-> $$
-> \text{min}_{x} \ f(x) \\
-> \text{subject to} x \in C
-> $$
+>$$
+\begin{aligned}
+&\min_x &&f(x) \\
+&\text{subject to} &&x \in C
+\end{aligned}
+$$
 
 위 convex problem에서 objective function $$f$$가 미분 가능할 때, <br>
 아래의 부등식은 optimal point $$x$$에 대한 필요충분 조건이 된다.
@@ -25,7 +27,7 @@ $$x$$는 optimal point가 된다.<br>
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/18337/first-order-condition.png" alt="[Fig1] geometric interpretation of first-order condition for optimality [3]">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter04/first-order-condition.png" alt="[Fig1] geometric interpretation of first-order condition for optimality [3]">
   <figcaption style="text-align: center;">[Fig1] geometric interpretation of first-order condition for optimality [3]</figcaption>
 </p>
 </figure>

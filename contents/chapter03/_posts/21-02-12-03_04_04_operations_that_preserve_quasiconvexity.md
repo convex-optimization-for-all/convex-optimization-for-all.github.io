@@ -42,5 +42,5 @@ Quasiconvex function f의 sublevel set을 convex function의 부등식으로 표
 >$$f(x) \leq t \Longleftrightarrow \phi_t(x) \leq 0$$
 
 즉, quasiconvex function $$f(x)$$의 t-sublevel set은 convex function $$\phi_t$$의 0-sublevel set이 된다. 이 때, t는 convex function $$\phi$$ 의 index를 나타낸다. 그리고, 모든 $$x \in R^n$$에 대해 다음을 만족한다.
->$$\phi_t(x) \leq 0 \Longrightarrow \phi_s(x) \leq 0$$, for $$s \geq t$$
+>$$\phi_t(x) \leq 0 \Longrightarrow \phi_s(x) \leq 0 \text{ for } s \geq t$$
 

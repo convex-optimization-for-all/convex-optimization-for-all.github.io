@@ -16,7 +16,7 @@ Quasiconvex는 Jensen's inequality 를 통해 다음과 같이 정의된다.
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/17419/Fig.3.10_quasiconvex_function_on_R_4uChnEm.PNG" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter03/Fig.3.10_quasiconvex_function_on_R_4uChnEm.PNG" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig1]</figcaption>
 </p>
 </figure>
@@ -32,7 +32,7 @@ Quasiconvex는 Jensen's inequality 를 통해 다음과 같이 정의된다.
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/17419/Fig.3.11_quasiconvex_function_on_R_2_PPQpNiU.PNG" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter03/Fig.3.11_quasiconvex_function_on_R_2_PPQpNiU.PNG" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig2]</figcaption>
 </p>
 </figure>

@@ -27,9 +27,12 @@ owner: "Kyeongmin Woo"
 
 #### Example: Total variation denoising
 
-![](https://wikidocs.net/images/page/17206/2d_fused_lasso.png)
-
-**[Fig1] total variation denoising [3]**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter01/2d_fused_lasso.png" alt="2D Fused Lasso" width="70%">
+  <figcaption style="text-align: center;">[Fig1] Total Variation Denoising [3]</figcaption>
+</p>
+</figure>
 
 노이즈가 잔뜩 낀 이미지 Data(중간)를 받았을 때, 그 이미지에서 노이즈를 제거하고 True Image(좌측)에 가까운 Solution(우측)을 얻고 싶은 상황이라고 가정하자. 각 pixel값을 $$y_i, i = 1, ..., n$$라고 한다면 이 문제는 다음과 같은 최적화 문제로 정의될 수 있으며, 이는 보통 2d fused lasso 또는 2d total variation denoising problem으로 불린다.
 
@@ -42,14 +45,27 @@ owner: "Kyeongmin Woo"
 앞서 정의된 convex optimization problem은 [Specialized ADMM](http://stanford.edu/~boyd/admm.html) 알고리즘을 이용하면 20번의 iteration으로 우측과 같은 solution을 얻을 수 있다.
 
 #### Specialized ADMM, 20 iterations
-![](https://wikidocs.net/images/page/17208/result1.png)
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter01/result1.png" alt="Result1" width="50%">
+  <figcaption style="text-align: center;">[Fig2] Specialized ADMM Result [3]</figcaption>
+</p>
+</figure>
 
 #### Proximal gradient descent, 1000 iterations
-![](https://wikidocs.net/images/page/17208/result2.png)
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter01/result2.png" alt="Result2" width="50%">
+  <figcaption style="text-align: center;">[Fig3] Proximal Gradient Descent Result [3]</figcaption>
+</p>
+</figure>
 
 #### Coordinate descent, 10K cycles
-![](https://wikidocs.net/images/page/17208/result3.png)
-
-**[Fig2] total variation denoising [3]**
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter01/result3.png" alt="Result3" width="50%">
+  <figcaption style="text-align: center;">[Fig4] Coordinate Descent Result [3]</figcaption>
+</p>
+</figure>
 
 위 결과에서 알 수 있듯이 2d fused lasso problem에 대해서는 세 가지 방법 중 Specialized ADMM이 가장 좋은 성능을 발휘한다. 하지만 문제가 달라지면 다른 두 방법이 Specialized ADMM을 압도하는 경우도 발생할 수 있다. 이후의 챕터에서는 다양한 알고리즘과 문제를 분석하여 적절한 알고리즘을 선택하는 방법에 대해 알아볼 것이다.

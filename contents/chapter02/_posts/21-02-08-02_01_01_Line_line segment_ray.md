@@ -2,7 +2,7 @@
 layout: post
 title: 02-01-01 Line, line segment, ray
 chapter: "02"
-order: 2
+order: 02
 owner: "Wontak Ryu"
 ---
 
@@ -12,7 +12,7 @@ Line은 두 점을 지나면서 양쪽 방향으로 무한히 커지는 선을 �
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17382/02.01_Line_Segment.PNG" alt="Line Segment" width="70%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter02/02.01_Line_Segment.PNG" alt="Line Segment" width="70%">
   <figcaption style="text-align: center;">$$\text{[Fig1] } x_1\text{과 } x_2 \text{ 을 지나는 Line과 Line Segment [1]}$$</figcaption>
 </p>
 </figure>

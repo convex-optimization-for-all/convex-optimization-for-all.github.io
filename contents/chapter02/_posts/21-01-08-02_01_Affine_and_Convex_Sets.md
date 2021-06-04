@@ -2,7 +2,7 @@
 layout: post
 title: 02-01 Affine and Convex Sets
 chapter: "02"
-order: 1
+order: 01
 owner: "Wontak Ryu"
 ---
 
