@@ -154,11 +154,11 @@ $$\mu$$와 $$P$$는 과거의 데이터를 통해서 얻을 수 있으며, 각 �
 
 >$$
 >\begin{align}
->    &\text{minimize}_{\beta, \beta_0, \xi} &&{\frac{1}{2} \| \beta \|_2^2 + C \sum_{i=1}^{n} \xi_i} \\\\
->    &\text{subject to } &&{\xi_i \geq 0, i = 1, \dotsc, n} \\\\
->    & &&{y_i (x_i^T \beta + \beta_0) \geq 1 - \xi_i, i = 1, \dotsc, n},\\\\
+>    &\text{minimize}_{\beta, \beta_0, \xi} &&{\frac{1}{2} \| \beta \|_2^2 + C \sum_{i=1}^{n} \xi_i} \\
+>    &\text{subject to } &&{\xi_i \geq 0, i = 1, \dotsc, n} \\
+>    & &&{y_i (x_i^T \beta + \beta_0) \geq 1 - \xi_i, i = 1, \dotsc, n},\\
+>    & \text{given} && \text{y} \in \left\{-1, 1\right\}^n, X \in \mathbb{R}^{\text{n x p}} \text{ having rows } x_1, \dotsc, x_n.
 >\end{align}\\
-> \text{given y} \in \left\{-1, 1\right\}^n, X \in \mathbb{R}^{\text{n x p}} \text{ having rows } x_1, \dotsc, x_n.
 >$$
 
 ### Example 3)  Least-squares in regression
