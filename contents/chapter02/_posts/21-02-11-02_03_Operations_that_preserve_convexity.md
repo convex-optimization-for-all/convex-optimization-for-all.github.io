@@ -2,7 +2,7 @@
 layout: post
 title: 02-03 Operations that preserve convexity
 chapter: "02"
-order: 8
+order: 09
 owner: "Wontak Ryu"
 ---
 
