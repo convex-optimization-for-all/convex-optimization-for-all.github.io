@@ -13,9 +13,14 @@ MathJax.Hub.Config({
 </script>
 
 다음의 $$L1$$ penalized linear regression 문제는 lasso problem이란 이름으로도 잘 알려져 있다.
+
 >$$
->\hat{\beta} \in \text{argmin}_{\beta \in \mathbb{R}^p} \frac{1}{2} \| y - X\beta \|^2_2 + \lambda \|\beta\|_1, \qquad \text{ --- (1) }\\\\
->\text{given } y \in \mathbb{R}^n, \text{ a matrix } X \in \mathbb{R}^{n \text{ x } p} \text{ of predictor variables, and a tuning parameter } \lambda \ge 0.
+>\begin{align}
+>&&&\hat{\beta} \in \text{argmin}_{\beta \in \mathbb{R}^p} \frac{1}{2} \| y - X\beta \|^2_2 + \lambda \|\beta\|_1, \qquad \\\\
+>&& \text{ --- (1) } &\text{given } y \in \mathbb{R}^n, \\\\
+>&&& \text{ a matrix } X \in \mathbb{R}^{n \text{ x } p} \ \text{ of predictor variables,} \\\\
+>&&& \text{and a tuning parameter} \lambda \ge 0.
+>\end{align}
 >$$
 
 위 Lasso problem은 $$rank(X) = p$$일 때 strictly convex가 되면서 유일한 solution을 갖는다. 반면, $$rank(X) < p$$일때(strictly convex가 아닐때)는 무수히 많은 solution을 갖을 수도 있게된다 (Reference: [
@@ -37,20 +42,28 @@ $$\text{ }$$
 > **Proof.**<br/>
 > 1. 만약 (1)이 두 개의 solution $$\hat{\beta}^{(1)}$$, $$\hat{\beta}^{(2)}$$를 가질때, 임의의 $$0 < \alpha < 1$$에 대해 $$\alpha \hat{\beta}^{(1)} + (1 - \alpha) \hat{\beta}^{(2)}$$ 또한 solution이 되므로 무수히 많은 solution이 존재하게 된다.<br/>
 > 2. & 3. 두 개의 solution $$\hat{\beta}^{(1)}$$, $$\hat{\beta}^{(2)}$$가 있다고 가정해보자. 이때 optimal value를 $$c^\star$$라고 하면, 어떤 임의의 solution인 $$\alpha \hat{\beta}^{(1)} + (1 - \alpha) \hat{\beta}^{(2)}$$ ($$0 < \alpha < 1$$)에 대해 아래의 등식을 항상 만족해야만 한다.
->  $$\frac{1}{2} \| y - X(\alpha \hat{\beta}^{(1)} + (1 - \alpha) \hat{\beta}^{(2)}) \|_2^2 + \lambda \| \alpha \hat{\beta}^{(1)} + (1 - \alpha) \hat{\beta}^{(2)} \|_1 = \alpha c^\star + (1-\alpha) c^\star = c^\star$$
+> $$
+>\begin{align}
+> &\frac{1}{2} \| y - X(\alpha \hat{\beta}^{(1)} + (1 - \alpha) \hat{\beta}^{(2)}) \|_2^2 + \lambda \| \alpha \hat{\beta}^{(1)} + (1 - \alpha) \hat{\beta}^{(2)} \|_1 \\
+> & = \alpha c^\star + (1-\alpha) c^\star = c^\star
+>\end{align}
+>$$
 > 위 등식을 만족하기 위해서는 임의의 solution $$\hat{\beta}$$에 대해 $$X\hat{\beta}$$은 항상 같은 값을 가져야 하고, $$\lambda > 0$$일때 $$\| \hat{\beta} \|_1$$ 값 또한 항상 같아야 한다.
 
 
 다시 처음으로 돌아가, lasso problem (1)에 대한 KKT conditions는 아래와 같다.
 >$$
->X^T (y - X\hat{\beta}) = \lambda \gamma, \qquad \text{ --- (2)} \\\\
->\gamma_i \in 
+>\begin{align}
+>&&X^T (y - X\hat{\beta}) = \lambda \gamma, \qquad \text{ --- (2)} \\\\
+>&&\gamma_i \in 
 > \begin{cases}
 > \{ sign(\hat{\beta_i}) \} & if \hat{\beta_i} \neq 0 \\\\
 > [-1, 1] & if \hat{\beta_i} = 0,
-> \end{cases}
-> \text{for } i = 1, \dots, p. \text{ --- (3)} \\\\
-> \text{Here } \gamma \in \mathbb{R}^p \text{ is called a subgradient of the function } f(x) = \| x \|_1 \text{ evaluated at } x = \hat{\beta}.
+> \end{cases} \\\\
+> &&\text{for } i = 1, \dots, p. \text{ --- (3)} \\\\
+> &&\text{Here } \gamma \in \mathbb{R}^p \text{ is called a subgradient of the function } \\
+> &&f(x) = \| x \|_1 \text{ evaluated at } x = \hat{\beta}.
+>\end{align}
 >$$
 
 즉, (1)의 solution인 $$\hat{\beta}$$는 어떤 $$\gamma$$에 대해 (2) 와 (3)을 만족한다. 
@@ -105,8 +118,10 @@ $$
 >**Lemma 2.** 임의의 $$y, X, \lambda > 0$$에 대해, 만약 $$null(X_\mathcal{E}) = {0}$$, 또는 $$rank(X_\mathcal{E}) = \vert\mathcal{E}\vert$$ ([참고](https://www.quora.com/When-the-null-space-of-a-matrix-is-the-zero-vector-the-matrix-is-in\vertible-Why/answer/Alexander-Farrugia)),이면 lasso solution은 유일(unique)해지며, 이는 곧 다음과도 같다.
 
 >$$
->\hat{\beta_{-\mathcal{E}}} = 0 \text{ and } \hat{\beta_{\mathcal{E}}} = (X^T_\mathcal{E}X^T_\mathcal{E})^{-1} ( X^T_\mathcal{E} y - \lambda s), \qquad \text{ --- (9)}\\\\
->\text{where } \mathcal{E} \text{ and } s \text{ are the equicorrelation set and signs as defined in (4) and (5)}.
+>\begin{align}
+>&& \hat{\beta_{-\mathcal{E}}} = 0 \text{ and } \hat{\beta_{\mathcal{E}}} = (X^T_\mathcal{E}X^T_\mathcal{E})^{-1} ( X^T_\mathcal{E} y - \lambda s), \qquad \text{ --- (9)} \\\\
+>&& \text{where } \mathcal{E} \text{ and } s \text{ are the equicorrelation set and signs as defined in (4) and (5)}.
+>\end{align}
 >$$
 
 참고로 이 solution은 많아 봐야 $$min\{n, p\}$$의 nonzero components로 구성된다.

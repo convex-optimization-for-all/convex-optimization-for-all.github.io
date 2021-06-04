@@ -20,7 +20,7 @@ $$c\in\mathbb{R}^{n},\, A\in\mathbb{R}^{m\times n},\, b\in\mathbb{R}^{m},\, G\in
 
 >$$
 >\begin{align}
->&\min_{x} &c^{T}x\\\\
+>&\min_{x} &&c^{T}x\\\\
 >&\text{subject to} &&Ax = b\\\\
 >& &&Gx \leq h.\\\\
 >\end{align}

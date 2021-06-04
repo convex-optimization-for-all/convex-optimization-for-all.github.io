@@ -78,20 +78,20 @@ $$x,\, y$$가 feasible하다면, 세 constraint에 scalar 값을 곱해 더하�
 
 두 번째 예시와 동일하게, constraint에 대하여 각각 scalar 값 a, b, c를 곱하면, 이 셋의 선형 결합으로 objective function에 대한 표현이 가능하다.
 
->$$
->\begin{align}
->& &{a(x+y) \geq 2a} \\\\
->&{+} &{bx \geq 0} \\\\
->&{+} &{cy \geq 0} \\\\
->&{=} &{(a+b)x+(a+c)y \geq 2a} \\\\
->\\\\
->& &{\text{Lower bound} \  B=2a, \\\\
->\text{for any satisfying a,b,c below}}\\\\
->& &{a + b = p}\\\\
->& &{a + c = q}\\\\
->& &{a,b,c \geq 0.}\\\\
->\end{align}
->$$
+ >$$
+ >\begin{align}
+ >& &{a(x+y) \geq 2a} \\\\
+ >&{+} &{bx \geq 0} \\\\
+ >&{+} &{cy \geq 0} \\\\
+ >&{=} &{(a+b)x+(a+c)y \geq 2a} \\\\
+ >&&\text{Lower bound}\ B=2a, \\
+ >&&\text{for any satisfying a,b,c below}\\\\
+ >& &{a + b = p}\\\\
+ >& &{a + c = q}\\\\
+ >& &{a,b,c \geq 0.}\\\\
+ >\end{align}
+ >$$
+
 
 lower bound가 위에서처럼 2a임을 만족하기 위해서는, scalar 값을 곱하는 과정에서 부등호가 바뀌어선 성립하지 않기 때문에, $$a, b, c$$가 양수라는 조건과 scalar 값의 합이 obejctive function과 동일하다는 조건인 $$a+b = p$$, $$a+c = q$$라는 조건을 만족해야만 한다.
 
@@ -143,8 +143,8 @@ lower bound가 위에서처럼 2a임을 만족하기 위해서는, scalar 값을
 >&{=} &{(a+3c)x+(-b+c)y \geq 2c-b}
 >\\\\
 >\\\\
->& &{\text{Lower bound}  B=2c-b, \\\\
->\text{for any satisfying a,b,c below}}\\\\
+>&& \text{Lower bound}  \ B=2c-b, \\
+>&& \text{for any satisfying a,b,c below}\\\\
 >& &{a + 3c = p}\\\\
 >& &{-b + c = q}\\\\
 >& &{a,b \geq 0}\\\\
