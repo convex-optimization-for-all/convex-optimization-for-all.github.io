@@ -13,7 +13,7 @@ $$f : R^n \rightarrow R$$가 미분 가능 함수라고 하자. $$dom$$ $$f$$가
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/17418/3.12_Three_level_curves_OV6vtPq.PNG" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter03/3.12_Three_level_curves_OV6vtPq.PNG" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig1]</figcaption>
 </p>
 </figure>

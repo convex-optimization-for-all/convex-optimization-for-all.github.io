@@ -60,13 +60,19 @@ $$f$$가 log-concave $$\Longleftrightarrow$$ 모든 $$x \in dom$$ $$f$$에 대�
 
 <br>
 #### Multiplication
-Log-convexity와 log-concavity는 곱셈(multiplication)과 양의 배수(positive scaling)를 곱하는 것에서 닫혀있다(closed). 만약, $$f$$와 $$g$$가 log-concave라면, pointwise product $$h(x) = f(x)g(x)$$ 역시 log-concave하다. 왜냐하면, $$log h(x) = log f(x) + log g(x)$$이고, 각각의 $$log f(x)$$와 $$log g(x)$$는 concave function이기 때문이다.
+Log-convexity와 log-concavity는 곱셈(multiplication)과 양의 배수(positive scaling)를 곱하는 것에서 닫혀있다(closed). 
+만약, $$f$$와 $$g$$가 log-concave라면, pointwise product $$h(x) = f(x)g(x)$$ 역시 log-concave하다. 
+왜냐하면, $$\log h(x) = \log f(x) + \log g(x)$$이고, 각각의 $$\log f(x)$$와 $$\log g(x)$$는 concave function이기 때문이다.
 
 #### Addition and Integration
-일반적으로, log-concave function의 합은 log-concave가 되지 않는다. 하지만, log-convexity는 합에 의해서는 보존된다. 예를 들어, $$f$$와 $$g$$를 log-convex function, 즉, $$F = log f$$ 그리고 $$G = log g$$가 convex하다고 하자. convex function의 합성 법칙(composition rules)에 의해, 다음을 만족한다.<br>
->$$log(exp F + exp G) = log(f + g)$$
+일반적으로, log-concave function의 합은 log-concave가 되지 않는다. 하지만, log-convexity는 합에 의해서는 보존된다.
+예를 들어, $$f$$와 $$g$$를 log-convex function, 즉, $$F = \log f$$ 그리고 $$G = \log g$$가 convex하다고 하자.
+convex function의 합성 법칙(composition rules)에 의해, 다음을 만족한다.<br>
 
-이는 convex가 된다. (좌변이 convex인 이유는 1. log-convex는 convex이고 2. convex에 지수함수를 적용해도 convex이며 3. convex의 합과 4. convex의 log도 convex이다. 따라서, 전체 결과는 convex이다.) 결론적으로, 두 log-convex function의 합은 log-convex이다. 
+>$$\log(exp F + exp G) = \log(f + g)$$
+
+이는 convex가 된다. (좌변이 convex인 이유는 1. log-convex는 convex이고 2. convex에 지수함수를 적용해도 convex이며 3. convex의 합과 4. convex의 log도 convex이다.
+따라서, 전체 결과는 convex이다.) 결론적으로, 두 log-convex function의 합은 log-convex이다. 
 
 이를 일반화하면 각 $$y \in C$$에 대해 $$f(x, y)$$가 log-convex이면 $$g(x)$$는 log-convex이다.
 >$$g(x) = \int_C^{} f(x,y) dy $$ 

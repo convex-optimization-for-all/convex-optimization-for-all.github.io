@@ -40,12 +40,13 @@ owner: "YoungJae Choung"
 
 **Geometric program**은 다음과 같은 형태로 정의되며, 이는 non-convex problem이다.
 >$$
->\begin{align}
->    \text{minimize}_{x} {f(x)} \\
->    \text{subject to } {g_{i}(x) \leq 1, i = 1, \dotsc, m} \\
->    {h_{j}(x) = 1, j = 1, \dotsc, r}, \\
->\end{align}\\
->$$
+\begin{align}
+&\min_{x} &&f(x) \\
+&\text{subject to } &&g_{i}(x) \leq 1, i = 1, \dotsc, m\\
+&&&h_{j}(x) = 1, j = 1, \dotsc, r,\\\\
+\end{align}\\
+$$
+
 >where $$f$$, $$g_{i}, i=1, \dotsc, m$$ are posynomials and $$h_{j}, j=1, \dotsc, r$$ are monomials.
 
 Geometric program이 어떤 convex problem과 동일함을 증명해보자.
@@ -59,15 +60,15 @@ Geometric program이 어떤 convex problem과 동일함을 증명해보자.
 >이때, **Theorem1**에 의해 이에 log를 취해준 형태인 $$log \big( \sum_{k=1}^{p} e^{a_{k}^{Ty} + b_{k}} \big)$$ 또한 optimization problem을 동일하게 유지할 수 있다.
 >
 >즉, geometric program은 다음의 문제와도 동일하며 이는 convex problem이다.
-
+>
 >$$
 >\begin{align}
->    \text{minimize}_{x} \quad &{log \big( \sum_{k=1}^{p_{0}} e^{a_{0k}^{Ty} + b_{0k}} \big)} \\
->    \text{subject to} \quad &{
+&\min_{x} \quad &&{log \big( \sum_{k=1}^{p_{0}} e^{a_{0k}^{Ty} + b_{0k}} \big)} \\
+&\text{subject to} &&{
          log \big( \sum_{k=1}^{p_{i}} e^{a_{ik}^{Ty} + b_{ik}} \big)
          \leq 0
          , \quad i = 1, \dotsc, m
-     } \\
->    &c_{j}^{Ty} + d_{j} = 0, \quad j = 1, \dotsc, r, \\
->\end{align}\\
->$$
+}\\
+&&&c_{j}^{Ty} + d_{j} = 0, \quad j = 1, \dotsc, r\\\\
+\end{align}
+$$
