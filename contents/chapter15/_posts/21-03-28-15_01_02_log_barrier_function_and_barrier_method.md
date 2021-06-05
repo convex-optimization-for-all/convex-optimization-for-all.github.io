@@ -38,8 +38,8 @@ $$h_1, \cdots , h_m : \mathbb{R}^n \to \mathbb{R}$$가 convex이고 두번 미�
 Barrier function을 사용해서 원래 문제를 다음과 같이 근사할 수 있다. 단, $$t\gt 0$$이다.
 >
 $$\begin{align}
-&\min_{x}           && f(x) + \frac{1}{t} \phi(x)     &&&&\min_{x}        \   &&&&& tf(x) + \phi(x) \\
-&\text{subject to } && Ax = b                  \iff   &&&&\text{subject to } &&&&& Ax = b \\
+&\min_{x}           && f(x) + \frac{1}{t} \phi(x) & \qquad      & \min_{x} && tf(x) + \phi(x) \\
+&\text{subject to } && Ax = b                     & \iff \qquad & \text{subject to } && Ax = b \\
 \end{align}$$
 
 이와 같이 정의된 문제를 newton's method로 푸는 방법을 **barrier method**라고 한다.
