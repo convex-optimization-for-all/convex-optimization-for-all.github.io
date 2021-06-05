@@ -19,7 +19,7 @@ Non-separable set에 대한 support vector machine 문제는 다음과 같다.
 >    &\min_{\beta, \beta-0, \xi} &&{\frac{1}{2} \rVert\beta\rVert_2^2 + C\sum_{i=1}^n \xi_i} \\\\
 >    &\text{subject to} &&{\xi_i \ge 0, \quad i = 1, \dots, n}\\\\
 >    & && y_i (x_i^T \beta + \beta-0) \ge 1 - \xi_i, \quad i = 1, \dots, n,\\\\
->&\text{given } &&y \in \{-1, 1\}^n \text{ and } X \in \mathbb{R}^{n \times p}.
+>&&&\text{given } y \in \{-1, 1\}^n \text{ and } X \in \mathbb{R}^{n \times p}.
 >\end{align}
 >$$
 
