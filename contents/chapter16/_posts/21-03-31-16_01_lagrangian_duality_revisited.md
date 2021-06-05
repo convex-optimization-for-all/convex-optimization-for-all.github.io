@@ -153,10 +153,12 @@ Linear programming에 대한 barrier problem은 다음과 같이 정의한다.
 #### Barrier problem for LP
 >$$
 >\begin{align}
->    \mathop{\text{minimize}}_x &\quad c^Tx - \tau \sum_{i=1}^n \log(x_i)\\\\
->    \text{subject to} &\quad Ax = b, \\\\
->\end{align} \\
->\text{where }\tau > 0$$.
+>    \mathop{\text{minimize}}_x &\quad c^Tx - \tau \sum_{i=1}^n \log(x_i)\\
+>    \text{subject to} &\quad Ax = b, \\
+>\end{align}$$
+>
+>$$\text{where }\tau > 0.$$
+
 
 앞선 정의에 따라 위 문제의 dual problem은 다음과 같다.
 $$
