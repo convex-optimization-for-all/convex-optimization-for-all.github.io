@@ -17,7 +17,7 @@ Barrier method를 소개하기 전에 먼저 indicator function을 barrier funct
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/21305/15_barrier_function_01.PNG" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter15/15_barrier_function_01.png" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">$$\text{[Fig 1] barrier function }\phi(x) = -1/t\log(-x) [1]$$</figcaption>
 </p>
 </figure>
@@ -37,11 +37,9 @@ $$h_1, \cdots , h_m : \mathbb{R}^n \to \mathbb{R}$$가 convex이고 두번 미�
 
 Barrier function을 사용해서 원래 문제를 다음과 같이 근사할 수 있다. 단, $$t\gt 0$$이다.
 >
-\begin{align}
-\min_{x} & \quad f(x) + \frac{1}{t} \phi(x) & & & & & \min_{x} & \quad tf(x) + \phi(x) \\
-\end{align}
-\begin{align}
-\text{subject to } & \quad Ax = b & \iff \qquad & \text{subject to } & \quad Ax = b \\
-\end{align}
+$$\begin{align}
+&\min_{x}           && f(x) + \frac{1}{t} \phi(x) & \qquad      & \min_{x} && tf(x) + \phi(x) \\
+&\text{subject to } && Ax = b                     & \iff \qquad & \text{subject to } && Ax = b \\
+\end{align}$$
 
 이와 같이 정의된 문제를 newton's method로 푸는 방법을 **barrier method**라고 한다.

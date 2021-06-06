@@ -13,21 +13,24 @@ Open convex set $$D \subset \mathbb{R}^n$$로 정의되는 convex function $$\ph
 > $$\lambda(x)^2 = \nabla \phi(x) (\nabla^2 \phi(x))^{-1} \nabla \phi(x) \le \nu$$
 
 다음 LP 문제를 고려해보자. (여기서 $$\bar{D}$$는 domain $$D$$의 closure이다.)
->$$\begin{align}
-\min_{x} & \quad c^Tx \\\
-\text{subject to } & \quad x \in \bar{D}  \\\
+>
+$$\begin{align}
+&\min_{x} \           && c^Tx \\
+&\text{subject to } \ && x \in \bar{D}  \\
 \end{align}$$
 
 이 문제는 다음과 같은 문제로 근사된다.
->$$\begin{align}
-\min_{x} & \quad tc^Tx + \phi(x) \\\
+>
+$$\begin{align}
+&\min_{x} && tc^Tx + \phi(x) \\
 \end{align}$$
 
 여기서, $$\phi_t(x) := tc^Tx + \phi(x)$$라고 하고 이에 해당하는 newton decrement를 $$\lambda_t(x)$$라고 하자.
 
 Key observation : $$t^+ \gt t$$의 경우
->$$\begin{align}
-\lambda_t^+(x) \le \quad \frac{t^+}{t}\lambda_t^+(x) + \left ( \frac{t^+}{t} -1 \right ) \sqrt{\nu}  \\\
+>
+$$\begin{align}
+\lambda_t^+(x) \le & \frac{t^+}{t}\lambda_t^+(x) + \left ( \frac{t^+}{t} -1 \right ) \sqrt{\nu}  \\\
 \end{align}$$
 
 ## Theorem

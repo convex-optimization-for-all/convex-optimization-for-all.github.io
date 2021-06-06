@@ -38,10 +38,9 @@ owner: "Wontak Ryu"
 
 > $$ 
 >\begin{align}
-> & \min_x f(x) \\
-> 
-> &\text{ subject to } \qquad & h_i(x) ≤ 0, i = 1,...m \\
-> &&l_j(x) = 0, j = 1,...r
+> & \min_x && f(x) \\
+> &\text{ subject to } && h_i(x) ≤ 0, i = 1,...m \\
+> &&&l_j(x) = 0, j = 1,...r
 > \end{align}$$
 
 

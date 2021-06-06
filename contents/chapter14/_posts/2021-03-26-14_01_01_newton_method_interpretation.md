@@ -64,7 +64,7 @@ gradient descent의 자세한 내용은 [gradient descent 장]({% post_url conte
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/21331/gd.JPG" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter14/gd.jpeg" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig 1] Comparison between gradient descent(black) and Newton's method(blue)[3]</figcaption>
 </p>
 </figure>
