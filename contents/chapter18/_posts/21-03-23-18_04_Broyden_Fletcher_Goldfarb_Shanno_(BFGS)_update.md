@@ -13,11 +13,11 @@ BFGS는 다음 문제를 푸는 것으로 유도된다.
 >Solve
 >$$
 >\begin{align}
->    \min_{H^+} \: \: &{\|W^{1/2} (H^+ - H) W^{1/2} \|_F} \\\\
->    \text{subject to } &{H^+ = (H^+)^T} \\\\
->    &{H^+s = y}  \\\\
+>& \min_{H^+} \: \: && {\|W^{1/2} (H^+ - H) W^{1/2} \|_F} \\\\
+>& \text{subject to } && {H^+ = (H^+)^T} \\\\
+>&&& {H^+s = y}  \\\\
+>& \text{where } && W \in \mathbb{R}^{n \; \times \;n} \text{ is nonsingular and such that } Ws_k = y_k.
 >\end{align}\\\\
->\text{where } W \in \mathbb{R}^{n \; \times \;n} \text{ is nonsingular and such that } Ws_k = y_k.
 >$$
 
 유도되는 $$H$$와 $$B$$ 에 대한 updating formula는 다음과 같다.
