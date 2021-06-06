@@ -14,8 +14,8 @@ owner: "Hooncheol Shin"
 >    &\text{minimize}_{x} &&{(1/2)x^T P x + q^T x + r} \\\\
 >    &\text{subject to } &&{Gx \preceq h} \\\\
 >    & &&{Ax = b},\\\\
+>    & \text{where } &&P \in \mathbb{S}_{+}^n, G \in \mathbb{R}^{\text{m x n}} \text{, and } A \in \mathbb{R}^{\text{p x n}}.
 >\end{align}\\
-> \text{where } P \in \mathbb{S}_{+}^n, G \in \mathbb{R}^{\text{m x n}} \text{, and } A \in \mathbb{R}^{\text{p x n}}.
 >$$
 
 * 위 목적함수의 $$+ r$$는 최적화의 과정 및 결과에 영향을 주지 않으므로 생략되어도 무방하다.
@@ -127,8 +127,8 @@ Quadratic program의 목적함수에서 이차항을 제거하게 되면 linear 
 >    &\text{minimize}_{x} &&{c^T x + d} \\\\
 >    &\text{subject to } &&{Gx \preceq h} \\\\
 >    & &&{Ax = b},\\\\
+>    & \text{where } &&G \in \mathbb{R}^{\text{m x n}} \text{ and } A \in \mathbb{R}^{\text{p x n}}.
 >\end{align}\\
->\text{where } G \in \mathbb{R}^{\text{m x n}} \text{ and } A \in \mathbb{R}^{\text{p x n}}.
 >$$
 
 ### Example 1) Portfolio optimization

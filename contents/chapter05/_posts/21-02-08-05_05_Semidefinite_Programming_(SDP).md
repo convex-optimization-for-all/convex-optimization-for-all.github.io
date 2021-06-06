@@ -14,8 +14,8 @@ General LP에서 inequality constraint가 linear matrix inequality(LMI)로 교�
 >    &\text{minimize}_{x} &&{c^T x + d} \\\\
 >    &\text{subject to } &&{xF_1 + \dotsb + x_nF_n + G \preceq 0} \\\\
 >    & &&{Ax = b},\\\\
+>    & \text{where } &&G, F_1, \dotsb, F_n \in \mathbb{S}^{k} \text{ and } A \in \mathbb{R}^{\text{p x n}}.
 >\end{align}\\
->\text{where } G, F_1, \dotsb, F_n \in \mathbb{S}^{k} \text{ and } A \in \mathbb{R}^{\text{p x n}}.
 >$$
 
 * $$G, F_1, \dotsb, F_n$$가 모두 diagonal matrices면, 위의 inequality constraint는 n개의 linear inequalities와 동일해진다. 이 경우 SDP는 LP와 같다.

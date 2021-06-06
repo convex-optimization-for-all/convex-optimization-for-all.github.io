@@ -120,8 +120,8 @@ $$ x = x^{+}  - x^{-} $$ 이고, $$ x^{+} \text{, } x^{-} \succeq 0. $$
 > $$ \begin{align}
 >     &\text{minimize}_{\beta} &&{\|\beta\|_0} \\\\
 >     &\text{subject to } &&{X\beta = y},\\\\
+>     & \text{given } &&y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n.\\\\
 > \end{align} \\
-> \text{given } y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n.\\\\
 $$
 
 * $$ {\| \beta \|_0} = \sum_{j=1}^p 1, \left\{ \beta_j \neq 0 \right\} $$
@@ -131,8 +131,8 @@ $$
 > $$ \begin{align}
 >     &\text{minimize}_{\beta} &&{\|\beta\|_1} \\\\
 >     &\text{subject to } &&{X\beta = y},\\\\
+>     & \text{given } &&y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n.
 > \end{align} \\
-> \text{given } y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n.
 $$
 
 또한 basis pursuit는 다음과 같이 linear program으로 변형된다.
@@ -154,8 +154,8 @@ Basis pursuit에서 다룬 문제와 목적이 동일하지만, y에 noise가 �
 > $$ \begin{align}
 >     &\text{minimize}_{\beta} &&{\|\beta\|_1} \\\\
 >     &\text{subject to } &&{\| X^T (y - X \beta) \|_{\infty} \leq \lambda},\\\\
+>     &\text{given } &&y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n. \ \text{Here } \lambda \geq 0 \text{ is a hyper-parameter. }\\\\
 > \end{align} \\
->\text{given } y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n. \ \text{Here } \lambda \geq 0 \text{ is a hyper-parameter. }\\\\
 $$
 
 * $$ y - X \beta \in \mathbb{R}^n $$은 residual이다.
@@ -175,6 +175,6 @@ Dantzig selector는 마찬가지로 다음과 같이 linear program으로 변형
 >     & &&{-x_j^T (y - X \beta) \preceq \lambda}, \text{for all } j = 1 \dotsc p\\\\
 >     & && z \succeq -\beta\\\\
 >     & && z \succeq \beta,\\\\
+>     & \text{given } &&y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n. \ \text{Here } x_j \text{ is a jth column of } X.\\\\
 > \end{align}\\
-> \text{given } y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n. \ \text{Here } x_j \text{ is a jth column of } X.\\\\
 > $$
