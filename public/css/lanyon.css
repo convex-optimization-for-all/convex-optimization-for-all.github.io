@@ -100,13 +100,20 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #eee;
 }
 .masthead-title {
-  margin-top: 0;
-  margin-bottom: 0;
+  font-weight: 500 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
   color: #505050;
 }
 .masthead-title a {
-  color: #505050;
+  color: #505050 !important;
+  text-decoration: none !important;
 }
+.masthead-title a:hover {
+  display: block;
+  transform: translateY(-1px);
+}
+
 .masthead-title small {
   font-size: 75%;
   font-weight: 400;
