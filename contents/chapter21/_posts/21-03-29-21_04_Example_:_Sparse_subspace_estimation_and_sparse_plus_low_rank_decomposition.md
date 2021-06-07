@@ -87,7 +87,7 @@ $$M\in \mathbb{R}^{n\times m}$$일때, sparse plue low rank decomposition proble
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/24031/candes.png" alt="[Fig 1] Example of sparse plue low rank decomoposition on surveliance camera[3]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter21/candes.png" alt="[Fig 1] Example of sparse plue low rank decomoposition on surveliance camera[3]" width="70%">
   <figcaption style="text-align: center;">[Fig 1] Example of sparse plue low rank decomoposition on surveliance camera[3]</figcaption>
 </p>
 </figure>

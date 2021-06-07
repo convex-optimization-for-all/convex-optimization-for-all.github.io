@@ -46,10 +46,11 @@ ADMM에서는 dual 식을 유도하는 것과 동일하게, 어떤 식으로 보
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/24034/lasso.png" alt="[Fig 1] Comparison of various algorithms for lasso regression (50 instances with n = 100, p = 20) [3]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter21/lasso.png" alt="[Fig 1] Comparison of various algorithms for lasso regression (50 instances with n = 100, p = 20) [3]" width="70%">
   <figcaption style="text-align: center;">[Fig 1] Comparison of various algorithms for lasso regression (50 instances with n = 100, p = 20) [3]</figcaption>
 </p>
 </figure>
+
 
 [Fig 1]은 lasso regression 문제에 대한 다양한 알고리즘들의 수렴을 비교한 것이다. 모든 알고리즘들은 iteration마다 동일한 계산복잡도를 가지고 있다. 그래프의 수렴 속도에서 볼 수 있다시피, ADMM은 proximal gradient descent(검정)와 비슷한 수렴 속도를 가진다. Accelerated proximal gradient descent(빨강)는 "Nestrov ripples"를 가지지만 조금 더 빠른 수렴 속도를 보인다. 또한  ADMM은 $$\rho$$ 값에 따라 다른 수렴 속도를 보인다는 특성도 확인할 수 있다. 후에 [23장]({% post_url contents/chapter23/21-03-28-23_Coordinate_Descent %})에서 논하게 될 Coordinate descent(초록)의 경우는 문제에서 더 많은 정보들을 사용하고, 따라서 다른 방법들에 비해 빠른 수렴 속도를 가진다. Coordinate descent의 단점은 문제하기 위한 조건들이 존재한다는 것이다.
 $$\rho$$값을 너무 크게 설정하면, 목적함수에서 $$f+g$$를 최소화 하는 비중이 작고, $$\rho$$값을 너무 작게 설정하면, feasiblity가 떨어진다. 따라서 적절한 $$\rho$$값의 설정이 중요하다. 자세한 내용은 [21장 reference 논문]({% post_url contents/chapter21/21-03-29-21_00_Alternating_Direction_Method_of_Multipliers %}) 중 [BPCPE]에서 논하고 있다.

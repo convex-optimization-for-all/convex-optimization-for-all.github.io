@@ -31,7 +31,7 @@ Solution은 thresholding level이 $$\lambda / \|X_i\|_2^2$$인 soft-thresholding
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/23403/pd_vs_agd_vs_cd.png" alt="[Fig1] PD vs AGD vs CD [3]">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter23/pd_vs_agd_vs_cd.png" alt="[Fig1] PD vs AGD vs CD [3]">
   <figcaption style="text-align: center;">[Fig1] PD vs AGD vs CD [3]</figcaption>
 </p>
 </figure>

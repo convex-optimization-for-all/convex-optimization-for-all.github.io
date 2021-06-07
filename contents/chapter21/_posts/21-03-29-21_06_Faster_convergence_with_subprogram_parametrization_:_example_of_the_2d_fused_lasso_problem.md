@@ -24,7 +24,7 @@ ADMM의 성질 중 무척 흥미로운 점은 문제 해결에 있어서 작은 
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/24033/2dfussed.png" alt="[Fig 1] Interpretation of the penalty term in 2d fussed lasso[3]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter21/2dfussed.png" alt="[Fig 1] Interpretation of the penalty term in 2d fussed lasso[3]" width="70%">
   <figcaption style="text-align: center;">[Fig 1] Interpretation of the penalty term in 2d fussed lasso[3]</figcaption>
 </p>
 </figure>
@@ -83,7 +83,7 @@ ADMM steps는 아래와 같다.
  
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/24033/2dfussedlasso.png" alt="[Fig 2]  Interpretation of the matrix form ADMM updates for 2d fused lasso[3]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter21/2dfussedlasso.png" alt="[Fig 2]  Interpretation of the matrix form ADMM updates for 2d fused lasso[3]" width="70%">
   <figcaption style="text-align: center;">[Fig 2]  Interpretation of the matrix form ADMM updates for 2d fused lasso[3]</figcaption>
 </p>
 </figure>
@@ -96,7 +96,7 @@ ADMM steps는 아래와 같다.
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/24033/ll1.png" alt="[Fig 3]  Data, exact solution image(300x200 image : n = 60,000).  
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter21/ll1.png" alt="[Fig 3]  Data, exact solution image(300x200 image : n = 60,000).  
 left : original image before denoising, right : the exact solution of denoised image[3]" width="70%">
   <figcaption style="text-align: center;">[Fig 3]  Data, exact solution image(300x200 image : n = 60,000).  
 left : original image before denoising, right : the exact solution of denoised image[3]</figcaption>
@@ -106,7 +106,7 @@ left : original image before denoising, right : the exact solution of denoised i
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/24033/ll2.png" alt="[Fig 4]  Convergence curves of two ADMM algorithms. black : standard(vector form), red : specialized(matrix form) [3]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter21/ll2.png" alt="[Fig 4]  Convergence curves of two ADMM algorithms. black : standard(vector form), red : specialized(matrix form) [3]" width="70%">
   <figcaption style="text-align: center;">[Fig 4]  Convergence curves of two ADMM algorithms. black : standard(vector form), red : specialized(matrix form) [3]</figcaption>
 </p>
 </figure>
@@ -114,7 +114,7 @@ left : original image before denoising, right : the exact solution of denoised i
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/24033/ll2.png" alt="[Fig 5]  ADMM iterates visualized after k = 10, 30, 50, 100 iterations [3]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter21/ll2.png" alt="[Fig 5]  ADMM iterates visualized after k = 10, 30, 50, 100 iterations [3]" width="70%">
   <figcaption style="text-align: center;">[Fig 5]  ADMM iterates visualized after k = 10, 30, 50, 100 iterations [3]</figcaption>
 </p>
 </figure>

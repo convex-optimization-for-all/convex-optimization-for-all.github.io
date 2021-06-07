@@ -20,7 +20,7 @@ owner: "YoungJae Choung"
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/22690/away_steps.png" alt="[Fig 3] Away step motivation [3]">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter22/away_steps.png" alt="[Fig 3] Away step motivation [3]">
   <figcaption style="text-align: center;">[Fig 3] Away step motivation [3]</figcaption>
 </p>
 </figure>
