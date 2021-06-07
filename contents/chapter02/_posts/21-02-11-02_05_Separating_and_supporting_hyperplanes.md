@@ -18,7 +18,7 @@ owner: "Wontak Ryu"
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl }}/img/chapter_img/chapter02/02.05_01_Seperating_hyperplan_theorem.PNG" alt="[Fig1] Separating hyperplane theorem [1]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter02/02.05_01_Seperating_hyperplan_theorem.png" alt="[Fig1] Separating hyperplane theorem [1]" width="70%">
   <figcaption style="text-align: center;">[Fig1] Separating hyperplane theorem [1]</figcaption>
 </p>
 </figure>
@@ -43,7 +43,7 @@ Separating hyperplane theorems의 역은 성립하지 않는다. 즉, separating
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl }}/img/chapter_img/chapter02/02.05_02_Supporting_hyperplane_theorem.PNG" alt="[Fig 2] Supporting hyperplane [1]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter02/02.05_02_Supporting_hyperplane_theorem.png" alt="[Fig 2] Supporting hyperplane [1]" width="70%">
   <figcaption style="text-align: center;">[Fig 2] Supporting hyperplane [1]</figcaption>
 </p>
 </figure>

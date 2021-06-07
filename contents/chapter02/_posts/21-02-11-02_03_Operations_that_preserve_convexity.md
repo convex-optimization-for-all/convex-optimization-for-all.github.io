@@ -79,7 +79,7 @@ Linear-fractional function에서 $$c = 0$$이고 $$d \gt 0$$이면 affine functi
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl }}/img/chapter_img/chapter02/02.03_05_linear_fractional_function.PNG" alt="[Fig 3] Linear-fractional functions [1]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter02/02.03_05_linear_fractional_function.png" alt="[Fig 3] Linear-fractional functions [1]" width="70%">
   <figcaption style="text-align: center;">[Fig 3] Linear-fractional functions [1]</figcaption>
 </p>
 </figure>
