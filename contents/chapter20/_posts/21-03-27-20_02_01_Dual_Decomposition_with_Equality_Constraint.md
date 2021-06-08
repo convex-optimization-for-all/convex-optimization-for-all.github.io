@@ -36,7 +36,7 @@ owner: "Hooncheol Shin"
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/23703/decomposition.png" alt="[Fig 1] Broadcast and Gather" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter20/decomposition.png" alt="[Fig 1] Broadcast and Gather" width="70%">
   <figcaption style="text-align: center;">[Fig 1] Broadcast and Gather</figcaption>
 </p>
 </figure>

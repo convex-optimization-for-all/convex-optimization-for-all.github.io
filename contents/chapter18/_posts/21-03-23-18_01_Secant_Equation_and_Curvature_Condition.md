@@ -27,7 +27,7 @@ $$x$$축은 $$x^k$$를, $$y$$축은 $$\nabla f(x^k)$$를 나타낸다고 할때 
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/22150/intuition_of_secant_eq.png" alt="[Fig1] The intuition of secant equation" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter18/intuition_of_secant_eq.png" alt="[Fig1] The intuition of secant equation" width="70%">
   <figcaption style="text-align: center;">[Fig1] The intuition of secant equation</figcaption>
 </p>
 </figure>

@@ -28,7 +28,7 @@ $$l_1$$ regularized logistic regression에대해 다음 세가지 방법에 대�
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/22428/09.05_Lasso_Example1.PNG" alt="[Fig 1] Dense hessian X (n=5000, p=6000) [2]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter19/09.05_Lasso_Example1.PNG" alt="[Fig 1] Dense hessian X (n=5000, p=6000) [2]" width="70%">
   <figcaption style="text-align: center;">[Fig 1] Dense hessian X (n=5000, p=6000) [2]</figcaption>
 </p>
 </figure>
@@ -43,7 +43,7 @@ $$l_1$$ regularized logistic regression에대해 다음 세가지 방법에 대�
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/22428/09.05_Lasso_Example-sparse.PNG" alt="[Fig 2] Sparse hessian X (n=542,000, p=47,000) [2]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter19/09.05_Lasso_Example-sparse.PNG" alt="[Fig 2] Sparse hessian X (n=542,000, p=47,000) [2]" width="70%">
   <figcaption style="text-align: center;">[Fig 2] Sparse hessian X (n=542,000, p=47,000) [2]</figcaption>
 </p>
 </figure>
@@ -58,7 +58,7 @@ Graphical lasso estimation 문제에 inner optimizations을 위한 세 가지 st
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/22428/09.05_Inexact_prox.PNG" alt="[Fig 3] Three stopping rules [2]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter19/09.05_Inexact_prox.PNG" alt="[Fig 3] Three stopping rules [2]" width="70%">
   <figcaption style="text-align: center;">[Fig 3] Three stopping rules [2]</figcaption>
 </p>
 </figure>
