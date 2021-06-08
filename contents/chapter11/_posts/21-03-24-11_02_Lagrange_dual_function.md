@@ -21,7 +21,7 @@ $$
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/20583/dual-gen_7.png" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter11/dual-gen_7.png" width="70%">
   <figcaption style="text-align: center;">[Fig 2] Example of Lagrangian dual function[1]</figcaption>
 </p>
 </figure>
@@ -129,7 +129,7 @@ $$
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/20583/dual-gen_10.png" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter11/dual-gen_10.png" width="70%">
   <figcaption style="text-align: center;">[Fig 3] Example of quadratic program in 2D</figcaption>
 </p>
 </figure>

@@ -17,7 +17,7 @@ Equality constraint만을 가진 [quadratic program]()은 다음과 같다.
 >\begin{align}
 >    &\min_{x} &&{(1/2)x^T P x + q^T x + r} \\\\
 >    &\text{subject to} &&{Ax = b},\\\\
->&\text{where } P \in \mathbb{S}_{+}^n \text{ and } A \in \mathbb{R}^{\text{p x n}}.
+>&\text{where } &&P \in \mathbb{S}_{+}^n \text{ and } A \in \mathbb{R}^{\text{p x n}}.
 >\end{align}
 >$$
 

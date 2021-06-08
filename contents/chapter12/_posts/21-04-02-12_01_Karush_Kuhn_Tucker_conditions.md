@@ -16,9 +16,9 @@ MathJax.Hub.Config({
 
 >$$
 >\begin{align}
->    &\min_{x} &{f(x)} \\\\
->    &\text{subject to } &{h_i(x) \le 0, \text{ } i=1,\dots,m} \\\\
->    & &{l_j(x) = 0, \text{ } j=1,\dots,r}.\\\\
+>    &\min_{x} &&{f(x)} \\\\
+>    &\text{subject to } &&{h_i(x) \le 0, \text{ } i=1,\dots,m} \\\\
+>    & &&{l_j(x) = 0, \text{ } j=1,\dots,r}.\\\\
 >\end{align}
 >$$
 

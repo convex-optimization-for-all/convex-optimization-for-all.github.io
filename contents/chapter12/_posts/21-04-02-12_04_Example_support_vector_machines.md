@@ -19,14 +19,14 @@ Non-separable set에 대한 support vector machine 문제는 다음과 같다.
 >    &\min_{\beta, \beta-0, \xi} &&{\frac{1}{2} \rVert\beta\rVert_2^2 + C\sum_{i=1}^n \xi_i} \\\\
 >    &\text{subject to} &&{\xi_i \ge 0, \quad i = 1, \dots, n}\\\\
 >    & && y_i (x_i^T \beta + \beta-0) \ge 1 - \xi_i, \quad i = 1, \dots, n,\\\\
->&\text{given } y \in \{-1, 1\}^n \text{ and } X \in \mathbb{R}^{n \times p}.
+>&&&\text{given } y \in \{-1, 1\}^n \text{ and } X \in \mathbb{R}^{n \times p}.
 >\end{align}
 >$$
 
 주어진 문제의 두 inequality constraints에 대한 0 이상의 Lagrange multipliers를 각각 $$v^\star, w^\star$$이라 할때, Lagrangian function은 다음과 같다.
 >$$L(\beta, \beta-0, \xi, v^\star, w^\star) = \frac{1}{2} \rVert\beta\rVert_2^2 + C\sum_{i=1}^n \xi_i - \sum_{i=1}^n v_i^\star \xi_i + \sum_{i=1}^n w_i^\star (1 - \xi_i - y_i ( x_i^T \beta + \beta_0))$$
 
-위 Lagrangian function을 이용하여 이 문제가 KKT stationarity condition을 만족하게 하는 다음의 조건들을 구할 수 있다. (Lagrangian function을 $$\beta, \beta-0, \xi$$에 대해 각각 미분하여 0이 되는 조건을 유도)
+위 Lagrangian function을 이용하여 이 문제가 KKT stationarity condition을 만족하게 하는 다음의 조건들을 구할 수 있다. (Lagrangian function을 $$\beta, \beta_0, \xi$$에 대해 각각 미분하여 0이 되는 조건을 유도)
 >$$
 >0 = \sum_{i=1}^n w_i^\star y_i, \quad \beta = \sum_{i=1}^n w_i^\star y_i x_i, \quad w^\star = C \cdot 1 - v^\star
 >$$
@@ -43,7 +43,7 @@ Non-separable set에 대한 support vector machine 문제는 다음과 같다.
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/20962/svm.png" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter12/svm.png" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">$$ \text{[Fig1] Illustration of support points with }\ \xi^\star \neq 0 \text{ [3]}$$ </figcaption>
 </p>
 </figure>

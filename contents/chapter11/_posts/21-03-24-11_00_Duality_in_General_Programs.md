@@ -14,7 +14,7 @@ $$c \in \mathbb{R}^n$$, $$A \in \mathbb{R}^{m \times n}$$, $$b \in \mathbb{R}^m$
 >
 $$
 \begin{alignat}{1}
-min_{x} & \quad c^T x   \\\\ 
+\min_{x} & \quad c^T x   \\\\ 
   s.t.   & \quad Ax = b  \\\\
          & \quad Gx \leq h 
 \end{alignat}
@@ -25,7 +25,7 @@ $$
 >
 $$
 \begin{alignat}{1}
-max_{u,b} & \quad -b^T u - h^T v   \\\\
+\max_{u,b} & \quad -b^T u - h^T v   \\\\
          s.t. & \quad - A^T u - G^T v = c  \\\\
              & \quad v \geq 0 
 \end{alignat}

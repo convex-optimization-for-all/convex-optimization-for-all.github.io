@@ -19,7 +19,7 @@ Linear program의 duality에 대한 예시로 max flow min cut 문제에 대해 
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/20588/max_flow.png" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter10/max_flow.png" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig 1] Directed Graph[3]</figcaption>
 </p>
 </figure>
@@ -75,7 +75,7 @@ Max flow problem이란 위 조건을 만족하는 그래프에 대해서 s에서
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/20588/min_cut.png" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter10/min_cut.png" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig 2] Graph Cut Example[3]</figcaption>
 </p>
 </figure>
