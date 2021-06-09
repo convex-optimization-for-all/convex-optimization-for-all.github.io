@@ -6,8 +6,6 @@ order: 8
 owner: "Kyeongmin Woo"
 ---
 
-# Derivation of First-Order Optimality Condition
-
 만약 $$f$$가 볼록함수이고 미분가능하면, subgradient 최적 조건은 first-order 최적 조건과 일치함을 아래와 같이 증명할 수 있다. 
 
 #### Proof

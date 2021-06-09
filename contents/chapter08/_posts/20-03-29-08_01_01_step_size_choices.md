@@ -6,8 +6,6 @@ order: 3
 owner: "Kyeongmin Woo"
 ---
 
-# Step size choices
-
 Subgradient method에서도 다양한 방법으로 **step size**를 선택할 수 있다.  
 
 그 중에서도 다음 2가지 방식을 자세히 살펴보도록 하자. 

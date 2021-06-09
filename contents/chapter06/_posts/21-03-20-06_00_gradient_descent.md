@@ -6,8 +6,6 @@ order: 1
 owner: "Kyeongmin Woo"
 ---
 
-# Gradient Descent
-
 이 장에서는 최적화 기법 중에 가장 기본적이고 중요한 기법인 **Gradient Descent**에 대해 살펴본다. 
 
 최적화 기법에서 알고리즘의 수렴 여부와 수렴속도를 결정짓는 매우 중요한 요소가 search direction과 step size이다. Gradient descent 방식은 gradient의 음수 방향으로 직선 탐색을 하는 방식이다. 이때, step size는 고정 크기 방식과 곡면에 따라 적응적으로 선택하는 방식이 있는데 이 장에서는 두 방식에 대해 모두 살펴볼 것이다.

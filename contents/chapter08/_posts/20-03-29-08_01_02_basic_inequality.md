@@ -6,8 +6,6 @@ order: 4
 owner: "Kyeongmin Woo"
 ---
 
-# Basic Inequality
-
 Subgradient method의 convergence theorem과 convergence rate는 다음과 같은 basic inequality를 활용해 증명할 수 있다.
 
 ## Basic Inequality

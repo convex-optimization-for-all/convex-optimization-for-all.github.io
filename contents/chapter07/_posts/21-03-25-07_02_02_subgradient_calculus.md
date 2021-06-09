@@ -6,8 +6,6 @@ order: 5
 owner: "Kyeongmin Woo"
 ---
 
-# Subgradient Calculus
-
 볼록함수의 subdifferential에 대한 다음의 몇가지 기본적인 규칙이 성립된다.
 
 ### Scaling

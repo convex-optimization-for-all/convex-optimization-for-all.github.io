@@ -6,8 +6,6 @@ order: 10
 owner: "Kyeongmin Woo"
 ---
 
-# Example: Soft-Thresholding
-
 $$X=I$$인 좀 더 간단한 lasso 문제는 아래와 같다. 
 >
 \begin{equation}
@@ -40,7 +38,7 @@ $$
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/18963/subgrad-6.png" alt="connection_to_convexity_geometry" width="80%" height="80%">
+ <img src="{{ site.baseurl  }}/img/chapter_img/chapter07/07_03_subgrad-6.png" alt="connection_to_convexity_geometry" width="80%" height="80%">
 </p>
  <figcaption style="text-align: center;">$$\text{[Fig 1] Soft-thresholding, y (x-axis), } \beta \text{ (y-axis), } \lambda=1/2 \text{ [3]}$$ </figcaption>
 </figure>

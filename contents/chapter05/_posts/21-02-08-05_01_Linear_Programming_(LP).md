@@ -11,11 +11,11 @@ owner: "Hooncheol Shin"
 ### General LP
 
 >$$ \begin{align}
->    &\text{minimize}_{x} &{c^T x + d} \\\\
->    &\text{subject to } &{Gx \preceq h} \\\\
->    & &{Ax = b},\\\\
+>    &\text{minimize}_{x} &&{c^T x + d} \\\\
+>    &\text{subject to } &&{Gx \preceq h}\\\\
+>    & &&{Ax = b},\\\\
+>    &\text{where } &&G \in \mathbb{R}^{\text{m x n}} \text{ and } A \in \mathbb{R}^{\text{p x n}}.
 >\end{align} \\
-> \text{where } G \in \mathbb{R}^{\text{m x n}} \text{ and } A \in \mathbb{R}^{\text{p x n}}.
 $$
 
 * 위 목적함수의 $$ +d $$는 최적화의 과정 및 결과에 영향을 주지 않으므로 생략되어도 무방하다.
@@ -24,7 +24,7 @@ $$
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17850/geometric_interpretation_of_LP.png" alt="[Fig1] Geometric interpretation of LP [1]" width="70%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter05/05_01_geometric_interpretation_of_LP.png" alt="[Fig1] Geometric interpretation of LP [1]" width="70%">
   <figcaption style="text-align: center;">[Fig1] Geometric interpretation of LP [1]</figcaption>
 </p>
 </figure>
@@ -120,8 +120,8 @@ $$ x = x^{+}  - x^{-} $$ 이고, $$ x^{+} \text{, } x^{-} \succeq 0. $$
 > $$ \begin{align}
 >     &\text{minimize}_{\beta} &&{\|\beta\|_0} \\\\
 >     &\text{subject to } &&{X\beta = y},\\\\
+>     & \text{given } &&y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n.\\\\
 > \end{align} \\
-> \text{given } y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n.\\\\
 $$
 
 * $$ {\| \beta \|_0} = \sum_{j=1}^p 1, \left\{ \beta_j \neq 0 \right\} $$
@@ -131,8 +131,8 @@ $$
 > $$ \begin{align}
 >     &\text{minimize}_{\beta} &&{\|\beta\|_1} \\\\
 >     &\text{subject to } &&{X\beta = y},\\\\
+>     & \text{given } &&y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n.
 > \end{align} \\
-> \text{given } y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n.
 $$
 
 또한 basis pursuit는 다음과 같이 linear program으로 변형된다.
@@ -154,8 +154,8 @@ Basis pursuit에서 다룬 문제와 목적이 동일하지만, y에 noise가 �
 > $$ \begin{align}
 >     &\text{minimize}_{\beta} &&{\|\beta\|_1} \\\\
 >     &\text{subject to } &&{\| X^T (y - X \beta) \|_{\infty} \leq \lambda},\\\\
+>     &\text{given } &&y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n. \ \text{Here } \lambda \geq 0 \text{ is a hyper-parameter. }\\\\
 > \end{align} \\
->\text{given } y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n. \ \text{Here } \lambda \geq 0 \text{ is a hyper-parameter. }\\\\
 $$
 
 * $$ y - X \beta \in \mathbb{R}^n $$은 residual이다.
@@ -175,6 +175,6 @@ Dantzig selector는 마찬가지로 다음과 같이 linear program으로 변형
 >     & &&{-x_j^T (y - X \beta) \preceq \lambda}, \text{for all } j = 1 \dotsc p\\\\
 >     & && z \succeq -\beta\\\\
 >     & && z \succeq \beta,\\\\
+>     & \text{given } &&y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n. \ \text{Here } x_j \text{ is a jth column of } X.\\\\
 > \end{align}\\
-> \text{given } y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n. \ \text{Here } x_j \text{ is a jth column of } X.\\\\
 > $$
