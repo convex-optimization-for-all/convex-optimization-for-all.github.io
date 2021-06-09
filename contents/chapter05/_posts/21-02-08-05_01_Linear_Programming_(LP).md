@@ -11,9 +11,9 @@ owner: "Hooncheol Shin"
 ### General LP
 
 >$$ \begin{align}
->    &\text{minimize}_{x} &{c^T x + d} \\\\
->    &\text{subject to } &{Gx \preceq h} \\\\
->    & &{Ax = b},\\\\
+>    &\text{minimize}_{x} &&{c^T x + d} \\\\
+>    &\text{subject to } &&{Gx \preceq h}\\\\
+>    & &&{Ax = b},\\\\
 >    &\text{where } &&G \in \mathbb{R}^{\text{m x n}} \text{ and } A \in \mathbb{R}^{\text{p x n}}.
 >\end{align} \\
 $$
