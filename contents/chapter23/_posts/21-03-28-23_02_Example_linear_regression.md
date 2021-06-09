@@ -31,7 +31,7 @@ Coordinate descent를 통해 $$\beta_i$$ for $$i=1,2,\dots,p,1,2,\dots$$를 반�
 <figure class="image" style="align: center;">
 <p align="center">
   <img src="{{ site.baseurl }}/img/chapter_img/chapter23/gd_vs_agd_vs_cd.png" alt="[Fig1] GD vs AGD vs CD [3]">
-  <figcaption style="text-align: center;">[Fig1] GD vs AGD vs CD [3]$$</figcaption>
+  <figcaption style="text-align: center;">[Fig1] GD vs AGD vs CD [3]</figcaption>
 </p>
 </figure>
 <br/>
