@@ -13,8 +13,8 @@ owner: "Hooncheol Shin"
 
 >$$
 >\begin{align}
->&\min_{x} f(x) \\\\
->&\text{ subject to } Ax = b
+>&\min_{x} &&f(x) \\\\
+>&\text{ subject to } &&Ax = b
 >\end{align}
 >$$
 
@@ -37,8 +37,8 @@ owner: "Hooncheol Shin"
 이 식에 대한 dual gradient ascent는 아래의 식을 반복적으로 계산한다.($k=1,2,3,...$)
 >$$
 >\begin{align}
->x^{(k)}=\underset{x}{\operatorname{argmin}} L(x,u^{(k-1)}) \\\\
->u^{(k)}= u^{(k-1)} +t_{k}(Ax^{(k)}-b)
+>x^{(k)}&=\underset{x}{\operatorname{argmin}} L(x,u^{(k-1)}) \\\\
+>u^{(k)}&= u^{(k-1)} +t_{k}(Ax^{(k)}-b)
 >\end{align}
 >$$
 
@@ -47,13 +47,14 @@ $$t_{k}$$는 k번째 iteration의 step size이다.
 이 dual method에서는, primal 변수 $$x$$는 첫번째 식처럼 이전 스텝에서 주어진 $$u^{(k-1)}$$에서의 Lagrangian을 최소화하는 $$x$$값으로 업데이트되고, dual 변수 $$u$$는 $$Ax-b$$이 gradient 방향인 gradient ascent의 형태로 업데이트가 된다.
 
 이 방법의 장점은 $$f$$가 B개의 문제로 분할이 가능할 때(decomposable), $$x$$ 또한 B개의 블록으로 분할하고$$( x =(x_{1}, ...,x_{B})\in \mathbb{R}^{n}, \text{ where }x_{i}\in \mathbb{R}^{n_{i}})$$, matrix A 또한 B개의 sub-matrix 블록으로 decompose가 가능해서$$(A = [A_{1}, ..., A_{B}] \text{ where }A_{i} \in \mathbb{R}^{m \times n_{i}})$$, 쉽게 병렬화 또는 확장이 가능하여 계산이 용이하다. 하지만 단점은 수렴성를 보장하기 위하여 까다로운 조건이 필요하다 ; primal의 feasible을 보장하기 위하여, $$f$$가 strongly convex하다는 조건이 필요하다.[[20-01-01]]({% post_url contents/chapter20/21-03-27-20_01_01_Convergence_Analysis %})
+
 ## Augmented Lagrangian method
 Method of multipliers라고도 불리는 Augmented Lagrangian method는 primal 문제에 추가 항을 더하여 계산한다. 이렇게 하면 iteration을 반복되면서 점차 KKT의 conditions을 만족하게 된다. Dual method와 비교하여 수렴성에 대한 조건(f가 strongly convex)을 완화시킨다. 대신 문제의 분해(decompose)가 불가능해지는 단점이 있다. Primal 문제의 정의는 다음과 같다.
 
 >$$
 >\begin{align}
->&\min_{x} & f(x)+\frac{\rho}{2}||Ax-b||_{2}^{2}&\\\\
->&\text{subject to} &Ax=b&
+>&\min_{x} &&f(x)+\frac{\rho}{2}||Ax-b||_{2}^{2}&\\\\
+>&\text{subject to} &&Ax=b
 >\end{align}
 >$$
 
@@ -68,8 +69,8 @@ Method of multipliers라고도 불리는 Augmented Lagrangian method는 primal �
 Dual gradient ascent는 다음을 반복한다. ($$k=1,2,3,...$$)
 >$$
 >\begin{align}
->x^{(k)}=\underset{x}{\operatorname{argmin}} L_{\rho}(x,u^{(k-1)}) \\\\
->u^{(k)}= u^{(k-1)} +\rho(Ax^{(k)}-b)
+>x^{(k)}&=\underset{x}{\operatorname{argmin}} L_{\rho}(x,u^{(k-1)}) \\\\
+>u^{(k)}&= u^{(k-1)} +\rho(Ax^{(k)}-b)
 >\end{align}
 >$$
 
