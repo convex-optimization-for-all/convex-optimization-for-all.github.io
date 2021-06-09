@@ -14,8 +14,8 @@ owner: "Hooncheol Shin"
 >    &\text{minimize}_{x} &{c^T x + d} \\\\
 >    &\text{subject to } &{Gx \preceq h} \\\\
 >    & &{Ax = b},\\\\
+>    &\text{where } &&G \in \mathbb{R}^{\text{m x n}} \text{ and } A \in \mathbb{R}^{\text{p x n}}.
 >\end{align} \\
-> \text{where } G \in \mathbb{R}^{\text{m x n}} \text{ and } A \in \mathbb{R}^{\text{p x n}}.
 $$
 
 * 위 목적함수의 $$ +d $$는 최적화의 과정 및 결과에 영향을 주지 않으므로 생략되어도 무방하다.
