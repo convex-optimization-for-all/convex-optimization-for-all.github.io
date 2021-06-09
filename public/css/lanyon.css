@@ -121,12 +121,33 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0;
 }
 
+.github-logo__wrapper {
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  opacity: 0.8;
+}
+.github-logo__wrapper:hover {
+  opacity: 1;
+}
+.github-logo {
+  width: 35px;
+  height: 35px;
+}
+
 @media (max-width: 48em) {
   .masthead-title {
     text-align: center;
   }
   .masthead-title small {
     display: none;
+  }
+  .github-logo__wrapper {
+    top: 1rem;
+  }
+  .github-logo {
+    width: 25px;
+    height: 25px;
   }
 }
 
