@@ -98,7 +98,7 @@ ADMM steps는 아래와 같다.
 <p align="center">
   <img src="{{ site.baseurl }}/img/chapter_img/chapter21/ll1.png" alt="[Fig 3]  Data, exact solution image(300x200 image : n = 60,000).  
 left : original image before denoising, right : the exact solution of denoised image[3]" width="70%">
-  <figcaption style="text-align: center;">[Fig 3]  Data, exact solution image(300x200 image : n = 60,000).  
+  <figcaption style="text-align: center;">[Fig 3]  Data, exact solution image(300x200 image : n = 60,000).
 left : original image before denoising, right : the exact solution of denoised image[3]</figcaption>
 </p>
 </figure>
@@ -114,7 +114,7 @@ left : original image before denoising, right : the exact solution of denoised i
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl }}/img/chapter_img/chapter21/ll2.png" alt="[Fig 5]  ADMM iterates visualized after k = 10, 30, 50, 100 iterations [3]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter21/admm_iteration_visualized.png" alt="[Fig 5]  ADMM iterates visualized after k = 10, 30, 50, 100 iterations [3]" width="70%">
   <figcaption style="text-align: center;">[Fig 5]  ADMM iterates visualized after k = 10, 30, 50, 100 iterations [3]</figcaption>
 </p>
 </figure>
