@@ -17,11 +17,13 @@ Lasso regression 문제를 아래와 같이 nonsmooth part가 분리되어있는
 $$\|\beta\|_1 = \sum_{i=1}^p | \beta_i |$$
 
 $$\beta_j, j \neq i$$ 가 고정된 값일때, 주어진 목적함수를 최소화시키는 $$\beta_i$$를 구해보자.
-$$
-0 = \nabla_i f(\beta) = X_i^T X_i \beta_i + X_i^T(X_{-i} \beta_{-i} - y) + \lambda s_i \text{, where } s_i \in \partial |\beta_i|\\
+
+$$\begin{align}
+&0 = \nabla_i f(\beta) = X_i^T X_i \beta_i + X_i^T(X_{-i} \beta_{-i} - y) + \lambda s_i,\\\\
+&\text{where } s_i \in \partial |\beta_i|
 \Rightarrow 
 \beta_i = S_{\lambda / \|X_i\|_2^2} \big( \frac{X_i^T(y-X_{-i} \beta_{-i})}{X_i^TX_i} \big)
-$$
+\end{align}$$
 
 Solution은 thresholding level이 $$\lambda / \|X_i\|_2^2$$인 soft-thresholding 함수와도 같다. Coordinate descent를 통해 $$\beta_i$$ for $$i=1,2,\dots,p,1,2,\dots$$를 반복하며 업데이트 한다.
 

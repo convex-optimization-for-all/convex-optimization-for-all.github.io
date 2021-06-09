@@ -45,6 +45,7 @@ $$
 **Q3. $$f$$를 미분 가능한 convex 함수 $$g$$와 convex 함수 $$h$$의 합으로 표현할 수 있을때, 각 좌표축에 대해 $$f$$를 최소화시킨 지점 $$x$$는 항상 global minimizer인가? (즉, $$f(x) = g(x) + \sum_{i=1}^{n} h_i(x_i)$$)**
 
 **A3. 그렇다. 임의의(any) $$y$$에 대해 다음을 만족하기 때문이다. **
+
 $$\begin{align}
 f(y) - f(x) &\ge \nabla g(x)^T (y-x) + \sum_{i=1}^{n} \big[ h_i(y_i) - h_i(x_i) \big] \\\\
 &= \sum_{i=1}^{n} \big[ \underbrace{\nabla_i g(x) (y_i - x_i) + h_i(y_i) - h_i(x_i)}_{\ge 0} \big] \ge 0
@@ -56,15 +57,17 @@ f(y) - f(x) &\ge \nabla g(x)^T (y-x) + \sum_{i=1}^{n} \big[ h_i(y_i) - h_i(x_i) 
 >
 > $$
 > \begin{align}
-> & \: 0 \in \partial F_i (x_i) \\
+> & \: 0 \in \partial F_i (x_i) \\\\
 > \Leftrightarrow & \: 0 \in \{ \nabla_i g(x) \} + \partial h_i(x_i)\\\\
-> \Leftrightarrow & \: - \nabla_i g(x) \in \partial h_i(x\_i)\\
+> \Leftrightarrow & \: - \nabla_i g(x) \in \partial h_i(x\_i)
 > \end{align}
 > $$
-> [Subgradient의 정의]({% post_url contents/chapter07/21-03-25-07_01_subgradient %})에 의해,
+
+[Subgradient의 정의]({% post_url contents/chapter07/21-03-25-07_01_subgradient %})에 의해,
+
 > $$
 > \begin{align}
-> & h_i(y_i) \ge h_i(x_i) - \nabla_i g(x) (y_i - x_i)\\
+> & h_i(y_i) \ge h_i(x_i) - \nabla_i g(x) (y_i - x_i)\\\\
 > \Leftrightarrow & \nabla_i g(x) (y_i - x_i) + h_i(y_i) - h_i(x_i) \ge 0.
 > \end{align}
 > $$
@@ -82,14 +85,15 @@ f(y) - f(x) &\ge \nabla g(x)^T (y-x) + \sum_{i=1}^{n} \big[ h_i(y_i) - h_i(x_i) 
 $$f(x) = g(x) + \sum_{i=1}^{n} h_i(x_i)$$ with $$g$$ convex, differentiable and $$h_i$$ convex에 대한 minimizer는 **coordinate descent**를 사용하여 찾을 수 있다. Coordinate descent는 다음의 cycle을 반복하는 것이다. (적당한 초기값 $$x^{(0)}$$가 설정되었다고 가정한다.)
 
 >**Coordinate Descent:** <br/>
->$$\:$ For $k = 1,2,3,\dots$$,
+>$$\: \text{For } k = 1,2,3,\dots$$,
+>
 >$$
 >\begin{align}
->x_1^{(k)} &\in \text{arg}\min_{x_1} \: f(x_1, x_2^{(k-1)}, x_3^{(k-1)}, \dots, x_n^{(k-1)})\\
->x_2^{(k)} &\in \text{arg}\min_{x_2} \: f(x_1^{(k)}, x_2, x_3^{(k-1)}, \dots, x_n^{(k-1)})\\
->x_3^{(k)} &\in \text{arg}\min_{x_3} \: f(x_1^{(k)}, x_2^{(k)}, x_3, \dots, x_n^{(k-1)})\\
->& \dots\\
->x_n^{(k)} &\in \text{arg}\min_{x_n} \: f(x_1^{(k)}, x_2^{(k)}, x_3^{(k)}, \dots, x_n)\\
+>x_1^{(k)} &\in \text{arg}\min_{x_1} \: f(x_1, x_2^{(k-1)}, x_3^{(k-1)}, \dots, x_n^{(k-1)})\\\\
+>x_2^{(k)} &\in \text{arg}\min_{x_2} \: f(x_1^{(k)}, x_2, x_3^{(k-1)}, \dots, x_n^{(k-1)})\\\\
+>x_3^{(k)} &\in \text{arg}\min_{x_3} \: f(x_1^{(k)}, x_2^{(k)}, x_3, \dots, x_n^{(k-1)})\\\\
+>& \dots\\\\
+>x_n^{(k)} &\in \text{arg}\min_{x_n} \: f(x_1^{(k)}, x_2^{(k)}, x_3^{(k)}, \dots, x_n)
 >\end{align}
 >$$
 
@@ -102,14 +106,15 @@ $$f(x) = g(x) + \sum_{i=1}^{n} h_i(x_i)$$ with $$g$$ convex, differentiable and 
 앞서 소개한 coordinate descent는 exact coordinatewise minimization에 해당한다. 다른 방식으로는 gradient를 이용한 inexact coordinatewise minimization이 있다. ($$f$$가 미분 가능한 convex 함수라고 가정)
 
 >**Coordinate Descent (inexact coordinatewise minimization):** <br/>
->$$\:$ For $k = 1,2,3,\dots$$,
+>$$\: \text{For } k = 1,2,3,\dots$$,
+>
 >$$
 >\begin{align}
->x_1^{(k)} &= x_1^{(k-1)} - t_{k,1} \cdot \nabla_1 f(x_1^{(k-1)}, x_2^{(k-1)}, x_3^{(k-1)}, \dots, x_n^{(k-1)})\\
->x_2^{(k)} &= x_2^{(k-1)} - t_{k,2} \cdot \nabla_2 f(x_1^{(k)}, x_2^{(k-1)}, x_3^{(k-1)}, \dots, x_n^{(k-1)})\\
->x_3^{(k)} &= x_3^{(k-1)} - t_{k,3} \cdot \nabla_3 f(x_1^{(k)}, x_2^{(k)}, x_3^{(k-1)}, \dots, x_n^{(k-1)})\\
->& \dots\\
->x_n^{(k)} &= x_n^{(k-1)} - t_{k,n} \cdot \nabla_n f(x_1^{(k)}, x_2^{(k)}, x_3^{(k)}, \dots, x_n^{(k-1)})\\
+>x_1^{(k)} &= x_1^{(k-1)} - t_{k,1} \cdot \nabla_1 f(x_1^{(k-1)}, x_2^{(k-1)}, x_3^{(k-1)}, \dots, x_n^{(k-1)})\\\\
+>x_2^{(k)} &= x_2^{(k-1)} - t_{k,2} \cdot \nabla_2 f(x_1^{(k)}, x_2^{(k-1)}, x_3^{(k-1)}, \dots, x_n^{(k-1)})\\\\
+>x_3^{(k)} &= x_3^{(k-1)} - t_{k,3} \cdot \nabla_3 f(x_1^{(k)}, x_2^{(k)}, x_3^{(k-1)}, \dots, x_n^{(k-1)})\\\\
+>& \dots\\\\
+>x_n^{(k)} &= x_n^{(k-1)} - t_{k,n} \cdot \nabla_n f(x_1^{(k)}, x_2^{(k)}, x_3^{(k)}, \dots, x_n^{(k-1)})
 >\end{align}
 >$$
 
