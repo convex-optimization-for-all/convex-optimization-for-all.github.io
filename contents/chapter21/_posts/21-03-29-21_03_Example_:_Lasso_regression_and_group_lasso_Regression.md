@@ -21,7 +21,8 @@ $$y\in \mathbb{R}^{n}, X\in \mathbb{R}^{n\times p}$$ 일때 lasso 문제는 아�
 ADMM에서는 dual 식을 유도하는 것과 동일하게, 어떤 식으로 보조 변수(auxiliary variable)을 설정하는가에 따라 알고리즘의 성능이 달라진다. 많은 auxiliary variable의 설정 방법 중 아래의 형태가 가장 효과적인 형태 중 하나로 알려져 있다.
 >$$
 >\begin{align}
->\min_{\beta, \alpha}||y-X\beta||^{2}_{2}+\lambda||\alpha||_{1} \qquad \text{subject to  }\beta-\alpha= 0.
+>&\min_{\beta, \alpha} &&||y-X\beta||^{2}_{2}+\lambda||\alpha||_{1}\\\\
+>&\text{subject to} &&\beta-\alpha= 0.
 >\end{align}
 >$$
 
@@ -67,7 +68,8 @@ $$\rho$$값을 너무 크게 설정하면, 목적함수에서 $$f+g$$를 최소�
 Lasso regression과 동일하게 문제를 다시 정리할 수 있다.
 >$$
 >\begin{align}
->\min_{\beta,\alpha}\frac{1}{2}||y-X\beta||^{2}_{2}+\lambda\sum^{G}_{g=1} c_{g}||\beta_{(g)}||_{2} \qquad \text{subject to }\beta-\alpha=0.
+>&\min_{\beta,\alpha} &&\frac{1}{2}||y-X\beta||^{2}_{2}+\lambda\sum^{G}_{g=1} c_{g}||\beta_{(g)}||_{2}\\\\
+>&\text{subject to} &&\beta-\alpha=0.
 >\end{align}
 >$$
 

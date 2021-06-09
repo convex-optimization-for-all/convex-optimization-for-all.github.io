@@ -64,8 +64,8 @@ $$\theta$$는 $$ (I+\rho D^{T}D)^{-1}$$의 linear system을 푸는 것과 같다
 두번째 방법으로는 맨 처음의 문제 정의와 동일하게 행렬 형태로 ADMM을 유도하는 것이다.
 >$$
 >\begin{align}
->\min_{\Theta, Z} \frac{1}{2}||Y-\Theta||^{2}_{F}+\lambda\sum_{i,j}(|\Theta_{i,j}-\Theta_{i+1,j}+|Z_{i+1,j}-Z_{i,j+1}|)\\\\
->\text{subject to   }\Theta = Z
+>&\min_{\Theta, Z} &&\frac{1}{2}||Y-\Theta||^{2}_{F}+\lambda\sum_{i,j}(|\Theta_{i,j}-\Theta_{i+1,j}+|Z_{i+1,j}-Z_{i,j+1}|)\\\\
+>&\text{subject to } &&\Theta = Z
 >\end{align}
 >$$
 

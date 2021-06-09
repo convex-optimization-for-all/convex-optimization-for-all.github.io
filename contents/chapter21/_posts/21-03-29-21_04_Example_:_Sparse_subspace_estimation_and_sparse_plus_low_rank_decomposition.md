@@ -11,7 +11,8 @@ $$S=X^{T}X, X\in \mathbb{R}^{n\times p}$$일때, 원래의 X와 projection된 X�
 
 >$$
 >\begin{align}
->\min_{P}||X-XP||^{2}_{F} \qquad \text{subject to rank(P)=k where P is a projection matrix}
+>&\min_{P} &&||X-XP||^{2}_{F}\\\\
+>&\text{subject to} &&\text{rank(P)=k where P is a projection matrix}
 >\end{align}
 >$$
 
@@ -19,7 +20,8 @@ $$S=X^{T}X, X\in \mathbb{R}^{n\times p}$$일때, 원래의 X와 projection된 X�
 
 >$$
 >\begin{align}
->\max_{Y}tr(SY) \qquad \text{subject to }Y\in F_{k} = \left\{Y\in \mathbb{S}^{p} : 0 \preceq Y \preceq I, tr(Y) = k \right\}
+>&\max_{Y} &&tr(SY)\\\\
+>&\text{subject to } &&Y\in F_{k} = \left\{Y\in \mathbb{S}^{p} : 0 \preceq Y \preceq I, tr(Y) = k \right\}
 >\end{align}
 >$$
 
@@ -27,7 +29,8 @@ $$S=X^{T}X, X\in \mathbb{R}^{n\times p}$$일때, 원래의 X와 projection된 X�
 자세한 유도과정은 해당 논문을 참고한다.
 >$$
 >\begin{align}
->\max_{Y}tr(SY)-\lambda ||Y||_{1} \qquad \text{subject to }Y\in F_{k} 
+>&\max_{Y} &&tr(SY)-\lambda ||Y||_{1}\\\\
+>&\text{subject to } &&Y\in F_{k} 
 >\end{align}
 >$$
 
@@ -40,7 +43,8 @@ $$S=X^{T}X, X\in \mathbb{R}^{n\times p}$$일때, 원래의 X와 projection된 X�
 이 문제를 ADMM으로 해결하기 위하여, 문제를 아래와 같이 변형한다.
 >$$
 >\begin{align}
->\min_{Y,Z}-tr(SY)+I_{F_{k}}(Y) + \lambda||Z||_{1} \qquad \text{subject to }Y = Z.
+>&\min_{Y,Z} &&-tr(SY)+I_{F_{k}}(Y) + \lambda||Z||_{1}\\\\
+>&\text{subject to } &&Y = Z.
 >\end{align}
 >$$
 
@@ -59,7 +63,7 @@ $$S=X^{T}X, X\in \mathbb{R}^{n\times p}$$일때, 원래의 X와 projection된 X�
 여기서 $$P_{F_{k}}$$는 fantope projection operator이다. 이는 eigendecomposition $$A= U\sum U^{T}, \sum = diag(\sigma_{1},...\sigma_{p})$$의  clipping으로 정의된다.[[VCLR13]({% post_url contents/chapter21/21-03-29-21_00_Alternating_Direction_Method_of_Multipliers %})]:
 >$$
 >\begin{align}
->P_{F_{k}}(A) = U\Sigma_{\theta}U^{T}, \Sigma_{\theta} = diag(\sigma_{1}(\theta),...\sigma_{p}(\theta))
+>P_{F_{k}}(A) = U\Sigma_{\theta}U^{T}, \: \Sigma_{\theta} = diag(\sigma_{1}(\theta),...\sigma_{p}(\theta))
 >\end{align}
 >$$
 
@@ -69,7 +73,8 @@ $$S=X^{T}X, X\in \mathbb{R}^{n\times p}$$일때, 원래의 X와 projection된 X�
 $$M\in \mathbb{R}^{n\times m}$$일때, sparse plue low rank decomposition problem은 다음과 같다.[[CLMW09]({% post_url contents/chapter21/21-03-29-21_00_Alternating_Direction_Method_of_Multipliers %})]
 >$$
 >\begin{align}
->\min_{L,S}||L||_{tr}+\lambda||S||_{1} \qquad \text{subject to }L+S=M
+>&\min_{L,S} &&||L||_{tr}+\lambda||S||_{1}\\\\
+>&\text{subject to } &&L+S=M
 >\end{align}
 >$$
 
@@ -77,9 +82,9 @@ $$M\in \mathbb{R}^{n\times m}$$일때, sparse plue low rank decomposition proble
 
 >$$
 >\begin{align}
->L^{+} = S^{tr}_{\frac{1}{\rho}}(M-S+W)\\\\
->S^{+} = S^{l_{1}}_{\frac{\lambda}{\rho}}(M-L^{+}+W)\\\\
->W^{+} = W+M-L^{+}-S^{+}
+>L^{+} &= S^{tr}_{\frac{1}{\rho}}(M-S+W)\\\\
+>S^{+} &= S^{l_{1}}_{\frac{\lambda}{\rho}}(M-L^{+}+W)\\\\
+>W^{+} &= W+M-L^{+}-S^{+}
 >\end{align}
 >$$
 
