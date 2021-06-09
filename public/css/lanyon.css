@@ -42,6 +42,7 @@ body {
 
 html {
   font-family: "Nanum Gothic", "PT Serif", Georgia, "Times New Roman", serif;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,6 +50,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   color: #313131;
   letter-spacing: -.025rem;
+  scroll-margin-top: 80px;
 }
 
 
@@ -95,9 +97,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .masthead {
   padding-top:    1rem;
+  position: fixed;
   padding-bottom: 1rem;
-  margin-bottom: 3rem;
   border-bottom: 1px solid #eee;
+  margin-bottom: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 20;
+  box-shadow: 1rem 1px 1rem rgba(0, 0, 0, 0.1);
 }
 .masthead-title {
   font-weight: 500 !important;
@@ -151,6 +158,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.content {
+  padding-top: 5rem;
+  padding-bottom:3rem;
+}
 
 /*
  * Sidebar
@@ -250,6 +261,7 @@ a.sidebar-nav-item:focus {
   border-radius: .25rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out !important;
+  z-index: 30;
 }
 
 .sidebar-toggle::before {
