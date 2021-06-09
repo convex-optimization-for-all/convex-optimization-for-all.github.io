@@ -14,7 +14,7 @@ owner: "YoungJae Choung"
 그리고 백트레킹을 사용 할 수도 있다.
 
 • **Fully corrective**: 아래 식에 따라 직접 업데이트 한다.
-> $$x^{(k)} = \arg\min_y f(y) \text{ subject to } y ∈ conv\{ x^{(0)}, s^{(0)}, . . . s^{(k−1)} \}$$
+> $$x^{(k)} = \arg\min_y f(y) \: \text{ subject to } y ∈ conv\{ x^{(0)}, s^{(0)}, . . . s^{(k−1)} \}$$
 
 이 방식은 훨씬 더 나은 진전을 이룰 수 있지만, Cost가 높다. 
 
@@ -49,7 +49,7 @@ $$\text{3. end for}$$
 
 ## Linear convergence
 다음의 제약 조건이 없는 문제를 고려해 보자.
-> $$\min_x f(x) \text{ subject to } x ∈ \mathbb{R}^n$$
+> $$\min_x f(x) \: \text{ subject to } x ∈ \mathbb{R}^n$$
 
 여기서 $$f$$ is µ-strongly convex이고 $$∇f$$ 는 L-Lipschitz이다.
 
@@ -57,7 +57,7 @@ $$t_k = 1/L$$ 에 대해서 gradient descent $$x^{(k+1)} = x^{(k)} − t_k∇f(x
 > $$f(x^{(k)}) − f^{\star} ≤ \Bigl( 1 −\frac{µ}{L} \Bigr)^k \bigl( f(x^{(0)}) − f^{\star} \bigr)$$
 
 이제 아래의 제약 조건이 있는 문제도 고려해 보자.
-> $$\min_x f(x) \text{ subject to } x ∈ conv(A) ⊆ \mathbb{R}^n$$
+> $$\min_x f(x) \: \text{ subject to } x ∈ conv(A) ⊆ \mathbb{R}^n$$
 
 ### [Theorem (Lacoste-Julien & Jaggi 2013)]
 $$f$$가 µ-strongly convexd이고, $$∇f$$는 L-Lipschitz 하며 $$A ⊆ \mathbb{R}^n$$는 유한 이라고 가정할 때
@@ -71,7 +71,7 @@ $$f$$가 µ-strongly convexd이고, $$∇f$$는 L-Lipschitz 하며 $$A ⊆ \math
 
 ## Path following
 다음 주어진 norm constrained 문제를 살펴보자 
-> $$\min_x f(x) \text{ subject to } \| x \| ≤ t$$
+> $$\min_x f(x) \: \text{ subject to } \| x \| ≤ t$$
 
 Frank-Wolfe 알고리즘은  **path following**에 사용할 수 있다. 다시말해, (대략적인) 솔루션 경로 $$\hat{x}(t), t ≥ 0$$를 생성할 수 있다는 의미 이다.
 

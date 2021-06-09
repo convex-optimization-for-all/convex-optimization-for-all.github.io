@@ -109,7 +109,7 @@ Note : 두 가지 모두 $$O(n)$$의 복잡도가 필요하지만 $$l1$$ ball에
 > $$\min_{x}  f(x) \qquad \text{ subject to } \| x \|_{p} ≤ t$$
 
 $$1 ≤ p ≤ ∞$$에서 p가 q의 dual일 때  $$s^{(k−1)} ∈ −t∂ \| ∇f(x^{(k−1)}) \|_{q}$$ 이다. 즉, $$1/p + 1/q = 1$$이다.
-   
+ 
 즉 다음과 같이 선택할 수 있다. 
 > $$s_i^{(k−1)} = −α · sign ∇f_i(x^{(k−1)}) · \left| ∇f_i(x^{(k−1)}) \right|^{p/q}, i = 1, . . . n$$
 
@@ -120,7 +120,7 @@ Note: 일반 $$p$$의 경우 **p Ball에 Projection**하는 것보다 훨씬 간
 
 ## Example: trace norm regularization
 **trace-regularized** 문제를 살펴보자
-> $$\min_{X} f(X) \text{ subject to } \| X \|_{tr} ≤ t$$
+> $$\min_{X} f(X) \qquad \text{ subject to } \| X \|_{tr} ≤ t$$
 
 $$S^{(k−1)} ∈ −t· ∂\| ∇f(X(k−1)) \|_{op}.$$ 이다.
 
