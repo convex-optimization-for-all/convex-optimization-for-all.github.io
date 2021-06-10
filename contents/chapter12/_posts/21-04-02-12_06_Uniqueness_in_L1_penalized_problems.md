@@ -107,8 +107,10 @@ $$
 그리고 임의의 lasso solution $$\hat{\beta}$$는 다음과 같다.
 
 $$
-\hat{\beta_{-\mathcal{E}}} = 0 \text{ and } \hat{\beta_{\mathcal{E}}} = (X^T_\mathcal{E})^+ ( y - (X^T_\mathcal{E}) + b, \qquad \text{ --- (8)}\\\\
-\text{where } b \in null(X_\mathcal{E}).
+\begin{align}
+& \hat{\beta_{-\mathcal{E}}} = 0 \text{ and } \hat{\beta_{\mathcal{E}}} = (X^T_\mathcal{E})^+ ( y - (X^T_\mathcal{E}) + b, \qquad \text{ --- (8)} \\\\
+& \text{where } b \in null(X_\mathcal{E}).
+\end{align}
 $$
 
 ## Sufficient conditions for uniqueness
