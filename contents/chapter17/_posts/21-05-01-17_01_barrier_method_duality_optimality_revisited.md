@@ -14,20 +14,18 @@ owner: "Minjoo Lee"
 ## Barrier method
 아래와  같은 primal 문제가 convex이고 $$f, h_i , i = 1, . . . m$$가 미분가능 할 때,   
 > $$\begin{align}
-\min_{x} & \quad f(x) \\\
-\text{subject to } & \quad h_{i}(x) \leq 0, i = 1, \dotsc, m \\\
-& \quad Ax = b \\\
-\end{align}$$
+> &\min_{x} && f(x) \\
+> &\text{subject to } &&h_{i}(x) \leq 0, i = 1, \dotsc, m \\
+> &&& Ax = b \\
+> \end{align}$$
 
 Log barrier function을 사용하여 다음과 같이 primal 문제를 barrier 문제로 바꿀 수 있다.
 
 > $$\begin{align}
-\min_{x} & \quad f(x) + \frac{1}{t} \phi(x) & & \min_{x} & \quad tf(x) + \phi(x) \\\
-\text{subject to } & \quad Ax = b & \iff \qquad & \text{subject to } & \quad Ax = b \\\
-\end{align}$$
-> where $$\begin{align}
-\phi(x) = - \sum_{i=1}^{m} \log(-h_i(x))
-\end{align}$$
+> & \min_{x} && f(x) + \frac{1}{t} \phi(x) & \qquad & \min_{x} && tf(x) + \phi(x) \\
+> & \text{subject to } && Ax = b & \iff \qquad & \text{subject to } && Ax = b \\
+> & \text{where } && \phi(x) = - \sum_{i=1}^{m} \log(-h_i(x))
+> \end{align}$$
 
 알고리즘은 $$t > 0$$를 만족하는 $$t = t^{(0)}$$에서 시작해서 $$\frac{m}{t}$$가 $$\epsilon$$보다 작거나 같아질 때까지 증가시킨다. 이때, Newton's method를 이용해 초기값 $$x^{(0)}$$에 대한 $$x^{\star}(t)$$를 구하고 $$k = 1, 2, 3, . . .$$에 대해 각 단계에서  $$x^{(k+1)} = x^{\star}(t)$$를 구하는 과정을 반복 한다.
 
@@ -93,10 +91,10 @@ $$f,h_1,...h_m$$은 convex 이고 미분 가능하고, 또한 주어진 문제�
 
 >$$
 >\begin{align}
->    &\min_{x} && {f(x) + τ\phi(x)} \\\\
->    & &&{Ax = b} \\\
->\end{align} \\
->\text{where } \phi(x) = −\sum_{i=1}^m \log(−h_i(x)).
+>&\min_{x} && {f(x) + τ\phi(x)} \\\\
+>& &&{Ax = b} \\\
+>& \text{where } && \phi(x) = −\sum_{i=1}^m \log(−h_i(x)).
+>\end{align}
 >$$
 
 즉, 위 식에서 $$τ$$에 따라 primal 문제와의 차이가 발생하며, $$τ$$에 따라 생기는 궤적 즉, barrier 문제에 대한 해의 집합을 central path라고 한다.
