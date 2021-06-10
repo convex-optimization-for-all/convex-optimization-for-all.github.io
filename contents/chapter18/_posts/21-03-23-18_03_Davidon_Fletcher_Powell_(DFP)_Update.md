@@ -41,11 +41,11 @@ DFP update는 1. symmetry를 만족하고, 2. secant equation을 만족하는 �
 >Solve
 >$$
 >\begin{align}
->    \min_{B^+} \: \: &{\|W^{1/2} (B^+ - B) W^{1/2} \|_F} \\\\
->    \text{subject to } &{B^+ = (B^+)^T} \\\\
->    &{B^+s = y}  \\\\
+>& \min_{B^+} \: \: && {\|W^{1/2} (B^+ - B) W^{1/2} \|_F} \\\\
+>& \text{subject to } && {B^+ = (B^+)^T} \\\\
+>    &&& {B^+s = y}  \\\\
+>& \text{where } && W \in \mathbb{R}^{n \; \times \;n} \text{ is nonsingular and such that } Wy_k = s_k.
 >\end{align}\\\\
->\text{where } W \in \mathbb{R}^{n \; \times \;n} \text{ is nonsingular and such that } Wy_k = s_k.
 >$$
 
 ***참고**:
