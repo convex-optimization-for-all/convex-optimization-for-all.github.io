@@ -42,12 +42,14 @@ $$\text{ }$$
 > **Proof.**<br/>
 > 1. 만약 (1)이 두 개의 solution $$\hat{\beta}^{(1)}$$, $$\hat{\beta}^{(2)}$$를 가질때, 임의의 $$0 < \alpha < 1$$에 대해 $$\alpha \hat{\beta}^{(1)} + (1 - \alpha) \hat{\beta}^{(2)}$$ 또한 solution이 되므로 무수히 많은 solution이 존재하게 된다.<br/>
 > 2. & 3. 두 개의 solution $$\hat{\beta}^{(1)}$$, $$\hat{\beta}^{(2)}$$가 있다고 가정해보자. 이때 optimal value를 $$c^\star$$라고 하면, 어떤 임의의 solution인 $$\alpha \hat{\beta}^{(1)} + (1 - \alpha) \hat{\beta}^{(2)}$$ ($$0 < \alpha < 1$$)에 대해 아래의 등식을 항상 만족해야만 한다.
+> 
 > $$
 >\begin{align}
 > &\frac{1}{2} \| y - X(\alpha \hat{\beta}^{(1)} + (1 - \alpha) \hat{\beta}^{(2)}) \|_2^2 + \lambda \| \alpha \hat{\beta}^{(1)} + (1 - \alpha) \hat{\beta}^{(2)} \|_1 \\
 > & = \alpha c^\star + (1-\alpha) c^\star = c^\star
 >\end{align}
 >$$
+>
 > 위 등식을 만족하기 위해서는 임의의 solution $$\hat{\beta}$$에 대해 $$X\hat{\beta}$$은 항상 같은 값을 가져야 하고, $$\lambda > 0$$일때 $$\| \hat{\beta} \|_1$$ 값 또한 항상 같아야 한다.
 
 
