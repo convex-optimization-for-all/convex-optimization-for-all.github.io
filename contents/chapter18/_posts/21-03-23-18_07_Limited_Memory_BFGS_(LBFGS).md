@@ -33,8 +33,8 @@ $$H$$에 대한 업데이트 식을 이용하면 $$H^+q, q \in \mathbb{R}^n$$를
 > &= \big( I - \frac{sy^T}{y^Ts} \big) p + \alpha s\\\\
 > &= p - \underbrace{\frac{y^Tp}{y^Ts}}_{\beta}s + \alpha s \\\\
 > &= p + (\alpha - \beta) s,\\\\
+>& \text{where } \alpha = \frac{s^Tq}{y^Ts}, q^+ = q - \alpha y, p = Hq, \beta = \frac{y^Tp}{y^Ts}.
 >\end{align}\\\\
->\text{where } \alpha = \frac{s^Tq}{y^Ts}, q^+ = q - \alpha y, p = Hq, \beta = \frac{y^Tp}{y^Ts}.
 >$$
 
 $$H$$가 k번의 BFGS update를 통해 얻이진다고 할때, $$Hq= -H\nabla f(x)$$는 length k의 반복문 2개로 계산할 수 있다 (아래 알고리즘 참고). 단, 메모리의 효율적인 사용을 위해 가장 최근 $m$개 iterations에서의 curvature information만을 이용한다. ($$k \ge m$$)
@@ -42,7 +42,7 @@ $$H$$가 k번의 BFGS update를 통해 얻이진다고 할때, $$Hq= -H\nabla f(
 ## Algorithm
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/22155/algorithm_quasi-newton.png" alt="[Fig1] The algorithm of LBFGS [3]" width="90%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter18/algorithm_quasi-newton.png" alt="[Fig1] The algorithm of LBFGS [3]" width="90%">
   <figcaption style="text-align: center;">[Fig1] The algorithm of LBFGS [3]</figcaption>
 </p>
 </figure>

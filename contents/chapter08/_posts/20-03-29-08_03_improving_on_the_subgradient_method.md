@@ -2,11 +2,9 @@
 layout: post
 title: 08-03 Improving on the Subgradient Method
 chapter: "08"
-order: 17
+order: 16
 owner: "Kyeongmin Woo"
 ---
-
-# Improving on the Subgradient Method
 
 Subgradient method는 미분할 수 없는 컨벡스 함수에도 사용할 수 있다는 점에서 범용성이 큰 것이 장점이다 (more general). 하지만 convergence rate가 $$O(1/\epsilon^{2})$$이므로 gradient descent의 convergence rate인 $$O(1/\epsilon)$$보다 훨씬 느리다. 
 

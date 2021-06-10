@@ -6,8 +6,6 @@ order: 10
 owner: "Kyeongmin Woo"
 ---
 
-# Convergence analysis under strong convexity
-
 함수 $$f$$가 다음 조건을 만족하게 되면 strongly convex하다고 할 수 있다. (단, $$f$$는 2번 미분가능해야 하며 상수 $$m$$은 양수이어야 한다.)
 
 > $$ \begin{align}

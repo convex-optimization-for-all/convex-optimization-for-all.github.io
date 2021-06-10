@@ -110,7 +110,7 @@ $$g$$의 gradient가 $$\nabla g(\beta) = -X^{T} (y - X \beta)$$이므로 proxima
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/19032/09.01_01_ISTA.PNG" width="80%" height="80%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter09/09.01_01_ISTA.PNG" width="80%" height="80%">
   <figcaption style="text-align: center;">[Fig 1] Example of proximal gradient (ISTA) vs. subgradient method coonvergence rate [3]</figcaption>
 </p>
 </figure>

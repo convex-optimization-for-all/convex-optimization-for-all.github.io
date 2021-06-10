@@ -6,8 +6,6 @@ order: 11
 owner: "Kyeongmin Woo"
 ---
 
-# A look at the conditions & Practicalities
-
 ## Lipschitz continuity & Strong convexity conditions
 $$f(β) = \frac{1}{2} \lVert y−Xβ \rVert_2^2$$를 예로 Lipschitz continuity와 Strong convexity에 대한 조건을 살펴보자
 

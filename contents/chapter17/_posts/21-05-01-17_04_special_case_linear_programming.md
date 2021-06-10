@@ -131,7 +131,7 @@ Barrier method는 다양한  $$\mu$$값(2, 50, 150)을 사용한 반면 primal-d
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/21647/barrier_vs_primal_dual.png">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter17/barrier_vs_primal_dual.png">
   <figcaption style="text-align: center;">[Fig1] Duality gap (Barrier vs. Primal-dual) [1]</figcaption>
 </p>
 </figure>
@@ -146,7 +146,7 @@ Barrier method는 다양한  $$\mu$$값(2, 50, 150)을 사용한 반면 primal-d
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/21647/barrier_vs_primal_dual2.png">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter17/barrier_vs_primal_dual2.png">
   <figcaption style="text-align: center;">[Fig2] Newton iteration (Barrier vs. Primal-dual) [1]</figcaption>
 </p>
 </figure>

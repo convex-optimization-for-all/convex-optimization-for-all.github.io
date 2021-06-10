@@ -42,6 +42,7 @@ body {
 
 html {
   font-family: "Nanum Gothic", "PT Serif", Georgia, "Times New Roman", serif;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,6 +50,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   color: #313131;
   letter-spacing: -.025rem;
+  scroll-margin-top: 80px;
 }
 
 
@@ -95,23 +97,49 @@ h1, h2, h3, h4, h5, h6 {
 
 .masthead {
   padding-top:    1rem;
+  position: fixed;
   padding-bottom: 1rem;
-  margin-bottom: 3rem;
   border-bottom: 1px solid #eee;
+  margin-bottom: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 20;
+  box-shadow: 1rem 1px 1rem rgba(0, 0, 0, 0.1);
 }
 .masthead-title {
-  margin-top: 0;
-  margin-bottom: 0;
+  font-weight: 500 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
   color: #505050;
 }
 .masthead-title a {
-  color: #505050;
+  color: #505050 !important;
+  text-decoration: none !important;
 }
+.masthead-title a:hover {
+  display: block;
+  transform: translateY(-1px);
+}
+
 .masthead-title small {
   font-size: 75%;
   font-weight: 400;
   color: #c0c0c0;
   letter-spacing: 0;
+}
+
+.github-logo__wrapper {
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  opacity: 0.8;
+}
+.github-logo__wrapper:hover {
+  opacity: 1;
+}
+.github-logo {
+  width: 35px;
+  height: 35px;
 }
 
 @media (max-width: 48em) {
@@ -121,8 +149,19 @@ h1, h2, h3, h4, h5, h6 {
   .masthead-title small {
     display: none;
   }
+  .github-logo__wrapper {
+    top: 1rem;
+  }
+  .github-logo {
+    width: 25px;
+    height: 25px;
+  }
 }
 
+.content {
+  padding-top: 5rem;
+  padding-bottom:3rem;
+}
 
 /*
  * Sidebar
@@ -218,9 +257,11 @@ a.sidebar-nav-item:focus {
   align-items: center;
   padding: .25rem .75rem;
   color: #505050;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.65);
   border-radius: .25rem;
   cursor: pointer;
+  transition: all 0.3s ease-in-out !important;
+  z-index: 30;
 }
 
 .sidebar-toggle::before {
@@ -235,7 +276,7 @@ a.sidebar-nav-item:focus {
 #sidebar-checkbox:focus ~ .sidebar-toggle,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
   color: #fff;
-  background-color: #555;
+  background-color: #4b4a4a8a;
 }
 
 .sidebar-toggle:active:before,
@@ -281,9 +322,10 @@ a.sidebar-nav-item:focus {
   -webkit-transition: -webkit-transform .3s ease-in-out;
           transition: transform .3s ease-in-out;
 }
-
-#sidebar-checkbox:checked + .sidebar {
+.sidebar {
   z-index: 10;
+}
+#sidebar-checkbox:checked + .sidebar {
   visibility: visible;
 }
 #sidebar-checkbox:checked ~ .sidebar,
@@ -544,9 +586,6 @@ a.pagination-item:hover {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
-}
-.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar-toggle {
-  box-shadow: 0 0 0 .25rem #fff;
 }
 .sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
   box-shadow: .25rem 0 .5rem rgba(0,0,0,.1);

@@ -28,10 +28,11 @@ $$
 주어진 문제는 equality constraint가 추가된 형태로 재정의 할 수 있다.
 
 #### Primal problem rewrited
-> $$
+>
+$$
  \begin{align}
- \min_{x,z} &\quad f(x) + g(z)\\\\
- \text{subject to} &\quad Ax = z.
+ &\min_{x,z} \        && f(x) + g(z)\\
+ &\text{subject to} \ && Ax = z.
  \end{align}
  $$
 
@@ -80,8 +81,8 @@ $$
 #### Primal problem of CP rewrited
 > $$
 > \begin{align}
-> \min_{x, z} &\quad  f(x) + g(z)\\\
-> \text{subject to} &\quad z  =Ax \\\
+> &\min_{x, z}       \ &&  f(x) + g(z)\\\
+> &\text{subject to} \ && z  =Ax \\\
 > \end{align}
 > $$
 
@@ -90,8 +91,8 @@ $$
 재정의된 CP의 primal problem으로부터 dual problem을 유도해보자. 우선 함수 $$f$$와 $$g$$를 전개하면 아래와 같다.
 > $$
 > \begin{align}
-> \min_{x, z} & \; c^Tx + I_K(x) + I_{\{b\}}(z)  \\\
-> \text{subject to} & \;  z   =Ax \\
+> & \min_{x, z} && \; c^Tx + I_K(x) + I_{\{b\}}(z)  \\\
+> &\text{subject to} && \;  z   =Ax \\
 > \end{align}
 > $$
 
@@ -120,8 +121,8 @@ $$I_{-K^*}(A^Ty - c)$$는 constraint로 표현될 수 있다.
 $$I_{\{b\}}^*(-y) = \max_{b} -b^Ty - I_{\{b\}}(b)$$이므로 문제는 다음과 같이 정리된다.
 > $$
 > \begin{align}
-> \max_{y, s} &\quad -(-b^Ty - I_{\{b\}}(b)) \\\
-> \text{subject to} &\quad y^TA + s = c \\\
+> &\max_{y, s} \ && -(-b^Ty - I_{\{b\}}(b)) \\\
+> &\text{subject to} \ && y^TA + s = c \\\
 > &  \; s \in K^* \\
 > \end{align}
 > $$
@@ -132,8 +133,8 @@ $$I_{\{b\}}(b) = 0$$이므로 문제에서 제거할 수 있다.
 
 > $$
 > \begin{align}
-> \max_{y, s} &\quad  \;  b^Ty  \\\
-> \text{subject to} &\quad y^TA + s = c \\\
+> &\max_{y, s} \ &&  \;  b^Ty  \\\
+> &\text{subject to} \ && y^TA + s = c \\\
 > &  \; s \in K^* \\
 > \end{align}
 > $$ 
@@ -150,9 +151,9 @@ SDP에 대한 primal & dual problem과 SDP의 barrier problem에 대한 primal &
 >    &\mathop{\text{minimize}}_{X} &&{tr(CX)} \\\\
 >    &\text{subject to } &&{tr(A_iX) = b_i, \phantom{5} i=1,\dotsc,p} \\\\
 >    & &&{X \succeq 0},\\\\
->    & \text{where } C, A_1, \dotsc, A_p \in \mathbb{S}^n.
->\end{align}
->$$
+>\end{align}$$
+>
+> $$\text{where } C, A_1, \dotsc, A_p \in \mathbb{S}^n.$$
 
 * **Recall:** $$tr(CX) = \sum_{i,j=1}^n C_{ij}X_{ij}$$
 * **Note:** SDP는 LP와 달리 항상 strong duality를 만족하는 것은 아님을 유의하자.
@@ -173,9 +174,9 @@ SDP에 대한 primal & dual problem과 SDP의 barrier problem에 대한 primal &
 >\begin{align}
 >    &\mathop{\text{minimize}}_{X} &&{tr(CX) - \tau \log \big( det(X) \big)} \\\\
 >    &\text{subject to } &&{tr(A_iX) = b_i, \phantom{5} i=1,\dotsc,p} \\\\
->    & \text{where } C, A_1, \dotsc, A_p \in \mathbb{S}^n.
->\end{align}
->$$
+>\end{align}$$
+>
+>$$\text{where } C, A_1, \dotsc, A_p \in \mathbb{S}^n.$$
 
 #### Dual problem of Barrier problem for SDP
 >$$

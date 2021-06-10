@@ -2,7 +2,7 @@
 layout: post
 title: 02-02-01 Convex set examples
 chapter: "02"
-order: 6
+order: 7
 owner: "Wontak Ryu"
 ---
 
@@ -18,7 +18,7 @@ Hyperplane은 $$n$$차원의 공간을 반으로 가르는 $$n-1$$차원의 subs
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17371/02.05_Hyperplane.PNG" alt="[Fig1] Hyperplane [1]" width="70%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter02/02.05_Hyperplane.png" alt="[Fig1] Hyperplane [1]" width="70%">
   <figcaption style="text-align: center;">[Fig1] Hyperplane [1]</figcaption>
 </p>
 </figure>
@@ -33,7 +33,7 @@ Hyperplane $$a^T x = b$$일 때 halfspace $$a^T x \ge b$$는 normal vector a의 
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17371/02.06_Halfspace.PNG" alt="[Fig2] Halfspace [1]" width="70%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter02/02.06_Halfspace.png" alt="[Fig2] Halfspace [1]" width="70%">
   <figcaption style="text-align: center;">[Fig2] Halfspace [1]</figcaption>
 </p>
 </figure>
@@ -64,7 +64,7 @@ Euclidean ball과 관련된 convex set으로 ellipsoid가 있으며 다음과 �
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17371/02.07_Ellipsoid.PNG" alt="[Fig3] Ellipsoid [1]" width="70%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter02/02.07_Ellipsoid.png" alt="[Fig3] Ellipsoid [1]" width="70%">
   <figcaption style="text-align: center;">[Fig3] Ellipsoid [1]</figcaption>
 </p>
 </figure>
@@ -90,7 +90,7 @@ P-norm이 다음과 같이 정의될 때 norm ball의 모양은 다음과 같다
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17371/02.07_2_norm_ball.png" alt="[Fig4] Norm ball [1]" width="70%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter02/02.07_2_norm_ball.png" alt="[Fig4] Norm ball [1]" width="70%">
   <figcaption style="text-align: center;">[Fig4] Norm ball [1]</figcaption>
 </p>
 </figure>
@@ -99,7 +99,7 @@ P-norm이 다음과 같이 정의될 때 norm ball의 모양은 다음과 같다
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17371/02.07_3_norm_ball2.PNG" alt="[Fig4] Norm ball [2]" width="70%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter02/02.07_3_norm_ball2.png" alt="[Fig4] Norm ball [2]" width="70%">
   <figcaption style="text-align: center;">[Fig4] Norm ball [2]</figcaption>
 </p>
 </figure>
@@ -117,7 +117,7 @@ Polyhedron은 선형 부등식과 등식의 교집합으로 정의된다. Affine
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17371/02.09_Polyhedra.PNG" alt="[Fig5] Polyhedra [1]" width="70%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter02/02.09_Polyhedra.png" alt="[Fig5] Polyhedra [1]" width="70%">
   <figcaption style="text-align: center;">[Fig5] Polyhedra [1]</figcaption>
 </p>
 </figure>
@@ -155,7 +155,7 @@ Simplex는 $$n$$차원 공간에서 만들 수 있는 가장 간단한 다각형
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17371/02.02_10_Simplex.PNG" alt="[Fig6] Simplex [source - wikipedia]" width="70%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter02/02.02_10_Simplex.png" alt="[Fig6] Simplex [source - wikipedia]" width="70%">
   <figcaption style="text-align: center;">[Fig6] Simplex [source - wikipedia]</figcaption>
 </p>
 </figure>

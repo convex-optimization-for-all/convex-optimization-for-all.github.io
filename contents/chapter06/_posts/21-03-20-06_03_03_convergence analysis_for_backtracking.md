@@ -6,8 +6,6 @@ order: 9
 owner: "Kyeongmin Woo"
 ---
 
-# Convergence analysis for backtracking
-
 $$f$$는 convex이고 differentiable하며 **dom** $$f = \mathbb{R}^n$$일 때 다음 식을 만족한다고 하자.
 
 >$$ \lVert \nabla f(x) - \nabla f(y) \rVert_2 \le L \lVert x - y \rVert_2$$  for any $$x, y$$ and $$L \gt 0$$

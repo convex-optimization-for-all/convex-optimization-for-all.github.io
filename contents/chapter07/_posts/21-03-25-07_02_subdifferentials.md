@@ -6,8 +6,6 @@ order: 3
 owner: "Kyeongmin Woo"
 ---
 
-# Sub-differentials
-
 한 볼록함수 $$f$$의 $$x$$에서의 subdifferential $$\partial f(x)$$는 $$x$$에서의 모든 subgradient들의 집합을 의미한다.  
 
 >

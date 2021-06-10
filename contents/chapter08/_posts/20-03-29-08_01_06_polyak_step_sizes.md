@@ -2,11 +2,9 @@
 layout: post
 title: 08-01-06 Polyak step sizes
 chapter: "08"
-order: 9
+order: 8
 owner: "Kyeongmin Woo"
 ---
-
-# Polyak step sizes
 
 **Polyak step sizes**는 optimal value가 알려져 있을때 step size를 설정하는 방법이다. 만약 $$f^*$$가 알려져 있을 때 다음과 같이 Polyak step sizes를 정의 할 수 있다. 
 

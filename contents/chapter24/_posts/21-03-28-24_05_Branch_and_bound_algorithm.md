@@ -22,10 +22,12 @@ Integer Programming problem (IP) 문제를 다음과 같이 정의한다.
 
 > $$
 > \begin{align}
-> \min_{x} & \quad f(x) \\
-> \text{subject to } & \quad x \in C \\
-> & \quad x_j \in \mathbb{Z}, \quad j \in J \\
-> \text{where f is convex} & \quad f : \mathbb{R}^{n} \rightarrow \mathbb{R}, \quad C \in \mathbb{R}^n 
+> &\min_{x} &&f(x) \\\\
+> &\text{subject to } && x \in C \\\\
+> &&&x_j \in \mathbb{Z}, \quad j \in J \\\\
+> \end{align}$$
+> $$\begin{align}
+> \text{where f is convex } f : \mathbb{R}^{n} \rightarrow \mathbb{R}, \quad C \in \mathbb{R}^n 
 \quad \text{and} \quad J \in \lbrace 1 \dotsc n \rbrace \\
 > \end{align}
 > $$
@@ -34,9 +36,11 @@ Integer Programming problem (IP) 문제를 다음과 같이 정의한다.
 
 > $$
 > \begin{align}
-> \min_{x} & \quad f(x) \\
-> \text{subject to } & \quad x \in C \\
-> \text{where f is convex} & \quad f : \mathbb{R}^{n} \rightarrow \mathbb{R}, \quad C \in \mathbb{R}^n 
+> &\min_{x} &&f(x) \\\\
+> &\text{subject to } &&x \in C \\\\
+> \end{align}$$
+> $$\begin{align}
+> \text{where f is convex } f : \mathbb{R}^{n} \rightarrow \mathbb{R}, \quad C \in \mathbb{R}^n 
 \quad \text{and} \quad J \in \lbrace 1 \dotsc n \rbrace \\
 > \end{align}
 > $$
@@ -49,7 +53,7 @@ recursive하게 문제를 풀어간다.
 * 문제에서의 lower bound를 찾는다.
     * (CR) 에서의 해 $$x^{\star}$$가 (IP) 에서는 infeasible 하다면, (IP) 에서의 lower bound 를 갱신한다.
 * Lower bound가 현재의 upper bound보다 크다면, Stop.
-* Constraint set을 쪼갠다, 그리고 각각의 sub-problem을 recursive하게 푼다.  
+* Constraint set을 쪼갠다, 그리고 각각의 sub-problem을 recursive하게 푼다.
 
 
 ## After branching

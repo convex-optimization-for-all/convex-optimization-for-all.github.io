@@ -23,15 +23,11 @@ MathJax.Hub.Config({
 Damped Newton's method는 이전의 backtracking line search와 동일하게, update 과정에서 발산할 가능성이 있는 경우, 즉 update된 위치에서의 원함수 $$f$$의 값이 근사 함수의 값보다 크게되면 발산할 가능성이 존재하므로, step size $$t$$를 줄이는 과정을 거친다.
 
 따라서 다음과 같은 과정을 추가하여 $$t$$의 update 여부를 결정한다.
->\begin{align}
->&\text{with parameters }0<\alpha \leq \frac{1}{2}, 0<\beta<1, \\\
->\end{align}
->\begin{align}
->&\text{while } f(x+tv)>f(x)+\alpha t \nabla f(x)^{T}v\\\\
->\end{align}
->\begin{align}
+>$$\begin{align}
+>&\text{with parameters }0<\alpha \leq \frac{1}{2}, 0<\beta<1, \\
+>&\text{while } f(x+tv)>f(x)+\alpha t \nabla f(x)^{T}v\\
 >&\text{shrink }t=\beta t
->\end{align}
+>\end{align}$$
 
 여기서 $$v=-(\nabla^{2}f(x))^{-1}\nabla f(x)$$이고, $$\nabla f(x)^{T}v = -\lambda^{2}(x)$$ 이다.
 
@@ -40,7 +36,7 @@ Damped Newton's method는 이전의 backtracking line search와 동일하게, up
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/21334/2.jpg" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter14/2.jpeg" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig 1] Logistic regression [3]</figcaption>
 </p>
 </figure>

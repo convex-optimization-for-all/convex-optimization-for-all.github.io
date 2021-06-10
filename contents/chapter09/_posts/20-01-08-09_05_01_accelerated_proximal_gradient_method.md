@@ -46,7 +46,7 @@ x^{(k)} & = \text{prox}_{t_k} (v − t_k \nabla g(v)), k = 1,2,3,...  \\
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/19403/momentum_weight.png" width="80%" height="80%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter09/momentum_weight.png" width="80%" height="80%">
   <figcaption style="text-align: center;">[Fig1] Momentum weights [3]</figcaption>
 </p>
 </figure>
@@ -59,7 +59,7 @@ x^{(k)} & = \text{prox}_{t_k} (v − t_k \nabla g(v)), k = 1,2,3,...  \\
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/19403/accelerated_proximal_gradient.png" width="80%" height="80%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter09/accelerated_proximal_gradient.png" width="80%" height="80%">
   <figcaption style="text-align: center;">[Fig2] Accelerated Proximal Gradient [3]</figcaption>
 </p>
 </figure>

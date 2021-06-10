@@ -17,7 +17,8 @@ owner: "Hooncheol Shin"
 위 문제에 대하여 ADMM으로 해결하기 위해서는, constraint를 도입하여야 했다. 여기서는 update를 병렬적으로 연산하기 용이한 형태로 식을 변형하고자 한다. consensus ADMM이라 불리는 이 접근은 식을 아래와 같이 reparametrize한다.
 >$$
 >\begin{align}
->\min_{x_{1},...,x_{B},x}\sum^{B}_{i=1} f_{i}(x_{i})\qquad \text{subject to  }x_{i}=x, i = 1,...B
+>&\min_{x_{1},...,x_{B},x} &&\sum^{B}_{i=1} f_{i}(x_{i})\\\\
+>&\text{subject to } &&x_{i}=x, i = 1,...B
 >\end{align}
 >$$
 
@@ -55,7 +56,8 @@ Consensus ADMM은 더 일반화된 형태로 만들어질 수 있다. x에 대�
 이 식에 대해서도, constraint를 추가하기 위하여 reparameterize한다.
 >$$
 >\begin{align}
->\min_{x_{1},..x_{B},x} \sum^{B}_{i=1}f_{i}(a_{i}^{T}x+b)+g(x)\qquad \text{subject to  }x_{i} = x, i=1,...B
+>&\min_{x_{1},..x_{B},x} &&\sum^{B}_{i=1}f_{i}(a_{i}^{T}x+b)+g(x)\\\\
+>&\text{subject to } &&x_{i} = x, i=1,...B
 >\end{align}
 >$$ 
 

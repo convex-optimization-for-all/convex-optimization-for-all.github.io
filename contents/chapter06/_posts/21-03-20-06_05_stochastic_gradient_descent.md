@@ -6,8 +6,6 @@ order: 14
 owner: "Kyeongmin Woo"
 ---
 
-# Stochastic gradient descent
-
 다음과 같이 함수의 합을 최소화하는 문제를 고려해보자.
 >
 $$ \begin{equation}

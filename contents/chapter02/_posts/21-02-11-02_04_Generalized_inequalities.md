@@ -75,7 +75,7 @@ $$R^2_{+}$$ cone $$K$$를 고려해 보자. Inequality $$x \preceq_{K} y$$는 y�
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17373/02.06_01_Minimum_and_minimal.PNG" alt="[Fig1] Minimum and minimal elements [1]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter02/02.06_01_Minimum_and_minimal.png" alt="[Fig1] Minimum and minimal elements [1]" width="70%">
   <figcaption style="text-align: center;">[Fig1] Minimum and minimal elements [1]</figcaption>
 </p>
 </figure>

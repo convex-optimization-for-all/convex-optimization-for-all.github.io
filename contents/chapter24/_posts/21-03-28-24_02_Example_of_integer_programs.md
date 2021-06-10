@@ -13,9 +13,9 @@ owner: "YoungJae Choung"
 
 > $$
 > \begin{align}
->           \max_{x} & \quad c^\intercal x \\
-> \text{subject to } & \quad a^\intercal x \leq b \\
->                    & \quad x_{j} \in {0, 1}, j = 1, \dotsc , n \\
+> &\max_{x} && c^\intercal x \\\\
+> &\text{subject to } && a^\intercal x \leq b \\\\
+> &&&x_{j} \in {0, 1}, j = 1, \dotsc , n
 > \end{align}
 > $$
 
@@ -26,10 +26,10 @@ $$n$$명의 사람들과 $$n$$개의 업무가 있다고 가정하자. 그리고
 
 > $$
 > \begin{align}
-> \min_{x} & \quad \sum_{i = 1}^{n} \sum_{j = 1}^{n} c_{ij} x_{ij} \\
-> \text{subject to } & \quad \sum_{i = 1}^{n} x_{ij} = 1, j = 1 \dotsc n \\
-> & \quad \sum_{i = 1}^{n} x_{ij} = 1, j = 1 \dotsc n \\
-> & \quad x_{ij} \in \lbrace 0, 1\rbrace \quad i = 1 \dotsc n, \quad j = 1 \dotsc n \\
+> &\min_{x} &&\sum_{i = 1}^{n} \sum_{j = 1}^{n} c_{ij} x_{ij} \\\\
+> &\text{subject to } &&\sum_{i = 1}^{n} x_{ij} = 1, j = 1 \dotsc n \\\\
+> &&&\sum_{i = 1}^{n} x_{ij} = 1, j = 1 \dotsc n \\\\
+> &&&x_{ij} \in \lbrace 0, 1\rbrace \quad i = 1 \dotsc n, \quad j = 1 \dotsc n
 > \end{align}
 > $$
 
@@ -45,11 +45,11 @@ $$N = \lbrace 1, \dotsc, n \rbrace$$ 의 창고(depot)가 존재하고, $$M = \l
 
 > $$
 > \begin{align}
-> \min_{x, y} & \quad \sum_{i = 1}^{n} f_{j} y_{j} + \sum_{i = 1}^{m} \sum_{j = 1}^{n} c_{ij} x_{ij} \\
-> \text{subject to } & \quad \sum_{j = 1}^{n} x_{ij} = 1,  \quad i = 1 \dotsc n \\
-> & \quad x_{ij} \leq y_{j},  \quad i = 1 \dotsc m,  \quad j = 1 \dotsc n \\
-> & \quad x_{ij} \in \lbrace 0, 1\rbrace \quad i = 1 \dotsc n, \quad j = 1 \dotsc n \\
-> & \quad y_{j} \in \lbrace 0, 1\rbrace \quad j = 1 \dotsc n \\
+> &\min_{x, y} && \sum_{i = 1}^{n} f_{j} y_{j} + \sum_{i = 1}^{m} \sum_{j = 1}^{n} c_{ij} x_{ij} \\
+> &\text{subject to } && \sum_{j = 1}^{n} x_{ij} = 1,  \quad i = 1 \dotsc n \\
+> &&& x_{ij} \leq y_{j},  \quad i = 1 \dotsc m,  \quad j = 1 \dotsc n \\
+> &&& x_{ij} \in \lbrace 0, 1\rbrace \quad i = 1 \dotsc n, \quad j = 1 \dotsc n \\
+> &&& y_{j} \in \lbrace 0, 1\rbrace \quad j = 1 \dotsc n \\
 > \end{align}
 > $$
 
@@ -61,11 +61,11 @@ $$N = \lbrace 1, \dotsc, n \rbrace$$ 의 창고(depot)가 존재하고, $$M = \l
 
 > $$
 > \begin{align}
->        \min_{x, y} & \quad \sum_{i = 1}^{n} f_{j} y_{j} + \sum_{i = 1}^{m} \sum_{j = 1}^{n} c_{ij} x_{ij} \\
-> \text{subject to } & \quad \sum_{j = 1}^{n} x_{ij} = 1,  \quad i = 1 \dotsc n \\
->                    & \quad \sum_{i = 1}^{n} x_{ij} \leq m y_{j}, \quad j = 1 \dotsc n \\
->                    & \quad x_{ij} \in \lbrace 0, 1\rbrace \quad i = 1 \dotsc n, \quad j = 1 \dotsc n \\
->                    & \quad y_{j} \in \lbrace 0, 1\rbrace \quad j = 1 \dotsc n \\
+> &\min_{x, y} &&\sum_{i = 1}^{n} f_{j} y_{j} + \sum_{i = 1}^{m} \sum_{j = 1}^{n} c_{ij} x_{ij} \\
+> &\text{subject to } &&\sum_{j = 1}^{n} x_{ij} = 1,  \quad i = 1 \dotsc n \\
+> &&& \sum_{i = 1}^{n} x_{ij} \leq m y_{j}, \quad j = 1 \dotsc n \\
+> &&& x_{ij} \in \lbrace 0, 1\rbrace \quad i = 1 \dotsc n, \quad j = 1 \dotsc n \\
+> &&& y_{j} \in \lbrace 0, 1\rbrace \quad j = 1 \dotsc n \\
 > \end{align}
 > $$
 
@@ -81,30 +81,31 @@ $$ \mu^{(i)} $$ 는 cluster $$i$$의 centroid를 의미한다.
 평균을 계산해서 centroid를 구하는 것 (K-means) 보다 좀 더 Outlier에 Robust한 방법은 K개의 군집의 중심값을 산술평균으로 구하는 대신 군집의 중심에 가장 가까운 하나의 데이터 포인트를 중심값으로 정하는 방법 (K-medoids clustering) 이다. 
 즉, 각각의 data point ($$y^{(i)}$$)를 중심점으로 생각하고 이를 계산하였을 때 최소값이 나올 수 있는 data point를 centroid로 지정하는 방법 (K-medoids clustering) 이다. 
 
->$$ \sum_{i = 1}^{K} \sum_{j \in S_{i}} \| x^{(j)} - y^{(i)} \|^{2} $$
->
->where $$ y^{(i)} \in \lbrace x^{(j)} : j \in S_{i} \rbrace $$
+>$$\sum_{i = 1}^{K} \sum_{j \in S_{i}} \| x^{(j)} - y^{(i)} \|^{2} $$
+>$$\text{where } y^{(i)} \in \lbrace x^{(j)} : j \in S_{i} \rbrace $$
 
 <br>
 이 문제는 integer program으로 변형하여 나타내어 질 수 있다.
 먼저,  $$ d_{ij} = \| x^{(i)} - x^{(j)} \|^2 $$ 를 정의하고, 다음 두 가지의 binary variable을 정의 한다.
 
-$$ 
-w_{i} =\begin{cases}1 & \text{if choose} \quad x^{(i)} \quad \text{as a centroid} \\ 
-0 & \text{otherwise.} \end{cases} $$
-$$ z_{ji} =\begin{cases}1 & \text{if } \quad x^{(j)} \quad \text{in the cluster with centroid} \quad x^{(i)} \\ 
-0 & \text{otherwise.} \end{cases} $$
+$$\begin{align}
+&w_{i} =\begin{cases}1 && \text{if choose } x^{(i)} \text{ as a centroid} \\\\
+0 && \text{otherwise.} \end{cases}\\\\
+&z_{ji} =\begin{cases}1 && \text{if } x^{(j)} \text{ in the cluster with centroid } x^{(i)} \\\\ 
+0 && \text{otherwise.} \end{cases} 
+\end{align}$$
+
 <br>
 
 K-medoids 문제는 optimization problem으로 정의하면 다음과 같다.
 
 > $$
 > \begin{align}
-> \min_{w, z} & \quad \sum_{i = 1}^{n} \sum_{j = 1}^{n} d_{ij} z_{ji} \\
-> \text{subject to } & \quad z_{ji} \leq w_{i} \\
-> & \quad \sum_{i = 1}^{n} w_{i} = k \\
-> & \quad w_{ij} \in 0, 1 \quad i = 1 \dotsc n \\
-> & \quad z_{ji} \in 0, 1 \quad j, i = 1 \dotsc n \\
+> &\min_{w, z} && \sum_{i = 1}^{n} \sum_{j = 1}^{n} d_{ij} z_{ji} \\\\
+> &\text{subject to } && z_{ji} \leq w_{i} \\\\
+> &&& \sum_{i = 1}^{n} w_{i} = k \\\\
+> &&& w_{ij} \in 0, 1 \quad i = 1 \dotsc n \\\\
+> &&& z_{ji} \in 0, 1 \quad j, i = 1 \dotsc n
 > \end{align}
 > $$ 
 
@@ -115,10 +116,11 @@ $$X = [x^{1} \quad \dotsc \quad x^{p}] \in \mathbb{R}^{n×p}, \quad y \in \mathb
 
 > $$
 > \begin{align}
-> \min_{\beta} & \quad \frac{1}{2} \| y - X\beta \|^{2} \\
-> \text{subject to } & \quad \| \beta \| \leq k \\
-> \text{} \\
-> \text{where} &  \quad \| \beta \|_{0}  :  = \text{the number of nonzero entries of} \quad \beta.
+> &\min_{\beta} &&\frac{1}{2} \| y - X\beta \|^{2} \\\\
+> &\text{subject to } &&\| \beta \| \leq k\\\\
+> \end{align}$$
+> $$\begin{align}
+> \text{where}  \| \beta \|_{0}  :  = \text{ the number of nonzero entries of } \beta.
 > \end{align}
 > $$ 
 
@@ -126,10 +128,10 @@ $$ \| \beta \|_{0} $$는 Non-convex constraint 이기 때문에 Integer programi
 
 > $$
 > \begin{align}
-> \min_{\beta, z} & \quad \frac{1}{2} \| y - X\beta \|^{2} \\
-> \text{subject to } & \quad | \beta_{i} | \leq Mz_{i} \quad i = 1 \dotsc n \\
-> & \quad z_{ji} \in \lbrace 0, 1 \rbrace \quad i = 1 \dotsc n \\
-> & \quad \sum_{i = 1}^{p} z_{i} \leq k \\
+> &\min_{\beta, z} && \frac{1}{2} \| y - X\beta \|^{2} \\\\
+> &\text{subject to } && | \beta_{i} | \leq Mz_{i} \quad i = 1 \dotsc n \\\\
+> &&&z_{ji} \in \lbrace 0, 1 \rbrace \quad i = 1 \dotsc n \\\\
+> &&&\sum_{i = 1}^{p} z_{i} \leq k
 > \end{align}
 > $$ 
 

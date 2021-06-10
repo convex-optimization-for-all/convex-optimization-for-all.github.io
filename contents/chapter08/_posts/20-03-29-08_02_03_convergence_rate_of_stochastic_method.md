@@ -2,11 +2,9 @@
 layout: post
 title: 08-02-03 Convergence Rate of Stochastic Method
 chapter: "08"
-order: 15
+order: 14
 owner: "Kyeongmin Woo"
 ---
-
-# Convergence Rate of Stochastic Method
 
 Cyclic 방법과 randomized 방법은 convergence rate의 차이를 보인다.
 

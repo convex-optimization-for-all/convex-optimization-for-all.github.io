@@ -18,7 +18,7 @@ MathJax.Hub.Config({
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/19936/matrix_game.png" alt="Line Segment" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter10/matrix_game.png" alt="Line Segment" width="70%">
   <figcaption style="text-align: center;">[Fig 1] Game Setup[3]</figcaption>
 </p>
 </figure>
@@ -140,9 +140,9 @@ $$t$$를 $$P^{T}x$$의 항들 중 가장 큰 값과 같게 만들어주는 문�
 
 >$$
 >\begin{align}
->L(x, t, u, v, y) &= t-u^{T}x+v(1-1^{T}x)+y^{T}(P^{T}x-t1)\\\\
->g(u, v, y) &= \min_{x,t} \quad L(x, t, u, v, y)\\\\
->&= \begin{cases} v \qquad &\text{if } 1-1^{T}y = 0, Py-u-v1=0\\\\
+>&L(x, t, u, v, y) &&= t-u^{T}x+v(1-1^{T}x)+y^{T}(P^{T}x-t1)\\\\
+>&g(u, v, y) &&= \min_{x,t} \quad L(x, t, u, v, y)\\\\
+>&&&= \begin{cases} v \qquad &\text{if } 1-1^{T}y = 0, Py-u-v1=0\\\\
 -\infty \qquad &\text{otherwise.} \end{cases}
 >\end{align}
 >$$
@@ -151,9 +151,9 @@ $$u$$는 slack variable이므로, 이를 제거하고 식을 정리하면 다음
 
 >$$
 >\begin{align}
->\max_{y,v} \qquad \quad & v\\\\
->\text{subject to }\quad & y\geq0, 1^{T}y = 1\\\\
->& Py\geq v.
+>&\max_{y,v} \qquad \quad && v\\\\
+>&\text{subject to }\quad && y\geq0, 1^{T}y = 1\\\\
+>&&& Py\geq v.
 >\end{align}
 >$$
 

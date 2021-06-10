@@ -64,7 +64,7 @@ Projected Gradient Descent에 대한 좀 더 자세한 내용은 [9-4]({% post_u
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/22689/frank_wolfe.png" alt="[Fig 1] Conditional Gradient (Frank-Wolfe) method (From Jaggi 2011)[3]">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter22/frank_wolfe.png" alt="[Fig 1] Conditional Gradient (Frank-Wolfe) method (From Jaggi 2011)[3]">
   <figcaption style="text-align: center;">[Fig 1] Conditional Gradient (Frank-Wolfe) method (From Jaggi 2011)[3]</figcaption>
 </p>
 </figure>
@@ -109,7 +109,7 @@ Note : 두 가지 모두 $$O(n)$$의 복잡도가 필요하지만 $$l1$$ ball에
 > $$\min_{x}  f(x) \qquad \text{ subject to } \| x \|_{p} ≤ t$$
 
 $$1 ≤ p ≤ ∞$$에서 p가 q의 dual일 때  $$s^{(k−1)} ∈ −t∂ \| ∇f(x^{(k−1)}) \|_{q}$$ 이다. 즉, $$1/p + 1/q = 1$$이다.
-   
+ 
 즉 다음과 같이 선택할 수 있다. 
 > $$s_i^{(k−1)} = −α · sign ∇f_i(x^{(k−1)}) · \left| ∇f_i(x^{(k−1)}) \right|^{p/q}, i = 1, . . . n$$
 
@@ -120,7 +120,7 @@ Note: 일반 $$p$$의 경우 **p Ball에 Projection**하는 것보다 훨씬 간
 
 ## Example: trace norm regularization
 **trace-regularized** 문제를 살펴보자
-> $$\min_{X} f(X) \text{ subject to } \| X \|_{tr} ≤ t$$
+> $$\min_{X} f(X) \qquad \text{ subject to } \| X \|_{tr} ≤ t$$
 
 $$S^{(k−1)} ∈ −t· ∂\| ∇f(X(k−1)) \|_{op}.$$ 이다.
 
@@ -156,7 +156,7 @@ Constrained Lasso에 대한 projectied gradient 기법과 conditional gradient �
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/22689/comparing_projected_and_conditional_gradient.png" alt="[Fig 2] Comparing projected and conditional gradient for constrained lasso
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter22/comparing_projected_and_conditional_gradient.png" alt="[Fig 2] Comparing projected and conditional gradient for constrained lasso
 problem [3]">
   <figcaption style="text-align: center;">[Fig 2] Comparing projected and conditional gradient for constrained lasso
 problem [3]</figcaption>

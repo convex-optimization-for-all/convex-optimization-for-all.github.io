@@ -2,11 +2,9 @@
 layout: post
 title: 08-02-02 Convergence of Stochastic Methods
 chapter: "08"
-order: 14
+order: 13
 owner: "Kyeongmin Woo"
 ---
-
-# Convergence of Stochastic Methods
 
 각 함수 $$f_i, i = 1,...,m$$는 컨벡스이고 Lipschitz continuous with constant G 하다고 가정하자.
 

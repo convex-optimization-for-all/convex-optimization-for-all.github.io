@@ -2,11 +2,9 @@
 layout: post
 title: 08-01-08 Projected Subgradient Method
 chapter: "08"
-order: 11
+order: 10
 owner: "Kyeongmin Woo"
 ---
-
-# Projected Subgradient Method
 
 [앞서 본 예제]({%post_url contents/chapter08/20-03-29-08_01_07_example_intersection_of_sets %})의 방법을 projected subgradient method라고 한다. 이 알고리즘은 제약조건이 있는 convex problem에서 이용할 수 있다.  
 

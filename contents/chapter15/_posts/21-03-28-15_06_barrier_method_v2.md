@@ -35,7 +35,7 @@ Barrier method v.2에서는 다음 두 가지 사항이 매우 중요하다.<br>
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/21320/15_barrier_methodv2_04.PNG" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter15/15_barrier_methodv2_04.png" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig 1] m에 대해 newton iteration과 suboptimality gap 분석 [1]</figcaption>
 </p>
 </figure>
@@ -45,7 +45,7 @@ Barrier method v.2에서는 다음 두 가지 사항이 매우 중요하다.<br>
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/21320/15_barrier_methodv2_05.PNG" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter15/15_barrier_methodv2_05.png" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig 2] m의 증가와 newton iteration 수 분석 [1]</figcaption>
 </p>
 </figure>

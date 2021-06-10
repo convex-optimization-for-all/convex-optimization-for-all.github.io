@@ -6,8 +6,6 @@ order: 6
 owner: "Kyeongmin Woo"
 ---
 
-# Exact line search
-
 Gradient descent에서 곡면의 특성에 맞춰 step size를 적응적으로 선택하는 방법 중 또 다른 하나가  **exact line search**이다. 
 
 #### Exact line search 방법이란?

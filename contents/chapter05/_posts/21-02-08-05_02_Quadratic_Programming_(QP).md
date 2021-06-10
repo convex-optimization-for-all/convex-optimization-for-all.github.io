@@ -14,8 +14,8 @@ owner: "Hooncheol Shin"
 >    &\text{minimize}_{x} &&{(1/2)x^T P x + q^T x + r} \\\\
 >    &\text{subject to } &&{Gx \preceq h} \\\\
 >    & &&{Ax = b},\\\\
+>    & \text{where } &&P \in \mathbb{S}_{+}^n, G \in \mathbb{R}^{\text{m x n}} \text{, and } A \in \mathbb{R}^{\text{p x n}}.
 >\end{align}\\
-> \text{where } P \in \mathbb{S}_{+}^n, G \in \mathbb{R}^{\text{m x n}} \text{, and } A \in \mathbb{R}^{\text{p x n}}.
 >$$
 
 * 위 목적함수의 $$+ r$$는 최적화의 과정 및 결과에 영향을 주지 않으므로 생략되어도 무방하다.
@@ -25,7 +25,7 @@ owner: "Hooncheol Shin"
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17852/geometric_interpretation_of_QP.png" alt="[Fig 1] Geometric interpretation of QP [1]" width="70%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter05/05_02_geometric_interpretation_of_QP.png" alt="[Fig 1] Geometric interpretation of QP [1]" width="70%">
   <figcaption style="text-align: center;">[Fig 1] Geometric interpretation of QP [1]</figcaption>
 </p>
 </figure>
@@ -127,8 +127,8 @@ Quadratic program의 목적함수에서 이차항을 제거하게 되면 linear 
 >    &\text{minimize}_{x} &&{c^T x + d} \\\\
 >    &\text{subject to } &&{Gx \preceq h} \\\\
 >    & &&{Ax = b},\\\\
+>    & \text{where } &&G \in \mathbb{R}^{\text{m x n}} \text{ and } A \in \mathbb{R}^{\text{p x n}}.
 >\end{align}\\
->\text{where } G \in \mathbb{R}^{\text{m x n}} \text{ and } A \in \mathbb{R}^{\text{p x n}}.
 >$$
 
 ### Example 1) Portfolio optimization
@@ -154,11 +154,11 @@ $$\mu$$와 $$P$$는 과거의 데이터를 통해서 얻을 수 있으며, 각 �
 
 >$$
 >\begin{align}
->    &\text{minimize}_{\beta, \beta_0, \xi} &&{\frac{1}{2} \| \beta \|_2^2 + C \sum_{i=1}^{n} \xi_i} \\\\
->    &\text{subject to } &&{\xi_i \geq 0, i = 1, \dotsc, n} \\\\
->    & &&{y_i (x_i^T \beta + \beta_0) \geq 1 - \xi_i, i = 1, \dotsc, n},\\\\
+>    &\text{minimize}_{\beta, \beta_0, \xi} &&{\frac{1}{2} \| \beta \|_2^2 + C \sum_{i=1}^{n} \xi_i} \\
+>    &\text{subject to } &&{\xi_i \geq 0, i = 1, \dotsc, n} \\
+>    & &&{y_i (x_i^T \beta + \beta_0) \geq 1 - \xi_i, i = 1, \dotsc, n},\\
+>    & \text{given} && \text{y} \in \left\{-1, 1\right\}^n, X \in \mathbb{R}^{\text{n x p}} \text{ having rows } x_1, \dotsc, x_n.
 >\end{align}\\
-> \text{given y} \in \left\{-1, 1\right\}^n, X \in \mathbb{R}^{\text{n x p}} \text{ having rows } x_1, \dotsc, x_n.
 >$$
 
 ### Example 3)  Least-squares in regression

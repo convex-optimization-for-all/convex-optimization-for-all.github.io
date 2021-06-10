@@ -2,11 +2,9 @@
 layout: post
 title: 08-02-04 Batch vs Stochastic Methods
 chapter: "08"
-order: 16
+order: 15
 owner: "Kyeongmin Woo"
 ---
-
-# Batch vs Stochastic Methods
 
 Batch method와 stochastic method의 수렴은 다음과 같은 성질을 띈다. 
 
@@ -16,7 +14,7 @@ Batch method와 stochastic method의 수렴은 다음과 같은 성질을 띈다
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/18973/stochastic_vs_batch.PNG" alt="stochastic_vs_batch" width="80%" height="80%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter08/08_02_stochastic_vs_batch.PNG" alt="stochastic_vs_batch" width="80%" height="80%">
 </p>
   <figcaption style="text-align: center;">[Fig 3] Batch vs Stochastic Gradient Descent [2]</figcaption>
 </figure>

@@ -6,8 +6,6 @@ order: 11
 owner: "Kyeongmin Woo"
 ---
 
-# Example: Distance to a Convex Set
-
 닫힌 볼록집합 $$C $$까지의 거리함수를 아래와 같이 정의한다.  
 >
 \begin{alignat}{1}

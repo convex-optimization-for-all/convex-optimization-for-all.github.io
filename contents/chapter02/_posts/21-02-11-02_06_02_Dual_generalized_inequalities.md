@@ -46,7 +46,7 @@ generalized inequality $$ \succ_K^* $$에 대해 $$x$$는 $$S$$의 minimum이다
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17375/02.06_02_Minimum_element.PNG" alt="[Fig1] Minimum element [1]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter02/02.06_02_Minimum_element.png" alt="[Fig1] Minimum element [1]" width="70%">
   <figcaption style="text-align: center;">[Fig1] Minimum element [1]</figcaption>
 </p>
 </figure>
@@ -62,7 +62,7 @@ $$\lambda \succ_K^* 0$$와 $$z \in S$$에 대해 $$x$$가 $$\lambda^T z$$의 min
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17375/02.06_05_Minimal_element.PNG" alt="[Fig2] Minimal element [1]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter02/02.06_05_Minimal_element.png" alt="[Fig2] Minimal element [1]" width="70%">
   <figcaption style="text-align: center;">[Fig2] Minimal element [1]</figcaption>
 </p>
 </figure>
@@ -71,7 +71,7 @@ $$\lambda \succ_K^* 0$$와 $$z \in S$$에 대해 $$x$$가 $$\lambda^T z$$의 min
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17423/02.06_06_Minimal_element2.PNG" alt="[Fig3] Minimal이지만 minimizer가 아닌 예 [1]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter02/02.06_06_Minimal_element2.png" alt="[Fig3] Minimal이지만 minimizer가 아닌 예 [1]" width="70%">
   <figcaption style="text-align: center;">[Fig3] Minimal이지만 minimizer가 아닌 예 [1]</figcaption>
 </p>
 </figure>
@@ -80,7 +80,7 @@ $$\lambda \succ_K^* 0$$와 $$z \in S$$에 대해 $$x$$가 $$\lambda^T z$$의 min
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17423/02.06_07_Minimal_element3.PNG" alt="[Fig4] $$\lambda_1 \succ_K^* 0$$으로 강화되지 않는 Minimal 예  [1]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter02/02.06_07_Minimal_element3.png" alt="[Fig4] $$\lambda_1 \succ_K^* 0$$으로 강화되지 않는 Minimal 예  [1]" width="70%">
   <figcaption style="text-align: center;">$$\text{[Fig4] } \lambda_1 \succ_K^* 0 \text{ 으로 강화되지 않는 Minimal 예  [1]}$$</figcaption>
 </p>
 </figure>
@@ -104,7 +104,7 @@ Pareto optimality에 대해서 간단히 살펴보자.
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/17423/02.06_08_Pareto_optimal.PNG" alt="[Fig5] Optimal production frontier [1]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter02/02.06_08_Pareto_optimal.png" alt="[Fig5] Optimal production frontier [1]" width="70%">
   <figcaption style="text-align: center;">[Fig5] Optimal production frontier [1]</figcaption>
 </p>
 </figure>

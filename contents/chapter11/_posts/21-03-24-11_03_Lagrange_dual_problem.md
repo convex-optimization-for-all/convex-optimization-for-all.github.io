@@ -44,7 +44,7 @@ g(u,v) & = \min_x \\{ f(x) + \sum_{i=1}^m u_i h_i(x) + \sum_{j=1}^r v_j l_j(x) \
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/20584/dual-gen_13.png" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter11/dual-gen_13.png" width="70%">
   <figcaption style="text-align: center;">[Fig 4] Example of nonconvex quadratic minimization</figcaption>
 </p>
 </figure>

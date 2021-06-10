@@ -8,13 +8,10 @@ owner: "Minjoo Lee"
 
 다음과 같은 barrier problem ($$t \gt 0$$)의 solution을 $$x^*(t)$$라고 하면 **central path**는 set $$\{x^*(t) \vert t \gt 0 \}$$을 말한다. 
 
->
-\begin{align}
-\min_{x} & \quad tf(x) + \phi(x)
-\end{align}
-\begin{align}
-\text{subject to } & \quad Ax = b \\\
-\end{align}
+>$$\begin{align}
+> &\min_{x} \ &&  tf(x) + \phi(x) \\
+> &\text{subject to } \ && Ax = b \\
+> \end{align}$$
 
 적합한 조건이 주어지면  **central path** 집합은 $$\mathbb{R}^n$$에서 smooth path가 되며 $$t \to \infty$$일 때 $$x^*(t) \to x^*$$가 된다. ($$x^*$$는 원래 문제의 solution이다.)
 
@@ -22,19 +19,16 @@ owner: "Minjoo Lee"
 
 ## Example : central path for an LP
 다음의 LP 문제에 대한 central path를 구해보자.
->
-\begin{align}
- \min_{x} & \quad c^Tx
-\end{align}
-\begin{align}
- \text{subject to } & \quad a_i^Tx = b_i^T, i = 1, \cdots , 6 \\\
-\end{align}
+>$$\begin{align*}
+>&\min_{x} \ && c^Tx \\
+>&\text{subject to } \ && a_i^Tx = b_i^T, i = 1, \cdots , 6 \\
+>\end{align*}$$
 
 다음 그림에서 점선은 logarithmic barrier function $$\phi$$를 나타낸다. <br>
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="https://wikidocs.net/images/page/21298/15_central_path_02.PNG" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter15/15_central_path_02.png" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig 1] Central path [1]</figcaption>
 </p>
 </figure>

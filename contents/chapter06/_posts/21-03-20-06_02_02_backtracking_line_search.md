@@ -6,8 +6,6 @@ order: 5
 owner: "Kyeongmin Woo"
 ---
 
-# Backtracking line search
-
 Gradient descent에서 고정 step size를 사용하게 되면 진행 속도가 항상 동일하기 때문에, 경사가 가파른 구간에서는 최적점을 지나쳐서 진동할 수 있으며  경사가 평평한 구간에서는 진행이 느려질 수가 있다. 따라서, 곡면의 특성에 맞춰 속도를 조절하면서 진행해야 수렴도 보장되고 수렴 속도도 높아진다. 이와 같이 곡면의 특성에 맞춰 step size를 적응적으로 선택하는 방법 중 하나가 **backtracking line search**이다.
 
 #### Backtracking line search 방법이란?
@@ -15,7 +13,7 @@ Gradient descent에서 고정 step size를 사용하게 되면 진행 속도가 
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/18184/06.02_02_01_Backtracking_Line_Search.PNG" alt="backtrackinglinesearch1" width="100%" height="100%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter06/06_02_02_Backtracking_Line_Search.png" alt="backtrackinglinesearch1" width="100%" height="100%">
   <figcaption style="text-align: center;">[Fig1] Backtracking Line Search [3]</figcaption>
 </p>
 </figure>
@@ -45,7 +43,7 @@ Backtracking 방식으로 adaptive하게 step size를 선정하게 되면 fixed 
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/18184/06.02_02_02_Convergence.PNG" alt="backtrackinglinesearch1" width="70%" height="70%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter06/06_02_02_Convergence.PNG" alt="backtrackinglinesearch1" width="70%" height="70%">
   <figcaption style="text-align: center;">[Fig2] Convergence [3]</figcaption>
 </p>
 </figure>
@@ -71,7 +69,7 @@ Backtracking 방식으로 adaptive하게 step size를 선정하게 되면 fixed 
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/18184/f_leq_app.png" alt="f_leq_app" width="60%" height="60%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter06/06_02_02_f_leq_app.png" alt="f_leq_app" width="60%" height="60%">
   <figcaption style="text-align: center;">[Fig 3] f is less than the approximation of the next step</figcaption>
 </p>
 </figure>
@@ -82,7 +80,7 @@ Quadratic approximator가 $$x - t \nabla f(x)$$에서 더 위에 위치하는 �
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/18184/f_geq_app.png" alt="f_geq_app" width="60%" height="60%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter06/06_02_02_f_geq_app.png" alt="f_geq_app" width="60%" height="60%">
   <figcaption style="text-align: center;">[Fig 4] f is greater than the approximation of the next step</figcaption>
 </p>
 </figure>
