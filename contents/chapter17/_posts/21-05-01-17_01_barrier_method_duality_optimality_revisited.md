@@ -24,8 +24,8 @@ Log barrier function을 사용하여 다음과 같이 primal 문제를 barrier �
 > $$\begin{align}
 > & \min_{x} && f(x) + \frac{1}{t} \phi(x) & \qquad & \min_{x} && tf(x) + \phi(x) \\
 > & \text{subject to } && Ax = b & \iff \qquad & \text{subject to } && Ax = b \\
+> & \text{where } && \phi(x) = - \sum_{i=1}^{m} \log(-h_i(x))
 > \end{align}$$
-> $$ \text{where } \phi(x) = - \sum_{i=1}^{m} \log(-h_i(x))$$
 
 알고리즘은 $$t > 0$$를 만족하는 $$t = t^{(0)}$$에서 시작해서 $$\frac{m}{t}$$가 $$\epsilon$$보다 작거나 같아질 때까지 증가시킨다. 이때, Newton's method를 이용해 초기값 $$x^{(0)}$$에 대한 $$x^{\star}(t)$$를 구하고 $$k = 1, 2, 3, . . .$$에 대해 각 단계에서  $$x^{(k+1)} = x^{\star}(t)$$를 구하는 과정을 반복 한다.
 
