@@ -164,13 +164,6 @@ problem [3]</figcaption>
 </figure>
 <br>
 
-<!-- <center>
-![](https://wikidocs.net/images/page/22689/comparing_projected_and_conditional_gradient.png)
-
-**[Fig 2] Comparing projected and conditional gradient for constrained lasso
-problem [3]**
-</center> -->
-
 프랭크-울프(Frank-Wolfe) 방법이 first-order method의 수렴율과 비슷한 양상을 띠고 있는 것을 확인할 수 있을 것이다. 그러나 실제로는 높은 정확도로 수렴하기 위해서는 속도가 더 느려질 수 있다. (참고: 여기서 fixed step size를 사용하지만, line search를 사용하여 수렴 속도를 향상시킬 수도 있다.)
 
 
