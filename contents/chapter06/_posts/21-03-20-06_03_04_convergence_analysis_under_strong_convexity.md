@@ -117,7 +117,7 @@ $$f$$가 strongly convex일 경우 convergence rate는 ($$O(c^k)$$)가 되어 �
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/18092/06.03_01_01_Line_Convergence.PNG" alt="Line_Convergence" width="60%" height="60%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter06/06.03_01_01_Line_Convergence.png" alt="Line_Convergence" width="60%" height="60%">
   <figcaption style="text-align: center;">[Fig 1] Linear convergence [1]</figcaption>
 </p>
 </figure>
