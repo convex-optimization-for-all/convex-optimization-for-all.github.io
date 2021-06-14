@@ -2,7 +2,7 @@
 layout: post
 title: "24-05 Branch and bound algorithm (B&B)"
 chapter: "24"
-order: 6
+order: "06"
 owner: "YoungJae Choung"
 ---
 

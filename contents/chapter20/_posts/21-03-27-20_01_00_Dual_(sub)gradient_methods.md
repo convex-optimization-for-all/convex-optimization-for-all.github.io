@@ -2,7 +2,7 @@
 layout: post
 title: 20-01 Dual (sub)gradient methods
 chapter: "20"
-order: 2
+order: "02"
 owner: "Hooncheol Shin"
 ---
 

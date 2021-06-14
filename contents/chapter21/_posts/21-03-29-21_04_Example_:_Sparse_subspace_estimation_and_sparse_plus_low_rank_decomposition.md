@@ -2,7 +2,7 @@
 layout: post
 title: 21-04 Example - Sparse subspace estimation and sparse plus low rank decomposition
 chapter: "21"
-order: 5
+order: "05"
 owner: "Hooncheol Shin"
 ---
 

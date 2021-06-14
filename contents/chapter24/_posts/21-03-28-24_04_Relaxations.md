@@ -2,7 +2,7 @@
 layout: post
 title: "24-04 Relaxations"
 chapter: "24"
-order: 5
+order: "05"
 owner: "YoungJae Choung"
 ---
 

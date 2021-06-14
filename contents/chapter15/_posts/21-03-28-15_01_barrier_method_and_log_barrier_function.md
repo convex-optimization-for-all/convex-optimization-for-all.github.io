@@ -2,7 +2,7 @@
 layout: post
 title: 15-01 Barrier method and log barrier function
 chapter: "15"
-order: 2
+order: "02"
 owner: "Minjoo Lee"
 ---
 <script type="text/x-mathjax-config">

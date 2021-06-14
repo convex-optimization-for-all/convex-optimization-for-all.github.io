@@ -2,7 +2,7 @@
 layout: post
 title: 11-4 Strong duality
 chapter: "11"
-order: 5
+order: "05"
 owner: "Wontak Ryu"
 ---
 

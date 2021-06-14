@@ -2,7 +2,7 @@
 layout: post
 title: 19-07 Projected Newton method
 chapter: "19"
-order: 11
+order: "11"
 owner: "Hooncheol Shin"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "08-01-05 Example: Regularized Logistic Regression"
 chapter: "08"
-order: 7
+order: "07"
 owner: "Kyeongmin Woo"
 ---
 

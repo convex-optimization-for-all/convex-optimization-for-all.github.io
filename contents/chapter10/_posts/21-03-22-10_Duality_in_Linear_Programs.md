@@ -2,7 +2,7 @@
 layout: post
 title: 10 Duality in Linear Programs
 chapter: "10"
-order: 1
+order: "01"
 owner: "Wontak Ryu"
 ---
 

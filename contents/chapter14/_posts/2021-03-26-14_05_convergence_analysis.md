@@ -2,7 +2,7 @@
 layout: post
 title: 14-05 Convergence analysis
 chapter: "14"
-order: 9
+order: "09"
 owner: "Minjoo Lee"
 ---
 <script type="text/x-mathjax-config">

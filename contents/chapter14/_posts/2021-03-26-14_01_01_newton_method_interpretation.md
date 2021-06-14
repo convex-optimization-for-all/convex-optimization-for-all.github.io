@@ -2,7 +2,7 @@
 layout: post
 title: 14-01-01 Newton's method interpretation
 chapter: "14"
-order: 3
+order: "03"
 owner: "Minjoo Lee"
 ---
 <script type="text/x-mathjax-config">

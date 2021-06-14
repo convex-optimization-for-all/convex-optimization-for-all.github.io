@@ -2,7 +2,7 @@
 layout: post
 title: 10-03 Max flow and min cut
 chapter: "10"
-order: 4
+order: "04"
 owner: "Wontak Ryu"
 ---
 

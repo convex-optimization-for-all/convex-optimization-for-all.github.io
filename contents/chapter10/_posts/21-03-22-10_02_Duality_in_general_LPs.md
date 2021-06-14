@@ -2,7 +2,7 @@
 layout: post
 title: 10-02 Duality in general LPs
 chapter: "10"
-order: 3
+order: "03"
 owner: "Wontak Ryu"
 ---
 

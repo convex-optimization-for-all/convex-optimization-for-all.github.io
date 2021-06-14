@@ -2,7 +2,7 @@
 layout: post
 title: 09-05 Acceleration
 chapter: "09"
-order: 6
+order: "06"
 owner: "Kyeongmin Woo"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: 03-06 Convexity with respect to generalized inequalities
 chapter: "03"
-order: 14
+order: "14"
 owner: "Minjoo Lee"
 ---
 $$R$$ 공간 이외의 공간에서는 $$R$$ 공간에서 통상적으로 사용되는 ordering 개념에서 확장된, 일반화된 inequality 표현을 할 때 Cone의 정의를 활용한다. ([02-01-04]({% post_url contents/chapter02/21-02-08-02_01_04_Convex_cone %}) 참고) 이번 절에서는 Cone의 개념을 활용하여, $$R$$공간 이외에서도 확장되는 monotonicity와 convexity의 개념을 살펴본다.

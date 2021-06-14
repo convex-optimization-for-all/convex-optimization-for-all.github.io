@@ -2,7 +2,7 @@
 layout: post
 title: 12-05 Constrained and Lagrange forms
 chapter: "12"
-order: 6
+order: "06"
 owner: "Wontak Ryu"
 ---
 

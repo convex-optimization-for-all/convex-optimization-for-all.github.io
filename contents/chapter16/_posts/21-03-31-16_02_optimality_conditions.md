@@ -2,7 +2,7 @@
 layout: post
 title: 16-02 Optimality conditions
 chapter: "16"
-order: 3
+order: "03"
 owner: "Minjoo Lee"
 ---
 <script type="text/x-mathjax-config">

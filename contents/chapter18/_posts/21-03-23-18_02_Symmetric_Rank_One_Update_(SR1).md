@@ -2,7 +2,7 @@
 layout: post
 title: 18-02 Symmetric Rank-One Update (SR1)
 chapter: "18"
-order: 3
+order: "03"
 owner: "Hooncheol Shin"
 ---
 

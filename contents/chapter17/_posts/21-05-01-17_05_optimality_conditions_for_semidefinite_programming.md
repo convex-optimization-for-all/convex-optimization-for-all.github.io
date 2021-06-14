@@ -2,7 +2,7 @@
 layout: post
 title: 17-05 Optimality conditions for semideﬁnite programming 
 chapter: "17"
-order: 9
+order: "09"
 owner: "Minjoo Lee"
 ---
 이 절에서는 SDP(semideﬁnite programming) 문제에 대한 Primer-Dual method의 예시를 살펴보려고 한다.

@@ -2,7 +2,7 @@
 layout: post
 title: 18-07 Limited Memory BFGS (LBFGS)
 chapter: "18"
-order: 8
+order: "08"
 owner: "Hooncheol Shin"
 ---
 

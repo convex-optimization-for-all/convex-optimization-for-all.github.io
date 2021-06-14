@@ -2,7 +2,7 @@
 layout: post
 title: "25 Mixed Integer Programming (part II)"
 chapter: "25"
-order: 1
+order: "01"
 owner: "YoungJae Choung"
 ---
 

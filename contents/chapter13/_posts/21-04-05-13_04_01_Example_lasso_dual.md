@@ -2,7 +2,7 @@
 layout: post
 title: 13-04-01 Example lasso dual
 chapter: "13"
-order: 6
+order: "06"
 owner: "Wontak Ryu"
 ---
 

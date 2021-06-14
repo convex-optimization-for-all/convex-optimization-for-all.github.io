@@ -2,7 +2,7 @@
 layout: post
 title: 03-04-03 Differentiable quasiconvex functions
 chapter: "03"
-order: 11
+order: "11"
 owner: "Minjoo Lee"
 ---
 Quasiconvex function이 미분가능할 때, First-order conditions, Second-order conditions을 만족하게 된다. 다음을 살펴보자.

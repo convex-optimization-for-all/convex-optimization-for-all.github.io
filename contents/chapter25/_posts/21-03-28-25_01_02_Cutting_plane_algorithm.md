@@ -2,7 +2,7 @@
 layout: post
 title: "25-01-02 Cutting plane algorithm"
 chapter: "25"
-order: 4
+order: "04"
 owner: "YoungJae Choung"
 ---
 

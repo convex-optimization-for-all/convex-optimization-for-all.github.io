@@ -2,7 +2,7 @@
 layout: post
 title: "23-01 Coordinate Descent"
 chapter: "23"
-order: 2
+order: "02"
 owner: "YoungJae Choung"
 ---
 

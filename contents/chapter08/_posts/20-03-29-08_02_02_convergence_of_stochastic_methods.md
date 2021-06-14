@@ -2,7 +2,7 @@
 layout: post
 title: 08-02-02 Convergence of Stochastic Methods
 chapter: "08"
-order: 13
+order: "13"
 owner: "Kyeongmin Woo"
 ---
 

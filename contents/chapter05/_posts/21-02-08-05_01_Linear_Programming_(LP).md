@@ -2,7 +2,7 @@
 layout: post
 title: 05-01 Linear Programming (LP)
 chapter: "05"
-order: 2
+order: "02"
 owner: "Hooncheol Shin"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: 15 Barrier Method
 chapter: "15"
-order: 1
+order: "01"
 owner: "Minjoo Lee"
 ---
 이 장에서는 2nd-order method 중 하나인 **Barrier Method**에 대해 살펴보도록 하겠다.

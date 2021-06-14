@@ -2,7 +2,7 @@
 layout: post
 title: "22-02 Conditional gradient method"
 chapter: "22"
-order: 3
+order: "03"
 owner: "YoungJae Choung"
 ---
 

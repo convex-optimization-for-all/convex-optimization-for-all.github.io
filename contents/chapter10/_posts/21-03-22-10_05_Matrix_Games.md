@@ -2,7 +2,7 @@
 layout: post
 title: 10-05 Matrix Games
 chapter: "10"
-order: 6
+order: "06"
 owner: "Wontak Ryu"
 ---
 

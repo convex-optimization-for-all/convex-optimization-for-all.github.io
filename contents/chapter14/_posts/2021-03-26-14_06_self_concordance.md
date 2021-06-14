@@ -2,7 +2,7 @@
 layout: post
 title: 14-06 Self concordance
 chapter: "14"
-order: 10
+order: "10"
 owner: "Minjoo Lee"
 ---
 앞서 살펴본 Newton's method의 convergence analysis에서는 크게 두 가지의 단점이 존재한다. [1]

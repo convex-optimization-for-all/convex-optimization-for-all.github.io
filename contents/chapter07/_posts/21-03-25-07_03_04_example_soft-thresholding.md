@@ -2,7 +2,7 @@
 layout: post
 title: "07-03-04 Example: Soft-Thresholding"
 chapter: "07"
-order: 10
+order: "10"
 owner: "Kyeongmin Woo"
 ---
 

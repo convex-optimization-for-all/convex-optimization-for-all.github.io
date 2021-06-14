@@ -2,7 +2,7 @@
 layout: post
 title: 17-02-01 Central path equations and Newton step
 chapter: "17"
-order: 4
+order: "04"
 owner: "Minjoo Lee"
 ---
 **Primal-dual interior-point method**는 barrier method와 마찬가지로 central path를 찾아서 해를 구하는 방식이다. 그러기 위해 perturbed KKT conditions를 residual 함수로 정의하고 이를 0으로 만드는 해를 찾는다. 이 절에서는 이와 같은 접근 방식을 설명하려고 한다.

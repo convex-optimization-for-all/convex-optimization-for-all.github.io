@@ -2,7 +2,7 @@
 layout: post
 title: 02-06-02 Dual generalized inequalities
 chapter: "02"
-order: 14
+order: "14"
 owner: "Wontak Ryu"
 ---
 

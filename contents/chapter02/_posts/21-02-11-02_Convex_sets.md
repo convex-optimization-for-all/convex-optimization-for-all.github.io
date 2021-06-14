@@ -2,7 +2,7 @@
 layout: post
 title: 02 Convex Sets
 chapter: "02"
-order: 00
+order: "00"
 owner: "Wontak Ryu"
 ---
 

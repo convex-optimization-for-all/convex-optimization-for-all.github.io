@@ -2,7 +2,7 @@
 layout: post
 title: "25-01 Cutting Planes"
 chapter: "25"
-order: 2
+order: "02"
 owner: "YoungJae Choung"
 ---
 

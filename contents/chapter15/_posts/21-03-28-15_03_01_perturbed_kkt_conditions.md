@@ -2,7 +2,7 @@
 layout: post
 title: 15-03-01 Perturbed KKT conditions
 chapter: "15"
-order: 8
+order: "08"
 owner: "Minjoo Lee"
 ---
 Barrier problem과 원래 식에서 KKT condition을 도출해 보면 다음과 같다.

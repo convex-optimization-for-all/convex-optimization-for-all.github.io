@@ -2,7 +2,7 @@
 layout: post
 title: 21-02 Connection to proximal operators
 chapter: "21"
-order: 3
+order: "03"
 owner: "Hooncheol Shin"
 ---
 

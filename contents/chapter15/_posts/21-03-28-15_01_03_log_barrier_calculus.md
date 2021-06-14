@@ -2,7 +2,7 @@
 layout: post
 title: 15-01-03 Log barrier calculus
 chapter: "15"
-order: 5
+order: "05"
 owner: "Minjoo Lee"
 ---
 Log barrier function의 gradient와 hessian은 다음과 같다.

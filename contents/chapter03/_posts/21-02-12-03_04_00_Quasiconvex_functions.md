@@ -2,7 +2,7 @@
 layout: post
 title: 03-04 Quasiconvex functions
 chapter: "03"
-order: 8
+order: "08"
 owner: "Minjoo Lee"
 ---
 Quasiconvex function은 임의의 구간에서 정의되는 함수 혹은 real vector space의 convex subset에서 정의된 real-value로 이뤄진 함수로,

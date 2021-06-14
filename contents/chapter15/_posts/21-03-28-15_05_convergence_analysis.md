@@ -2,7 +2,7 @@
 layout: post
 title: 15-05 Convergence analysis
 chapter: "15"
-order: 11
+order: "11"
 owner: "Minjoo Lee"
 ---
 Barrier method는 centering step을 정확히 푼다고 가정하면 다음의 수렴 결과를 얻을 수 있다.

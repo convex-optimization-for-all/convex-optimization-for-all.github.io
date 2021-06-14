@@ -2,7 +2,7 @@
 layout: post
 title: 01-04 Brief history of convex optimization
 chapter: "01"
-order: 5
+order: "05"
 owner: "Kyeongmin Woo"
 ---
 

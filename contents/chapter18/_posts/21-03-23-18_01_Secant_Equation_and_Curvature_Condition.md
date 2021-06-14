@@ -2,7 +2,7 @@
 layout: post
 title: 18-01 Secant Equation and Curvature Condition
 chapter: "18"
-order: 2
+order: "02"
 owner: "Hooncheol Shin"
 ---
 

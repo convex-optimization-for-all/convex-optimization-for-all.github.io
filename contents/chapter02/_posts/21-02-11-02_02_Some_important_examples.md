@@ -2,7 +2,7 @@
 layout: post
 title: 02-02 Some important examples
 chapter: "02"
-order: 6
+order: "06"
 owner: "Wontak Ryu"
 ---
 

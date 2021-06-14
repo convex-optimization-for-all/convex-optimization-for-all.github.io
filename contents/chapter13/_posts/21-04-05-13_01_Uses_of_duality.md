@@ -2,7 +2,7 @@
 layout: post
 title: 13-01 Uses of duality
 chapter: "13"
-order: 2
+order: "02"
 owner: "Wontak Ryu"
 ---
 

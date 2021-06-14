@@ -2,7 +2,7 @@
 layout: post
 title: "23-03 Example: lasso regression"
 chapter: "23"
-order: 4
+order: "04"
 owner: "YoungJae Choung"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: 03-04-01 Definition and examples
 chapter: "03"
-order: 9
+order: "09"
 owner: "Minjoo Lee"
 ---
 ## Definition

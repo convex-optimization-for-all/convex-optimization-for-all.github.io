@@ -2,7 +2,7 @@
 layout: post
 title: "25-02 Two extended examples"
 chapter: "25"
-order: 7
+order: "07"
 owner: "YoungJae Choung"
 ---
 

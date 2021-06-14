@@ -2,7 +2,7 @@
 layout: post
 title: 06-03-02 Convex function quardratic upper bound
 chapter: "06"
-order: 8
+order: "08"
 owner: "Kyeongmin Woo"
 ---
 

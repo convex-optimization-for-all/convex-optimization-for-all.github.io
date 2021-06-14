@@ -2,7 +2,7 @@
 layout: post
 title: 19-01-01 Reminder - proximal gradient descent
 chapter: "19"
-order: 3
+order: "03"
 owner: "Hooncheol Shin"
 ---
 

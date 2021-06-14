@@ -2,7 +2,7 @@
 layout: post
 title: 02-02-02 Convex Cone examples
 chapter: "02"
-order: 8
+order: "08"
 owner: "Wontak Ryu"
 ---
 

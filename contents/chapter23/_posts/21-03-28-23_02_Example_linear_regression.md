@@ -2,8 +2,8 @@
 layout: post
 title: "23-02 Example: linear regression"
 chapter: "23"
-order: 3
-owner: "Jinwoo Park"
+order: "03"
+owner: "YoungJae Choung"
 ---
 
 Linear regression 문제를 다음과 같이 정의해보겠다.

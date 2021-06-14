@@ -2,7 +2,7 @@
 layout: post
 title: contents
 chapter: home
-order: 2
+order: "02"
 owner: kyeongminwoo
 ---
 

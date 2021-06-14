@@ -2,7 +2,7 @@
 layout: post
 title: "24-03 Solving integer programs"
 chapter: "24"
-order: 4
+order: "04"
 owner: "YoungJae Choung"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: 16-03 Fenchel duality
 chapter: "16"
-order: 4
+order: "04"
 owner: "Minjoo Lee"
 ---
 <script type="text/x-mathjax-config">

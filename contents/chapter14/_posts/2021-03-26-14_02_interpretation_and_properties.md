@@ -2,7 +2,7 @@
 layout: post
 title: 14-02 Interpretation & Properties
 chapter: "14"
-order: 4
+order: "04"
 owner: "Minjoo Lee"
 ---
 <script type="text/x-mathjax-config">

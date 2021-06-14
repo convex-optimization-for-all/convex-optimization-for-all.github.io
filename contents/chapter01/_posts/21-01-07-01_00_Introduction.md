@@ -2,7 +2,7 @@
 layout: post
 title: 01 Introduction
 chapter: "01"
-order: 1
+order: "01"
 owner: "Kyeongmin Woo"
 ---
 

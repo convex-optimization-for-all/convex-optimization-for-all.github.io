@@ -2,7 +2,7 @@
 layout: post
 title: 17-01 Barrier method & duality & optimality revisited
 chapter: "17"
-order: 2
+order: "02"
 owner: "Minjoo Lee"
 ---
 

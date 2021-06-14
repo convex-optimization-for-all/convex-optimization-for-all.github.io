@@ -2,7 +2,7 @@
 layout: post
 title: "25-02-01 Best subset selection"
 chapter: "25"
-order: 8
+order: "08"
 owner: "YoungJae Choung"
 ---
 

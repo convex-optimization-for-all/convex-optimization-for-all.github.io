@@ -2,7 +2,7 @@
 layout: post
 title: 07-02 Sub-differentials
 chapter: "07"
-order: 3
+order: "03"
 owner: "Kyeongmin Woo"
 ---
 

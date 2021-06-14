@@ -2,7 +2,7 @@
 layout: post
 title: 09 Proximal Gradient Descent and Acceleration
 chapter: "09"
-order: 1
+order: "01"
 owner: "Kyeongmin Woo"
 ---
 

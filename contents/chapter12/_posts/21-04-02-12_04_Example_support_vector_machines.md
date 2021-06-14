@@ -2,7 +2,7 @@
 layout: post
 title: 12-04 Example support vector machines
 chapter: "12"
-order: 5
+order: "05"
 owner: "Wontak Ryu"
 ---
 

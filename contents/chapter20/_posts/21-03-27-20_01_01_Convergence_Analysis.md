@@ -2,7 +2,7 @@
 layout: post
 title: 20-01-01 Convergence Analysis
 chapter: "20"
-order: 3
+order: "03"
 owner: "Hooncheol Shin"
 ---
 

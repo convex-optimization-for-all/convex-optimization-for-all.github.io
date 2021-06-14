@@ -2,7 +2,7 @@
 layout: post
 title: 18-06 Superlinear convergence
 chapter: "18"
-order: 7
+order: "07"
 owner: "Hooncheol Shin"
 ---
 

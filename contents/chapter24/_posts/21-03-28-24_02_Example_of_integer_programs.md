@@ -2,7 +2,7 @@
 layout: post
 title: "24-02 Examples of integer programs"
 chapter: "24"
-order: 3
+order: "03"
 owner: "YoungJae Choung"
 ---
 

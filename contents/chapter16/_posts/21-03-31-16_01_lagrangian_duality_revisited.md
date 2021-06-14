@@ -2,7 +2,7 @@
 layout: post
 title: 16-01 Lagrangian duality revisited
 chapter: "16"
-order: 2
+order: "02"
 owner: "Minjoo Lee"
 ---
 <script type="text/x-mathjax-config">

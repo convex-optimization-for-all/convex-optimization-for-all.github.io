@@ -2,7 +2,7 @@
 layout: post
 title: 10-04 Another Perspective on LP duality
 chapter: "10"
-order: 5
+order: "05"
 owner: "Wontak Ryu"
 ---
 

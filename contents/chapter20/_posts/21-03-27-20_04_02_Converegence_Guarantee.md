@@ -2,7 +2,7 @@
 layout: post
 title: 20-04-02 Converegence Guarantee
 chapter: "20"
-order: 10
+order: "10"
 owner: "Hooncheol Shin"
 ---
 

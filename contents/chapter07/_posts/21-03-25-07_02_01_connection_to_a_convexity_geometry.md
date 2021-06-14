@@ -2,7 +2,7 @@
 layout: post
 title: 07-02-01 Connection to a Convexity Geometry
 chapter: "07"
-order: 4
+order: "04"
 owner: "Kyeongmin Woo"
 ---
 

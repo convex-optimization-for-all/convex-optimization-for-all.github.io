@@ -2,7 +2,7 @@
 layout: post
 title: 20-04-04 Example - Alternating Projection
 chapter: "20"
-order: 12
+order: "12"
 owner: "Hooncheol Shin"
 ---
 

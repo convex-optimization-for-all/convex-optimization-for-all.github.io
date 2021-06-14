@@ -2,7 +2,7 @@
 layout: post
 title: 09-05-01 Accelerated proximal gradient method
 chapter: "09"
-order: 7
+order: "07"
 owner: "Kyeongmin Woo"
 ---
 

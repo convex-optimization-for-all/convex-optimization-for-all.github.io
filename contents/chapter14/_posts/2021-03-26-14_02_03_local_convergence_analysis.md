@@ -2,7 +2,7 @@
 layout: post
 title: 14-02-03 Local convergence analyisis
 chapter: "14"
-order: 7
+order: "07"
 owner: "Minjoo Lee"
 ---
 <script type="text/x-mathjax-config">

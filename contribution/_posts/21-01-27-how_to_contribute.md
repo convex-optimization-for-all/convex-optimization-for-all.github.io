@@ -2,7 +2,7 @@
 layout: post
 title: "How to Contribute"
 chapter: home
-order: 3
+order: "03"
 owner: kyeongminwoo
 ---
 

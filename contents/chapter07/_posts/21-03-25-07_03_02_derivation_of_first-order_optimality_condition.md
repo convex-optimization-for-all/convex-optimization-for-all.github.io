@@ -2,7 +2,7 @@
 layout: post
 title: 07-03-02 Derivation of First-Order Optimality Condition
 chapter: "07"
-order: 8
+order: "08"
 owner: "Kyeongmin Woo"
 ---
 

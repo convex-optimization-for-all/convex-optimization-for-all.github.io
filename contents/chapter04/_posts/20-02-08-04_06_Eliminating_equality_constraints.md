@@ -2,7 +2,7 @@
 layout: post
 title: 04-06 Eliminating equality constraints
 chapter: "04"
-order: 7
+order: "07"
 owner: "YoungJae Choung"
 ---
 변수를 변경함으로써 convex problem에서 equality constraints를 소거하는 방법에 대해 알아보겠다.

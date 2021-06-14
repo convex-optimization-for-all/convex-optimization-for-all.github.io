@@ -2,7 +2,7 @@
 layout: post
 title: "23-04 Example: Pathwise coordinate descent for lasso"
 chapter: "23"
-order: 5
+order: "05"
 owner: "YoungJae Choung"
 ---
 

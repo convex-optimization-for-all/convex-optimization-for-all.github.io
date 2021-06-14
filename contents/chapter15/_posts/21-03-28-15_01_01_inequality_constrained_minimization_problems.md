@@ -2,7 +2,7 @@
 layout: post
 title: 15-01-01 Inequality constrained minimization problems
 chapter: "15"
-order: 3
+order: "03"
 owner: "Minjoo Lee"
 ---
 <script type="text/x-mathjax-config">

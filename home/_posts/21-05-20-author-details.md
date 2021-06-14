@@ -1,7 +1,7 @@
 ---
 layout: post
 title: author details
-order: 5
+order: "05"
 chapter: home
 owner: jinwoopark
 ---

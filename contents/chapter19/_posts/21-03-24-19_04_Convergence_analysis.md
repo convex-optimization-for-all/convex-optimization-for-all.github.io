@@ -2,7 +2,7 @@
 layout: post
 title: 19-04 Convergence analysis
 chapter: "19"
-order: 8
+order: "08"
 owner: "Hooncheol Shin"
 ---
 

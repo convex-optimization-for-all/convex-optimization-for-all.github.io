@@ -2,7 +2,7 @@
 layout: post
 title: 07 Subgradient
 chapter: "07"
-order: 1
+order: "01"
 owner: "Kyeongmin Woo"
 ---
 

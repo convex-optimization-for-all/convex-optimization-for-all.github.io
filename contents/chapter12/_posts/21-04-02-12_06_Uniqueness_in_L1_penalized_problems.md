@@ -2,7 +2,7 @@
 layout: post
 title: 12-06 Uniqueness in L1 penalized problems
 chapter: "12"
-order: 7
+order: "07"
 owner: "Wontak Ryu"
 ---
 
