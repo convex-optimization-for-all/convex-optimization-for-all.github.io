@@ -393,6 +393,19 @@ a.sidebar-nav-item:focus {
   color: inherit;
 }
 
+/*
+ * View counts
+ */
+
+.view-counts {
+  display: flex;
+  justify-content: center;
+}
+
+.view-counts__img {
+  margin: 0;
+}
+
 
 /*
  * Pagination
