@@ -76,6 +76,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "seong7",
+      "name": "Seongjin Kim",
+      "avatar_url": "https://avatars.githubusercontent.com/u/52827441?v=4",
+      "profile": "https://seong7.github.io",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,

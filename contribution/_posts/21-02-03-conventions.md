@@ -8,14 +8,20 @@ owner: "Kyeongmin Woo"
 
 ## 1. Directory Convention
 
-- 주요 컨텐츠는 `chapter`로 시작하는 디렉토리에 포함되어 있습니다. 또한 컨텐츠에 필요한 이미지는 `image` 디렉토리에 들어 있습니다.
-- `chapter`의 내부 디렉토리는 다음과 같습니다.
+- 주요 컨텐츠는 `contents/chapter`로 시작하는 디렉토리에 포함되어 있습니다. 또한 컨텐츠에 필요한 이미지는 `image` 디렉토리에 들어 있습니다.
+- `contents/chapter`의 내부 디렉토리는 다음과 같습니다.
 
 ```
-chapter01
-| - _posts
-  | - 20-01-08-text.md
-| - index.html
+contents
+├── chapter01
+│   ├── _posts
+│   │   ├── 21-01-07-01_00_Introduction.md
+│   │   ├── 21-01-07-01_01_optimization_problems.md
+│   │   ├── 21-01-28-01_02_convex_optimization_problem.md
+│   │   ├── 21-01-28-01_03_goals_and_topics.md
+│   │   └── 21-01-28-01_04_brief_history_of_convex_optimization.md
+│   ├── index.html
+...
 ```
 
 - Jekyll에서는 `_posts` 디렉토리 내에 있는 Markdown 또는 html 파일을 블로그의 Posting으로 인식합니다. 따라서 새로운 포스팅을 작성하고자 한다면 각 디렉토리의 `_posts`에 새로 파일을 추가하시면 됩니다.
@@ -76,10 +82,11 @@ $$\theta x_1 + (1-\theta)x_2 \in C$$
 
 ### 2.4 Hyperlink Convention
 
-- Blog 내의 Post에 대한 hyperlink는 jekyll post_url을 사용합니다. 첫 번째 Post인 [Optimization problems?](/chapter01/2021/01/07/optimization_problems/)의 hyperlink는 아래와 같이 작성합니다.
+- Blog 내의 Post에 대한 hyperlink는 jekyll post_url을 사용합니다. 첫 번째 Post인 [Optimization problems?]({% post_url contents/chapter01/21-01-07-01_01_optimization_problems %}
+)의 hyperlink는 아래와 같이 작성합니다.
 
 ```
-[Optimization problems?](/chapter01/2021/01/07/optimization_problems/)
+[Optimization problems?]({% post_url contents/chapter01/21-01-07-01_01_optimization_problems %})
 ```
 
 - 기타 외부 Url로의 hyperlink는 다음과 같이 작성할 수 있습니다.
