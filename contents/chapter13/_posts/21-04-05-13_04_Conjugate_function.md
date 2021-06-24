@@ -49,7 +49,7 @@ $$f^{∗}(y)$$는 선형 함수 $$y^Tx$$와 $$f(x)$$ 간의 maximum gap이다.
 • $$f(x)$$가 아래와 같은 Simple quadratic일 경우를 살펴보자
 > $$f(x) = \frac{1}{2}x^TQx$$, where $$Q \succ 0$$
 
-그러면 $$y^Tx− \frac{1}{2}x^TQx$$는 $$y$$에 strictly concave이고and is maximized at $$x = Q^{−1}y$$, so $$f^{∗}(y) = \frac{1}{2}y^TQ^{−1}y$$ 
+그러면 $$y^Tx− \frac{1}{2}x^TQx$$는 $$y$$에 strictly concave이고,  $$x = Q^{−1}y$$ 에서 최대가 된다. 즉 $$f^{∗}(y) = \frac{1}{2}y^TQ^{−1}y$$ 
 
 
 
