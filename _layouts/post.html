@@ -51,7 +51,6 @@ layout: default
 
 <ul style="list-style: none;">
   {% for post in post_list %}
-    <p>{{post.order}}</p>
     {% assign title_parts = post.title | split: " " %}
     {% assign subchapter = title_parts | first %}
     {% assign subchapter_level = subchapter | split: "-" %}
