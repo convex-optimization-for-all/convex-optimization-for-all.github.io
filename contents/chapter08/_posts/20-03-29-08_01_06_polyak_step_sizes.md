@@ -2,7 +2,7 @@
 layout: post
 title: 08-01-06 Polyak step sizes
 chapter: "08"
-order: "8"
+order: "08"
 owner: "Kyeongmin Woo"
 ---
 
