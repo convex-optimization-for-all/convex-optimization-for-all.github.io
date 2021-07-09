@@ -50,7 +50,11 @@ end for<br>
 
 아래 그림에서 polygon은 집합 $$C$$를 나타내며 CP의 해는 검정색 점으로 표시되어 있다. 이때, valid inequailty는 해를 잘라내서 집합 $$C$$의 범위를 줄이게 된다.
 
-![](https://wikidocs.net/images/page/23740/09.01_02_valid_inequality.PNG) <br>
-**[Fig1] Valid Inequality [3]**<br>
+<figure class="image" style="align: center;">
+<p align="center">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter25/25_01_02_valid_inequality.png" alt="[Fig1] Valid Inequality">
+  <figcaption style="text-align: center;">[Fig1] Valid Inequality [3]</figcaption>
+</p>
+</figure>
 
 이와 같이 집합 $$C$$의 범위를 계속해서 줄여나가면 IP 문제의 convex hull feasible set인 집합 $$S$$와 만나게 되어 IP에 feasible한 해를 구할 수 있게 된다.

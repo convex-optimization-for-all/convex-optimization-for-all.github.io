@@ -77,7 +77,7 @@ $$ \bar{\beta} =  H_k \left(\bar{\beta} - \frac{1}{L} \nabla g(\bar{\beta})\righ
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/23722/09.01_03_subset_results1.PNG" alt="[Fig1] Dataset n=350, p = 64, k=6 [3]">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter25/25_01_03_subset_results1.PNG" alt="[Fig1] Dataset n=350, p = 64, k=6 [3]">
   <figcaption style="text-align: center;">$$[Fig1] Dataset n=350, p = 64, k=6 [3]$$</figcaption>
 </p>
 </figure>
@@ -88,7 +88,7 @@ $$ \bar{\beta} =  H_k \left(\bar{\beta} - \frac{1}{L} \nabla g(\bar{\beta})\righ
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/23722/09.01_04_subset_results2.PNG" alt="[Fig2] Cold and Warm Starts [3]">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter25/25_01_04_subset_results2.PNG" alt="[Fig2] Cold and Warm Starts [3]">
   <figcaption style="text-align: center;">[Fig2] Cold and Warm Starts [3]</figcaption>
 </p>
 </figure>
@@ -100,7 +100,7 @@ $$ \bar{\beta} =  H_k \left(\bar{\beta} - \frac{1}{L} \nabla g(\bar{\beta})\righ
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/23722/09.01_05_subset_results3.PNG" alt="[Fig3] Sparsity Detection (synthetic database) [3]">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter25/25_01_05_subset_results3.PNG" alt="[Fig3] Sparsity Detection (synthetic database) [3]">
   <figcaption style="text-align: center;">[Fig3] Sparsity Detection (synthetic database) [3]</figcaption>
 </p>
 </figure>
