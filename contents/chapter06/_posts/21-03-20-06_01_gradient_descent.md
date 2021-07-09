@@ -33,7 +33,7 @@ Gradient descent는 초기 점 $$x^{(0)} \in R^n$$을 선택하고 다음 식을
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl  }}/img/chapter_img/chapter06/06_01_gradientdescent1.PNG" alt="gradientdescent1" width="80%" height="80%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter06/06_01_gradientdescent1.PNG" alt="gradientdescent1" width="80%" height="80%">
   <figcaption style="text-align: center;">[Fig 1] Gradient descent in convex functions[3]</figcaption>
 </p>
 </figure>
@@ -42,7 +42,7 @@ Gradient descent는 초기 점 $$x^{(0)} \in R^n$$을 선택하고 다음 식을
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl  }}/img/chapter_img/chapter06/06_01_gradientdescent2.PNG" alt="gradientdescent2" width="80%" height="80%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter06/06_01_gradientdescent2.PNG" alt="gradientdescent2" width="80%" height="80%">
   <figcaption style="text-align: center;">[Fig 2] Gradient descent in non-convex functions[3]</figcaption>
 </p>
 </figure>
@@ -70,7 +70,7 @@ f(y) \approx f(x) + \nabla f(x)^T (y - x) +  \frac{1}{2t}  \parallel y - x  \par
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl  }}/img/chapter_img/chapter06/06_01_gradientdescent3.PNG" alt="gradientdescent3" width="80%" height="80%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter06/06_01_gradientdescent3.PNG" alt="gradientdescent3" width="80%" height="80%">
   <figcaption style="text-align: center;">$$ \text{[Fig 3] Gradient descent algorithm : red dot is } x^+ \text{ and blue dot } x \text{ [3]} $$</figcaption>
 </p>
 </figure>
