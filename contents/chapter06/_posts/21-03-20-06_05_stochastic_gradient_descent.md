@@ -47,15 +47,17 @@ x^{(k)} = x^{(k-1)} - t_k \cdot \nabla f_{i_k} (x^{(k-1)}), \, i_k \in \{1,2,\do
 SGD의 경우 $$k$$ step에서 $$k+m$$ step으로 m번의 업데이트를 했을 경우 다음과 같이 진행이 된다.
 >
 $$ \begin{equation}
-\text{SGD Cycle rule : } \quad x^{(k+1)} = x^{(k)} - t_k \cdot \sum_{i=1}^{m} \nabla f_i (x^{(k+i-1)})
-\end{equation} $$
+\text{SGD Cycle rule : } \quad x^{(k+m)} = x^{(k)} - t_k \cdot \sum_{i=1}^{m} \nabla f_i (x^{(k+i-1)})
+\end{equation}
+$$
 
 GD의 경우 $$k$$ step에서 $$k+1$$ step으로 한번의 업데이트를 했을 경우 다음과 같이 진행이 된다.
 
 >
 $$ \begin{equation}
-\text{GD Batch : }  \quad  x^{(k+m)} = x^{(k)} - t_k \cdot \sum_{i=1}^{m} \nabla f_i (x^{(k)})
-\end{equation} $$
+\text{GD Batch : } \quad x^{(k+1)} = x^{(k)} - t_k \cdot \sum_{i=1}^{m} \nabla f_i (x^{(k)})
+\end{equation} 
+$$
 
 따라서, 두 업데이트 방식으로 최적값을 탐색할 경우 방향은 아래와 같은 차이를 보이게 된다. 
 >
