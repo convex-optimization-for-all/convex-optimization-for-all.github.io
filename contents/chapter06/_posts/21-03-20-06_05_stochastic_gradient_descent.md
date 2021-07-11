@@ -40,7 +40,7 @@ x^{(k)} = x^{(k-1)} - t_k \cdot \nabla f_{i_k} (x^{(k-1)}), \, i_k \in \{1,2,\do
 
 ## Convergence of stochastic gradient descent
 
-**Gradient descent (GD)**와 **Stochastic gradient descent (SGD)** 방식은 어떤 차이가 있을까? 계산적으로 보면 GD는 배치 방식으로 한번에 업데이트를 하는 반면, SGD 방식에서 $$m$$번의 업데이트를 하게 된다. 즉, m stochastic steps $$\approx$$ one batch step이 된다.
+**Gradient descent (GD)**와 **Stochastic gradient descent (SGD)** 방식은 어떤 차이가 있을까? 계산적으로 보면 GD는 배치 방식으로 한번에 업데이트를 하는 반면, SGD 방식에서는 $$m$$번의 업데이트를 하게 된다. 즉, m stochastic steps $$\approx$$ one batch step이 된다.
 
 그렇다면 업데이트 진행 과정에서는 어떤 차이가 있을까?
 
