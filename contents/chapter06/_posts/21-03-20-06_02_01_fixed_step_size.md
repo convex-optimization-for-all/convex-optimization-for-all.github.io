@@ -12,7 +12,7 @@ Gradient decent에서 step size를 찾는 가장 단순한 방법은 모든 반�
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl  }}/img/chapter_img/chapter06/06_02_01_gradientdescent4.PNG" alt="gradientdescent4" width="100%" height="100%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter06/06_02_01_gradientdescent4.PNG" alt="gradientdescent4" width="100%" height="100%">
   <figcaption style="text-align: center;">[Fig 1] Step size different scenarios [3]</figcaption>
 </p>
 </figure>

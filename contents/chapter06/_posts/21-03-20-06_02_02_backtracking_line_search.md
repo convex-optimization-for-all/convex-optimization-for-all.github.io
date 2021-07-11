@@ -69,7 +69,7 @@ Backtracking 방식으로 adaptive하게 step size를 선정하게 되면 fixed 
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl  }}/img/chapter_img/chapter06/06_02_02_f_leq_app.png" alt="f_leq_app" width="60%" height="60%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter06/06_02_02_f_leq_app.png" alt="f_leq_app" width="60%" height="60%">
   <figcaption style="text-align: center;">[Fig 3] f is less than the approximation of the next step</figcaption>
 </p>
 </figure>
@@ -80,7 +80,7 @@ Quadratic approximator가 $$x - t \nabla f(x)$$에서 더 위에 위치하는 �
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl  }}/img/chapter_img/chapter06/06_02_02_f_geq_app.png" alt="f_geq_app" width="60%" height="60%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter06/06_02_02_f_geq_app.png" alt="f_geq_app" width="60%" height="60%">
   <figcaption style="text-align: center;">[Fig 4] f is greater than the approximation of the next step</figcaption>
 </p>
 </figure>
