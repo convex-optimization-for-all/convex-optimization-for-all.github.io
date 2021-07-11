@@ -32,7 +32,7 @@ Integer program을 convexification하려면 objective function이 linear해야 �
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/23719/09.01_01_cutting_plane_concept.PNG" alt="[Fig1] Cutting Plane">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter25/25_01_cutting_plane_concept.png" alt="[Fig1] Cutting Plane">
   <figcaption style="text-align: center;">[Fig1] Cutting Plane</figcaption>
 </p>
 </figure>

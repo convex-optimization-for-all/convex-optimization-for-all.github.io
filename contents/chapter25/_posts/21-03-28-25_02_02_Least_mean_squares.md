@@ -76,7 +76,7 @@ Subgradient 알고리즘으로 $$H_{q}(\beta) - H_{q+1}(\beta)$$의 local minimu
 #### Mixed integer programming gap
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/23721/09.01_06_LQS_results1.PNG" alt="[Fig1] Mixed integer programming gap [3]">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter25/25_01_06_LQS_results1.PNG" alt="[Fig1] Mixed integer programming gap [3]">
   <figcaption style="text-align: center;">[Fig1] Mixed integer programming gap [3]</figcaption>
 </p>
 </figure>
@@ -85,7 +85,7 @@ Subgradient 알고리즘으로 $$H_{q}(\beta) - H_{q+1}(\beta)$$의 local minimu
 #### Cold vs Warm Starts
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="https://wikidocs.net/images/page/23721/09.01_07_LQS_results2.PNG" alt="[Fig2] Cold vs Warm Starts [3]">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter25/25_01_07_LQS_results2.PNG" alt="[Fig2] Cold vs Warm Starts [3]">
   <figcaption style="text-align: center;">[Fig2] Cold vs Warm Starts [3]</figcaption>
 </p>
 </figure>
