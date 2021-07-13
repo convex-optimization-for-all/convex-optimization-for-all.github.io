@@ -43,7 +43,7 @@ Backtracking 방식으로 adaptive하게 step size를 선정하게 되면 fixed 
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl  }}/img/chapter_img/chapter06/06_02_02_Convergence.PNG" alt="backtrackinglinesearch1" width="70%" height="70%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter06/06_02_02_Convergence.png" alt="backtrackinglinesearch1" width="70%" height="70%">
   <figcaption style="text-align: center;">[Fig2] Convergence [3]</figcaption>
 </p>
 </figure>

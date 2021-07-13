@@ -2,7 +2,7 @@
 layout: post
 title: 06-03-04 Convergence analysis under strong convexity
 chapter: "06"
-order: 10
+order: 11
 owner: "Kyeongmin Woo"
 ---
 
