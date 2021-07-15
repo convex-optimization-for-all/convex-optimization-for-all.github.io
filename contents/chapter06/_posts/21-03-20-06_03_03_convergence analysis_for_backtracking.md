@@ -2,7 +2,7 @@
 layout: post
 title: 06-03-03 Convergence analysis for backtracking
 chapter: "06"
-order: 9
+order: 10
 owner: "Kyeongmin Woo"
 ---
 
