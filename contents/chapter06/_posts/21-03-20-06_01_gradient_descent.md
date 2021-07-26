@@ -62,7 +62,7 @@ f(y) \approx f(x) + \nabla f(x)^T (y - x) +  \frac{1}{2t}  \parallel y - x  \par
 
 따라서, gradient descent에서는 step size의 역수가 eigenvalue인 hessian 행렬을 2차 항의 계수로 갖는 2차식으로 함수를 근사했다고 볼 수 있다. 또한, 이 식에서 $$f(x) + \nabla f(x)^T (y - x)$$는 $$f$$에 대한 선형 근사로 볼 수 있으며, $$\frac{1}{2t}  \parallel y - x  \parallel_2^2$$는 $$x$$에 대한 proximity term으로 볼 수 있다. Proximity term은 $$x$$에서 $$y$$가 얼마나 가까운지를 나타낸다.
 
-이렇게 근사된 함수의 2차식을 최소화하는 위치를 다음 위치로 선택하게 된다.  그러기 위해 $$f(y)$$의 gardient를 0으로 두고 다음 위치인 $$y = x^+$$를 구하면 다음과 같은 식을 얻게 된다.
+이렇게 근사된 함수의 2차식을 최소화하는 위치를 다음 위치로 선택하게 된다.  그러기 위해 $$f(y)$$의 gradient를 0으로 두고 다음 위치인 $$y = x^+$$를 구하면 다음과 같은 식을 얻게 된다.
 
 > $$x^+ = x - t \nabla f(x)$$
 
