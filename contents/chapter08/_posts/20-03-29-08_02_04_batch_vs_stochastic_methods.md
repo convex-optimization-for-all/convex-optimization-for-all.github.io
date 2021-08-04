@@ -14,7 +14,7 @@ Batch method와 stochastic method의 수렴은 다음과 같은 성질을 띈다
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl }}/img/chapter_img/chapter08/08_02_stochastic_vs_batch.PNG" alt="stochastic_vs_batch" width="80%" height="80%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter08/08_02_stochastic_vs_batch.png" alt="stochastic_vs_batch" width="80%" height="80%">
 </p>
   <figcaption style="text-align: center;">[Fig 3] Batch vs Stochastic Gradient Descent [2]</figcaption>
 </figure>

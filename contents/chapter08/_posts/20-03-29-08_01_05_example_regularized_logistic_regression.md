@@ -29,7 +29,7 @@ Ridge penalty를 적용한 loss 함수는 여전히 미분 가능한 컨벡스 �
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl }}/img/chapter_img/chapter08/08_01_grad_vs_subgrad.PNG" alt="grad_vs_subgrad" width="90%" height="90%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter08/08_01_grad_vs_subgrad.png" alt="grad_vs_subgrad" width="90%" height="90%">
 </p>
   <figcaption style="text-align: center;">[Fig 1] Gradient descent vs Subgradient method [3]</figcaption>
 </figure>

@@ -79,7 +79,7 @@ x^{(k)} = P_{C_i}(x^{(k-1)})
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl }}/img/chapter_img/chapter08/08_01_projection.PNG" alt="projection" width="60%" height="60%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter08/08_01_projection.png" alt="projection" width="60%" height="60%">
 </p>
   <figcaption style="text-align: center;">[Fig 2] Alternating Projection Algorithm [10]</figcaption>
 </figure>
