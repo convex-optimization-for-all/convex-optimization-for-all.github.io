@@ -7,13 +7,13 @@ owner: "Kyeongmin Woo"
 ---
 
 ## Quardratic upper bound
-함수 $$f$$가 convex이고 $$\nabla f$$는 Lipschitz continuous하면 다음과 같은 \quadratic upper bound를 갖는다. (단, $$L$$은 Lipschitz constant이다.)
+함수 $$f$$가 convex이고 $$\nabla f$$는 Lipschitz continuous하면 다음과 같은 quadratic upper bound를 갖는다. (단, $$L$$은 Lipschitz constant이다.)
 
 > $$ \begin{align}
 f(y) & \le f(x) + \nabla f(x)^T (y-x) + \frac{L}{2} \lVert y - x \rVert^2_2  \space \space \forall x, y
 \end{align} $$
 
-또한, 다음 함수 $$g$$가 convex이면 함수 $$f$$는 \quadratic upper bound를 갖는다.
+또한, 다음 함수 $$g$$가 convex이면 함수 $$f$$는 quadratic upper bound를 갖는다.
 
 > $$ \begin{align}
 g(x) & = \frac{L}{2} \lVert x \rVert^2_2 - f(x) \space \text{is convex, } \space \forall x \space \space \text{with dom g = dom f }\\\
@@ -101,4 +101,4 @@ $$ \begin{align}
 f(y) & \le f(x) + \nabla f(x)^T (y-x) + \frac{L}{2} \lVert y - x \rVert^2_2  \space \space \forall x, y
 \end{align} $$
 
-이로써 함수 $$f$$가 convex이고 $$\nabla f$$는 Lipschitz continuous하면 \quadratic upper bound를 갖는다는 것이 증명되었다.
+이로써 함수 $$f$$가 convex이고 $$\nabla f$$는 Lipschitz continuous하면 quadratic upper bound를 갖는다는 것이 증명되었다.
