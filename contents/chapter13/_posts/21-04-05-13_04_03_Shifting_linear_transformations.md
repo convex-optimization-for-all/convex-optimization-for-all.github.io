@@ -27,6 +27,6 @@ norm과 그 norm의 dual norm은 다음의 관계에 있다. $$\rVert · \rVert,
 
 > $$ \min_x f(x) +\rVert Ax \rVert$$
 > 
-> $$ \max_u −f(A^Tu) \text{ subject to } \rVert u \rVert_{∗} ≤ 1$$
+> $$ \max_u −f^{*}(A^Tu) \text{ subject to } \rVert u \rVert_{∗} ≤ 1$$
 
 첫번째 수식은 primal이며 두번째 수식은 dual로, 쌍으로 나타내어 질 수 있다.
