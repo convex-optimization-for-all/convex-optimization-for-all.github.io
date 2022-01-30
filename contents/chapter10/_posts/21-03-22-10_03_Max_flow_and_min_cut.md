@@ -25,7 +25,7 @@ Linear program의 duality에 대한 예시로 max flow min cut 문제에 대해 
 </figure>
 
 
-위와 같이 방향이 있는(directed) graph $$G = (V, E)$$가 있고, vertex i와 vertex j를 잇는 edge, $$(i,j)\in E$$, 즉 i에서 j로 흐르는 flow(유량)를 $$f_{ij}$$라고 하자. 각 edge에는 capacity, 즉 흐를 수 있는 최대 flow가 정해져있다. 이를 $$c_{ij}$$라 하자. 
+위와 같이 방향이 있는(directed) graph $$G = (V, E)$$가 있고, vertex i와 vertex j를 잇는 edge, $$(i,j)\in E$$, 즉 i에서 j로 흐르는 flow(유량)를 $$f_{ij}$$라고 하자. 각 edge에는 capacity, 즉 흐를 수 있는 최대 flow가 정해져있다. 이를 $$c_{ij}$$라 하자.
 
 쉬운 예시로, source(s)에서 나오는 어떤 flow가 sink(t)로 흘러나가는 과정을 그래프로 나타낸 것이라 이해할 수 있다. 도시 배수/송전 계획, 물자 수송 등 다양한 문제에 적용될 수 있는 그래프 형태이다.
 
@@ -37,7 +37,7 @@ Linear program의 duality에 대한 예시로 max flow min cut 문제에 대해 
 
 ## Relationship between Max flow and Min cut problem(1)
 
-위처럼 정의된 graph와 flow에 대하여 대표적으로 알려진 두 가지 문제, max flow 문제, min cut 문제와 이 둘의 관계에 대해 살펴볼 것이다. 
+위처럼 정의된 graph와 flow에 대하여 대표적으로 알려진 두 가지 문제, max flow 문제, min cut 문제와 이 둘의 관계에 대해 살펴볼 것이다.
 
 결론부터 말하자면, max flow 문제는 LP 문제이고, min cut 문제는 integer program인데, max flow 문제의 dual은 min cut 문제를 LP relaxation한 것과 동일한 문제형태를 갖는다.
 
@@ -49,11 +49,11 @@ Linear program의 duality에 대한 예시로 max flow min cut 문제에 대해 
 >\end{align}
 >$$
 
-이 페이지에서는 dual과 relaxation의 역과정(LP 문제에 제약 조건을 추가하여, integer program으로 변환)으로 다음과 같은 부등호 관계를 보일 것이다, 여기선 다루지 않지만, 실제론 이 세 결과가 모두 같다. 
+이 페이지에서는 dual과 relaxation의 역과정(LP 문제에 제약 조건을 추가하여, integer program으로 변환)으로 다음과 같은 부등호 관계를 보일 것이다, 여기선 다루지 않지만, 실제론 이 세 결과가 모두 같다.
 
-이를 max flow min cut theorem이라 부르며, 네트워크의 최대 flow는 cut의 최소 capacity와 같다는 정리이다. 
+이를 max flow min cut theorem이라 부르며, 네트워크의 최대 flow는 cut의 최소 capacity와 같다는 정리이다.
 
-좀 더 일반화하여 보면, 특정 조건에서 primal 문제와 dual 문제의 optimal value가 동일한 값을 가지는 경우가 있는데 이때를 strong duality 관계에 있다고 한다. 
+좀 더 일반화하여 보면, 특정 조건에서 primal 문제와 dual 문제의 optimal value가 동일한 값을 가지는 경우가 있는데 이때를 strong duality 관계에 있다고 한다.
 
 LP 문제에서는 두 primal, dual 문제 모두가 infeasible한 경우를 제외하고는 strong duality를 가진다. 이에 대한 내용은 11장에서 다루게 된다.
 
@@ -80,7 +80,7 @@ Max flow problem이란 위 조건을 만족하는 그래프에 대해서 s에서
 </p>
 </figure>
 
-  Min cut 문제는 graph의 전체 vertex를 그림에서처럼 색칠된 영역, 색칠되지 않은 영역 두 집합에 나눠서 속하게 하는데, 한 집합에는 source를 포함하고, 나머지 집합에는 sink를 포함하되, 나머지 vertex는 임의로 두 집합 중 하나에 속하게 나눈다(여기서는 source를 포함하는 집합을 A, sink를 포함하는 집합을 B라고 할 것이다),이때 집합 A에서 B로 진행하는 방향의 edge들의 capacity 총합을 cut이라고 정의한다. 
+  Min cut 문제는 graph의 전체 vertex를 그림에서처럼 색칠된 영역, 색칠되지 않은 영역 두 집합에 나눠서 속하게 하는데, 한 집합에는 source를 포함하고, 나머지 집합에는 sink를 포함하되, 나머지 vertex는 임의로 두 집합 중 하나에 속하게 나눈다(여기서는 source를 포함하는 집합을 A, sink를 포함하는 집합을 B라고 할 것이다),이때 집합 A에서 B로 진행하는 방향의 edge들의 capacity 총합을 cut이라고 정의한다.
 
   다시 말해, cut은 source와 sink를 각각 다른 partition에 존재하게 구분하는 graph의 vertex partition이다. min cut은 graph가 주어졌을 때 이 cut의 최솟값을 찾는 문제이다. 일반적으로 정의되는 min cut 문제의 경우 directed graph 상에서 정의되기 때문에, 항상 source $$x_{s}=1$$, sink $$x_{t}=0$$을 만족한다. 아래의 문제 정의에는 이 부분이 생략되어 있다.
 
@@ -98,7 +98,7 @@ Max flow problem이란 위 조건을 만족하는 그래프에 대해서 s에서
 ## Dual of Max flow problem
 Max flow의 최적화 문제에 대하여 dual을 구해보자.
 
-  먼저 constraint에 대하여 dual variable을 순서대로 $$a_{ij}, b_{ij}, c_{k}$$로 정의한다.  max 문제의 dual의 경우 upper bound를 minimize하는 형태가 될 것이므로, 정리한 형태가 primal objective의 upper bound를 가지는 primal objective $$\leq$$ sth의 형태가 되어야 한다. 따라서, constraint에 대하여 $$f_{ij}$$의 upper bound를 찾는 방향으로 식을 정리한다.
+  먼저 constraint에 대하여 dual variable을 순서대로 $$a_{ij}, b_{ij}, x_{k}$$로 정의한다.  max 문제의 dual의 경우 upper bound를 minimize하는 형태가 될 것이므로, 정리한 형태가 primal objective의 upper bound를 가지는 primal objective $$\leq$$ sth의 형태가 되어야 한다. 따라서, constraint에 대하여 $$f_{ij}$$의 upper bound를 찾는 방향으로 식을 정리한다.
 이를 정리하면 다음과 같다.
 
 >$$
@@ -108,11 +108,11 @@ Max flow의 최적화 문제에 대하여 dual을 구해보자.
 >\end{align}
 >$$
 
-primal LP의 목적함수와 관계된 $$f$$항을 좌항으로, 그 나머지는 우항으로 정리한다. 
+primal LP의 목적함수와 관계된 $$f$$항을 좌항으로, 그 나머지는 우항으로 정리한다.
 
-그 다음, 이 과정에서 우리가 원하는 것은 primal LP의  상한(upper bound)이므로, 좌항의 $$f$$ 앞에 곱해져 있는 항들의 결과가 primal LP의 목적함수와 일치하도록 만드는 식을 찾는다. 
+그 다음, 이 과정에서 우리가 원하는 것은 primal LP의  상한(upper bound)이므로, 좌항의 $$f$$ 앞에 곱해져 있는 항들의 결과가 primal LP의 목적함수와 일치하도록 만드는 식을 찾는다.
 
-이 식을 만족하도록 하는 조건이 dual LP에서의 constraint가 된다. 
+이 식을 만족하도록 하는 조건이 dual LP에서의 constraint가 된다.
 
 즉, $$f_{ij}$$의 식이 $$\sum_{(s,j)\in E}f_{sj}$$에서만 1을 갖고 나머지가 0이 되도록 정리한다.
 
@@ -124,7 +124,7 @@ primal LP의 목적함수와 관계된 $$f$$항을 좌항으로, 그 나머지�
 >\end{align}
 >$$
 
-여기서, 우리는 $$i=s$$인 경우에 좌항의 결과가 $$\sum_{(s,j)\in E}f_{sj}$$이 되고, 다른 경우에 대해서는 0이 되게 식을 정리하는 것이 목표이다. 
+여기서, 우리는 $$i=s$$인 경우에 좌항의 결과가 $$\sum_{(s,j)\in E}f_{sj}$$이 되고, 다른 경우에 대해서는 0이 되게 식을 정리하는 것이 목표이다.
 
 두 번째 시그마의 x항의 k는 source와 sink에 대해서는 포함되지 않음을 유의하면서, $$i=s, j\neq t$$인 경우, $$i\neq s, j=t$$인 경우, $$i\neq s,j\neq t$$가 아닌 경우로 나누어 좌항을 정리할 수 있다.
 
@@ -185,10 +185,10 @@ primal LP의 목적함수는 이 세 가지 케이스 중 첫 번째 케이스�
 >$$
 
 ## Dual LP to Integer program
-이제 이 dual LP가 min cut 문제의 LP relaxation과 동일해짐을 보이고자 한다. 
+이제 이 dual LP가 min cut 문제의 LP relaxation과 동일해짐을 보이고자 한다.
 따라서 위 문제에 조건을 추가함으로써 integer program으로 바꾸는 과정을 거칠 것이다.
-  위 dual LP 문제에 대해서, $$x$$는 vertex가 s, t일 때를 제외하고 정의되어 있지 않은 형태이다. 
-  따라서 문제의 scope를 좁히고자, s, t를 제외한 나머지의 vertex가 s 또는 t의 그룹에 속한다는 조건을 추가하여 문제를 해결해보자. 
+  위 dual LP 문제에 대해서, $$x$$는 vertex가 s, t일 때를 제외하고 정의되어 있지 않은 형태이다.
+  따라서 문제의 scope를 좁히고자, s, t를 제외한 나머지의 vertex가 s 또는 t의 그룹에 속한다는 조건을 추가하여 문제를 해결해보자.
   다시 말하면, 모든 vertex가 0 또는 1의 그룹에 속한다고 가정하자. 이는 min cut의 vertex partition을 정하는 것과 동일하다.
 
 >$$
@@ -199,7 +199,7 @@ primal LP의 목적함수는 이 세 가지 케이스 중 첫 번째 케이스�
 
 1에 속하는 그룹을 집합 A로 정의하고, 0에 속하는 그룹을 집합 B로 정의하자. 또한 source(s)는 A에, sink (t)는 B에 속한다고 정하자.
 
-위와 같이 정하면, $$b_{ij}$$는 집합 A에서 집합 B로 향하는 edge에 대해서는 1, 나머지에 대해선 0을 가지는 일종의 on/off의 역할을 한다. 
+위와 같이 정하면, $$b_{ij}$$는 집합 A에서 집합 B로 향하는 edge에 대해서는 1, 나머지에 대해선 0을 가지는 일종의 on/off의 역할을 한다.
 
 이를 정리하면 다음과 같다.
 
