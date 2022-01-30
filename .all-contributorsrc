@@ -94,6 +94,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "seolhokim",
+      "name": "seolhokim",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38997792?v=4",
+      "profile": "http://seolhokim.github.io",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
