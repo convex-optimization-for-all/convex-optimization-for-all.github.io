@@ -21,7 +21,7 @@ owner: "Minjoo Lee"
 다음의 LP 문제에 대한 central path를 구해보자.
 >$$\begin{align*}
 >&\min_{x} \ && c^Tx \\
->&\text{subject to } \ && a_i^Tx = b_i^T, i = 1, \cdots , 6 \\
+>&\text{subject to } \ && a_i^Tx \le b_i^T, i = 1, \cdots , 6 \\
 >\end{align*}$$
 
 다음 그림에서 점선은 logarithmic barrier function $$\phi$$를 나타낸다. <br>
