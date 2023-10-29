@@ -16,15 +16,15 @@ $$X = [x^{1} \quad \dotsc \quad x^{p}] \in \mathbb{R}^{n×p}$$이고 $$y \in \ma
 > \min_{\beta} & \quad \frac{1}{2} \parallel y - X\beta \parallel^{2} \\
 > \text{subject to } & \quad \parallel \beta \parallel_{0}  \  \leq  k \\
 > \end{align}
-> $$ 
+> $$
 
 이때 $$\parallel \beta \parallel_{0}$$는 $$\beta$$의 nonzero entry의 개수이다.
 
-지금까지 앞 장에서는 이와 같은 문제를 Lasso problem으로 정의해서 $$l_1$$ norm으로 $$\beta$$를 sparse하게 만들었었다. 이 문제의 경우 $$l_0$$ norm을 사용해서 0이 아닌 entry 개수를 제약하는 문제로 
+지금까지 앞 장에서는 이와 같은 문제를 Lasso problem으로 정의해서 $$l_1$$ norm으로 $$\beta$$를 sparse하게 만들었었다. 이 문제의 경우 $$l_0$$ norm을 사용해서 0이 아닌 entry 개수를 제약하는 문제로
 정의 되었는데 제약 조건인 $$\parallel \beta \parallel_{0}  \  \leq  k$$가 non-convex라서 지금까지 배운 convex optimization 기법으로는 문제를 풀 수 없다.
 
 #### Integer programming formulation
-그렇다면 이 문제를 Integer programing으로 재정의해보자. 
+그렇다면 이 문제를 Integer programing으로 재정의해보자.
 
 > $$
 > \begin{align}
@@ -33,7 +33,7 @@ $$X = [x^{1} \quad \dotsc \quad x^{p}] \in \mathbb{R}^{n×p}$$이고 $$y \in \ma
 > & \quad \sum_{i = 1}^{p} z_{i} \leq k \\
 > & \quad z_{ji} \in \lbrace 0, 1 \rbrace \quad i = 1 \dotsc p \\
 > \end{align}
-> $$ 
+> $$
 
 Binary 변수 $$z_i$$를 도입해서 $$z_i$$의 합이 $$k$$보다 작게 만듦으로써 위의 문제와 동일해지게 만들었다.  $$M_i$$는 사전에 알고 있는 $$\left\vert  \beta_{i} \right\vert$$의 상한 값으로 $$X$$와 $$y$$를 사전처리해서 계산할 수 있는 값이다.
 
@@ -70,14 +70,14 @@ $$ \bar{\beta} =  H_k \left(\bar{\beta} - \frac{1}{L} \nabla g(\bar{\beta})\righ
 #### Mixed integer programming gap
 아래 그림에서 Subset selection problem의 실험 결과를 살펴보자.
 
-왼쪽 그래프에서 upper bound는 바로 optimal이 되었지만 lower bound는 천천히 올라오다가 upper bound와 만나는 지점에서야 optimal임을 알게 된다. 왜냐하면 linear program에서는 solution이 optimal인지 체크할 방법이 없으며 upper bound와 lower bound가 같아졌을 때 optimal임을 알 수 있게 된다. 
+왼쪽 그래프에서 upper bound는 바로 optimal이 되었지만 lower bound는 천천히 올라오다가 upper bound와 만나는 지점에서야 optimal임을 알게 된다. 왜냐하면 linear program에서는 solution이 optimal인지 체크할 방법이 없으며 upper bound와 lower bound가 같아졌을 때 optimal임을 알 수 있게 된다.
 (참고로 upper bound와 lower bound의 차를 mixed integer programming gap이라고 한다.)
 
 오른쪽 그림은 동일한 실험 결과를 mixed integer programming gap을 작아지는 모습으로 보여주고 있다. 주황색 그래프는 upper bound와 lower bound의 차이인 mixed integer programming gap을 나타내며 점점 줄어들고 있다.
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl }}/img/chapter_img/chapter25/25_01_03_subset_results1.PNG" alt="[Fig1] Dataset n=350, p = 64, k=6 [3]">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter25/25_01_03_subset_results1.png" alt="[Fig1] Dataset n=350, p = 64, k=6 [3]">
   <figcaption style="text-align: center;">$$[Fig1] Dataset n=350, p = 64, k=6 [3]$$</figcaption>
 </p>
 </figure>
@@ -88,7 +88,7 @@ $$ \bar{\beta} =  H_k \left(\bar{\beta} - \frac{1}{L} \nabla g(\bar{\beta})\righ
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl }}/img/chapter_img/chapter25/25_01_04_subset_results2.PNG" alt="[Fig2] Cold and Warm Starts [3]">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter25/25_01_04_subset_results2.png" alt="[Fig2] Cold and Warm Starts [3]">
   <figcaption style="text-align: center;">[Fig2] Cold and Warm Starts [3]</figcaption>
 </p>
 </figure>
@@ -100,7 +100,7 @@ $$ \bar{\beta} =  H_k \left(\bar{\beta} - \frac{1}{L} \nabla g(\bar{\beta})\righ
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl }}/img/chapter_img/chapter25/25_01_05_subset_results3.PNG" alt="[Fig3] Sparsity Detection (synthetic database) [3]">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter25/25_01_05_subset_results3.png" alt="[Fig3] Sparsity Detection (synthetic database) [3]">
   <figcaption style="text-align: center;">[Fig3] Sparsity Detection (synthetic database) [3]</figcaption>
 </p>
 </figure>

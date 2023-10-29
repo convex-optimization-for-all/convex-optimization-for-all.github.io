@@ -11,9 +11,9 @@ owner: "Hooncheol Shin"
 자세한 내용은 [09 Proximal Gradient Descent and Acceleration]({% post_url contents/chapter09/20-01-08-09_proximal_gradient_descent_and_acceleration %}) 참조.
 
 ## Proximal gradient descent
-**Proximal gradient descent** 다음의 문제에 대해 작동한다. 
+**Proximal gradient descent** 다음의 문제에 대해 작동한다.
 
->$$f(x) = g(x) + h(x)$$ 
+>$$f(x) = g(x) + h(x)$$
 
 * $$g$$는 convex이고 differentiable하다. (**dom**$$(g) = \mathbb{R}^n$$)
 * $$h$$는 convex이고 non-differentiable하며 "simple"하다.
@@ -42,7 +42,7 @@ Update 식은 generalized gradient $$G_{t}$$를 사용해서 표준화된 형태
 * 또한, $$g$$함수의 convergence rate와 같은 수렴 속도를 갖는다. 단, 반복할 때마다 prox operator를 실행하기 때문에 prox 계산이 효율적인 경우에만 유용하다.
 
 ## Motivation
-**Proximal gradient descent**에서는 미분 가능한 함수 $$g$$를 Tayor 2차식으로 근사하고 여기에 미분이 되지 않는 함수인 $$h$$를 더하여 목적 함수로 정의한 후 이를 반복적으로 최소화한다. 따라서, 다음과 같이 2차 식으로 정리해 볼 수 있다. 
+**Proximal gradient descent**에서는 미분 가능한 함수 $$g$$를 Tayor 2차식으로 근사하고 여기에 미분이 되지 않는 함수인 $$h$$를 더하여 목적 함수로 정의한 후 이를 반복적으로 최소화한다. 따라서, 다음과 같이 2차 식으로 정리해 볼 수 있다.
 
 식에 전개되는 자세한 과정은 [09-01 Proximal gradient descent]({% post_url contents/chapter09/20-01-08-09_01_proximal_gradient_descent %}) 참고.
 
@@ -59,7 +59,7 @@ x^+ & = \underset{z}{\text{argmin}}  \, \frac{1}{2t} \parallel x - t \nabla g(x)
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl }}/img/chapter_img/chapter19/09.01_01_proximal_gradient_descent.PNG" alt="[Fig 1] Proximal gradient descent updates [3]" width="70%">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter19/09.01_01_proximal_gradient_descent.png" alt="[Fig 1] Proximal gradient descent updates [3]" width="70%">
   <figcaption style="text-align: center;">[Fig 1] Proximal gradient descent updates [3]</figcaption>
 </p>
 </figure>

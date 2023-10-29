@@ -21,7 +21,7 @@ $$X = [x^{1} \quad \dotsc \quad x^{p}] \in \mathbb{R}^{n×p}$$이고 $$y \in \ma
 >$$\beta_{LMS} : = \underset{\beta}{\text{argmin}} (\text{median} \lvert r_{i} \rvert )$$
 
 ## Least quantile regression
-Least Median of Squares 문제를 일반화한 Least Quantile of Square문제는 다음과 같이 정의할 수 있다. 여기서 $$r_{q}$$는 $$q$$번째 ordered absolute residual이다. 
+Least Median of Squares 문제를 일반화한 Least Quantile of Square문제는 다음과 같이 정의할 수 있다. 여기서 $$r_{q}$$는 $$q$$번째 ordered absolute residual이다.
 #### Least Quantile of Squares (LQS)
 >$$\beta_{LQS} : = \underset{\beta}{\text{argmin}} (\lvert r_{(q)} \rvert ), \quad 1 \le q \le n, \quad \lvert r_{1} \rvert \le \lvert r_{2} \rvert \le \cdots \le \lvert r_{n} \rvert$$
 
@@ -76,7 +76,7 @@ Subgradient 알고리즘으로 $$H_{q}(\beta) - H_{q+1}(\beta)$$의 local minimu
 #### Mixed integer programming gap
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl }}/img/chapter_img/chapter25/25_01_06_LQS_results1.PNG" alt="[Fig1] Mixed integer programming gap [3]">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter25/25_01_06_LQS_results1.png" alt="[Fig1] Mixed integer programming gap [3]">
   <figcaption style="text-align: center;">[Fig1] Mixed integer programming gap [3]</figcaption>
 </p>
 </figure>
@@ -85,7 +85,7 @@ Subgradient 알고리즘으로 $$H_{q}(\beta) - H_{q+1}(\beta)$$의 local minimu
 #### Cold vs Warm Starts
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl }}/img/chapter_img/chapter25/25_01_07_LQS_results2.PNG" alt="[Fig2] Cold vs Warm Starts [3]">
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter25/25_01_07_LQS_results2.png" alt="[Fig2] Cold vs Warm Starts [3]">
   <figcaption style="text-align: center;">[Fig2] Cold vs Warm Starts [3]</figcaption>
 </p>
 </figure>
