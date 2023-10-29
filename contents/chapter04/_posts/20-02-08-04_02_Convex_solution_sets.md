@@ -10,15 +10,15 @@ $$X_{opt}$$를 다음과 같이 어떤 convex problem에 대한 solution의 집�
 
 >$$
 \begin{aligned}
-X_{opt} = 
+X_{opt} =
 &\text{arg}\min_x &&f(x) \\
 &\text{subject to} &&g_{i}(x) \leq 0, i = 1, .., m \\
-&&&h_{j}(x) = 0, i = 1, .., r  \\\\
+&&&h_{j}(x) = 0, j = 1, .., r  \\\\
 \end{aligned}
 $$
 
 ## Key property1
->$$X_{opt}$$는 convex set이다. 
+>$$X_{opt}$$는 convex set이다.
 
 #### Proof
 >$$x$$, $$y$$가 solution일때,
@@ -33,8 +33,8 @@ $$
 >3. $$f$$는 convex function이므로 아래를 만족한다. <br><br>
     $$
     \begin{aligned}
-      f(tx+(1-t)y) &\leq tf(x) + (1-t)f(y) \\ 
-      &= tf^{\star} + (1-t) f^{\star} \\ 
+      f(tx+(1-t)y) &\leq tf(x) + (1-t)f(y) \\
+      &= tf^{\star} + (1-t) f^{\star} \\
       &= f^{\star}
     \end{aligned}
     $$ <br>
