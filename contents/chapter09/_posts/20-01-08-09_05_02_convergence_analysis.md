@@ -17,17 +17,17 @@ Objective 함수 $$f(x) = g(x) + h(x)$$에 대해 다음 사항을 가정한다.
 * $$h$$는 convex이고 $$\text{prox}_{t}(x) = \underset{z}{\text{argmin}} \left \{ \parallel x - z \parallel_2^2/ (2t) + h(z) \right \}$$가 계산되어야 한다.
 
 #### Convergence Theorem
-> **Accelerated proximal gradient method**는 fixed step size $$t \le 1/L$$에 대해 다음 식을 만족한다. 
+> **Accelerated proximal gradient method**는 fixed step size $$t \le 1/L$$에 대해 다음 식을 만족한다.
 >\begin{align}
 f(x^{(k)}) − f^{\star} ≤ \frac{2 \lVert x(0) −x^{\star} \rVert_2^2 }{ t(k + 1)^2}
 \end{align}
 
-Frst-order method의 optimal rate인 $$O (1 / k^2)$$의 성능을 가지며 이는 $$O(1/ \sqrt {\epsilon})$$이다.  Subgradient method의 성능은 $$O(1/\varepsilon^{2})$$, proximal gradiant의 성능은 $$O(1/\varepsilon)$$, accelerated proximal gradient의 성능은 $$O(1/\sqrt{ \varepsilon})$$이다.
+First-order method의 optimal rate인 $$O (1 / k^2)$$의 성능을 가지며 이는 $$O(1/ \sqrt {\epsilon})$$이다.  Subgradient method의 성능은 $$O(1/\varepsilon^{2})$$, proximal gradiant의 성능은 $$O(1/\varepsilon)$$, accelerated proximal gradient의 성능은 $$O(1/\sqrt{ \varepsilon})$$이다.
 
 ## Backtracking line search
 가속(acceleration)을 사용할 때 Backtracking line search를 하는 복잡한 방법들도 있지만, 여기에서 좀 더 간단한 방법을 알아보자.
- 
-먼저 $$β <1, t_0 = 1$$로 고정한다. 그리고, $$k$$번째 반복에서 $$t = t_{k-1}$$로 시작을 한다. (Gradient descent에서는 $$t=1$$로 시작을 하는데 accelerated proximal gradient method에서는 이전 단계의 step size부터 시작한다는 점을 유의하라.) 
+
+먼저 $$β <1, t_0 = 1$$로 고정한다. 그리고, $$k$$번째 반복에서 $$t = t_{k-1}$$로 시작을 한다. (Gradient descent에서는 $$t=1$$로 시작을 하는데 accelerated proximal gradient method에서는 이전 단계의 step size부터 시작한다는 점을 유의하라.)
 
 > $$g(x^+) > g(v) +\nabla g(v)^T(x^+ − v) + \frac{1}{2t} \lVert x+ −v \rVert_2^2$$
 

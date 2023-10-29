@@ -22,7 +22,7 @@ Convex relaxation은 사용하여 문제를 풀면 다음과 같은 한계가 �
 $$X$$가 convex 이고 integrality constraints를 포함할 때, integer program은 다음과 같다.
 
 > $$ z : = \min_{x \in X} f(x) $$
- 
+
 Convex optimization과 다르게 feasible point $$x* \in X$$가 optimal 이라는 것을 입증하는 직접적인 "optimality conditions"는 존재하지 않는다. 대신에, lower bound $$ \underline{z} \leq z$$, 그리고 upper bound $$ \bar{z} \geq z$$ 를 찾아가면서 $$\underline{z} = \bar{z}$$ 에 가까워지도록 optimal의 근사치를 찾는 방법을 사용 할 수 있다.
 
 #### Algorithmic template
@@ -32,7 +32,7 @@ Upper bounds의 감소 시퀀스를 관찰하면,
 lower bounds의 증가 시퀀스를 관찰하면,
 > $$\underline{z_1} \leq \underline{z_2} \leq \dotsc \underline{z_t} \leq z $$
 
-임의의 $$\epsilon > 0$$에 대하여 $$\underline{z_1} - \bar{z_t} \leq \epsilon $$ 이 되는 범위에서 $$z$$의 값이 정해진다.
+임의의 $$\epsilon > 0$$에 대하여 $$\bar{z_s} - \underline{z_t} \leq \epsilon $$ 이 되는 범위에서 $$z$$의 값이 정해진다.
 
 #### Primal bounds
 앞선 $$z$$ 공식에 따라 임의의 feasible $$x \in X$$에서 항상 $$f(x) \geq z$$가 성립하고, 이 때, $$f(x)$$는 upper bound 이다. 하지만 항상 feasible $$x$$를 찾을 수는 없기 때문에, $$x$$값이 해당 셋에 포함 된다면 문제가 쉽게 풀리지만, 그렇지 않을 수도 있다.

@@ -219,7 +219,7 @@ primal LP의 목적함수는 이 세 가지 케이스 중 첫 번째 케이스�
 위의 결과는 min cut 문제의 formulation과 동일하다.
 
 ## Relationship between Max flow and Min cut problem(2)
-즉, max flow problem의 dual problem은, min cut 문제에서 $$x$$의 s, t를 제외한 vertex를 0, 1로 포함된다는 조건을 없앤(relaxation)한 결과이다. optimal value of max flow $$\geq$$ dual LP(upper bound)이고, 이 relaxation은 optimization variable의 domain scope를 확장시키므로, optimal value LP relaxed min cut $$\geq$$ capacity of min cut의 관계를 가진다. 이 세 가지 결과를 정리하면 아래의 결과를 얻을 수 있다.
+즉, max flow problem의 dual problem은, min cut 문제에서 $$x$$의 s, t를 제외한 vertex를 0, 1로 포함된다는 조건을 없앤(relaxation)한 결과이다. optimal value of max flow $$\leq$$ dual LP(upper bound)이고, 이 relaxation은 optimization variable의 domain scope를 확장시키므로, optimal value LP relaxed min cut $$\leq$$ capacity of min cut의 관계를 가진다. 이 세 가지 결과를 정리하면 아래의 결과를 얻을 수 있다.
 
 >$$
 >\begin{align}

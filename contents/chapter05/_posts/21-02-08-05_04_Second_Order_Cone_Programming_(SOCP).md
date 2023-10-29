@@ -28,7 +28,7 @@ General LP에서 inequality constraint가 우항이 affine function인 second-or
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl  }}/img/chapter_img/chapter05/05_04_Norm_Cone.PNG" alt="[Fig1] Norm Cone [1]" width="70%">
+  <img src="{{ site.baseurl  }}/img/chapter_img/chapter05/05_04_Norm_Cone.png" alt="[Fig1] Norm Cone [1]" width="70%">
   <figcaption style="text-align: center;">[Fig1] Norm Cone [1]</figcaption>
 </p>
 </figure>
@@ -66,8 +66,8 @@ QCQP는 다음의 유도과정을 거쳐 SOCP의 한가지 특수한 경우로 �
 > $$
 > \begin{align}
 > {x^T P_0 x + 2q_0^T x + r_0} &= {x^T P_0 x + q_0^T x + x^T q_0 + q_0^T P_0^{-1} q_0 - q_0^T P_0^{-1} q_0 + r_0}\\\\
-> &= {x^T Q_0 \Lambda_0 \Lambda_0 Q_0^T x} + 
->      {q_0^T Q_0 \Lambda_0^{-1} \Lambda_0 Q_0^{-1} x} + {x^T Q_0 \Lambda_0 \Lambda_0^{-1} Q_0^{-1} q_0} + 
+> &= {x^T Q_0 \Lambda_0 \Lambda_0 Q_0^T x} +
+>      {q_0^T Q_0 \Lambda_0^{-1} \Lambda_0 Q_0^{-1} x} + {x^T Q_0 \Lambda_0 \Lambda_0^{-1} Q_0^{-1} q_0} +
 >      {q_0^T Q_0 \Lambda_0^{-1} \Lambda_0^{-1} Q_0^T q_0} - {q_0^T P_0^{-1} q_0 + r_0}\\\\
 > &=(\Lambda_0 Q_0^T x + \Lambda_0^{-1} Q_0^T q_0)^T(\Lambda_0 Q_0^T x + \Lambda_0^{-1} Q_0^T q_0) - {q_0^T P_0^{-1} q_0 + r_0}\\\\
 > &=\| \Lambda_0 Q_0^T x + \Lambda_0^{-1} Q_0^T q_0 \|_2^2 - {q_0^T P_0^{-1} q_0 + r_0}\\\\
@@ -94,7 +94,7 @@ QCQP는 다음의 유도과정을 거쳐 SOCP의 한가지 특수한 경우로 �
 >\end{align}
 >$$
 
-**Step5.** Scalar variable t를 도입하여 Step4에서와 동일한 문제를 정의할 수 있다. 
+**Step5.** Scalar variable t를 도입하여 Step4에서와 동일한 문제를 정의할 수 있다.
 >$$
 >\begin{align}
 >    &\text{minimize}_{x, t} &&{t} \\\\

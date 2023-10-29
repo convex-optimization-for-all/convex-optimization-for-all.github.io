@@ -7,21 +7,21 @@ owner: "Minjoo Lee"
 ---
 ## Definition
 
-함수 $$f : R^n \rightarrow R$$가 도메인 **dom** $$f$$와 모든 sublevel set $$S_{\alpha}$$([03-01-03]({% post_url contents/chapter03/21-02-12-03_01_03_key_properties_of_convex_functions %}) 참고)이 convex라면 이 함수를 **quasiconvex** (or **unimodal**)이라고 한다. 
+함수 $$f : R^n \rightarrow R$$가 도메인 **dom** $$f$$와 모든 sublevel set $$S_{\alpha}$$([03-01-03]({% post_url contents/chapter03/21-02-12-03_01_03_key_properties_of_convex_functions %}) 참고)이 convex라면 이 함수를 **quasiconvex** (or **unimodal**)이라고 한다.
 
->$$f : R^n \rightarrow R$$ is quasiconvex if dom $$f$$ and 
+>$$f : R^n \rightarrow R$$ is quasiconvex if dom $$f$$ and
 >$$S_{\alpha} =$$ {$$x \in dom$$ $$f \mid f(x) \leq \alpha$$} for $$\alpha \in R$$ are convex.
 
 
 만약 함수 -$$f$$가 quasiconvex라면, $$f$$는 **quasiconcave** 라고 불린다.<br>
->$$f : R^n \rightarrow R$$ is quasiconcave if dom $$f$$ and 
+>$$f : R^n \rightarrow R$$ is quasiconcave if dom $$f$$ and
 >$$S_{\alpha} =$$ { $$x \in dom$$ $$f \mid f(x) \geq \alpha $$} for $$\alpha \in R$$<br>
 
 $$f$$가 quasiconvex이고 qausiconcave일 때, 이를 **quasilinear**라고 하고, 함수의 도메인과 모든 level set에서 {$$x \mid f(x)=\alpha$$}는 convex가 된다. 다음 그림은 quasiconvex function의 예를 보여준다.<br><br>
 
 <figure class="image" style="align: center;">
 <p align="center">
- <img src="{{ site.baseurl }}/img/chapter_img/chapter03/Fig3.9_quasiconvex_ftn_cAsoUpr.PNG" alt="" width="70%" height="70%">
+ <img src="{{ site.baseurl }}/img/chapter_img/chapter03/Fig3.9_quasiconvex_ftn_cAsoUpr.png" alt="" width="70%" height="70%">
  <figcaption style="text-align: center;">[Fig1] quasiconvex function on R [1]</figcaption>
 </p>
 </figure>
@@ -37,14 +37,14 @@ $$\alpha$$에 대하여, $$\alpha$$-sublevel set $$S_{\alpha}$$는 convex, 즉 i
 Quasiconvex에서의 다양한 예제를 살펴보자.
 
 #### Logarithm
-$$R_{++}$$공간에서의 $$\log x$$는 quasiconvex이다. (또한 quasiconcave이므로, quasilinear의 성질을 갖는다.) 
+$$R_{++}$$공간에서의 $$\log x$$는 quasiconvex이다. (또한 quasiconcave이므로, quasilinear의 성질을 갖는다.)
 > $$log x$$ on R
 <br>
 
 
-#### Celing function 
+#### Celing function
 Celing function은 quasiconvex이다. (또한 quasiconcave 이다.)
->$$ceil(x) = inf$${$$z \in Z \mid z \geq x$$} 
+>$$ceil(x) = inf$${$$z \in Z \mid z \geq x$$}
 <br>
 
 
