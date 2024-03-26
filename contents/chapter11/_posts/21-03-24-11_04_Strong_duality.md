@@ -19,7 +19,7 @@ $$
 
 Important Refinement : Strict inequality는 affine인 경우에는 만족하지 않아도 된다.
 ## Example: Support Vector Machine Dual 
-$$y \in \{-1,1\}^n$$, $$X \in \mathbb{R}^{n \times p}$$ ($$X$$의 열은 $$x_1, ..., x_n$$)라고 할 때, SVM(Support Vector Maine) 문제는 다음과 같이 정의된다.
+$$y \in \{-1,1\}^n$$, $$X \in \mathbb{R}^{n \times p}$$ ($$X$$의 열은 $$x_1, ..., x_n$$)라고 할 때, SVM(Support Vector Machine) 문제는 다음과 같이 정의된다.
 
 >
 $$
