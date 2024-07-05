@@ -6,7 +6,7 @@ order: 4
 owner: "Hooncheol Shin"
 ---
 
-Quadratic program에서 inequality contraint function이 이차식(convex quadratic)으로 교체되면, 이는 *Quadratically constrained quadratic program*(QCQP)이라고 불린다.
+Quadratic program에서 inequality constraint function이 이차식(convex quadratic)으로 교체되면, 이는 *Quadratically constrained quadratic program*(QCQP)이라고 불린다.
 
 ### Quadratically Constrained Quadratic Program
 >$$

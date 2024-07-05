@@ -6,7 +6,7 @@ order: 5
 owner: "Hooncheol Shin"
 ---
 
-General LP에서 inequality constraint가 우항이 affine function인 second-order cone costraint로 교체되면, 이는 *Second-Order Cone Program*(SOCP)이다.
+General LP에서 inequality constraint가 우항이 affine function인 second-order cone constraint로 교체되면, 이는 *Second-Order Cone Program*(SOCP)이다.
 
 ### Second-Order Cone Program
 
