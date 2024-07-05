@@ -27,7 +27,7 @@ payout matrix는 만약 J가 전략 $$i$$를 선택하고(row), R이 전략 $$j$
 
 이러한 setting을 zero-sum setting이라고도 하는데, R이 받게 될 혹은 지불해야할 보상을 $$r_{R}$$, J의 보상을 $$r_{J}$$라 할 때, 매 게임에서 보상의 결과는 $$r_{R} = - r_{J}$$이고, 두 보상의 총합은 항상 0이 된다.  
 
-또한 두 명의 player가 모두 mixed strategies를 사용한다고 가정한다, mixed stratigies는 각자의 선택이 특정한 확률분포를 따른다는(혹은 특정한 확률분포에서 sampling 된다는) 가정이다. 
+또한 두 명의 player가 모두 mixed strategies를 사용한다고 가정한다, mixed strategies는 각자의 선택이 특정한 확률분포를 따른다는(혹은 특정한 확률분포에서 sampling 된다는) 가정이다. 
 
 >$$
 >\begin{align}
@@ -134,7 +134,7 @@ Convex function의 maximization 또한 convex function이 된다.  이를 첫 �
 >\end{align}
 >$$
 
-$$t$$를 $$P^{T}x$$의 항들 중 가장 큰 값과 같게 만들어주는 문제로 refomulate 하였다.
+$$t$$를 $$P^{T}x$$의 항들 중 가장 큰 값과 같게 만들어주는 문제로 reformulate 하였다.
 
 이제 여기에 앞서 배운 duality의 두 번째 방법인 lagragian을 구하고,  lagrange dual function $$g$$를 구하면, 
 
