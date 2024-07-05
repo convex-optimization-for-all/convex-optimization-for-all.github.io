@@ -106,7 +106,7 @@ f(x^{(0)}) - f(x^{*}) & \le \frac{L}{2} \lVert x^{(0)} - x^{*} \rVert^2_2 \\\\
 f(x^{(k)}) - f(x^{*}) & \le c^k \frac{L}{2} \lVert x^{(0)} - x^{*} \rVert^2_2  \\\
 \end{align} $$
 
-이로써 Strong Convexity를 만족할 때 Gradient descent의 Convergence Theorm이 증명되었다.
+이로써 Strong Convexity를 만족할 때 Gradient descent의 Convergence Theorem이 증명되었다.
 
 ## Linear convergence
 $$f$$가 strongly convex일 경우 convergence rate는 ($$O(c^k)$$)가 되어 기하급수적으로 빨라진다. 
