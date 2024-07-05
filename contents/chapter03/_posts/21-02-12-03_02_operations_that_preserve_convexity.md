@@ -6,7 +6,7 @@ order: 6
 owner: "Minjoo Lee"
 ---
 이 절에서는 convex function 의 convexity를 유지하는 연산에 대해 살펴본다. 
-Convex fnuction의 Convexity를 유지하는 연산에는 다음과 같은 것들이 있다.
+Convex function의 Convexity를 유지하는 연산에는 다음과 같은 것들이 있다.
 
 * Nonnegative linear combination
 * Composition (Affine/General/Vector) 
@@ -48,7 +48,7 @@ $$n$$차원에서 1차원으로 매핑하는 함수 $$g$$와 1차원에서 1차�
 
 
 #### Proof
-• for $$n=1$$ diﬀerentiable $$g,h$$
+• for $$n=1$$ differentiable $$g,h$$
 >$$f''(x)=h''(g(x))g'(x)^2+h'(g(x))g''(x)$$
 
 #### [note]
@@ -71,7 +71,7 @@ $$n$$차원에서 $$k$$ 차원으로 매핑하는 함수 $$g$$와 다시 $$k$$�
 
 
 #### Proof
-• for $$n=1$$ ,diﬀerentiable $$g,h$$<br> 
+• for $$n=1$$ ,differentiable $$g,h$$<br> 
 >$$f''(x)=g'(x)^T∇^2h(g(x))g'(x)+∇h(g(x))^Tg''(x)$$
 
 #### Example

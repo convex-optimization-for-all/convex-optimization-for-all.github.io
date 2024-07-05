@@ -11,7 +11,7 @@ $$R$$ 공간 이외의 공간에서는 $$R$$ 공간에서 통상적으로 사용
 
 $$K \subseteq R^n$$이 $$\preceq_K$$로 나타나는 proper cone이라 가정하자. Convex cone $$K \subseteq R^n$$에 대해 다음과 같은 조건을 만족하면 **proper cone**이다.
 
-• $$K$$ is closed. (contains its boudary)<br>
+• $$K$$ is closed. (contains its boundary)<br>
 • $$K$$ is solid (has nonempty interior)<br>
 • $$K$$ is pointed (contains no line)<br>
 
@@ -31,7 +31,7 @@ $$K \subseteq R^n$$이 $$\preceq_K$$로 나타나는 proper cone이라 가정하
 > A differentiable function $$f$$ is K-nondecreasing $$\Longleftrightarrow$$ $$\nabla f(x) \succeq_{K^*} 0$$ for all $$x \in dom$$ $$f$$
 
 다음 조건을 만족하면, $$f$$는 **$$K$$-increasing** 이라고 부른다. Scalar일 때와 같이 역은 성립하지 않는다.
-> $$\nabla f(x) \succ_{K^*} 0$$ for all $$x \in dom$$ $$f$$ $$\Longrightarrow$$ $$f$$ is K-incerasing.
+> $$\nabla f(x) \succ_{K^*} 0$$ for all $$x \in dom$$ $$f$$ $$\Longrightarrow$$ $$f$$ is K-increasing.
 
 
 #### Convexity with respect to generalized inequality
