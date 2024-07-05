@@ -14,7 +14,7 @@ Proximal newton method의 수렴을 분석하기 위해 Lee (2014) [1] 논문의
 
 * $$f = g + h$$, $$g$$와 $$h$$는 convex이고 $$g$$는 2차 differentiable (smooth)
 * $$mI \preceq \nabla^2 g(x) \preceq LI$$.
-* $$\nabla^2 g(x)$$ Lipshitz with constant $$M$$
+* $$\nabla^2 g(x)$$ Lipschitz with constant $$M$$
 * $$\text{prox}_H(\cdot)$$는 정확히 계산 가능
 
 위에 세가지 가정은 strictly convex라는 것을 의미하며 $$\text{prox}_H(\cdot)$$가 정확히 계산이 가능하다고 가정한 것은 실제 이렇게 되기가 쉽지 않기 때문이다.
@@ -55,4 +55,4 @@ t \le \min \left\\{ 1, \frac{2m}{L} (1-\alpha) \right\\} \\\\
 
 * 첫번째 부등식은 lowest eigenvalue bound에 대해 성립하며 등식은 $$x^+$$ 정의와 global minimum $$x^{\star}$$에서 $$\text{prox}_H(\cdot)$$이 identity가 된다는 사실에 의해 성립한다.
 
-* 두번째 부등식은 proximal operator의 nonexpasiveness, Lipshitz assumption, largest eigenvalue bound에 의해 성립한다.
+* 두번째 부등식은 proximal operator의 nonexpansiveness, Lipschitz assumption, largest eigenvalue bound에 의해 성립한다.

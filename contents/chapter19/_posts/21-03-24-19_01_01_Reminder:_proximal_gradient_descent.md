@@ -42,7 +42,7 @@ Update 식은 generalized gradient $$G_{t}$$를 사용해서 표준화된 형태
 * 또한, $$g$$함수의 convergence rate와 같은 수렴 속도를 갖는다. 단, 반복할 때마다 prox operator를 실행하기 때문에 prox 계산이 효율적인 경우에만 유용하다.
 
 ## Motivation
-**Proximal gradient descent**에서는 미분 가능한 함수 $$g$$를 Tayor 2차식으로 근사하고 여기에 미분이 되지 않는 함수인 $$h$$를 더하여 목적 함수로 정의한 후 이를 반복적으로 최소화한다. 따라서, 다음과 같이 2차 식으로 정리해 볼 수 있다.
+**Proximal gradient descent**에서는 미분 가능한 함수 $$g$$를 Taylor 2차식으로 근사하고 여기에 미분이 되지 않는 함수인 $$h$$를 더하여 목적 함수로 정의한 후 이를 반복적으로 최소화한다. 따라서, 다음과 같이 2차 식으로 정리해 볼 수 있다.
 
 식에 전개되는 자세한 과정은 [09-01 Proximal gradient descent]({% post_url contents/chapter09/20-01-08-09_01_proximal_gradient_descent %}) 참고.
 
@@ -53,7 +53,7 @@ x^+ & = \underset{z}{\text{argmin}}  \, \frac{1}{2t} \parallel x - t \nabla g(x)
 > \end{align}
 > $$
 
-두번째 식의 1항과 2항은 $$g$$의 Tayor 2차 근사식으로 부터 유도할 수 있는데, 먼저 상수항 $$g(x)$$은 제거하고 (gradient descent에서와 마찬가지로) Hessian $$\nabla^2 g(x)$$을 $$\frac{1}{t} I$$(spherical curvature)로 대체해서 구할 수 있다.
+두번째 식의 1항과 2항은 $$g$$의 Taylor 2차 근사식으로 부터 유도할 수 있는데, 먼저 상수항 $$g(x)$$은 제거하고 (gradient descent에서와 마찬가지로) Hessian $$\nabla^2 g(x)$$을 $$\frac{1}{t} I$$(spherical curvature)로 대체해서 구할 수 있다.
 
 다음 그림에서는 proximal gradient descent의 update 단계에서 $$g$$를 2차 근사식으로 최소화 하는 과정을 보여주고 있다.
 

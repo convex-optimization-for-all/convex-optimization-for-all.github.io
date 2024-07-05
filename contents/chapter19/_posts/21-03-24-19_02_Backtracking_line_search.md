@@ -19,7 +19,7 @@ owner: "Hooncheol Shin"
 
 직관적으로 $$x$$에서 함수 $$f$$의 선형 근사를 $$\alpha$$배 내에 있는 위치로 direction $$v$$를 따라 이동하도록 step size $$t$$를 찾는다. 그리고, $$f$$에서 $$h$$ 파트는 미분이 되지 않기 때문에 discrete derivative $$h(x + tv) - h(x)$$를 구했다.
 
-## Efficientcy of algorithm
+## Efficiency of algorithm
 Backtracking line search를 수행하기 위한 방법들이 많이 있으며 여기서는 그 중 한 방법을 소개했다. 
 
 이 방법의 경우 $$v$$를 계산할 때 prox operator를 한번만 계산한다. Proximal gradient descent의 경우 inner loop에서 prox operator의 계산을 반복해야 했는데 이 점과 확연히 구분되는 특징이다. 따라서, 이 방법은 prox operator의 계산이 복잡할 경우 매우 효율적으로 backtracking line search를 할 수 있다.

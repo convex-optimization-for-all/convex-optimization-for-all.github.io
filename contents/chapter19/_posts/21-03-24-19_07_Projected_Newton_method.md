@@ -61,7 +61,7 @@ B_{k-1} & = \\{ i : x_i^{(k-1)} \le l_i + \epsilon \quad \text{and} \quad  \nabl
 
 여기서 $$P_{[l,u]}$$는 $$[l, u] = [l_1, u_1] \times \cdots [l_n, u_n]$$로의 projection이다.
 
-행렬식을 보면 free varaible에 대해서는 Newton step을 실행하지만 binding variable의 경우 변하지 않는 것을 알 수 있다. 또한, projection은 box 범위 밖에 있는 점들에 대해서 각 좌표에 대해 적절한 $$l_i$$ 또는 $$u_i$$를 지정해주는 간단한 작업이다.
+행렬식을 보면 free variable에 대해서는 Newton step을 실행하지만 binding variable의 경우 변하지 않는 것을 알 수 있다. 또한, projection은 box 범위 밖에 있는 점들에 대해서 각 좌표에 대해 적절한 $$l_i$$ 또는 $$u_i$$를 지정해주는 간단한 작업이다.
 
 이 방법은 문제가 매우 크고 (ex, 차원이 큰 경우) 대부분의 variable이 boundary 근처에 있어서 free set이 매우 작을 때 최적화를 하는 방법이다.
 
