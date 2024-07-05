@@ -12,7 +12,7 @@ owner: "Kyeongmin Woo"
 f(y) &  \ge f(x) + \nabla f(x)^T(y−x) + \frac{m}{2} \lVert y−x \rVert_2^2, \space \forall x, y
 \end{align} $$
 
-이 조건에서 함수 $$f$$가 2차 lower bound를 갖는다는 것을 알 수 있다. 이때,  2차 항의 계수는 상수 $$m$$으로 결정된다. (상수 m은 함수 $$f$$의 2차 미분 계수인 hessian의 최소 engenvalue이다.)
+이 조건에서 함수 $$f$$가 2차 lower bound를 갖는다는 것을 알 수 있다. 이때,  2차 항의 계수는 상수 $$m$$으로 결정된다. (상수 m은 함수 $$f$$의 2차 미분 계수인 hessian의 최소 eigenvalue이다.)
 
 다음과 같이 함수 $$g$$가 convex라면 함수 $$f$$를 strong-convex function이라고 할 수 있다. 이 조건은 위의 조건과 동치이다.
 
@@ -28,7 +28,7 @@ Lipschitz continuous와 strong convexity 가정에 의하여 다음의 theorem�
 f(x^{(k)}) − f^{\star} ≤ c^k \frac{L}{2} \lVert x^{(0)} −x^{\star} \rVert_2^2, \text{where} \space  c = (1 - \frac{m}{L}), \space 0 \lt c \lt 1
 \end{align} $$
 ## Proof
-$$\nabla f$$는 Lipschitz continuous하며 $$f$$는 Lipschitz constant $$L$$을 계수로 하는 2차 항으로 된 quadratic upper bound를 갖는다. (Upper bound의 증명은 [06-03-02]({% post_url contents/chapter06/21-03-20-06_03_02_convex_function_quardratic_upper_bound %}) 절을 참조)
+$$\nabla f$$는 Lipschitz continuous하며 $$f$$는 Lipschitz constant $$L$$을 계수로 하는 2차 항으로 된 quadratic upper bound를 갖는다. (Upper bound의 증명은 [06-03-02]({% post_url contents/chapter06/21-03-20-06_03_02_convex_function_quadratic_upper_bound %}) 절을 참조)
 
 > $$ \begin{align}
 f(y) \le f(x) + \nabla f(x)^T (y-x) + \frac{L}{2} \lVert y - x \rVert^2_2  \space \space \forall x, y
@@ -122,5 +122,5 @@ $$f$$가 strongly convex일 경우 convergence rate는 ($$O(c^k)$$)가 되어 �
 </p>
 </figure>
 
-$$O(c^k)$$에서 상수 c는 $$1 - \frac{m}{L}$$로 condition number $$L/m$$에 따라 달라진다. Condition number가 커질수록 속도가 느려진다. (Condition number = largest engenvalue / smallest engenvalue이다.)
+$$O(c^k)$$에서 상수 c는 $$1 - \frac{m}{L}$$로 condition number $$L/m$$에 따라 달라진다. Condition number가 커질수록 속도가 느려진다. (Condition number = largest eigenvalue / smallest eigenvalue이다.)
 

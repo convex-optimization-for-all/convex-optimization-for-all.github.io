@@ -42,7 +42,7 @@ $$f$$가 Strong Convexity를 만족하므로 다음과 같은 상수 $$m \ge 0$$
 \nabla^2 f(x) \succeq mI \\
 \end{align} $$
 
-함수 $$f$$를 2차 Talyor 식으로 전개해보자.
+함수 $$f$$를 2차 Taylor 식으로 전개해보자.
 > $$ \begin{align}
 f(y) = f(x) + \nabla f(x)^T(y−x) + \frac{1}{2} (y−x)^T \nabla^2 f(x) (y−x), \space \forall x, y
 \end{align} $$
