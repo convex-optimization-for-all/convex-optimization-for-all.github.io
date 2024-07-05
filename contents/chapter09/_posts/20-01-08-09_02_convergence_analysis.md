@@ -31,7 +31,7 @@ Proximal gradient descent의 backtracking line search 방법은 gradient descent
 g(x - tG_t(x)) \gt g(x) - t \nabla g(x)^T G_t(x) + \frac{t}{2} \parallel G_t(x) \parallel_2 ^2
 \end{align}
 
-이 backtracking 조건은 다음 step 위치인 $$x - tG_t(x)$$에서의 함수 $$g$$의 값이 함수 $$g$$의 Tayor 2차 근사 함수의 값보다 클 때를 의미한다.
+이 backtracking 조건은 다음 step 위치인 $$x - tG_t(x)$$에서의 함수 $$g$$의 값이 함수 $$g$$의 Taylor 2차 근사 함수의 값보다 클 때를 의미한다.
 
 이 식에서 $$G_t(x) = \nabla g(x)$$이라면 $$g(x - t \nabla g(x)) \gt g(x) - \alpha t \lVert \nabla g(x) \rVert_2^2 $$가 되므로 gradient descent의 backtracking 조건과 동일해진다는 것을 알 수 있다. 
 
