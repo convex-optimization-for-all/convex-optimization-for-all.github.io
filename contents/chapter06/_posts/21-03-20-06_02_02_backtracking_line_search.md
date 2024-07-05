@@ -50,7 +50,7 @@ Backtracking 방식으로 adaptive하게 step size를 선정하게 되면 fixed 
 
 #### The intuition of Backtracking line search
 
-> 함수 $$f$$에 대한 quadratic approximatior는 다음과 같이 정의된다.
+> 함수 $$f$$에 대한 quadratic approximator는 다음과 같이 정의된다.
 > $$f(y) \approx f(x) + \nabla f(x)^T(y-x) + \frac{1}{2t} \vert \vert  y - x \vert \vert_2^2$$
 > 이때, $$y = x - t \nabla f(x)$$라 하면,
 > $$
@@ -74,7 +74,7 @@ Backtracking 방식으로 adaptive하게 step size를 선정하게 되면 fixed 
 </p>
 </figure>
 
-Quadratic approximator가 $$x - t \nabla f(x)$$에서 더 위에 위치하는 형태이다. Quadratic approximatior의 solution에 접근하면 $$f(x)$$의 solution에 더 가까이 접근할 수 있음이 보장된다.
+Quadratic approximator가 $$x - t \nabla f(x)$$에서 더 위에 위치하는 형태이다. Quadratic approximator의 solution에 접근하면 $$f(x)$$의 solution에 더 가까이 접근할 수 있음이 보장된다.
 
 **(2) $$f(x - t \nabla f(x)) > f(x) - \frac{1}{2}t \vert \vert  \nabla f(x) \vert \vert_2^2$$**
 
@@ -85,6 +85,6 @@ Quadratic approximator가 $$x - t \nabla f(x)$$에서 더 위에 위치하는 �
 </p>
 </figure>
 
-(1)의 경우와는 반대되는 양상을 보인다. Quadratic approximatior의 solution을 통해 $$f(x)$$의 solution에 더욱 접근할 수 있음이 보장되지 않는다.
+(1)의 경우와는 반대되는 양상을 보인다. Quadratic approximator의 solution을 통해 $$f(x)$$의 solution에 더욱 접근할 수 있음이 보장되지 않는다.
 
 **결론:** 매 스텝에서 t 값을 잘 조정하여 항상 $$f(x - t \nabla f(x)) \leq f(x) - \frac{1}{2}t \vert \vert  \nabla f(x) \vert \vert_2^2$$를 만족하도록 하면 훨씬 효과적으로 $$f(x)$$의 solution에 접근할 수 있다.
