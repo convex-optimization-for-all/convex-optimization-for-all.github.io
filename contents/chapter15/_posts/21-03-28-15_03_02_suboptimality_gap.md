@@ -8,7 +8,7 @@ owner: "Minjoo Lee"
 앞 절에서 구한 barrier problem과 original problem의 solution인 $$f(x^*(t))$$와 $$f(x^*)$$의 suboptimality gap은 어떻게 될까?
 
 ## Convexity of $$f$$ and $$h_i$$
-Convexity가 보장되면 함수가 접선(tangent)보다 항상 크므로 $$f(x^*) \ge f(x^*(t)) + \nabla f(x^*(t))^T (x^* - x^*(t))$$가 성립한다. (Tangent는 Talyor 1차 근사식)
+Convexity가 보장되면 함수가 접선(tangent)보다 항상 크므로 $$f(x^*) \ge f(x^*(t)) + \nabla f(x^*(t))^T (x^* - x^*(t))$$가 성립한다. (Tangent는 Taylor 1차 근사식)
 따라서, 다음의 식을 구할 수 있다. 
 >$$\begin{align}
 f(x^*(t)) - f(x^*) \le \nabla f(x^*(t))^T (x^*(t) - x^*)

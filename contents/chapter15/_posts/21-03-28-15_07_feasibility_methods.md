@@ -27,7 +27,7 @@ Strictly feasible starting point를 구하는 것은 쉽기 때문에 barrier me
 이 문제를 풀 때 high accuracy를 만족할 필요는 없으며 feasible $$s < 0$$인 $$(x,s)$$를 찾기만 하면 된다.
 
 ## Infeasibility for each inequality constraint 
-다음과 같이 문제를 정의해서 풀 수도 있다. 앞에 방법은 모든 inequality의 maximum infeasbility를 찾는 문제였다면 이 문제는 각 inequality 별로  infeasible variable $$s_i, i = 1, \cdots, m$$를 찾는 문제이다.
+다음과 같이 문제를 정의해서 풀 수도 있다. 앞에 방법은 모든 inequality의 maximum infeasibility를 찾는 문제였다면 이 문제는 각 inequality 별로  infeasible variable $$s_i, i = 1, \cdots, m$$를 찾는 문제이다.
 >
 $$\begin{align}
 &\min_{x, s} \        && 1^Ts \\
