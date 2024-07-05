@@ -15,7 +15,7 @@ Objective 함수 $$f$$를 두 개의 함수 $$g$$와 $$h$$로 분리할 수 있�
 
 >$$f(x) = g(x) + h(x)$$
 
-이때, 두 함수 함수 $$g$$와 $$h$$는 다음과 같은 성질을 갖는다.
+이때, 두 함수 $$g$$와 $$h$$는 다음과 같은 성질을 갖는다.
 
 * $$g$$는 convex이고 differentiable하다. (**dom**$$(g) = \mathbb{R}^n$$)
 * $$h$$는 convex이고 non-differentiable하다.
@@ -106,11 +106,11 @@ $$g$$의 gradient가 $$\nabla g(\beta) = -X^{T} (y - X \beta)$$이므로 proxima
 
 이 알고리즘은 **iterative soft-thresholding algorithm (ISTA)** 라고 하는 매우 간단한 알고리즘이다. (Beck and Teboulle (2008), "A fast iterative shrinkage-thresholding algorithm for linear inverse problems")
 
-다음 그림을 보면 subgradient method와 proximal gradient descent의 확연한 성능 차이를 확인할 수 있다. 반복 횟수 측면에서 proximal gradient descent의 성능은 gradient cescent의 성능과 동일하다.
+다음 그림을 보면 subgradient method와 proximal gradient descent의 확연한 성능 차이를 확인할 수 있다. 반복 횟수 측면에서 proximal gradient descent의 성능은 gradient descent의 성능과 동일하다.
 
 <figure class="image" style="align: center;">
 <p align="center">
   <img src="{{ site.baseurl }}/img/chapter_img/chapter09/09.01_01_ISTA.png" width="80%" height="80%">
-  <figcaption style="text-align: center;">[Fig 1] Example of proximal gradient (ISTA) vs. subgradient method coonvergence rate [3]</figcaption>
+  <figcaption style="text-align: center;">[Fig 1] Example of proximal gradient (ISTA) vs. subgradient method convergence rate [3]</figcaption>
 </p>
 </figure>

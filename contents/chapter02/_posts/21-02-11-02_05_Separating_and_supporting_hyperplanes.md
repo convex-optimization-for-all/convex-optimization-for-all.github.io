@@ -28,7 +28,7 @@ Separating hyperplane theorems의 역은 성립하지 않는다. 즉, separating
 
 #### Strict separation
 
-만일 separating hyperplane이 더 강한 조건인 $$x \in C$$일 때  $$a^T x \lt b$$이고 $$x \in D$$일 때  $$a^T x \gt b$$를 만족한다면, 이를 $$C$$와 $$D$$에 대한 **strict separation**이라고 한다. Disjoint closed convex set이 strict serparaton일 필요는 없지만 많은 경우에 이 조건은 성립될 수 있다.
+만일 separating hyperplane이 더 강한 조건인 $$x \in C$$일 때  $$a^T x \lt b$$이고 $$x \in D$$일 때  $$a^T x \gt b$$를 만족한다면, 이를 $$C$$와 $$D$$에 대한 **strict separation**이라고 한다. Disjoint closed convex set이 strict separation일 필요는 없지만 많은 경우에 이 조건은 성립될 수 있다.
 
 
 ## Supporting hyperplanes theorem

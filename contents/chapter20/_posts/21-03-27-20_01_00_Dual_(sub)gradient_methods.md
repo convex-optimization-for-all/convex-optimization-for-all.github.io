@@ -53,4 +53,4 @@ Close-form 형태의 dual (conjugate)을 찾을 수 없는 경우에도 dual 기
 
 이전 방식과 다른 점은 $$x^{(k)}$$가 유일하다는 것이다. ($$\text{argmin}$$과의 관계가 $$=$$ 관계임을 확인해보라.)
 
-여기서 step size $$t_k(k=1,2,3,\dots$$)도 표준적인 방식으로 선택되며 $$\text{argmin}$$을 수행할 때 proximal graidient나 acceleration도 평소처럼 적용할 수 있다.
+여기서 step size $$t_k(k=1,2,3,\dots$$)도 표준적인 방식으로 선택되며 $$\text{argmin}$$을 수행할 때 proximal gradient나 acceleration도 평소처럼 적용할 수 있다.

@@ -41,7 +41,7 @@ Penalty 항의 합을 operator로 정리하면 문제는 아래와 같아진다.
 $$D\in \mathbb{m\times n}$$은 원 식에 대응되는 2d difference operator이다.
 
 ## Forms of ADMM updates for the 2d fused lasso problem
-이제 보조적인 contraint를 적용하여 ADMM step을 두가지 방법으로 만들어보고자 한다.
+이제 보조적인 constraint를 적용하여 ADMM step을 두가지 방법으로 만들어보고자 한다.
 첫번째로는 2d difference operator를 통하여 만들었던 vector form으로 부터 ADMM을 유도하는 것이다.
 
 >$$

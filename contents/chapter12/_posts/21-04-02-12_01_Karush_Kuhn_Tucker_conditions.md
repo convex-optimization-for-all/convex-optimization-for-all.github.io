@@ -45,7 +45,7 @@ Convex인 primal problem에 대해 KKT conditions를 만족하는 $$x^\star, \la
 2. $$0 \in \partial \big( f(x^\star) + \sum_{i=1}^{m} \lambda_i^\star h_i(x^\star) + \sum_{j=1}^{r} \nu_j^\star l_j(x^\star) \big)$$이므로 $$\min_x L(x, \lambda^\star, \nu^\star) = L(x^\star, \lambda^\star, \nu^\star)$$이다.
 3. Complementary slackness와 primal feasibility에 의해 $$f(x^\star) + \sum_{i=1}^m \lambda_i^\star h_i(x^\star) + \sum_{j=1}^r \nu_j^\star l_j(x^\star) = f(x^\star)$$이다.
 
-## Neccessity
+## Necessity
 $$x^\star, \lambda^\star, \nu^\star$$가 zero duality gap(가령, Slater's condition을 만족)의 primal & dual solutions일때, 다음의 부등호들이 전부 등호가 되므로 이 문제에서 $$x^\star, \lambda^\star, \nu^\star$$는 KKT conditions를 만족하게 된다.
 >$$
 >\begin{align}

@@ -44,7 +44,7 @@ owner: "Wontak Ryu"
 > \end{align}$$
 
 
-$$f$$와 $$h_1,...h_m$$가 closed이고 convex이고, $$1,...r$$ 은 aﬃne이면, then dual의 dual은 primal이다.
+$$f$$와 $$h_1,...h_m$$가 closed이고 convex이고, $$1,...r$$ 은 affine이면, then dual의 dual은 primal이다.
 
 이것은 bifunction의 관점에서 최소화 문제로 제공되어 진다.
 이 프레임 워크에서 dual 함수는이 dual 함수의 conjugate에 해당 한다.

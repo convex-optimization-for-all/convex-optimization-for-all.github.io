@@ -68,7 +68,7 @@ Graphical lasso estimation 문제에 inner optimizations을 위한 세 가지 st
 Proximal newton method가 quadratic convergence를 만족하므로 exact는  quadratic convergence를 만족한다고 볼 수 있다. Maxiter=10의 경우 최대 10번의 inner iteration으로는 quadratic convergence를 만족하지 못하지만 adaptive의 경우 quadratic convergence를 만족하며 세 가지 방식 중 가장 빠르다.
 
 #### Stopping rule of usual newton method
-일반적인 newton's method에서는 inner problem은 $$x^{(k-1)}$$의 $$g$$에 대한 qudratic approximation인 $$\tilde{g}_{k-1}$$를 최소화한다. 그리고, $$\eta_k, k=1,2,3,...$$를 선택해서 다음 조건을 만족할 때 중지한다. (이를 forcing sequence라고 한다.)
+일반적인 newton's method에서는 inner problem은 $$x^{(k-1)}$$의 $$g$$에 대한 quadratic approximation인 $$\tilde{g}_{k-1}$$를 최소화한다. 그리고, $$\eta_k, k=1,2,3,...$$를 선택해서 다음 조건을 만족할 때 중지한다. (이를 forcing sequence라고 한다.)
 
 > \begin{align}
 \parallel \nabla \tilde{g}_{k-1}(x^{(k)}) \parallel_2 & \le \eta_k \parallel  \nabla g(x^{(k-1)})  \parallel_2 \\\\

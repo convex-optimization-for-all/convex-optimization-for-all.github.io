@@ -22,7 +22,7 @@ owner: "Hooncheol Shin"
 >\end{align}
 >$$
 
-이를 정리하면 deomposable한 ADMM step을 계산할 수 있다.
+이를 정리하면 decomposable한 ADMM step을 계산할 수 있다.
 
 >$$
 >\begin{align}

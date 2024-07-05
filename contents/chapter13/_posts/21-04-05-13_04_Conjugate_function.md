@@ -14,7 +14,7 @@ owner: "Wontak Ryu"
 <figure class="image" style="align: center;">
 <p align="center">
  <img src="{{ site.baseurl }}/img/chapter_img/chapter13/conjugate_function.png" alt="" width="70%" height="70%">
- <figcaption style="text-align: center;">[Fig1] Illustration of conjgate function [1]</figcaption>
+ <figcaption style="text-align: center;">[Fig1] Illustration of conjugate function [1]</figcaption>
 </p>
 </figure>
 
@@ -26,7 +26,7 @@ $$f^{∗}$$는 convex(affine) 함수  $$y^Tx - f(x)$$의 pointwise maximum이므
 $$f^{∗}(y)$$는 선형 함수 $$y^Tx$$와 $$f(x)$$ 간의 maximum gap이다.
 (From B & V page 91)
 
-미분 가능한 $$f$$에 대한 conjuagation을 Legendre 변환이라고 부른다.
+미분 가능한 $$f$$에 대한 conjugation을 Legendre 변환이라고 부른다.
 
 ##### Properties: 
 • Fenchel’s inequality: for any $$x,y, f(x) + f^{∗}(y) ≥ x^Ty$$

@@ -33,7 +33,7 @@ MathJax.Hub.Config({
 <br/>
 이때 primal problem과 dual problem은 Lagrangian에 대한 문제로 재정의할 수 있다.
 
-#### Rewrited primal problem
+#### Rewritten primal problem
 >$$
 >\min_x \mathop{\max_{u,v}}_{u \geq 0} L(x,u,v)
 >$$
@@ -43,7 +43,7 @@ MathJax.Hub.Config({
 1. 어떤 $$i \in [1, m]$$에 대해 $$h_i(\hat{x}) \gt 0$$이면 $$\hat{x}$$는 infeasible point다. 이때 $$\max_{u,v}$$에 의해 $$u_i h_i(\hat{x})$$는 $$\infty$$로 발산하므로 inequality constraint를 위반하는 임의의 $$\hat{x}$$에 대해 indicator function으로 동작한다.
 2. 어떤 $$i \in [1, r]$$에 대해 $$l_i(\hat{x}) \neq 0$$이면 $$\hat{x}$$는 infeasible point다. 이때 $$\max_{u,v}$$에 의해 $$v_i l_i(\hat{x})$$는 $$\infty$$로 발산하므로 equality constraint를 위반하는 임의의 $$\hat{x}$$에 대해 indicator function으로 동작한다.
 
-#### Rewrited dual problem
+#### Rewritten dual problem
 >$$
 >\mathop{\max_{u,v}}_{u \geq 0} \min_x L(x,u,v)
 >$$

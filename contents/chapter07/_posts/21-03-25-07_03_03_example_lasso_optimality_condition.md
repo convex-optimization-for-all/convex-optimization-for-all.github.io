@@ -28,12 +28,13 @@ $$
 여기서, 한 점 $$\beta=(\beta_1,\beta_2,\dots,\beta_p )$$에 대한 subgradient를  $$v=(v_1,v_2,\dots,v_p)$$ 라고 할 때, 
 
 $$
-v_i, i \in \{1,2,\dots,p \} = 
+v_i = 
 \begin{cases}
-\{ 1 \}  &\text{if } \beta_i > 0 \\
-\{-1 \}  &\text{if } \beta_i < 0 \\
+ 1   &\text{if } \beta_i > 0 \\
+-1   &\text{if } \beta_i < 0 \\
 [-1,1]   &\text{if } \beta_i = 0
 \end{cases}
+, i \in \{1,2,\dots,p \}
 $$
 
 다음을 만족하는 $$\beta$$를 찾을 수 있으며, 해당 $$\beta$$는 최적해가 된다. 

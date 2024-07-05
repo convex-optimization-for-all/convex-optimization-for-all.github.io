@@ -14,4 +14,4 @@ Non-differentiable한 함수에 대해 최적화를 하기 위해 subgradient me
 
 이 방법은 분석적으로 최적해를 구할 수 있기 때문에 gradient descent와 같은 수렴 속도를 갖게 되며 non-differentiable한 함수가 "simple" 할수록 계산 비용도 gradient descent와 유사해진다.
 
-이 장에서는 **proximal gradient descent**에 전반적인 내용을 살펴보고 추가적인 성능 향상을 위한 여러 **aceleration** 방법들에 대해 살펴보도록 하겠다.
+이 장에서는 **proximal gradient descent**에 전반적인 내용을 살펴보고 추가적인 성능 향상을 위한 여러 **acceleration** 방법들에 대해 살펴보도록 하겠다.

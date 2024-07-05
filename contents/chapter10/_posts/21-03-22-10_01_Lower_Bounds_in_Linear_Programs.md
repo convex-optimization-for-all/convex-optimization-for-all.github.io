@@ -64,7 +64,7 @@ $$x,\, y$$가 feasible하다면, 세 constraint에 scalar 값을 곱해 더하�
 >\end{align}
 >$$
 
-좀 더 일반화하여 임의의 변수를 적용하여 objectvie function을 나타내면 다음과 같다.
+좀 더 일반화하여 임의의 변수를 적용하여 objective function을 나타내면 다음과 같다.
 
 >$$
 >\begin{align}
@@ -93,7 +93,7 @@ $$x,\, y$$가 feasible하다면, 세 constraint에 scalar 값을 곱해 더하�
  >$$
 
 
-lower bound가 위에서처럼 2a임을 만족하기 위해서는, scalar 값을 곱하는 과정에서 부등호가 바뀌어선 성립하지 않기 때문에, $$a, b, c$$가 양수라는 조건과 scalar 값의 합이 obejctive function과 동일하다는 조건인 $$a+b = p$$, $$a+c = q$$라는 조건을 만족해야만 한다.
+lower bound가 위에서처럼 2a임을 만족하기 위해서는, scalar 값을 곱하는 과정에서 부등호가 바뀌어선 성립하지 않기 때문에, $$a, b, c$$가 양수라는 조건과 scalar 값의 합이 objective function과 동일하다는 조건인 $$a+b = p$$, $$a+c = q$$라는 조건을 만족해야만 한다.
 
 위와 같이 얻은 lower bound 결과를 최대화하는 것으로 새로운 최적화 문제를 정의할 수 있다. 이때 lower bound를 만족하게 하는 조건들이 이 문제에서의 constraint가 된다. 
 

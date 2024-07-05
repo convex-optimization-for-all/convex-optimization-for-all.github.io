@@ -11,7 +11,7 @@ owner: "Minjoo Lee"
 
 * Klee 및 Minty(1972) : $$n$$개의 변수와 $$2n$$개의 제약 조건을 갖는 pathological LP. Simplex method로 풀려면 $$2^n$$번 반복이 필요하다.
 
-* Khachiyan (1979) : Nemirovski와 Yudin (1976)의 타원체 방법을 기반으로 한 LP의 polynormial-time 알고리즘으로 이론적으로는 강하나, 실제 문제에서는 그렇지 못하다.
+* Khachiyan (1979) : Nemirovski와 Yudin (1976)의 타원체 방법을 기반으로 한 LP의 polynomial-time 알고리즘으로 이론적으로는 강하나, 실제 문제에서는 그렇지 못하다.
 
 * Karmarkar (1984) : interior-point polynomial-time LP 방법으로 상당히 효과적이며 breakthrough가 된 연구이다. (미국 특허 4,744,026, 2006년 만료).
 

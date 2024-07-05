@@ -31,7 +31,7 @@ $$
 \end{alignat}
 $$
 
-#### Explanantion 1: 
+#### Explanation 1: 
 
 모든 $$u$$와 $$v \geq 0$$, 그리고 primal feasible $$x$$에 대해 다음이 성립된다. 
 >

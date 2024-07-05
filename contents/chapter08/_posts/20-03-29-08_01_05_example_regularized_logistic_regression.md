@@ -6,7 +6,7 @@ order: 7
 owner: "Kyeongmin Woo"
 ---
 
-만약 $$i=1,...,n$$에 대해서 $$(x_i,y_i) \in R^p × $${$$0, 1$$}가 주어졌을때, logisitc regression loss는 다음과 같다.
+만약 $$i=1,...,n$$에 대해서 $$(x_i,y_i) \in R^p × $${$$0, 1$$}가 주어졌을때, logistic regression loss는 다음과 같다.
 >
 \begin{align}
 f(\beta) = \sum_{i=1}^n\big(-y_ix_i^T\beta + log(1+exp(x_i^T\beta))\big)

@@ -24,7 +24,7 @@ $$X = [x^{1} \quad \dotsc \quad x^{p}] \in \mathbb{R}^{n×p}$$이고 $$y \in \ma
 정의 되었는데 제약 조건인 $$\parallel \beta \parallel_{0}  \  \leq  k$$가 non-convex라서 지금까지 배운 convex optimization 기법으로는 문제를 풀 수 없다.
 
 #### Integer programming formulation
-그렇다면 이 문제를 Integer programing으로 재정의해보자.
+그렇다면 이 문제를 Integer programming으로 재정의해보자.
 
 > $$
 > \begin{align}
@@ -37,7 +37,7 @@ $$X = [x^{1} \quad \dotsc \quad x^{p}] \in \mathbb{R}^{n×p}$$이고 $$y \in \ma
 
 Binary 변수 $$z_i$$를 도입해서 $$z_i$$의 합이 $$k$$보다 작게 만듦으로써 위의 문제와 동일해지게 만들었다.  $$M_i$$는 사전에 알고 있는 $$\left\vert  \beta_{i} \right\vert$$의 상한 값으로 $$X$$와 $$y$$를 사전처리해서 계산할 수 있는 값이다.
 
-이제 문제를 Integer Programming으로 정의했으므로 지금부터 Integer Porogramming 기법으로 풀 수 있다.
+이제 문제를 Integer Programming으로 정의했으므로 지금부터 Integer Programming 기법으로 풀 수 있다.
 
 ## A clever way to get good feasible solutions
 문제를 일반화해서 알고리즘을 설명해보자. Objective function $$g : \mathbb{R}^{p} \to \mathbb{R}$$이 smooth convex이고 $$\nabla g$$가 L-Lipschitz이라고 하자.
@@ -95,7 +95,7 @@ $$ \bar{\beta} =  H_k \left(\bar{\beta} - \frac{1}{L} \nabla g(\bar{\beta})\righ
 <br>
 
 #### Sparsity Detection
-다음 그림에서는 MIP (Mixed Integer Programming)과 Lasso, Step regression, Spasenet의 sparsity를 비교하고 있다. 결과적으로 MIP가 가장 sparse한 결과내고 있음을 알 수 있다.
+다음 그림에서는 MIP (Mixed Integer Programming)과 Lasso, Step regression, Sparsenet의 sparsity를 비교하고 있다. 결과적으로 MIP가 가장 sparse한 결과내고 있음을 알 수 있다.
 
 
 <figure class="image" style="align: center;">

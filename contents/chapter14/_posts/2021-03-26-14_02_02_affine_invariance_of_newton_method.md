@@ -48,7 +48,7 @@ Chain rule을 활용하여 양변을 미분, 두 번 미분한 결과를 정리�
 
 이는 Newton step이 non singular한 matrix로 표현되는 affine transformation에 대하여 좌표변환된 좌표계에서의 update가 서로 같다는 것, 즉 affine invariant함을 의미한다.
 
-동일한 방법으로 gradient descent의 affine invariacne를 확인해보고자 step update에 대하여 유도해보면, 다음과 같은 결과를 얻을 수 있다.
+동일한 방법으로 gradient descent의 affine invariance를 확인해보고자 step update에 대하여 유도해보면, 다음과 같은 결과를 얻을 수 있다.
 
 >$$
 >\begin{align}

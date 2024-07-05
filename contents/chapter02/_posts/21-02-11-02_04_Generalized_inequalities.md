@@ -8,7 +8,7 @@ owner: "Wontak Ryu"
 
 1차원 실수 공간 $$R$$에서는 두 개의 숫자 1과 2가 있을 때 1보다 2가 크다고 말할 수 있다. 그러면, n차원 실수 공간 $$R^n$$에서 두 점 $$x_1$$과 $$x_2$$가 있을 때 두 점 중 어떤 점이 더 크다고 말할 수 있을까? 그렇다고 말하기는 어렵다. 
 
-이 절에서는 n차원 실수 공간 $$R^n$$에서 두 점의 순서를 비교하기 위한 **generalized inequality**를 살펴보고, set의 minimum과 minumal도 함께 살펴볼 것이다.
+이 절에서는 n차원 실수 공간 $$R^n$$에서 두 점의 순서를 비교하기 위한 **generalized inequality**를 살펴보고, set의 minimum과 minimal도 함께 살펴볼 것이다.
 
 ## Proper cone
 
@@ -29,7 +29,7 @@ Proper cone을 이용하면$$R^n$$의 partial ordering인 **generalized inequali
 
 >$$x \preceq_{K} y \iff y − x \in K$$
 
-비슷하게 strict parital ordering을 다음과 같이 정의할 수 있다.
+비슷하게 strict partial ordering을 다음과 같이 정의할 수 있다.
 
 >$$x \prec_{K} y \iff y − x \in $$ **int** $$K$$
 

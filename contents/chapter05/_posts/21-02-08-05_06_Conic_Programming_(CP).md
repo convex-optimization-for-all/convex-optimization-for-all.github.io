@@ -18,6 +18,6 @@ General LP에서 inequality constraint가 generalized inequality constraint로 �
 >\end{align}\\
 >$$
 
-* $$F: \mathbb{R}^n \rightarrow Y$$ is a linear map, $$g \in Y$$, for Eucliean space Y.
+* $$F: \mathbb{R}^n \rightarrow Y$$ is a linear map, $$g \in Y$$, for Euclidean space Y.
 * LP는 $$K = \mathbb{R}_{+}^n$$일때이며, 이는 CP의 special case에 해당한다.
 * SDP는 $$K = \mathbb{S}_{+}^n$$일때이며, 이 또한 CP의 special case에 해당한다. 즉, SDP $$\subseteq$$ CP의 관계가 성립한다.

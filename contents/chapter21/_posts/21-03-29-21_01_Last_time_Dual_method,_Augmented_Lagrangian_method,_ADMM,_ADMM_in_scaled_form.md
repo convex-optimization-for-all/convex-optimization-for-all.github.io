@@ -6,7 +6,7 @@ order: 2
 owner: "Hooncheol Shin"
 ---
 
-이전 20장에서 우리는 Dual methods, ADMM에 대해 살펴보았다. 여기선 ADMM의 응용을 살펴보기에 앞서, Dual methods와 Augmented Lagrangian method, ADMM, ADMM in scalaed form에 대해 정리하고자 한다.
+이전 20장에서 우리는 Dual methods, ADMM에 대해 살펴보았다. 여기선 ADMM의 응용을 살펴보기에 앞서, Dual methods와 Augmented Lagrangian method, ADMM, ADMM in scaled form에 대해 정리하고자 한다.
 
 ## Dual method
 아래의 문제를 살펴보자.

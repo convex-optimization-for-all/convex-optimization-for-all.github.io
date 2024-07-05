@@ -152,7 +152,7 @@ proximal operator soft-threshold를 진행하면서 업데이트 한다. 두 단
 예를 들면, special polyhedra 혹은 cone constraints, sum-of-norms (group-based) regularization, atomic norms. 같은 것들이다.
 
 
-Constrained Lasso에 대한 projectied gradient 기법과 conditional gradient 기법을 활용했을 때 성능을 비교하면 다음과 같다. (여기서 $$n=100, p = 500$$)
+Constrained Lasso에 대한 projected gradient 기법과 conditional gradient 기법을 활용했을 때 성능을 비교하면 다음과 같다. (여기서 $$n=100, p = 500$$)
 
 <figure class="image" style="align: center;">
 <p align="center">
@@ -193,7 +193,7 @@ original problem을 다시 써보면 아래와 같이 쓸 수있다.
 여기서 $$I_C$$는 $$C$$의 indicator function을 의미한다. dual 문제는 아래와 같다.
 > $$\max_u −f^{*} (u) − I^{*}_C(−u)$$
 
-$$I_C^{*}$$가 $$C$$의 support function을 의미한다. Indicator function의 conjuage는 support function 이 됨을 앞서 살펴보았다.
+$$I_C^{*}$$가 $$C$$의 support function을 의미한다. Indicator function의 conjugate는 support function 이 됨을 앞서 살펴보았다.
 
 ##### [Recall]
 > $$

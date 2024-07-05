@@ -7,7 +7,7 @@ owner: "Minjoo Lee"
 ---
 Barrier problem과 원래 식에서 KKT condition을 도출해 보면 다음과 같다.
 ## KKT conditions for barrier problem
-Barrier problem의 KKT condition의 두번째 항은 log berrier function의 gradient를 사용해서 도출되었다.
+Barrier problem의 KKT condition의 두번째 항은 log barrier function의 gradient를 사용해서 도출되었다.
 >
 $$\begin{align}
 t \nabla f(x^*(t)) - \sum_{i=1}^{m} \frac{1}{h_i(x^*(t))} \nabla h_i(x^*(t)) + A^Tw = 0  \\\ 

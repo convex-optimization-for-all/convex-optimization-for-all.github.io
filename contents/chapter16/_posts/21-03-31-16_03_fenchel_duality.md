@@ -27,7 +27,7 @@ $$
 
 주어진 문제는 equality constraint가 추가된 형태로 재정의 할 수 있다.
 
-#### Primal problem rewrited
+#### Primal problem rewritten
 >
 $$
  \begin{align}
@@ -78,7 +78,7 @@ $$
     \end{cases}
   \end{equation}$$
 
-#### Primal problem of CP rewrited
+#### Primal problem of CP rewritten
 > $$
 > \begin{align}
 > &\min_{x, z}       \ &&  f(x) + g(z)\\\

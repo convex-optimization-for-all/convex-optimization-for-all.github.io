@@ -5,7 +5,7 @@ chapter: "03"
 order: 4
 owner: "Minjoo Lee"
 ---
-이 절에서는 대표적인 convex function에 대해 살펴본다. Convex fnuction에는 다음과 같은 것들이 있다.
+이 절에서는 대표적인 convex function에 대해 살펴본다. Convex function에는 다음과 같은 것들이 있다.
 
 * Exponential function
 * Power function
@@ -28,7 +28,7 @@ owner: "Minjoo Lee"
 > $$x^{a}$$ is concave on $$\mathbb{R}_{+}$$f for any $$0 \leq a \leq 1$$
 
 
-## Aﬃne function
+## Affine function
 [03-01-01]({% post_url contents/chapter03/21-02-12-03_01_01_convex_functions_definition %}) 절에서 언급한 바와 같이 모든 affine function은 convex이면서 동시에 concave 이다.
 
 * on $$\mathbb{R}$$ and $$\mathbb{R}^n$$ <br> 
@@ -39,16 +39,16 @@ owner: "Minjoo Lee"
 
 
 ## Quadratic function
-이차 함수 $$f(x)={1\over 2}x^TPx+q^Tx+r$$를 살펴보면, $$∇f(x)= Px+q$$ 이고 $$∇^2f(x) = P$$ 이다. 만일 $$P$$가 positive semideﬁnite이면 $$f(x)$$는 convex이다.
+이차 함수 $$f(x)={1\over 2}x^TPx+q^Tx+r$$를 살펴보면, $$∇f(x)= Px+q$$ 이고 $$∇^2f(x) = P$$ 이다. 만일 $$P$$가 positive semidefinite이면 $$f(x)$$는 convex이다.
 주어진 $$P \succeq 0$$ 에 대해
 >$$f(x)={1\over 2}x^TPx+q^Tx+r$$ is convex with $$P \in \mathbb{S}^n, q \in \mathbb{R}^n, r \in \mathbb{R}$$
 
-**Q : $$P$$가 positive semideﬁnite이면 왜 $$f(x)$$는 convex인가?** <br>
+**Q : $$P$$가 positive semidefinite이면 왜 $$f(x)$$는 convex인가?** <br>
 A : 2차 함수에서 2차항의 계수는 함수의 2차 미분인 Hessian matrix이다. 
 Hessian matrix는 함수의 곡률(curvature)을 결정하며 positive semidefinite이면 함수가 아래로 볼록하다는 의미이다. (즉, Hessian matrix의 eigen vector 방향으로의 곡률이 0이상이 된다.) 
 따라서 2차 함수에서 2차항의 계수가 positive semidefinite이면 함수는 convex이다.
 ## Least squares loss
-임의의 $$A$$에 대하여 $$A^TA$$는 항상 positive semideﬁnite이므로 $$\left \| Ax - b \right \|_{2}^{2}$$ 는 언제나 convex 이다. 
+임의의 $$A$$에 대하여 $$A^TA$$는 항상 positive semidefinite이므로 $$\left \| Ax - b \right \|_{2}^{2}$$ 는 언제나 convex 이다. 
 
 > $$f(x) = \left \lVert Ax - b \right \Vert_{2}^{2}$$ is convex for any $$A$$
 

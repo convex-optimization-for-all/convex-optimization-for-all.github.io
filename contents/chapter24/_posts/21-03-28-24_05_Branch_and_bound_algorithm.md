@@ -11,7 +11,7 @@ Branch and bound 알고리즘과 Convex relaxation 을 통해 Integer program을
 ## Definition and properties
 Branch and bound 알고리즘은 integer program을 푸는 가장 보편적인 방법이다. 주로 divide and conquer 방식으로 원래의 문제를 여러 개의 작은 문제(sub-problems)로 쪼개서 정답에 접근해나가는 방식이다. 
 
-Constraint set $$X = X_{1} \cup X_{1} \cup \dotsc \cup X_{k}$$ 가 각각의 $$X_{i}$$로 이루어진 partition의 합집합일 때,
+Constraint set $$X = X_{1} \cup X_{2} \cup \dotsc \cup X_{k}$$ 가 각각의 $$X_{i}$$로 이루어진 partition의 합집합일 때,
 > $$ \min_{x \in X} f(x) = \min_{i = 1, \dotsc , k} \lbrace \min_{x \in X_{i}} f(x) \rbrace .$$
 
 영역을 분할하여 minimum을 찾아나가면서 최적의 해를 구할 수 있다.

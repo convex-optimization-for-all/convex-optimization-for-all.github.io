@@ -92,9 +92,9 @@ $$M\in \mathbb{R}^{n\times m}$$일때, sparse plue low rank decomposition proble
 
 <figure class="image" style="align: center;">
 <p align="center">
-  <img src="{{ site.baseurl }}/img/chapter_img/chapter21/candes.png" alt="[Fig 1] Example of sparse plue low rank decomoposition on surveliance camera[3]" width="70%">
-  <figcaption style="text-align: center;">[Fig 1] Example of sparse plue low rank decomoposition on surveliance camera[3]</figcaption>
+  <img src="{{ site.baseurl }}/img/chapter_img/chapter21/candes.png" alt="[Fig 1] Example of sparse plue low rank decomposition on surveliance camera[3]" width="70%">
+  <figcaption style="text-align: center;">[Fig 1] Example of sparse plue low rank decomposition on surveliance camera[3]</figcaption>
 </p>
 </figure>
 
-[Fig 1]은 sparse plue low rank decomoposition을 감시카메라 비디오 영상에 분석에 활용한 예시이다. 고정된 지역을 오랜 시간 촬영하는 감시카메라로부터, 대부분의 프레임을 공유하는 low rank 부분을 쉽게 분리해낼 수 있고, sparse한 부분은 특정한 프레임들에 대한 특징적인 부분을 뽑아낸다. 예를 들어서 [Fig 1]의 가운데 column은 low rank, 우측 column은 sparse 부분을 나타낸다. 확인할 수 있듯이, low rank 부분은 거의 모든 프레임에서 나타나는 배경 정보를 가지고 있고, sparse한 부분은 특정한 프레임들에서만 나타나는 특징적인 부분만을 담고 있음을 확인할 수 있다.
+[Fig 1]은 sparse plue low rank decomposition을 감시카메라 비디오 영상에 분석에 활용한 예시이다. 고정된 지역을 오랜 시간 촬영하는 감시카메라로부터, 대부분의 프레임을 공유하는 low rank 부분을 쉽게 분리해낼 수 있고, sparse한 부분은 특정한 프레임들에 대한 특징적인 부분을 뽑아낸다. 예를 들어서 [Fig 1]의 가운데 column은 low rank, 우측 column은 sparse 부분을 나타낸다. 확인할 수 있듯이, low rank 부분은 거의 모든 프레임에서 나타나는 배경 정보를 가지고 있고, sparse한 부분은 특정한 프레임들에서만 나타나는 특징적인 부분만을 담고 있음을 확인할 수 있다.

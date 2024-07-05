@@ -9,7 +9,7 @@ owner: "YoungJae Choung"
 Integer program으로 수식을 변형한 뒤, 문제를 해결하려면 relaxation과 같은 기법이 필요하다. integer programs에서 나타나는 제약 사항 및 문제에 대해 어떤 접근을 하는 지 살펴보도록 하자.
 
 ## Hardness of integer programs
-Integer program 문제를 푸는 것은 convex optimization 문제를 푸는 것보다 훨씬 어렵다. 일반적인 Integer programming은 풀 수 있는 가능성 조차도 모르면서 최소 polynomial time이 걸리는 [NP-hard](https://en.wikipedia.org/wiki/NP-hardness) 이기 때문이다. 이 때, integer constaint에 대한 제약을 없앰으로써 convex relaxation을 하면, optimal value에 다가가는 lower bound를 구할 수 있다.<br><br>
+Integer program 문제를 푸는 것은 convex optimization 문제를 푸는 것보다 훨씬 어렵다. 일반적인 Integer programming은 풀 수 있는 가능성 조차도 모르면서 최소 polynomial time이 걸리는 [NP-hard](https://en.wikipedia.org/wiki/NP-hardness) 이기 때문이다. 이 때, integer constraint에 대한 제약을 없앰으로써 convex relaxation을 하면, optimal value에 다가가는 lower bound를 구할 수 있다.<br><br>
 Convex relaxation은 사용하여 문제를 풀면 다음과 같은 한계가 발생할 수 있다.
 
 

@@ -42,8 +42,8 @@ $$R_{++}$$공간에서의 $$\log x$$는 quasiconvex이다. (또한 quasiconcave�
 <br>
 
 
-#### Celing function
-Celing function은 quasiconvex이다. (또한 quasiconcave 이다.)
+#### Ceiling function
+Ceiling function은 quasiconvex이다. (또한 quasiconcave 이다.)
 >$$ceil(x) = inf$${$$z \in Z \mid z \geq x$$}
 <br>
 

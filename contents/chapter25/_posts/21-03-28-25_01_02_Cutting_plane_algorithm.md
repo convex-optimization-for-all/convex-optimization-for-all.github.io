@@ -48,7 +48,7 @@ end for<br>
 
 알고리즘 2단계에서는 구한 해가 IP에서 feasible하다면 이를 해로 본다. 만일 feasible하지 않다면 해인 $$x^{k}$$와 집합 $$S$$를 나누는 valid inequality를 찾아서 $$C_{k}$$의 범위를 줄인다. 그리고, $$C_{k+1}$$로 재정의된 CP 문제를 풀고 알고리즘 2단계를 반복하게 된다. 
 
-아래 그림에서 polygon은 집합 $$C$$를 나타내며 CP의 해는 검정색 점으로 표시되어 있다. 이때, valid inequailty는 해를 잘라내서 집합 $$C$$의 범위를 줄이게 된다.
+아래 그림에서 polygon은 집합 $$C$$를 나타내며 CP의 해는 검정색 점으로 표시되어 있다. 이때, valid inequality는 해를 잘라내서 집합 $$C$$의 범위를 줄이게 된다.
 
 <figure class="image" style="align: center;">
 <p align="center">

@@ -24,4 +24,4 @@ f(x^{(k)}) - f^{*} \le  \frac{m}{\mu^k t^{(0)}}
 Newton's method는 $$O(\log \log 1/\epsilon ) $$로 quadratic convergence이지만 이 경우 문제가 매우 어렵기 때문에 linear convergence가 그렇게 나쁜 결과는 아니다.
 
 Linear convergence와 quadratic convergence의 정의는 Wiki를 참고하라.<br>
-* 참고 : [Rate of convergnece](https://en.wikipedia.org/wiki/Rate_of_convergence)
+* 참고 : [Rate of convergence](https://en.wikipedia.org/wiki/Rate_of_convergence)

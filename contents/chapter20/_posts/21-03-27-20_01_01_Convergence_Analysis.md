@@ -13,7 +13,7 @@ $$f$$가 closed convex 함수라고 가정하자. 그러면 다음 동치 관계
 \end{equation}
 
 ### Proof ###
-만약 $$g$$가 strongly convex하고 $$x$$에서 miminize된다고 하면 다음 관계가 성립한다. 
+만약 $$g$$가 strongly convex하고 $$x$$에서 minimize된다고 하면 다음 관계가 성립한다. 
 >\begin{equation}
 g(y) \geq g(x) + \frac{d}{2}\lVert y-x \rVert_2^2, \text{ for all } y
 \end{equation}

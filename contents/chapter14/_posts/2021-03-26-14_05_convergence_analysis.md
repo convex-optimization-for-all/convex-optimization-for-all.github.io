@@ -13,7 +13,7 @@ MathJax.Hub.Config({
 
 지금까지 우리는 local convergence 성질 만을 가지는 pure Newton's method와 여기에 backtracking line search를 적용하여, convex일때 global convergence를 보장하는 damped Newton's method(Newton's method with backtracking line search)에 대하여 살펴보았다.
 
-이 장에서는 damped Newton's method의 수렴속도를 분석(convergence anaylsis)하고자 한다. damped Newton's method의 경우 backtracking이 적용되는 phase(damped phase : slow progress), bactracking이 더 이상 필요없는 local convergence한 phase(pure phase : quadratic convergence)로 나뉘어 convergence bound를 살펴보게 된다.
+이 장에서는 damped Newton's method의 수렴속도를 분석(convergence analysis)하고자 한다. damped Newton's method의 경우 backtracking이 적용되는 phase(damped phase : slow progress), backtracking이 더 이상 필요없는 local convergence한 phase(pure phase : quadratic convergence)로 나뉘어 convergence bound를 살펴보게 된다.
 
 ## Conditions of $$f$$ for convergence analysis
 $$f$$는 convex이고, 두 번 미분 가능하며, $$dom(f)=\mathbb{R}^{n}$$을 가지고, 다음 세가지 조건을 만족한다고 가정하자.
@@ -41,7 +41,7 @@ $$f$$는 convex이고, 두 번 미분 가능하며, $$dom(f)=\mathbb{R}^{n}$$을
 >f(x^{(k+1)})-f(x^{(k)}) \leq -\gamma
 >\end{align}$$
 >
->Phase 2 : "Pure" phase, $$\|\nabla f(x^{(k)})\|_{2}<\eta$$, bactracking selects $$t = 1$$
+>Phase 2 : "Pure" phase, $$\|\nabla f(x^{(k)})\|_{2}<\eta$$, backtracking selects $$t = 1$$
 >
 >$$\begin{align}
 >\frac{M}{2m^{2}}\|\nabla f(x^{(k+1)})\|_{2} \leq \bigg( \frac{M}{2m^{2}}\|\nabla f(x^{(k)})\|_{2} \bigg)^{2}.
@@ -130,13 +130,13 @@ Newton decrement, 증분과 hessian matrix와의 관계와 Strong convexity의 �
 ## Proof 2. Pure phase
 이제 $$\|\nabla f(x)\|_{2} < \eta$$일 때를 가정하고, Damped phase(quadratically convergent phase)를 살펴본다. 증명은 두가지 과정으로 나뉜다. backtracking line search의 t 업데이트가 필요하지 않음을 보이고, 수렴속도가 quadratic함을 보이게 된다.
 
->Backtracking line seach로 부터 다음과 같은 식이 유도된다.
+>Backtracking line search로 부터 다음과 같은 식이 유도된다.
 >
 >$$\begin{align}
 >\eta \leq 3(1-2\alpha)\frac{m^{2}}{M}.
 >\end{align}$$
 >
->또한, Lipschitz conditon에 따라 $$t \geq 0$$에 대하여, 다음 조건을 만족한다.
+>또한, Lipschitz condition에 따라 $$t \geq 0$$에 대하여, 다음 조건을 만족한다.
 >
 >$$\begin{align}
 >\|\nabla^{2}f(x+t\Delta x_{nt})-\nabla^{2}f(x)\|_{2} \leq tM \|\Delta x_{nt} \|_{2},\\
