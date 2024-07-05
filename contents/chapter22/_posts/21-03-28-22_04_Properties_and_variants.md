@@ -60,7 +60,7 @@ $$t_k = 1/L$$ 에 대해서 gradient descent $$x^{(k+1)} = x^{(k)} − t_k∇f(x
 > $$\min_x f(x) \: \text{ subject to } x ∈ conv(A) ⊆ \mathbb{R}^n$$
 
 ### [Theorem (Lacoste-Julien & Jaggi 2013)]
-$$f$$가 µ-strongly convexd이고, $$∇f$$는 L-Lipschitz 하며 $$A ⊆ \mathbb{R}^n$$는 유한 이라고 가정할 때
+$$f$$가 µ-strongly convex이고, $$∇f$$는 L-Lipschitz 하며 $$A ⊆ \mathbb{R}^n$$는 유한 이라고 가정할 때
 
 적절한 $$γ_k$$에 대해, conditional gradient 알고리즘에 의해 생성 된 반복 스텝은 다음을 항상 만족한다. 
 > $$f(x^{(k)}) − f^{\star} ≤ (1 − r)^{k/2}(f(x^{(0)}) − f^{\star}) \text { for } r = \frac{µ}{L}·\frac{Φ(A)^2}{4\text{diam}(A)^2}$$
