@@ -1,6 +1,6 @@
 # 모두를 위한 컨벡스 최적화
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 - [Book](<https://convex-optimization-for-all.github.io/>)
@@ -98,21 +98,24 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="http://www.linkedin.com/in/enfow"><img src="https://avatars.githubusercontent.com/u/31348169?v=4?s=100" width="100px;" alt=""/><br /><sub><b>KyeongMin WOO</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=enfow" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/RRoundTable"><img src="https://avatars.githubusercontent.com/u/27891090?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Wontak Ryu</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=RRoundTable" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/LEEMINJOO"><img src="https://avatars.githubusercontent.com/u/42792260?v=4?s=100" width="100px;" alt=""/><br /><sub><b>LEEMINJOO</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=LEEMINJOO" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/hunhoon21"><img src="https://avatars.githubusercontent.com/u/36983960?v=4?s=100" width="100px;" alt=""/><br /><sub><b>HoonCheol Shin</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=hunhoon21" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/curt-park/"><img src="https://avatars.githubusercontent.com/u/14961526?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jinwoo Park (Curt)</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=Curt-Park" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/YoungJaeChoung"><img src="https://avatars.githubusercontent.com/u/29696891?v=4?s=100" width="100px;" alt=""/><br /><sub><b>YoungJaeChoung</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=YoungJaeChoung" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/isingmodel"><img src="https://avatars.githubusercontent.com/u/31462012?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kibum Fred Kim</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=isingmodel" title="Code">💻</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/cneyang"><img src="https://avatars.githubusercontent.com/u/50402681?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Eugene Yang</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/issues?q=author%3Acneyang" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://seong7.github.io"><img src="https://avatars.githubusercontent.com/u/52827441?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Seongjin Kim</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=seong7" title="Code">💻</a></td>
-    <td align="center"><a href="http://hgs3896.github.io"><img src="https://avatars.githubusercontent.com/u/1921149?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ham Ji Seong</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=hgs3896" title="Code">💻</a></td>
-    <td align="center"><a href="http://seolhokim.github.io"><img src="https://avatars.githubusercontent.com/u/38997792?v=4?s=100" width="100px;" alt=""/><br /><sub><b>seolhokim</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=seolhokim" title="Documentation">📖</a> <a href="#maintenance-seolhokim" title="Maintenance">🚧</a></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="http://www.linkedin.com/in/enfow"><img src="https://avatars.githubusercontent.com/u/31348169?v=4?s=100" width="100px;" alt="KyeongMin WOO"/><br /><sub><b>KyeongMin WOO</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=enfow" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/RRoundTable"><img src="https://avatars.githubusercontent.com/u/27891090?v=4?s=100" width="100px;" alt="Wontak Ryu"/><br /><sub><b>Wontak Ryu</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=RRoundTable" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/LEEMINJOO"><img src="https://avatars.githubusercontent.com/u/42792260?v=4?s=100" width="100px;" alt="LEEMINJOO"/><br /><sub><b>LEEMINJOO</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=LEEMINJOO" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/hunhoon21"><img src="https://avatars.githubusercontent.com/u/36983960?v=4?s=100" width="100px;" alt="HoonCheol Shin"/><br /><sub><b>HoonCheol Shin</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=hunhoon21" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/curt-park/"><img src="https://avatars.githubusercontent.com/u/14961526?v=4?s=100" width="100px;" alt="Jinwoo Park (Curt)"/><br /><sub><b>Jinwoo Park (Curt)</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=Curt-Park" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/YoungJaeChoung"><img src="https://avatars.githubusercontent.com/u/29696891?v=4?s=100" width="100px;" alt="YoungJaeChoung"/><br /><sub><b>YoungJaeChoung</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=YoungJaeChoung" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/isingmodel"><img src="https://avatars.githubusercontent.com/u/31462012?v=4?s=100" width="100px;" alt="Kibum Fred Kim"/><br /><sub><b>Kibum Fred Kim</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=isingmodel" title="Code">💻</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/cneyang"><img src="https://avatars.githubusercontent.com/u/50402681?v=4?s=100" width="100px;" alt="Eugene Yang"/><br /><sub><b>Eugene Yang</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/issues?q=author%3Acneyang" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://seong7.github.io"><img src="https://avatars.githubusercontent.com/u/52827441?v=4?s=100" width="100px;" alt="Seongjin Kim"/><br /><sub><b>Seongjin Kim</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=seong7" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://hgs3896.github.io"><img src="https://avatars.githubusercontent.com/u/1921149?v=4?s=100" width="100px;" alt="Ham Ji Seong"/><br /><sub><b>Ham Ji Seong</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=hgs3896" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://seolhokim.github.io"><img src="https://avatars.githubusercontent.com/u/38997792?v=4?s=100" width="100px;" alt="seolhokim"/><br /><sub><b>seolhokim</b></sub></a><br /><a href="#maintenance-seolhokim" title="Maintenance">🚧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/RektPunk"><img src="https://avatars.githubusercontent.com/u/110188257?v=4?s=100" width="100px;" alt="RektPunk"/><br /><sub><b>RektPunk</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=RektPunk" title="Documentation">📖</a></td>
+    </tr>
+  </tbody>
 </table>
 
 <!-- markdownlint-restore -->
