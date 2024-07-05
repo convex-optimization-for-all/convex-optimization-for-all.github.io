@@ -15,7 +15,7 @@ Objective 함수 $$f$$를 두 개의 함수 $$g$$와 $$h$$로 분리할 수 있�
 
 >$$f(x) = g(x) + h(x)$$
 
-이때, 두 함수 함수 $$g$$와 $$h$$는 다음과 같은 성질을 갖는다.
+이때, 두 함수 $$g$$와 $$h$$는 다음과 같은 성질을 갖는다.
 
 * $$g$$는 convex이고 differentiable하다. (**dom**$$(g) = \mathbb{R}^n$$)
 * $$h$$는 convex이고 non-differentiable하다.
