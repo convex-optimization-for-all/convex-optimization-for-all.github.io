@@ -53,7 +53,7 @@ $$N = \lbrace 1, \dotsc, n \rbrace$$ 의 창고(depot)가 존재하고, $$M = \l
 > \end{align}
 > $$
 
-첫번째 제약조건은, 각각의 고객은 하나의 창고로부터 물품을 배송받을 수 있음을 의미한다. 두번째 제약조건은 창고  $$j$$가 운영되고 있어야 고객 $$i$$가 그 곳으로 부터 물품을 배송받을 수 있다는 것을 말한다. 이 때, $$x_{ij}$$와 $$y_{j}$$가 모두 binary 이기 때문에 $$mn$$ constranint 를 생각할 수 있다. 이는 "marginalized" 형식으로 다음과 같이 제약조건으로 표현할 수도 있다.
+첫번째 제약조건은, 각각의 고객은 하나의 창고로부터 물품을 배송받을 수 있음을 의미한다. 두번째 제약조건은 창고  $$j$$가 운영되고 있어야 고객 $$i$$가 그 곳으로 부터 물품을 배송받을 수 있다는 것을 말한다. 이 때, $$x_{ij}$$와 $$y_{j}$$가 모두 binary 이기 때문에 $$mn$$ constraint 를 생각할 수 있다. 이는 "marginalized" 형식으로 다음과 같이 제약조건으로 표현할 수도 있다.
 
 > $$ \sum_{i = 1}^{n} x_{ij} \leq m y_{j}, \quad j = 1 \dotsc n $$
 
@@ -124,7 +124,7 @@ $$X = [x^{1} \quad \dotsc \quad x^{p}] \in \mathbb{R}^{n×p}, \quad y \in \mathb
 > \end{align}
 > $$
 
-$$ \| \beta \|_{0} $$는 Non-convex constraint 이기 때문에 Integer programing 으로 변형해서 문제를 풀면 좀 더 수월하게 풀 수 있다.
+$$ \| \beta \|_{0} $$는 Non-convex constraint 이기 때문에 Integer programming 으로 변형해서 문제를 풀면 좀 더 수월하게 풀 수 있다.
 
 > $$
 > \begin{align}
