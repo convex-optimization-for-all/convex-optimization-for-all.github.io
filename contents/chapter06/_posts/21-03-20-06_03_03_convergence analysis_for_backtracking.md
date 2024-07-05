@@ -20,4 +20,4 @@ f(x^{(k)})−f^{\star} ≤ \frac{\lVert x^{(0)} − x^{\star} \rVert_{2}^{2}}{2 
 \end{align}
 $$
 
-Backtracking line search의 수렴 식은 fixsd step size 식과 거의 동일하여 분모의 step size인 $$t$$가 $$t_{\min}$$으로 대체되었다고 보면 된다. 만일 $$β$$가 너무 작지만 않다면 fixsd step size와 비교해서 성능 차이는 크지 않다. $$(β/L $$ vs. $$ 1/L)$$
+Backtracking line search의 수렴 식은 fixed step size 식과 거의 동일하여 분모의 step size인 $$t$$가 $$t_{\min}$$으로 대체되었다고 보면 된다. 만일 $$β$$가 너무 작지만 않다면 fixed step size와 비교해서 성능 차이는 크지 않다. $$(β/L $$ vs. $$ 1/L)$$
