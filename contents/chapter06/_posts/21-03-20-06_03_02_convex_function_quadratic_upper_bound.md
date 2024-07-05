@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 06-03-02 Convex function quardratic upper bound
+title: 06-03-02 Convex function quadratic upper bound
 chapter: "06"
 order: 9
 owner: "Kyeongmin Woo"
 ---
 
-## Quardratic upper bound
+## Quadratic upper bound
 함수 $$f$$가 convex이고 $$\nabla f$$는 Lipschitz continuous하면 다음과 같은 quadratic upper bound를 갖는다. (단, $$L$$은 Lipschitz constant이다.)
 
 > $$ \begin{align}
