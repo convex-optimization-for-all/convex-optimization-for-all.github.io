@@ -23,7 +23,7 @@ $$r_{dual}$$를 dual residual이라고 부르는 이유는 아래 식에서와 �
 & \iff \min_{x} L(x,u.v) = g(u,v) \\\\
 \end{align}$$
 
-비슷하게 $$r_{prim}=0$$을 만족하면 primal feasble하기 때문에 $$r_{prim}$$을 primal residual이라고 부른다.
+비슷하게 $$r_{prim}=0$$을 만족하면 primal feasible하기 때문에 $$r_{prim}$$을 primal residual이라고 부른다.
 
 ## Surrogate duality gap
 Barrier method는 feasible하기 때문에 duality gap이 존재하지만, primal-dual interior-point method는  반드시 feasible할 필요가 없기 때문에 **surrogate duality gap**을 사용한다. **Surrogate duality gap**은 다음 식으로 정의된다.
