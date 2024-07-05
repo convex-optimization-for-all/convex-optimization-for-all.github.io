@@ -46,7 +46,7 @@ g(x - tG_t(x)) \gt g(x) - t \nabla g(x)^T G_t(x) + \frac{t}{2} \parallel G_t(x) 
 4. Gradient descent update $$ x^+ = x - t G_t(x) = \text{prox}_t(x - t \nabla g(x))$$를 실행한다.
 5. 종료 조건을 만족하지 않으면 2로 간다.
 
-Proximal gradient descent에서 backtracking을 할 때 $$G_t(x)$$이 반복적으로 계산되기 때문에 실제  $$G_t(x)$$ 안에 포함된 proximal mapping이 반복적으로 계산된다. Proxmal mapping은 계산 비용이 매우 높기 때문에 전체적인 backtracking 계산 비용은 높다고 할 수 있다.
+Proximal gradient descent에서 backtracking을 할 때 $$G_t(x)$$이 반복적으로 계산되기 때문에 실제  $$G_t(x)$$ 안에 포함된 proximal mapping이 반복적으로 계산된다. Proximal mapping은 계산 비용이 매우 높기 때문에 전체적인 backtracking 계산 비용은 높다고 할 수 있다.
 
 #### Convergence Theorem
 앞의 가정과 동일한 가정 하에 backtracking line search 방식도 같은 성능을 구할 수 있다.
