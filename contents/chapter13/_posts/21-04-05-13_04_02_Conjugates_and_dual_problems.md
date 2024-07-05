@@ -6,7 +6,7 @@ order: 7
 owner: "Wontak Ryu"
 ---
 
-다음과 같은 Lagrangian의 최소화 문제의 Dual 문제 유도를 통해 종종 Conjuagte를 나타낼 수 있다.
+다음과 같은 Lagrangian의 최소화 문제의 Dual 문제 유도를 통해 종종 Conjugate를 나타낼 수 있다.
 
 > $$−f^{∗}(u) = \min_x f(x)−u^Tx$$
 
