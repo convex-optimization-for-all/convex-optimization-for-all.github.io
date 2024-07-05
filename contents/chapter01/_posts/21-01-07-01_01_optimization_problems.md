@@ -54,7 +54,7 @@ $$D = dom(f) \cap \bigcap_{i=1}^m {\rm dom}(g_i) \cap \bigcap_{j=1}^r dom(h_j)$$
 * constraints: 예산, 자산당 최소/최대 투자가능 금액, 최소 수익
 * objective: 전반적인 위험도 또는 주가 수익률 분산 (return variance)
 
-#### Device sizing in electonic circuits
+#### Device sizing in electronic circuits
 * variables: 각 부품의 너비와 길이
 * constraints: 제조 공정상 제약사항, 최대 면적
 * objective: 전력소비량
