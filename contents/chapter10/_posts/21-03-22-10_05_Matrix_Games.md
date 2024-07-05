@@ -136,7 +136,7 @@ Convex function의 maximization 또한 convex function이 된다.  이를 첫 �
 
 $$t$$를 $$P^{T}x$$의 항들 중 가장 큰 값과 같게 만들어주는 문제로 reformulate 하였다.
 
-이제 여기에 앞서 배운 duality의 두 번째 방법인 lagragian을 구하고,  lagrange dual function $$g$$를 구하면, 
+이제 여기에 앞서 배운 duality의 두 번째 방법인 Lagrangian을 구하고,  Lagrange dual function $$g$$를 구하면, 
 
 >$$
 >\begin{align}

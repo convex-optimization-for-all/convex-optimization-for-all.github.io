@@ -25,7 +25,7 @@ $$
 \end{alignat}
 $$
 
-여기서, dual 최적값을 $$g^*$$라고 하면 $$f^* \geq g^*$$이다. 이를 weak duality라 한다. 이 성질은 primal 문제가 convex가 아니어도 항상 성립한다. 또한, dual problem은 primal problem이 convex가 아니더라도 항상 convex optimizaton problem이 된다.
+여기서, dual 최적값을 $$g^*$$라고 하면 $$f^* \geq g^*$$이다. 이를 weak duality라 한다. 이 성질은 primal 문제가 convex가 아니어도 항상 성립한다. 또한, dual problem은 primal problem이 convex가 아니더라도 항상 convex optimization problem이 된다.
 
 정의에 의해 $$g$$는 $$(u,v)$$에 대해 concave 하고, $$u>0$$는 convex 제약조건이다. 따라서, dual 문제는 concave maximization 문제에 해당된다. 
 
