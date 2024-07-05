@@ -45,7 +45,7 @@ P-quadratic norm([1]의 A1.3)의 형태를 가지는 이 식을 정리하면 다
 >\lambda(x) = (v^{T}\nabla^{2} f(x)v)^{1/2} = \|\|v\|\|_{\nabla^{2}f(x)}
 >\end{align}
 
-세번째로 Newton's method의 step update의 크기 $$\Delta x_{nt}$$로 Newtond decrement를 나타낼 수 있다.
+세번째로 Newton's method의 step update의 크기 $$\Delta x_{nt}$$로 Newton decrement를 나타낼 수 있다.
 >\begin{align}
 >x^{+} &= x-\big(\nabla^{2} f(x) \big)^{-1} \nabla f(x) &\\ 
 >\end{align}
