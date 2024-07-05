@@ -13,7 +13,7 @@ owner: "Kyeongmin Woo"
 
 예를 들어, 추천 시스템에서 아직 구매를 하지 않은 상품이나 서비스를 고객에게 추천할 때 이런 문제가 발생할 수 있다.
 
-## Maxtrix Completion Problem
+## Matrix Completion Problem
 **Matrix completion** 문제는 다음과 같이 정의할 수 있다. 
 
 행렬 $$Y ∈ \mathbb{R}^{m×n}$$는 관측 데이터를 갖고 있는 행렬이며, 관측 데이터가 있는 항목을 $$Y_{ij}, (i,j) ∈ \Omega$$라고 하자. 행렬 $$B$$는 관측 값이 없는 항목들을 추정하기 위한 추정 행렬이다.
@@ -32,7 +32,7 @@ $$B^* B$$는 positive semi-definite이고 $$\sigma_1(X) ≥ ... ≥ \sigma_r(X) 
 #### [참고] **L1** Norm Regularizer vs. Trace Norm Regularizer
 이 문제는 matrix soft-thresholding로 원래 soft-thresholding에서의 벡터가 행렬로 대체되었다고 보면 된다. Regularizer 항을 보면 벡터에 대한 **L1** norm regularizer ( $$\lVert \cdot \rVert_{1}$$)가 행렬에 대한 trace norm regularizer ($$\lVert \cdot \rVert_{tr}$$)로 대체되었는데 실제 두 regularizer의 역할은 같다고 볼 수 있다.
 
-**L1** norm regularizer가 벡터를 sparse하게 만들어 주는데,  trace norm regularizer도 행렬의 sigular value vector를 sprase하게 만들어 주기 때문이다. 즉, 행렬이 diagonal일 때 diagonal을 singular value vector로 볼 수 있으며 trace norm regularizer는 singular value의 합을 최소화 하기 때문에 singular value vector를 sparse하게 해준다.
+**L1** norm regularizer가 벡터를 sparse하게 만들어 주는데,  trace norm regularizer도 행렬의 sigular value vector를 sparse하게 만들어 주기 때문이다. 즉, 행렬이 diagonal일 때 diagonal을 singular value vector로 볼 수 있으며 trace norm regularizer는 singular value의 합을 최소화 하기 때문에 singular value vector를 sparse하게 해준다.
 
 이 문제에서 trace norm $$\lVert B \rVert_{tr}$$는 $$\text{Rank}(B)$$의 approximation으로 사용되었다고 볼 수 있다.
 
@@ -67,7 +67,7 @@ Projection operator를 이용해서 objective 함수를 정의하면 다음과 �
 #### Matrix SVD & Soft-thresholding
 Proximal mapping은 $$\lambda$$ 레벨에서의 matrix soft-thresholding로 $$\text{prox}_t(B) = S_{\lambda t}(B)$$이다.
 
-일반적으로 행렬 $$B$$는 매우 크기 때문에 Singular Vector Decompoisition(SVD)를 해서 연산량을 최소화 해야만 한다. 따라서, $$B = U \Sigma V^T$$와 같이 SVD를 했다면 $$S_\lambda(B)$$는 다음과 같이 정의할 수 있다.
+일반적으로 행렬 $$B$$는 매우 크기 때문에 Singular Vector Decomposition(SVD)를 해서 연산량을 최소화 해야만 한다. 따라서, $$B = U \Sigma V^T$$와 같이 SVD를 했다면 $$S_\lambda(B)$$는 다음과 같이 정의할 수 있다.
 
 > $$ S_\lambda(B) = U \Sigma_\lambda V^T$$
 
@@ -109,7 +109,7 @@ $$\lVert W \rVert_{op}$$는 operator norm으로 biggest singular value가 1보�
 
 > $$B^+ = S_{\lambda t} ( B + t( P_\Omega(Y) − P_\Omega(B) ) )$$
 
-$$L = 1$$일 때 $$\nabla g(B)$$는 Lipschitz continuous이므로 ﬁxed step size $$t = 1$$로 선택할 수 있다.
+$$L = 1$$일 때 $$\nabla g(B)$$는 Lipschitz continuous이므로 fixed step size $$t = 1$$로 선택할 수 있다.
 
 따라서, 업데이트 식이 다음과 같이 간단해졌다.
 > $$B^+ = S_\lambda (P_\Omega(Y) + P_\Omega^\bot (B) )$$
