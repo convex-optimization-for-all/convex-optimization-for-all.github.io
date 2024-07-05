@@ -8,9 +8,9 @@ owner: "Hooncheol Shin"
 
 1950년대 중반, Argonne 국립 연구소에서 근무 중이었던 물리학자 W.C. Davidon은 coordinate descent method를 이용하여 계산량이 큰 최적화 문제를 풀고 있었다. 불행하게도 당시의 컴퓨터가 불안정했던 탓에 계산이 끝나기도 전에 시스템의 충돌이 빈번히 일어났고, 이에 좌절한 Davidon은 계산속도를 좀 더 향상시킬 수 있는 방법을 찾기로 결심하게 된다. 그렇게 탄생하게 된 것이 바로 최초의 Quasi-Newton 알고리즘이다. 이는 nonlinear optimization을 극적으로 진보시키는 계기가 되었으며, 뒤이어 20여 년 동안 이 방법에 대한 다양한 후속연구들이 등장하였다.
 
-아이러니하게도 [Davidon의 연구](http://www.math.mcgill.ca/dstephens/680/Papers/Davidon91.pdf)는 당시 출판되지 못하고 30년 이상을 technical report로 남아있었다. 그리고 마침내 1991년이 되어서야 [SIAM Jounal on Optimization의 첫 번째 판](https://epubs.siam.org/toc/sjope8/1/1)에 실리게 되었다.
+아이러니하게도 [Davidon의 연구](http://www.math.mcgill.ca/dstephens/680/Papers/Davidon91.pdf)는 당시 출판되지 못하고 30년 이상을 technical report로 남아있었다. 그리고 마침내 1991년이 되어서야 [SIAM Journal on Optimization의 첫 번째 판](https://epubs.siam.org/toc/sjope8/1/1)에 실리게 되었다.
 
-Quasi-Newton methods는 각 반복(iterateration)에서 objective function에 대한 gradient만을 필요로 한다. 이는 이차 미분을 필요로하는 newton methods보다 계산적인 부담이 훨씬 적으며 더불어 superlinear convergence를 보인다는 점에서 충분히 매력적인 방법이라고 볼 수 있다 [14]. 
+Quasi-Newton methods는 각 반복(iteration)에서 objective function에 대한 gradient만을 필요로 한다. 이는 이차 미분을 필요로하는 newton methods보다 계산적인 부담이 훨씬 적으며 더불어 superlinear convergence를 보인다는 점에서 충분히 매력적인 방법이라고 볼 수 있다 [14]. 
 
 ## Motivation for Quasi-Newton methods
 
