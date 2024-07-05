@@ -6,7 +6,7 @@ order: 1
 owner: "Hooncheol Shin"
 ---
 
-본 장에서는 dual 을 이용하여 문제를 해결하는 방법으로서,  dual subgradient method, dual decompostion method, augmented Lagrangian method에 대해 알아보고, Alternating Direction Method of Multipliers (ADMM)의 개념을 간단히 알아본다. 
+본 장에서는 dual 을 이용하여 문제를 해결하는 방법으로서,  dual subgradient method, dual decomposition method, augmented Lagrangian method에 대해 알아보고, Alternating Direction Method of Multipliers (ADMM)의 개념을 간단히 알아본다. 
 
 우선 앞에서 배운 내용 중 Proximal Newton method 와 Conjugate function 내용을 간단히 복습한다. 
 
