@@ -170,7 +170,7 @@ $$
 
 그렇다면 어떤 행렬 $$X$$가 항상 위 조건을 만족할 수 있을까? 결론부터 말하자면 다음과 같다.
 
->**Lemma 4.** 행렬 $$X \in \mathbb{R}^{n \text{ x } p}$$의 모든 원소가 $$\mathbb{R}^{np}$$ 상의 continuous probability distribution을 따른다면, 임의의 $$y$$와 $$\lambda > 0$$에 대해 lasso solution은 unuque하고 항상 (9)를 만족한다.
+>**Lemma 4.** 행렬 $$X \in \mathbb{R}^{n \text{ x } p}$$의 모든 원소가 $$\mathbb{R}^{np}$$ 상의 continuous probability distribution을 따른다면, 임의의 $$y$$와 $$\lambda > 0$$에 대해 lasso solution은 unique하고 항상 (9)를 만족한다.
 
 왜냐하면 continuous probability distribution을 따를때, 모든 column vector들은 linearly independent하기 때문이다. ([참고](https://math.stackexchange.com/questions/432447/probability-that-n-vectors-drawn-randomly-from-mathbbrn-are-linearly-ind?rq=1))
 
