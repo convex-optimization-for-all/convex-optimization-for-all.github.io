@@ -87,7 +87,8 @@ Convex 함수의 local minimum은 항상 global minimum이다. convex optimizati
 >
 >Convex function f에 대해 $$x$$가 globally optimal이 아닌 locally optimal point라고 하자.
 >또, feasible $$y$$를 global optimal point라고 하면, $$y$$는 임의의 양수 $$\rho$$에 대해 $$\|y - x\|_2 > \rho$$이고, $$f(y) < f(x)$$이 성립한다. (왜냐하면, $$x$$가 locally optimal이므로 $$\|x - y\|_2 \le \rho$$ 이면 $$f(x) \le f(y)$$이기 때문이고, 이는 $$y$$가 global optimal point임에 위배된다.)
->이때, $$\theta=\frac{\rho}{2\|y-x\|_2}$$에 대해 $$z = \theta y + (1 - \theta) x=x + \theta( y - x)$$라고 하자.
+>이때, $$\theta=\frac{\rho}{2\|y-x\|_2}$$에 대해 $$z = \theta y + (1 - \theta) x=x + \theta( y - x)$$라고 하면, 다음이 성립한다.
+>
 >1.$$\phantom{1} z$$는 두 개의 feasible points $$x, y$$에 대한 convex combination이므로 또한 feasible하다.
 >
 >2.$$\phantom{1}\|z - x\|_2 = \theta \|y - x\|_2 = \frac{\rho}{2} < \rho$$ 이다.
