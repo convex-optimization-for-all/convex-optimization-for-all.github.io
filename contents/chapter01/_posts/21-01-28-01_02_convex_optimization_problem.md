@@ -10,8 +10,8 @@ Convex optimization problem은 optimization problem의 한 종류이다.
 
 >$$\begin{align*} 
 >&\min_{x\in D}\ &&f(x) \\
->&\text{subject to} && g_i(x) \le 0,\ i = 1, ...m \\
->&&& h_j(x) = 0,\ j = 1,\ ...r 
+>&\text{subject to} && g_i(x) \le 0,\ i = 1, ..., m \\
+>&&& h_j(x) = 0,\ j = 1,\ ..., r
 >\end{align*}$$
 
 **Convex Optimization Problem in standard form [3]**
@@ -79,30 +79,28 @@ $$
 
 ## Nice property of convex optimization problems
 Convex 함수의 local minimum은 항상 global minimum이다. convex optimization problem의 경우 non-convex optimization problem에 비해 일반적으로 solution을 더 쉽게 구할 수 있는데, 그 이유는 convex 함수가 다음과 같은 특성을 가지기 때문이다.
->$$f$$가 convex이고 $$x$$가 $$f(x)$$의 locally optimal point일때(즉 $$f(x)$$가 local minimum), 사실 x는 globally optimal point이다.
+>$$f$$가 convex이고 $$x$$가 $$f(x)$$의 locally optimal point일 때(즉 $$f(x)$$가 local minimum), x는 globally optimal point이다.
 
 이를 한번 증명해보자.
 
 >**proof by contradiction:**
 >
->Convex function f에 대해 $$x$$가 locally optimal point일때, 어딘가에 $$f(y) < f(x)$$를 만족하는 feasible $$y$$가 있다고 가정하자. (이 가정이 참임이 증명된다면 'locally optimal point = global optimal point'가 성립하지 않을 것이다.)
->
->$$x$$가 locally optimal point라는 것은 다음을 만족하는 양수 $$R$$이 존재한다는 것과 같다: 
->$$z$$ feasible, $$\vert z - x \vert_2 \le R \Rightarrow f(z) \ge f(x)$$
->
->이때 $$z = \theta y + (1 - \theta) x$$라고 하면 ($$0 < \theta < 1$$),
->
+>Convex function f에 대해 $$x$$가 globally optimal이 아닌 locally optimal point라고 하자.
+>또, feasible $$y$$를 global optimal point라고 하면, $$y$$는 임의의 양수 $$\rho$$에 대해 $$\|y - x\|_2 > \rho$$이고, $$f(y) < f(x)$$이 성립한다. (왜냐하면, $$x$$가 locally optimal이므로 $$\|x - y\|_2 \le \rho$$ 이면 $$f(x) \le f(y)$$이기 때문이고, 이는 $$y$$가 global optimal point임에 위배된다.)
+>이때, $$\theta=\frac{\rho}{2\|y-x\|_2}$$에 대해 $$z = \theta y + (1 - \theta) x=x + \theta( y - x)$$라고 하자.
 >1.$$\phantom{1} z$$는 두 개의 feasible points $$x, y$$에 대한 convex combination*이므로 또한 feasible하다.
 >
->2.$$\phantom{1}$$가정한 것처럼 $$f(y) < f(x)$$가 성립한다면, 이는 곧 $$f(z) \le \theta f(y) + (1 - \theta) f(x) < \theta f(x) + (1 - \theta) f(x) = f(x)$$
+>2.$$\phantom{1}\|z - x\|_2 = \theta \|y - x\|_2 = \frac{\rho}{2} < \rho$$ 이다.
 >
->2는 x가 locally optimal point이기 위한 전제조건 $$f(z) \ge f(x)$$에 대한 모순이므로 $$f(y)<f(x)$$를 만족하는 feasible y는 존재하지 않는다. 즉, locally optimal point x가 곧 globally optimal point임을 의미한다.
+>3.$$\phantom{1} f(z) \le \theta f(y) + (1 - \theta) f(x) < \theta f(x) + (1 - \theta) f(x) = f(x)$$
+>
+>2,3는 $$x$$가 locally optimal point이기 위한 전제조건 $$f(x) < f(z)$$에 대한 모순이므로 귀류법에 의해 locally optimal point $$x$$가 곧 globally optimal point이다.
 
 
 ## convex combination
 
 >$$x_1, ..., x_k$$에 대한 convex combination x는 다음과 같이 정의된다.
 >
->$$x = \theta_1 x_1 + \theta_2 x_2 + ... + \theta_k x_k$$ with $$\theta_1 + ... + \theta_k = 1, \theta_i \ge 0$$
+>$$x = \theta_1 x_1 + \theta_2 x_2 + \cdots + \theta_k x_k$$ with $$\theta_1 + \cdots + \theta_k = 1, \theta_i \ge 0$$
 >
 >$$D$$가 convex set일때 $$x_1, x_2, ..., x_k \in D$$이면, $$x \in D$$이다.
