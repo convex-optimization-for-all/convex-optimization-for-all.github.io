@@ -24,7 +24,7 @@ owner: "Wontak Ryu"
 </figure>
 
 
-Separating hyperplane theorems의 역은 성립하지 않는다. 즉, separating hyperplane이 존재한다고 해서 두 convex set이 (교집합이 없는) disjoint convex set은 아닐 수 있다. 가장 간단한 반례로 두 convex set이 $$C = D = $$ {$$0$$} $$\subseteq R$$와 같이 같더라도 $$x = 0$$은 $$C$$와 $$D$$를 분리한다는 것을 알 수 있다.
+Separating hyperplane theorems의 역은 성립하지 않는다. 즉, separating hyperplane이 존재한다고 해서 두 convex set이 (교집합이 없는) disjoint convex set은 아닐 수 있다. 가장 간단한 반례로 두 convex set이 $$C = D = \{0\}\subseteq \mathbb{R}$$와 같더라도 $$x = 0$$은 $$C$$와 $$D$$를 분리한다는 것을 알 수 있다.
 
 #### Strict separation
 

@@ -13,9 +13,9 @@ owner: "Wontak Ryu"
 
 **Norm cone**은 반경 $$t$$ 이내인 점들로 이뤄진 cone으로 $$(x,t)$$로 정의되는 $$R^{n+1}$$차원의 convex cone이다. 이때, 반경은  임의의 norm으로 정의된다.
 
->$$C = \{(x, t) : \left \Vert x \right \| \le t\} \subseteq R^{n+1}$$, for a norm $$\left \Vert  · \right \|$$ 
+>$$C = \{(x, t) : \| x \| \le t\} \subseteq \mathbb{R}^{n+1}$$, for a norm $$\|·\|$$ 
 
-아래 그림에는 $$l_2$$ norm $$\left \Vert  · \right \|_2$$에 대한 norm cone이 그려져 있다. 이를 second-order cone 또는 ice cream cone이라고도 부른다.
+아래 그림에는 $$l_2$$ norm $$\|  · \|_2$$에 대한 norm cone이 그려져 있다. 이를 second-order cone 또는 ice cream cone이라고도 부른다.
 
 <figure class="image" style="align: center;">
 <p align="center">
@@ -30,7 +30,7 @@ owner: "Wontak Ryu"
 Normal cone은 $$C$$에 상관 없이 항상 convex cone이다.
 
 
->$$N_C(x) = $$ { $$g: g^T (y - x) \le 0, \text{ for all } y \in C$$ }
+>$$N_C(x) = \{ g: g^T (y - x) \le 0, \text{ for all } y \in C \}$$
 
 Normal cone은 집합 $$C$$에 속하는 임의의 점 $$x$$와 집합 $$C$$의 모든 점 $$y$$와이 차 벡터인 $$y-x$$와 내적이 항상 0보다 작은 벡터인 $$g$$로 정의되는 cone을 말한다. 벡터 $$g$$와 $$y-x$$의 내적이 0보다 작다는 의미는 두 벡터의 각도가 (즉, $$cos\theta$$가 음수인 구간인) $$ 90 \le \theta \le 270$$이란 것을 의미한다. 
 
