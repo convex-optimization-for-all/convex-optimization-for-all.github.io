@@ -74,12 +74,12 @@ $$
 
 즉. 정의 되지 않는 부분을 정의된 부분보다 항상 크게하여 convex의 성질을 가지게 한다.
 
->$I_{C} (x) =
+>$$I_{C} (x) =
 \begin{cases}
 0, & x \in C\\
 \infty, & x \notin C\\
 \end{cases}
-$
+$$
 
 
 ## Support function
