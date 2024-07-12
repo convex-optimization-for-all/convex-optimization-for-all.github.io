@@ -46,11 +46,6 @@ $$n$$차원에서 1차원으로 매핑하는 함수 $$g$$와 1차원에서 1차�
 • $$g$$가 concave이고 $$h$$가 concave이며 $$h$$가 감소하지 않으면 (nondecreasing) $$f$$는 concave 이다. <br>
 • $$g$$가 convex이고 $$h$$가 concave이며 $$h$$가 증가하지 않으면 (nonincreasing) $$f$$는 concave 이다. <br>
 
-<!-- 
-#### Proof
-• for $$n=1$$ differentiable $$g,h$$
->$$f''(x)=h''(g(x))g'(x)^2+h'(g(x))g''(x)$$ -->
-
 #### [note]
 extended-value extension $${h}$$에 대한 단조성(monotonicity)은 반드시 유지되어야 한다. 
 
@@ -68,11 +63,6 @@ $$n$$차원에서 $$k$$ 차원으로 매핑하는 함수 $$g$$와 다시 $$k$$�
 
 • $$g$$가 convex이고 $$h$$는 convex 일때, $$h$$가 각 인수에 대해 감소하지 않으면, $$f$$는 convex 이다.<br>
 • $$g$$가 convex이고 $$h$$는 concave 일때, $$h$$가 각 인수에 대해 증가하지 않으면, $$f$$는 concave 이다.<br>
-
-
-<!-- #### Proof
-• for $$n=1$$, differentiable $$g,h$$<br> 
->$$f''(x)=g'(x)^T∇^2h(g(x))g'(x)+∇h(g(x))^Tg''(x)$$ -->
 
 #### Example
 • $$g_i$$가 concave이고 positive 하면, $$\sum_{i=1}^{m} \log g_i(x)$$는 concave 이다.<br>
