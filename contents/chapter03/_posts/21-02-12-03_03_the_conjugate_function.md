@@ -23,11 +23,11 @@ Conjugate function은 뒷장에서 다룰 Lagrange Dual에서 최적화 문제�
 #### Example
 >• *Negative logarithm* $$f(x)=−\log x$$
 
-> $$f∗(y)=\sup_{x>0} (xy+logx)$$ 
+> $$f∗(y)=\sup_{x>0} (xy+ \log x)$$ 
 > $$=
 \begin{cases}
 -1-\log(-y), & y < 0 \\ 
-∞, & \text{ otherwise}
+\infty, & \text{ otherwise}
 \end{cases}
 $$
 
