@@ -12,7 +12,7 @@ Proper cone으로 generalized inequality를 정의할 수 있다면, dual cone�
 
 ## Dual generalized inequalities
 
-Proper dual cone으로 generalized inequality를 정의해보면 다음과 같다. 어떤 점 $$y$$가 있을 때  $$K$$의 모든 점 $$x$$와 내적을 해서 0보다 크다면, $$y$$는 dual cone $$K^*$$에서 0보다 크다.
+Proper dual cone으로 generalized inequality를 정의해보면 다음과 같다. 어떤 점 $$y$$가 있을 때 $$K$$의 모든 점 $$x$$와 내적을 해서 0보다 크다면, $$y$$는 dual cone $$K^*$$에서 0보다 크다.
 
 이때, $$\succeq_{K^*}$$를  $$\succeq_K$$의 **dual**이라고 한다. 즉, **dual generalized inequality**이다.
 
@@ -27,7 +27,7 @@ Proper dual cone으로 generalized inequality를 정의해보면 다음과 같�
 $$K = K^{**}$$이고 $$\preceq_K^* $$와 연관된 
 dual generalized inequality는 $$\preceq_K$$이기 때문에, generalized inequality와 dual이 바뀌더라도 이런 속성은 유지된다. 
 
-예를 들어서, $$\lambda \preceq_K^* \mu$$ if and only if $$\lambda^T x \le \mu^T x$$ for all $$x \succeq_K  0$$이다.
+예를 들어서, $$\lambda \preceq_K^* \mu$$ if and only if $$\lambda^T x \le \mu^T x$$ for all $$x \succeq_K 0$$이다.
 
 
 ## Minimum and minimal elements via dual inequalities
@@ -87,9 +87,9 @@ $$\lambda \succ_K^* 0$$와 $$z \in S$$에 대해 $$x$$가 $$\lambda^T z$$의 min
 
 #### Optimal production frontier
 $$n$$가지 자원 (노동, 전기, 천연가스, 물 등)을 이용해서 생산해야 하는 제품이 있다고 해보자. 
-이 제품은 여러 방식으로 생산될 수 있다. 각 생산 방법 별로 자원 벡터 $$x \in R$$가 있으며 이때 $$x_i$$는 자원 $$i$$의 소비량을 의미한다. 자원 소비량은 $$x_i \ge 0$$이고 자원은 가치가 높다고 가정한다.
+이 제품은 여러 방식으로 생산될 수 있다. 각 생산 방법 별로 자원 벡터 $$x \in \mathbb{R}$$가 있으며 이때 $$x_i$$는 자원 $$i$$의 소비량을 의미한다. 자원 소비량은 $$x_i \ge 0$$이고 자원은 가치가 높다고 가정한다.
 
-생산 집합 $$P \subseteq R^n$$은 모든 자원 벡터 $$x$$의 집합으로 정의된다. 이때, minimal 자원 벡터를 갖는 생산 방법 $$P$$를 **Pareto optimal** 또는 **efficient**라고 한다. 또한, $$P$$의 minimal 집합을 **efficient production frontier**라고 한다. 
+생산 집합 $$P \subseteq \mathbb{R}^n$$은 모든 자원 벡터 $$x$$의 집합으로 정의된다. 이때, minimal 자원 벡터를 갖는 생산 방법 $$P$$를 **Pareto optimal** 또는 **efficient**라고 한다. 또한, $$P$$의 minimal 집합을 **efficient production frontier**라고 한다. 
 
 Pareto optimality에 대해서 간단히 살펴보자. 
 
