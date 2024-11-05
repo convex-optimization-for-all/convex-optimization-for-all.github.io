@@ -24,7 +24,7 @@ Non-separable set에 대한 SVM 문제는 다음과 같이 정의된다.
 \begin{aligned}
 &\min_{\beta, \beta_{0}, \xi} &&\frac{1}{2}\|\beta\|_2^2 + C \sum_{i=1}^{n} \xi_{i} \\
 &\text{subject to} &&{\xi}_{i} \ge 0, \\ 
-&&&y_{i}(x_{i})^T \beta + \beta_{0}) \ge 1 - {\xi}_{i}, \\
+&&&y_{i}(x_{i}^T \beta + \beta_{0}) \ge 1 - {\xi}_{i}, \\
 &&&i = 1, .., n \\
 \end{aligned}
 $$
@@ -33,17 +33,17 @@ $$
 위의 제약조건들은 아래의 제약조건 하나로 표현될 수 있다. <br>
 > $$
 \begin{aligned}
-{\xi}_{i} \ge max\{0, 1 - y_{i} (x_{i}^T \beta + \beta_{0})\} \\
+{\xi}_{i} \ge \max\{0, 1 - y_{i} (x_{i}^T \beta + \beta_{0})\} \\
 \end{aligned}
 $$
- 
 
-이때, $$max\{0, 1 - y_{i} (x_{i}^T \beta + \beta_{0})\}$$는 $${\xi}_{i}$$의 하한임을 이용하여 $$\tilde{f}$$를 얻을 수 있다.<br>
+
+이때, $$\max\{0, 1 - y_{i} (x_{i}^T \beta + \beta_{0})\}$$는 $${\xi}_{i}$$의 하한임을 이용하여 $$\tilde{f}$$를 얻을 수 있다.<br>
 
 
 > $$
 \begin{aligned}
-\frac{1}{2} \|\beta\|_{2}^{2} + C \sum_{i=1}^{n} {\xi}_{i} &\ge \frac{1}{2} \|\beta\|_{2}^{2} + C \sum_{i=1}^{n} max({0, 1 - y_{i} (x_{i}^T \beta + \beta_{0})})\\
+\frac{1}{2} \|\beta\|_{2}^{2} + C \sum_{i=1}^{n} {\xi}_{i} &\ge \frac{1}{2} \|\beta\|_{2}^{2} + C \sum_{i=1}^{n} \max({0, 1 - y_{i} (x_{i}^T \beta + \beta_{0})})\\
 &= \min\{\frac{1}{2} \|\beta\|_{2}^{2} + C \sum_{i=1}^{n} \xi_{i} \quad | \quad \xi_{i} \ge 0, \ y_{i}(x_{i}^T \beta + \beta_{0}) \ge 1 - \xi_{i}, \ i = 1, .., n\} \\
 &= \tilde{f}(\beta, \beta_{0}) \\
 \end{aligned}
@@ -54,6 +54,6 @@ $$
 
 >$$
 \begin{aligned}
-\min_{\beta, \beta_0} \frac{1}{2} \|\beta\|_2^2 + C \sum_{i=1}^{n} max\{0, 1 - y_{i} (x_{i}^{T} \beta + \beta_{0}) \}
+\min_{\beta, \beta_0} \frac{1}{2} \|\beta\|_2^2 + C \sum_{i=1}^{n} \max\{0, 1 - y_{i} (x_{i}^{T} \beta + \beta_{0}) \}
 \end{aligned}
 $$
