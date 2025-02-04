@@ -8,8 +8,7 @@ owner: "Minjoo Lee"
 ## Epigraph characterization
 앞 1.2절에서 살펴본 바와 같이 $$f$$가 convex 이면 그 epigraph는 convex set이고, 그 역도 성립한다.
 
-> $$f$$ is convex $$\iff epi(f) = \{(x,t) \in \mathbb{R}^{n+1} | x \in \text{dom} f, f(x) \le t \}$$ is a convex set
-
+> $$f$$ is convex $$\iff epi(f) = \{(x,t) \in \mathbb{R}^{n+1} \mid x \in \text{dom} f, f(x) \le t \}$$ is a convex set
 
 ## Convex sublevel sets
 함수 $$f$$가 convex이면, 그 sublevel set 도 convex 이다.
