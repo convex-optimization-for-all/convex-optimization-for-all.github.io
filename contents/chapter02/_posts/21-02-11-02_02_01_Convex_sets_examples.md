@@ -73,7 +73,7 @@ Ellipsoid 식을 다음과 같이  $$x_c$$를 중심으로 $$Au$$ 벡터를 더�
 
 >$$\mathcal{E} = \{ \ x_c + Au \text{ } \mid \text{ } \|u\|_2 \le 1 \} $$
 
-여기서 $$A$$는 정방 행렬이고 nonsingular이다. 만일 $$A = P^\frac{1}{2}$$라고 하면 위의 식과 동일해져서 symmetric이고 positive definite라고 할 수 있다. 이때, $$A$$가 symmetric positive semidefinite이면  degenerate ellipsoid라고 하며 affine dimension은 $$A$$의 rank와 같다. Degenerate ellipsoid도 역시 convex이다.
+여기서 $$A$$는 정방 행렬이고 nonsingular이다. 만일 $$A = P^\frac{1}{2}$$라고 하면 위의 식과 동일해져서 symmetric이고 positive definite라고 할 수 있다. 만약, $$A$$가 symmetric positive semidefinite이면서 singular이면 이를 degenerate ellipsoid라고 하며 affine dimension은 $$A$$의 rank와 같다. Degenerate ellipsoid도 역시 convex이다.
 
 ## Norm balls
 
