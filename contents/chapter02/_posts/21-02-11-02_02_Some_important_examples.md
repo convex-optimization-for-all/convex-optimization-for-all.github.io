@@ -10,7 +10,7 @@ owner: "Wontak Ryu"
 
 * Trivial ones: empty set, point, line, line segment, ray
 * Hyperplane: $$\{x : a^T x = b\}$$, for given $$a, b$$, $$a \ne 0$$
-* Halfspace: $$\{x : a^T x \le \}b$$ for $$a \ne 0$$
+* Halfspace: $$\{x : a^T x \le b \}$$ for $$a \ne 0$$
 * Affine space: $$\{x : Ax = b\}$$, for given $$A, b$$
 * Euclidean ball & ellipsoid
 * Norm ball: $$\{x : \| x \| ≤ r\}$$, for given norm $$\|·\|$$ , radius r
