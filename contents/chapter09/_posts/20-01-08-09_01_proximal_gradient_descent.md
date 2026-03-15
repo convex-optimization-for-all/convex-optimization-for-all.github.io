@@ -93,9 +93,9 @@ $$S_{\lambda t}(\beta)$$는 soft-thresholding operator로 다음과 같이 정�
 > $$ \begin{align}
 [S_{\lambda t}(\beta)]_i =
 \begin{cases}
-\beta_i - \lambda & \mbox{if } \beta_i \gt \lambda \\
-0 & \mbox{if } \lambda \le \beta_i \le \lambda, i = 1, ..., n \\
-\beta_i + \lambda & \mbox{if } \beta_i \lt -\lambda \\
+\beta_i - \lambda t & \mbox{if } \beta_i \gt \lambda t\\
+0 & \mbox{if } \lambda t \le \beta_i \le \lambda t, i = 1, ..., n \\
+\beta_i + \lambda t & \mbox{if } \beta_i \lt -\lambda t \\
 \end{cases}
 \\
 \end{align} $$
