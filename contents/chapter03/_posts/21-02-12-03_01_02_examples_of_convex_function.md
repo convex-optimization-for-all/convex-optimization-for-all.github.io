@@ -59,7 +59,7 @@ $$f:\mathbb{R}^n \mapsto \mathbb{R}$$를 norm이라 하고 정의에 의해
 
 >$$
 \begin{aligned}
-f(\theta x+(1−\theta)y) \le \theta f(x)+(1−\theta)f(y), \text{  with } \theta \le \theta \le 1, \text{ for all } x,y \in \text{dom} f,
+f(\theta x+(1−\theta)y) \le \theta f(x)+(1−\theta)f(y), \text{  with } 0 \le \theta \le 1, \text{ for all } x,y \in \text{dom} f,
 \end{aligned}
 $$
 >$$
