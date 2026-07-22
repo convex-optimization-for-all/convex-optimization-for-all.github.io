@@ -1,6 +1,6 @@
 # 모두를 위한 컨벡스 최적화
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 - [Book](<https://convex-optimization-for-all.github.io/>)
@@ -114,6 +114,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="http://hgs3896.github.io"><img src="https://avatars.githubusercontent.com/u/1921149?v=4?s=100" width="100px;" alt="Ham Ji Seong"/><br /><sub><b>Ham Ji Seong</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=hgs3896" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://seolhokim.github.io"><img src="https://avatars.githubusercontent.com/u/38997792?v=4?s=100" width="100px;" alt="seolhokim"/><br /><sub><b>seolhokim</b></sub></a><br /><a href="#maintenance-seolhokim" title="Maintenance">🚧</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/RektPunk"><img src="https://avatars.githubusercontent.com/u/110188257?v=4?s=100" width="100px;" alt="RektPunk"/><br /><sub><b>RektPunk</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=RektPunk" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/woolnd"><img src="https://avatars.githubusercontent.com/u/98391474?v=4?s=100" width="100px;" alt="JaeWoong Eum"/><br /><sub><b>JaeWoong Eum</b></sub></a><br /><a href="https://github.com/convex-optimization-for-all/convex-optimization-for-all.github.io/commits?author=woolnd" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
