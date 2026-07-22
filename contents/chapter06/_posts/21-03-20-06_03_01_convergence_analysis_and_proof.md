@@ -22,7 +22,7 @@ f(x^{(k)}) - f^{*} \le  \frac{ \lVert x^{(0)} - x^{*} \rVert^2_2 }{2tk}
 \end{align}
 $$
 
-Gradient decent가 fixed step size일때 convergence rate $$O(1/k)$$가 된다. 또한, $$f(x^{(k)}) - f^{*} \le \epsilon$$라면 $$O(1/\epsilon)$$의 반복이 필요하다.
+Gradient descent가 fixed step size일때 convergence rate $$O(1/k)$$가 된다. 또한, $$f(x^{(k)}) - f^{*} \le \epsilon$$라면 $$O(1/\epsilon)$$의 반복이 필요하다.
 
 ## Proof
 

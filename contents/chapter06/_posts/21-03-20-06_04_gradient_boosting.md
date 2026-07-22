@@ -14,7 +14,7 @@ owner: "Kyeongmin Woo"
 
 
 #### [참고] Functional gradient descent 알고리즘
-**Gradient boosting**은 Llew Mason, Jonathan Baxter, Peter Bartlett and Marcus Frean에 의해 functional gradient descent 알고리즘으로 소개되었다.  Functional gradient descent 알고리즘은 함수 공간에 대해서 loss function을 최적화하는 알고리즘으로 gradient의 음수 방향을 갖는 함수를 반복적으로 선택함으로써 gradient decent를 수행한다.
+**Gradient boosting**은 Llew Mason, Jonathan Baxter, Peter Bartlett and Marcus Frean에 의해 functional gradient descent 알고리즘으로 소개되었다.  Functional gradient descent 알고리즘은 함수 공간에 대해서 loss function을 최적화하는 알고리즘으로 gradient의 음수 방향을 갖는 함수를 반복적으로 선택함으로써 gradient descent를 수행한다.
 
 * 자세한 내용은 [Gradient Boosting](https://en.wikipedia.org/wiki/Gradient_boosting) 참조
 
