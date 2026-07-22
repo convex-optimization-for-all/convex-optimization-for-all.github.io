@@ -12,4 +12,4 @@ owner: "Kyeongmin Woo"
 
 Gradient descent가 수렴하려면 몇 가지 전제 조건이 필요하다. 이런 전제 조건이 만족된다면 gradient descent가 얼마나 빠르게 수렴할 수 있는지 계산해 볼 수 있다. 또한, Strong Convexity를 만족하게 되면 수렴은 기하급수적으로 빨라지게 된다. 이 경우에 수렴 속도도 살펴볼 것이다.
 
-Gradient descent를 응용한 방법으로 gradient boosting과 stochastic gradient decent에 대해서도 살펴보도록 하겠다.
+Gradient descent를 응용한 방법으로 gradient boosting과 stochastic gradient descent에 대해서도 살펴보도록 하겠다.

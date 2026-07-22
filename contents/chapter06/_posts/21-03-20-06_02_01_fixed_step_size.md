@@ -6,7 +6,7 @@ order: 4
 owner: "Kyeongmin Woo"
 ---
 
-Gradient decent에서 step size를 찾는 가장 단순한 방법은 모든 반복에서 t를 고정하는 것이다.  하지만 step size $$t_k = t$$, $$k = 1, 2, 3, ...$$의 크기에 따라 수렴할 수도 있으고 발산할 수도 있다. 
+Gradient descent에서 step size를 찾는 가장 단순한 방법은 모든 반복에서 t를 고정하는 것이다.  하지만 step size $$t_k = t$$, $$k = 1, 2, 3, ...$$의 크기에 따라 수렴할 수도 있으고 발산할 수도 있다. 
 
 예를 들어 아래 그림을 보면 함수 $$f(x) = (10 x_1^2 + x_2^2) / 2$$에 대해 gradient descent를 수행을 보여주고 있다.
 
