@@ -14,7 +14,7 @@ Gradient descent는 제약조건이 없는 convex이고 differentiable한 functi
 참고로, optimal value는 $$f^{*} = min_x f(x)$$로 optimal은 $$x^{*}$$로 표기한다.
 
 
-#### Gradient decent method
+#### Gradient descent method
 Gradient descent는 초기 점 $$x^{(0)} \in R^n$$을 선택하고 다음 식을 반복적으로 실행해서 임의의 조건을 만족하면 종료하게 된다.
 > $$x^{(k)} = x^{(k-1)} - t_k \nabla f(x^{(k-1)}), k = 1, 2, 3, . . .$$, $$t_k \gt 0$$
 
@@ -47,7 +47,7 @@ Gradient descent는 초기 점 $$x^{(0)} \in R^n$$을 선택하고 다음 식을
 </p>
 </figure>
 
-## Gradient decent interpretation
+## Gradient descent interpretation
 Gradient descent는 함수를 2차 식으로 근사한 후 함수의 최소 위치를 다음 위치로 선택하는 방법이다.
 
 이 과정을 보이기 위해 함수 $$f$$를 2차 Taylor 식으로 전개해보자.
