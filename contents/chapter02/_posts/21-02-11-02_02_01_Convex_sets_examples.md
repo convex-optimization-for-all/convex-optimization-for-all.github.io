@@ -14,7 +14,7 @@ Hyperplane은 $$n$$차원의 공간을 반으로 가르는 $$n-1$$차원의 subs
 
 >{$$x : a^T x = b$$} with $$ a \in \mathbb{R}^n, a \ne 0, b \in \mathbb{R}$$
 
-다음 그림에 hyperplane이 있다. 이 hyperplane에 속하는 임의의 x에 대해서 $$(x - x_0)$$와 $$a$$는 직교(orthogonal)한다. 따라서, $$a^T (x - x_0) = 0$$이므로  $$a^T x =  b$$라면 $$b$$는 $$a^Tx_0$$이다.
+다음 그림에 hyperplane이 있다. 이 hyperplane 위의 임의의 한 점을 $x_0$라고 할 때, hyperplane에 속하는 임의의 x에 대해서 $$(x - x_0)$$와 $$a$$는 직교(orthogonal)한다. 따라서, $$a^T (x - x_0) = 0$$이므로  $$a^T x =  b$$라면 $$b$$는 $$a^Tx_0$$이다.
 
 <figure class="image" style="align: center;">
 <p align="center">
@@ -84,7 +84,7 @@ $$\|.\|$$을 $$R^n$$의 임의의 norm이라고 할때 norm ball은 다음과 �
 
 P-norm이 다음과 같이 정의될 때 norm ball의 모양은 다음과 같다.
 
->$$ \| x  \|_{p} = \left( \sum_{i=0}^n |x_i|^{p} \right)^{1/p} \text{ for  } p \ge 1$$
+>$$ \| x  \|_{p} = \left( \sum_{i=1}^n |x_i|^{p} \right)^{1/p} \text{ for  } p \ge 1$$
 
 이 그림은 3D로 $$p$$값에 따라 norm ball의 모양을 보여준다. $$p$$가 1이상이어야 norm ball이 convex set임을 알 수 있다.
 
@@ -124,7 +124,7 @@ Polyhedron은 선형 부등식과 등식의 교집합으로 정의된다. Affine
 
 행렬 표현으로 간단히 다음과 같이 정의하기도 한다.
 
->$$\mathcal{P} =  \{ x \mid A^Tx \preceq b, C^Tx  = d \}$$
+>$$\mathcal{P} =  \{ x \mid Ax \preceq b, Cx  = d \}$$
 where
 $$
 A = 
