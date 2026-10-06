@@ -1,29 +1,24 @@
 name: closed_issue
 
 on:
-  issues: 
+  issues:
     types: [closed]
 
 jobs:
   changeIssueTitle:
     runs-on: ubuntu-latest
 
+    permissions:
+      issues: write
+
     steps:
-    - uses: actions/checkout@v2
+      - name: Change issue title
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          NEW_TITLE=$(gh issue view ${{ github.event.issue.number }} \
+            --repo ${{ github.repository }} --json title \
+            --jq '"[Closed] " + (.title | split("·")[0] | rtrimstr(" "))')
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.7
-
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        if [ -f src/requirements.txt ]; then pip install -r src/requirements.txt; fi
-
-    - name: Change issue title
-      run: |
-        python src/change_issue_title.py
-      env:
-        GITHUB_TOKEN: ${{ secrets.CONVEX_ADMIN_TOKEN }}
-        ISSUE_NUMBER: ${{ github.event.issue.number }}
+          gh issue edit ${{ github.event.issue.number }} \
+            --repo ${{ github.repository }} --title "$NEW_TITLE"
