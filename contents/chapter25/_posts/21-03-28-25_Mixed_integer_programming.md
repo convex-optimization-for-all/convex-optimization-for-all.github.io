@@ -11,7 +11,7 @@ owner: "YoungJae Choung"
 또한, Integer Programming의 예시로 best subset selection과 Least mean squares에 대해서 살펴보도록 하겠다.
 
 ## Reference
-* Belotti, Kirches, Leyer, Linderoth, Luedke, and Mahajan (2012), "Mixed-integer nonlinear optimization"
+* Belotti, Kirches, Leyffer, Linderoth, Luedke, and Mahajan (2012), "Mixed-integer nonlinear optimization"
 * Bertsimas and Mazumder (2016), "Best subset selection via a modern optimization lens"
 * Bertsimas, King, and Mazumder (2014), "Least quantile regression via modern optimization"
 * Conforti, Cornuejols, and Zambelli (2014), "Integer programming"
