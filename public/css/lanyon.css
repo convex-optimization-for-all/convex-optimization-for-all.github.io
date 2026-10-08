@@ -394,20 +394,6 @@ a.sidebar-nav-item:focus {
 }
 
 /*
- * View counts
- */
-
-.view-counts {
-  display: flex;
-  justify-content: center;
-}
-
-.view-counts__img {
-  margin: 0;
-}
-
-
-/*
  * Pagination
  *
  * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
