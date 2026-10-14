@@ -12,11 +12,12 @@ owner: "Kyeongmin Woo"
 
 Mathematical optimization problem은 다음과 같은 형태로 표현될 수 있다.
 
-> $$ \begin{align*}
+> $$
+> \begin{align*}
 > &\min_{x\in D}\ && f(x) \\
 > &\text{subject to} && g_i(x) \le 0,\ i = 1, ..., m \\
 > &&& h_j(x) = 0,\ j = 1,\ ..., r
-> \end{align*}$$
+> \end{align*}
 > $$
 
 **Mathematical Optimization Problem in standard form [3]**
