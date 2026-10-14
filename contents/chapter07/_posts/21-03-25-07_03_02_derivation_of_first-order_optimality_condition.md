@@ -10,15 +10,13 @@ owner: "Kyeongmin Woo"
 
 #### Proof
 
->
-
-$$
-\begin{alignat}{2}
-f(x^{*}) = \min_{x\in C} f(x)  \quad & \Longleftrightarrow & & \quad f(x^{*}) = \min_x f(x) + I_C(x) \\
-                      \quad & \Longleftrightarrow & &\quad 0 \in \partial(f(x^{*}) + I_C(x^{*})) \\
-                      \quad & \Longleftrightarrow & &\quad 0 \in \{\nabla f(x^{*}) \} + \mathcal{N}_C(x^{*}) \\
-                      \quad & \Longleftrightarrow & &\quad - \nabla f(x^{*}) \in \mathcal{N}_C(x^{*}) \\
-                      \quad & \Longleftrightarrow & &\quad - \nabla f(x^{*})^Tx^{*} \geq -\nabla f(x^{*})^Ty, \text{ for all }  y \in C \\
-					  \quad & \Longleftrightarrow & &\quad \nabla f(x^{*})^T(y-x^{*}) \geq 0, \text{ for all } y \in C
-\end{alignat}
-$$
+> $$
+> \begin{alignat}{2}
+> f(x^*) = \min\_{x\in C} f(x) \quad & \Longleftrightarrow & & \quad f(x^*) = \min_x f(x) + I_C(x) \\
+> \quad & \Longleftrightarrow & &\quad 0 \in \partial(f(x^*) + I_C(x^*)) \\
+> \quad & \Longleftrightarrow & &\quad 0 \in \{\nabla f(x^*) \} + \mathcal{N}\_C(x^*) \\
+> \quad & \Longleftrightarrow & &\quad - \nabla f(x^*) \in \mathcal{N}\_C(x^*) \\
+> \quad & \Longleftrightarrow & &\quad - \nabla f(x^*)^Tx^* \geq -\nabla f(x^*)^Ty, \text{ for all } y \in C \\
+> \quad & \Longleftrightarrow & &\quad \nabla f(x^*)^T(y-x^{*}) \geq 0, \text{ for all } y \in C
+> \end{alignat}
+> $$
