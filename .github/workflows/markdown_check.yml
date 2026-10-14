@@ -19,5 +19,5 @@ jobs:
       - name: Prettify md
         uses: creyD/prettier_action@v4.6
         with:
-          prettier_options: --check
+          prettier_options: --check **/*.md
           only_changed: "true"
