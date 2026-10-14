@@ -43,17 +43,19 @@ owner: "Kyeongmin Woo"
 
 앙상블 모델의 예측값 $$u_i$$는 각 트리의 결과를 가중 합산해서 계산할 수 있다. (여기서 $$T_j(x_i)$$는 트리 $$j$$가 $$x_i$$를 입력으로 받아 출력한 결과이다.)
 
->
-
-$$ \begin{equation}
-u_i = \sum_{j=1}^M \beta_j T_j(x_i)
-\end{equation} $$
+> $$
+> \begin{equation}
+> u_i = \sum_{j=1}^M \beta_j T_j(x_i)
+> \end{equation}
+> $$
 
 Loss 함수의 경우 관측값과 예측값의 오차가 최소화되도록 오차 제곱의 합 형태인 $$L=(y_i,u_i)=(y_i - u_i)^2$$로 정의할 수 있다.
->
-$$ \begin{equation}
-\min_{\beta} \sum_{i=1}^n L\left(y_i, \sum_{j=1}^M \beta_j T_j(x_i)\right)
-\end{equation} $$
+
+> $$
+> \begin{equation}
+> \min_{\beta} \sum_{i=1}^n L\left(y_i, \sum_{j=1}^M \beta_j T_j(x_i)\right)
+> \end{equation}
+> $$
 
 일반적으로 앙상블 모델에서 트리 구성을 할 때는 고정 depth를 갖는 작은 트리를 아주 여러개 만든다. 왜냐하면 트리를 작게 하면 메모리도 적게 사용하고 예측도 빠르게 할 수 으며 트리의 개수가 많아질 수록 앙상블의 성능은 좋아지게 되기 때문이다. 일반적으로 트리의 depth는 5이하로 고정한다.
 
@@ -64,32 +66,31 @@ $$ \begin{equation}
 **Gradient boosting**는 $$\min_{u} f(u)$$로 재정의된 최소화 문제를 gradient descent를 이용해서 푸는 기법을 말한다.
 
 ## Algorithm
+
 **Gradient boosting** 알고리즘은 $$\min_u L(y, u)$$의 최적해 $$u^*$$를 찾기 위해 다음과 같은 방식으로 gradient descent를 수행한다.
 
 1. 초기 값은 임의의 트리의 결과 값으로 $$u^{(0)}=T_0$$와 같이 설정한다. 그리고, 다음의 2~4 단계를 반복한다.
 
 2. $$n$$개의 데이터의 가장 최근의 예측값인 $$u^{(k-1)}$$에 대한 음수 gradient를 계산한다.
->
-$$ \begin{equation}
-d_i = - \left . \left[ \frac{\partial L(y_i,u_i)}{\partial u_i} \right] \right|_{u_i = u_i^{(k-1)}}, i=1,\dots,n
-\end{equation} $$
+
+> $$
+> \begin{equation}
+> d_i = - \left . \left[ \frac{\partial L(y_i,u_i)}{\partial u_i} \right] \right|_{u_i = u_i^{(k-1)}}, i=1,\dots,n
+> \end{equation}
+> $$
 
 3. $$n$$개 데이터에 대한 gradient $$d_i$$와 트리의 결과 $$T(x_i)$$가 가장 비슷한 트리 $$T_k$$를 찾는다.
->
-$$ \begin{equation}
-\min_{\text{trees } T} \sum_{i=1}^n (d_i-T(x_i))^2
-\end{equation} $$
+
+> $$
+> \begin{equation}
+> \min_{\text{trees } T} \sum_{i=1}^n (d_i-T(x_i))^2
+> \end{equation}
+> $$
 
 4. Step size $$a_k$$를 계산하고 위에서 찾은 $$T_k$$를 이용하여 예측값을 업데이트한다.
->
-$$u^{(k)}=u^{(k-1)} + \alpha_k T_k$$
+
+> $$u^{(k)}=u^{(k-1)} + \alpha_k T_k$$
 
 이 알고리즘은 gradient descent로 최적해 $$u^*$$를 찾기 위해 $$u$$에 대한 gradient $$d$$를 구하고, $$d$$에 가장 가까운 $$T_k$$를 찾아서 업데이트 식에 gradient 대신 $$T_k$$를 대입해서 다음 위치를 구한다.
 
 이렇게 해서 구한 최종 예측값 $$u^*$$는 앞에서 정의했던 트리 결과의 가중 합산과 동일해짐을 알 수 있다. (즉, 재귀식 형태의 업데이트 식 $$u^{(k)}=u^{(k-1)} + \alpha_k T_k$$을 $$k=0$$까지 풀어보면 $$u^* = \sum_{k=1}^n \alpha_k T_k$$가 되어 트리 결과의 가중 합산 형태로 만들 수 있다. )
-
-
-
-
-
-$$

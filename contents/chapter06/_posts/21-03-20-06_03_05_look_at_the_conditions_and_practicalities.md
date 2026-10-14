@@ -43,54 +43,50 @@ $$x^{\star}$$가 해라면 $$\nabla f(x^{\star}) = 0$$이다. 만약 $$f$$가 st
 위의 식이 도출되는 과정은 다음과 같다.
 $$f$$가 Strong Convexity를 만족하므로 다음과 같은 상수 $$m \ge 0$$이 존재한다.
 
-> $$ \begin{align}
 > $$
-
-\nabla^2 f(x) \succeq mI \\
-\end{align} $$
+> \begin{align}
+> \nabla^2 f(x) \succeq mI \\
+> \end{align}
+> $$
 
 함수 $$f$$를 2차 Taylor 식으로 전개해보자.
 
-> $$ \begin{align}
 > $$
-
-f(y) = f(x) + \nabla f(x)^T(y−x) + \frac{1}{2} (y−x)^T \nabla^2 f(x) (y−x), \space \forall x, y
-\end{align} $$
+> \begin{align}
+> f(y) = f(x) + \nabla f(x)^T(y−x) + \frac{1}{2} (y−x)^T \nabla^2 f(x) (y−x), \space \forall x, y
+> \end{align}
+> $$
 
 그러면, 위의 $$\nabla f(x) \succeq mI $$에 따라 마지막 항을 lower bound 조건으로 정리할 수 있다.
 
 > $$ \begin{align}
+> f(y) & \ge f(x) + \nabla f(x)^T(y−x) + \frac{m}{2} \lVert y−x \rVert_2^2, \space \forall x, y
+> \end{align}
 > $$
-
-f(y) & \ge f(x) + \nabla f(x)^T(y−x) + \frac{m}{2} \lVert y−x \rVert_2^2, \space \forall x, y
-\end{align} $$
 
 $$f(y)$$를 $$y$$에 대해서 미분을 하면 $$\tilde{y} = x - (1/m) \nabla f(x)$$가 된다. $$\tilde{y}$$를 Tayor 전개에 대입해 보면 다음과 같다.
 
 > $$ \begin{align}
+> f(y) & \ge f(x) + \nabla f(x)^T(\tilde{y}−x) + \frac{m}{2} \lVert \tilde{y}−x \rVert_2^2 \\
+> & = f(x) - \frac{1}{2m} \lVert \nabla f(x) \rVert_2^2
+> \end{align}
 > $$
-
-f(y) & \ge f(x) + \nabla f(x)^T(\tilde{y}−x) + \frac{m}{2} \lVert \tilde{y}−x \rVert_2^2 \\
-& = f(x) - \frac{1}{2m} \lVert \nabla f(x) \rVert_2^2
-\end{align} $$
 
 따라서, $$f(y)$$를 $$f^{*}$$로 대체하면 다음과 같이 정리될 수 있다.
 
 > $$ \begin{align}
+> f^{*} \ge f(x) - \frac{1}{2m} \lVert \nabla f(x) \rVert_2^2
+> \end{align}
 > $$
-
-f^{*} \ge f(x) - \frac{1}{2m} \lVert \nabla f(x) \rVert_2^2
-\end{align} $$
 
 위의 Stopping rule이 다음과 같이 도출되었다.
 
 > $$ \begin{align}
+> f(x) - f^{*} \le \frac{1}{2m} \lVert \nabla f(x) \rVert^2_2 & \le \epsilon \\
+> \lVert \nabla f(x) \rVert^2_2 & \le 2m\epsilon \\
+> \lVert \nabla f(x) \rVert_2 & \le \sqrt{2m\epsilon} \\
+> \end{align}
 > $$
-
-f(x) - f^{*} \le \frac{1}{2m} \lVert \nabla f(x) \rVert^2_2 & \le \epsilon \\
-\lVert \nabla f(x) \rVert^2_2 & \le 2m\epsilon \\
-\lVert \nabla f(x) \rVert_2 & \le \sqrt{2m\epsilon} \\
-\end{align} $$
 
 ### Gradient descent의 장단점
 
