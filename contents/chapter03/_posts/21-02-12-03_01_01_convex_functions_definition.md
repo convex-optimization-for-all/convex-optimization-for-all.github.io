@@ -44,16 +44,12 @@ $$f − {m \over 2}\| x \|_{2}^{2}$$, with $$m > 0$$ 가 convex 이면 $$f$$는 
 Linear 함수를 포함한 모든 affine 함수 $$f(x) = a^T x+b$$ 는 다음 식을 만족한다.
 
 > $$
+> \begin{align*}
+> f(\theta x+(1−\theta)y) &= a^T (\theta x+(1−\theta)y) +b \\
+> &= \theta a^T x + (1−\theta) a^T y + \theta b + (1−\theta) b \\
+> &= \theta f(x)+(1−\theta)f(y) \\\\
+> &\text{for all } x,y \in \text{dom} f, \text{with } 0 \le \theta \le 1
+> \end{align*}
 > $$
 
-\begin{aligned}
-f(\theta x+(1−\theta)y) &= a^T (\theta x+(1−\theta)y) +b \\
-&= \theta a^T x + (1−\theta) a^T y + \theta b + (1−\theta) b \\
-&= \theta f(x)+(1−\theta)f(y) \\\\
-\end{aligned}
-
-$$
->$$\text{for all } x,y \in \text{dom} f, \text{with } 0 \le \theta \le 1$$
-
 즉, affine 함수는 항상 convex이며, 동시에 concave 이다.
-$$

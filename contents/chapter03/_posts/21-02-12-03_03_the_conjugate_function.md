@@ -19,31 +19,25 @@ Conjugate function은 뒷장에서 다룰 Lagrange Dual에서 최적화 문제�
 </p>
 </figure>
 
-•$$f$$가 convex가 아니어도 $$f^∗$$ 는 convex이다.
+• $$f$$가 convex가 아니어도 $$f^∗$$ 는 convex이다.
 
 #### Example
 
 > • _Negative logarithm_ $$f(x)=−\log x$$
 
-> $$f∗(y)=\sup_{x>0} (xy+ \log x)$$
->
-> $$ =
+> $$ f∗(y)=\sup_{x>0} (xy+ \log x) = \begin{cases}
+> -1-\log(-y), & y < 0 \\
+> \infty, & \text{ otherwise}
+> \end{cases}
 > $$
 
-\begin{cases}
--1-\log(-y), & y < 0 \\
-\infty, & \text{ otherwise}
-\end{cases}
+> • _Strictly convex quadratic_ $$f(x) = (1/2)x^TQx$$ with $$Q∈S_{++}^n$$
 
-$$
-
->• *Strictly convex quadratic* $$f(x) = (1/2)x^TQx$$ with $$Q∈S_{++}^n$$
-
->$$
-\begin{align}
-f∗(y)=\sup_{x} (y^Tx−(1/2)x^TQx)
-& = {1 \over 2}y^TQ^−1y
-\end{align}
-$$
+> $$
+> \begin{align}
+> f∗(y)=\sup_{x} (y^Tx−(1/2)x^TQx)
+> & = {1 \over 2}y^TQ^−1y
+> \end{align}
+> $$
 
 이는 13장에서 좀 더 상세히 다루도록 한다.

@@ -67,18 +67,12 @@ Hessian matrix는 함수의 곡률(curvature)을 결정하며 positive semidefin
 $$f:\mathbb{R}^n \mapsto \mathbb{R}$$를 norm이라 하고 정의에 의해
 
 > $$
+> \begin{aligned}
+> f(\theta x+(1−\theta)y) &= a^T (\theta x+(1−\theta)y) +b \\
+> &= \theta a^T x + (1−\theta) a^T y + \theta b + (1−\theta) b \\
+> &= \theta f(x)+(1−\theta)f(y) \\\\
+> \end{aligned}
 > $$
-
-\begin{aligned}
-f(\theta x+(1−\theta)y) \le \theta f(x)+(1−\theta)f(y), \text{ with } 0 \le \theta \le 1, \text{ for all } x,y \in \text{dom} f,
-\end{aligned}
-
-$$
->$$
-\begin{aligned}
-\|x\|_{p} = \left(\sum_{i=1}^{n} x_i^p\right)^{1/p} \text{ for } p \geq 1, \|x\| = \max_{i=1,.., n} |x_i|\\
-\end{aligned}
-$$
 
 ## Indicator function
 
@@ -87,24 +81,22 @@ $$
 즉. 정의 되지 않는 부분을 정의된 부분보다 항상 크게하여 convex의 성질을 가지게 한다.
 
 > $$ I_{C} (x) =
+> \begin{cases} 0, & x \in C\\
+> \infty, & x \notin C\\
+> \end{cases}
 > $$
 
-\begin{cases}
-0, & x \in C\\
-\infty, & x \notin C\\
-\end{cases}
-
-$$
-
-
 ## Support function
+
 임의의 집합 $$C$$가 있다고 가정하자. 집합 $$C$$가 Convex 이건 아니건 상관 없이 $$C$$의 support 함수는 convex 이다
+
 > $$I_{C}^{*} (x)$$ = $$\max_{y\in C} x^Ty$$ is convex
 
 Support function의 정의는 [Wikipedia 정의](https://en.wikipedia.org/wiki/Support_function)를 참고하라.
 
 ## Max function
+
 연속된 Convex 함수들의 Max 함수는 Convex 이다.
 즉, 연속된 Convex 함수들의 최댓값들을 이은 외각은 Convex가 된다.
+
 > $$f(x) = \max \{x_1,..., x_n\}$$ is convex
-$$

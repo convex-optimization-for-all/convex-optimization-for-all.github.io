@@ -23,7 +23,7 @@ $$f$$가 quasiconvex function일 때, nonnegative weighted maximum $$f$$는 quas
 
 ## Composition
 
-만약 $$g : \mathbb{R}^n \mpasto \mathbb{R}$$가 quasiconvex이고, $$h : \mathbb{R} \mpasto \mathbb{R}$$이 nondecreasing이면, 합성곱 f는 quasiconvex를 만족한다.
+만약 $$g : \mathbb{R}^n \mapsto \mathbb{R}$$가 quasiconvex이고, $$h : \mathbb{R} \mapsto \mathbb{R}$$이 nondecreasing이면, 합성곱 f는 quasiconvex를 만족한다.
 
 > $$f = h \circ g$$ is quasiconvex if h is non-decreasing, g is quasiconvex.
 

@@ -16,18 +16,18 @@ owner: "Minjoo Lee"
 
 함수 $$f$$가 convex이면, 그 sublevel set 도 convex 이다.
 
-> $$\{x \in dom f: f(x) \leq t\}$$, for all $$t \in \mathbb{R}$$
+> $$\{x \in \text{dom} f: f(x) \leq t\}$$, for all $$t \in \mathbb{R}$$
 
 ### [참고] Sublevel set
 
-함수의 $$f:\mathbb{R}^n \mapsto \mathbb{R}$$에 대한 $$C_\alpha = \{x \in \text{dom} f | f(x) \leq \alpha\}$$를 _$$\alpha$$-sublevel set_ 이라고 한다.<br>
+함수의 $$f:\mathbb{R}^n \mapsto \mathbb{R}$$에 대한 $$C_\alpha = \{x \in \text{dom} f \mid f(x) \leq \alpha\}$$를 $$\alpha$$-sublevel set 이라고 한다.
 
 ## First-order characterization
 
 함수 $$f$$가 미분가능하다고 가정하면, 다음이 성립한다.<br>
-함수 $$f$$의 도메인 $$dom $$ $$f$$가 convex이고, 함수 $$f$$의 도메인에 속하는 임의의 $$x, y$$ 에 대하여 $$f(y) \geq f(x) +\nabla f(x)^T(y−x)$$ 가 성립하면 함수 $$f$$는 convex 이며 그 역도 성립한다.
+함수 $$f$$의 도메인 $$\text{dom} f$$가 convex이고, 함수 $$f$$의 도메인에 속하는 임의의 $$x, y$$ 에 대하여 $$f(y) \geq f(x) +\nabla f(x)^T(y−x)$$ 가 성립하면 함수 $$f$$는 convex 이며 그 역도 성립한다.
 
-> $$f$$is convex $$\iff \text{dom}f$$ is convex, and $$f(y) \geq f(x) +\nabla f(x)^T(y−x)$$ for all $$x,y \in \text{dom} f$$
+> $$f$$is convex $$\iff \text{dom} f$$ is convex, and $$f(y) \geq f(x) +\nabla f(x)^T(y−x)$$ for all $$x,y \in \text{dom} f$$
 
 아래 그림은 미분 가능한 convex function $$f$$에 관한 1차 테일러 다항식의 그래프이다.
 임의의 $$x, y \in \text{dom} f$$에 대해서 $$f(y) \geq f(x) + \nabla f(x)^T(y-x)$$ 임을 만족하는 것을 보여준다.

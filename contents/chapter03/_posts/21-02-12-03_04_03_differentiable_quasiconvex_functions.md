@@ -40,4 +40,4 @@ $$\mathbb{R}$$에서 quasiconvex일 때,
 1. $$ \nabla f(x) = 0$$일 때, 항상 $$\nabla^2f(x) \succeq 0$$이 만족되어야 한다. <br>
 2. $$ \nabla f(x) \neq 0$$이라면, $$y^T \nabla f(x) = 0 \Longrightarrow y^T \nabla^2 f(x)y \geq 0$$ 에서 $$\nabla^2 f(x)$$ 가 헤시안 행렬로 작용하여, $$(n$$-$$1)$$-$$dimensional$$ $$subspace \nabla f(x)^\perp$$에서 positive semidefinite이 된다.
 
-($(n-1)$-dimensional subspace $$\nabla f(x)^\perp$$은 $$\nabla f(x)$$와 직교하는 $$(n-1)$$ 차원의 subspace를 의미한다. $$(n-1)$$차원인 이유는 $$\nabla f(x)$$가 n차원 함수 $$f$$를 미분했기 떄문에 차원이 하나 줄었기 때문이다.)
+($$(n-1)$$-dimensional subspace $$\nabla f(x)^\perp$$은 $$\nabla f(x)$$와 직교하는 $$(n-1)$$ 차원의 subspace를 의미한다. $$(n-1)$$차원인 이유는 $$\nabla f(x)$$가 n차원 함수 $$f$$를 미분했기 떄문에 차원이 하나 줄었기 때문이다.)

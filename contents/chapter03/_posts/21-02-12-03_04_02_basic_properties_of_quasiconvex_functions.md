@@ -41,4 +41,4 @@ Quasiconvex는 Jensen's inequality 를 통해 다음과 같이 정의된다.
  <figcaption style="text-align: center;">[Fig2]</figcaption>
 </p>
 </figure>
-**quasiconvex function on $$\mathbb{R}$$. $$t leq c(t \in \text{dom} f)$$에서는 nonincreasing, $$t \geq c(t \in \text{dom} f)$$에서는 nondecreasing 하다.**
+**quasiconvex function on $$\mathbb{R}$$. $$t \leq c(t \in \text{dom} f)$$에서는 nonincreasing, $$t \geq c(t \in \text{dom} f)$$에서는 nondecreasing 하다.**
