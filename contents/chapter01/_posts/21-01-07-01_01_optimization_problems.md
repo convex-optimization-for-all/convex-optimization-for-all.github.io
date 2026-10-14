@@ -63,3 +63,4 @@ $$D = dom(f) \cap \bigcap_{i=1}^m {\rm dom}(g_i) \cap \bigcap_{j=1}^r dom(h_j)$$
 * variables: 모델 파라미터
 * constraints: 사전 정보(e.g. 어떤 파라미터는 non-negative), 파라미터에 대한 제약사항
 * objective: 예측값에 대한 에러
+
