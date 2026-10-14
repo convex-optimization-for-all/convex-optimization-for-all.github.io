@@ -1,4 +1,4 @@
-name: md_format_check
+name: markdown_check
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
       - "**.markdown"
 
 jobs:
-  formatCheck:
+  markdownCheck:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
