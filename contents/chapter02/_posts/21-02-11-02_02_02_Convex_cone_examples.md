@@ -61,7 +61,8 @@ X =
 x, y \\\
 y, z
 \end{bmatrix}
-\in \mathbb{S}^2_+ \iff x \ge 0, z \ge 0, xz \ge y^2$$
+\in \mathbb{S}^2_+ \iff x \ge 0, z \ge 0, xz \ge y^2
+$$
 
 <figure class="image" style="align: center;">
 <p align="center">
@@ -69,6 +70,3 @@ y, z
   <figcaption style="text-align: center;">[Fig3] Positive semidefinite cone [1]</figcaption>
 </p>
 </figure>
-
-
-$$
