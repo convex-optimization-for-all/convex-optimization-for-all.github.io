@@ -1,0 +1,23 @@
+name: md_format_check
+
+on:
+  pull_request:
+    paths:
+      - "**.md"
+      - "**.markdown"
+
+jobs:
+  formatCheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Prettify md
+        uses: creyD/prettier_action@v4.6
+        with:
+          prettier_options: --check **/*.md
+          only_changed: True
