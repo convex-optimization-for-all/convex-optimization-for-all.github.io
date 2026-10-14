@@ -8,5 +8,5 @@ owner: "YoungJae Choung"
 
 이 절에서는 두 가지 Mixed Integer Programming의 예제를 들어보도록 할 예정이다.
 
-* Best subset selection
-* Least mean squares
+- Best subset selection
+- Least mean squares

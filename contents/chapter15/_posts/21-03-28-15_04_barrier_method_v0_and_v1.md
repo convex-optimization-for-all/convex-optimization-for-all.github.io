@@ -5,10 +5,14 @@ chapter: "15"
 order: 10
 owner: "Minjoo Lee"
 ---
+
 ## Barrier method v.0
-**Barrier method v.0**은 $$\epsilon \gt 0$$일 때 $$t = m/\epsilon$$로 선택해서 다음 barrier problem을 풀어서 $$f(x^*(t)) - f(x^*) \le \epsilon $$를 구한다. 
+
+**Barrier method v.0**은 $$\epsilon \gt 0$$일 때 $$t = m/\epsilon$$로 선택해서 다음 barrier problem을 풀어서 $$f(x^*(t)) - f(x^*) \le \epsilon $$를 구한다.
+
 >
-$$\begin{align}
+
+$$ \begin{align}
  &\min_{x} \ && tf(x) + \phi(x) \\
  &\text{subject to } \ && Ax = b \\
 \end{align}$$
@@ -45,11 +49,11 @@ $$\begin{align}
 $$\mu$$와 $$t^{(0)}$$의 선택에 있어서, 다음의 trade off를 고려해야 한다.
 ###### $$\mu$$의 선택
 * $$\mu$$가 너무 작다면, outer iteration이 많아진다. (이 경우 warm start가 도움이 된다.)<br>
-* $$\mu$$가 너무 크다면, 모든 centering step에서 newton method가 수렴할 때까지 iteration을 많이 해야 한다. 
+* $$\mu$$가 너무 크다면, 모든 centering step에서 newton method가 수렴할 때까지 iteration을 많이 해야 한다.
 
 ###### 알고리즘 초기값 선택
 * $$t^{(0)}$$가 너무 작다면, outer iteration이 많아진다.<br>
-* $$t^{(0)}$$가 너무 크다면, v.0과 같은 문제가 된다. 따라서, 첫번째 centering step에서 newton method가 $$x^{(0)}$$을 구하기 위해 iteration을 많이 해야 한다. 
+* $$t^{(0)}$$가 너무 크다면, v.0과 같은 문제가 된다. 따라서, 첫번째 centering step에서 newton method가 $$x^{(0)}$$을 구하기 위해 iteration을 많이 해야 한다.
 
 다행히도 실제 barrier method의 성능은 $$\mu$$와 $$t^{(0)}$$의 선택에 매우 robust한 편이다. 그리고, 이들 parameter의 적절한 범위는 문제의 크기에 따라 달라진다.
 
@@ -62,3 +66,4 @@ $$\mu$$와 $$t^{(0)}$$의 선택에 있어서, 다음의 trade off를 고려해�
  <figcaption style="text-align: center;">[Fig 1] Example of small LP [3]</figcaption>
 </p>
 </figure>
+$$

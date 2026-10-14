@@ -17,9 +17,9 @@ owner: "Hooncheol Shin"
 </p>
 </figure>
 
-* The domain set is convex
-* The objective function $$ f $$ and the inequality constraint function $$ g_i $$ are convex
-* The equality constraint function $$ h_j $$ is affine
+- The domain set is convex
+- The objective function $$ f $$ and the inequality constraint function $$ g_i $$ are convex
+- The equality constraint function $$ h_j $$ is affine
 
 이때 objective function과 constraint function의 유형에 따라 optimization problem은 다양한 범주로 나뉘어지게 된다. 이 장에서는 그 중 다음 6가지 세부항목에 대해 알아보도록 할 것이다.
 

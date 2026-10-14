@@ -10,20 +10,20 @@ owner: "Wontak Ryu"
 
 Convexity를 유지하는 연산에는 다음과 같은 것들이 있다.
 
-* Intersection
-* Affine functions
-* Perspective function
-* Linear-fractional functions
+- Intersection
+- Affine functions
+- Perspective function
+- Linear-fractional functions
 
 ## Intersection
 
 Convex set의 교집합은 convex이다. 즉, $$S_1$$과 $$S_2$$이 convex라면 $$S_1 \cap S_2$$은
 convex이다. 집합이 무한히 존재할 때에도 이와 같은 성질은 유지된다. (참고로 subspaces, affine sets, convex cones도 교집합 연산에 닫혀있다.)
 
-Set의 convexity는 무한한 halfspace의 교집합으로 표현할 수 있으며 그 반대도 성립한다. 
+Set의 convexity는 무한한 halfspace의 교집합으로 표현할 수 있으며 그 반대도 성립한다.
 즉, closed convex set $$S$$는 $$S$$를 포함하는 모든 halfspace의 교집합으로 다음과 같이 정의할 수 있다.
 
->$$S = \bigcap \{\mathcal{H} \mid \mathcal{H} \text{ halfspace }, S \subseteq \mathcal{H}\}$$
+> $$S = \bigcap \{\mathcal{H} \mid \mathcal{H} \text{ halfspace }, S \subseteq \mathcal{H}\}$$
 
 ## Affine functions
 
@@ -31,14 +31,14 @@ $$A \in \mathbb{R}^{m \times n}$$이고 $$b \in \mathbb{R}^{m}$$일 때, $$f : \
 
 이때, $$C \subseteq \mathbb{R}^n$$가 convex이고 $$D \subseteq \mathbb{R}^m$$가 convex이면
 
-* affine image인 $$f(C) = \{f(x) \mid x \in C\}$$는 convex이다.
-* affine preimage인 $$f^{-1}(D) = \{x \mid f(x) \in D\}$$는 convex이다.
+- affine image인 $$f(C) = \{f(x) \mid x \in C\}$$는 convex이다.
+- affine preimage인 $$f^{-1}(D) = \{x \mid f(x) \in D\}$$는 convex이다.
 
 Affine function인 **scaling and translation**, **projection**, **sum of two sets**, **partial sum of set**과 같은 연산을 convex set에 적용하면 결과는 convex set이다.
 
-Linear matrix inequality의 해집합 $$\{x \mid x_1 A_1 + \cdots + x_m A_m \preceq B\} (\text{ with } A_i, B \in S^n)$$도 convex이다. 
+Linear matrix inequality의 해집합 $$\{x \mid x_1 A_1 + \cdots + x_m A_m \preceq B\} (\text{ with } A_i, B \in S^n)$$도 convex이다.
 
-Hyperbolic cone $$\{x \mid x^T P x \lt (c^T x)^2, c^T x \gt 0\}$$ (with $$P \subseteq S^n_+$$, $$c \in \mathbb{R}^n$$)도 convex이다. 
+Hyperbolic cone $$\{x \mid x^T P x \lt (c^T x)^2, c^T x \gt 0\}$$ (with $$P \subseteq S^n_+$$, $$c \in \mathbb{R}^n$$)도 convex이다.
 
 ## Perspective function
 
@@ -55,7 +55,6 @@ Perspective function은 pin-hole 카메라가 작동하는 원리와 같다. 멀
 </p>
 </figure>
 
-
 아래 그림에서 피사체의 한 점이 좌표 $$(x_1, x_2, x_3)$$로 표현된다고 하면, 검정색 가로선은 $$x_3 = 0 \in \mathbb{R}^3$$이고 원점을 포함한다. 이때 원점이 pine-hole이 되며 Image plane인 $$x_3 = −1$$에 피사체가 맺힌다. 피사체의 점은 perspective function에 의해 맵핑되어 Image plane에 점 $$-(x_1 / x_3, x_2 / x_3)$$으로 맺히게 된다.
 
 <figure class="image" style="align: center;">
@@ -67,15 +66,15 @@ Perspective function은 pin-hole 카메라가 작동하는 원리와 같다. 멀
 
 ## Linear-fractional functions
 
-Linear-fractional function은 perspective function과 affine function으로 구성된다. 
+Linear-fractional function은 perspective function과 affine function으로 구성된다.
 
 > $$f(x) = (A x + b)/(c^T x + d), \mathbb{dom} f(x) = \{x \mid c^T x + d \gt 0 \} (A \in \mathbb{R}^{m \times n}, b \in \mathbb{R}^m, c \in  \mathbb{R}^n, d \in R)$$
 
 Linear-fractional function에서 $$c = 0$$이고 $$d \gt 0$$이면 affine function이 된다. 따라서, affine function과 linear function은 linear-fractional function의 special case라고 할 수 있다.
 
-기하학적으로 이 함수는 affine function $$A x + b$$를 적용하고  projection function을 다시 적용한 것으로 볼 수 있다. 단, vector의 마지막 항목이 $$c^T x + d$$인 경우이다.
+기하학적으로 이 함수는 affine function $$A x + b$$를 적용하고 projection function을 다시 적용한 것으로 볼 수 있다. 단, vector의 마지막 항목이 $$c^T x + d$$인 경우이다.
 
-다음 그림은 linear fractional function $$f(x) = \frac{1}{(x_1 + x_2 + 1)} x$$, **dom** $$f(x) = \{(x_1, x_2) \mid x_1 + x_2 + 1 \gt 0\}$$의 domain과 image를 보여주고 있다. $$C \subseteq \mathbb{R}^2$$일 때 왼쪽 그림은 domain이며, 점선은 domain $$f$$의 boundary이다. 오른쪽 그림은 $$f$$의 image이며 점선은  domain $$f^{-1}$$의  boundary이다.
+다음 그림은 linear fractional function $$f(x) = \frac{1}{(x_1 + x_2 + 1)} x$$, **dom** $$f(x) = \{(x_1, x_2) \mid x_1 + x_2 + 1 \gt 0\}$$의 domain과 image를 보여주고 있다. $$C \subseteq \mathbb{R}^2$$일 때 왼쪽 그림은 domain이며, 점선은 domain $$f$$의 boundary이다. 오른쪽 그림은 $$f$$의 image이며 점선은 domain $$f^{-1}$$의 boundary이다.
 
 <figure class="image" style="align: center;">
 <p align="center">

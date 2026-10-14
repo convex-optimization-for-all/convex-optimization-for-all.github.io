@@ -5,6 +5,7 @@ chapter: "14"
 order: 10
 owner: "Minjoo Lee"
 ---
+
 앞서 살펴본 Newton's method의 convergence analysis에서는 크게 두 가지의 단점이 존재한다. [1]
 
 첫 번째로는, 현실상의 문제에서는 찾기 어려운 Lipschitz constant L, strong convexity의 lower bound, upper bound m, M 등이 수식에 포함되기 때문이다. 이 때문에, 수렴성과 수렴속도를 보일 수는 있지만, 구체적으로 해를 찾는 데 있어 얼마만큼의 Newton step이 필요한가 등의 분석은 거의 불가능하다.

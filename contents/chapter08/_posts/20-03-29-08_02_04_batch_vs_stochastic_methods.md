@@ -6,7 +6,7 @@ order: 15
 owner: "Kyeongmin Woo"
 ---
 
-Batch method와 stochastic method의 수렴은 다음과 같은 성질을 띈다. 
+Batch method와 stochastic method의 수렴은 다음과 같은 성질을 띈다.
 
 일반적으로 stochastic method는 초반에 빠르게 optimal point 근처로 접근하지만, optimal point 근처에서 어느 순간 더 이상의 수렴을 잘하지 못한다. 반면 batch method는 느리지만 비교적 정확하게 optimal point로 점차 수렴해가는 것을 관찰 할 수 있다.
 

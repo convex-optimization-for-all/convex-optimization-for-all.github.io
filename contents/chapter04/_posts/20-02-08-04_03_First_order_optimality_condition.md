@@ -5,11 +5,15 @@ chapter: "04"
 order: 4
 owner: "YoungJae Choung"
 ---
->$$
+
+> $$
+> $$
+
 \begin{aligned}
 &\min_x &&f(x) \\
 &\text{subject to} &&x \in C
 \end{aligned}
+
 $$
 
 위 convex problem에서 objective function $$f$$가 미분 가능할 때, <br>
@@ -41,3 +45,4 @@ optimality condition은 다음과 같이 정의된다.
 마찬가지로 −∇f(x) 는 x에서 optimal point로 이동하는 방향인데, <br>
 $$\nabla f(x) = 0$$라는 것은 <br>
 $$f$$를 최소화시키기 위해 $$x$$에서 더이상 이동할 곳이 없다는 것과 같다.
+$$

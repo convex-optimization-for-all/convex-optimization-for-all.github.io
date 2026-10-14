@@ -5,15 +5,19 @@ chapter: "15"
 order: 3
 owner: "Minjoo Lee"
 ---
+
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     displayAlign: "center"
 });
 </script>
+
 다음과 같은 convex optimization 문제를 고려해보자.
+
 >
-$$\begin{align}
-&\min_{x}           && f(x) \\ 
+
+$$ \begin{align}
+&\min_{x}           && f(x) \\
 &\text{subject to } && Ax = b \\
                     &&& h_{i}(x) \leq 0, i = 1, \dotsc, m
 \end{align}$$
@@ -42,6 +46,7 @@ Active set method의 경우 최적화 결과에 영향을 주는 constraints가 
 
 이와 같이 문제를 equality constrained minimization problem으로 변환할 수 있다. 하지만, Indicator function의 경우 여전히 boundary를 포함하고 있기 때문에 원래 문제의 boundary 계산의 어려움을 여전히 갖고 있으며 differentiable하지 않기 때문에 newton's method를 적용하기는 어렵다.
 
-indicator function $$I_C$$를 **barrier function**으로 근사하면 어떨까? 그럴 경우 boundary는 포함하지 않게 되며 differentiable하기 때문에 newton's method를 적용할 수 있게 된다. 
+indicator function $$I_C$$를 **barrier function**으로 근사하면 어떨까? 그럴 경우 boundary는 포함하지 않게 되며 differentiable하기 때문에 newton's method를 적용할 수 있게 된다.
 
 이와 같이 barrier function으로 재정의한 문제를 푸는 방법을 barrier method라고 하는데 다음 절에서 자세히 소개하고 있다.
+$$

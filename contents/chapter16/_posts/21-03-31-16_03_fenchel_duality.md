@@ -5,6 +5,7 @@ chapter: "16"
 order: 4
 owner: "Minjoo Lee"
 ---
+
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     displayAlign: "center"
@@ -28,17 +29,19 @@ $$
 주어진 문제는 equality constraint가 추가된 형태로 재정의 할 수 있다.
 
 #### Primal problem rewritten
+
 >
+
 $$
  \begin{align}
  &\min_{x,z} \        && f(x) + g(z)\\
  &\text{subject to} \ && Ax = z.
  \end{align}
- $$
+$$
 
 Conjugate function을 이용하여 재정의한 primal problem의 dual problem을 유도해보자. <br/>
 
-* **Recall:** $$f^*(s) \doteq  \max_{x} \big( s^Tx - f(x) \big) = \min_{x} \big( f(x) - s^Tx \big)$$
+- **Recall:** $$f^*(s) \doteq  \max_{x} \big( s^Tx - f(x) \big) = \min_{x} \big( f(x) - s^Tx \big)$$
 
 <br/>
 $$
@@ -51,27 +54,32 @@ $$
 $$
 
 #### Fenchel duality
+
 > $$
 > \max_{v} -f^*(A^Tv) - g^*(-v)
 > $$
 
-* **Nice Property:** $$f, g$$가 convex이고 닫혀있으면(closed), dual의 dual은 다시 primal이 된다. (Symmetric)
+- **Nice Property:** $$f, g$$가 convex이고 닫혀있으면(closed), dual의 dual은 다시 primal이 된다. (Symmetric)
 
 ## Example: conic programming
 
 #### Primal problem of CP in standard form
->$$
+
+> $$
+> $$
+
 \begin{align}
-    \mathop{\text{minimize}}_x &\quad c^Tx \\\\
-    \text{subject to} &\quad Ax = b \\\\
-    &\quad x \in K
+\mathop{\text{minimize}}_x &\quad c^Tx \\\\
+\text{subject to} &\quad Ax = b \\\\
+&\quad x \in K
 \end{align}
+
 $$
 
 위 문제는 두 함수 $$f(x) = c^Tx + I_K(x)$$와 $$g(z) = I_{\{b\}}(z)$$를 이용하여 재정의할 수 있다.<br/>
 
 * **Note:** $$\begin{equation}
-    f(x) + g(Ax) = 
+    f(x) + g(Ax) =
     \begin{cases}
       0, & \text{if}\ Ax=b, x \in K \\\\
       \infty, & \text{otherwise}
@@ -137,7 +145,7 @@ $$I_{\{b\}}(b) = 0$$이므로 문제에서 제거할 수 있다.
 > &\text{subject to} \ && y^TA + s = c \\\
 > &  \; s \in K^* \\
 > \end{align}
-> $$ 
+> $$
 
 * Primal problem과 dual problem중 하나라도 strictly feasible하다면 strong duality를 만족한다.
 * Primal problem과 dual problem 둘 다 strictly feasible하다면 strong duality를 만족하고 primal & dual optima가 존재한다.
@@ -185,3 +193,4 @@ SDP에 대한 primal & dual problem과 SDP의 barrier problem에 대한 primal &
 >    &\text{subject to } &&{\sum_{i=1}^m y_i A_i + S = C}.
 >\end{align}
 >$$
+$$

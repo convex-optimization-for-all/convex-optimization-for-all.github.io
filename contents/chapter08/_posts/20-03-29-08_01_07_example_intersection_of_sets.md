@@ -6,17 +6,18 @@ order: 9
 owner: "Kyeongmin Woo"
 ---
 
-
-닫힌 컨벡스 집합(closed convex set)들의 교차점을 찾고 싶다고 하자. 
+닫힌 컨벡스 집합(closed convex set)들의 교차점을 찾고 싶다고 하자.
 
 우선, 임의의 점 $$x$$로 부터 집합 $$C_i$$까지의 거리를 나타내는 $$f_i(x)$$와 점 $$x$$에서 모든 집합 $$C_i, i=1,...,m$$에 대해 가장 먼 거리를 나타내는 $$f$$를 정의해보자.
+
 >
+
 $$ \begin{align}
 f_i(x) & = \mathbb{dist}(x, C_i), i=1,...,m \\
 f(x) & = \max_{1,...,m}\text{ }f_i(x)
 \end{align} $$
 
-위의 두 함수를 이용하면 다음과 같이 컨벡스 집합들의 교차점을 찾는 최적화 문제로 정의할 수 있다. 
+위의 두 함수를 이용하면 다음과 같이 컨벡스 집합들의 교차점을 찾는 최적화 문제로 정의할 수 있다.
 
 >
 $$ \begin{align}
@@ -27,25 +28,25 @@ min_{x}\text{ }f(x)
 
 ## Gradient of distance function
 
-[이전 장]({%post_url contents/chapter07/21-03-25-07_03_05_example_distance_to_convex_set %})에서 컨벡스 집합과의 거리를 $$dist(x, C_i) = \min_{y \in C} \lVert y-x \lVert _2$$로 정의했고 이 함수의 gradient는 다음과 같음을 보였다. 
+[이전 장]({%post_url contents/chapter07/21-03-25-07_03_05_example_distance_to_convex_set %})에서 컨벡스 집합과의 거리를 $$dist(x, C_i) = \min_{y \in C} \lVert y-x \lVert _2$$로 정의했고 이 함수의 gradient는 다음과 같음을 보였다.
 
 >
 $$ \begin{align}
 \partial dist(x,C) = \frac{x-P_C(x)}{ \Vert x-P_C(x) \Vert_2}
 \end{align} $$
 
-여기서 $$P_C(x)$$는 점 $$x$$에서 집합 $$C$$으로의 projection이다. 
+여기서 $$P_C(x)$$는 점 $$x$$에서 집합 $$C$$으로의 projection이다.
 
 ## Subdifferential of finite pointwise maximum
 
-Finite pointwise maximum 함수 $$f(x)=max_{i=1,...,m}\text{ }f_i(x)$$에 대한 subdifferential은 다음과 같이 정의 된다. 
+Finite pointwise maximum 함수 $$f(x)=max_{i=1,...,m}\text{ }f_i(x)$$에 대한 subdifferential은 다음과 같이 정의 된다.
 
 >
 $$ \begin{align}
 \partial f(x) = \text{conv}\left(\bigcup_{i:f_i(x)=f(x)} \partial f_i(x)\right)
 \end{align} $$
 
-즉, $$x$$의 subdifferential은 그 지점의 모든 subdifferential $$\partial f_i(x), i=1,...,m$$의 합집합에 대한 convex hull로 정의된다. 
+즉, $$x$$의 subdifferential은 그 지점의 모든 subdifferential $$\partial f_i(x), i=1,...,m$$의 합집합에 대한 convex hull로 정의된다.
 
 만약 $$f_i(x) = f(x)$$ 이고 $$g_i \in \partial f_i(x)$$이라면 $$g_i \in \partial f(x)$$이다.
 
@@ -83,3 +84,4 @@ x^{(k)} = P_{C_i}(x^{(k-1)})
 </p>
   <figcaption style="text-align: center;">[Fig 2] Alternating Projection Algorithm [10]</figcaption>
 </figure>
+$$

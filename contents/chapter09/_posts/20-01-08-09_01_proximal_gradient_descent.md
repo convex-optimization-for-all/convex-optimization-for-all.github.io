@@ -11,30 +11,32 @@ owner: "Kyeongmin Woo"
 **Proximal gradient descent**는 objective 함수를 differentiable한 함수와 non-differentiable한 함수로 분리해서 최적해를 찾는 방법이다. 이 절에서는 proximal gradient descent에서 함수를 정의하는 방식과 최적해를 구하는 방식을 살펴보도록 하겠다.
 
 ## Decomposable functions
+
 Objective 함수 $$f$$를 두 개의 함수 $$g$$와 $$h$$로 분리할 수 있다고 가정하자.
 
->$$f(x) = g(x) + h(x)$$
+> $$f(x) = g(x) + h(x)$$
 
 이때, 두 함수 $$g$$와 $$h$$는 다음과 같은 성질을 갖는다.
 
-* $$g$$는 convex이고 differentiable하다. (**dom**$$(g) = \mathbb{R}^n$$)
-* $$h$$는 convex이고 non-differentiable하다.
+- $$g$$는 convex이고 differentiable하다. (**dom**$$(g) = \mathbb{R}^n$$)
+- $$h$$는 convex이고 non-differentiable하다.
 
 만일 $$f$$가 differentiable하다면 gradient descent로 다음 위치를 찾을 수 있을 것이다.
 
->$$x^+ = x - t \cdot \nabla f(x)$$
+> $$x^+ = x - t \cdot \nabla f(x)$$
 
 **[참고]** Gradient descent에서는 함수 $$f$$를 $$x$$ 근처에서 Taylor 2차식으로 근사하고 2차 항의 hessian $$\nabla^2 f(x)$$를 $$\frac{1}{2t} I$$로 대체해서 정의한다. 그리고, 이 근사식의 최소 위치를 다음 위치로 선정한다. (자세한 내용은 6장 Gradient descent 참조)
 
 > \begin{align}
-x^+ = \underset{z}{\text{argmin}}  \underbrace{ f(x) + \nabla f(x)^T (z - x) + \frac{1}{2t} \parallel z - x \parallel_2 ^2}_{\tilde{f}_t(z)}
-\end{align}
+> x^+ = \underset{z}{\text{argmin}} \underbrace{ f(x) + \nabla f(x)^T (z - x) + \frac{1}{2t} \parallel z - x \parallel_2 ^2}_{\tilde{f}_t(z)}
+> \end{align}
 
 하지만, 함수 $$f$$가 differentiable하지 않다면 gradient descent를 사용할 수 없다. 그런데, 함수 $$f$$가 $$f = g + h$$로 구성된다면 differentiable한 함수 $$g$$는 이차식으로 근사할 수 있지 않을까?
 
 이런 아이디어에서 나온 방법이 **Proximal gradient descent**이다. 이 방법에서는 $$g$$의 gradient descent로 예측된 위치와 가까우면서 non-differentiable한 함수 $$h$$를 동시에 작아지게 만들 수 있는 가장 좋은 위치로 조정하는 방식이다. 이런 과정은 다음 식과 같이 표현될 수 있다.
 
 >
+
 $$ \begin{align}
 x^+ & = \underset{z}{\text{argmin}}   \tilde{g}_t(z) + h(z) \\
 & = \underset{z}{\text{argmin}} \ g(x) + \nabla g(x)^T (z - x) + \frac{1}{2t} \parallel z - x \parallel_2 ^2 + h(z) \\
@@ -114,3 +116,4 @@ $$g$$의 gradient가 $$\nabla g(\beta) = -X^{T} (y - X \beta)$$이므로 proxima
   <figcaption style="text-align: center;">[Fig 1] Example of proximal gradient (ISTA) vs. subgradient method convergence rate [3]</figcaption>
 </p>
 </figure>
+$$

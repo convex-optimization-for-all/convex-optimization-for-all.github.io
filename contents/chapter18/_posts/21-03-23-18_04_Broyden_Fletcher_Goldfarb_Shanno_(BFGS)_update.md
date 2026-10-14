@@ -10,30 +10,31 @@ BFGS의 아이디어는 DFP와 동일하다. 다만, B와 H의 역할이 뒤바�
 
 BFGS는 다음 문제를 푸는 것으로 유도된다.
 
->Solve
->$$
->\begin{align}
->& \min_{H^+} \: \: && {\|W^{1/2} (H^+ - H) W^{1/2} \|_F} \\\\
->& \text{subject to } && {H^+ = (H^+)^T} \\\\
->&&& {H^+s = y}  \\\\
->& \text{where } && W \in \mathbb{R}^{n \; \times \;n} \text{ is nonsingular and such that } Ws_k = y_k.
->\end{align}\\\\
->$$
+> Solve
+>
+> $$
+> \begin{align}
+> & \min_{H^+} \: \: && {\|W^{1/2} (H^+ - H) W^{1/2} \|_F} \\\\
+> & \text{subject to } && {H^+ = (H^+)^T} \\\\
+> &&& {H^+s = y}  \\\\
+> & \text{where } && W \in \mathbb{R}^{n \; \times \;n} \text{ is nonsingular and such that } Ws_k = y_k.
+> \end{align}\\\\
+> $$
 
 유도되는 $$H$$와 $$B$$ 에 대한 updating formula는 다음과 같다.
 
->$$
+> $$
 > B^+ = B - \frac{Bss^TB}{s^TBs} + \frac{yy^T}{y^Ts}
->$$
+> $$
 
 and
 
->$$
->\begin{align}
->H^+ &= H + \frac{(s-Hy)s^T}{y^Ts} + \frac{s(s-Hy)^T}{y^Ts} - \frac{(s-Hy)^Ty}{(y^Ts)^2} ss^T\\\\
-> &= \big( I - \frac{sy^T}{y^Ts} \big) H \big( I - \frac{ys^T}{y^Ts} \big) + \frac{ss^T}{y^Ts} 
->\end{align}
->$$
+> $$
+> \begin{align}
+> H^+ &= H + \frac{(s-Hy)s^T}{y^Ts} + \frac{s(s-Hy)^T}{y^Ts} - \frac{(s-Hy)^Ty}{(y^Ts)^2} ss^T\\\\
+> &= \big( I - \frac{sy^T}{y^Ts} \big) H \big( I - \frac{ys^T}{y^Ts} \big) + \frac{ss^T}{y^Ts}
+> \end{align}
+> $$
 
 BFGS 또한 DFP처럼 positive definiteness를 유지한다. (만약 $$B$$가 positive definite이고 $$s^Ty > 0$$이면 $$B^+$$는 positive definite이다.)
 

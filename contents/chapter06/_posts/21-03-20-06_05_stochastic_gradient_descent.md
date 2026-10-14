@@ -7,7 +7,9 @@ owner: "Kyeongmin Woo"
 ---
 
 다음과 같이 함수의 합을 최소화하는 문제를 고려해보자.
+
 >
+
 $$ \begin{equation}
 \min_x \sum_{i=1}^m f_i(x)
 \end{equation} $$
@@ -31,7 +33,7 @@ $$ \begin{equation}
 x^{(k)} = x^{(k-1)} - t_k \cdot \nabla f_{i_k} (x^{(k-1)}), \, i_k \in \{1,2,\dots,m\}
 \end{equation} $$
 
-함수 인덱스 $$i_k$$는 다음 두 가지 방식으로 선택할 수 있다. 
+함수 인덱스 $$i_k$$는 다음 두 가지 방식으로 선택할 수 있다.
 
 * **순환 업데이트 (Cyclic rule)**: 모든 함수의 인덱스를 동일한 순서로 주기적으로 반복해서 선택하는 방법 $$i_k = 1,2,\dots,m, 1,2,\dots,m, ... $$
 * **랜덤 업데이트 (Randomized rule)**: 함수의 인덱스를 균등하게 랜덤하게 선택하는 방법 $$i_k \in \{1,2,\dots,m\}$$
@@ -54,13 +56,16 @@ $$
 GD의 경우 $$k$$ step에서 $$k+1$$ step으로 한번의 업데이트를 했을 경우 다음과 같이 진행이 된다.
 
 >
+
 $$ \begin{equation}
 \text{GD Batch : } \quad x^{(k+1)} = x^{(k)} - t_k \cdot \sum_{i=1}^{m} \nabla f_i (x^{(k)})
-\end{equation} 
+\end{equation}
 $$
 
-따라서, 두 업데이트 방식으로 최적값을 탐색할 경우 방향은 아래와 같은 차이를 보이게 된다. 
+따라서, 두 업데이트 방식으로 최적값을 탐색할 경우 방향은 아래와 같은 차이를 보이게 된다.
+
 >
+
 $$ \begin{equation}
 \sum_{i=1}^{m}[ \nabla f_i (x^{(k+i-1)}) - \nabla f_i (x^{(k)})]
 \end{equation} $$
@@ -68,3 +73,4 @@ $$ \begin{equation}
 만일 각  $$\nabla f_i(x)$$가 $$x$$에 대해서 크게 변하지 않는다면 즉, Lipschitz continuous하다면 SGD는 수렴하게 되며 결과적으로 위의 두 방식은 동일한 최적해로 수렴하게 된다.
 
 경험적으로 SGD 방식은 최적점에서 멀리 떨어져 있을 때는 효과적으로 동작하지만 최적점에 가깝게 왔을 때는 수렴에 어려움을 겪는 것으로 알려져 있다.
+$$

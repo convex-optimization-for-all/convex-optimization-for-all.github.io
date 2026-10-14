@@ -25,12 +25,11 @@ $$
 </p>
 </figure>
 
-
 <br/>
 
 **Q2. 그렇다면 $$f: \mathbb{R}^n \rightarrow \mathbb{R}$$가 convex이지만 '미분 불가능한' 함수일때, 각 좌표축에 대해 $$f$$를 최소화시킨 지점 $$x$$는 항상 global minimizer인가?**
 
-**A2: 아니다. 이 경우에는 $$x$$가 $$f$$에 대한 global minimizer라고 단언할 수 없다. (반례: 아래 Fig2)** 
+**A2: 아니다. 이 경우에는 $$x$$가 $$f$$에 대한 global minimizer라고 단언할 수 없다. (반례: 아래 Fig2)**
 
 아래 반례의 우측 등고선을 보면 표시된 지점이 global minimum이 아님에도 불구하고 어느 좌표축 방향으로 이동하더라도 $$f$$를 더 작게할 수 없음을 알 수 있다. ($$f$$를 더 작게 만들기 위해서는 등고선 안쪽으로 이동 가능해야 한다.) 이 위치에서는 좌표축과 평행한 두 개의 접선 내부로 등고선의 안쪽 모든 영역이 포함되기 때문이다. 반면 $$f$$가 미분 가능한 convex 함수인 경우에는 등고선의 어느 지점에서도 단 하나만의 접선만이 존재하므로 이런 현상이 발생하지 않는다.
 
@@ -45,7 +44,8 @@ $$
 **Q3. $$f$$를 미분 가능한 convex 함수 $$g$$와 convex 함수 $$h$$의 합으로 표현할 수 있을때, 각 좌표축에 대해 $$f$$를 최소화시킨 지점 $$x$$는 항상 global minimizer인가? (즉, $$f(x) = g(x) + \sum_{i=1}^{n} h_i(x_i)$$)**
 
 **A3. 그렇다. 임의의(any) $$y$$에 대해 다음을 만족하기 때문이다. **
-$$\begin{align}
+
+$$ \begin{align}
 f(y) - f(x) &\ge \nabla g(x)^T (y-x) + \sum_{i=1}^{n} \big[ h_i(y_i) - h_i(x_i) \big] \\\\
 &= \sum_{i=1}^{n} \big[ \underbrace{\nabla_i g(x) (y_i - x_i) + h_i(y_i) - h_i(x_i)}_{\ge 0} \big] \ge 0
 \end{align}$$
@@ -117,3 +117,4 @@ $$f(x) = g(x) + \sum_{i=1}^{n} h_i(x_i)$$ with $$g$$ convex, differentiable and 
 >\end{align}
 >$$
 
+$$

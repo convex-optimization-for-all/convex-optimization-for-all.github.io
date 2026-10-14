@@ -6,10 +6,11 @@ order: 6
 owner: "Kyeongmin Woo"
 ---
 
-Gradient descent에서 곡면의 특성에 맞춰 step size를 적응적으로 선택하는 방법 중 또 다른 하나가  **exact line search**이다. 
+Gradient descent에서 곡면의 특성에 맞춰 step size를 적응적으로 선택하는 방법 중 또 다른 하나가 **exact line search**이다.
 
 #### Exact line search 방법이란?
-**Exact line search** 방법에서는 gradient 음수 방향의 직선을 따라가며 가장 좋은 step size를 선택한다. 
+
+**Exact line search** 방법에서는 gradient 음수 방향의 직선을 따라가며 가장 좋은 step size를 선택한다.
 
 다음 식에서 알 수 있듯이 $$s$$는 0보다 큰 값으로 $$s$$를 키우면 다음 step 위치인 $$x - s \nabla f(x)$$도 현재 위치에서 멀어진다. 따라서, $$s$$를 키우면서 $$f$$가 최소가 되는 지점의 step size $$t$$를 찾을 수 있다.
 

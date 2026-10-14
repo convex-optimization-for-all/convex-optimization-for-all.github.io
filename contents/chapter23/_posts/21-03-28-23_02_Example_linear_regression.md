@@ -14,7 +14,7 @@ Linear regression 문제를 다음과 같이 정의해보겠다.
 $$\beta_j,\: j \neq i$$가 고정된 값일때, 주어진 목적함수를 최소화시키는 $$\beta_i$$를 구해보자.
 ($$-i$$는 $$i$$를 제외한 나머지 항을 의미한다. - $$X$$의 경우 $$i$$번째 column을 제외한 나머지 column.)
 
-$$\begin{align}
+$$ \begin{align}
 0 &= \nabla_i f(\beta)\\\\
 &= X_i^T (X\beta - y)\\\\
 &= X_i^T (X_i \beta_i + X_{-i} \beta_{-i} - y)\\\\
@@ -43,3 +43,4 @@ Coordinate descent를 통해 $$\beta_i$$ for $$i=1,2,\dots,p,1,2,\dots$$를 반�
 **A. 그렇다.** 앞서 소개한 CD의 업데이트 식을 한 step의 시간복잡도가 $$O(n)$$인 형태로 변형시킬 수 있다. 그렇다면 CD에 대한 한 cycle의 시간복잡도는 $$O(np)$$가 되며 GD의 한 step과 같은 시간복잡도를 가지게 된다.
 
 * **Gradient descent update:** $$\beta \leftarrow \beta + tX^T(y-X\beta)$$, $$X\beta$$ 연산에 의해 시간복잡도는 $$O(np)$$ flops가 된다.
+$$

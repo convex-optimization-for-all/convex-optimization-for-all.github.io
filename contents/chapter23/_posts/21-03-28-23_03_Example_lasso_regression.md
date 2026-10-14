@@ -6,7 +6,6 @@ order: 4
 owner: "YoungJae Choung"
 ---
 
-
 Lasso regression 문제를 아래와 같이 nonsmooth part가 분리되어있는 목적함수의 형태로 정의해보겠다.
 
 > $$
@@ -18,10 +17,10 @@ $$\|\beta\|_1 = \sum_{i=1}^p | \beta_i |$$
 
 $$\beta_j, j \neq i$$ 가 고정된 값일때, 주어진 목적함수를 최소화시키는 $$\beta_i$$를 구해보자.
 
-$$\begin{align}
+$$ \begin{align}
 &0 = \nabla_i f(\beta) = X_i^T X_i \beta_i + X_i^T(X_{-i} \beta_{-i} - y) + \lambda s_i,\\\\
 &\text{where } s_i \in \partial |\beta_i|
-\Rightarrow 
+\Rightarrow
 \beta_i = S_{\lambda / \|X_i\|_2^2} \big( \frac{X_i^T(y-X_{-i} \beta_{-i})}{X_i^TX_i} \big)
 \end{align}$$
 
@@ -42,3 +41,4 @@ Solution은 thresholding level이 $$\lambda / \|X_i\|_2^2$$인 soft-thresholding
 [Linear regression의 예시]({% post_url contents/chapter23/21-03-28-23_02_Example_linear_regression %})에서와 마찬가지로 lasso regression 문제에서도 coordinate descent는 월등한 수렴속도를 보인다. (First-order method보다 더 많은 정보를 활용한다.)
 
 * **Note:** 위 실험에서의 모든 methods는 각 iteration당 $$O(np)$$ flops의 시간복잡도를 보인다.
+$$

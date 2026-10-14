@@ -11,26 +11,36 @@ owner: "YoungJae Choung"
 Residual의 median을 최소화하도록 regression을 할 경우 좀 더 robust한 regression을 할 수 있다. 이를 **Least Median of Squares**라고 하는데 데이터의 50% 정도가 corrupt되어도 estimator는 corrupt되지 않을 만큼 robust하다. 하지만 이 문제는 NP-Hard 문제이기도 하다!
 
 이 절에서는 Least Median of Squares 문제를 일반화한 **Least Quantile of Square**문제를 Integer programming으로 어떻게 푸는지 소개한다.
+
 ## Least mean squares
+
 $$X = [x^{1} \quad \dotsc \quad x^{p}] \in \mathbb{R}^{n×p}$$이고 $$y \in \mathbb{R}^{n}$$이라고 하자. 그리고 $$\beta \in \mathbb{R}^{p} $$일 때 $$r : = y - X\beta $$이라고 하자.
 
 #### Observe
-* Least squares (LS) : $$\beta_{LS} : = \underset{\beta}{\text{argmin}} \sum_{i} r^2_i$$
-* Least absolute deviation (LAD) : $$\beta_{LAD} : = \underset{\beta}{\text{argmin}} \sum_{i} \lvert r_{i} \rvert$$
+
+- Least squares (LS) : $$\beta_{LS} : = \underset{\beta}{\text{argmin}} \sum_{i} r^2_i$$
+- Least absolute deviation (LAD) : $$\beta_{LAD} : = \underset{\beta}{\text{argmin}} \sum_{i} \lvert r_{i} \rvert$$
+
 #### Least Median of Squares (LMS)
->$$\beta_{LMS} : = \underset{\beta}{\text{argmin}} (\text{median} \lvert r_{i} \rvert )$$
+
+> $$\beta_{LMS} : = \underset{\beta}{\text{argmin}} (\text{median} \lvert r_{i} \rvert )$$
 
 ## Least quantile regression
+
 Least Median of Squares 문제를 일반화한 Least Quantile of Square문제는 다음과 같이 정의할 수 있다. 여기서 $$r_{q}$$는 $$q$$번째 ordered absolute residual이다.
+
 #### Least Quantile of Squares (LQS)
->$$\beta_{LQS} : = \underset{\beta}{\text{argmin}} (\lvert r_{(q)} \rvert ), \quad 1 \le q \le n, \quad \lvert r_{1} \rvert \le \lvert r_{2} \rvert \le \cdots \le \lvert r_{n} \rvert$$
+
+> $$\beta_{LQS} : = \underset{\beta}{\text{argmin}} (\lvert r_{(q)} \rvert ), \quad 1 \le q \le n, \quad \lvert r_{1} \rvert \le \lvert r_{2} \rvert \le \cdots \le \lvert r_{n} \rvert$$
 
 #### Key step in the formulation
+
 이제 Least Quantile of Square문제를 Integer Programming으로 재정의해보자. 이때, $$r$$의 각 entry $$i$$에 대해 다음과 같은 binary variable을 사용한다.
 
->$$ \lvert r_{i} \rvert \le \lvert r_{(q)} \rvert$ or $\lvert r_{i} \rvert \ge \lvert r_{(q)} \rvert $$
+> $$ \lvert r_{i} \rvert \le \lvert r_{(q)} \rvert$ or $\lvert r_{i} \rvert \ge \lvert r_{(q)} \rvert $$
 
 #### Integer programming formulation
+
 $$\bar{\mu_{i}}$$와 $$\mu_{i}$$은 threshold로 각각의 개수는 $$k$$개, $$n-k$$개이다.
 
 > $$
@@ -48,10 +58,12 @@ $$\bar{\mu_{i}}$$와 $$\mu_{i}$$은 threshold로 각각의 개수는 $$k$$개, $
 
 이 문제에서 첫번째와 두번쨰 제약조건을 보면 residual의 절대값 $$\lvert r_{i} \rvert$$이 포함되어 있어서 convex relaxation으로 풀 수가 없다. 따라서, 첫번째와 두번쨰 제약조건을 convex function으로 변환해 주어야 한다.
 
-
 ## First-order algorithm
+
 $$\lvert r_{i} \rvert$$는 다음과 같은 형태로 convex function $$H_{q}(\beta)$$로 재정의할 수 있다.
+
 >
+
 $$ \lvert r_{q} \rvert = \lvert y_{(q)} - x^{T}_{(q)} \beta \rvert = H_{q}(\beta) - H_{q+1}(\beta)$$
 
 이때 $$H_{q}(\beta)$$는 다음과 같이 정의된다.
@@ -69,11 +81,14 @@ $$H_{q}(\beta)$$는 앞서 정의된 $$\lvert r_{i} \rvert$$을 작은것부터 
 
 Subgradient 알고리즘으로 $$H_{q}(\beta) - H_{q+1}(\beta)$$의 local minimum을 구할 수 있다.
 
-* 자세한 내용은 논문 [LEAST QUANTILE REGRESSION VIA MODERN OPTIMIZATION](https://arxiv.org/pdf/1310.8625.pdf) 참조
+- 자세한 내용은 논문 [LEAST QUANTILE REGRESSION VIA MODERN OPTIMIZATION](https://arxiv.org/pdf/1310.8625.pdf) 참조
+
 ## Computational results
-위의 논문에서  Least Quantile of Square문제를 실험한 결과는 다음 그래프에서 볼 수 있다.
+
+위의 논문에서 Least Quantile of Square문제를 실험한 결과는 다음 그래프에서 볼 수 있다.
 
 #### Mixed integer programming gap
+
 <figure class="image" style="align: center;">
 <p align="center">
   <img src="{{ site.baseurl }}/img/chapter_img/chapter25/25_01_06_LQS_results1.png" alt="[Fig1] Mixed integer programming gap [3]">
@@ -83,6 +98,7 @@ Subgradient 알고리즘으로 $$H_{q}(\beta) - H_{q+1}(\beta)$$의 local minimu
 <br>
 
 #### Cold vs Warm Starts
+
 <figure class="image" style="align: center;">
 <p align="center">
   <img src="{{ site.baseurl }}/img/chapter_img/chapter25/25_01_07_LQS_results2.png" alt="[Fig2] Cold vs Warm Starts [3]">

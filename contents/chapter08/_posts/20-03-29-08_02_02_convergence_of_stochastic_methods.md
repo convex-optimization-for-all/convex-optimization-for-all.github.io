@@ -12,10 +12,13 @@ Stochastic subgradient method에서 fixed step sizes와 diminishing step sizes�
 
 - **Fixed step sizes** for $$t_k = t$$, $$k = 1, 2, 3, ...$$
 
->$$\text{Cyclic과 randomized method는 fixed step sizes일 경우 아래를 만족한다:} \\
+> $$ \text{Cyclic과 randomized method는 fixed step sizes일 경우 아래를 만족한다:} \
+> $$
+
 \begin{align}
 \lim_{k→\infty} f(x_{best}^{(k)}) \le f^{*} + 5m^{2}G^{2}t/2
 \end{align}
+
 $$
 
 여기서 $$mG$$는 $$\sum_{i=1}^{m} f_i$$의 Lipschitz constant이다.
@@ -27,4 +30,3 @@ $$
 \lim_{k→\infty} f(x_{best}^{(k)}) = f^{*}
 \end{align}
 $$
-

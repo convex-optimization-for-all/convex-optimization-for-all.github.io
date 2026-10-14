@@ -5,16 +5,19 @@ chapter: "15"
 order: 14
 owner: "Minjoo Lee"
 ---
+
 Open convex set $$D \subset \mathbb{R}^n$$로 정의되는 convex function $$\phi : D \to \mathbb{R}$$가 다음의 조건을 만족시키면, 그 function은 파라미터 $$\nu$$를 갖는 **self-concordant barrier**이다.
 
-* $$\phi$$는 self-concordant
-* 모든 $$x \in D$$에 대해 다음과 같이 상수 $$\nu$$에 bound되는  newton decrement를 갖는다.
+- $$\phi$$는 self-concordant
+- 모든 $$x \in D$$에 대해 다음과 같이 상수 $$\nu$$에 bound되는 newton decrement를 갖는다.
 
 > $$\lambda(x)^2 = \nabla \phi(x) (\nabla^2 \phi(x))^{-1} \nabla \phi(x) \le \nu$$
 
 다음 LP 문제를 고려해보자. (여기서 $$\bar{D}$$는 domain $$D$$의 closure이다.)
+
 >
-$$\begin{align}
+
+$$ \begin{align}
 &\min_{x} \           && c^Tx \\
 &\text{subject to } \ && x \in \bar{D}  \\
 \end{align}$$
@@ -41,3 +44,4 @@ $$\begin{align}
 \end{align}$$
 
 결론적으로 $$\lambda_{t^{(0)}}(x^{(0)}) \lt \frac{1}{9}$$가 되도록 $$x^{(0)}, t^{(0)}$$으로 시작하고 $$\mu := 1 + \frac{1}{8 \sqrt(\nu)}$$으로 선택한다면, 각 centering step마다 한 newton step이면 충분하다.
+$$

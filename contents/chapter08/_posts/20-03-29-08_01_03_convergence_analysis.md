@@ -10,26 +10,27 @@ Gradient descent에서는 $$\nabla f$$가 Lipschitz continous하다고 가정하
 
 $$f$$는 convex이고 dom $$f = R^n$$이며 $$f$$가 Lipschitz condition을 만족한다고 하자.
 
->\begin{align}
+> \begin{align}
 > | f(x) - f(y) | \le G \lVert x - y \rVert_2 \text{ for all } x, y
-\end{align}
+> \end{align}
 
-다음과 같은 가정이 주어지면 fixed step sizes와 diminishing step sizes의 convergence 공식은 각각 다음과 같다. 
+다음과 같은 가정이 주어지면 fixed step sizes와 diminishing step sizes의 convergence 공식은 각각 다음과 같다.
 
-## Convergence theorem for fixed step sizes 
+## Convergence theorem for fixed step sizes
 
 Fixed step sizes는 다음과 같은 수렴성을 가진다.
->\begin{align}
-> \lim_{k→\infty} f(x^{(k)}_{best}) \le f^* + \frac{G^{2}t}{2}
-\end{align}
 
-## Convergence theorem for diminishing step sizes 
+> \begin{align}
+> \lim_{k→\infty} f(x^{(k)}_{best}) \le f^* + \frac{G^{2}t}{2}
+> \end{align}
+
+## Convergence theorem for diminishing step sizes
 
 Diminishing step sizes method는 다음과 같은 수렴성을 가진다.
 
->\begin{align}
-\lim_{k→\infty}f(x^{(k)}_{best}) = f^*
-\end{align}
+> \begin{align}
+> \lim_{k→\infty}f(x^{(k)}_{best}) = f^*
+> \end{align}
 
 ## Proofs
 
@@ -37,19 +38,22 @@ Fixed step-sizes와 diminishing step-sizes의 증명은 각각 다음과 같다.
 
 ## Proof of convergence theorem for fixed step sizes
 
-Fixed step size method는 $$\sum_{i=1}^{k}t_{i} = kt$$임을 이용하여 증명한다.  
+Fixed step size method는 $$\sum_{i=1}^{k}t_{i} = kt$$임을 이용하여 증명한다.
 
->$$\begin{align}
-& f_{best}^{(k)} - f^* \le \frac{R^{2}+G^{2}\sum_{i=1}^{k}t_{i}^{2}}{2\sum_{i=1}^{k}t_{i}} = \frac{R^{2}+G^{2}k t^{2}}{2kt}  = \frac{R^{2}}{2tk} + \frac{G^{2}t}{2} \\
-& \lim_{k→\infty}(f^{(k)}_{best} - f^*) \le 0 + \frac{G^{2}t}{2} = \frac{G^{2}t}{2} \\
+> $$ \begin{align}
+> $$
+
+& f_{best}^{(k)} - f^* \le \frac{R^{2}+G^{2}\sum_{i=1}^{k}t_{i}^{2}}{2\sum_{i=1}^{k}t_{i}} = \frac{R^{2}+G^{2}k t^{2}}{2kt} = \frac{R^{2}}{2tk} + \frac{G^{2}t}{2} \\
+& \lim_{k→\infty}(f^{(k)}_{best} - f^\*) \le 0 + \frac{G^{2}t}{2} = \frac{G^{2}t}{2} \\
 & \lim_{k→\infty}(f^{(k)}_{best}) \le f^* + \frac{G^{2}t}{2}
 \end{align}
+
 $$
 
 
-## Proof of convergence theorem for diminishing step sizes 
+## Proof of convergence theorem for diminishing step sizes
 
-Diminishing step sizes가 만족하는 아래의 성질 (1), (2)를 이용하여 basic inequality에서부터 증명한다. 
+Diminishing step sizes가 만족하는 아래의 성질 (1), (2)를 이용하여 basic inequality에서부터 증명한다.
 
 >$$
 \begin{align}
@@ -57,10 +61,14 @@ Diminishing step sizes가 만족하는 아래의 성질 (1), (2)를 이용하여
 \end{align}
 $$
 
->$$
+> $$
+> $$
+
 \begin{align}
 & f_{best}^{(k)} - f^* \le \frac{R^{2}+G^{2}\sum_{i=1}^{k}t_{i}^{2}}{2\sum_{i=1}^{k}t_{i}} \\
-& \lim_{k→\infty}(f^{(k)}_{best} - f^* ) \le \frac{R^{2}+G^{2}\beta}{2\infty} = 0 \\
-& \lim_{k→\infty}(f^{(k)}_{best}) =  f^* \\
+& \lim_{k→\infty}(f^{(k)}_{best} - f^\* ) \le \frac{R^{2}+G^{2}\beta}{2\infty} = 0 \\
+& \lim_{k→\infty}(f^{(k)}_{best}) = f^* \\
 \end{align}
+
+$$
 $$

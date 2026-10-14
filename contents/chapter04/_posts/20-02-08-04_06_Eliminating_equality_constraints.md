@@ -5,14 +5,18 @@ chapter: "04"
 order: 7
 owner: "YoungJae Choung"
 ---
+
 변수를 변경함으로써 convex problem에서 equality constraints를 소거하는 방법에 대해 알아보겠다.
 
->$$
+> $$
+> $$
+
 \begin{aligned}
 &\min_{x} &&f(x)\\
 &\text{subject to } &&g_{i}(x) \leq 0, i = 1, .., m\\
 &&&{Ax = b}.\\
 \end{aligned}
+
 $$
 
 임의의 solution $$x_{0}$$에 대해 $$Ax_{0} = b$$이고 $$\text{col}(M) = \text{null}(A)$$이면, equality constraint를 만족하는 임의의 $$x$$를 다음과 같이 표현할 수 있다.
@@ -30,5 +34,6 @@ $$
 $$
 
 단, 이와 같은 방법은 다음과 같은 이유들로 사용에 주의해야한다.
+
 1. $$M$$을 계산하는 비용은 대체로 굉장히 크다.
 2. $$x$$가 $$y$$보다 더 희소(sparse)하다면 $$y$$를 써서 계산하는 비용이 더 클 수 있다.

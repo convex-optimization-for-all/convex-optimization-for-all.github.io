@@ -26,7 +26,7 @@ contents
 
 - Jekyll에서는 `_posts` 디렉토리 내에 있는 Markdown 또는 html 파일을 블로그의 Posting으로 인식합니다. 따라서 새로운 포스팅을 작성하고자 한다면 각 디렉토리의 `_posts`에 새로 파일을 추가하시면 됩니다.
 - Jekyll의 Posting 파일들은 모두 아래와 같은 Naming Convention을 따라야 합니다.
-    - `yy-mm-dd-new_posting_name.md`
+  - `yy-mm-dd-new_posting_name.md`
 - `chapter`와 `image` 디렉토리 외의 내용들은 모두 Blog의 설정과 관련된 것들입니다. 안정적인 운영을 위해 설정과 관련된 부분들에 대해서는 직접 편집보다는 이슈로 작성해주시면 처리하겠습니다(관련 내용 수정 시 PR Merge가 어려울 수 있습니다).
 
 ## 2. Posting Convention
@@ -55,6 +55,7 @@ owner: "Kyeongmin Woo"
 
 - 수식은 Latex 문법에 따라 표기합니다.
 - $$ 와 같이 double dollar sign을 사용하여 수식임을 나타냅니다.
+  $$
 
 ```
 $$\theta x_1 + (1-\theta)x_2 \in C$$
@@ -83,7 +84,7 @@ $$\theta x_1 + (1-\theta)x_2 \in C$$
 ### 2.4 Hyperlink Convention
 
 - Blog 내의 Post에 대한 hyperlink는 jekyll post_url을 사용합니다. 첫 번째 Post인 [Optimization problems?]({% post_url contents/chapter01/21-01-07-01_01_optimization_problems %}
-)의 hyperlink는 아래와 같이 작성합니다.
+  )의 hyperlink는 아래와 같이 작성합니다.
 
 ```
 [Optimization problems?]({% post_url contents/chapter01/21-01-07-01_01_optimization_problems %})
@@ -124,11 +125,11 @@ Prefix는 feature와 bugfix 두 가지를 사용합니다. 각각의 사용 예�
   - 새로운 내용이 추가되는 경우
 - bugfix
   - 오타를 수정하는 경우
-  - latex view가 깨져 수정하는 경우 
+  - latex view가 깨져 수정하는 경우
 
 구체적인 예시는 아래와 같습니다.
 
 - `feature/chapter01-migration`: chapter01 Migration
-- `feature/chapter01-fix-formula`: chapter01에서 수식 업데이트 
+- `feature/chapter01-fix-formula`: chapter01에서 수식 업데이트
 - `feature/settings-update-branch-convention`: Convention 업데이트
 - `bugfix/chapter01-fix-typo`: chapter01에서 오타 수정
