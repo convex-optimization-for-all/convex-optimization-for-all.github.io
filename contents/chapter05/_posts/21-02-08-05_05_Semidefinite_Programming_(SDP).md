@@ -113,9 +113,7 @@ $$x = x^{+}  - x^{-}$$이고, $$x^{+} \text{, } x^{-} \succeq 0.$$
 
 - All the blanks are zero.
 
-> $$
-> X =
-> \begin{bmatrix}
+> $$ X = \begin{bmatrix}
 > diag(x^{+})\\\\
 >  & diag(x^{-})\\\\
 > && s_{11}\\\\
@@ -124,21 +122,13 @@ $$x = x^{+}  - x^{-}$$이고, $$x^{+} \text{, } x^{-} \succeq 0.$$
 > &&&&&s_{ij}\\\\
 > &&&&&&\dotsc \\\
 > &&&&&&&s_{kk}\\\\
-> \end{bmatrix}
-> ,$$
-> $$
->
-> C =
-> \begin{bmatrix}
+> \end{bmatrix}$$,
+> $$ C = \begin{bmatrix}
 > diag(c)\\\\
 > & -diag(c) &\\\\
 > & & O_{k^2 \text{ x } k^2}\\\\
-> \end{bmatrix}
-> ,$$
->
-> $$
-> P_{ij} =
-> \begin{bmatrix}
+> \end{bmatrix}$$,
+> $$P_{ij} = \begin{bmatrix}
 > (F_1)_{ij}\\\\
 > &(F_2)_{ij}\\\\
 > &&\dotsc\\\\
@@ -153,23 +143,17 @@ $$x = x^{+}  - x^{-}$$이고, $$x^{+} \text{, } x^{-} \succeq 0.$$
 > &&&&&&&&&&&\dotsc\\\\
 > &&&&&&&&&&&&0\\\\
 > \end{bmatrix}
-> ,$$
->
-> $$
->
-> Q_{i}=
-> \begin{bmatrix}
+> $$,
+> $$ Q_{i}= \begin{bmatrix}
 > diag(A_i)\\\\
 > &-diag(A_i)\\\\
 > &&O_{k^2 \text{ x } k^2}\\\\
 > \end{bmatrix}
->
 > $$
+>
 > ($$A_i$$ is ith row of A),
-> $$
 >
-> \tilde{A} =
-> \begin{bmatrix}
+> $$ \tilde{A} =\begin{bmatrix}
 > P_{11}\\\\
 > \dotsc\\\\
 > P_{kk}\\\\
@@ -178,25 +162,16 @@ $$x = x^{+}  - x^{-}$$이고, $$x^{+} \text{, } x^{-} \succeq 0.$$
 > Q_{p}\\\\
 > \end{bmatrix}
 > -G_{ij} = tr(P_{ij}X)
-> ,$$
->
-> $$
-> b_i = tr(Q_iX)
 > $$,
->
-> $$
->
-> \tilde{b} =
-> \begin{bmatrix}
+> $$b_i = tr(Q_iX)$$,
+> $$\tilde{b} = \begin{bmatrix}
 > -G_{11}\\\\
 > \dotsc\\\\
 > -G_{kk}\\\\
 > b_{1}\\\\
 > \dotsc\\\\
 > b_{p}\\\\
-> \end{bmatrix}
->
-> $$ .
+> \end{bmatrix}.
 > $$
 
 **Step5.** *Step3*의 문제를 $$X, C, \tilde{A}, \tilde{b}$$로 치환.

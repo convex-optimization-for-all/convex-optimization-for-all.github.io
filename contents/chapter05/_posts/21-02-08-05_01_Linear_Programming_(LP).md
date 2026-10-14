@@ -18,11 +18,9 @@ owner: "Hooncheol Shin"
 > \end{align} \\
 > $$
 
-$$
-
-* 위 목적함수의 $$ +d $$는 최적화의 과정 및 결과에 영향을 주지 않으므로 생략되어도 무방하다.
-* 만약 동일한 형태의 제약 아래 $$c^T x + d$$를 최대화하는 문제가 주어졌을 경우, 이를 $$ -c^T x - d $$를 최소화하는 문제로 바꾸어 풀 수 있다.
-* 위 문제는 기하학적으로 polyhedron 형태의 feasible set에 대해 affine function $$ c^T x + d $$를 최소화시키는 $$ x^{*} $$를 찾는 것으로 해석된다.
+- 위 목적함수의 $$ +d $$는 최적화의 과정 및 결과에 영향을 주지 않으므로 생략되어도 무방하다.
+- 만약 동일한 형태의 제약 아래 $$c^T x + d$$를 최대화하는 문제가 주어졌을 경우, 이를 $$ -c^T x - d $$를 최소화하는 문제로 바꾸어 풀 수 있다.
+- 위 문제는 기하학적으로 polyhedron 형태의 feasible set에 대해 affine function $$ c^T x + d $$를 최소화시키는 $$ x^{*} $$를 찾는 것으로 해석된다.
 
 <figure class="image" style="align: center;">
 <p align="center">
@@ -32,61 +30,66 @@ $$
 </figure>
 
 ## LP in Standard form
+
 General LP가 아닌 standard form LP의 형태로 문제정의에 이용할 수 있다.
 
 ### Standard form LP
->$$ \begin{align}
+
+> $$
+> \begin{align}
 >    &\text{minimize}_{x} &&{c^T x + d} \\\\
 >    &\text{subject to } &&{A x = b} \\\\
 >    & &&{x \succeq 0}.
->\end{align} $$
+> \end{align}
+> $$
 
 모든 general LP는 아래의 과정에 의해 standard form LP로 변형될 수 있다.
 
 ### Converting LPs to standard form
 
 **Step1.** Slack variable s를 이용하여 inequality constraint를 equality constraint로 바꿔준다.
-> $$ \begin{align}
+
+> $$
+> \begin{align}
 >     &\text{minimize}_{x, s} &&{c^T x + d} \\\\
 >     &\text{subject to } &&{Gx + s = h} \\\\
 >     & &&{Ax = b},\\\\
 >     & &&{s \succeq 0}.
-> \end{align} $$
+> \end{align}
+> $$
 
 **Step2.** x를 두 개의 nonnegative variables로 치환한다.
 $$ x = x^{+}  - x^{-} $$ 이고, $$ x^{+} \text{, } x^{-} \succeq 0. $$
 
-> $$ \begin{align}
+> $$
+> \begin{align}
 >     &\text{minimize}_{x^{+}, x^{-}, s} &&{c^Tx^{+} - c^Tx^{-} + d} \\\\
 >     &\text{subject to } &&{Gx^{+} - Gx^{-} + s = h} \\\\
 >     & &&{Ax^{+} - Ax^{-} = b},\\\\
 >     & &&{s \succeq 0}\\\\
 >     & &&{x^{+} \succeq 0}, {x^{-} \succeq 0}.
-> \end{align} $$
+> \end{align}
+> $$
 
 **Step3.** $$ \tilde{x} $$, $$ \tilde{c} $$, $$ \tilde{b} $$, $$ \tilde{A} $$를 정의.
 
-> $$\tilde{x} =
-> \begin{bmatrix}
+> $$ \tilde{x} = \begin{bmatrix}
 > x^{+} \\\\
 > x^{-} \\\\
 > s
 > \end{bmatrix},
-> \tilde{c} =
-> \begin{bmatrix}
+> \tilde{c} = \begin{bmatrix}
 > c \\\\
 > -c \\\\
 > 0
 > \end{bmatrix},
-> \tilde{b} =
-> \begin{bmatrix}
+> \tilde{b} = \begin{bmatrix}
 > h \\\\
 > b
 > \end{bmatrix}
 > $$,
-> $$
-> \tilde{A} =
-> \begin{bmatrix}
+>
+> $$ \tilde{A} = \begin{bmatrix}
 > G & -G & I\\\\
 > A & -A & O
 > \end{bmatrix}
@@ -94,73 +97,79 @@ $$ x = x^{+}  - x^{-} $$ 이고, $$ x^{+} \text{, } x^{-} \succeq 0. $$
 
 **Step4.** *Step2*의 문제를 $$ \tilde{x} $$, $$ \tilde{c} $$, $$ \tilde{b} $$, $$ \tilde{A} $$로 치환.
 
-> $$ \begin{align}
+> $$
+> \begin{align}
 >     &\text{minimize}_{\tilde{x}} &&{\tilde{c}^T \tilde{x} + d} \\\\
 >     &\text{subject to} &&{\tilde{A} \tilde{x} = \tilde{b}} \\\\
 >     & &&{\tilde{x} \succeq 0}.
-> \end{align} $$
+> \end{align}
+> $$
 
 ### Example 1) Diet program
 
 영양분에 대한 요구사항을 만족하는 가장 싼 음식의 조합을 찾는 문제다.
 
-> $$ \begin{align}
+> $$
+> \begin{align}
 >     &\text{minimize}_{x} &&{c^T x} \\\\
 >     &\text{subject to } &&{Dx \succeq d} \\\\
 >     & &&{x \succeq 0}.
-> \end{align} $$
+> \end{align}
+> $$
 
-* $$ c_j $$: 음식 j에 대한 단위당 가격
-* $$ d_i $$: 영양소 i에 대한 최소 권장 섭취량
-* $$ D_{ij} $$: 영양소 i가 음식 j에 들어있는 정도
-* $$ x_j $$: 식단에 포함된 음식 j의 양
+- $$ c_j $$: 음식 j에 대한 단위당 가격
+- $$ d_i $$: 영양소 i에 대한 최소 권장 섭취량
+- $$ D_{ij} $$: 영양소 i가 음식 j에 들어있는 정도
+- $$ x_j $$: 식단에 포함된 음식 j의 양
 
-### Example 2)  Basis pursuit
+### Example 2) Basis pursuit
 
 [Undetermined linear system](https://en.wikipedia.org/wiki/Underdetermined_system)은 변수의 갯수가 등식의 갯수보다 많은 선형시스템이다. $$ X\beta = y $$에 대한 the sparsest solution을 찾는 문제는 아래와 같은 non-convex problem으로 정의된다.
 
-> $$ \begin{align}
+> $$
+> \begin{align}
 >     &\text{minimize}_{\beta} &&{\|\beta\|_0} \\\\
 >     &\text{subject to } &&{X\beta = y},\\\\
 >     & \text{given } &&y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n.\\\\
-> \end{align} \\
-$$
-
-- $$ {\| \beta \|_0} = \sum_{j=1}^p 1, \left\{ \beta_j \neq 0 \right\} $$
+>     & \text{where } && {\| \beta \|_0} = \sum_{j=1}^p 1, \left\{ \beta_j \neq 0 \right\}
+> \end{align}
+> $$
 
 위의 문제가 non-convex가 되는 이유는 바로 목적함수로 사용되는 $$ L_0 $$ norm 때문이다. $$ L_1 $$ norm이 [sparsity를 높이는 성질에 착안](https://www.analyticsvidhya.com/blog/2016/01/complete-tutorial-ridge-lasso-regression-python/#four)하여 이를 $$ L_0 $$ norm 대신 목적함수로 사용하면 문제를 convex로 만들어 솔루션을 근사할 수 있다. 우리는 이러한 방식을 *basis pursuit*라고 부른다.
 
-> $$ \begin{align}
+> $$
+> \begin{align}
 >     &\text{minimize}_{\beta} &&{\|\beta\|_1} \\\\
 >     &\text{subject to } &&{X\beta = y},\\\\
 >     & \text{given } &&y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n.
-> \end{align} \\
+> \end{align}
 > $$
-
-$$
 
 또한 basis pursuit는 다음과 같이 linear program으로 변형된다.
 
-> $$ \begin{align}
+> $$
+> \begin{align}
 >     &\text{minimize}_{\beta, z} &&{1^Tz} \\\\
 >     &\text{subject to } &&{z \succeq \beta}\\\\
 >     & &&{z \succeq -\beta}\\\\
 >     & &&{X\beta = y}
-> \end{align} $$
+> \end{align}
+> $$
 
-* $$ \beta $$의 각 component의 절댓값보다 $$z$$의 각 component가 크거나 같아야한다.
-* 최적화를 통해 $$ z $$의 sparsity를 높여가며, $$ \beta $$의 sparsity 또한 높아지도록 한다.
+- $$ \beta $$의 각 component의 절댓값보다 $$z$$의 각 component가 크거나 같아야한다.
+- 최적화를 통해 $$ z $$의 sparsity를 높여가며, $$ \beta $$의 sparsity 또한 높아지도록 한다.
 
-### Example 3)  Dantzig selector
+### Example 3) Dantzig selector
 
 Basis pursuit에서 다룬 문제와 목적이 동일하지만, y에 noise가 있는 경우를 전제해보자 ( $$ X\beta \approx y $$). 이러한 문제를 [Dantzig selector](https://statweb.stanford.edu/~candes/software/l1magic/downloads/papers/DantzigSelector.pdf)라고 한다.
 
-> $$ \begin{align}
+> $$
+> \begin{align}
 >     &\text{minimize}_{\beta} &&{\|\beta\|_1} \\\\
 >     &\text{subject to } &&{\| X^T (y - X \beta) \|_{\infty} \leq \lambda},\\\\
 >     &\text{given } &&y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n. \ \text{Here } \lambda \geq 0 \text{ is a hyper-parameter. }\\\\
-> \end{align} \\
-$$
+> \end{align}
+> $$
 
 - $$ y - X \beta \in \mathbb{R}^n $$은 residual이다.
 - $$ \|y - X \beta\|_{\infty} \leq \lambda $$ 는 왜 inequality constraint로 사용되지 않을까?
@@ -180,5 +189,5 @@ Dantzig selector는 마찬가지로 다음과 같이 linear program으로 변형
 >     & && z \succeq -\beta\\\\
 >     & && z \succeq \beta,\\\\
 >     & \text{given } &&y \in \mathbb{R}^n \text{ and } X \in \mathbb{R}^\text{n x p} \text{, where } p > n. \ \text{Here } x_j \text{ is a jth column of } X.\\\\
-> \end{align}\\
+> \end{align}
 > $$
